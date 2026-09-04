@@ -36,7 +36,21 @@
   }
 
   * { box-sizing: border-box; }
-  body { margin: 0; background: var(--paper); color: var(--ink); font-family: "Work Sans", ui-sans-serif, system-ui, sans-serif; font-size: 17px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: "Work Sans", ui-sans-serif, system-ui, sans-serif; font-size: 1.0625rem; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+
+  html { font-size: 100%; }
+  html[data-fs="xs"] { font-size: 85%; }
+  html[data-fs="sm"] { font-size: 92.5%; }
+  html[data-fs="lg"] { font-size: 115%; }
+  html[data-fs="xl"] { font-size: 135%; }
+  .font-size-ctrl { display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--line); border-radius: 100px; padding: 4px 8px; }
+  .fs-labels { display: inline-flex; align-items: baseline; gap: 3px; }
+  .fs-label { font-family: "Work Sans", sans-serif; font-weight: 600; color: var(--ink-soft); line-height: 1; user-select: none; }
+  .fs-label-sm { font-size: 0.68rem; }
+  .fs-label-lg { font-size: 1.15rem; }
+  .fs-step { appearance: none; border: none; background: none; cursor: pointer; color: var(--ink-soft); font-family: "Work Sans", sans-serif; font-weight: 700; font-size: 1.35rem; line-height: 1; width: 30px; height: 30px; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; flex-shrink: 0; }
+  .fs-step:hover:not(:disabled) { background: var(--line); color: var(--ink); }
+  .fs-step:disabled { opacity: 0.32; cursor: default; }
   a { color: inherit; }
   .mono { font-family: "Space Mono", ui-monospace, "SF Mono", monospace; }
 
@@ -157,6 +171,7 @@
 <header class="site">
   <a class="logo" href="../index.html">K-<span>Rambles</span></a>
   <div class="header-right">
+    <div class="font-size-ctrl" role="group" aria-label="Text size"><button type="button" class="fs-step" data-action="dec" aria-label="Decrease text size">−</button><span class="fs-labels" aria-hidden="true"><span class="fs-label fs-label-sm">가</span><span class="fs-label fs-label-lg">가</span></span><button type="button" class="fs-step" data-action="inc" aria-label="Increase text size">+</button></div>
     <a class="back-link" href="../index.html">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
       보드로 돌아가기
@@ -321,3 +336,45 @@
     <span class="mono">K-Rambles · 여행 계획 보드</span>
   </div>
 </footer>
+
+<script>
+(function () {
+  var KEY = 'krambles-fontsize';
+  var STEPS = ['xs', 'sm', 'md', 'lg', 'xl'];
+  var root = document.documentElement;
+  var ctrl = document.querySelector('.font-size-ctrl');
+  if (!ctrl) { return; }
+  var decBtn = ctrl.querySelector('[data-action="dec"]');
+  var incBtn = ctrl.querySelector('[data-action="inc"]');
+  var index = 2;
+
+  function apply(i) {
+    var size = STEPS[i];
+    if (size === 'md') { root.removeAttribute('data-fs'); }
+    else { root.setAttribute('data-fs', size); }
+    decBtn.disabled = i === 0;
+    incBtn.disabled = i === STEPS.length - 1;
+  }
+
+  var saved = 'md';
+  try { saved = localStorage.getItem(KEY) || 'md'; } catch (e) {}
+  index = STEPS.indexOf(saved);
+  if (index === -1) { index = 2; }
+  apply(index);
+
+  decBtn.addEventListener('click', function () {
+    if (index > 0) {
+      index--;
+      apply(index);
+      try { localStorage.setItem(KEY, STEPS[index]); } catch (e) {}
+    }
+  });
+  incBtn.addEventListener('click', function () {
+    if (index < STEPS.length - 1) {
+      index++;
+      apply(index);
+      try { localStorage.setItem(KEY, STEPS[index]); } catch (e) {}
+    }
+  });
+})();
+</script>
