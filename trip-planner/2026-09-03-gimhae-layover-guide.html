@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>How Far Can Your Gimhae Layover Take You?</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Work+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap');
@@ -103,6 +106,10 @@
   .card-link { display: inline-flex; align-items: center; gap: 6px; margin-top: 16px; text-decoration: none; font-family: "Space Mono", monospace; font-size: 0.82rem; color: var(--coral-ink); border-bottom: 1px solid var(--coral-ink); padding-bottom: 2px; }
   .card-link svg { width: 12px; height: 12px; stroke: currentColor; fill: none; stroke-width: 2; }
 
+  .route-map-link { display: inline-flex; align-items: center; gap: 6px; margin-top: 14px; padding: 7px 14px; border: 1.5px solid var(--navy); border-radius: 100px; color: var(--navy); font-size: 0.82rem; font-weight: 600; text-decoration: none; }
+  .route-map-link:hover { background: var(--navy); color: #eef2fb; }
+  .route-map-link svg { width: 13px; height: 13px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+
   .verdict { margin-top: 26px; padding: 20px 22px; border: 1.5px dashed var(--line-strong); border-radius: 14px; }
   .verdict-title { font-family: "Space Mono", monospace; font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--marigold-ink); display: block; margin-bottom: 10px; }
   .verdict p { margin: 6px 0; font-size: 0.94rem; }
@@ -127,6 +134,7 @@
   <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
   <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 9.8h17M8 2.5v5M16 2.5v5"/></symbol>
   <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></symbol>
+  <symbol id="i-route" viewBox="0 0 24 24"><circle cx="6" cy="19" r="2.2"/><circle cx="18" cy="5" r="2.2"/><path d="M6 16.8V13a4 4 0 0 1 4-4h4a4 4 0 0 0 4-4"/></symbol>
 </svg>
 
 <header class="site">
@@ -182,6 +190,7 @@
       </div>
       <p class="route-note">Both transit routes use <strong>Hollys Coffee</strong> as the landmark at the Seogu-gu Office stop — storefronts change over time, so treat it as a general marker rather than a guarantee.</p>
       <p class="cite-note">Verified via Naver Map search, Sept 3, 2026.</p>
+      <a class="route-map-link" href="https://www.google.com/maps/dir/?api=1&origin=Gimhae+International+Airport&destination=Gamcheon+Culture+Village+Busan" target="_blank" rel="noopener"><svg><use href="#i-route"/></svg>Get directions</a>
       <a class="card-link" href="2026-09-02-gamcheon-culture-village.html">Read the full Gamcheon guide <svg viewBox="0 0 24 24"><use href="#i-arrow-right"/></svg></a>
       </div>
     </div>
@@ -206,6 +215,7 @@
       </div>
       <p class="route-note">The light rail + Line 2 combo is both the fastest and the cheapest option. The limousine is worth it if you're hauling heavy bags and want zero transfers.</p>
       <p class="cite-note">Verified via Naver Map search, Sept 3, 2026.</p>
+      <a class="route-map-link" href="https://www.google.com/maps/dir/?api=1&origin=Gimhae+International+Airport&destination=Seomyeon+Station+Busan" target="_blank" rel="noopener"><svg><use href="#i-route"/></svg>Get directions</a>
       </div>
     </div>
 
@@ -228,6 +238,7 @@
         </table>
       </div>
       <p class="cite-note">Verified via Naver Map search, Sept 3, 2026.</p>
+      <a class="route-map-link" href="https://www.google.com/maps/dir/?api=1&origin=Gimhae+International+Airport&destination=Nampo-dong+Busan" target="_blank" rel="noopener"><svg><use href="#i-route"/></svg>Get directions</a>
       </div>
     </div>
 
@@ -249,6 +260,7 @@
         </table>
       </div>
       <p class="cite-note">Verified via Naver Map search, Sept 3, 2026.</p>
+      <a class="route-map-link" href="https://www.google.com/maps/dir/?api=1&origin=Gimhae+International+Airport&destination=Huinnyeoul+Culture+Village+Busan" target="_blank" rel="noopener"><svg><use href="#i-route"/></svg>Get directions</a>
       </div>
     </div>
 
@@ -271,6 +283,7 @@
       </div>
       <p class="route-note"><strong>Take the taxi here.</strong> Three transfers on transit eats up more time than it saves.</p>
       <p class="cite-note">Verified via Naver Map search, Sept 3, 2026.</p>
+      <a class="route-map-link" href="https://www.google.com/maps/dir/?api=1&origin=Gimhae+International+Airport&destination=Jangnimhang+Busan+Venice" target="_blank" rel="noopener"><svg><use href="#i-route"/></svg>Get directions</a>
       </div>
     </div>
 
@@ -293,6 +306,7 @@
       </div>
       <p class="route-note"><strong>Take the subway here.</strong> The taxi runs slower than transit on this one, likely coastal-road traffic.</p>
       <p class="cite-note">Verified via Naver Map search, Sept 3, 2026.</p>
+      <a class="route-map-link" href="https://www.google.com/maps/dir/?api=1&origin=Gimhae+International+Airport&destination=Gwangalli+Beach+Busan" target="_blank" rel="noopener"><svg><use href="#i-route"/></svg>Get directions</a>
       </div>
     </div>
 
@@ -316,6 +330,7 @@
       </div>
       <p class="route-note"><strong>Take the taxi here.</strong> Both transit options run long with multiple transfers.</p>
       <p class="cite-note">Verified via Naver Map search, Sept 3, 2026.</p>
+      <a class="route-map-link" href="https://www.google.com/maps/dir/?api=1&origin=Gimhae+International+Airport&destination=Amisan+Observatory+Busan" target="_blank" rel="noopener"><svg><use href="#i-route"/></svg>Get directions</a>
       </div>
     </div>
 

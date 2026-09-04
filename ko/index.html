@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>K-Rambles 한글판</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Work+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap');
@@ -1010,6 +1013,13 @@
       }).slice(0, 8);
       renderResults(matches);
       results.classList.add('is-open');
+    });
+    input.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.keyCode === 13) {
+        e.preventDefault();
+        var first = results.querySelector('.search-result');
+        if (first) { window.location.href = first.getAttribute('href'); }
+      }
     });
     document.addEventListener('click', function (e) {
       if (!input.contains(e.target) && !results.contains(e.target)) {

@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Is Busan Tap Water Actually Safe?</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Work+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap');
@@ -50,7 +53,8 @@
   .stamp { display: inline-flex; align-items: center; gap: 9px; font-family: "Space Mono", monospace; font-size: 0.76rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--marigold-ink); border: 1.5px dashed var(--marigold); border-radius: 999px; padding: 6px 14px 6px 11px; transform: rotate(-1.5deg); }
   .stamp::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--marigold); display: inline-block; }
 
-  .hero-icon { width: 58px; height: 58px; stroke: var(--marigold-ink); fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; margin: 24px 0 10px; }
+  .hero-top { display: flex; align-items: center; gap: 16px; margin: 22px 0 24px; }
+  .hero-icon { width: 40px; height: 40px; stroke: var(--marigold-ink); fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; }
 
   h1.art-title { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: clamp(1.9rem, 4.6vw, 2.7rem); line-height: 1.08; letter-spacing: -0.01em; margin: 0 0 14px; text-wrap: balance; max-width: 20ch; }
   p.dek { font-size: 1.08rem; color: var(--ink-soft); max-width: 54ch; margin: 0; }
@@ -111,8 +115,10 @@
 </header>
 
 <div class="art-hero">
-  <span class="stamp">Long-Stay · Cross-Check</span>
-  <svg class="hero-icon"><use href="#i-drop"/></svg>
+  <div class="hero-top">
+    <span class="stamp">Long-Stay · Cross-Check</span>
+    <svg class="hero-icon"><use href="#i-drop"/></svg>
+  </div>
   <h1 class="art-title">Busan tap water — is it actually safe to drink?</h1>
   <p class="dek">Ask five people and you'll get five different answers — some drink it straight from the tap every day, others swear you should never touch it. Here's what the official numbers say, why people still don't fully trust it, and what actually decides the answer for you.</p>
   <p class="updated-badge"><svg class="updated-icon"><use href="#i-calendar"/></svg>Checked September 2, 2026</p>

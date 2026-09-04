@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Gimhae Airport to Haeundae, Solved</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Work+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap');
@@ -50,7 +53,8 @@
   .stamp { display: inline-flex; align-items: center; gap: 9px; font-family: "Space Mono", monospace; font-size: 0.76rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--navy-ink); border: 1.5px dashed var(--navy); border-radius: 999px; padding: 6px 14px 6px 11px; transform: rotate(-1.5deg); }
   .stamp::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--navy); display: inline-block; }
 
-  .hero-icon { width: 60px; height: 60px; stroke: var(--navy-ink); fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; margin: 24px 0 10px; }
+  .hero-top { display: flex; align-items: center; gap: 16px; margin: 22px 0 24px; }
+  .hero-icon { width: 40px; height: 40px; stroke: var(--navy-ink); fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; }
 
   h1.art-title { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: clamp(1.9rem, 4.6vw, 2.7rem); line-height: 1.08; letter-spacing: -0.01em; margin: 0 0 14px; text-wrap: balance; max-width: 20ch; }
   p.dek { font-size: 1.08rem; color: var(--ink-soft); max-width: 52ch; margin: 0; }
@@ -81,6 +85,12 @@
 
   .updated-badge { display: inline-flex; align-items: center; gap: 7px; font-size: 0.92rem; color: var(--ink-soft); margin: 16px 0 0; }
   .updated-icon { width: 17px; height: 17px; stroke: var(--navy-ink); fill: none; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+
+  .maps-cta-wrap { text-align: center; margin-top: 28px; }
+  .maps-cta { display: inline-flex; align-items: center; gap: 10px; padding: 16px 28px; background: var(--navy); color: #eef2fb; border-radius: 100px; text-decoration: none; font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 1.05rem; box-shadow: var(--card-shadow); }
+  .maps-cta:hover { background: var(--navy-ink); }
+  .maps-cta svg { width: 20px; height: 20px; stroke: currentColor; fill: none; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; }
+  .maps-cta-note { display: block; margin-top: 10px; font-size: 0.82rem; color: var(--ink-soft); }
 
   .howto { background: var(--navy); color: #eef2fb; border-radius: 16px; padding: 24px; margin-top: 26px; }
   .howto-tag { font-family: "Space Mono", monospace; font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--marigold); display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
@@ -124,8 +134,10 @@
 </header>
 
 <div class="art-hero">
-  <span class="stamp">Getting Around · Board 02</span>
-  <svg class="hero-icon"><use href="#i-pin"/></svg>
+  <div class="hero-top">
+    <span class="stamp">Getting Around · Board 02</span>
+    <svg class="hero-icon"><use href="#i-pin"/></svg>
+  </div>
   <h1 class="art-title">Gimhae Airport to Haeundae, solved</h1>
   <p class="dek">Every route blog says "just take the limousine bus." Here's what actually happens when you do — plus two other ways that might serve you better.</p>
   <p class="updated-badge"><svg class="updated-icon"><use href="#i-calendar"/></svg>Last checked September 2, 2026 — fares and schedules can change, so treat older dates with caution.</p>
@@ -219,6 +231,14 @@
     <p><strong>Traveling light, watching the budget?</strong> Light rail + Line 2.</p>
     <p><strong>Heavy bags, don't want to deal with transfers?</strong> Limousine Bus No. 1.</p>
     <p><strong>Two or more people, just want it done?</strong> Split a taxi.</p>
+  </div>
+
+  <div class="maps-cta-wrap">
+    <a class="maps-cta" href="https://www.google.com/maps/dir/?api=1&origin=Gimhae+International+Airport&destination=Haeundae+Beach" target="_blank" rel="noopener">
+      <svg><path d="M12 21s7-6.4 7-11.5A7 7 0 0 0 5 9.5C5 14.6 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.4"/></svg>
+      View the route on Google Maps
+    </a>
+    <span class="maps-cta-note">Opens in a new tab — compare transit, driving, and walking times live.</span>
   </div>
 </section>
 

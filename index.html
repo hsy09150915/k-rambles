@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>K-Rambles</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Work+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap');
@@ -119,6 +122,24 @@
   @media (max-width: 640px) {
     nav.site-nav { display: none; }
   }
+
+  .lang-switch {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: "Space Mono", monospace;
+    font-size: 0.76rem;
+    letter-spacing: 0.03em;
+  }
+  .lang-switch a,
+  .lang-switch span.current {
+    text-decoration: none;
+    padding: 3px 8px;
+    border-radius: 6px;
+  }
+  .lang-switch a { color: var(--ink-soft); }
+  .lang-switch a:hover { color: var(--ink); }
+  .lang-switch span.current { color: var(--ink); font-weight: 700; border: 1px solid var(--line); }
 
   /* ---------- Hero ---------- */
 
@@ -626,6 +647,10 @@
     <a href="#getting-around">Getting Around</a>
     <a href="#long-stay">Long-Stay</a>
   </nav>
+  <div class="lang-switch" aria-label="Language">
+    <span class="current">EN</span>
+    <a href="ko/index.html">한글</a>
+  </div>
 </header>
 
 <section class="hero">
@@ -634,8 +659,7 @@
     <h1 class="headline">Busan, one <em>ramble</em> at a time.</h1>
     <p class="lede">Fact-checked Busan guides — food, getting around, and everyday life, kept up to date. More cities to come.</p>
     <div class="hero-actions">
-      <a class="btn-primary" href="#food-stories">Start wandering →</a>
-      <a class="btn-ghost" href="#next-stop">Where we're headed next</a>
+      <a class="btn-primary" href="#boards">Start wandering →</a>
     </div>
   </div>
   <div class="hero-visual">
@@ -760,7 +784,7 @@
   </symbol>
 </svg>
 
-<section class="board">
+<section class="board" id="boards">
   <div class="board-head">
     <p class="eyebrow">The board so far</p>
     <h2 class="board-title">Four boards, endlessly refillable</h2>
@@ -995,6 +1019,13 @@
       }).slice(0, 8);
       renderResults(matches);
       results.classList.add('is-open');
+    });
+    input.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.keyCode === 13) {
+        e.preventDefault();
+        var first = results.querySelector('.search-result');
+        if (first) { window.location.href = first.getAttribute('href'); }
+      }
     });
     document.addEventListener('click', function (e) {
       if (!input.contains(e.target) && !results.contains(e.target)) {
