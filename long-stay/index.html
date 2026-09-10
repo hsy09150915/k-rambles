@@ -200,7 +200,7 @@
 <script>
 (function () {
   var SEARCH_INDEX = [
-    {title: "Is the tap water actually safe?", cat: "Long-Stay", url: "2026-09-02-tap-water-safety.html", kw: "tap water safe drinking nakdong river"}
+    {title: "Is the tap water actually safe?", cat: "Long-Stay", url: "2026-09-02-tap-water-safety.html", kw: "tap water safe drinking nakdong river busan living daily life resident"}
   ];
   var input = document.getElementById('site-search');
   var results = document.getElementById('site-search-results');
@@ -217,7 +217,9 @@
       var q = input.value.trim().toLowerCase();
       if (!q) { results.classList.remove('is-open'); results.innerHTML = ''; return; }
       var matches = SEARCH_INDEX.filter(function (item) {
-        return item.title.toLowerCase().indexOf(q) !== -1 || item.cat.toLowerCase().indexOf(q) !== -1 || item.kw.toLowerCase().indexOf(q) !== -1;
+        var hay = (item.title + ' ' + item.cat + ' ' + item.kw).toLowerCase();
+        var words = q.split(/\s+/).filter(Boolean);
+        return words.every(function (w) { return hay.indexOf(w) !== -1; });
       }).slice(0, 10);
       renderResults(matches);
       results.classList.add('is-open');

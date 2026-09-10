@@ -60,6 +60,11 @@
   .logo span { color: var(--coral); }
   .back-link { font-family: "Space Mono", monospace; font-size: 0.8rem; letter-spacing: 0.06em; text-decoration: none; color: var(--ink-soft); display: inline-flex; align-items: center; gap: 6px; }
   .back-link:hover { color: var(--ink); }
+  .lang-switch { display: flex; align-items: center; gap: 6px; font-family: "Space Mono", monospace; font-size: 0.76rem; letter-spacing: 0.03em; }
+  .lang-switch a, .lang-switch span.current { text-decoration: none; padding: 3px 8px; border-radius: 6px; }
+  .lang-switch a { color: var(--ink-soft); }
+  .lang-switch a:hover { color: var(--ink); }
+  .lang-switch span.current { color: var(--ink); font-weight: 700; border: 1px solid var(--line); }
 
   .art-hero { padding: 10px 28px 8px; max-width: 860px; margin: 0 auto; }
   .stamp { display: inline-flex; align-items: center; gap: 9px; font-family: "Space Mono", monospace; font-size: 0.76rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink); border: 1.5px dashed var(--ink); border-radius: 999px; padding: 6px 14px 6px 11px; transform: rotate(-1.5deg); }
@@ -160,6 +165,10 @@
     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
     Back to the board
   </a>
+    <div class="lang-switch" aria-label="Language">
+      <span class="current">EN</span>
+      <a href="../ko/trip-planner/2026-09-03-gimhae-layover-guide.html">한글</a>
+    </div>
   </div>
 </header>
 

@@ -60,6 +60,11 @@
   .logo span { color: var(--coral); }
   .back-link { font-family: "Space Mono", monospace; font-size: 0.8rem; letter-spacing: 0.06em; text-decoration: none; color: var(--ink-soft); display: inline-flex; align-items: center; gap: 6px; }
   .back-link:hover { color: var(--coral-ink); }
+  .lang-switch { display: flex; align-items: center; gap: 6px; font-family: "Space Mono", monospace; font-size: 0.76rem; letter-spacing: 0.03em; }
+  .lang-switch a, .lang-switch span.current { text-decoration: none; padding: 3px 8px; border-radius: 6px; }
+  .lang-switch a { color: var(--ink-soft); }
+  .lang-switch a:hover { color: var(--ink); }
+  .lang-switch span.current { color: var(--ink); font-weight: 700; border: 1px solid var(--line); }
 
   .art-hero { padding: 10px 28px 24px; max-width: 760px; margin: 0 auto; }
   .hero-photo-wrap { max-width: 760px; margin: 0 auto 8px; padding: 0 28px; }
@@ -133,6 +138,10 @@
     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
     Back to the board
   </a>
+    <div class="lang-switch" aria-label="Language">
+      <span class="current">EN</span>
+      <a href="ko/taste-dwaeji-gukbap.html">한글</a>
+    </div>
   </div>
 </header>
 
@@ -155,8 +164,9 @@
     <svg class="block-icon"><use href="#i-clock"/></svg>
     <h2 class="block-title">The backstory</h2>
   </div>
-  <p class="body-text">Winter, 1950. As the war pushed south, hundreds of thousands of refugees from Hamgyong Province were evacuated by sea from the port of Heungnam. Many landed in Busan with nothing. Near Sincheon Market, they started simmering pork bones — offcuts from nearby U.S. military bases — into a broth that could stretch a little meat into a lot of soup.</p>
-  <p class="body-text">What they made barely resembles today's bowl, and for decades almost nobody admitted to liking it: pork itself was so stigmatized in the South that menus avoided naming it outright until the 1990s. What outlasted that stigma is now the dish locals order without a second thought.</p>
+  <p class="body-text">When war broke out in June 1950, North Korean forces advanced so fast that by that summer, South Korean and UN troops had been pushed back to the Nakdong River line, with much of the country in ruins and Busan left as essentially the last unoccupied city. That winter, Chinese forces entered the war and pushed the front south again; around the same time, hundreds of thousands of refugees from Hamgyong Province were evacuated by sea from the port of Heungnam. Many landed in Busan with nothing.</p>
+  <p class="body-text">With no food, no shelter, and barely any clothing, the most widely told account is that near Sincheon Market, people started simmering pork bones — offcuts from nearby U.S. military bases that would otherwise have been thrown out — into a broth that could stretch a little meat into a lot of soup. It's the version most people point to, but it remains one widely shared account among several; enough historical threads are tangled together in this period that no single origin story can be stated as settled fact.</p>
+  <p class="body-text">What they made barely resembles today's bowl, and for decades almost nobody admitted to liking it. The stigma is generally traced to hygiene: the dish was built from what were essentially discarded scraps, and that association was enough to keep pork off menus outright in the South until the 1990s. What outlasted that stigma is now the dish locals order without a second thought.</p>
 </section>
 
 <section class="block">
@@ -164,21 +174,22 @@
     <svg class="block-icon"><use href="#i-split"/></svg>
     <h2 class="block-title">Which bowl are you actually eating?</h2>
   </div>
+  <p class="body-text">The three names below trace back to specific towns, but the line between them has blurred — most shops now cook their own version rather than following one town's method, and even locals often can't tell which style they're eating by taste alone. What the three do share is geography: Miryang, Daegu, and Busan are all in Gyeongsang Province, generally understood to be where the dish originated. These days, if you ask anyone in Korea which city they associate dwaeji-gukbap with, the answer is almost always Busan.</p>
   <div class="style-grid">
     <div class="style-card">
       <svg class="style-icon"><use href="#i-bowl-small"/></svg>
       <span class="style-name">Miryang-style</span>
-      <span class="style-note">Clear broth. Widely credited as the original — even in Busan, well over 100 shops still put "Miryang" in their name.</span>
+      <span class="style-note">Clear broth. Historically credited as the original — even now, well over 100 shops in Busan still put "Miryang" in their name.</span>
     </div>
     <div class="style-card">
       <svg class="style-icon"><use href="#i-bowl-small"/></svg>
       <span class="style-name">Busan-style</span>
-      <span class="style-note">Cloudy, bone-simmered broth, cooked longer and harder. The version most visitors actually get served.</span>
+      <span class="style-note">Cloudy, bone-simmered broth, cooked longer and harder — historically Busan's own take, and still the version most visitors get served.</span>
     </div>
     <div class="style-card">
       <svg class="style-icon"><use href="#i-bowl-small"/></svg>
       <span class="style-name">Daegu-style</span>
-      <span class="style-note">Built around organ meat as much as the broth — a rougher, more mineral bowl.</span>
+      <span class="style-note">Historically built around organ meat as much as the broth — a rougher, more mineral bowl.</span>
     </div>
   </div>
 </section>
@@ -216,8 +227,8 @@
   <div class="stat-card">
     <svg class="stat-icon"><use href="#i-won"/></svg>
     <div>
-      <span class="stat-num">₩9,000+</span>
-      <span class="stat-label">is the going rate for a bowl in Busan now, up from around ₩7,000 just a few years ago. Same price at two shops can still mean two very different bowls — the broth is the tell, not the tag.</span>
+      <span class="stat-num">₩8,000–12,000</span>
+      <span class="stat-label">is the going rate for a bowl in Busan now, prices having climbed with the broader cost-of-living rise of recent years. Same price at two shops can still mean two very different bowls — the broth is the tell, not the tag.</span>
     </div>
   </div>
 </section>

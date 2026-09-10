@@ -54,14 +54,14 @@
   a { color: inherit; }
   .mono { font-family: "Space Mono", ui-monospace, "SF Mono", monospace; }
 
-  header.site { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 26px 28px; max-width: 820px; margin: 0 auto; }
-  .logo { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 1.2rem; text-decoration: none; }
+  header.site { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 26px 28px; max-width: 820px; margin: 0 auto; flex-wrap: wrap; row-gap: 12px; }
+  .logo { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 1.2rem; text-decoration: none; white-space: nowrap; }
   .logo span { color: var(--coral); }
-  .back-link { font-family: "Space Mono", monospace; font-size: 0.8rem; letter-spacing: 0.06em; text-decoration: none; color: var(--ink-soft); display: inline-flex; align-items: center; gap: 6px; }
+  .back-link { font-family: "Space Mono", monospace; font-size: 0.8rem; letter-spacing: 0.06em; text-decoration: none; color: var(--ink-soft); display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; }
   .back-link:hover { color: var(--ink); }
 
-  .header-right { display: flex; align-items: center; gap: 20px; }
-  .lang-switch { display: flex; align-items: center; gap: 6px; font-family: "Space Mono", monospace; font-size: 0.76rem; letter-spacing: 0.03em; }
+  .header-right { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; row-gap: 10px; justify-content: flex-end; }
+  .lang-switch { display: flex; align-items: center; gap: 6px; font-family: "Space Mono", monospace; font-size: 0.76rem; letter-spacing: 0.03em; white-space: nowrap; }
   .lang-switch a, .lang-switch span.current { text-decoration: none; padding: 3px 8px; border-radius: 6px; }
   .lang-switch a { color: var(--ink-soft); }
   .lang-switch a:hover { color: var(--ink); }
