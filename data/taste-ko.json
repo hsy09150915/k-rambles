@@ -1,0 +1,35 @@
+[
+  {
+    "title": "밀면, 냉면과는 다른 이야기",
+    "url": "2026-09-06-milmyeon-guide.html",
+    "thumb": "assets/thumbs/taste/milmyeon-guide.jpg",
+    "label": "음식 이야기 · 공개중",
+    "alt": "얼음 육수에 삶은 계란과 편육을 올린 부산 밀면 한 그릇",
+    "badge": null,
+    "like_id": "taste/2026-09-06-milmyeon-guide.html",
+    "date": "2026-09-06",
+    "kw": "밀면 냉면 차이 국수 부산 음식 로컬맛집 위로음식"
+  },
+  {
+    "title": "전쟁이 남긴 국밥 한 그릇",
+    "url": "taste-dwaeji-gukbap.html",
+    "thumb": "assets/thumbs/taste/taste-dwaeji-gukbap.jpg",
+    "label": "음식 이야기 · 공개중",
+    "alt": "돼지국밥과 밥, 김치, 반찬이 놓인 상차림",
+    "badge": null,
+    "like_id": "taste/taste-dwaeji-gukbap.html",
+    "date": null,
+    "kw": "돼지국밥 국밥 부산 음식 로컬맛집 위로음식"
+  },
+  {
+    "title": "자갈치시장에서 회 제대로 먹는 법",
+    "url": "2026-09-04-jagalchi-hoe-guide.html",
+    "thumb": "assets/thumbs/taste/jagalchi-hoe-guide.jpg",
+    "label": "음식 이야기 · 공개중",
+    "alt": "자갈치시장 좌판에 놓인 활어와 해산물",
+    "badge": null,
+    "like_id": "taste/2026-09-04-jagalchi-hoe-guide.html",
+    "date": "2026-09-04",
+    "kw": "자갈치시장 회 활어 해산물 중구 수산시장 부산 음식"
+  }
+]

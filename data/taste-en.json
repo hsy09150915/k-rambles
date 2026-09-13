@@ -1,0 +1,35 @@
+[
+  {
+    "title": "Milmyeon: a different story from naengmyeon",
+    "url": "2026-09-06-milmyeon-guide.html",
+    "thumb": "assets/thumbs/taste/milmyeon-guide.jpg",
+    "label": "Food story · live",
+    "alt": "A bowl of Busan milmyeon in icy broth, topped with boiled egg and sliced meat",
+    "badge": null,
+    "like_id": "taste/2026-09-06-milmyeon-guide.html",
+    "date": "2026-09-06",
+    "kw": "busan milmyeon naengmyeon cold noodles noodles food restaurant local food comfort food"
+  },
+  {
+    "title": "돼지국밥: the soup a war left behind",
+    "url": "taste-dwaeji-gukbap.html",
+    "thumb": "assets/thumbs/taste/taste-dwaeji-gukbap.jpg",
+    "label": "Food story · live",
+    "alt": "A bowl of dwaeji gukbap pork soup with rice, kimchi and side dishes",
+    "badge": null,
+    "like_id": "taste/taste-dwaeji-gukbap.html",
+    "date": null,
+    "kw": "dwaeji gukbap pork soup food busan local food comfort food restaurant"
+  },
+  {
+    "title": "How to actually eat hoe at Jagalchi Market",
+    "url": "2026-09-04-jagalchi-hoe-guide.html",
+    "thumb": "assets/thumbs/taste/jagalchi-hoe-guide.jpg",
+    "label": "Food story · live",
+    "alt": "Live fish and seafood on display at a Jagalchi Market stall",
+    "badge": null,
+    "like_id": "taste/2026-09-04-jagalchi-hoe-guide.html",
+    "date": "2026-09-04",
+    "kw": "busan jagalchi market raw fish hoe seafood jung-gu fish market seafood market food restaurant"
+  }
+]

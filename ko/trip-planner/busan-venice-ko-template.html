@@ -1,0 +1,318 @@
+<title>부네치아, 사진 찍기 전에</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Work+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap');
+
+  :root {
+    --paper: #cad7e2;
+    --paper-raised: #f6f9fb;
+    --ink: #17232f;
+    --ink-soft: #4c5c6b;
+    --coral: #d9532a;
+    --coral-ink: #9c3b1c;
+    --navy: #1b2a4a;
+    --marigold: #c8891f;
+    --marigold-ink: #8a5c10;
+    --line: rgba(23, 35, 47, 0.16);
+    --line-strong: rgba(23, 35, 47, 0.3);
+    --card-shadow: 0 18px 34px -20px rgba(15, 24, 33, 0.4);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #10161d; --paper-raised: #1c2733; --ink: #eaf0f5; --ink-soft: #aebccb;
+      --coral: #ef7448; --coral-ink: #ffb497; --navy: #9fb4e0; --marigold: #e8b24b; --marigold-ink: #ffcf7d;
+      --line: rgba(234,240,245,0.16); --line-strong: rgba(234,240,245,0.3);
+      --card-shadow: 0 18px 34px -18px rgba(0,0,0,0.65);
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #10161d; --paper-raised: #1c2733; --ink: #eaf0f5; --ink-soft: #aebccb;
+    --coral: #ef7448; --coral-ink: #ffb497; --navy: #9fb4e0; --marigold: #e8b24b; --marigold-ink: #ffcf7d;
+    --line: rgba(234,240,245,0.16); --line-strong: rgba(234,240,245,0.3);
+    --card-shadow: 0 18px 34px -18px rgba(0,0,0,0.65);
+  }
+
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: "Work Sans", ui-sans-serif, system-ui, sans-serif; font-size: 17px; line-height: 1.6; -webkit-font-smoothing: antialiased; word-break: keep-all; }
+  a { color: inherit; }
+  .mono { font-family: "Space Mono", ui-monospace, "SF Mono", monospace; }
+
+  header.site { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 26px 28px; max-width: 860px; margin: 0 auto; }
+  .logo { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 1.2rem; text-decoration: none; }
+  .logo span { color: var(--coral); }
+  .header-right { display: flex; align-items: center; gap: 20px; }
+  .back-link { font-family: "Space Mono", monospace; font-size: 0.8rem; letter-spacing: 0.06em; text-decoration: none; color: var(--ink-soft); display: inline-flex; align-items: center; gap: 6px; }
+  .back-link:hover { color: var(--ink); }
+  .lang-switch { display: flex; align-items: center; gap: 6px; font-family: "Space Mono", monospace; font-size: 0.76rem; letter-spacing: 0.03em; }
+  .lang-switch a, .lang-switch span.current { text-decoration: none; padding: 3px 8px; border-radius: 6px; }
+  .lang-switch a { color: var(--ink-soft); }
+  .lang-switch a:hover { color: var(--ink); }
+  .lang-switch span.current { color: var(--ink); font-weight: 700; border: 1px solid var(--line); }
+
+  .art-hero { padding: 10px 28px 8px; max-width: 860px; margin: 0 auto; }
+  .stamp { display: inline-flex; align-items: center; gap: 9px; font-family: "Space Mono", monospace; font-size: 0.76rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink); border: 1.5px dashed var(--ink); border-radius: 999px; padding: 6px 14px 6px 11px; transform: rotate(-1.5deg); }
+  .stamp::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--ink); display: inline-block; }
+
+  h1.art-title { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: clamp(1.9rem, 4.4vw, 2.6rem); line-height: 1.25; letter-spacing: -0.01em; margin: 20px 0 14px; text-wrap: balance; }
+  p.dek { font-size: 1.08rem; color: var(--ink-soft); max-width: 58ch; margin: 0; }
+
+  .updated-badge { display: inline-flex; align-items: center; gap: 7px; font-size: 0.92rem; color: var(--ink-soft); margin: 16px 0 0; }
+  .updated-icon { width: 17px; height: 17px; stroke: var(--ink); fill: none; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+
+  .hero-photo-wrap { max-width: 860px; margin: 20px auto 0; padding: 0 28px; }
+  .hero-photo { display: block; width: 100%; aspect-ratio: 16/10; object-fit: cover; border-radius: 16px; box-shadow: var(--card-shadow); }
+  p.photo-caption { max-width: 66ch; font-size: 0.84rem; color: var(--ink-soft); margin: 10px auto 0; line-height: 1.5; }
+  p.photo-caption strong { color: var(--ink); }
+
+  section.block { max-width: 860px; margin: 0 auto; padding: 26px 28px 10px; }
+  section.block:last-of-type { padding-bottom: 40px; }
+
+  .block-head { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+  .block-icon { width: 22px; height: 22px; stroke: var(--ink); fill: none; stroke-width: 1.7; flex-shrink: 0; }
+  h2.block-title { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 1.3rem; margin: 0; }
+
+  p.body-text { max-width: 66ch; margin: 0 0 14px; }
+  p.body-text:last-child { margin-bottom: 0; }
+
+  .callout { background: var(--paper-raised); border: 1px solid var(--line); border-left: 3px solid var(--marigold); border-radius: 12px; padding: 20px 22px; margin: 16px 0 0; box-shadow: var(--card-shadow); }
+  .callout-head { display: flex; align-items: center; gap: 8px; font-weight: 700; margin-bottom: 10px; }
+  .callout-head svg { width: 18px; height: 18px; stroke: var(--marigold-ink); fill: none; stroke-width: 1.7; }
+  .callout p { font-size: 0.95rem; color: var(--ink-soft); margin: 0 0 10px; line-height: 1.6; }
+  .callout p:last-child { margin-bottom: 0; }
+  .callout strong { color: var(--ink); }
+
+  .pull-quote { border-left: 3px solid var(--coral); margin: 18px 0; padding: 4px 0 4px 20px; }
+  .pull-quote p { font-family: "Bricolage Grotesque", sans-serif; font-weight: 600; font-size: 1.15rem; line-height: 1.5; margin: 0; color: var(--ink); text-wrap: balance; }
+  .pull-quote cite { display: block; font-family: "Space Mono", monospace; font-style: normal; font-size: 0.76rem; color: var(--ink-soft); margin-top: 8px; }
+
+  .inset-photo-wrap { margin: 18px 0; }
+  .inset-photo { display: block; width: 100%; max-width: 420px; aspect-ratio: 4/3.4; object-fit: cover; border-radius: 12px; box-shadow: var(--card-shadow); }
+
+  .lens-grid { display: flex; flex-direction: column; gap: 14px; margin: 16px 0 0; }
+  .lens-card { background: var(--paper-raised); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; }
+  .lens-tag { display: block; font-family: "Space Mono", monospace; font-size: 0.68rem; letter-spacing: 0.09em; text-transform: uppercase; color: var(--marigold-ink); margin-bottom: 8px; }
+  .lens-card p { font-size: 0.92rem; color: var(--ink-soft); margin: 0; line-height: 1.6; }
+  .lens-card p strong { color: var(--ink); }
+
+  .route-list { display: flex; flex-direction: column; gap: 18px; margin-top: 6px; }
+  .route-card { background: var(--paper-raised); border: 1px solid var(--line); border-radius: 16px; box-shadow: var(--card-shadow); overflow: hidden; }
+  .card-body { padding: 22px 24px; }
+  .card-photo { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+  .card-head { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+  .route-icon { width: 24px; height: 24px; stroke: var(--ink); fill: none; stroke-width: 1.7; flex-shrink: 0; }
+  .route-name { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 1.2rem; margin: 0; }
+
+  .table-wrap { overflow-x: auto; }
+  table.method-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+  .method-table th { text-align: left; font-family: "Space Mono", monospace; font-size: 0.64rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); font-weight: 600; padding: 0 10px 8px 0; border-bottom: 1px solid var(--line-strong); white-space: nowrap; }
+  .method-table td { padding: 12px 10px 12px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+  .method-table tr:last-child td { border-bottom: none; }
+  .method-table td.method { font-weight: 600; white-space: nowrap; }
+  .method-table td.num { font-variant-numeric: tabular-nums; white-space: nowrap; color: var(--ink); }
+  .method-table td.route-desc { color: var(--ink-soft); font-size: 0.88rem; line-height: 1.5; min-width: 220px; }
+  .method-table td.route-desc strong { color: var(--ink); font-weight: 600; }
+
+  p.route-note { font-size: 0.92rem; color: var(--ink-soft); margin: 14px 0 0; line-height: 1.55; }
+  p.route-note strong { color: var(--ink); }
+  p.cite-note { font-size: 0.88rem; color: var(--ink-soft); margin: 10px 0 0; }
+
+  ul.food-list { max-width: 66ch; margin: 0 0 14px; padding-left: 20px; }
+  ul.food-list li { margin-bottom: 8px; font-size: 0.96rem; }
+  ul.food-list li:last-child { margin-bottom: 0; }
+  ul.food-list strong { color: var(--ink); }
+
+  .verdict { margin-top: 26px; padding: 20px 22px; border: 1.5px dashed var(--line-strong); border-radius: 14px; }
+  .verdict-title { font-family: "Space Mono", monospace; font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--marigold-ink); display: block; margin-bottom: 10px; }
+  .verdict p { margin: 6px 0; font-size: 0.94rem; }
+  .verdict strong { color: var(--ink); }
+
+  .next-board { max-width: 860px; margin: 40px auto 70px; padding: 0 28px; }
+  .next-board-card { background: var(--navy); color: #eef2fb; border-radius: 16px; padding: 26px 24px; display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
+  .next-board-card .mono { font-size: 0.74rem; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.75; }
+  .next-board-card p { margin: 4px 0 0; font-weight: 600; }
+  .next-board-card a { text-decoration: none; font-family: "Space Mono", monospace; font-size: 0.82rem; color: #eef2fb; border-bottom: 1px solid rgba(238,242,251,0.5); padding-bottom: 2px; }
+
+  footer.site { border-top: 1px solid var(--line); padding: 24px 28px 40px; }
+  .footer-inner { max-width: 860px; margin: 0 auto; }
+  .footer-inner .mono { font-size: 0.76rem; color: var(--ink-soft); }
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-train" viewBox="0 0 24 24"><rect x="5" y="3.5" width="14" height="14" rx="4"/><path d="M5 12.5h14M9 3.5v14M8 21l1.5-3M16 21l-1.5-3"/><circle cx="9" cy="16" r="0.6" fill="currentColor"/><circle cx="15" cy="16" r="0.6" fill="currentColor"/></symbol>
+  <symbol id="i-bus" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="12" rx="2"/><path d="M4 12h16M8 5v12M16 5v12"/><circle cx="8" cy="19.5" r="1.4"/><circle cx="16" cy="19.5" r="1.4"/></symbol>
+  <symbol id="i-taxi" viewBox="0 0 24 24"><path d="M5 16V10.5l2-4.5h10l2 4.5V16"/><path d="M4 16h16v3a1 1 0 0 1-1 1h-1.5a1 1 0 0 1-1-1v-1H7.5v1a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1Z"/><circle cx="8" cy="16" r="1.2"/><circle cx="16" cy="16" r="1.2"/><path d="M10 3.5h4"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.4 7-11.5A7 7 0 0 0 5 9.5C5 14.6 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.4"/></symbol>
+  <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 9.8h17M8 2.5v5M16 2.5v5"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></symbol>
+  <symbol id="i-anchor" viewBox="0 0 24 24"><circle cx="12" cy="5.5" r="2"/><path d="M12 7.5V20M7 13H2.5a9.5 9.5 0 0 0 9.5 9M17 13h4.5a9.5 9.5 0 0 1-9.5 9M6 13a6 6 0 0 1 12 0"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.5"/><path d="M12 2.5v2.5M12 19v2.5M4.5 4.5l1.8 1.8M17.7 17.7l1.8 1.8M2.5 12H5M19 12h2.5M4.5 19.5l1.8-1.8M17.7 6.3l1.8-1.8"/></symbol>
+  <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="i-food" viewBox="0 0 24 24"><path d="M6 2.5V11M4 2.5v5.5a2 2 0 0 0 4 0V2.5M8 2.5V11M8 11v10.5M17 2.5c-2 0-3.5 2-3.5 5s1.5 5 3.5 5v9"/></symbol>
+</svg>
+
+<header class="site">
+  <a class="logo" href="../index.html">K-<span>Rambles</span></a>
+  <div class="header-right">
+    <a class="back-link" href="../index.html">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+      보드로 돌아가기
+    </a>
+    <div class="lang-switch" aria-label="Language">
+      <a href="../../trip-planner/2026-09-03-busan-venice-jangnimpogu.html">EN</a>
+      <span class="current">한글</span>
+    </div>
+  </div>
+</header>
+
+<div class="art-hero">
+  <span class="stamp">여행 계획 · 보드 04</span>
+  <h1 class="art-title">부네치아, 사진 찍기 전에</h1>
+  <p class="dek">장림포구 무지개다리 사진은 SNS에 넘쳐난다. 어쩌다 이런 모습이 됐는지, 실제로 누가 좋아하는지, 가기 전엔 아무도 말해주지 않는 것들까지 정리했다.</p>
+  <p class="updated-badge"><svg class="updated-icon"><use href="#i-calendar"/></svg>2026년 9월 3일 마지막 확인 — 요금, 운영시간, 후기는 바뀔 수 있으니 오래된 정보는 주의해서 참고하세요.</p>
+</div>
+
+<div class="hero-photo-wrap">
+  <img class="hero-photo" src="data:image/jpeg;base64,__BRIDGE_B64__" alt="노을 무렵 장림포구 무지개다리 항공샷. 양옆으로 정박된 어선들이 보인다.">
+  <p class="photo-caption"><strong>노을 무렵의 무지개다리</strong> — U자형으로 꺾인 포구 양쪽을 잇기 위해 만든 높이 20m, 길이 89m짜리 아치형 보행교. 사진 출처: 부산관광공사 아카이브(공공누리 제1유형).</p>
+</div>
+
+<section class="block">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-pin"/></svg>
+    <h2 class="block-title">어떻게 시작됐나</h2>
+  </div>
+  <p class="body-text">장림포구는 원래 갈대습지가 있던 평범한 어촌 포구였다. 1970~80년대 도시화로 갯벌이 매립되며 규모가 크게 줄었고, 2006년에는 인근 공단 오염 때문에 "악취관리구역"으로 지정될 정도로 낙후된 곳이었다.</p>
+  <p class="body-text">반전은 2012년 8월부터 시작됐다. 부산시가 92억 원을 들여 이 포구를 명소로 재생하는 사업을 시작했고, 베네치아 근처 부라노섬(알록달록한 집들로 유명한 섬)의 색채 콘셉트를 그대로 가져와 건물을 칠했다. "부(산) + 베네치아"를 합쳐 "부네치아"라는 별명이 붙었다.</p>
+  <p class="body-text">지금 포구를 가로지르는 무지개다리도 이 사업의 결과물이다. 높이 20m, 길이 89m짜리 아치형 보행교로, 밤에는 조명이 켜져 물 위에 반사된다. 사실 이 다리는 이 재생사업에서 실질적인 문제를 해결한 유일한 시설이기도 하다 — 포구가 U자형으로 꺾여 있어서, 다리가 없으면 반대편으로 가는 데만 600~700m를 돌아가야 한다.</p>
+</section>
+
+<section class="block">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-anchor"/></svg>
+    <h2 class="block-title">지금도 살아있는 포구</h2>
+  </div>
+  <p class="body-text">화려한 색깔과 달리, 이곳은 세트장이 아니라 지금도 실제로 배가 나가는 항구다. 약 150명의 어촌계원이 등록돼 있는데, 다만 대부분 70대라 인원이 점점 줄고 있어 사하구에서는 젊은 어민을 확보하기 위해 새 어촌계(신평마을) 조직을 추진 중이다.</p>
+  <p class="body-text">관광지로 정비되면서 실제로 조업에도 도움이 됐다는 게 어민들의 이야기다 — 어구 창고가 생겨서 장비를 밖에 방치하지 않아도 되고, 물양장에서 도로로 차가 오갈 수 있는 길이 생겨 짐을 손으로 나르지 않아도 된다.</p>
+  <div class="inset-photo-wrap">
+    <img class="inset-photo" src="data:image/jpeg;base64,__HARBOR_B64__" alt="골목 눈높이에서 본 장림포구. 파란 건물과 정박된 어선들이 노을빛에 물들어 있다.">
+    <p class="photo-caption">사진 출처: 부산관광공사 아카이브(공공누리 제1유형).</p>
+  </div>
+</section>
+
+<section class="block">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-sun"/></svg>
+    <h2 class="block-title">노을 명소, 확실히 맞다</h2>
+  </div>
+  <p class="body-text">포구는 서쪽을 향해 있고, 이를 위한 전용 시설도 있다 — 포구 서쪽 끝에 자리한 <strong>부네치아 선셋전망대</strong>다. 2층엔 통유리창으로 바다를 마주보는 카페가 있어서, 해질 무렵이면 "하늘과 바다가 수평선 너머로 같은 황금빛으로 물든다"는 표현이 나올 정도다. 사진 찍기 좋은 각도는 이 전망대와 무지개다리 위, 두 곳으로 갈린다.</p>
+</section>
+
+<section class="block">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-eye"/></svg>
+    <h2 class="block-title">실제로 가보면 어떨까 — 근데 누구에게 묻느냐에 따라 다르다</h2>
+  </div>
+  <div class="pull-quote">
+    <p>"사진을 찍을 곳은 있지만 오래 머물 곳은 아니다."</p>
+    <cite>— 국민일보 현장 취재 인터뷰, 2026년 2월</cite>
+  </div>
+  <p class="body-text">해당 기사 기자가 방문한 주말 점심시간에도 관광객은 드물었고, 포구를 따라 늘어선 상가 중 상당수는 문을 닫았거나 창고로 쓰이고 있었다. 인근 상인은 "재방문이 거의 없다"고 전했다. 다른 2026년 기사의 독자 댓글에서도 반응은 갈린다 — "가봐야겠네" 같은 기대 섞인 반응이 있는가 하면, "정말 하나도 볼거없습니다"처럼 단호한 반응도 있다.</p>
+  <div class="inset-photo-wrap">
+    <img class="inset-photo" src="data:image/jpeg;base64,__DETAIL_B64__" alt="장림포구 바로 뒤편의 태양광 패널과 바이오가스 발전시설을 위에서 찍은 사진. 인접한 산업단지의 일부다.">
+    <p class="photo-caption"><strong>위 히어로 사진에서 다리 바로 너머를 보면</strong> 이미 보인다 — 태양광 패널과 바이오가스 발전시설이 포구 바로 뒤에 자리하고 있다. 장림포구는 탁 트인 해안이 아니라 신평·장림일반산업단지와 맞닿아 있다.</p>
+  </div>
+  <p class="body-text">한국인 관광객 사이에서 유독 "볼 게 없다"는 평가가 자주 나오는 데는 이런 이유가 있어 보인다 — 실제로 이 일대는 산업단지에 둘러싸여 있고, 알록달록하게 벽화를 입힌 마을 자체도 이미 감천문화마을 같은 곳에서 본 한국인 관광객에겐 새로운 그림이 아니다. 익숙한 풍경에 공단이라는 배경까지 더해지면, 감흥이 덜할 만하다.</p>
+  <p class="body-text">외국인 방문객이 항상 같은 시선은 아니다. 2020년에 방문한 한 일본인 여행 블로거는 알록달록한 건물을 감천문화마을("부산의 마추픽추"), 흰여울문화마을("부산의 산토리니")에 견주며 긍정적으로 평가했지만, 결론은 비슷했다 — "부산 5~6번째 방문자라면 가볼 만하지만, 처음 온 관광객에겐 불필요하다." 반면 서구권 여행자들의 후기는 결이 확연히 다르다. 트립어드바이저(4.4/5)와 구글 리뷰 집계(3.6/5)에서는 "고요함과 생동감의 독특한 조화"라는 평가, 암스테르담 건축에 비유하는 평가가 많고, "부산에 3일 이상 머문다면 가볼 만하다" 정도의 여유로운 추천 톤이다.</p>
+  <div class="lens-grid">
+    <div class="lens-card"><span class="lens-tag">한국인 방문객</span><p>대체로 시큰둥하다. "사진 스팟, 딱 그 이상은 아니다"는 평가가 흔하고, 재방문은 드물다.</p></div>
+    <div class="lens-card"><span class="lens-tag">일본인 방문객</span><p>좀 더 우호적이지만 결론은 비슷하다 — 부산의 주요 명소를 이미 돌아본 뒤라면 재미있는 코스, 첫 방문이라면 굳이 갈 필요는 없다는 평.</p></div>
+    <div class="lens-card"><span class="lens-tag">서구권 방문객</span><p>꾸준히 더 후하다 — 붐비지 않고 사진 찍기 좋다는 점에서 좋은 평가를 받는다.</p></div>
+  </div>
+  <p class="body-text">정리하면, 문화적으로 가까운 나라의 방문객에게는 새로울 게 없는 익숙한 풍경으로 읽히고, 더 먼 곳에서 온 방문객에게는 같은 장소가 하나의 발견으로 읽히는 셈이다. 자신이 어느 쪽에 가까운지 미리 알아두면 기대치를 잡는 데 도움이 될 것이다.</p>
+</section>
+
+<section class="block">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-food"/></svg>
+    <h2 class="block-title">먹을 것, 간단히</h2>
+  </div>
+  <p class="body-text">포구 안에 아주 많진 않지만, 실제로 확인되는 곳은 있다:</p>
+  <ul class="food-list">
+    <li><strong>전망대 1층</strong> — 부산어묵 전략사업단(어묵), 청산에 수산물 판매점. 10:00~17:30, 월요일 휴무.</li>
+    <li><strong>전망대 2층</strong> — 커피열매 카페. 09:00~21:00, 연중무휴.</li>
+    <li><strong>맛술촌</strong> — 공방·체험 위주의 작은 점포 13곳. 먹거리는 그중 2곳 정도.</li>
+  </ul>
+  <p class="body-text">제대로 된 식당가를 찾는다면 다대포해수욕장 쪽이 낫다 — 부네치아와 묶어서 다니기 좋을 만큼 가깝고, 먹거리 선택지도 훨씬 넓다.</p>
+</section>
+
+<section class="block">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-pin"/></svg>
+    <h2 class="block-title">가는 법</h2>
+  </div>
+
+  <div class="route-list">
+    <div class="route-card">
+      <div class="card-body">
+        <div class="card-head"><svg class="route-icon"><use href="#i-pin"/></svg><h3 class="route-name">김해공항 국제선에서 (환승 중이라면)</h3></div>
+        <div class="table-wrap">
+          <table class="method-table">
+            <thead><tr><th>방법</th><th>경로</th><th>시간</th><th>요금</th></tr></thead>
+            <tbody>
+              <tr><td class="method"><svg width="16" height="16" style="vertical-align:-3px;margin-right:4px"><use href="#i-taxi"/></svg>택시</td><td class="route-desc">18km, 문 앞까지</td><td class="num">약 35분</td><td class="num">약 ₩18,000</td></tr>
+              <tr><td class="method"><svg width="16" height="16" style="vertical-align:-3px;margin-right:4px"><use href="#i-bus"/></svg>대중교통</td><td class="route-desc">국제선청사 2번 게이트 앞 강서구13 마을버스 → 하단역 하차 후 8번 출구에서 우회전 → 하단역 정류장에서 <strong>11번 버스</strong> 환승 → 장림포구입구 정류장 하차 → <strong>사하구3-1 마을버스</strong> 환승 → 장림항(부네치아) 하차</td><td class="num">약 1시간 10분</td><td class="num">약 ₩1,600</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="route-note"><strong>환승 중이라면 택시 추천.</strong> 대중교통은 환승이 많아서 시간을 아끼는 만큼의 가치가 없다.</p>
+        <p class="cite-note">네이버 지도 검색으로 확인, 2026년 9월 3일 기준.</p>
+      </div>
+    </div>
+
+    <div class="route-card">
+      <div class="card-body">
+        <div class="card-head"><svg class="route-icon"><use href="#i-pin"/></svg><h3 class="route-name">부산역에서 (시내 관광 중이라면)</h3></div>
+        <div class="table-wrap">
+          <table class="method-table">
+            <thead><tr><th>방법</th><th>경로</th><th>시간</th><th>요금</th></tr></thead>
+            <tbody>
+              <tr><td class="method"><svg width="16" height="16" style="vertical-align:-3px;margin-right:4px"><use href="#i-bus"/></svg>대중교통</td><td class="route-desc">부산역 앞 정류장에서 영주동방면 <strong>1001번 급행버스</strong> 승차 → 괴정초등학교.대티역 정류장 하차 → 우측 약 50m 앞 산정현교회 앞 정류장에서 <strong>사하5번 마을버스</strong> 환승 → 장림항 하차 후 도보 약 5분</td><td class="num">약 1시간</td><td class="num">₩2,100</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="route-note">버스 한 번, 환승 한 번 — 빠르진 않아도 단순하다. 괴정초등학교.대티역 정류장은 같은 이름의 정류장이 근처에 두 곳 있으니, 산정현교회를 표지로 삼으면 헷갈리지 않는다.</p>
+        <p class="cite-note">네이버 지도 검색으로 확인, 2026년 9월 3일 기준.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="verdict">
+    <span class="verdict-title">한 줄 요약</span>
+    <p><strong>현지에서는 30분~1시간이면 충분하다</strong> — 다리와 선셋전망대에서 사진 찍기엔 넉넉하고, 그 이상은 크게 기대하지 않는 게 좋다.</p>
+    <p><strong>다리와 노을을 보러 가는 것</strong>이지, 여유롭게 오래 둘러볼 곳은 아니다.</p>
+    <p><strong>한국이 처음이거나 이런 풍경이 낯설다면?</strong> 한국인 평균 후기보다 더 마음에 들 수도 있다 — 직접 가서 본인 눈으로 판단해볼 가치는 있다.</p>
+  </div>
+</section>
+
+<section class="block" style="padding-top:0;">
+  <p class="cite-note" style="max-width:66ch;">사진 출처: 부네치아(장림포구) 사진 3장 모두 — 부산관광공사 아카이브(공공누리 제1유형), 부산광역시.</p>
+</section>
+
+<section class="next-board">
+  <div class="next-board-card">
+    <div>
+      <p class="mono">다음 핀은</p>
+      <p>아미산전망대 — 같은 방식으로 정직하게 다뤄볼 예정입니다.</p>
+    </div>
+    <a href="../index.html#trip-planner">여행 계획 보드 보기 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:-1px"><use href="#i-arrow-right"/></svg></a>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="footer-inner">
+    <span class="mono">K-Rambles · 여행 계획 보드</span>
+  </div>
+</footer>
+<script data-goatcounter="https://krambles.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
