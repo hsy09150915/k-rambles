@@ -73,6 +73,7 @@
   p.liked-dek { font-size: 1.08rem; color: var(--ink-soft); max-width: 60ch; margin: 0 0 8px; }
   p.liked-count { font-family: "Space Mono", monospace; font-size: 0.82rem; letter-spacing: 0.05em; text-transform: uppercase; color: var(--ink-soft); margin: 0 0 8px; }
   p.liked-note { font-size: 0.88rem; color: var(--ink-soft); max-width: 60ch; margin: 18px 0 0; padding: 14px 16px; background: var(--paper-raised); border-radius: 12px; border: 1px solid var(--line); }
+  .note-warn { color: var(--coral-ink); font-weight: 700; }
 
   .liked-grid { max-width: 1040px; margin: 0 auto; padding: 10px 28px 60px; display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 20px; }
 
@@ -135,7 +136,7 @@
   <h1 class="liked-title">Liked</h1>
   <p class="liked-dek">Everything you've tapped the heart on, in one place.</p>
   <p class="liked-count">0 saved</p>
-  <p class="liked-note">Your likes are saved to this browser only — if you switch browsers or clear your browser settings, this list will disappear.</p>
+  <p class="liked-note">Your likes are saved to this browser only — <strong class="note-warn">if you switch browsers or clear your browser settings, this list will disappear.</strong></p>
 </div>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
