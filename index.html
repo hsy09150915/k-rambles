@@ -145,6 +145,21 @@
     nav.site-nav { display: none; }
   }
 
+  .header-util { display: flex; align-items: center; gap: 8px; }
+  .util-link {
+    display: inline-flex; align-items: center; gap: 5px; text-decoration: none;
+    color: var(--ink-soft); font-size: 0.85rem; padding: 7px 12px;
+    border-radius: 999px; border: 1px solid var(--line);
+    transition: border-color 0.15s ease, color 0.15s ease;
+  }
+  .util-link:hover, .util-link:focus-visible { color: var(--ink); border-color: var(--coral); }
+  .util-link:focus-visible { outline: 2px solid var(--coral); outline-offset: 2px; }
+  .util-link svg { width: 15px; height: 15px; stroke: currentColor; flex-shrink: 0; }
+  @media (max-width: 640px) {
+    .util-link { padding: 8px; border-radius: 50%; }
+    .util-link .util-label { display: none; }
+  }
+
   .lang-switch {
     display: flex;
     align-items: center;
@@ -745,10 +760,12 @@
     <a href="#getting-around">Getting Around</a>
     <a href="#food-stories">Food Stories</a>
     <a href="#long-stay">Long-Stay</a>
-    <a href="liked.html" class="nav-liked"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-2px;margin-right:3px"><use href="#i-heart"/></svg>Saved</a>
-    <a href="split-calculator.html" class="nav-liked"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-2px;margin-right:3px"><use href="#i-calculator"/></svg>Split Costs</a>
   </nav>
   <div class="header-right">
+    <div class="header-util">
+      <a href="liked.html" class="util-link" aria-label="Saved"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-heart"/></svg><span class="util-label">Saved</span></a>
+      <a href="split-calculator.html" class="util-link" aria-label="Split Costs"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-calculator"/></svg><span class="util-label">Split Costs</span></a>
+    </div>
     <div class="font-size-ctrl" role="group" aria-label="Text size"><button type="button" class="fs-step" data-action="dec" aria-label="Decrease text size">−</button><span class="fs-labels" aria-hidden="true"><span class="fs-label fs-label-sm">A</span><span class="fs-label fs-label-lg">A</span></span><button type="button" class="fs-step" data-action="inc" aria-label="Increase text size">+</button></div>
     <div class="lang-switch" aria-label="Language">
       <span class="current">EN</span>

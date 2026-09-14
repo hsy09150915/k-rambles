@@ -33,11 +33,25 @@
     });
   }
 
+  function isKo() {
+    var lang = (document.documentElement.lang || '').toLowerCase();
+    if (lang.indexOf('ko') === 0) { return true; }
+    if (lang.indexOf('en') === 0) { return false; }
+    // Some pages don't set <html lang> at all — fall back to the /ko/ path
+    // segment every Korean page lives under.
+    return /(^|\/)ko(\/|$)/.test(location.pathname);
+  }
+
   function tileHTML(item, hrefFor, thumbFor) {
     var href = hrefFor(item);
     var thumb = thumbFor(item);
     var alt = item.alt || item.title;
     var badge = item.badge ? '<span class="tile-photo-badge">' + esc(item.badge) + '</span>' : '';
+    var ko = isKo();
+    var likeLabel = ko ? '이 글 저장하기' : 'Save this piece';
+    var likeTitle = ko
+      ? '이 기기에만 저장돼요 — 다른 폰·브라우저로 바꾸면 사라져요. 인기 있는 글을 파악하는 데도 도움돼요.'
+      : 'Saved on this device only — switch phones or browsers and it’s gone. Also helps us see what’s popular.';
     return (
       '<div class="tile tile--photo reveal">' +
         '<a class="tile-photo-link" href="' + esc(href) + '">' +
@@ -50,9 +64,42 @@
             '<h3 class="tile-photo-title">' + esc(item.title) + '</h3>' +
           '</div>' +
         '</a>' +
-        '<button class="tile-like-btn" data-like-id="' + esc(item.like_id) + '" data-goatcounter-click="like:' + esc(item.like_id) + '" aria-label="Like this piece" aria-pressed="false" title="Saved on this device — also helps us see what’s useful"><svg><use href="#i-heart"/></svg></button>' +
+        '<button class="tile-like-btn" data-like-id="' + esc(item.like_id) + '" data-goatcounter-click="like:' + esc(item.like_id) + '" aria-label="' + esc(likeLabel) + '" aria-pressed="false" title="' + esc(likeTitle) + '"><svg><use href="#i-heart"/></svg></button>' +
       '</div>'
     );
+  }
+
+  // One-time (per browser) disclosure toast — fires on the first save anywhere on
+  // the site, on tap or click, so it reaches mobile visitors who can't hover.
+  var TOAST_SEEN_KEY = 'krambles-like-notice-seen';
+  function ensureToastStyle() {
+    if (document.getElementById('kr-like-toast-style')) { return; }
+    var style = document.createElement('style');
+    style.id = 'kr-like-toast-style';
+    style.textContent = '.kr-like-toast{position:fixed;left:50%;bottom:22px;transform:translate(-50%,12px);' +
+      'background:rgba(31,36,32,.94);color:#fdf8f2;font-family:"Work Sans",ui-sans-serif,system-ui,sans-serif;' +
+      'font-size:.86rem;line-height:1.45;padding:12px 18px;border-radius:12px;max-width:min(88vw,360px);' +
+      'text-align:center;box-shadow:0 12px 30px -10px rgba(0,0,0,.5);opacity:0;' +
+      'transition:opacity .25s ease,transform .25s ease;z-index:9999;pointer-events:none}' +
+      '.kr-like-toast.is-visible{opacity:1;transform:translate(-50%,0)}';
+    document.head.appendChild(style);
+  }
+  function showLikeToast() {
+    try { if (localStorage.getItem(TOAST_SEEN_KEY)) { return; } } catch (e) {}
+    ensureToastStyle();
+    var msg = isKo()
+      ? '저장됨 — 이 기기에만 보관돼요. 다른 폰이나 브라우저로 바꾸면 안 보여요.'
+      : 'Saved — stored on this device only. Switch phones or browsers and it won’t be there.';
+    var toast = document.createElement('div');
+    toast.className = 'kr-like-toast';
+    toast.textContent = msg;
+    document.body.appendChild(toast);
+    requestAnimationFrame(function () { toast.classList.add('is-visible'); });
+    setTimeout(function () {
+      toast.classList.remove('is-visible');
+      setTimeout(function () { toast.remove(); }, 300);
+    }, 4200);
+    try { localStorage.setItem(TOAST_SEEN_KEY, '1'); } catch (e) {}
   }
 
   // Event-delegated so tiles injected after fetch still get like behavior.
@@ -75,8 +122,12 @@
       var id = btn.getAttribute('data-like-id');
       var current = getLikes();
       var idx = current.indexOf(id);
-      if (idx === -1) { current.push(id); btn.classList.add('is-liked'); btn.setAttribute('aria-pressed', 'true'); }
-      else { current.splice(idx, 1); btn.classList.remove('is-liked'); btn.setAttribute('aria-pressed', 'false'); }
+      if (idx === -1) {
+        current.push(id); btn.classList.add('is-liked'); btn.setAttribute('aria-pressed', 'true');
+        showLikeToast();
+      } else {
+        current.splice(idx, 1); btn.classList.remove('is-liked'); btn.setAttribute('aria-pressed', 'false');
+      }
       setLikes(current);
     });
   }
