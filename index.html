@@ -115,6 +115,11 @@
     font-weight: 700;
     font-size: 1.35rem;
     letter-spacing: -0.01em;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 640px) {
+    header.site { flex-wrap: wrap; row-gap: 10px; padding: 18px 20px; gap: 12px; }
   }
 
   .logo span { color: var(--coral); }
@@ -147,16 +152,16 @@
 
   .header-util { display: flex; align-items: center; gap: 8px; }
   .util-link {
-    display: inline-flex; align-items: center; gap: 5px; text-decoration: none;
-    color: var(--ink-soft); font-size: 0.85rem; padding: 7px 12px;
-    border-radius: 999px; border: 1px solid var(--line);
-    transition: border-color 0.15s ease, color 0.15s ease;
+    display: inline-flex; align-items: center; gap: 6px; text-decoration: none;
+    color: var(--coral-ink); font-size: 0.94rem; font-weight: 600; padding: 8px 15px;
+    border-radius: 999px; border: 1.5px solid var(--coral); white-space: nowrap;
+    transition: background-color 0.15s ease, color 0.15s ease;
   }
-  .util-link:hover, .util-link:focus-visible { color: var(--ink); border-color: var(--coral); }
+  .util-link:hover, .util-link:focus-visible { color: #fff5ee; background: var(--coral); }
   .util-link:focus-visible { outline: 2px solid var(--coral); outline-offset: 2px; }
-  .util-link svg { width: 15px; height: 15px; stroke: currentColor; flex-shrink: 0; }
+  .util-link svg { width: 18px; height: 18px; stroke: currentColor; flex-shrink: 0; }
   @media (max-width: 640px) {
-    .util-link { padding: 8px; border-radius: 50%; }
+    .util-link { padding: 9px; border-radius: 50%; }
     .util-link .util-label { display: none; }
   }
 
@@ -749,6 +754,17 @@
   }
 
   .footer-links a:hover { color: var(--coral-ink); }
+
+  /* kr-header-narrow-fix-2 */
+  @media (max-width: 340px) {
+    .header-right { gap: 8px; }
+    .util-link { padding: 7px; }
+    .util-link svg { width: 15px; height: 15px; }
+    .font-size-ctrl { gap: 4px; padding: 2px 5px; }
+    .fs-step { width: 24px; height: 24px; font-size: 1.1rem; }
+    .lang-switch { gap: 3px; font-size: 0.7rem; }
+    .lang-switch a, .lang-switch span.current { padding: 2px 6px; }
+  }
 </style>
 </head>
 <body>
@@ -1024,7 +1040,7 @@
     <div class="footer-links">
       <a href="#">About</a>
       <a href="#">Privacy</a>
-      <a href="#">Contact</a>
+      <a href="mailto:doma11@naver.com">Contact</a>
     </div>
   </div>
 </footer>
