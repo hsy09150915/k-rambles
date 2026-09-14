@@ -50,7 +50,7 @@
             '<h3 class="tile-photo-title">' + esc(item.title) + '</h3>' +
           '</div>' +
         '</a>' +
-        '<button class="tile-like-btn" data-like-id="' + esc(item.like_id) + '" aria-label="Like this piece" aria-pressed="false"><svg><use href="#i-heart"/></svg></button>' +
+        '<button class="tile-like-btn" data-like-id="' + esc(item.like_id) + '" data-goatcounter-click="like:' + esc(item.like_id) + '" aria-label="Like this piece" aria-pressed="false" title="Saved on this device — also helps us see what’s useful"><svg><use href="#i-heart"/></svg></button>' +
       '</div>'
     );
   }
@@ -221,6 +221,64 @@
     }).catch(function (err) { console.error('[krambles] hub render failed:', err); });
   }
 
+  /**
+   * Render a "saved / liked" page: pulls every board's JSON for the current
+   * language, keeps only items whose like_id is in localStorage, and shows
+   * them as tiles (newest-first). No server involved — purely a client-side
+   * filter over data already being fetched elsewhere on the site.
+   * config: { assetBase, boards: [{key, jsonUrl}], gridSelector,
+   *           emptySelector, countSelector, countTemplate }
+   */
+  function renderLiked(config) {
+    var grid = document.querySelector(config.gridSelector || '.liked-grid');
+    if (!grid) { return; }
+    var LIKE_KEY = 'krambles-likes';
+    var likedIds;
+    try { likedIds = JSON.parse(localStorage.getItem(LIKE_KEY) || '[]'); } catch (e) { likedIds = []; }
+
+    function showEmpty(n) {
+      grid.innerHTML = '';
+      var empty = config.emptySelector && document.querySelector(config.emptySelector);
+      if (empty) { empty.hidden = false; }
+      if (config.countSelector && config.countTemplate) {
+        var countEl = document.querySelector(config.countSelector);
+        if (countEl) { countEl.textContent = fillCountTemplate(config.countTemplate, n || 0); }
+      }
+    }
+
+    if (!likedIds.length) { showEmpty(0); return; }
+
+    var assetBase = config.assetBase || '';
+    Promise.all(config.boards.map(function (board) {
+      return fetchJSON(board.jsonUrl).then(function (raw) {
+        return raw.filter(function (item) { return likedIds.indexOf(item.like_id) !== -1; })
+          .map(function (item) { return { item: item, board: board }; });
+      }).catch(function () { return []; });
+    })).then(function (groups) {
+      var flat = [].concat.apply([], groups);
+      flat.sort(function (a, b) {
+        var ad = a.item.date || '0000-00-00', bd = b.item.date || '0000-00-00';
+        if (ad === bd) { return 0; }
+        return ad < bd ? 1 : -1;
+      });
+
+      if (!flat.length) { showEmpty(0); return; }
+
+      grid.innerHTML = flat.map(function (pair) {
+        return tileHTML(pair.item, function (it) { return hrefForHome(pair.board, it); }, function (it) { return assetBase + it.thumb; });
+      }).join('');
+      wireLikes(grid);
+      wireReveal(Array.prototype.slice.call(grid.querySelectorAll('.tile.reveal')));
+
+      var empty = config.emptySelector && document.querySelector(config.emptySelector);
+      if (empty) { empty.hidden = true; }
+      if (config.countSelector && config.countTemplate) {
+        var countEl = document.querySelector(config.countSelector);
+        if (countEl) { countEl.textContent = fillCountTemplate(config.countTemplate, flat.length); }
+      }
+    }).catch(function (err) { console.error('[krambles] liked render failed:', err); });
+  }
+
   function hrefForHome(board, item) {
     if (item.url.indexOf('../') === 0) { return item.url.slice(3); }
     return board.key + '/' + item.url;
@@ -307,5 +365,5 @@
     });
   }
 
-  global.KR = { renderHub: renderHub, renderHome: renderHome };
+  global.KR = { renderHub: renderHub, renderHome: renderHome, renderLiked: renderLiked };
 })(window);

@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trip Expense Splitter | K-Rambles</title>
+<meta name="description" content="Split group travel costs in Korean won without an app or account — enter what everyone paid, get the shortest list of who owes who.">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Work+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap');
+
+  :root {
+    --paper: #e9efe9; --paper-raised: #f4f7f3; --ink: #1f2420; --ink-soft: #4a5148;
+    --coral: #d9532a; --coral-ink: #9c3b1c; --navy: #1b2a4a; --navy-ink: #10182b;
+    --marigold: #c8891f; --slate: #4a6f94; --green: #2f7a4d; --green-ink: #1f5636;
+    --line: rgba(31, 36, 32, 0.18); --line-strong: rgba(31, 36, 32, 0.32);
+    --card-shadow: 0 18px 34px -20px rgba(20, 24, 20, 0.45);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #161d18; --paper-raised: #1d2620; --ink: #eef2ec; --ink-soft: #b8c2b8;
+      --coral: #ef7448; --coral-ink: #ffb497; --navy: #9fb4e0; --navy-ink: #dbe4f5;
+      --marigold: #e8b24b; --slate: #8fb3d9; --green: #6fcb92; --green-ink: #bdeecb;
+      --line: rgba(238, 242, 236, 0.18); --line-strong: rgba(238, 242, 236, 0.32);
+      --card-shadow: 0 18px 34px -18px rgba(0, 0, 0, 0.6);
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #161d18; --paper-raised: #1d2620; --ink: #eef2ec; --ink-soft: #b8c2b8;
+    --coral: #ef7448; --coral-ink: #ffb497; --navy: #9fb4e0; --navy-ink: #dbe4f5;
+    --marigold: #e8b24b; --slate: #8fb3d9; --green: #6fcb92; --green-ink: #bdeecb;
+    --line: rgba(238, 242, 236, 0.18); --line-strong: rgba(238, 242, 236, 0.32);
+    --card-shadow: 0 18px 34px -18px rgba(0, 0, 0, 0.6);
+  }
+
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: "Work Sans", ui-sans-serif, system-ui, sans-serif; font-size: 1.0625rem; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+  html { font-size: 100%; }
+  html[data-fs="xs"] { font-size: 85%; }
+  html[data-fs="sm"] { font-size: 92.5%; }
+  html[data-fs="lg"] { font-size: 115%; }
+  html[data-fs="xl"] { font-size: 135%; }
+  .font-size-ctrl { display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--line); border-radius: 100px; padding: 4px 8px; }
+  .fs-labels { display: inline-flex; align-items: baseline; gap: 3px; }
+  .fs-label { font-family: "Work Sans", sans-serif; font-weight: 600; color: var(--ink-soft); line-height: 1; user-select: none; }
+  .fs-label-sm { font-size: 0.68rem; } .fs-label-lg { font-size: 1.15rem; }
+  .fs-step { appearance: none; border: none; background: none; cursor: pointer; color: var(--ink-soft); font-family: "Work Sans", sans-serif; font-weight: 700; font-size: 1.35rem; line-height: 1; width: 30px; height: 30px; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; flex-shrink: 0; }
+  .fs-step:hover:not(:disabled) { background: var(--line); color: var(--ink); }
+  .fs-step:disabled { opacity: 0.32; cursor: default; }
+  a { color: inherit; }
+  .mono { font-family: "Space Mono", ui-monospace, "SF Mono", monospace; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 28px; }
+
+  header.site { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 26px 28px; max-width: 1040px; margin: 0 auto; }
+  .logo { font-family: "Bricolage Grotesque", ui-sans-serif, sans-serif; font-weight: 700; font-size: 1.35rem; letter-spacing: -0.01em; }
+  .logo span { color: var(--coral); }
+  .header-right { display: flex; align-items: center; gap: 18px; }
+  .back-link { display: inline-flex; align-items: center; gap: 6px; text-decoration: none; color: var(--ink-soft); font-size: 0.92rem; }
+  .back-link:hover { color: var(--ink); }
+  .back-link svg { width: 16px; height: 16px; stroke: currentColor; fill: none; }
+
+  .hero { max-width: 760px; margin: 0 auto; padding: 12px 28px 24px; }
+  .icon-badge { width: 56px; height: 56px; border-radius: 16px; background: var(--paper-raised); display: flex; align-items: center; justify-content: center; margin-bottom: 18px; box-shadow: var(--card-shadow); }
+  .icon-badge svg { width: 28px; height: 28px; stroke: var(--coral); fill: none; }
+  h1.hero-title { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: clamp(1.9rem, 4.2vw, 2.7rem); line-height: 1.08; letter-spacing: -0.02em; margin: 0 0 12px; text-wrap: balance; }
+  p.hero-dek { font-size: 1.05rem; color: var(--ink-soft); max-width: 60ch; margin: 0 0 14px; }
+  p.note { font-size: 0.88rem; color: var(--ink-soft); max-width: 60ch; margin: 0; padding: 14px 16px; background: var(--paper-raised); border-radius: 12px; border: 1px solid var(--line); }
+
+  section.card-section { max-width: 760px; margin: 0 auto; padding: 22px 28px; }
+  h2.section-title { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 1.2rem; margin: 0 0 4px; }
+  p.section-sub { font-size: 0.88rem; color: var(--ink-soft); margin: 0 0 16px; }
+
+  .card { background: var(--paper-raised); border: 1px solid var(--line); border-radius: 16px; padding: 20px 22px; box-shadow: var(--card-shadow); }
+
+  .row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+  input[type="text"], input[type="number"], select {
+    font-family: "Work Sans", sans-serif; font-size: 0.95rem; padding: 10px 12px; border-radius: 10px;
+    border: 1px solid var(--line-strong); background: var(--paper); color: var(--ink);
+  }
+  input[type="text"]:focus, input[type="number"]:focus, select:focus { outline: 2px solid var(--coral); outline-offset: 1px; }
+  button { font-family: "Work Sans", sans-serif; cursor: pointer; }
+  .btn { border: none; border-radius: 10px; padding: 10px 16px; font-weight: 600; font-size: 0.92rem; }
+  .btn-coral { background: var(--coral); color: #fff5ee; }
+  .btn-coral:hover { background: var(--coral-ink); }
+  .btn-ghost { background: transparent; border: 1px solid var(--line-strong); color: var(--ink); }
+  .btn-ghost:hover { border-color: var(--ink-soft); }
+  .btn:disabled { opacity: 0.45; cursor: default; }
+
+  .chip-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+  .chip { display: inline-flex; align-items: center; gap: 7px; background: var(--paper); border: 1px solid var(--line); border-radius: 999px; padding: 6px 8px 6px 14px; font-size: 0.9rem; }
+  .chip button { background: none; border: none; color: var(--ink-soft); width: 20px; height: 20px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 0.95rem; line-height: 1; padding: 0; }
+  .chip button:hover { background: var(--line); color: var(--coral-ink); }
+
+  .split-checks { display: flex; flex-wrap: wrap; gap: 10px; margin: 10px 0 4px; }
+  .split-check { display: inline-flex; align-items: center; gap: 5px; font-size: 0.88rem; color: var(--ink-soft); }
+
+  .expense-list { list-style: none; margin: 16px 0 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+  .expense-item { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 10px 12px; background: var(--paper); border-radius: 10px; border: 1px solid var(--line); font-size: 0.92rem; }
+  .expense-info { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+  .expense-desc { font-weight: 600; }
+  .expense-meta { font-family: "Space Mono", monospace; font-size: 0.76rem; color: var(--ink-soft); }
+  .expense-amount { font-family: "Space Mono", monospace; font-weight: 700; white-space: nowrap; }
+  .expense-del { background: none; border: none; color: var(--ink-soft); cursor: pointer; font-size: 1rem; padding: 4px; }
+  .expense-del:hover { color: var(--coral-ink); }
+
+  .balance-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+  .balance-row { display: flex; justify-content: space-between; font-size: 0.94rem; padding: 6px 2px; }
+  .balance-pos { color: var(--green-ink); font-weight: 700; }
+  .balance-neg { color: var(--coral-ink); font-weight: 700; }
+
+  .settle-list { list-style: none; margin: 16px 0 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+  .settle-item { display: flex; align-items: center; gap: 8px; padding: 12px 14px; background: var(--paper); border-radius: 10px; border: 1px solid var(--line); font-size: 0.95rem; }
+  .settle-arrow { color: var(--ink-soft); }
+  .settle-amount { margin-left: auto; font-family: "Space Mono", monospace; font-weight: 700; color: var(--coral-ink); }
+
+  .empty-msg { font-size: 0.88rem; color: var(--ink-soft); padding: 8px 2px; }
+  .copy-toast { font-size: 0.82rem; color: var(--green-ink); margin-left: 8px; }
+
+  footer.site { border-top: 1px solid var(--line); padding: 30px 28px 46px; }
+  .footer-inner { max-width: 1040px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; align-items: center; }
+  .footer-inner .mono { font-size: 0.78rem; color: var(--ink-soft); letter-spacing: 0.04em; }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <a class="back-link" href="index.html"><svg><use href="#i-arrow-left"/></svg>Back to K-Rambles</a>
+  <div class="header-right">
+    <div class="font-size-ctrl" role="group" aria-label="Text size"><button type="button" class="fs-step" data-action="dec" aria-label="Decrease text size">−</button><span class="fs-labels" aria-hidden="true"><span class="fs-label fs-label-sm">A</span><span class="fs-label fs-label-lg">A</span></span><button type="button" class="fs-step" data-action="inc" aria-label="Increase text size">+</button></div>
+    <div class="logo">K-<span>Rambles</span></div>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="icon-badge"><svg><use href="#i-calc"/></svg></div>
+  <h1 class="hero-title">Trip Expense Splitter</h1>
+  <p class="hero-dek">Someone always ends up covering the group's bills. Enter what everyone paid, and this works out the shortest list of who sends who how much — in won.</p>
+  <p class="note">Everything you enter is saved right in this browser — no account, no app. Close the tab and come back mid-trip, it's still here. To settle up with friends, use "Copy summary" below and paste it into your group chat.</p>
+</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-arrow-left" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></symbol>
+  <symbol id="i-calc" viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 7h8M8 11h1M12 11h1M16 11h1M8 15h1M12 15h1M16 15h1M8 18h1M12 18h1M16 18h1"/></symbol>
+  <symbol id="i-arrow-right" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></symbol>
+</svg>
+
+<section class="card-section">
+  <h2 class="section-title">1. Who's splitting this?</h2>
+  <p class="section-sub">Add everyone in the group first.</p>
+  <div class="card">
+    <div class="row">
+      <input type="text" id="participant-input" placeholder="Name" maxlength="24">
+      <button class="btn btn-coral" id="add-participant-btn">Add</button>
+    </div>
+    <div class="chip-row" id="participant-chips"></div>
+  </div>
+</section>
+
+<section class="card-section">
+  <h2 class="section-title">2. Log an expense</h2>
+  <p class="section-sub">Who paid, how much, and who it covers.</p>
+  <div class="card">
+    <div class="row">
+      <input type="text" id="expense-desc" placeholder="What was it? (optional)" style="flex:1 1 180px">
+      <input type="number" id="expense-amount" placeholder="Amount (KRW)" min="0" step="100" style="flex:1 1 140px">
+    </div>
+    <div class="row" style="margin-top:10px">
+      <label for="expense-paidby" style="font-size:0.88rem;color:var(--ink-soft)">Paid by</label>
+      <select id="expense-paidby"></select>
+    </div>
+    <p class="section-sub" style="margin:12px 0 0">Split among:</p>
+    <div class="split-checks" id="split-checks"></div>
+    <div class="row" style="margin-top:14px">
+      <button class="btn btn-coral" id="add-expense-btn">Add expense</button>
+    </div>
+  </div>
+
+  <ul class="expense-list" id="expense-list"></ul>
+</section>
+
+<section class="card-section">
+  <h2 class="section-title">3. Balances</h2>
+  <p class="section-sub">Positive = should be paid back. Negative = still owes.</p>
+  <div class="card">
+    <ul class="balance-list" id="balance-list"></ul>
+  </div>
+</section>
+
+<section class="card-section">
+  <h2 class="section-title">4. Settle up</h2>
+  <p class="section-sub">The fewest transfers that clear every balance.</p>
+  <div class="card">
+    <ul class="settle-list" id="settle-list"></ul>
+    <div class="row" style="margin-top:16px">
+      <button class="btn btn-ghost" id="copy-btn">Copy summary</button>
+      <button class="btn btn-ghost" id="reset-btn">Reset everything</button>
+      <span class="copy-toast" id="copy-toast" hidden>Copied!</span>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="footer-inner">
+    <span class="mono">K-Rambles</span>
+  </div>
+</footer>
+
+<script>
+(function () {
+  'use strict';
+  var STATE_KEY = 'krambles-split-v1';
+  var state = { participants: [], expenses: [] };
+
+  function load() {
+    try {
+      var raw = localStorage.getItem(STATE_KEY);
+      if (raw) { state = JSON.parse(raw); }
+    } catch (e) {}
+    if (!state.participants) { state.participants = []; }
+    if (!state.expenses) { state.expenses = []; }
+  }
+  function save() {
+    try { localStorage.setItem(STATE_KEY, JSON.stringify(state)); } catch (e) {}
+  }
+
+  function fmt(n) {
+    return Math.round(n).toLocaleString('en-US') + ' ₩';
+  }
+
+  function esc(s) {
+    return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+    });
+  }
+
+  var participantInput = document.getElementById('participant-input');
+  var addParticipantBtn = document.getElementById('add-participant-btn');
+  var chipsEl = document.getElementById('participant-chips');
+  var paidBySelect = document.getElementById('expense-paidby');
+  var splitChecksEl = document.getElementById('split-checks');
+  var descInput = document.getElementById('expense-desc');
+  var amountInput = document.getElementById('expense-amount');
+  var addExpenseBtn = document.getElementById('add-expense-btn');
+  var expenseListEl = document.getElementById('expense-list');
+  var balanceListEl = document.getElementById('balance-list');
+  var settleListEl = document.getElementById('settle-list');
+  var copyBtn = document.getElementById('copy-btn');
+  var resetBtn = document.getElementById('reset-btn');
+  var copyToast = document.getElementById('copy-toast');
+
+  function renderParticipants() {
+    chipsEl.innerHTML = state.participants.map(function (name) {
+      return '<span class="chip">' + esc(name) + '<button type="button" data-name="' + esc(name) + '" aria-label="Remove ' + esc(name) + '">×</button></span>';
+    }).join('');
+
+    paidBySelect.innerHTML = state.participants.map(function (name) {
+      return '<option value="' + esc(name) + '">' + esc(name) + '</option>';
+    }).join('');
+
+    splitChecksEl.innerHTML = state.participants.map(function (name) {
+      return '<label class="split-check"><input type="checkbox" class="split-check-box" value="' + esc(name) + '" checked> ' + esc(name) + '</label>';
+    }).join('');
+
+    var hasPeople = state.participants.length > 0;
+    addExpenseBtn.disabled = !hasPeople;
+  }
+
+  function renderExpenses() {
+    if (!state.expenses.length) {
+      expenseListEl.innerHTML = '<li class="empty-msg">No expenses logged yet.</li>';
+      return;
+    }
+    expenseListEl.innerHTML = state.expenses.map(function (ex) {
+      return '<li class="expense-item">' +
+        '<div class="expense-info">' +
+          '<span class="expense-desc">' + esc(ex.desc || 'Expense') + '</span>' +
+          '<span class="expense-meta">' + esc(ex.paidBy) + ' paid · split ' + ex.splitAmong.length + ' ways</span>' +
+        '</div>' +
+        '<span class="expense-amount">' + fmt(ex.amount) + '</span>' +
+        '<button class="expense-del" data-id="' + ex.id + '" aria-label="Delete expense">×</button>' +
+      '</li>';
+    }).join('');
+  }
+
+  function computeBalances() {
+    var balances = {};
+    state.participants.forEach(function (name) { balances[name] = 0; });
+    state.expenses.forEach(function (ex) {
+      if (balances[ex.paidBy] === undefined) { return; }
+      balances[ex.paidBy] += ex.amount;
+      var validSplit = ex.splitAmong.filter(function (n) { return balances[n] !== undefined; });
+      if (!validSplit.length) { return; }
+      var share = ex.amount / validSplit.length;
+      validSplit.forEach(function (n) { balances[n] -= share; });
+    });
+    return balances;
+  }
+
+  function renderBalances(balances) {
+    if (!state.participants.length) {
+      balanceListEl.innerHTML = '<li class="empty-msg">Add people to see balances.</li>';
+      return;
+    }
+    balanceListEl.innerHTML = state.participants.map(function (name) {
+      var b = balances[name] || 0;
+      var cls = b > 0.5 ? 'balance-pos' : (b < -0.5 ? 'balance-neg' : '');
+      var sign = b > 0.5 ? '+' : '';
+      return '<li class="balance-row"><span>' + esc(name) + '</span><span class="' + cls + '">' + sign + fmt(b) + '</span></li>';
+    }).join('');
+  }
+
+  function computeSettlement(balances) {
+    var creditors = [], debtors = [];
+    Object.keys(balances).forEach(function (name) {
+      var b = Math.round(balances[name]);
+      if (b > 0) { creditors.push({ name: name, amt: b }); }
+      else if (b < 0) { debtors.push({ name: name, amt: -b }); }
+    });
+    creditors.sort(function (a, b) { return b.amt - a.amt; });
+    debtors.sort(function (a, b) { return b.amt - a.amt; });
+
+    var transfers = [];
+    var ci = 0, di = 0;
+    while (ci < creditors.length && di < debtors.length) {
+      var c = creditors[ci], d = debtors[di];
+      var amt = Math.min(c.amt, d.amt);
+      if (amt > 0) { transfers.push({ from: d.name, to: c.name, amount: amt }); }
+      c.amt -= amt; d.amt -= amt;
+      if (c.amt <= 0) { ci++; }
+      if (d.amt <= 0) { di++; }
+    }
+    return transfers;
+  }
+
+  function renderSettlement(transfers) {
+    if (!transfers.length) {
+      settleListEl.innerHTML = '<li class="empty-msg">Everyone is settled up.</li>';
+      return;
+    }
+    settleListEl.innerHTML = transfers.map(function (t) {
+      return '<li class="settle-item">' + esc(t.from) + '<svg class="settle-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-arrow-right"/></svg>' + esc(t.to) + '<span class="settle-amount">' + fmt(t.amount) + '</span></li>';
+    }).join('');
+  }
+
+  var lastTransfers = [];
+
+  function renderAll() {
+    renderParticipants();
+    renderExpenses();
+    var balances = computeBalances();
+    renderBalances(balances);
+    lastTransfers = computeSettlement(balances);
+    renderSettlement(lastTransfers);
+  }
+
+  addParticipantBtn.addEventListener('click', function () {
+    var name = participantInput.value.trim();
+    if (!name) { return; }
+    if (state.participants.indexOf(name) !== -1) { participantInput.value = ''; return; }
+    state.participants.push(name);
+    participantInput.value = '';
+    save(); renderAll();
+  });
+  participantInput.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') { addParticipantBtn.click(); }
+  });
+
+  chipsEl.addEventListener('click', function (e) {
+    var btn = e.target.closest('button[data-name]');
+    if (!btn) { return; }
+    var name = btn.getAttribute('data-name');
+    var used = state.expenses.some(function (ex) { return ex.paidBy === name || ex.splitAmong.indexOf(name) !== -1; });
+    if (used) {
+      alert(name + ' is used in an expense already — delete or edit that expense first.');
+      return;
+    }
+    state.participants = state.participants.filter(function (n) { return n !== name; });
+    save(); renderAll();
+  });
+
+  addExpenseBtn.addEventListener('click', function () {
+    var amount = parseFloat(amountInput.value);
+    if (!amount || amount <= 0) { alert('Enter an amount first.'); return; }
+    var paidBy = paidBySelect.value;
+    if (!paidBy) { alert('Add someone to the group first.'); return; }
+    var splitAmong = Array.prototype.slice.call(splitChecksEl.querySelectorAll('.split-check-box:checked')).map(function (el) { return el.value; });
+    if (!splitAmong.length) { alert('Pick at least one person to split with.'); return; }
+    state.expenses.push({
+      id: Date.now() + '-' + Math.random().toString(36).slice(2, 7),
+      desc: descInput.value.trim(),
+      amount: amount,
+      paidBy: paidBy,
+      splitAmong: splitAmong
+    });
+    descInput.value = ''; amountInput.value = '';
+    save(); renderAll();
+  });
+
+  expenseListEl.addEventListener('click', function (e) {
+    var btn = e.target.closest('.expense-del');
+    if (!btn) { return; }
+    var id = btn.getAttribute('data-id');
+    state.expenses = state.expenses.filter(function (ex) { return String(ex.id) !== String(id); });
+    save(); renderAll();
+  });
+
+  copyBtn.addEventListener('click', function () {
+    var lines = ['Trip expense summary:'];
+    if (!lastTransfers.length) {
+      lines.push('Everyone is settled up.');
+    } else {
+      lastTransfers.forEach(function (t) {
+        lines.push(t.from + ' → ' + t.to + ': ' + fmt(t.amount));
+      });
+    }
+    var text = lines.join('\n');
+    function showToast() {
+      copyToast.hidden = false;
+      setTimeout(function () { copyToast.hidden = true; }, 2000);
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(showToast).catch(function () { window.prompt('Copy this:', text); });
+    } else {
+      window.prompt('Copy this:', text);
+    }
+  });
+
+  resetBtn.addEventListener('click', function () {
+    if (!confirm('Clear all participants and expenses? This can\'t be undone.')) { return; }
+    state = { participants: [], expenses: [] };
+    save(); renderAll();
+  });
+
+  load();
+  renderAll();
+})();
+</script>
+
+<script>
+(function () {
+  var KEY = 'krambles-fontsize';
+  var STEPS = ['xs', 'sm', 'md', 'lg', 'xl'];
+  var root = document.documentElement;
+  var ctrl = document.querySelector('.font-size-ctrl');
+  if (!ctrl) { return; }
+  var decBtn = ctrl.querySelector('[data-action="dec"]');
+  var incBtn = ctrl.querySelector('[data-action="inc"]');
+  var index = 2;
+  function apply(i) {
+    var size = STEPS[i];
+    if (size === 'md') { root.removeAttribute('data-fs'); }
+    else { root.setAttribute('data-fs', size); }
+    decBtn.disabled = i === 0;
+    incBtn.disabled = i === STEPS.length - 1;
+  }
+  var saved = 'md';
+  try { saved = localStorage.getItem(KEY) || 'md'; } catch (e) {}
+  index = STEPS.indexOf(saved);
+  if (index === -1) { index = 2; }
+  apply(index);
+  decBtn.addEventListener('click', function () {
+    if (index > 0) { index--; apply(index); try { localStorage.setItem(KEY, STEPS[index]); } catch (e) {} }
+  });
+  incBtn.addEventListener('click', function () {
+    if (index < STEPS.length - 1) { index++; apply(index); try { localStorage.setItem(KEY, STEPS[index]); } catch (e) {} }
+  });
+})();
+</script>
+<script data-goatcounter="https://krambles.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

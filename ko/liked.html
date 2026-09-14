@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>찜한 글 | K-Rambles</title>
+<meta name="description" content="하트 누른 글들만 모아서 한눈에 보기 — 계정 없이 이 브라우저에 저장된다.">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Work+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap');
+
+  :root {
+    --paper: #e9efe9;
+    --paper-raised: #f4f7f3;
+    --ink: #1f2420;
+    --ink-soft: #4a5148;
+    --coral: #d9532a;
+    --coral-ink: #9c3b1c;
+    --navy: #1b2a4a;
+    --navy-ink: #10182b;
+    --marigold: #c8891f;
+    --slate: #4a6f94;
+    --line: rgba(31, 36, 32, 0.18);
+    --line-strong: rgba(31, 36, 32, 0.32);
+    --card-shadow: 0 18px 34px -20px rgba(20, 24, 20, 0.45);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #161d18; --paper-raised: #1d2620; --ink: #eef2ec; --ink-soft: #b8c2b8;
+      --coral: #ef7448; --coral-ink: #ffb497; --navy: #9fb4e0; --navy-ink: #dbe4f5;
+      --marigold: #e8b24b; --slate: #8fb3d9;
+      --line: rgba(238, 242, 236, 0.18); --line-strong: rgba(238, 242, 236, 0.32);
+      --card-shadow: 0 18px 34px -18px rgba(0, 0, 0, 0.6);
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #161d18; --paper-raised: #1d2620; --ink: #eef2ec; --ink-soft: #b8c2b8;
+    --coral: #ef7448; --coral-ink: #ffb497; --navy: #9fb4e0; --navy-ink: #dbe4f5;
+    --marigold: #e8b24b; --slate: #8fb3d9;
+    --line: rgba(238, 242, 236, 0.18); --line-strong: rgba(238, 242, 236, 0.32);
+    --card-shadow: 0 18px 34px -18px rgba(0, 0, 0, 0.6);
+  }
+
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: "Work Sans", ui-sans-serif, system-ui, sans-serif; font-size: 1.0625rem; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+  html { font-size: 100%; }
+  html[data-fs="xs"] { font-size: 85%; }
+  html[data-fs="sm"] { font-size: 92.5%; }
+  html[data-fs="lg"] { font-size: 115%; }
+  html[data-fs="xl"] { font-size: 135%; }
+  .font-size-ctrl { display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--line); border-radius: 100px; padding: 4px 8px; }
+  .fs-labels { display: inline-flex; align-items: baseline; gap: 3px; }
+  .fs-label { font-family: "Work Sans", sans-serif; font-weight: 600; color: var(--ink-soft); line-height: 1; user-select: none; }
+  .fs-label-sm { font-size: 0.68rem; }
+  .fs-label-lg { font-size: 1.15rem; }
+  .fs-step { appearance: none; border: none; background: none; cursor: pointer; color: var(--ink-soft); font-family: "Work Sans", sans-serif; font-weight: 700; font-size: 1.35rem; line-height: 1; width: 30px; height: 30px; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; flex-shrink: 0; }
+  .fs-step:hover:not(:disabled) { background: var(--line); color: var(--ink); }
+  .fs-step:disabled { opacity: 0.32; cursor: default; }
+  a { color: inherit; }
+  .mono { font-family: "Space Mono", ui-monospace, "SF Mono", monospace; }
+
+  header.site { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 26px 28px; max-width: 1040px; margin: 0 auto; }
+  .logo { font-family: "Bricolage Grotesque", ui-sans-serif, sans-serif; font-weight: 700; font-size: 1.35rem; letter-spacing: -0.01em; }
+  .logo span { color: var(--coral); }
+  .header-right { display: flex; align-items: center; gap: 18px; }
+  .back-link { display: inline-flex; align-items: center; gap: 6px; text-decoration: none; color: var(--ink-soft); font-size: 0.92rem; }
+  .back-link:hover { color: var(--ink); }
+  .back-link svg { width: 16px; height: 16px; stroke: currentColor; fill: none; }
+
+  .liked-hero { max-width: 1040px; margin: 0 auto; padding: 12px 28px 40px; }
+  .liked-icon-badge { width: 56px; height: 56px; border-radius: 16px; background: var(--paper-raised); display: flex; align-items: center; justify-content: center; margin-bottom: 18px; box-shadow: var(--card-shadow); }
+  .liked-icon-badge svg { width: 28px; height: 28px; stroke: var(--coral); fill: none; }
+  h1.liked-title { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: clamp(2.1rem, 4.6vw, 3.1rem); line-height: 1.05; letter-spacing: -0.02em; margin: 0 0 12px; text-wrap: balance; }
+  p.liked-dek { font-size: 1.08rem; color: var(--ink-soft); max-width: 60ch; margin: 0 0 8px; }
+  p.liked-count { font-family: "Space Mono", monospace; font-size: 0.82rem; letter-spacing: 0.05em; text-transform: uppercase; color: var(--ink-soft); margin: 0 0 8px; }
+  p.liked-note { font-size: 0.88rem; color: var(--ink-soft); max-width: 60ch; margin: 18px 0 0; padding: 14px 16px; background: var(--paper-raised); border-radius: 12px; border: 1px solid var(--line); }
+
+  .liked-grid { max-width: 1040px; margin: 0 auto; padding: 10px 28px 60px; display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 20px; }
+
+  .liked-empty { max-width: 1040px; margin: 0 auto; padding: 10px 28px 90px; }
+  .liked-empty-card { background: var(--paper-raised); border: 2px dashed var(--line-strong); border-radius: 18px; padding: 40px 28px; text-align: center; color: var(--ink-soft); }
+  .liked-empty-card svg { width: 34px; height: 34px; stroke: var(--ink-soft); fill: none; margin-bottom: 10px; }
+  .liked-empty-card a { color: var(--coral-ink); font-weight: 600; text-decoration: underline; }
+
+  .tile { display: block; border-radius: 16px; text-decoration: none; color: inherit; box-shadow: var(--card-shadow); }
+  .tile--photo { position: relative; background: var(--paper-raised); border: 1px solid var(--line); overflow: hidden; }
+  .tile-photo-link { display: flex; flex-direction: column; height: 100%; color: inherit; text-decoration: none; }
+  .tile-photo-link:focus-visible { outline: 2px solid var(--coral); outline-offset: 3px; }
+  .tile-photo-frame { position: relative; aspect-ratio: 4 / 3; overflow: hidden; background: var(--paper-raised); }
+  .tile-photo-frame img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.35s ease; }
+  .tile--photo:hover .tile-photo-frame img { transform: scale(1.05); }
+  .tile--photo:hover { transform: translateY(-3px); }
+  .tile--photo { transition: transform 0.15s ease; }
+  .tile-photo-badge { position: absolute; top: 10px; right: 10px; background: var(--coral); color: #fff5ee; font-family: "Space Mono", monospace; font-size: 0.72rem; font-weight: 700; padding: 4px 9px; border-radius: 999px; }
+  .tile-photo-body { padding: 14px 16px 17px; display: flex; flex-direction: column; gap: 5px; flex: 1; }
+  .tile-photo-label { font-family: "Space Mono", monospace; font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--coral-ink); }
+  .tile-photo-title { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 1.02rem; line-height: 1.32; margin: 0; text-wrap: balance; }
+  .tile-like-btn { position: absolute; top: 10px; left: 10px; width: 32px; height: 32px; border-radius: 999px; border: none; background: rgba(15,15,15,0.4); display: flex; align-items: center; justify-content: center; cursor: pointer; padding: 0; z-index: 2; }
+  .tile-like-btn svg { width: 17px; height: 17px; stroke: #fff; fill: none; stroke-width: 1.9; transition: fill 0.15s ease; }
+  .tile-like-btn.is-liked svg { fill: var(--coral); stroke: var(--coral); }
+  .tile-like-btn:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+
+  .tile.reveal { opacity: 0; transform: translateY(12px); transition: opacity 0.5s ease, transform 0.5s ease; }
+  .tile.reveal.in-view { opacity: 1; transform: translateY(0); }
+  @media (prefers-reduced-motion: reduce) { .tile.reveal { opacity: 1; transform: none; transition: none; } }
+
+  footer.site { border-top: 1px solid var(--line); padding: 30px 28px 46px; }
+  .footer-inner { max-width: 1040px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; align-items: center; }
+  .footer-inner .mono { font-size: 0.78rem; color: var(--ink-soft); letter-spacing: 0.04em; }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <a class="back-link" href="index.html"><svg><use href="#i-arrow-left"/></svg>홈으로</a>
+  <div class="header-right">
+    <div class="font-size-ctrl" role="group" aria-label="Text size"><button type="button" class="fs-step" data-action="dec" aria-label="Decrease text size">−</button><span class="fs-labels" aria-hidden="true"><span class="fs-label fs-label-sm">A</span><span class="fs-label fs-label-lg">A</span></span><button type="button" class="fs-step" data-action="inc" aria-label="Increase text size">+</button></div>
+    <div class="logo">K-<span>Rambles</span></div>
+  </div>
+</header>
+
+<div class="liked-hero">
+  <div class="liked-icon-badge"><svg><use href="#i-heart"/></svg></div>
+  <h1 class="liked-title">찜한 글</h1>
+  <p class="liked-dek">하트 누른 글들을 한곳에 모아봤다.</p>
+  <p class="liked-count">0개 저장됨</p>
+  <p class="liked-note">찜한 글은 계정이나 로그인 없이 이 브라우저에만 저장된다. 기기를 바꾸거나 브라우저 데이터를 지우면 목록이 초기화된다.</p>
+</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-heart" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 20.5s-7.5-4.6-10-9.3C0.3 7.8 2 4.5 5.4 4c2-.3 3.8.7 5 2.3 1.2-1.6 3-2.6 5-2.3C18.9 4.5 20.6 7.8 19 11.2c-2.5 4.7-7 9.3-7 9.3Z"/>
+  </symbol>
+  <symbol id="i-arrow-left" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M19 12H5M11 6l-6 6 6 6"/>
+  </symbol>
+</svg>
+
+<div class="liked-grid"></div>
+
+<div class="liked-empty" id="liked-empty" hidden>
+  <div class="liked-empty-card">
+    <svg><use href="#i-heart"/></svg>
+    <p>아직 찜한 글이 없다. 사이트 어디서든 카드의 하트를 누르면 여기 모인다.</p>
+    <p><a href="index.html">보드 둘러보기 →</a></p>
+  </div>
+</div>
+
+<footer class="site">
+  <div class="footer-inner">
+    <span class="mono">K-Rambles</span>
+  </div>
+</footer>
+
+<script src="../assets/js/krambles-render.js"></script>
+<script>
+  KR.renderLiked({
+    assetBase: '../',
+    boards: [
+      { key: 'trip-planner', jsonUrl: '../data/trip-planner-ko.json' },
+      { key: 'taste', jsonUrl: '../data/taste-ko.json' },
+      { key: 'getting-around', jsonUrl: '../data/getting-around-ko.json' },
+      { key: 'long-stay', jsonUrl: '../data/long-stay-ko.json' }
+    ],
+    gridSelector: '.liked-grid',
+    emptySelector: '#liked-empty',
+    countSelector: '.liked-count',
+    countTemplate: '{n}개 저장됨'
+  });
+</script>
+
+<script>
+(function () {
+  var KEY = 'krambles-fontsize';
+  var STEPS = ['xs', 'sm', 'md', 'lg', 'xl'];
+  var root = document.documentElement;
+  var ctrl = document.querySelector('.font-size-ctrl');
+  if (!ctrl) { return; }
+  var decBtn = ctrl.querySelector('[data-action="dec"]');
+  var incBtn = ctrl.querySelector('[data-action="inc"]');
+  var index = 2;
+  function apply(i) {
+    var size = STEPS[i];
+    if (size === 'md') { root.removeAttribute('data-fs'); }
+    else { root.setAttribute('data-fs', size); }
+    decBtn.disabled = i === 0;
+    incBtn.disabled = i === STEPS.length - 1;
+  }
+  var saved = 'md';
+  try { saved = localStorage.getItem(KEY) || 'md'; } catch (e) {}
+  index = STEPS.indexOf(saved);
+  if (index === -1) { index = 2; }
+  apply(index);
+  decBtn.addEventListener('click', function () {
+    if (index > 0) { index--; apply(index); try { localStorage.setItem(KEY, STEPS[index]); } catch (e) {} }
+  });
+  incBtn.addEventListener('click', function () {
+    if (index < STEPS.length - 1) { index++; apply(index); try { localStorage.setItem(KEY, STEPS[index]); } catch (e) {} }
+  });
+})();
+</script>
+<script data-goatcounter="https://krambles.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

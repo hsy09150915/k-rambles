@@ -274,6 +274,55 @@
 
   .btn-ghost:hover { color: var(--ink); border-color: var(--coral); }
 
+  /* ---------- Pre-trip essentials banner ---------- */
+
+  .pretrip { max-width: 1040px; margin: 0 auto 8px; padding: 0 28px; display: flex; gap: 16px; flex-wrap: wrap; }
+  .pretrip-card {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    background: var(--paper-raised);
+    border: 2px dashed var(--navy);
+    border-radius: 18px;
+    padding: 20px 24px;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: var(--card-shadow);
+    transition: transform 0.15s ease;
+    flex: 1 1 300px;
+    max-width: 460px;
+  }
+  .pretrip-card:hover { transform: translateY(-2px); }
+  .pretrip-card:focus-visible { outline: 2px solid var(--coral); outline-offset: 3px; }
+  .pretrip-icon {
+    width: 50px; height: 50px; border-radius: 50%;
+    background: var(--navy); color: var(--paper-raised);
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .pretrip-icon svg { width: 25px; height: 25px; stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+  .pretrip-body { flex: 1; min-width: 0; }
+  .pretrip-eyebrow {
+    font-family: "Space Mono", monospace;
+    font-size: 0.74rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--navy-ink);
+    margin: 0 0 4px;
+  }
+  .pretrip-title {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 700;
+    font-size: 1.12rem;
+    margin: 0 0 4px;
+  }
+  .pretrip-desc { font-size: 0.9rem; color: var(--ink-soft); margin: 0; max-width: 56ch; }
+  .pretrip-arrow { width: 19px; height: 19px; stroke: var(--navy-ink); fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; }
+
+  @media (max-width: 560px) {
+    .pretrip-desc { display: none; }
+  }
+
   /* ---------- Board / masonry grid ---------- */
 
   .board {
@@ -696,6 +745,8 @@
     <a href="#getting-around">Getting Around</a>
     <a href="#food-stories">Food Stories</a>
     <a href="#long-stay">Long-Stay</a>
+    <a href="liked.html" class="nav-liked"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-2px;margin-right:3px"><use href="#i-heart"/></svg>Saved</a>
+    <a href="split-calculator.html" class="nav-liked"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-2px;margin-right:3px"><use href="#i-calculator"/></svg>Split Costs</a>
   </nav>
   <div class="header-right">
     <div class="font-size-ctrl" role="group" aria-label="Text size"><button type="button" class="fs-step" data-action="dec" aria-label="Decrease text size">−</button><span class="fs-labels" aria-hidden="true"><span class="fs-label fs-label-sm">A</span><span class="fs-label fs-label-lg">A</span></span><button type="button" class="fs-step" data-action="inc" aria-label="Increase text size">+</button></div>
@@ -760,6 +811,31 @@
       <path d="M70 262 L86 269 L70 269 Z" fill="var(--coral)" opacity="0.7"/>
     </svg>
   </div>
+</section>
+
+<section class="pretrip">
+  <a class="pretrip-card" href="getting-around/2026-09-07-naver-map-app-guide.html">
+    <div class="pretrip-icon">
+      <svg viewBox="0 0 24 24"><path d="M9 4.5 4 6.5v13l5-2 6 2 5-2v-13l-5 2-6-2Z"/><path d="M9 4.5v13M15 6.5v13"/></svg>
+    </div>
+    <div class="pretrip-body">
+      <p class="pretrip-eyebrow">Before You Go</p>
+      <h3 class="pretrip-title">Set Up Your Map &amp; Subway Apps First</h3>
+      <p class="pretrip-desc">Kakao Subway, Naver Map, Kakao Map — English station names to arrival alerts, done in 5 minutes.</p>
+    </div>
+    <svg class="pretrip-arrow" viewBox="0 0 24 24"><path d="M4 12h16M13 5l7 7-7 7"/></svg>
+  </a>
+  <a class="pretrip-card" href="getting-around/2026-09-02-tmoney-explained.html">
+    <div class="pretrip-icon">
+      <svg viewBox="0 0 24 24"><rect x="3.5" y="5.5" width="17" height="13" rx="2.2"/><path d="M3.5 10h17M7 14.2h4"/></svg>
+    </div>
+    <div class="pretrip-body">
+      <p class="pretrip-eyebrow">Before You Go</p>
+      <h3 class="pretrip-title">Pick Your Transit Card Before You Land</h3>
+      <p class="pretrip-desc">T-money, Cashbee, WOWPASS — where to buy, top up, and get a refund, all in one place.</p>
+    </div>
+    <svg class="pretrip-arrow" viewBox="0 0 24 24"><path d="M4 12h16M13 5l7 7-7 7"/></svg>
+  </a>
 </section>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
