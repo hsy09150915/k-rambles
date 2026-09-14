@@ -51,10 +51,10 @@
   .wrap { max-width: 760px; margin: 0 auto; padding: 0 28px; }
 
   header.site { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 26px 28px; max-width: 1040px; margin: 0 auto; }
-  .logo { font-family: "Bricolage Grotesque", ui-sans-serif, sans-serif; font-weight: 700; font-size: 1.35rem; letter-spacing: -0.01em; }
+  .logo { font-family: "Bricolage Grotesque", ui-sans-serif, sans-serif; font-weight: 700; font-size: 1.35rem; letter-spacing: -0.01em; white-space: nowrap; }
   .logo span { color: var(--coral); }
   .header-right { display: flex; align-items: center; gap: 18px; }
-  .back-link { display: inline-flex; align-items: center; gap: 6px; text-decoration: none; color: var(--ink-soft); font-size: 0.92rem; }
+  .back-link { display: inline-flex; align-items: center; gap: 6px; text-decoration: none; color: var(--ink-soft); font-size: 0.92rem; white-space: nowrap; }
   .back-link:hover { color: var(--ink); }
   .back-link svg { width: 16px; height: 16px; stroke: currentColor; fill: none; }
 
@@ -115,9 +115,30 @@
   .empty-msg { font-size: 0.88rem; color: var(--ink-soft); padding: 8px 2px; }
   .copy-toast { font-size: 0.82rem; color: var(--green-ink); margin-left: 8px; }
 
+  .copy-modal-backdrop { position: fixed; inset: 0; background: rgba(15, 18, 15, 0.55); display: flex; align-items: center; justify-content: center; padding: 20px; z-index: 200; }
+  .copy-modal-backdrop[hidden] { display: none; }
+  .copy-modal { background: var(--paper-raised); border: 1px solid var(--line); border-radius: 16px; box-shadow: var(--card-shadow); padding: 22px; max-width: 420px; width: 100%; }
+  .copy-modal h3 { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 1.08rem; margin: 0 0 6px; }
+  .copy-modal p { font-size: 0.85rem; color: var(--ink-soft); margin: 0 0 12px; }
+  .copy-modal textarea { width: 100%; min-height: 200px; font-family: "Space Mono", monospace; font-size: 0.86rem; line-height: 1.55; padding: 12px; border-radius: 10px; border: 1px solid var(--line-strong); background: var(--paper); color: var(--ink); resize: vertical; }
+  .copy-modal textarea:focus { outline: 2px solid var(--coral); outline-offset: 1px; }
+  .copy-modal-actions { display: flex; gap: 10px; margin-top: 14px; justify-content: flex-end; }
+
   footer.site { border-top: 1px solid var(--line); padding: 30px 28px 46px; }
   .footer-inner { max-width: 1040px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; align-items: center; }
   .footer-inner .mono { font-size: 0.78rem; color: var(--ink-soft); letter-spacing: 0.04em; }
+  /* kr-header-narrow-fix */
+  @media (max-width: 480px) {
+    header.site { padding: 14px 14px; gap: 6px; }
+    .header-right { gap: 6px; flex-wrap: wrap; row-gap: 8px; justify-content: flex-end; }
+    .logo { font-size: 0.92rem; }
+    .back-link { font-size: 0.68rem; gap: 3px; }
+    .back-link svg { width: 12px; height: 12px; }
+    .font-size-ctrl { gap: 4px; padding: 2px 4px; }
+    .fs-step { width: 22px; height: 22px; font-size: 1.05rem; }
+    .lang-switch { gap: 3px; font-size: 0.68rem; }
+    .lang-switch a, .lang-switch span.current { padding: 2px 6px; }
+  }
 </style>
 </head>
 <body>
@@ -198,6 +219,18 @@
   </div>
 </section>
 
+<div class="copy-modal-backdrop" id="copy-modal-backdrop" hidden>
+  <div class="copy-modal" role="dialog" aria-modal="true" aria-labelledby="copy-modal-title">
+    <h3 id="copy-modal-title">요약 복사</h3>
+    <p>브라우저에서 빠른 복사가 막혔어요. 아래 내용은 이미 선택돼 있으니 <strong>복사</strong> 버튼을 누르거나, 길게 눌러 직접 복사하세요.</p>
+    <textarea id="copy-modal-text" readonly rows="10"></textarea>
+    <div class="copy-modal-actions">
+      <button class="btn btn-ghost" id="copy-modal-close">닫기</button>
+      <button class="btn btn-coral" id="copy-modal-copy">복사</button>
+    </div>
+  </div>
+</div>
+
 <footer class="site">
   <div class="footer-inner">
     <span class="mono">K-Rambles</span>
@@ -246,6 +279,10 @@
   var copyBtn = document.getElementById('copy-btn');
   var resetBtn = document.getElementById('reset-btn');
   var copyToast = document.getElementById('copy-toast');
+  var copyModalBackdrop = document.getElementById('copy-modal-backdrop');
+  var copyModalText = document.getElementById('copy-modal-text');
+  var copyModalCopyBtn = document.getElementById('copy-modal-copy');
+  var copyModalCloseBtn = document.getElementById('copy-modal-close');
 
   function renderParticipants() {
     chipsEl.innerHTML = state.participants.map(function (name) {
@@ -342,11 +379,13 @@
   }
 
   var lastTransfers = [];
+  var lastBalances = {};
 
   function renderAll() {
     renderParticipants();
     renderExpenses();
     var balances = computeBalances();
+    lastBalances = balances;
     renderBalances(balances);
     lastTransfers = computeSettlement(balances);
     renderSettlement(lastTransfers);
@@ -403,8 +442,18 @@
     save(); renderAll();
   });
 
-  copyBtn.addEventListener('click', function () {
-    var lines = ['여행 경비 정산 요약:'];
+  function buildSummaryText() {
+    var lines = ['여행 경비 정산 요약:', '', '잔액:'];
+    if (!state.participants.length) {
+      lines.push('아직 참가자가 없어요.');
+    } else {
+      state.participants.forEach(function (name) {
+        var b = lastBalances[name] || 0;
+        var sign = b > 0.5 ? '+' : '';
+        lines.push(name + ': ' + sign + fmt(b));
+      });
+    }
+    lines.push('', '정산:');
     if (!lastTransfers.length) {
       lines.push('모두 정산이 완료되었습니다.');
     } else {
@@ -412,16 +461,51 @@
         lines.push(t.from + ' → ' + t.to + ': ' + fmt(t.amount));
       });
     }
-    var text = lines.join('\n');
-    function showToast() {
-      copyToast.hidden = false;
-      setTimeout(function () { copyToast.hidden = true; }, 2000);
-    }
+    return lines.join('\n');
+  }
+
+  function showCopyToast() {
+    copyToast.hidden = false;
+    setTimeout(function () { copyToast.hidden = true; }, 2000);
+  }
+
+  function openCopyModal(text) {
+    copyModalText.value = text;
+    copyModalBackdrop.hidden = false;
+    copyModalText.focus();
+    copyModalText.select();
+  }
+
+  function closeCopyModal() {
+    copyModalBackdrop.hidden = true;
+  }
+
+  copyBtn.addEventListener('click', function () {
+    var text = buildSummaryText();
     if (navigator.clipboard && navigator.clipboard.writeText) {
-      navigator.clipboard.writeText(text).then(showToast).catch(function () { window.prompt('아래 내용을 복사하세요:', text); });
+      navigator.clipboard.writeText(text).then(showCopyToast).catch(function () { openCopyModal(text); });
     } else {
-      window.prompt('아래 내용을 복사하세요:', text);
+      openCopyModal(text);
     }
+  });
+
+  copyModalCopyBtn.addEventListener('click', function () {
+    copyModalText.focus();
+    copyModalText.select();
+    var copied = false;
+    try { copied = document.execCommand('copy'); } catch (e) {}
+    if (copied) {
+      closeCopyModal();
+      showCopyToast();
+    } else {
+      copyModalText.focus();
+      copyModalText.select();
+    }
+  });
+
+  copyModalCloseBtn.addEventListener('click', closeCopyModal);
+  copyModalBackdrop.addEventListener('click', function (e) {
+    if (e.target === copyModalBackdrop) { closeCopyModal(); }
   });
 
   resetBtn.addEventListener('click', function () {
