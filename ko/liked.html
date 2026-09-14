@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>찜한 글 | K-Rambles</title>
-<meta name="description" content="하트 누른 글들만 모아서 한눈에 보기 — 계정 없이 이 브라우저에 저장된다.">
+<title>좋아요 글 모음 | K-Rambles</title>
+<meta name="description" content="하트 누른 글들만 모아서 한눈에 보기 — 계정 없이 이 브라우저에 저장돼요.">
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Work+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap');
 
@@ -59,10 +59,10 @@
   .mono { font-family: "Space Mono", ui-monospace, "SF Mono", monospace; }
 
   header.site { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 26px 28px; max-width: 1040px; margin: 0 auto; }
-  .logo { font-family: "Bricolage Grotesque", ui-sans-serif, sans-serif; font-weight: 700; font-size: 1.35rem; letter-spacing: -0.01em; }
+  .logo { font-family: "Bricolage Grotesque", ui-sans-serif, sans-serif; font-weight: 700; font-size: 1.35rem; letter-spacing: -0.01em; white-space: nowrap; }
   .logo span { color: var(--coral); }
   .header-right { display: flex; align-items: center; gap: 18px; }
-  .back-link { display: inline-flex; align-items: center; gap: 6px; text-decoration: none; color: var(--ink-soft); font-size: 0.92rem; }
+  .back-link { display: inline-flex; align-items: center; gap: 6px; text-decoration: none; color: var(--ink-soft); font-size: 0.92rem; white-space: nowrap; }
   .back-link:hover { color: var(--ink); }
   .back-link svg { width: 16px; height: 16px; stroke: currentColor; fill: none; }
 
@@ -106,6 +106,18 @@
   footer.site { border-top: 1px solid var(--line); padding: 30px 28px 46px; }
   .footer-inner { max-width: 1040px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; align-items: center; }
   .footer-inner .mono { font-size: 0.78rem; color: var(--ink-soft); letter-spacing: 0.04em; }
+  /* kr-header-narrow-fix */
+  @media (max-width: 480px) {
+    header.site { padding: 14px 14px; gap: 6px; }
+    .header-right { gap: 6px; flex-wrap: wrap; row-gap: 8px; justify-content: flex-end; }
+    .logo { font-size: 0.92rem; }
+    .back-link { font-size: 0.68rem; gap: 3px; }
+    .back-link svg { width: 12px; height: 12px; }
+    .font-size-ctrl { gap: 4px; padding: 2px 4px; }
+    .fs-step { width: 22px; height: 22px; font-size: 1.05rem; }
+    .lang-switch { gap: 3px; font-size: 0.68rem; }
+    .lang-switch a, .lang-switch span.current { padding: 2px 6px; }
+  }
 </style>
 </head>
 <body>
@@ -120,10 +132,10 @@
 
 <div class="liked-hero">
   <div class="liked-icon-badge"><svg><use href="#i-heart"/></svg></div>
-  <h1 class="liked-title">찜한 글</h1>
-  <p class="liked-dek">하트 누른 글들을 한곳에 모아봤다.</p>
+  <h1 class="liked-title">좋아요 글 모음</h1>
+  <p class="liked-dek">하트 누른 글들을 한곳에 모아봤어요.</p>
   <p class="liked-count">0개 저장됨</p>
-  <p class="liked-note">찜한 글은 계정이나 로그인 없이 이 브라우저에만 저장된다. 기기를 바꾸거나 브라우저 데이터를 지우면 목록이 초기화된다.</p>
+  <p class="liked-note">좋아요 리스트는 이 브라우저에만 보관 돼요. 즉, 브라우저가 바뀌거나 설정을 지우면 여기 있는 좋아요 리스트는 사라져요.</p>
 </div>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -140,7 +152,7 @@
 <div class="liked-empty" id="liked-empty" hidden>
   <div class="liked-empty-card">
     <svg><use href="#i-heart"/></svg>
-    <p>아직 찜한 글이 없다. 사이트 어디서든 카드의 하트를 누르면 여기 모인다.</p>
+    <p>아직 좋아요한 글이 없어요. 사이트 어디서든 카드의 하트를 누르면 여기 모여요.</p>
     <p><a href="index.html">보드 둘러보기 →</a></p>
   </div>
 </div>

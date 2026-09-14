@@ -71,34 +71,55 @@
 
   // One-time (per browser) disclosure toast — fires on the first save anywhere on
   // the site, on tap or click, so it reaches mobile visitors who can't hover.
+  // Stays up until the visitor closes it — no auto-dismiss timer, so there's no
+  // race against someone reading it.
   var TOAST_SEEN_KEY = 'krambles-like-notice-seen';
   function ensureToastStyle() {
     if (document.getElementById('kr-like-toast-style')) { return; }
     var style = document.createElement('style');
     style.id = 'kr-like-toast-style';
     style.textContent = '.kr-like-toast{position:fixed;left:50%;bottom:22px;transform:translate(-50%,12px);' +
+      'display:flex;align-items:center;gap:10px;' +
       'background:rgba(31,36,32,.94);color:#fdf8f2;font-family:"Work Sans",ui-sans-serif,system-ui,sans-serif;' +
-      'font-size:.86rem;line-height:1.45;padding:12px 18px;border-radius:12px;max-width:min(88vw,360px);' +
-      'text-align:center;box-shadow:0 12px 30px -10px rgba(0,0,0,.5);opacity:0;' +
-      'transition:opacity .25s ease,transform .25s ease;z-index:9999;pointer-events:none}' +
-      '.kr-like-toast.is-visible{opacity:1;transform:translate(-50%,0)}';
+      'font-size:.86rem;line-height:1.45;padding:12px 12px 12px 18px;border-radius:12px;max-width:min(88vw,380px);' +
+      'box-shadow:0 12px 30px -10px rgba(0,0,0,.5);opacity:0;pointer-events:none;' +
+      'transition:opacity .25s ease,transform .25s ease;z-index:9999}' +
+      '.kr-like-toast.is-visible{opacity:1;transform:translate(-50%,0);pointer-events:auto}' +
+      '.kr-like-toast-msg{flex:1 1 auto;}' +
+      '.kr-like-toast-close{flex-shrink:0;appearance:none;border:none;cursor:pointer;' +
+      'background:rgba(255,255,255,.14);color:inherit;width:26px;height:26px;border-radius:50%;' +
+      'font-size:1.05rem;line-height:1;display:inline-flex;align-items:center;justify-content:center;}' +
+      '.kr-like-toast-close:hover{background:rgba(255,255,255,.26);}';
     document.head.appendChild(style);
   }
   function showLikeToast() {
     try { if (localStorage.getItem(TOAST_SEEN_KEY)) { return; } } catch (e) {}
     ensureToastStyle();
-    var msg = isKo()
-      ? '저장됨 — 이 기기에만 보관돼요. 다른 폰이나 브라우저로 바꾸면 안 보여요.'
-      : 'Saved — stored on this device only. Switch phones or browsers and it won’t be there.';
+    var ko = isKo();
+    var msg = ko
+      ? '좋아요 리스트는 이 브라우저에만 보관 돼요. 즉, 브라우저가 바뀌면 좋아요 리스트는 공유가 안돼요. 그리고 좋아요 누른 글은 상단 메뉴에서 다시 볼 수 있어요.'
+      : 'Your likes are saved to this browser only — switch browsers and the list won’t carry over. You can find everything you’ve liked again from the menu at the top.';
     var toast = document.createElement('div');
     toast.className = 'kr-like-toast';
-    toast.textContent = msg;
-    document.body.appendChild(toast);
-    requestAnimationFrame(function () { toast.classList.add('is-visible'); });
-    setTimeout(function () {
+
+    var text = document.createElement('span');
+    text.className = 'kr-like-toast-msg';
+    text.textContent = msg;
+
+    var closeBtn = document.createElement('button');
+    closeBtn.type = 'button';
+    closeBtn.className = 'kr-like-toast-close';
+    closeBtn.setAttribute('aria-label', ko ? '닫기' : 'Close');
+    closeBtn.textContent = '×';
+    closeBtn.addEventListener('click', function () {
       toast.classList.remove('is-visible');
       setTimeout(function () { toast.remove(); }, 300);
-    }, 4200);
+    });
+
+    toast.appendChild(text);
+    toast.appendChild(closeBtn);
+    document.body.appendChild(toast);
+    requestAnimationFrame(function () { toast.classList.add('is-visible'); });
     try { localStorage.setItem(TOAST_SEEN_KEY, '1'); } catch (e) {}
   }
 

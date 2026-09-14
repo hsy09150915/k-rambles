@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Saved | K-Rambles</title>
+<title>Liked | K-Rambles</title>
 <meta name="description" content="The pieces you've tapped the heart on, collected in one place — saved right in this browser, no account needed.">
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Work+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap');
@@ -59,10 +59,10 @@
   .mono { font-family: "Space Mono", ui-monospace, "SF Mono", monospace; }
 
   header.site { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 26px 28px; max-width: 1040px; margin: 0 auto; }
-  .logo { font-family: "Bricolage Grotesque", ui-sans-serif, sans-serif; font-weight: 700; font-size: 1.35rem; letter-spacing: -0.01em; }
+  .logo { font-family: "Bricolage Grotesque", ui-sans-serif, sans-serif; font-weight: 700; font-size: 1.35rem; letter-spacing: -0.01em; white-space: nowrap; }
   .logo span { color: var(--coral); }
   .header-right { display: flex; align-items: center; gap: 18px; }
-  .back-link { display: inline-flex; align-items: center; gap: 6px; text-decoration: none; color: var(--ink-soft); font-size: 0.92rem; }
+  .back-link { display: inline-flex; align-items: center; gap: 6px; text-decoration: none; color: var(--ink-soft); font-size: 0.92rem; white-space: nowrap; }
   .back-link:hover { color: var(--ink); }
   .back-link svg { width: 16px; height: 16px; stroke: currentColor; fill: none; }
 
@@ -106,6 +106,18 @@
   footer.site { border-top: 1px solid var(--line); padding: 30px 28px 46px; }
   .footer-inner { max-width: 1040px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; align-items: center; }
   .footer-inner .mono { font-size: 0.78rem; color: var(--ink-soft); letter-spacing: 0.04em; }
+  /* kr-header-narrow-fix */
+  @media (max-width: 480px) {
+    header.site { padding: 14px 14px; gap: 6px; }
+    .header-right { gap: 6px; flex-wrap: wrap; row-gap: 8px; justify-content: flex-end; }
+    .logo { font-size: 0.92rem; }
+    .back-link { font-size: 0.68rem; gap: 3px; }
+    .back-link svg { width: 12px; height: 12px; }
+    .font-size-ctrl { gap: 4px; padding: 2px 4px; }
+    .fs-step { width: 22px; height: 22px; font-size: 1.05rem; }
+    .lang-switch { gap: 3px; font-size: 0.68rem; }
+    .lang-switch a, .lang-switch span.current { padding: 2px 6px; }
+  }
 </style>
 </head>
 <body>
@@ -120,10 +132,10 @@
 
 <div class="liked-hero">
   <div class="liked-icon-badge"><svg><use href="#i-heart"/></svg></div>
-  <h1 class="liked-title">Saved</h1>
+  <h1 class="liked-title">Liked</h1>
   <p class="liked-dek">Everything you've tapped the heart on, in one place.</p>
   <p class="liked-count">0 saved</p>
-  <p class="liked-note">Saved pieces are stored right in this browser — no account, no login. Switch devices or clear your browser data and this list starts over.</p>
+  <p class="liked-note">Your likes are saved to this browser only — if you switch browsers or clear your browser settings, this list will disappear.</p>
 </div>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
