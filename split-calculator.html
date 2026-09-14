@@ -107,6 +107,17 @@
   .balance-pos { color: var(--green-ink); font-weight: 700; }
   .balance-neg { color: var(--coral-ink); font-weight: 700; }
 
+  .fx-row { display: flex; flex-direction: column; gap: 10px; margin: 0 0 16px; padding-bottom: 16px; border-bottom: 1px dashed var(--line); }
+  .fx-toggle { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; font-weight: 600; cursor: pointer; }
+  .fx-controls { display: flex; gap: 10px; flex-wrap: wrap; }
+  .fx-controls select, .fx-controls input {
+    font-family: "Work Sans", sans-serif; font-size: 0.88rem; padding: 8px 10px; border-radius: 8px;
+    border: 1px solid var(--line-strong); background: var(--paper); color: var(--ink);
+  }
+  .fx-controls select { min-width: 190px; }
+  .fx-controls input { width: 150px; }
+  .fx-controls select:disabled, .fx-controls input:disabled { opacity: 0.45; cursor: not-allowed; }
+  .fx-amount { font-family: "Space Mono", monospace; font-size: 0.85rem; color: var(--ink-soft); }
   .settle-list { list-style: none; margin: 16px 0 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
   .settle-item { display: flex; align-items: center; gap: 8px; padding: 12px 14px; background: var(--paper); border-radius: 10px; border: 1px solid var(--line); font-size: 0.95rem; }
   .settle-arrow { color: var(--ink-soft); }
@@ -210,6 +221,34 @@
   <h2 class="section-title">4. Settle up</h2>
   <p class="section-sub">The fewest transfers that clear every balance.</p>
   <div class="card">
+    <div class="fx-row">
+      <label class="fx-toggle">
+        <input type="checkbox" id="fx-enable">
+        Settle up in a different currency
+      </label>
+      <div class="fx-controls" id="fx-controls">
+        <select id="fx-currency" disabled>
+          <option value="USD">US Dollar (USD)</option>
+          <option value="JPY">Japanese Yen (JPY)</option>
+          <option value="EUR">Euro (EUR)</option>
+          <option value="GBP">British Pound (GBP)</option>
+          <option value="CNY">Chinese Yuan (CNY)</option>
+          <option value="AUD">Australian Dollar (AUD)</option>
+          <option value="CAD">Canadian Dollar (CAD)</option>
+          <option value="SGD">Singapore Dollar (SGD)</option>
+          <option value="HKD">Hong Kong Dollar (HKD)</option>
+          <option value="THB">Thai Baht (THB)</option>
+          <option value="VND">Vietnamese Dong (VND)</option>
+          <option value="PHP">Philippine Peso (PHP)</option>
+          <option value="IDR">Indonesian Rupiah (IDR)</option>
+          <option value="MYR">Malaysian Ringgit (MYR)</option>
+          <option value="INR">Indian Rupee (INR)</option>
+          <option value="TWD">Taiwan Dollar (TWD)</option>
+          <option value="OTHER">Other (rate only, no symbol)</option>
+        </select>
+        <input type="number" id="fx-rate" inputmode="decimal" step="any" min="0" placeholder="1 USD = ? ₩" disabled>
+      </div>
+    </div>
     <ul class="settle-list" id="settle-list"></ul>
     <div class="row" style="margin-top:16px">
       <button class="btn btn-ghost" id="copy-btn">Copy summary</button>
@@ -241,7 +280,7 @@
 (function () {
   'use strict';
   var STATE_KEY = 'krambles-split-v1';
-  var state = { participants: [], expenses: [] };
+  var state = { participants: [], expenses: [], fx: { enabled: false, currency: 'USD', rate: '' } };
 
   function load() {
     try {
@@ -250,6 +289,7 @@
     } catch (e) {}
     if (!state.participants) { state.participants = []; }
     if (!state.expenses) { state.expenses = []; }
+    if (!state.fx) { state.fx = { enabled: false, currency: 'USD', rate: '' }; }
   }
   function save() {
     try { localStorage.setItem(STATE_KEY, JSON.stringify(state)); } catch (e) {}
@@ -283,6 +323,78 @@
   var copyModalText = document.getElementById('copy-modal-text');
   var copyModalCopyBtn = document.getElementById('copy-modal-copy');
   var copyModalCloseBtn = document.getElementById('copy-modal-close');
+  var fxEnable = document.getElementById('fx-enable');
+  var fxCurrency = document.getElementById('fx-currency');
+  var fxRate = document.getElementById('fx-rate');
+
+  var CURRENCIES = {
+    USD: { symbol: '$', decimals: 2 },
+    JPY: { symbol: '¥', decimals: 0 },
+    EUR: { symbol: '€', decimals: 2 },
+    GBP: { symbol: '£', decimals: 2 },
+    CNY: { symbol: 'CN¥', decimals: 2 },
+    AUD: { symbol: 'A$', decimals: 2 },
+    CAD: { symbol: 'C$', decimals: 2 },
+    SGD: { symbol: 'S$', decimals: 2 },
+    HKD: { symbol: 'HK$', decimals: 2 },
+    THB: { symbol: '฿', decimals: 2 },
+    VND: { symbol: '₫', decimals: 0 },
+    PHP: { symbol: '₱', decimals: 2 },
+    IDR: { symbol: 'Rp', decimals: 0 },
+    MYR: { symbol: 'RM', decimals: 2 },
+    INR: { symbol: '₹', decimals: 2 },
+    TWD: { symbol: 'NT$', decimals: 2 },
+    OTHER: { symbol: '', decimals: 2 }
+  };
+
+  function fxActive() {
+    var rate = parseFloat(fxRate.value);
+    return !!(fxEnable.checked && rate > 0);
+  }
+
+  function fxConvert(krwAmount) {
+    var rate = parseFloat(fxRate.value);
+    return krwAmount / rate;
+  }
+
+  function fxFormat(krwAmount, withPlusSign) {
+    var cur = CURRENCIES[fxCurrency.value] || CURRENCIES.OTHER;
+    var converted = fxConvert(krwAmount);
+    var abs = Math.abs(converted);
+    var numStr = abs.toLocaleString('en-US', { minimumFractionDigits: cur.decimals, maximumFractionDigits: cur.decimals });
+    var sign = converted < 0 ? '-' : (withPlusSign && converted > 0.0001 ? '+' : '');
+    return sign + cur.symbol + numStr;
+  }
+
+  function updateFxRatePlaceholder() {
+    var code = fxCurrency.value;
+    fxRate.placeholder = code === 'OTHER' ? '1 unit = ? ₩' : ('1 ' + code + ' = ? ₩');
+  }
+
+  function applyFxState() {
+    fxEnable.checked = !!state.fx.enabled;
+    fxCurrency.value = state.fx.currency || 'USD';
+    fxRate.value = state.fx.rate || '';
+    fxCurrency.disabled = !fxEnable.checked;
+    fxRate.disabled = !fxEnable.checked;
+    updateFxRatePlaceholder();
+  }
+
+  fxEnable.addEventListener('change', function () {
+    state.fx.enabled = fxEnable.checked;
+    fxCurrency.disabled = !fxEnable.checked;
+    fxRate.disabled = !fxEnable.checked;
+    save(); renderAll();
+  });
+  fxCurrency.addEventListener('change', function () {
+    state.fx.currency = fxCurrency.value;
+    updateFxRatePlaceholder();
+    save(); renderAll();
+  });
+  fxRate.addEventListener('input', function () {
+    state.fx.rate = fxRate.value;
+    save(); renderAll();
+  });
 
   function renderParticipants() {
     chipsEl.innerHTML = state.participants.map(function (name) {
@@ -341,7 +453,8 @@
       var b = balances[name] || 0;
       var cls = b > 0.5 ? 'balance-pos' : (b < -0.5 ? 'balance-neg' : '');
       var sign = b > 0.5 ? '+' : '';
-      return '<li class="balance-row"><span>' + esc(name) + '</span><span class="' + cls + '">' + sign + fmt(b) + '</span></li>';
+      var fxPart = fxActive() ? ' <span class="fx-amount">(' + fxFormat(b, true) + ')</span>' : '';
+      return '<li class="balance-row"><span>' + esc(name) + '</span><span class="' + cls + '">' + sign + fmt(b) + fxPart + '</span></li>';
     }).join('');
   }
 
@@ -374,7 +487,8 @@
       return;
     }
     settleListEl.innerHTML = transfers.map(function (t) {
-      return '<li class="settle-item">' + esc(t.from) + '<svg class="settle-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-arrow-right"/></svg>' + esc(t.to) + '<span class="settle-amount">' + fmt(t.amount) + '</span></li>';
+      var fxPart = fxActive() ? ' <span class="fx-amount">(' + fxFormat(t.amount, false) + ')</span>' : '';
+      return '<li class="settle-item">' + esc(t.from) + '<svg class="settle-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-arrow-right"/></svg>' + esc(t.to) + '<span class="settle-amount">' + fmt(t.amount) + fxPart + '</span></li>';
     }).join('');
   }
 
@@ -444,13 +558,15 @@
 
   function buildSummaryText() {
     var lines = ['Trip expense summary:', '', 'Balances:'];
+    var fx = fxActive();
     if (!state.participants.length) {
       lines.push('No participants yet.');
     } else {
       state.participants.forEach(function (name) {
         var b = lastBalances[name] || 0;
         var sign = b > 0.5 ? '+' : '';
-        lines.push(name + ': ' + sign + fmt(b));
+        var fxPart = fx ? ' (' + fxFormat(b, true) + ')' : '';
+        lines.push(name + ': ' + sign + fmt(b) + fxPart);
       });
     }
     lines.push('', 'Settle up:');
@@ -458,8 +574,13 @@
       lines.push('Everyone is settled up.');
     } else {
       lastTransfers.forEach(function (t) {
-        lines.push(t.from + ' → ' + t.to + ': ' + fmt(t.amount));
+        var fxPart = fx ? ' (' + fxFormat(t.amount, false) + ')' : '';
+        lines.push(t.from + ' → ' + t.to + ': ' + fmt(t.amount) + fxPart);
       });
+    }
+    if (fx) {
+      var code = fxCurrency.value === 'OTHER' ? '' : (' ' + fxCurrency.value);
+      lines.push('', '(Converted at 1' + code + ' = ' + fxRate.value + ' ₩)');
     }
     return lines.join('\n');
   }
@@ -510,11 +631,13 @@
 
   resetBtn.addEventListener('click', function () {
     if (!confirm('Clear all participants and expenses? This can\'t be undone.')) { return; }
-    state = { participants: [], expenses: [] };
+    state.participants = [];
+    state.expenses = [];
     save(); renderAll();
   });
 
   load();
+  applyFxState();
   renderAll();
 })();
 </script>
