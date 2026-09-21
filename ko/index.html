@@ -297,31 +297,39 @@
 
   /* ---------- Pre-trip essentials banner ---------- */
 
-  .pretrip { max-width: 1040px; margin: 0 auto 8px; padding: 0 28px; display: flex; gap: 16px; flex-wrap: wrap; }
+  .pretrip { max-width: 1160px; margin: 0 auto 8px; padding: 0 28px; display: grid; grid-template-columns: 1fr; gap: 16px; }
+  @media (min-width: 960px) {
+    .pretrip { grid-template-columns: repeat(3, 1fr); }
+    .pretrip-desc {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
   .pretrip-card {
     display: flex;
     align-items: center;
-    gap: 18px;
+    gap: 16px;
     background: var(--paper-raised);
     border: 2px dashed var(--navy);
     border-radius: 18px;
-    padding: 20px 24px;
+    padding: 18px 20px;
     text-decoration: none;
     color: inherit;
     box-shadow: var(--card-shadow);
     transition: transform 0.15s ease;
-    flex: 1 1 300px;
-    max-width: 460px;
   }
   .pretrip-card:hover { transform: translateY(-2px); }
   .pretrip-card:focus-visible { outline: 2px solid var(--coral); outline-offset: 3px; }
   .pretrip-icon {
-    width: 50px; height: 50px; border-radius: 50%;
+    width: 44px; height: 44px; border-radius: 50%;
     background: var(--navy); color: var(--paper-raised);
     display: flex; align-items: center; justify-content: center;
     flex-shrink: 0;
   }
-  .pretrip-icon svg { width: 25px; height: 25px; stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+  .pretrip-icon svg { width: 22px; height: 22px; stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
   .pretrip-body { flex: 1; min-width: 0; }
   .pretrip-eyebrow {
     font-family: "Space Mono", monospace;
@@ -846,6 +854,17 @@
 </section>
 
 <section class="pretrip">
+  <a class="pretrip-card" href="trip-planner/2026-09-19-korea-entry-eta-arrival-card-guide-ko.html">
+    <div class="pretrip-icon">
+      <svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M12 13v3M9 19h6"/></svg>
+    </div>
+    <div class="pretrip-body">
+      <p class="pretrip-eyebrow">여행 전 필수 체크</p>
+      <h3 class="pretrip-title">K-ETA·입국신고서 미리 확인하고 가기</h3>
+      <p class="pretrip-desc">K-ETA, e-Arrival Card, 비자 — 내 국적이면 뭘 내야 하는지, 안 내면 무슨 일이 생기는지 정리했다.</p>
+    </div>
+    <svg class="pretrip-arrow" viewBox="0 0 24 24"><path d="M4 12h16M13 5l7 7-7 7"/></svg>
+  </a>
   <a class="pretrip-card" href="getting-around/2026-09-07-naver-map-app-guide.html">
     <div class="pretrip-icon">
       <svg viewBox="0 0 24 24"><path d="M9 4.5 4 6.5v13l5-2 6 2 5-2v-13l-5 2-6-2Z"/><path d="M9 4.5v13M15 6.5v13"/></svg>
@@ -981,7 +1000,6 @@
       </a>
       </div>
     </div>
-    </div>
 
     <div class="board-shelf board-shelf--transit">
       <div class="board-row" data-count="1" id="row-getting-around">
@@ -994,7 +1012,6 @@
         </div>
       </a>
       </div>
-    </div>
     </div>
 
     <div class="board-shelf board-shelf--taste">
@@ -1009,7 +1026,6 @@
       </a>
       </div>
     </div>
-    </div>
 
     <div class="board-shelf board-shelf--stay">
       <div class="board-row" data-count="1" id="row-long-stay">
@@ -1022,7 +1038,6 @@
         </div>
       </a>
       </div>
-    </div>
     </div>
   </div>
 </section>
