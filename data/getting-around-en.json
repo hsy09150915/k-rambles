@@ -1,5 +1,18 @@
 [
   {
+    "title": "How to Exchange Money in Busan — ATM or Currency Exchange, Which Wins?",
+    "url": "2026-09-17-currency-exchange-atm-guide-en.html",
+    "thumb": "assets/thumbs/getting-around/currency-exchange-atm-guide.jpg",
+    "label": "Currency Exchange · live",
+    "alt": "A mix of US dollar and euro banknotes",
+    "badge": null,
+    "like_id": "getting-around/2026-09-17-currency-exchange-atm-guide-en.html",
+    "date": "2026-09-17",
+    "kw": "currency exchange money atm foreign card withdrawal cash advance travel card wise hana woori shinhan kookmin naver map busan korea",
+    "city": "busan",
+    "locations": []
+  },
+  {
     "title": "How to Ride the Bus in Korea — From Front/Back Doors to Center-Lane Stops",
     "url": "2026-09-13-bus-riding-guide.html",
     "thumb": "assets/thumbs/getting-around/bus-riding-guide.jpg",
@@ -8,7 +21,9 @@
     "badge": null,
     "like_id": "getting-around/2026-09-13-bus-riding-guide.html",
     "date": "2026-09-13",
-    "kw": "bus stop center lane right-hand traffic front door back door arrival board destination route naver map busan korea"
+    "kw": "bus stop center lane right-hand traffic front door back door arrival board destination route naver map busan korea",
+    "city": "busan",
+    "locations": []
   },
   {
     "title": "Busan SIM & eSIM Guide — The 3 Carriers, Plus How to Pay Less",
@@ -19,7 +34,9 @@
     "badge": null,
     "like_id": "getting-around/2026-09-13-korea-sim-esim-guide.html",
     "date": "2026-09-13",
-    "kw": "sim esim usim carrier skt kt lg u+ uplus klook kkday trazy airport kiosk data plan busan korea roaming"
+    "kw": "sim esim usim carrier skt kt lg u+ uplus klook kkday trazy airport kiosk data plan busan korea roaming",
+    "city": "busan",
+    "locations": []
   },
   {
     "title": "How to Ride a Taxi in Busan Without the Hassle",
@@ -30,7 +47,9 @@
     "badge": null,
     "like_id": "getting-around/2026-09-12-taxi-guide.html",
     "date": "2026-09-12",
-    "kw": "taxi kride k.ride kakao t uber fare surcharge night payment card cash overcharge busan"
+    "kw": "taxi kride k.ride kakao t uber fare surcharge night payment card cash overcharge busan",
+    "city": "busan",
+    "locations": []
   },
   {
     "title": "How to Ride the Busan Subway Without Getting Confused",
@@ -41,7 +60,9 @@
     "badge": null,
     "like_id": "getting-around/2026-09-11-subway-navigation-guide.html",
     "date": "2026-09-11",
-    "kw": "busan subway direction transfer exit seomyeon platform signage line map restroom elevator"
+    "kw": "busan subway direction transfer exit seomyeon platform signage line map restroom elevator",
+    "city": "busan",
+    "locations": []
   },
   {
     "title": "Google Maps Will Get You Lost in Busan — Use a Korean Map App Instead",
@@ -52,7 +73,9 @@
     "badge": null,
     "like_id": "getting-around/2026-09-07-naver-map-app-guide.html",
     "date": "2026-09-07",
-    "kw": "naver map kakao map kakao subway english language settings app search directions arrival alert busan travel"
+    "kw": "naver map kakao map kakao subway english language settings app search directions arrival alert busan travel",
+    "city": "busan",
+    "locations": []
   },
   {
     "title": "Gimhae Airport → Haeundae, solved",
@@ -63,7 +86,9 @@
     "badge": null,
     "like_id": "getting-around/2026-09-02-airport-to-haeundae.html",
     "date": "2026-09-02",
-    "kw": "busan gimhae airport haeundae route bus light rail gangseo-gu haeundae-gu transit route"
+    "kw": "busan gimhae airport haeundae route bus light rail gangseo-gu haeundae-gu transit route",
+    "city": "busan",
+    "locations": []
   },
   {
     "title": "Busan Transit Cards Are Simpler Than They Look — Here's All You Need to Know",
@@ -74,6 +99,8 @@
     "badge": null,
     "like_id": "getting-around/2026-09-02-tmoney-explained.html",
     "date": "2026-09-02",
-    "kw": "t-money cashbee ezl wowpass transit card bus subway top-up refund transfer busan"
+    "kw": "t-money cashbee ezl wowpass transit card bus subway top-up refund transfer busan",
+    "city": "busan",
+    "locations": []
   }
 ]

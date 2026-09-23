@@ -1,5 +1,63 @@
 [
   {
+    "title": "Seeing Busan Without Walking — Cable Car, Observation Tower, Yacht",
+    "url": "2026-09-23-busan-views-cablecar-tower-yacht-en.html",
+    "thumb": "assets/thumbs/trip-planner/busan-views-cablecar-tower-yacht.jpg",
+    "label": "Trip prep · live",
+    "alt": "A Songdo Marine Cable Car gondola with the Busan coast and city skyline behind it",
+    "badge": null,
+    "like_id": "trip-planner/2026-09-23-busan-views-cablecar-tower-yacht-en.html",
+    "date": "2026-09-23",
+    "kw": "songdo marine cable car busan air cruise busan tower yongdusan park songdo yacht amnam park yonggung suspension bridge cloud walk observatory seo-gu jung-gu busan",
+    "city": "busan",
+    "locations": [
+      {
+        "name": "Songdo Marine Cable Car (lower · Songdo Bay Station)",
+        "address": "171 Songdohaebyeon-ro, Seo-gu, Busan",
+        "lat": null,
+        "lng": null
+      },
+      {
+        "name": "Songdo Marine Cable Car (upper · Songdo Sky Park)",
+        "address": "181 Amnamgongwon-ro, Seo-gu, Busan",
+        "lat": null,
+        "lng": null
+      },
+      {
+        "name": "Busan Tower (Yongdusan Park)",
+        "address": "37-30 Yongdusan-gil, Jung-gu, Busan",
+        "lat": null,
+        "lng": null
+      },
+      {
+        "name": "Songdo yacht dock",
+        "address": "150 Songdohaebyeon-ro, Seo-gu, Busan",
+        "lat": null,
+        "lng": null
+      }
+    ]
+  },
+  {
+    "title": "Taejongdae, Done Right — From the Danubi Train to Yeongdo Lighthouse and Sinseon Rock",
+    "url": "2026-09-22-taejongdae-guide-en.html",
+    "thumb": "assets/thumbs/trip-planner/taejongdae-guide.jpg",
+    "label": "Trip prep · live",
+    "alt": "Aerial view of Taejongdae cliffs, lighthouse, and blue sea",
+    "badge": null,
+    "like_id": "trip-planner/2026-09-22-taejongdae-guide-en.html",
+    "date": "2026-09-22",
+    "kw": "taejongdae danubi train yeongdo lighthouse sinseon rock dinosaur footprint orbicular hornfels busan yeongdo-gu observatory",
+    "city": "busan",
+    "locations": [
+      {
+        "name": "Taejongdae Resort Park entrance",
+        "address": "24 Jeonmang-ro, Yeongdo-gu, Busan",
+        "lat": null,
+        "lng": null
+      }
+    ]
+  },
+  {
     "title": "Korea Arrival Card vs K-ETA — What's the Difference?",
     "url": "2026-09-19-korea-entry-eta-arrival-card-guide-en.html",
     "thumb": "assets/thumbs/trip-planner/korea-entry-eta-arrival-card-guide.jpg",
@@ -8,7 +66,9 @@
     "badge": null,
     "like_id": "trip-planner/2026-09-19-korea-entry-eta-arrival-card-guide-en.html",
     "date": "2026-09-19",
-    "kw": "k-eta arrival card e-arrival visa waiver visa-free arc entry declaration busan korea travel"
+    "kw": "k-eta arrival card e-arrival visa waiver visa-free arc entry declaration busan korea travel",
+    "city": "busan",
+    "locations": []
   },
   {
     "title": "Where to Rent a Hanbok in Busan",
@@ -19,7 +79,34 @@
     "badge": null,
     "like_id": "trip-planner/2026-09-06-busan-hanbok-rental-guide.html",
     "date": "2026-09-06",
-    "kw": "busan hanbok rental experience gamcheon culture village nampo-dong jungang-dong gwangalli saha-gu jung-gu suyeong-gu cheolsu younghee hanminyeo ipgo gagye noir hair"
+    "kw": "busan hanbok rental experience gamcheon culture village nampo-dong jungang-dong gwangalli saha-gu jung-gu suyeong-gu cheolsu younghee hanminyeo ipgo gagye noir hair",
+    "city": "busan",
+    "locations": [
+      {
+        "name": "Cheolsu & Younghee",
+        "address": "123 Okcheon-ro, Saha-gu, Busan",
+        "lat": null,
+        "lng": null
+      },
+      {
+        "name": "Ipgo-gage",
+        "address": "2-9 Gamcheon-dong, Saha-gu, Busan",
+        "lat": null,
+        "lng": null
+      },
+      {
+        "name": "Hanminyeo",
+        "address": "A17, Gwangbok Underground Arcade, 17 Jungang-daero, Jung-gu, Busan",
+        "lat": null,
+        "lng": null
+      },
+      {
+        "name": "Noir Hair Gwangan Beach Branch 2",
+        "address": "1F, 127 Gwanganhaebyeon-ro, Suyeong-gu, Busan",
+        "lat": null,
+        "lng": null
+      }
+    ]
   },
   {
     "title": "Huinnyeoul Culture Village, the Alley Closest to the Sea — Closed Cafés Filtered Out",
@@ -30,7 +117,16 @@
     "badge": null,
     "like_id": "trip-planner/2026-09-06-huinnyeoul-culture-village.html",
     "date": "2026-09-06",
-    "kw": "busan huinnyeoul culture village yeongdo-gu mural village sea view scenic viewpoint cafe alley"
+    "kw": "busan huinnyeoul culture village yeongdo-gu mural village sea view scenic viewpoint cafe alley",
+    "city": "busan",
+    "locations": [
+      {
+        "name": "Huinnyeoul Culture Village entrance",
+        "address": "605-3 Yeongseon-dong 4-ga, Yeongdo-gu, Busan",
+        "lat": null,
+        "lng": null
+      }
+    ]
   },
   {
     "title": "Amidong Tombstone Village, before you go",
@@ -41,7 +137,16 @@
     "badge": null,
     "like_id": "trip-planner/2026-09-05-amidong-tombstone-village.html",
     "date": "2026-09-05",
-    "kw": "busan amidong tombstone village gravestone gamcheon seo-gu graveyard alley history photo spot"
+    "kw": "busan amidong tombstone village gravestone gamcheon seo-gu graveyard alley history photo spot",
+    "city": "busan",
+    "locations": [
+      {
+        "name": "Amidong Tombstone Village",
+        "address": "49 Ami-ro, Seo-gu, Busan",
+        "lat": null,
+        "lng": null
+      }
+    ]
   },
   {
     "title": "Amisan Observatory: the view everyone agrees on",
@@ -52,7 +157,16 @@
     "badge": null,
     "like_id": "trip-planner/2026-09-04-amisan-observatory.html",
     "date": "2026-09-04",
-    "kw": "busan amisan observatory sunset view dadaepo saha-gu viewpoint nature scenic"
+    "kw": "busan amisan observatory sunset view dadaepo saha-gu viewpoint nature scenic",
+    "city": "busan",
+    "locations": [
+      {
+        "name": "Amisan Observatory",
+        "address": "77 Daedaenakjo 2-gil, Saha-gu, Busan",
+        "lat": null,
+        "lng": null
+      }
+    ]
   },
   {
     "title": "How far can your Gimhae layover take you?",
@@ -63,7 +177,9 @@
     "badge": null,
     "like_id": "trip-planner/2026-09-03-gimhae-layover-guide.html",
     "date": "2026-09-03",
-    "kw": "busan gimhae airport layover itinerary transit time gangseo-gu airport transit"
+    "kw": "busan gimhae airport layover itinerary transit time gangseo-gu airport transit",
+    "city": "busan",
+    "locations": []
   },
   {
     "title": "Busan Venice: the colorful harbor with a catch",
@@ -74,7 +190,16 @@
     "badge": null,
     "like_id": "trip-planner/2026-09-03-busan-venice-jangnimpogu.html",
     "date": "2026-09-03",
-    "kw": "jangnimpogu busan venice harbor boats sunset saha-gu fishing port sea view scenic"
+    "kw": "jangnimpogu busan venice harbor boats sunset saha-gu fishing port sea view scenic",
+    "city": "busan",
+    "locations": [
+      {
+        "name": "Jangnimhang Port (Busan Venice)",
+        "address": "74 Jangnim-ro 93beon-gil, Saha-gu, Busan",
+        "lat": null,
+        "lng": null
+      }
+    ]
   },
   {
     "title": "Gamcheon, before you shoot",
@@ -85,6 +210,15 @@
     "badge": null,
     "like_id": "trip-planner/2026-09-02-gamcheon-culture-village.html",
     "date": "2026-09-02",
-    "kw": "busan gamcheon culture village murals photos hillside saha-gu mural village photo spot scenic viewpoint"
+    "kw": "busan gamcheon culture village murals photos hillside saha-gu mural village photo spot scenic viewpoint",
+    "city": "busan",
+    "locations": [
+      {
+        "name": "Gamcheon Culture Village Information Center",
+        "address": "203 Gamnae 2-ro, Saha-gu, Busan",
+        "lat": null,
+        "lng": null
+      }
+    ]
   }
 ]

@@ -1,5 +1,31 @@
 [
   {
+    "title": "Taejongdae — Do They Still Slice Sashimi Out of a Basin?",
+    "url": "2026-09-21-taejongdae-haenyeo-raw-seafood-en.html",
+    "thumb": "assets/thumbs/taste/taejongdae-haenyeo-raw-seafood.jpg",
+    "label": "Hidden local spot · live",
+    "alt": "A mixed seafood platter on a red tray at Taejongdae Haenyeochon",
+    "badge": null,
+    "like_id": "taste/2026-09-21-taejongdae-haenyeo-raw-seafood-en.html",
+    "date": "2026-09-21",
+    "kw": "taejongdae haenyeo jagalmadang raw seafood sannakji sea squirt gamji beach grilled clams yeongdo busan",
+    "city": "busan",
+    "locations": [
+      {
+        "name": "Lighthouse coast stalls (raw seafood)",
+        "address": "181 Jeonmang-ro, Yeongdo-gu, Busan",
+        "lat": null,
+        "lng": null
+      },
+      {
+        "name": "Gamjihaebyeon-gil Jagalmadang (grilled shellfish)",
+        "address": "1052-3 Dongsam-dong, Yeongdo-gu, Busan",
+        "lat": null,
+        "lng": null
+      }
+    ]
+  },
+  {
     "title": "Milmyeon: a different story from naengmyeon",
     "url": "2026-09-06-milmyeon-guide.html",
     "thumb": "assets/thumbs/taste/milmyeon-guide.jpg",
@@ -8,7 +34,46 @@
     "badge": null,
     "like_id": "taste/2026-09-06-milmyeon-guide.html",
     "date": "2026-09-06",
-    "kw": "busan milmyeon naengmyeon cold noodles noodles food restaurant local food comfort food"
+    "kw": "busan milmyeon naengmyeon cold noodles noodles food restaurant local food comfort food",
+    "city": "busan",
+    "locations": [
+      {
+        "name": "Naeho Naengmyeon",
+        "address": "17 Uam-beonyeong-ro 26beon-gil, Nam-gu, Busan",
+        "lat": null,
+        "lng": null
+      },
+      {
+        "name": "Gaegeum Milmyeon",
+        "address": "9-4 Gaya-daero 482beon-gil, Busanjin-gu, Busan",
+        "lat": null,
+        "lng": null
+      },
+      {
+        "name": "Gukje Milmyeon (main branch)",
+        "address": "23-6 Jungang-daero 1235beon-gil, Yeonje-gu, Busan",
+        "lat": null,
+        "lng": null
+      },
+      {
+        "name": "Choryang Milmyeon",
+        "address": "225 Jungang-daero, Dong-gu, Busan",
+        "lat": null,
+        "lng": null
+      },
+      {
+        "name": "Haeundae Gaya Milmyeon",
+        "address": "27 Jwadong-sunhwan-ro, Haeundae-gu, Busan",
+        "lat": null,
+        "lng": null
+      },
+      {
+        "name": "Chunhachudong Milmyeon (Seomyeon main branch)",
+        "address": "48-1 Seomyeonmunhwa-ro, Busanjin-gu, Busan",
+        "lat": null,
+        "lng": null
+      }
+    ]
   },
   {
     "title": "돼지국밥: the soup a war left behind",
@@ -30,6 +95,15 @@
     "badge": null,
     "like_id": "taste/2026-09-04-jagalchi-hoe-guide.html",
     "date": "2026-09-04",
-    "kw": "busan jagalchi market raw fish hoe seafood jung-gu fish market seafood market food restaurant"
+    "kw": "busan jagalchi market raw fish hoe seafood jung-gu fish market seafood market food restaurant",
+    "city": "busan",
+    "locations": [
+      {
+        "name": "Jagalchi Sindonga Market",
+        "address": "42 Jagalchi-ro, Jung-gu, Busan",
+        "lat": null,
+        "lng": null
+      }
+    ]
   }
 ]

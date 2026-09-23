@@ -1,5 +1,31 @@
 [
   {
+    "title": "태종대, 아직도 대야에서 회를 썰어줄까?",
+    "url": "2026-09-21-taejongdae-haenyeo-raw-seafood-ko.html",
+    "thumb": "assets/thumbs/taste/taejongdae-haenyeo-raw-seafood.jpg",
+    "label": "숨은 로컬 · 공개중",
+    "alt": "빨간 트레이에 담긴 태종대해녀촌 해산물 모둠",
+    "badge": null,
+    "like_id": "taste/2026-09-21-taejongdae-haenyeo-raw-seafood-ko.html",
+    "date": "2026-09-21",
+    "kw": "태종대 해녀촌 자갈마당 회 산낙지 멍게 감지해변 조개구이 영도 부산",
+    "city": "busan",
+    "locations": [
+      {
+        "name": "등대 아래 해안 좌판 (회)",
+        "address": "부산 영도구 전망로 181",
+        "lat": null,
+        "lng": null
+      },
+      {
+        "name": "감지해변길 자갈마당 (조개구이)",
+        "address": "부산 영도구 동삼동 1052-3",
+        "lat": null,
+        "lng": null
+      }
+    ]
+  },
+  {
     "title": "밀면, 냉면과는 다른 이야기",
     "url": "2026-09-06-milmyeon-guide.html",
     "thumb": "assets/thumbs/taste/milmyeon-guide.jpg",
@@ -8,7 +34,46 @@
     "badge": null,
     "like_id": "taste/2026-09-06-milmyeon-guide.html",
     "date": "2026-09-06",
-    "kw": "밀면 냉면 차이 국수 부산 음식 로컬맛집 위로음식"
+    "kw": "밀면 냉면 차이 국수 부산 음식 로컬맛집 위로음식",
+    "city": "busan",
+    "locations": [
+      {
+        "name": "내호냉면",
+        "address": "부산 남구 우암번영로26번길 17",
+        "lat": null,
+        "lng": null
+      },
+      {
+        "name": "개금밀면",
+        "address": "부산 부산진구 가야대로482번길 9-4",
+        "lat": null,
+        "lng": null
+      },
+      {
+        "name": "국제밀면 본점",
+        "address": "부산 연제구 중앙대로1235번길 23-6",
+        "lat": null,
+        "lng": null
+      },
+      {
+        "name": "초량밀면",
+        "address": "부산 동구 중앙대로 225",
+        "lat": null,
+        "lng": null
+      },
+      {
+        "name": "해운대가야밀면",
+        "address": "부산 해운대구 좌동순환로 27",
+        "lat": null,
+        "lng": null
+      },
+      {
+        "name": "춘하추동밀면 서면본점",
+        "address": "부산 부산진구 서면문화로 48-1",
+        "lat": null,
+        "lng": null
+      }
+    ]
   },
   {
     "title": "전쟁이 남긴 국밥 한 그릇",
@@ -30,6 +95,15 @@
     "badge": null,
     "like_id": "taste/2026-09-04-jagalchi-hoe-guide.html",
     "date": "2026-09-04",
-    "kw": "자갈치시장 회 활어 해산물 중구 수산시장 부산 음식"
+    "kw": "자갈치시장 회 활어 해산물 중구 수산시장 부산 음식",
+    "city": "busan",
+    "locations": [
+      {
+        "name": "자갈치 신동아시장",
+        "address": "부산 중구 자갈치로 42",
+        "lat": null,
+        "lng": null
+      }
+    ]
   }
 ]

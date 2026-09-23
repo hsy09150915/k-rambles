@@ -160,8 +160,8 @@
   .util-link:focus-visible { outline: 2px solid var(--coral); outline-offset: 2px; }
   .util-link svg { width: 18px; height: 18px; stroke: currentColor; flex-shrink: 0; }
   @media (max-width: 640px) {
-    .util-link { padding: 9px; border-radius: 50%; }
-    .util-link .util-label { display: none; }
+    .util-link { flex-direction: column; gap: 2px; padding: 6px 10px; border-radius: 12px; }
+    .util-link .util-label { display: block; font-size: 0.62rem; font-weight: 700; letter-spacing: -0.01em; }
   }
 
   .lang-switch {

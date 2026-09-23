@@ -112,6 +112,10 @@
   .transit-list svg { width: 18px; height: 18px; stroke: var(--ink); fill: none; stroke-width: 1.7; flex-shrink: 0; margin-top: 2px; }
 
   .cite-note { font-size: 0.92rem; color: var(--ink-soft); margin: 10px 0 0; }
+  .official-links { display: flex; flex-wrap: wrap; gap: 10px; margin: 14px 0 0; }
+  .official-link { display: inline-flex; align-items: center; gap: 6px; text-decoration: none; color: var(--ink); background: var(--paper-raised); border: 1px solid var(--line); border-radius: 999px; padding: 8px 14px; font-size: 0.86rem; }
+  .official-link:hover { border-color: var(--navy); color: var(--navy); }
+  .official-link svg { width: 14px; height: 14px; stroke: var(--ink-soft); fill: none; stroke-width: 2; }
 
   .hours-row { display: flex; gap: 24px; margin-top: 6px; flex-wrap: wrap; }
   .hours-item .hours-when { font-family: "Space Mono", monospace; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-soft); }
@@ -145,6 +149,7 @@
   <symbol id="i-camera" viewBox="0 0 24 24"><path d="M4 8h3l1.5-2.5h7L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1Z"/><circle cx="12" cy="13" r="3.5"/></symbol>
   <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
   <symbol id="i-stone" viewBox="0 0 24 24"><path d="M6 21V9l6-6 6 6v12Z"/><path d="M9 21v-7h6v7"/></symbol>
+  <symbol id="i-link" viewBox="0 0 24 24"><path d="M9.5 14.5 14.5 9.5"/><path d="M8.3 11.7l-1.6 1.6a3 3 0 0 0 4.2 4.2l1.6-1.6"/><path d="M15.7 12.3l1.6-1.6a3 3 0 0 0-4.2-4.2l-1.6 1.6"/></symbol>
 </svg>
 
 <header class="site">
@@ -223,6 +228,10 @@
     <li><svg><use href="#i-map"/></svg><div><strong>괴정역(1호선) 6번 출구</strong> — 사하1 또는 사하1-1번 버스를 타고 감천문화마을 정류장에서 내리세요.</div></li>
   </ul>
   <p class="cite-note">감천문화마을 공식 홈페이지 및 나무위키 부산 버스 사하1-1 노선 정보로 확인, 2026년 9월 2일 기준.</p>
+  <div class="official-links">
+    <a class="official-link" href="https://map.naver.com/p/search/%EB%B6%80%EC%82%B0%20%EC%82%AC%ED%95%98%EA%B5%AC%20%EA%B0%90%EB%82%B42%EB%A1%9C%20203" target="_blank" rel="noopener"><svg><use href="#i-link"/></svg>네이버 지도</a>
+    <a class="official-link" href="https://www.google.com/maps/search/?api=1&amp;query=%EB%B6%80%EC%82%B0%20%EC%82%AC%ED%95%98%EA%B5%AC%20%EA%B0%90%EB%82%B42%EB%A1%9C%20203" target="_blank" rel="noopener"><svg><use href="#i-link"/></svg>구글 지도</a>
+  </div>
 </section>
 
 <section class="block">

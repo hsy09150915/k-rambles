@@ -8,7 +8,9 @@
     "badge": null,
     "like_id": "long-stay/2026-09-20-korea-phone-plan-guide-ko.html",
     "date": "2026-09-20",
-    "kw": "휴대폰 개통 본인인증 외국인등록번호 13자리 PASS 안면인증 알뜰폰 카카오톡 부산 장기체류"
+    "kw": "휴대폰 개통 본인인증 외국인등록번호 13자리 PASS 안면인증 알뜰폰 카카오톡 부산 장기체류",
+    "city": "busan",
+    "locations": []
   },
   {
     "title": "장기체류 외국인을 위한 한국 은행계좌 개설 가이드",
@@ -19,7 +21,9 @@
     "badge": null,
     "like_id": "long-stay/2026-09-20-korea-bank-account-guide-ko.html",
     "date": "2026-09-20",
-    "kw": "은행계좌 계좌개설 외국인등록증 한도제한계좌 토스뱅크 카카오뱅크 부산 장기체류"
+    "kw": "은행계좌 계좌개설 외국인등록증 한도제한계좌 토스뱅크 카카오뱅크 부산 장기체류",
+    "city": "busan",
+    "locations": []
   },
   {
     "title": "한국 외국인등록증(ARC), 나도 만들어야 하나요?",
@@ -30,7 +34,9 @@
     "badge": null,
     "like_id": "long-stay/2026-09-19-korea-arc-foreign-registration-guide-ko.html",
     "date": "2026-09-19",
-    "kw": "외국인등록증 ARC 발급 91일 90일 체류지 출입국 하이코리아 부산 유심 장기체류"
+    "kw": "외국인등록증 ARC 발급 91일 90일 체류지 출입국 하이코리아 부산 유심 장기체류",
+    "city": "busan",
+    "locations": []
   },
   {
     "title": "부산 수돗물, 정말 마셔도 될까?",
@@ -41,6 +47,8 @@
     "badge": null,
     "like_id": "long-stay/2026-09-02-tap-water-safety.html",
     "date": "2026-09-02",
-    "kw": "수돗물 식수 안전 낙동강 부산 거주 일상 생활정보"
+    "kw": "수돗물 식수 안전 낙동강 부산 거주 일상 생활정보",
+    "city": "busan",
+    "locations": []
   }
 ]

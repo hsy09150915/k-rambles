@@ -438,4 +438,66 @@
   }
 
   global.KR = { renderHub: renderHub, renderHome: renderHome, renderLiked: renderLiked };
+
+  // One-time (per browser) hint bubble pointing at the Saved/Split-Costs icons
+  // in the header. Only homepage markup has .header-util, so this is a no-op
+  // everywhere else. Dismiss-only (X button), same convention as the like-save
+  // toast above — no auto-hide.
+  (function initHeaderHint() {
+    var HINT_SEEN_KEY = 'krambles-header-hint-seen';
+    function boot() {
+      var util = document.querySelector('.header-util');
+      if (!util) { return; }
+      try { if (localStorage.getItem(HINT_SEEN_KEY)) { return; } } catch (e) {}
+
+      var isKo = document.documentElement.lang === 'ko' ||
+                 location.pathname.indexOf('/ko/') !== -1;
+      var msg = isKo
+        ? '좋아요 한 글은 여기서, 경비 정산은 여기서 할 수 있어요.'
+        : 'Tap here to see your saved articles, or here to split costs.';
+
+      if (!document.getElementById('kr-header-hint-style')) {
+        var style = document.createElement('style');
+        style.id = 'kr-header-hint-style';
+        style.textContent =
+          '.kr-header-hint{position:absolute;top:100%;left:0;margin-top:8px;' +
+          'background:var(--coral,#d9532a);color:#fff5ee;padding:9px 12px;border-radius:10px;' +
+          'font-size:0.82rem;line-height:1.4;display:flex;align-items:flex-start;gap:8px;' +
+          'max-width:240px;box-shadow:0 10px 24px -10px rgba(0,0,0,0.35);z-index:50;' +
+          'opacity:0;transform:translateY(-4px);transition:opacity .2s ease, transform .2s ease;pointer-events:none;}' +
+          '.kr-header-hint.is-visible{opacity:1;transform:translateY(0);pointer-events:auto;}' +
+          '.kr-header-hint:before{content:"";position:absolute;top:-5px;left:22px;width:10px;height:10px;' +
+          'background:var(--coral,#d9532a);transform:rotate(45deg);}' +
+          '.kr-header-hint-close{flex-shrink:0;appearance:none;border:none;background:rgba(255,255,255,.18);' +
+          'color:inherit;width:20px;height:20px;border-radius:50%;cursor:pointer;font-size:0.9rem;line-height:1;}' +
+          '.kr-header-hint-close:hover{background:rgba(255,255,255,.3);}';
+        document.head.appendChild(style);
+      }
+
+      util.style.position = util.style.position || 'relative';
+      var bubble = document.createElement('div');
+      bubble.className = 'kr-header-hint';
+      var text = document.createElement('span');
+      text.textContent = msg;
+      var closeBtn = document.createElement('button');
+      closeBtn.type = 'button';
+      closeBtn.className = 'kr-header-hint-close';
+      closeBtn.setAttribute('aria-label', isKo ? '닫기' : 'Close');
+      closeBtn.textContent = '\u00d7';
+      closeBtn.addEventListener('click', function () {
+        bubble.classList.remove('is-visible');
+        setTimeout(function () { bubble.remove(); }, 200);
+        try { localStorage.setItem(HINT_SEEN_KEY, '1'); } catch (e) {}
+      });
+      bubble.appendChild(text);
+      bubble.appendChild(closeBtn);
+      util.appendChild(bubble);
+      requestAnimationFrame(function () { bubble.classList.add('is-visible'); });
+    }
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', boot);
+    } else {
+      boot();
+    }
+  })();
 })(window);

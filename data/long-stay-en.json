@@ -8,7 +8,9 @@
     "badge": null,
     "like_id": "long-stay/2026-09-20-korea-phone-plan-guide-en.html",
     "date": "2026-09-20",
-    "kw": "phone plan sim identity verification alien registration number 13-digit pass facial recognition mvno kakaotalk busan long stay"
+    "kw": "phone plan sim identity verification alien registration number 13-digit pass facial recognition mvno kakaotalk busan long stay",
+    "city": "busan",
+    "locations": []
   },
   {
     "title": "How to Open a Korean Bank Account as a Long-Term Foreign Resident",
@@ -19,7 +21,9 @@
     "badge": null,
     "like_id": "long-stay/2026-09-20-korea-bank-account-guide-en.html",
     "date": "2026-09-20",
-    "kw": "bank account open korea arc limited transaction account toss bank kakao bank busan long stay"
+    "kw": "bank account open korea arc limited transaction account toss bank kakao bank busan long stay",
+    "city": "busan",
+    "locations": []
   },
   {
     "title": "Do I Need a Korean Alien Registration Card (ARC)?",
@@ -30,7 +34,9 @@
     "badge": null,
     "like_id": "long-stay/2026-09-19-korea-arc-foreign-registration-guide-en.html",
     "date": "2026-09-19",
-    "kw": "alien registration card arc 91 days 90 days immigration hikorea busan sim long stay"
+    "kw": "alien registration card arc 91 days 90 days immigration hikorea busan sim long stay",
+    "city": "busan",
+    "locations": []
   },
   {
     "title": "Is the tap water actually safe?",
@@ -41,6 +47,8 @@
     "badge": null,
     "like_id": "long-stay/2026-09-02-tap-water-safety.html",
     "date": "2026-09-02",
-    "kw": "tap water safe drinking nakdong river busan living daily life resident"
+    "kw": "tap water safe drinking nakdong river busan living daily life resident",
+    "city": "busan",
+    "locations": []
   }
 ]
