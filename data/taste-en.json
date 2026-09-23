@@ -14,14 +14,14 @@
       {
         "name": "Lighthouse coast stalls (raw seafood)",
         "address": "181 Jeonmang-ro, Yeongdo-gu, Busan",
-        "lat": null,
-        "lng": null
+        "lat": 35.0523237,
+        "lng": 129.0919754
       },
       {
         "name": "Gamjihaebyeon-gil Jagalmadang (grilled shellfish)",
         "address": "1052-3 Dongsam-dong, Yeongdo-gu, Busan",
-        "lat": null,
-        "lng": null
+        "lat": 35.0600039,
+        "lng": 129.0776164
       }
     ]
   },
@@ -40,38 +40,38 @@
       {
         "name": "Naeho Naengmyeon",
         "address": "17 Uam-beonyeong-ro 26beon-gil, Nam-gu, Busan",
-        "lat": null,
-        "lng": null
+        "lat": 35.1264806,
+        "lng": 129.0708398
       },
       {
         "name": "Gaegeum Milmyeon",
         "address": "9-4 Gaya-daero 482beon-gil, Busanjin-gu, Busan",
-        "lat": null,
-        "lng": null
+        "lat": 35.1525471,
+        "lng": 129.0250787
       },
       {
         "name": "Gukje Milmyeon (main branch)",
         "address": "23-6 Jungang-daero 1235beon-gil, Yeonje-gu, Busan",
-        "lat": null,
-        "lng": null
+        "lat": 35.1969012,
+        "lng": 129.07784
       },
       {
         "name": "Choryang Milmyeon",
         "address": "225 Jungang-daero, Dong-gu, Busan",
-        "lat": null,
-        "lng": null
+        "lat": 35.1173368,
+        "lng": 129.0405937
       },
       {
         "name": "Haeundae Gaya Milmyeon",
         "address": "27 Jwadong-sunhwan-ro, Haeundae-gu, Busan",
-        "lat": null,
-        "lng": null
+        "lat": 35.1688511,
+        "lng": 129.1663484
       },
       {
         "name": "Chunhachudong Milmyeon (Seomyeon main branch)",
         "address": "48-1 Seomyeonmunhwa-ro, Busanjin-gu, Busan",
-        "lat": null,
-        "lng": null
+        "lat": 35.1614774,
+        "lng": 129.0555153
       }
     ]
   },
@@ -101,8 +101,8 @@
       {
         "name": "Jagalchi Sindonga Market",
         "address": "42 Jagalchi-ro, Jung-gu, Busan",
-        "lat": null,
-        "lng": null
+        "lat": 35.0968404,
+        "lng": 129.029054
       }
     ]
   }

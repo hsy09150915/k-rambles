@@ -14,26 +14,26 @@
       {
         "name": "Songdo Marine Cable Car (lower · Songdo Bay Station)",
         "address": "171 Songdohaebyeon-ro, Seo-gu, Busan",
-        "lat": null,
-        "lng": null
+        "lat": 35.0766433,
+        "lng": 129.0233986
       },
       {
         "name": "Songdo Marine Cable Car (upper · Songdo Sky Park)",
         "address": "181 Amnamgongwon-ro, Seo-gu, Busan",
-        "lat": null,
-        "lng": null
+        "lat": 35.0613785,
+        "lng": 129.0204196
       },
       {
         "name": "Busan Tower (Yongdusan Park)",
         "address": "37-30 Yongdusan-gil, Jung-gu, Busan",
-        "lat": null,
-        "lng": null
+        "lat": 35.101154,
+        "lng": 129.032335
       },
       {
         "name": "Songdo yacht dock",
         "address": "150 Songdohaebyeon-ro, Seo-gu, Busan",
-        "lat": null,
-        "lng": null
+        "lat": 35.0765204,
+        "lng": 129.0223712
       }
     ]
   },
@@ -52,8 +52,8 @@
       {
         "name": "Taejongdae Resort Park entrance",
         "address": "24 Jeonmang-ro, Yeongdo-gu, Busan",
-        "lat": null,
-        "lng": null
+        "lat": 35.0596949,
+        "lng": 129.0798057
       }
     ]
   },
@@ -85,26 +85,26 @@
       {
         "name": "Cheolsu & Younghee",
         "address": "123 Okcheon-ro, Saha-gu, Busan",
-        "lat": null,
-        "lng": null
+        "lat": 35.0973228,
+        "lng": 129.0102269
       },
       {
         "name": "Ipgo-gage",
         "address": "2-9 Gamcheon-dong, Saha-gu, Busan",
-        "lat": null,
-        "lng": null
+        "lat": 35.0984206,
+        "lng": 129.0099704
       },
       {
         "name": "Hanminyeo",
         "address": "A17, Gwangbok Underground Arcade, 17 Jungang-daero, Jung-gu, Busan",
-        "lat": null,
-        "lng": null
+        "lat": 35.1004731,
+        "lng": 129.0365592
       },
       {
         "name": "Noir Hair Gwangan Beach Branch 2",
         "address": "1F, 127 Gwanganhaebyeon-ro, Suyeong-gu, Busan",
-        "lat": null,
-        "lng": null
+        "lat": 35.1462967,
+        "lng": 129.1143554
       }
     ]
   },
@@ -123,8 +123,8 @@
       {
         "name": "Huinnyeoul Culture Village entrance",
         "address": "605-3 Yeongseon-dong 4-ga, Yeongdo-gu, Busan",
-        "lat": null,
-        "lng": null
+        "lat": 35.0795291,
+        "lng": 129.0435879
       }
     ]
   },
@@ -143,8 +143,8 @@
       {
         "name": "Amidong Tombstone Village",
         "address": "49 Ami-ro, Seo-gu, Busan",
-        "lat": null,
-        "lng": null
+        "lat": 35.0998143,
+        "lng": 129.0124203
       }
     ]
   },
@@ -163,8 +163,8 @@
       {
         "name": "Amisan Observatory",
         "address": "77 Daedaenakjo 2-gil, Saha-gu, Busan",
-        "lat": null,
-        "lng": null
+        "lat": 35.052753,
+        "lng": 128.9607821
       }
     ]
   },
@@ -196,8 +196,8 @@
       {
         "name": "Jangnimhang Port (Busan Venice)",
         "address": "74 Jangnim-ro 93beon-gil, Saha-gu, Busan",
-        "lat": null,
-        "lng": null
+        "lat": 35.0793069,
+        "lng": 128.9516016
       }
     ]
   },
@@ -216,8 +216,8 @@
       {
         "name": "Gamcheon Culture Village Information Center",
         "address": "203 Gamnae 2-ro, Saha-gu, Busan",
-        "lat": null,
-        "lng": null
+        "lat": 35.0974932,
+        "lng": 129.010604
       }
     ]
   }

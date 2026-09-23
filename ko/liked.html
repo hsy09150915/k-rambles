@@ -107,6 +107,13 @@
   footer.site { border-top: 1px solid var(--line); padding: 30px 28px 46px; }
   .footer-inner { max-width: 1040px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; align-items: center; }
   .footer-inner .mono { font-size: 0.78rem; color: var(--ink-soft); letter-spacing: 0.04em; }
+
+  .liked-map-wrap { max-width: 1040px; margin: 0 auto; padding: 0 28px 10px; }
+  .liked-map-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 10px; flex-wrap: wrap; }
+  .liked-map-title { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 1.15rem; margin: 0; }
+  .liked-map-count { font-family: "Space Mono", monospace; font-size: 0.8rem; color: var(--ink-soft); }
+  .liked-map { width: 100%; height: 380px; border-radius: 16px; border: 1px solid var(--line); box-shadow: var(--card-shadow); background: var(--paper-raised); }
+  .liked-map-note { font-size: 0.82rem; color: var(--ink-soft); margin: 8px 0 0; }
   /* kr-header-narrow-fix */
   @media (max-width: 480px) {
     header.site { padding: 14px 14px; gap: 6px; }
@@ -148,6 +155,15 @@
   </symbol>
 </svg>
 
+<div class="liked-map-wrap" id="liked-map-wrap" hidden>
+  <div class="liked-map-head">
+    <h2 class="liked-map-title">좋아요한 장소, 지도로 보기</h2>
+    <span class="liked-map-count mono">0개</span>
+  </div>
+  <div class="liked-map" id="liked-map"></div>
+  <p class="liked-map-note">핀을 누르면 어느 글에서 나온 장소인지 볼 수 있어요. 실제 장소가 있는 글만 핀으로 표시돼요 — 정보성 가이드는 핀이 없어요.</p>
+</div>
+
 <div class="liked-grid"></div>
 
 <div class="liked-empty" id="liked-empty" hidden>
@@ -177,7 +193,14 @@
     gridSelector: '.liked-grid',
     emptySelector: '#liked-empty',
     countSelector: '.liked-count',
-    countTemplate: '{n}개 저장됨'
+    countTemplate: '{n}개 저장됨',
+    map: {
+      clientId: 'uibktc3a4f',
+      containerSelector: '#liked-map',
+      wrapSelector: '#liked-map-wrap',
+      countSelector: '.liked-map-count',
+      countTemplate: '{n}개'
+    }
   });
 </script>
 

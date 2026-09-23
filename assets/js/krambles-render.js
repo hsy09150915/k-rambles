@@ -348,7 +348,101 @@
         var countEl = document.querySelector(config.countSelector);
         if (countEl) { countEl.textContent = fillCountTemplate(config.countTemplate, flat.length); }
       }
+
+      if (config.map) { renderLikedMap(flat, config.map); }
     }).catch(function (err) { console.error('[krambles] liked render failed:', err); });
+  }
+
+  function escapeHtml(s) {
+    return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  }
+
+  var _naverSdkCallbacks = null;
+  function loadNaverMapsSdk(clientId, callback) {
+    if (window.naver && window.naver.maps && window.naver.maps.Map) { callback(); return; }
+    if (_naverSdkCallbacks) { _naverSdkCallbacks.push(callback); return; }
+    _naverSdkCallbacks = [callback];
+    var s = document.createElement('script');
+    s.src = 'https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=' + encodeURIComponent(clientId);
+    s.onload = function () {
+      var cbs = _naverSdkCallbacks || [];
+      _naverSdkCallbacks = null;
+      cbs.forEach(function (cb) { cb(); });
+    };
+    s.onerror = function () {
+      console.error('[krambles] Naver Maps SDK failed to load');
+      _naverSdkCallbacks = null;
+    };
+    document.head.appendChild(s);
+  }
+
+  /**
+   * Draws every pin belonging to the current liked list onto a single Naver
+   * map. A liked article can carry more than one location (e.g. a piece
+   * covering several restaurants); every one of them gets its own marker.
+   * Articles with an empty/absent `locations` array (how-to/info content)
+   * simply contribute no pins. If nothing on the liked list has a location,
+   * the whole map block hides itself rather than showing an empty map.
+   * mapConfig: { clientId, containerSelector, wrapSelector, countSelector, countTemplate }
+   */
+  function renderLikedMap(flat, mapConfig) {
+    var mapEl = document.querySelector(mapConfig.containerSelector);
+    if (!mapEl) { return; }
+    var wrap = mapConfig.wrapSelector && document.querySelector(mapConfig.wrapSelector);
+
+    var pins = [];
+    flat.forEach(function (pair) {
+      var locs = pair.item.locations || [];
+      var articleUrl = hrefForHome(pair.board, pair.item);
+      locs.forEach(function (loc) {
+        if (typeof loc.lat === 'number' && typeof loc.lng === 'number') {
+          pins.push({
+            name: loc.name,
+            lat: loc.lat,
+            lng: loc.lng,
+            articleTitle: pair.item.title,
+            articleUrl: articleUrl
+          });
+        }
+      });
+    });
+
+    if (mapConfig.countSelector && mapConfig.countTemplate) {
+      var countEl = document.querySelector(mapConfig.countSelector);
+      if (countEl) { countEl.textContent = fillCountTemplate(mapConfig.countTemplate, pins.length); }
+    }
+
+    if (!pins.length) {
+      if (wrap) { wrap.hidden = true; }
+      return;
+    }
+    if (wrap) { wrap.hidden = false; }
+
+    loadNaverMapsSdk(mapConfig.clientId, function () {
+      var center = new naver.maps.LatLng(pins[0].lat, pins[0].lng);
+      var map = new naver.maps.Map(mapEl, { center: center, zoom: 13 });
+      var bounds = new naver.maps.LatLngBounds(center, center);
+      var openInfoWindow = null;
+
+      pins.forEach(function (pin) {
+        var position = new naver.maps.LatLng(pin.lat, pin.lng);
+        bounds.extend(position);
+        var marker = new naver.maps.Marker({ position: position, map: map, title: pin.name });
+        var infoWindow = new naver.maps.InfoWindow({
+          content: '<div style="padding:10px 14px;max-width:220px;font-size:13px;line-height:1.5;font-family:inherit;">' +
+            '<strong style="display:block;margin-bottom:2px;">' + escapeHtml(pin.name) + '</strong>' +
+            '<a href="' + escapeHtml(pin.articleUrl) + '" style="color:#d9532a;text-decoration:none;">' + escapeHtml(pin.articleTitle) + ' →</a>' +
+            '</div>'
+        });
+        naver.maps.Event.addListener(marker, 'click', function () {
+          if (openInfoWindow) { openInfoWindow.close(); }
+          infoWindow.open(map, marker);
+          openInfoWindow = infoWindow;
+        });
+      });
+
+      if (pins.length > 1) { map.fitBounds(bounds); }
+    });
   }
 
   function hrefForHome(board, item) {
