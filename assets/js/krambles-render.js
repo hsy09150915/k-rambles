@@ -533,6 +533,60 @@
 
   global.KR = { renderHub: renderHub, renderHome: renderHome, renderLiked: renderLiked };
 
+  // Copy-to-clipboard fallback for mailto: links. A visitor without a
+  // configured mail client (no Outlook/Mail app set as default) sees the
+  // mailto: click do nothing at all — this copies the address as a backup
+  // so they can paste it into whatever they do use, while people who DO
+  // have a mail client still get the normal "open compose window" behavior
+  // (both happen on the same click, harmlessly).
+  (function wireMailtoCopy() {
+    function boot() {
+      document.addEventListener('click', function (e) {
+        var a = e.target && e.target.closest && e.target.closest('a[href^="mailto:"]');
+        if (!a) { return; }
+        var email = a.getAttribute('href').replace(/^mailto:/, '').split('?')[0];
+        if (!email) { return; }
+        if (!navigator.clipboard || !navigator.clipboard.writeText) { return; }
+        navigator.clipboard.writeText(email).then(function () {
+          showMailtoToast(email);
+        }).catch(function () {});
+      });
+    }
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', boot);
+    } else {
+      boot();
+    }
+  })();
+
+  function showMailtoToast(email) {
+    if (!document.getElementById('kr-mailto-toast-style')) {
+      var style = document.createElement('style');
+      style.id = 'kr-mailto-toast-style';
+      style.textContent =
+        '.kr-mailto-toast{position:fixed;left:50%;bottom:22px;transform:translate(-50%,12px);' +
+        'background:#1f2420;color:#eef2ec;padding:11px 16px;border-radius:10px;font-size:0.86rem;' +
+        'font-family:"Work Sans",ui-sans-serif,sans-serif;box-shadow:0 12px 28px -12px rgba(0,0,0,.5);' +
+        'opacity:0;transition:opacity .2s ease, transform .2s ease;z-index:999;pointer-events:none;' +
+        'max-width:88vw;text-align:center;}' +
+        '.kr-mailto-toast.is-visible{opacity:1;transform:translate(-50%,0);}';
+      document.head.appendChild(style);
+    }
+    var existing = document.querySelector('.kr-mailto-toast');
+    if (existing) { existing.remove(); }
+    var toast = document.createElement('div');
+    toast.className = 'kr-mailto-toast';
+    var isKo = document.documentElement.lang === 'ko' || location.pathname.indexOf('/ko/') !== -1;
+    toast.textContent = (isKo ? '복사됨: ' : 'Copied: ') + email;
+    document.body.appendChild(toast);
+    requestAnimationFrame(function () { toast.classList.add('is-visible'); });
+    setTimeout(function () {
+      toast.classList.remove('is-visible');
+      setTimeout(function () { toast.remove(); }, 250);
+    }, 2600);
+  }
+
+
   // One-time (per browser) hint bubble pointing at the Saved/Split-Costs icons
   // in the header. Only homepage markup has .header-util, so this is a no-op
   // everywhere else. Dismiss-only (X button), same convention as the like-save
