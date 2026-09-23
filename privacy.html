@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy | K-Rambles</title>
+<meta name="description" content="What K-Rambles collects (very little), how the like/split-calculator features store data in your browser only, and how affiliate links work.">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Work+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap');
+
+  :root {
+    --paper: #e9efe9;
+    --paper-raised: #f4f7f3;
+    --ink: #1f2420;
+    --ink-soft: #4a5148;
+    --coral: #d9532a;
+    --coral-ink: #9c3b1c;
+    --navy: #1b2a4a;
+    --line: rgba(31, 36, 32, 0.18);
+    --line-strong: rgba(31, 36, 32, 0.32);
+    --card-shadow: 0 18px 34px -20px rgba(20, 24, 20, 0.45);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #161d18; --paper-raised: #1d2620; --ink: #eef2ec; --ink-soft: #b8c2b8;
+      --coral: #ef7448; --coral-ink: #ffb497; --navy: #9fb4e0;
+      --line: rgba(238, 242, 236, 0.18); --line-strong: rgba(238, 242, 236, 0.32);
+      --card-shadow: 0 18px 34px -18px rgba(0, 0, 0, 0.6);
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #161d18; --paper-raised: #1d2620; --ink: #eef2ec; --ink-soft: #b8c2b8;
+    --coral: #ef7448; --coral-ink: #ffb497; --navy: #9fb4e0;
+    --line: rgba(238, 242, 236, 0.18); --line-strong: rgba(238, 242, 236, 0.32);
+    --card-shadow: 0 18px 34px -18px rgba(0, 0, 0, 0.6);
+  }
+
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: "Work Sans", ui-sans-serif, system-ui, sans-serif; font-size: 1.0625rem; line-height: 1.65; -webkit-font-smoothing: antialiased; }
+  html { font-size: 100%; }
+  html[data-fs="xs"] { font-size: 85%; }
+  html[data-fs="sm"] { font-size: 92.5%; }
+  html[data-fs="lg"] { font-size: 115%; }
+  html[data-fs="xl"] { font-size: 135%; }
+  .font-size-ctrl { display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--line); border-radius: 100px; padding: 4px 8px; }
+  .fs-labels { display: inline-flex; align-items: baseline; gap: 3px; }
+  .fs-label { font-family: "Work Sans", sans-serif; font-weight: 600; color: var(--ink-soft); line-height: 1; user-select: none; }
+  .fs-label-sm { font-size: 0.68rem; }
+  .fs-label-lg { font-size: 1.15rem; }
+  .fs-step { appearance: none; border: none; background: none; cursor: pointer; color: var(--ink-soft); font-family: "Work Sans", sans-serif; font-weight: 700; font-size: 1.35rem; line-height: 1; width: 30px; height: 30px; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; flex-shrink: 0; }
+  .fs-step:hover:not(:disabled) { background: var(--line); color: var(--ink); }
+  .fs-step:disabled { opacity: 0.32; cursor: default; }
+  a { color: inherit; }
+  .mono { font-family: "Space Mono", ui-monospace, "SF Mono", monospace; }
+
+  header.site { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 26px 28px; max-width: 760px; margin: 0 auto; }
+  .logo { font-family: "Bricolage Grotesque", ui-sans-serif, sans-serif; font-weight: 700; font-size: 1.35rem; letter-spacing: -0.01em; white-space: nowrap; text-decoration: none; color: inherit; }
+  .logo span { color: var(--coral); }
+  .header-right { display: flex; align-items: center; gap: 18px; }
+  .back-link { display: inline-flex; align-items: center; gap: 6px; text-decoration: none; color: var(--ink-soft); font-size: 0.92rem; white-space: nowrap; }
+  .back-link:hover { color: var(--ink); }
+  .back-link svg { width: 16px; height: 16px; stroke: currentColor; fill: none; }
+
+  main { max-width: 760px; margin: 0 auto; padding: 12px 28px 70px; }
+  h1.about-title { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: clamp(2rem, 4.4vw, 2.8rem); line-height: 1.08; letter-spacing: -0.02em; margin: 0 0 26px; text-wrap: balance; }
+  main p { margin: 0 0 20px; color: var(--ink); }
+  main a { color: var(--coral-ink); text-decoration: underline; }
+  main a:hover { color: var(--coral); }
+
+  footer.site { border-top: 1px solid var(--line); padding: 30px 28px 46px; }
+  .footer-inner { max-width: 760px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; align-items: center; }
+  .footer-inner .mono { font-size: 0.78rem; color: var(--ink-soft); letter-spacing: 0.04em; }
+
+  @media (max-width: 480px) {
+    header.site { padding: 14px 14px; gap: 6px; }
+    .header-right { gap: 6px; flex-wrap: wrap; row-gap: 8px; justify-content: flex-end; }
+    .logo { font-size: 0.92rem; }
+    .back-link { font-size: 0.68rem; gap: 3px; }
+    .back-link svg { width: 12px; height: 12px; }
+    .font-size-ctrl { gap: 4px; padding: 2px 4px; }
+    .fs-step { width: 22px; height: 22px; font-size: 1.05rem; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <a class="back-link" href="index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>Back to K-Rambles</a>
+  <div class="header-right">
+    <div class="font-size-ctrl" role="group" aria-label="Text size"><button type="button" class="fs-step" data-action="dec" aria-label="Decrease text size">−</button><span class="fs-labels" aria-hidden="true"><span class="fs-label fs-label-sm">A</span><span class="fs-label fs-label-lg">A</span></span><button type="button" class="fs-step" data-action="inc" aria-label="Increase text size">+</button></div>
+    <a class="logo" href="index.html">K-<span>Rambles</span></a>
+  </div>
+</header>
+
+<main>
+  <h1 class="about-title">Privacy</h1>
+
+  <p>K-Rambles doesn't run ads, doesn't require an account, and doesn't collect anything like your name or email just for browsing the site.</p>
+
+  <p><strong>Analytics.</strong> We use GoatCounter, a lightweight, privacy-friendly analytics tool, to see roughly how many people visit and which pages are popular. It doesn't use cookies to track you across visits or across other sites.</p>
+
+  <p><strong>Likes and the cost-splitting tool.</strong> When you tap the heart on an article or use the expense-splitting calculator, that data is saved with your browser's local storage — on your device only. It's never sent to us, and it disappears if you clear your browser's data or switch browsers or devices.</p>
+
+  <p><strong>Affiliate links.</strong> Some articles link out to booking platforms like KKday. If you book through one of those links, K-Rambles earns a small commission — this doesn't change what you pay. Once you click through, you're on that platform's own site, governed by their own privacy policy, not ours.</p>
+
+  <p><strong>Maps.</strong> Some pages embed Naver Maps to show locations. Loading a map may involve a request to Naver's servers, subject to Naver's own privacy policy.</p>
+
+  <p>Questions about any of this? <a href="mailto:doma11@naver.com">Contact us</a>.</p>
+</main>
+
+<footer class="site">
+  <div class="footer-inner">
+    <span class="mono">K-Rambles</span>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var KEY = 'krambles-fontsize';
+  var STEPS = ['xs', 'sm', 'md', 'lg', 'xl'];
+  var root = document.documentElement;
+  var ctrl = document.querySelector('.font-size-ctrl');
+  if (!ctrl) { return; }
+  var decBtn = ctrl.querySelector('[data-action="dec"]');
+  var incBtn = ctrl.querySelector('[data-action="inc"]');
+  var index = 2;
+  function apply(i) {
+    var size = STEPS[i];
+    if (size === 'md') { root.removeAttribute('data-fs'); }
+    else { root.setAttribute('data-fs', size); }
+    decBtn.disabled = i === 0;
+    incBtn.disabled = i === STEPS.length - 1;
+  }
+  var saved = 'md';
+  try { saved = localStorage.getItem(KEY) || 'md'; } catch (e) {}
+  index = STEPS.indexOf(saved);
+  if (index === -1) { index = 2; }
+  apply(index);
+  decBtn.addEventListener('click', function () {
+    if (index > 0) { index--; apply(index); try { localStorage.setItem(KEY, STEPS[index]); } catch (e) {} }
+  });
+  incBtn.addEventListener('click', function () {
+    if (index < STEPS.length - 1) { index++; apply(index); try { localStorage.setItem(KEY, STEPS[index]); } catch (e) {} }
+  });
+})();
+</script>
+<script data-goatcounter="https://krambles.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
