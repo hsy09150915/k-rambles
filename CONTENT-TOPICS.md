@@ -2,8 +2,10 @@
 
 > 새 콘텐츠 아이디어 제안하기 전에 이 파일부터 확인할 것. 실제 사이트 JSON 기준(2026-09-23).
 
-## Getting Around (이동) (9개)
+## Getting Around (이동) (11개)
 - **부산에서 환전하는 법 — ATM, 환전소 뭐가 유리할까** — 키워드: 환전 환전소 atm 해외카드 인출 캐시어드밴스 cash advance 트래블카드 와이즈 하나은행 우리은행 신한은행 국민은행 네이버지도 부산
+- **한국인데 카드가 왜 안 돼요? — 해외카드 결제 실전 가이드** — 키워드: card payment korea contactless tap nfc credit card foreign card decline apple pay google pay visa mastercard t-money cash 카드결제 컨택리스 해외카드 신용카드 체크카드 애플페이 구글페이 결제거절 티머니 현금
+- **부산에서 짐 보관, 지하철 로커면 대부분 끝나요** — 키워드: luggage storage busan coin locker large suitcase zimcarry delivery gwangalli tourist center free 짐보관 물품보관함 짐캐리 캐리어
 - **부산에서 쇼핑하고 세금 환급받는 법** — 키워드: tax refund tax free duty free VAT shopping busan gimhae airport lotte shinsegae olive young emart daiso department store customs 세금환급 면세점 부가세
 - **한국 버스 타는 법 — 앞문·뒷문부터 중앙차로 정류장까지** — 키워드: 버스 정류장 중앙차로 우측통행 앞문 뒷문 전광판 행 방면 노선 네이버지도 부산 교통
 - **부산 유심·이심 총정리 — 통신 3사부터 더 싸게 사는 법까지** — 키워드: 유심 이심 esim usim 통신사 skt kt lg유플러스 클룩 케이데이 트레지 공항 유심키오스크 데이터 요금제 부산 로밍
