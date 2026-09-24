@@ -1,5 +1,139 @@
 [
   {
+    "title": "20 Dwaeji Gukbap Spots, Picked by Busan Locals",
+    "url": "2026-09-23-busan-dwaeji-gukbap-20-en.html",
+    "thumb": "assets/thumbs/taste/busan-dwaeji-gukbap-20.jpg",
+    "label": "Taste · live",
+    "alt": "A full Busan dwaeji gukbap spread with \"DWAEJI-GUKBAP 20 Local Picks\" text overlay",
+    "badge": null,
+    "like_id": "taste/2026-09-23-busan-dwaeji-gukbap-20-en.html",
+    "date": "2026-09-23",
+    "kw": "dwaeji gukbap pork soup busan restaurant local pick 20 citizen recommended busan dwaeji gukbap festival food",
+    "city": "busan",
+    "locations": [
+      {
+        "name": "1953 Hyeongje Dwaeji Gukbap (Main Branch)",
+        "address": "부산 남구 용소로13번길 29-1",
+        "lat": 35.1370751,
+        "lng": 129.1020604
+      },
+      {
+        "name": "Ssangdungi Dwaeji Gukbap (Main Branch)",
+        "address": "부산 남구 유엔평화로 35-1",
+        "lat": 35.1317758,
+        "lng": 129.0923061
+      },
+      {
+        "name": "Hapcheon Gukbapjip (Yongho Branch)",
+        "address": "부산 남구 용호로 235",
+        "lat": 35.1112466,
+        "lng": 129.1112571
+      },
+      {
+        "name": "70-Year Tradition Halmae Gukbap",
+        "address": "부산 동구 중앙대로533번길 4",
+        "lat": 35.1410146,
+        "lng": 129.0562045
+      },
+      {
+        "name": "Uri Dwaeji Gukbap",
+        "address": "부산 동구 초량로 27-1",
+        "lat": 35.119942,
+        "lng": 129.0392431
+      },
+      {
+        "name": "Subyeon Choego Dwaeji Gukbap (Millak Branch)",
+        "address": "부산 수영구 민락동 110-54",
+        "lat": 35.1567657,
+        "lng": 129.1342643
+      },
+      {
+        "name": "Suyeong Dwaeji Gukbap",
+        "address": "부산 수영구 광안동 117-17",
+        "lat": 35.16174,
+        "lng": 129.1144267
+      },
+      {
+        "name": "Sikbok Dwaeji Gukbap",
+        "address": "부산 수영구 수영로 468-1",
+        "lat": 35.1476571,
+        "lng": 129.1106513
+      },
+      {
+        "name": "Jamae Gukbap",
+        "address": "부산 수영구 민락본동로27번길 56",
+        "lat": 35.1582999,
+        "lng": 129.1256897
+      },
+      {
+        "name": "Cheonghwabaek Dwaeji Gukbap (Gwangalli Branch)",
+        "address": "부산 수영구 남천바다로 18",
+        "lat": 35.1492852,
+        "lng": 129.1125476
+      },
+      {
+        "name": "Seojinseop Dwaeji Gukbap",
+        "address": "부산 중구 광복로39번길 30-1",
+        "lat": 35.1019555,
+        "lng": 129.0294107
+      },
+      {
+        "name": "Somunnan Dwaeji Gukbap (Bupyeong Branch)",
+        "address": "부산 중구 부평1길 27",
+        "lat": 35.1007128,
+        "lng": 129.0256909
+      },
+      {
+        "name": "Sinchang Gukbap (Main Branch)",
+        "address": "부산 서구 보수대로 53",
+        "lat": 35.1009372,
+        "lng": 129.0225498
+      },
+      {
+        "name": "Yeongjin Dwaeji Gukbap (Main Branch)",
+        "address": "부산 사하구 하신번영로157번길 39",
+        "lat": 35.0966412,
+        "lng": 128.9578653
+      },
+      {
+        "name": "5 Nammae Dwaeji Gukbap (Jeonggwan Branch)",
+        "address": "부산 기장군 정관읍 구연2로 6",
+        "lat": 35.3211903,
+        "lng": 129.1820592
+      },
+      {
+        "name": "Ibagu Gukbap",
+        "address": "부산 사상구 가야대로 355",
+        "lat": 35.1516675,
+        "lng": 129.0115866
+      },
+      {
+        "name": "Dubeonjjae Neulhaerang",
+        "address": "부산 부산진구 양지로5번길 24",
+        "lat": 35.1705846,
+        "lng": 129.0703247
+      },
+      {
+        "name": "Hwanamjeong Dwaeji Gukbap (Choeup Branch)",
+        "address": "부산 부산진구 성지로 50",
+        "lat": 35.1750962,
+        "lng": 129.0549518
+      },
+      {
+        "name": "Mokchon Dwaeji Gukbap (Yeonsan City Hall Branch)",
+        "address": "부산 연제구 중앙천로 73",
+        "lat": 35.180621,
+        "lng": 129.0802033
+      },
+      {
+        "name": "Haeundae Halmaejip",
+        "address": "부산 해운대구 중동 1373-10",
+        "lat": 35.1632254,
+        "lng": 129.164877
+      }
+    ]
+  },
+  {
     "title": "Taejongdae — Do They Still Slice Sashimi Out of a Basin?",
     "url": "2026-09-21-taejongdae-haenyeo-raw-seafood-en.html",
     "thumb": "assets/thumbs/taste/taejongdae-haenyeo-raw-seafood.jpg",

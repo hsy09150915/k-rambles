@@ -11,6 +11,42 @@
 (function (global) {
   'use strict';
 
+  /**
+   * Board-level base search keywords — automatically appended to every
+   * article's search haystack (title+cat+kw) at render time, per board and
+   * per language. This is SEPARATE from each article's own `kw` field (still
+   * hand-written per piece) and from the footer "keyword-links" pill buttons
+   * (still hand-picked per piece, unaffected by this). Purpose: guarantee
+   * broad category words (e.g. a visitor typing "food") always surface every
+   * piece on that board, without relying on every individual kw field to
+   * remember to include them.
+   */
+  var BOARD_BASE_KW = {
+    'taste': {
+      en: 'food restaurant meal eat where to eat',
+      ko: '음식 맛집 식당 먹거리 어디서 먹을까'
+    },
+    'getting-around': {
+      en: 'transport transportation getting around how to get',
+      ko: '교통 이동 대중교통 가는 법'
+    },
+    'trip-planner': {
+      en: 'things to do attraction sightseeing itinerary',
+      ko: '여행 볼거리 관광 일정'
+    },
+    'long-stay': {
+      en: 'living in korea expat resident long stay',
+      ko: '한국 거주 체류 장기체류 생활'
+    }
+  };
+
+  function boardBaseKw(jsonUrl) {
+    var m = /([a-z-]+)-(en|ko)\.json(?:$|\?)/.exec(jsonUrl || '');
+    if (!m) { return ''; }
+    var entry = BOARD_BASE_KW[m[1]];
+    return entry ? (entry[m[2]] || '') : '';
+  }
+
   function fetchJSON(url) {
     return fetch(url, { cache: 'no-store' }).then(function (res) {
       if (!res.ok) { throw new Error('Failed to load ' + url + ' (' + res.status + ')'); }
@@ -286,8 +322,9 @@
         if (countEl) { countEl.textContent = fillCountTemplate(config.countTemplate, items.length); }
       }
 
+      var baseKw = boardBaseKw(config.jsonUrl);
       var searchItems = items.map(function (it) {
-        return { title: it.title, cat: config.boardLabel || it.label || '', url: it.url, kw: it.kw || '' };
+        return { title: it.title, cat: config.boardLabel || it.label || '', url: it.url, kw: ((it.kw || '') + ' ' + baseKw).trim() };
       });
       wireSearch(searchItems, { input: config.searchInputId, results: config.searchResultsId });
     }).catch(function (err) { console.error('[krambles] hub render failed:', err); });
@@ -510,12 +547,13 @@
           });
         }
 
+        var baseKw = boardBaseKw(board.jsonUrl);
         items.forEach(function (it) {
           searchItems.push({
             title: it.title,
             cat: board.label,
             url: hrefForHome(board, it),
-            kw: it.kw || ''
+            kw: ((it.kw || '') + ' ' + baseKw).trim()
           });
         });
       });
@@ -544,12 +582,22 @@
       document.addEventListener('click', function (e) {
         var a = e.target && e.target.closest && e.target.closest('a[href^="mailto:"]');
         if (!a) { return; }
-        var email = a.getAttribute('href').replace(/^mailto:/, '').split('?')[0];
+        var href = a.getAttribute('href');
+        var email = href.replace(/^mailto:/, '').split('?')[0];
         if (!email) { return; }
         if (!navigator.clipboard || !navigator.clipboard.writeText) { return; }
-        navigator.clipboard.writeText(email).then(function () {
-          showMailtoToast(email);
-        }).catch(function () {});
+        // Mobile browsers hand off to the mail-app chooser almost instantly
+        // on this same click, which can cut off the async clipboard write
+        // and the toast before either finishes. So: stop the default
+        // navigation, show the toast and start the copy right away, then
+        // trigger the mailto: navigation ourselves a beat later — giving
+        // both a real chance to complete first on every platform.
+        e.preventDefault();
+        showMailtoToast(email);
+        navigator.clipboard.writeText(email).catch(function () {});
+        setTimeout(function () {
+          window.location.href = href;
+        }, 250);
       });
     }
     if (document.readyState === 'loading') {
