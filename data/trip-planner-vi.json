@@ -1,0 +1,107 @@
+[
+  {
+    "title": "Thẻ nhập cảnh Hàn Quốc khác gì với K-ETA?",
+    "url": "2026-09-19-korea-entry-eta-arrival-card-guide-vi.html",
+    "thumb": "assets/thumbs/trip-planner/korea-entry-eta-arrival-card-guide.jpg",
+    "label": "Chuẩn bị chuyến đi · Trực tuyến",
+    "alt": "Mẫu thẻ nhập cảnh (ARRIVAL CARD) trên nền cầu Gwangan về đêm ở Busan",
+    "badge": null,
+    "like_id": "trip-planner/2026-09-19-korea-entry-eta-arrival-card-guide-vi.html",
+    "date": "2026-09-19",
+    "kw": "the nhap canh keta k-eta arrival card visa mien thi thuc dang ky nguoi nuoc ngoai busan du lich",
+    "city": "busan",
+    "locations": []
+  },
+  {
+    "title": "Làng văn hóa Huinnyeoul, con hẻm gần biển nhất",
+    "url": "2026-09-06-huinnyeoul-culture-village-vi.html",
+    "thumb": "assets/thumbs/trip-planner/huinnyeoul-culture-village.jpg",
+    "label": "Lên kế hoạch · Trực tuyến",
+    "alt": "Con hẻm áp sát vách đá của Làng văn hóa Huinnyeoul",
+    "badge": null,
+    "like_id": "trip-planner/2026-09-06-huinnyeoul-culture-village-vi.html",
+    "date": "2026-09-06",
+    "kw": "busan huinnyeoul lang van hoa yeongdo view bien quan ca phe con hem 흰여울문화마을",
+    "city": "busan",
+    "locations": [
+      {
+        "name": "Lối vào Làng văn hóa Huinnyeoul",
+        "address": "부산 영도구 영선동4가 605-3",
+        "lat": 35.0795291,
+        "lng": 129.0435879
+      }
+    ]
+  },
+  {
+    "title": "Làng bia mộ Amidong: những điều nên biết trước khi ghé thăm",
+    "url": "2026-09-05-amidong-tombstone-village-vi.html",
+    "thumb": "assets/thumbs/trip-planner/amidong-tombstone-village.jpg",
+    "label": "Lên kế hoạch · Trực tuyến",
+    "alt": "Con hẻm ở Làng bia mộ Amidong với tường rào và bậc thang xếp từ bia mộ",
+    "badge": null,
+    "like_id": "trip-planner/2026-09-05-amidong-tombstone-village-vi.html",
+    "date": "2026-09-05",
+    "kw": "busan amidong lang bia mo gamcheon seo-gu con hem lich su chup anh 아미동 비석마을",
+    "city": "busan",
+    "locations": [
+      {
+        "name": "Làng bia mộ Amidong",
+        "address": "부산 서구 아미로 49",
+        "lat": 35.0998143,
+        "lng": 129.0124203
+      }
+    ]
+  },
+  {
+    "title": "Đài quan sát Amisan: góc nhìn ai cũng phải công nhận",
+    "url": "2026-09-04-amisan-observatory-vi.html",
+    "thumb": "assets/thumbs/trip-planner/amisan-observatory.jpg",
+    "label": "Cảnh quan · Trực tuyến",
+    "alt": "Hoàng hôn rực rỡ nhìn từ Đài quan sát Amisan",
+    "badge": null,
+    "like_id": "trip-planner/2026-09-04-amisan-observatory-vi.html",
+    "date": "2026-09-04",
+    "kw": "amisan observatory sunset busan quan sat hoang hon 아미산 전망대 노을",
+    "city": "busan",
+    "locations": []
+  },
+  {
+    "title": "Quá cảnh sân bay Gimhae, bạn có thể đi xa đến đâu?",
+    "url": "2026-09-03-gimhae-layover-guide-vi.html",
+    "thumb": "assets/thumbs/trip-planner/gimhae-layover-guide.jpg",
+    "label": "Lộ trình · Trực tuyến",
+    "alt": "Bãi biển Gwangalli với cầu Gwangan phía sau",
+    "badge": null,
+    "like_id": "trip-planner/2026-09-03-gimhae-layover-guide-vi.html",
+    "date": "2026-09-03",
+    "kw": "gimhae airport layover transit busan qua canh san bay 김해공항 경유",
+    "city": "busan",
+    "locations": []
+  },
+  {
+    "title": "Busan Venice: điều cần biết trước khi chụp ảnh",
+    "url": "2026-09-03-busan-venice-jangnimpogu-vi.html",
+    "thumb": "assets/thumbs/trip-planner/busan-venice-jangnimpogu.jpg",
+    "label": "Cảnh quan · Trực tuyến",
+    "alt": "Những chiếc thuyền trên mặt nước ở cảng Jangnim (Busan Venice) lúc hoàng hôn",
+    "badge": null,
+    "like_id": "trip-planner/2026-09-03-busan-venice-jangnimpogu-vi.html",
+    "date": "2026-09-03",
+    "kw": "busan venice jangnim port cang jangnim 장림포구 부네치아",
+    "city": "busan",
+    "locations": []
+  },
+  {
+    "title": "Làng Gamcheon, trước khi bấm máy",
+    "url": "2026-09-02-gamcheon-culture-village-vi.html",
+    "thumb": "assets/thumbs/trip-planner/gamcheon-culture-village.jpg",
+    "label": "Cảnh quan · Trực tuyến",
+    "alt": "Những mái nhà đầy màu sắc của Làng văn hóa Gamcheon lúc hoàng hôn",
+    "badge": null,
+    "like_id": "trip-planner/2026-09-02-gamcheon-culture-village-vi.html",
+    "date": "2026-09-02",
+    "kw": "gamcheon culture village painted houses busan lang van hoa 감천문화마을",
+    "city": "busan",
+    "locations": []
+  }
+]

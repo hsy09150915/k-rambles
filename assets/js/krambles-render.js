@@ -635,6 +635,59 @@
   }
 
 
+  // Generic "click to copy" for any element carrying data-copy="text" (e.g.
+  // the Korean department-name chips on the pharmacy/hospital guide). Reuses
+  // the same toast styling/element as the mailto-copy feature above.
+  (function wireGenericCopy() {
+    function boot() {
+      document.addEventListener('click', function (e) {
+        var el = e.target && e.target.closest && e.target.closest('[data-copy]');
+        if (!el) { return; }
+        var text = el.getAttribute('data-copy');
+        if (!text) { return; }
+        if (!navigator.clipboard || !navigator.clipboard.writeText) { return; }
+        e.preventDefault();
+        navigator.clipboard.writeText(text).then(function () {
+          showCopyToast(text);
+        }).catch(function () {});
+      });
+    }
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', boot);
+    } else {
+      boot();
+    }
+  })();
+
+  function showCopyToast(text) {
+    if (!document.getElementById('kr-mailto-toast-style')) {
+      var style = document.createElement('style');
+      style.id = 'kr-mailto-toast-style';
+      style.textContent =
+        '.kr-mailto-toast{position:fixed;left:50%;bottom:22px;transform:translate(-50%,12px);' +
+        'background:#1f2420;color:#eef2ec;padding:11px 16px;border-radius:10px;font-size:0.86rem;' +
+        'font-family:"Work Sans",ui-sans-serif,sans-serif;box-shadow:0 12px 28px -12px rgba(0,0,0,.5);' +
+        'opacity:0;transition:opacity .2s ease, transform .2s ease;z-index:999;pointer-events:none;' +
+        'max-width:88vw;text-align:center;}' +
+        '.kr-mailto-toast.is-visible{opacity:1;transform:translate(-50%,0);}';
+      document.head.appendChild(style);
+    }
+    var existing = document.querySelector('.kr-mailto-toast');
+    if (existing) { existing.remove(); }
+    var toast = document.createElement('div');
+    toast.className = 'kr-mailto-toast';
+    var isKo = document.documentElement.lang === 'ko' || location.pathname.indexOf('/ko/') !== -1;
+    var isVi = location.pathname.indexOf('/vi/') !== -1;
+    var prefix = isKo ? '복사됨: ' : (isVi ? 'Đã sao chép: ' : 'Copied: ');
+    toast.textContent = prefix + text;
+    document.body.appendChild(toast);
+    requestAnimationFrame(function () { toast.classList.add('is-visible'); });
+    setTimeout(function () {
+      toast.classList.remove('is-visible');
+      setTimeout(function () { toast.remove(); }, 250);
+    }, 2600);
+  }
+
   // One-time (per browser) hint bubble pointing at the Saved/Split-Costs icons
   // in the header. Only homepage markup has .header-util, so this is a no-op
   // everywhere else. Dismiss-only (X button), same convention as the like-save
