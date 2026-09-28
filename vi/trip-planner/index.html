@@ -131,16 +131,11 @@
 </style>
 
 <header class="site">
-  <a class="back-link" href="../index.html"><svg><use href="#i-arrow-left"/></svg>Về K-Rambles</a>
+  <a class="back-link" href="/vi/index.html"><svg><use href="#i-arrow-left"/></svg>Về K-Rambles</a>
   <div class="header-right">
     <div class="font-size-ctrl" role="group" aria-label="Text size"><button type="button" class="fs-step" data-action="dec" aria-label="Decrease text size">−</button><span class="fs-labels" aria-hidden="true"><span class="fs-label fs-label-sm">A</span><span class="fs-label fs-label-lg">A</span></span><button type="button" class="fs-step" data-action="inc" aria-label="Increase text size">+</button></div>
     <div class="logo">K-<span>Rambles</span></div>
-    <div class="lang-switch" aria-label="Language">
-      <a href="../../ko/trip-planner/index.html">한글</a>
-      <a href="../../trip-planner/index.html">EN</a>
-      <span class="current">VI</span>
-    <a href="../../th/trip-planner/index.html">TH</a>
-    </div>
+    <div class="lang-switch" aria-label="Language" data-key="trip-planner/index"></div>
   </div>
 </header>
 
@@ -180,18 +175,18 @@
   <div class="footer-inner">
     <span class="mono">K-Rambles · Chuyên mục Lên kế hoạch</span>
     <div class="footer-links">
-      <a href="../../about.html">Giới thiệu</a>
-      <a href="../../privacy.html">Chính sách riêng tư</a>
+      <a href="/about.html">Giới thiệu</a>
+      <a href="/privacy.html">Chính sách riêng tư</a>
       <a href="mailto:doma11@naver.com">Liên hệ</a>
     </div>
   </div>
 </footer>
 
-<script src="../../assets/js/krambles-render.js"></script>
+<script src="/assets/js/krambles-render.js"></script>
 <script>
   KR.renderHub({
-    jsonUrl: '../../data/trip-planner-vi.json',
-    assetBase: '../../',
+    jsonUrl: '/data/trip-planner-vi.json',
+    assetBase: '/',
     gridSelector: '.hub-grid',
     countSelector: '.hub-count',
     countTemplate: '{n} bài viết · mới nhất trước',

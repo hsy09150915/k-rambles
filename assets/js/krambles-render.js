@@ -92,6 +92,46 @@
     return 'en';
   }
 
+  /**
+   * Auto-populate every <div class="lang-switch" data-key="...">.
+   *
+   * Adding a new language used to mean hand-editing the lang-switch block on
+   * every existing page (100+ files, one at a time — easy to miss one or get
+   * a relative path wrong). Now each page just carries a stable content key
+   * (data-key) and this reads data/translations.json once per page load to
+   * fill in whichever language links actually exist for that key. Adding a
+   * new language going forward = add one column of URLs to
+   * data/translations.json. No existing page ever needs to be touched again.
+   */
+  var LANG_ORDER = ['en', 'ko', 'vi', 'th'];
+  var LANG_LABEL = { en: 'EN', ko: '한글', vi: 'VI', th: 'TH' };
+
+  function renderLangSwitches() {
+    var nodes = document.querySelectorAll('.lang-switch[data-key]');
+    if (!nodes.length) { return; }
+    var myLang = getLang();
+    fetchJSON('/data/translations.json').then(function (manifest) {
+      nodes.forEach(function (node) {
+        var key = node.getAttribute('data-key');
+        var entry = manifest[key];
+        if (!entry) { return; }
+        var html = LANG_ORDER.filter(function (l) { return entry[l]; }).map(function (l) {
+          if (l === myLang) { return '<span class="current">' + LANG_LABEL[l] + '</span>'; }
+          return '<a href="' + esc(entry[l]) + '">' + LANG_LABEL[l] + '</a>';
+        }).join('');
+        node.innerHTML = html;
+      });
+    }).catch(function (err) {
+      console.error('[krambles] lang-switch failed:', err);
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', renderLangSwitches);
+  } else {
+    renderLangSwitches();
+  }
+
   function tileHTML(item, hrefFor, thumbFor) {
     var href = hrefFor(item);
     var thumb = thumbFor(item);

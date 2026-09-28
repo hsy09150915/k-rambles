@@ -1,0 +1,244 @@
+{
+  "about": {
+    "en": "/about.html",
+    "ko": "/ko/about.html"
+  },
+  "getting-around/2026-09-02-airport-to-haeundae": {
+    "en": "/getting-around/2026-09-02-airport-to-haeundae.html",
+    "ko": "/ko/getting-around/2026-09-02-airport-to-haeundae.html",
+    "th": "/th/getting-around/2026-09-02-airport-to-haeundae-th.html",
+    "vi": "/vi/getting-around/2026-09-02-airport-to-haeundae-vi.html"
+  },
+  "getting-around/2026-09-02-tmoney-explained": {
+    "en": "/getting-around/2026-09-02-tmoney-explained.html",
+    "ko": "/ko/getting-around/2026-09-02-tmoney-explained.html",
+    "th": "/th/getting-around/2026-09-02-tmoney-explained-th.html",
+    "vi": "/vi/getting-around/2026-09-02-tmoney-explained-vi.html"
+  },
+  "getting-around/2026-09-07-naver-map-app-guide": {
+    "en": "/getting-around/2026-09-07-naver-map-app-guide.html",
+    "ko": "/ko/getting-around/2026-09-07-naver-map-app-guide.html",
+    "th": "/th/getting-around/2026-09-07-naver-map-app-guide-th.html",
+    "vi": "/vi/getting-around/2026-09-07-naver-map-app-guide-vi.html"
+  },
+  "getting-around/2026-09-11-subway-navigation-guide": {
+    "en": "/getting-around/2026-09-11-subway-navigation-guide.html",
+    "ko": "/ko/getting-around/2026-09-11-subway-navigation-guide.html",
+    "th": "/th/getting-around/2026-09-11-subway-navigation-guide-th.html",
+    "vi": "/vi/getting-around/2026-09-11-subway-navigation-guide-vi.html"
+  },
+  "getting-around/2026-09-12-taxi-guide": {
+    "en": "/getting-around/2026-09-12-taxi-guide.html",
+    "ko": "/ko/getting-around/2026-09-12-taxi-guide.html",
+    "th": "/th/getting-around/2026-09-12-taxi-guide-th.html",
+    "vi": "/vi/getting-around/2026-09-12-taxi-guide-vi.html"
+  },
+  "getting-around/2026-09-13-bus-riding-guide": {
+    "en": "/getting-around/2026-09-13-bus-riding-guide.html",
+    "ko": "/ko/getting-around/2026-09-13-bus-riding-guide.html",
+    "th": "/th/getting-around/2026-09-13-bus-riding-guide-th.html",
+    "vi": "/vi/getting-around/2026-09-13-bus-riding-guide-vi.html"
+  },
+  "getting-around/2026-09-13-korea-sim-esim-guide": {
+    "en": "/getting-around/2026-09-13-korea-sim-esim-guide.html",
+    "ko": "/ko/getting-around/2026-09-13-korea-sim-esim-guide.html",
+    "th": "/th/getting-around/2026-09-13-korea-sim-esim-guide-th.html",
+    "vi": "/vi/getting-around/2026-09-13-korea-sim-esim-guide-vi.html"
+  },
+  "getting-around/2026-09-17-currency-exchange-atm-guide-en": {
+    "en": "/getting-around/2026-09-17-currency-exchange-atm-guide-en.html",
+    "ko": "/ko/getting-around/2026-09-17-currency-exchange-atm-guide-ko.html",
+    "th": "/th/getting-around/2026-09-17-currency-exchange-atm-guide-th.html",
+    "vi": "/vi/getting-around/2026-09-17-currency-exchange-atm-guide-vi.html"
+  },
+  "getting-around/2026-09-23-busan-tax-refund-en": {
+    "en": "/getting-around/2026-09-23-busan-tax-refund-en.html",
+    "ko": "/ko/getting-around/2026-09-23-busan-tax-refund-ko.html",
+    "th": "/th/getting-around/2026-09-23-busan-tax-refund-th.html",
+    "vi": "/vi/getting-around/2026-09-23-busan-tax-refund-vi.html"
+  },
+  "getting-around/2026-09-24-busan-luggage-storage-en": {
+    "en": "/getting-around/2026-09-24-busan-luggage-storage-en.html",
+    "ko": "/ko/getting-around/2026-09-24-busan-luggage-storage-ko.html",
+    "th": "/th/getting-around/2026-09-24-busan-luggage-storage-th.html",
+    "vi": "/vi/getting-around/2026-09-24-busan-luggage-storage-vi.html"
+  },
+  "getting-around/2026-09-24-korea-card-payment-guide-en": {
+    "en": "/getting-around/2026-09-24-korea-card-payment-guide-en.html",
+    "ko": "/ko/getting-around/2026-09-24-korea-card-payment-guide-ko.html",
+    "th": "/th/getting-around/2026-09-24-korea-card-payment-guide-th.html",
+    "vi": "/vi/getting-around/2026-09-24-korea-card-payment-guide-vi.html"
+  },
+  "getting-around/2026-09-25-korea-pharmacy-hospital-guide-en": {
+    "en": "/getting-around/2026-09-25-korea-pharmacy-hospital-guide-en.html",
+    "ko": "/ko/getting-around/2026-09-25-korea-pharmacy-hospital-guide-ko.html",
+    "th": "/th/getting-around/2026-09-25-korea-pharmacy-hospital-guide-th.html",
+    "vi": "/vi/getting-around/2026-09-25-korea-pharmacy-hospital-guide-vi.html"
+  },
+  "getting-around/2026-09-26-korea-delivery-apps-guide-en": {
+    "en": "/getting-around/2026-09-26-korea-delivery-apps-guide-en.html",
+    "ko": "/ko/getting-around/2026-09-26-korea-delivery-apps-guide-ko.html",
+    "th": "/th/getting-around/2026-09-26-korea-delivery-apps-guide-th.html",
+    "vi": "/vi/getting-around/2026-09-26-korea-delivery-apps-guide-vi.html"
+  },
+  "getting-around/index": {
+    "en": "/getting-around/index.html",
+    "ko": "/ko/getting-around/index.html",
+    "th": "/th/getting-around/index.html",
+    "vi": "/vi/getting-around/index.html"
+  },
+  "index": {
+    "en": "/index.html",
+    "ko": "/ko/index.html",
+    "th": "/th/index.html",
+    "vi": "/vi/index.html"
+  },
+  "liked": {
+    "en": "/liked.html",
+    "ko": "/ko/liked.html",
+    "th": "/th/liked.html",
+    "vi": "/vi/liked.html"
+  },
+  "long-stay/2026-09-02-tap-water-safety": {
+    "en": "/long-stay/2026-09-02-tap-water-safety.html",
+    "ko": "/ko/long-stay/2026-09-02-tap-water-safety.html",
+    "th": "/th/long-stay/2026-09-02-tap-water-safety-th.html",
+    "vi": "/vi/long-stay/2026-09-02-tap-water-safety-vi.html"
+  },
+  "long-stay/2026-09-19-korea-arc-foreign-registration-guide-en": {
+    "en": "/long-stay/2026-09-19-korea-arc-foreign-registration-guide-en.html",
+    "ko": "/ko/long-stay/2026-09-19-korea-arc-foreign-registration-guide-ko.html",
+    "th": "/th/long-stay/2026-09-19-korea-arc-foreign-registration-guide-th.html",
+    "vi": "/vi/long-stay/2026-09-19-korea-arc-foreign-registration-guide-vi.html"
+  },
+  "long-stay/2026-09-20-korea-bank-account-guide-en": {
+    "en": "/long-stay/2026-09-20-korea-bank-account-guide-en.html",
+    "ko": "/ko/long-stay/2026-09-20-korea-bank-account-guide-ko.html",
+    "th": "/th/long-stay/2026-09-20-korea-bank-account-guide-th.html",
+    "vi": "/vi/long-stay/2026-09-20-korea-bank-account-guide-vi.html"
+  },
+  "long-stay/2026-09-20-korea-phone-plan-guide-en": {
+    "en": "/long-stay/2026-09-20-korea-phone-plan-guide-en.html",
+    "ko": "/ko/long-stay/2026-09-20-korea-phone-plan-guide-ko.html",
+    "th": "/th/long-stay/2026-09-20-korea-phone-plan-guide-th.html",
+    "vi": "/vi/long-stay/2026-09-20-korea-phone-plan-guide-vi.html"
+  },
+  "long-stay/index": {
+    "en": "/long-stay/index.html",
+    "ko": "/ko/long-stay/index.html",
+    "th": "/th/long-stay/index.html",
+    "vi": "/vi/long-stay/index.html"
+  },
+  "privacy": {
+    "en": "/privacy.html",
+    "ko": "/ko/privacy.html"
+  },
+  "split-calculator": {
+    "en": "/split-calculator.html",
+    "ko": "/ko/split-calculator.html",
+    "th": "/th/split-calculator.html",
+    "vi": "/vi/split-calculator.html"
+  },
+  "taste/2026-09-04-jagalchi-hoe-guide": {
+    "en": "/taste/2026-09-04-jagalchi-hoe-guide.html",
+    "ko": "/ko/taste/2026-09-04-jagalchi-hoe-guide.html",
+    "th": "/th/taste/2026-09-04-jagalchi-hoe-guide-th.html",
+    "vi": "/vi/taste/2026-09-04-jagalchi-hoe-guide-vi.html"
+  },
+  "taste/2026-09-06-milmyeon-guide": {
+    "en": "/taste/2026-09-06-milmyeon-guide.html",
+    "ko": "/ko/taste/2026-09-06-milmyeon-guide.html",
+    "th": "/th/taste/2026-09-06-milmyeon-guide-th.html",
+    "vi": "/vi/taste/2026-09-06-milmyeon-guide-vi.html"
+  },
+  "taste/2026-09-21-taejongdae-haenyeo-raw-seafood-en": {
+    "en": "/taste/2026-09-21-taejongdae-haenyeo-raw-seafood-en.html",
+    "ko": "/ko/taste/2026-09-21-taejongdae-haenyeo-raw-seafood-ko.html",
+    "th": "/th/taste/2026-09-21-taejongdae-haenyeo-raw-seafood-th.html",
+    "vi": "/vi/taste/2026-09-21-taejongdae-haenyeo-raw-seafood-vi.html"
+  },
+  "taste/2026-09-23-busan-dwaeji-gukbap-20-en": {
+    "en": "/taste/2026-09-23-busan-dwaeji-gukbap-20-en.html",
+    "ko": "/ko/taste/2026-09-23-busan-dwaeji-gukbap-20-ko.html",
+    "th": "/th/taste/2026-09-23-busan-dwaeji-gukbap-20-th.html",
+    "vi": "/vi/taste/2026-09-23-busan-dwaeji-gukbap-20-vi.html"
+  },
+  "taste/index": {
+    "en": "/taste/index.html",
+    "ko": "/ko/taste/index.html",
+    "th": "/th/taste/index.html",
+    "vi": "/vi/taste/index.html"
+  },
+  "taste/taste-dwaeji-gukbap": {
+    "en": "/taste/taste-dwaeji-gukbap.html",
+    "ko": "/ko/taste/taste-dwaeji-gukbap.html",
+    "th": "/th/taste/taste-dwaeji-gukbap-th.html",
+    "vi": "/vi/taste/taste-dwaeji-gukbap-vi.html"
+  },
+  "trip-planner/2026-09-02-gamcheon-culture-village": {
+    "en": "/trip-planner/2026-09-02-gamcheon-culture-village.html",
+    "ko": "/ko/trip-planner/2026-09-02-gamcheon-culture-village.html",
+    "th": "/th/trip-planner/2026-09-02-gamcheon-culture-village-th.html",
+    "vi": "/vi/trip-planner/2026-09-02-gamcheon-culture-village-vi.html"
+  },
+  "trip-planner/2026-09-03-busan-venice-jangnimpogu": {
+    "en": "/trip-planner/2026-09-03-busan-venice-jangnimpogu.html",
+    "ko": "/ko/trip-planner/2026-09-03-busan-venice-jangnimpogu.html",
+    "th": "/th/trip-planner/2026-09-03-busan-venice-jangnimpogu-th.html",
+    "vi": "/vi/trip-planner/2026-09-03-busan-venice-jangnimpogu-vi.html"
+  },
+  "trip-planner/2026-09-03-gimhae-layover-guide": {
+    "en": "/trip-planner/2026-09-03-gimhae-layover-guide.html",
+    "ko": "/ko/trip-planner/2026-09-03-gimhae-layover-guide.html",
+    "th": "/th/trip-planner/2026-09-03-gimhae-layover-guide-th.html",
+    "vi": "/vi/trip-planner/2026-09-03-gimhae-layover-guide-vi.html"
+  },
+  "trip-planner/2026-09-04-amisan-observatory": {
+    "en": "/trip-planner/2026-09-04-amisan-observatory.html",
+    "ko": "/ko/trip-planner/2026-09-04-amisan-observatory.html",
+    "th": "/th/trip-planner/2026-09-04-amisan-observatory-th.html",
+    "vi": "/vi/trip-planner/2026-09-04-amisan-observatory-vi.html"
+  },
+  "trip-planner/2026-09-05-amidong-tombstone-village": {
+    "en": "/trip-planner/2026-09-05-amidong-tombstone-village.html",
+    "ko": "/ko/trip-planner/2026-09-05-amidong-tombstone-village.html",
+    "th": "/th/trip-planner/2026-09-05-amidong-tombstone-village-th.html",
+    "vi": "/vi/trip-planner/2026-09-05-amidong-tombstone-village-vi.html"
+  },
+  "trip-planner/2026-09-06-busan-hanbok-rental-guide": {
+    "en": "/trip-planner/2026-09-06-busan-hanbok-rental-guide.html",
+    "ko": "/ko/trip-planner/2026-09-06-busan-hanbok-rental-guide.html",
+    "th": "/th/trip-planner/2026-09-06-busan-hanbok-rental-guide-th.html",
+    "vi": "/vi/trip-planner/2026-09-06-busan-hanbok-rental-guide-vi.html"
+  },
+  "trip-planner/2026-09-06-huinnyeoul-culture-village": {
+    "en": "/trip-planner/2026-09-06-huinnyeoul-culture-village.html",
+    "ko": "/ko/trip-planner/2026-09-06-huinnyeoul-culture-village.html",
+    "th": "/th/trip-planner/2026-09-06-huinnyeoul-culture-village-th.html",
+    "vi": "/vi/trip-planner/2026-09-06-huinnyeoul-culture-village-vi.html"
+  },
+  "trip-planner/2026-09-19-korea-entry-eta-arrival-card-guide-en": {
+    "en": "/trip-planner/2026-09-19-korea-entry-eta-arrival-card-guide-en.html",
+    "ko": "/ko/trip-planner/2026-09-19-korea-entry-eta-arrival-card-guide-ko.html",
+    "th": "/th/trip-planner/2026-09-19-korea-entry-eta-arrival-card-guide-th.html",
+    "vi": "/vi/trip-planner/2026-09-19-korea-entry-eta-arrival-card-guide-vi.html"
+  },
+  "trip-planner/2026-09-22-taejongdae-guide-en": {
+    "en": "/trip-planner/2026-09-22-taejongdae-guide-en.html",
+    "ko": "/ko/trip-planner/2026-09-22-taejongdae-guide-ko.html",
+    "th": "/th/trip-planner/2026-09-22-taejongdae-guide-th.html",
+    "vi": "/vi/trip-planner/2026-09-22-taejongdae-guide-vi.html"
+  },
+  "trip-planner/2026-09-23-busan-views-cablecar-tower-yacht-en": {
+    "en": "/trip-planner/2026-09-23-busan-views-cablecar-tower-yacht-en.html",
+    "ko": "/ko/trip-planner/2026-09-23-busan-views-cablecar-tower-yacht-ko.html",
+    "th": "/th/trip-planner/2026-09-23-busan-views-cablecar-tower-yacht-th.html",
+    "vi": "/vi/trip-planner/2026-09-23-busan-views-cablecar-tower-yacht-vi.html"
+  },
+  "trip-planner/index": {
+    "en": "/trip-planner/index.html",
+    "ko": "/ko/trip-planner/index.html",
+    "th": "/th/trip-planner/index.html",
+    "vi": "/vi/trip-planner/index.html"
+  }
+}
