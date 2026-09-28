@@ -72,6 +72,7 @@
     font-size: 1.0625rem;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
+    word-break: keep-all;
   }
 
   .font-size-ctrl { display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--line); border-radius: 100px; padding: 4px 8px; }
@@ -107,7 +108,7 @@
     margin: 0 auto;
   }
 
-  .header-right { display: flex; align-items: center; gap: 20px; }
+  .header-right { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; row-gap: 8px; }
 
   .logo {
     font-family: "Bricolage Grotesque", ui-sans-serif, sans-serif;
@@ -763,7 +764,7 @@
 
   /* kr-header-narrow-fix-2 */
   @media (max-width: 340px) {
-    .header-right { gap: 8px; }
+    .header-right { gap: 8px; flex-wrap: wrap; row-gap: 8px; }
     .util-link { padding: 7px; }
     .util-link svg { width: 15px; height: 15px; }
     .font-size-ctrl { gap: 4px; padding: 2px 5px; }
@@ -777,6 +778,12 @@
 
 <header class="site">
   <div class="logo">K-<span>Rambles</span></div>
+  <nav class="site-nav" aria-label="Section links">
+    <a href="#trip-planner">Lên kế hoạch</a>
+    <a href="#getting-around">Giao thông</a>
+    <a href="#food-stories">Ẩm thực</a>
+    <a href="#long-stay">Lưu trú dài hạn</a>
+  </nav>
   <div class="header-right">
     <div class="header-util">
       <a href="/vi/liked.html" class="util-link" aria-label="Đã lưu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-heart"/></svg><span class="util-label">Đã lưu</span></a>
@@ -791,9 +798,9 @@
   <div class="hero-text">
     <span class="stamp"><span class="stamp-tag">Đang khám phá</span> Busan</span>
     <h1 class="headline">Busan, từng bước <em>thật chậm</em>.</h1>
-    <p class="lede">Hướng dẫn Busan đã được kiểm chứng thực tế — ẩm thực, giao thông, đời sống hằng ngày, cập nhật liên tục.</p>
+    <p class="lede">Hướng dẫn Busan đã được kiểm chứng thực tế — ẩm thực, giao thông, đời sống hằng ngày.</p>
     <div class="hero-actions">
-      <a class="btn-primary" href="#getting-around">Xem chuyên mục Giao thông →</a>
+      <a class="btn-primary" href="#boards">Bắt đầu khám phá →</a>
     </div>
   </div>
   <div class="hero-visual">
@@ -867,11 +874,11 @@
   </symbol>
 </svg>
 
-<section class="board">
+<section class="board" id="boards">
   <div class="board-head">
-    <p class="eyebrow">Phiên bản tiếng Việt</p>
-    <h2 class="board-title">Lên kế hoạch & Giao thông</h2>
-    
+    <p class="eyebrow">Nội dung hiện có</p>
+    <h2 class="board-title">Bốn chuyên mục</h2>
+    <p>Nhấn vào một chuyên mục để xem, hoặc nhấn vào một bài viết để vào thẳng.</p>
 
   <div class="search-wrap">
     <svg class="search-icon"><use href="#i-search"/></svg>
@@ -946,8 +953,8 @@
   <div class="footer-inner">
     <span class="mono">K-Rambles · hướng dẫn Busan đã kiểm chứng</span>
     <div class="footer-links">
-      <a href="/about.html">Giới thiệu</a>
-      <a href="/privacy.html">Chính sách riêng tư</a>
+      <a href="/vi/about.html">Giới thiệu</a>
+      <a href="/vi/privacy.html">Chính sách riêng tư</a>
       <a href="mailto:doma11@naver.com">Liên hệ</a>
     </div>
   </div>

@@ -103,7 +103,7 @@
    * new language going forward = add one column of URLs to
    * data/translations.json. No existing page ever needs to be touched again.
    */
-  var LANG_ORDER = ['en', 'ko', 'vi', 'th'];
+  var LANG_ORDER = ['en', 'vi', 'th', 'ko'];
   var LANG_LABEL = { en: 'EN', ko: '한글', vi: 'VI', th: 'TH' };
 
   function renderLangSwitches() {
@@ -818,3 +818,62 @@
     }
   })();
 })(window);
+
+(function () {
+  var SHOW_AFTER = 480;
+  function boot() {
+    if (document.querySelector('.kr-back-to-top')) { return; }
+
+    var style = document.createElement('style');
+    style.id = 'kr-back-to-top-style';
+    style.textContent =
+      '.kr-back-to-top{position:fixed;right:20px;bottom:20px;width:46px;height:46px;' +
+      'border-radius:50%;border:1.5px solid var(--coral,#d9532a);background:#fff;' +
+      'color:var(--coral,#d9532a);font-size:1.25rem;line-height:1;cursor:pointer;' +
+      'box-shadow:0 10px 24px -8px rgba(0,0,0,0.28);display:flex;align-items:center;' +
+      'justify-content:center;z-index:900;opacity:0;transform:translateY(8px);' +
+      'pointer-events:none;transition:opacity .2s ease, transform .2s ease;}' +
+      '.kr-back-to-top.is-visible{opacity:1;transform:translateY(0);pointer-events:auto;}' +
+      '@media (max-width:480px){.kr-back-to-top{right:14px;bottom:14px;width:42px;height:42px;font-size:1.1rem;}}';
+    document.head.appendChild(style);
+
+    var htmlLang = (document.documentElement.lang || '').toLowerCase();
+    var lang = htmlLang.indexOf('ko') === 0 ? 'ko'
+      : htmlLang.indexOf('vi') === 0 ? 'vi'
+      : htmlLang.indexOf('th') === 0 ? 'th'
+      : /(^|\/)ko(\/|$)/.test(location.pathname) ? 'ko'
+      : /(^|\/)vi(\/|$)/.test(location.pathname) ? 'vi'
+      : /(^|\/)th(\/|$)/.test(location.pathname) ? 'th'
+      : 'en';
+    var label = lang === 'ko' ? '맨 위로 이동'
+      : lang === 'vi' ? 'Lên đầu trang'
+      : lang === 'th' ? 'กลับไปด้านบน'
+      : 'Back to top';
+
+    var btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'kr-back-to-top';
+    btn.setAttribute('aria-label', label);
+    btn.innerHTML = '&#8593;';
+    btn.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    document.body.appendChild(btn);
+
+    function onScroll() {
+      if (window.scrollY > SHOW_AFTER) {
+        btn.classList.add('is-visible');
+      } else {
+        btn.classList.remove('is-visible');
+      }
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', boot);
+  } else {
+    boot();
+  }
+})();

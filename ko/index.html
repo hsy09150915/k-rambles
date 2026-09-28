@@ -72,6 +72,7 @@
     font-size: 1.0625rem;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
+    word-break: keep-all;
   }
 
   .font-size-ctrl { display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--line); border-radius: 100px; padding: 4px 8px; }
@@ -107,7 +108,7 @@
     margin: 0 auto;
   }
 
-  .header-right { display: flex; align-items: center; gap: 20px; }
+  .header-right { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; row-gap: 8px; }
 
   .logo {
     font-family: "Bricolage Grotesque", ui-sans-serif, sans-serif;
@@ -763,7 +764,7 @@
 
   /* kr-header-narrow-fix-2 */
   @media (max-width: 340px) {
-    .header-right { gap: 8px; }
+    .header-right { gap: 8px; flex-wrap: wrap; row-gap: 8px; }
     .util-link { padding: 7px; }
     .util-link svg { width: 15px; height: 15px; }
     .font-size-ctrl { gap: 4px; padding: 2px 5px; }
@@ -797,10 +798,9 @@
   <div class="hero-text">
     <span class="stamp"><span class="stamp-tag">지금 탐험 중</span> 부산</span>
     <h1 class="headline">부산, 한 걸음씩 <em>천천히</em>.</h1>
-    <p class="lede">팩트체크된 부산 가이드 — 음식, 교통, 일상생활까지 최신 정보로 업데이트한다.</p>
+    <p class="lede">팩트체크된 부산 가이드 — 음식, 교통, 일상생활까지.</p>
     <div class="hero-actions">
-      <a class="btn-primary" href="#food-stories">둘러보기 시작 →</a>
-      <a class="btn-ghost" href="#next-stop">다음 행선지 보기</a>
+      <a class="btn-primary" href="#boards">둘러보기 시작 →</a>
     </div>
   </div>
   <div class="hero-visual">
@@ -964,7 +964,7 @@
   </symbol>
 </svg>
 
-<section class="board">
+<section class="board" id="boards">
   <div class="board-head">
     <p class="eyebrow">지금까지의 보드</p>
     <h2 class="board-title">네 개의 보드</h2>
@@ -1039,15 +1039,6 @@
   </div>
 </section>
 
-<section class="next-stop" id="next-stop">
-  <div class="next-stop-card">
-    <div>
-      <p class="mono">다음 여권 스탬프</p>
-      <h3>부산부터 먼저. 그다음은 엽서에 안 나오는 도시들로.</h3>
-      <p>아직 정해진 날짜는 없다 — 부산을 제대로 마무리하고 나서 다시 짐을 쌀 예정이다.</p>
-    </div>
-  </div>
-</section>
 
 <footer class="site">
   <div class="footer-inner">

@@ -73,6 +73,7 @@
     font-size: 1.0625rem;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
+    word-break: keep-all;
   }
 
   .font-size-ctrl { display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--line); border-radius: 100px; padding: 4px 8px; }
@@ -108,7 +109,7 @@
     margin: 0 auto;
   }
 
-  .header-right { display: flex; align-items: center; gap: 20px; }
+  .header-right { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; row-gap: 8px; }
 
   .logo {
     font-family: "Bricolage Grotesque", ui-sans-serif, sans-serif;
@@ -765,7 +766,7 @@
 
   /* kr-header-narrow-fix-2 */
   @media (max-width: 340px) {
-    .header-right { gap: 8px; }
+    .header-right { gap: 8px; flex-wrap: wrap; row-gap: 8px; }
     .util-link { padding: 7px; }
     .util-link svg { width: 15px; height: 15px; }
     .font-size-ctrl { gap: 4px; padding: 2px 5px; }
@@ -799,7 +800,7 @@
   <div class="hero-text">
     <span class="stamp"><span class="stamp-tag">กำลังสำรวจ</span> ปูซาน</span>
     <h1 class="headline">ปูซาน ไปเรื่อย ๆ <em>ทีละก้าว</em></h1>
-    <p class="lede">คู่มือปูซานที่ตรวจสอบข้อเท็จจริงแล้ว — อาหาร การเดินทาง และชีวิตประจำวัน อัปเดตอยู่เสมอ</p>
+    <p class="lede">คู่มือปูซานที่ตรวจสอบข้อเท็จจริงแล้ว — อาหาร การเดินทาง และชีวิตประจำวัน</p>
     <div class="hero-actions">
       <a class="btn-primary" href="#boards">เริ่มสำรวจ →</a>
     </div>
@@ -968,8 +969,8 @@
 <section class="board" id="boards">
   <div class="board-head">
     <p class="eyebrow">คอนเทนต์ที่มีตอนนี้</p>
-    <h2 class="board-title">4 หมวดหมู่ อัปเดตใหม่ตลอด</h2>
-    <p>มีบทความใหม่เพิ่มทุกสัปดาห์ — แตะหมวดหมู่เพื่อเปิดดู หรือแตะบทความเพื่อเข้าไปอ่านได้เลย</p>
+    <h2 class="board-title">4 หมวดหมู่</h2>
+    <p>แตะหมวดหมู่เพื่อเปิดดู หรือแตะบทความเพื่อเข้าไปอ่านได้เลย</p>
 
   <div class="search-wrap">
     <svg class="search-icon"><use href="#i-search"/></svg>
@@ -1040,22 +1041,13 @@
   </div>
 </section>
 
-<section class="next-stop" id="next-stop">
-  <div class="next-stop-card">
-    <div>
-      <p class="mono">Next stamp in the passport</p>
-      <h3>Busan first. Then the cities Korea doesn't put on postcards.</h3>
-      <p>No fixed date yet — we're finishing Busan properly before we pack the bags again.</p>
-    </div>
-  </div>
-</section>
 
 <footer class="site">
   <div class="footer-inner">
     <span class="mono">K-Rambles · คู่มือปูซานที่ตรวจสอบข้อเท็จจริงแล้ว</span>
     <div class="footer-links">
-      <a href="/about.html">เกี่ยวกับเรา</a>
-      <a href="/privacy.html">นโยบายความเป็นส่วนตัว</a>
+      <a href="/th/about.html">เกี่ยวกับเรา</a>
+      <a href="/th/privacy.html">นโยบายความเป็นส่วนตัว</a>
       <a href="mailto:doma11@naver.com">ติดต่อ</a>
     </div>
   </div>

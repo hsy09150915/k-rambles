@@ -1,7 +1,9 @@
 {
   "about": {
     "en": "/about.html",
-    "ko": "/ko/about.html"
+    "ko": "/ko/about.html",
+    "vi": "/vi/about.html",
+    "th": "/th/about.html"
   },
   "getting-around/2026-09-02-airport-to-haeundae": {
     "en": "/getting-around/2026-09-02-airport-to-haeundae.html",
@@ -131,7 +133,9 @@
   },
   "privacy": {
     "en": "/privacy.html",
-    "ko": "/ko/privacy.html"
+    "ko": "/ko/privacy.html",
+    "vi": "/vi/privacy.html",
+    "th": "/th/privacy.html"
   },
   "split-calculator": {
     "en": "/split-calculator.html",
