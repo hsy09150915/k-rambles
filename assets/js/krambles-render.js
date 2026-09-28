@@ -24,24 +24,32 @@
   var BOARD_BASE_KW = {
     'taste': {
       en: 'food restaurant meal eat where to eat',
-      ko: '음식 맛집 식당 먹거리 어디서 먹을까'
+      ko: '음식 맛집 식당 먹거리 어디서 먹을까',
+      vi: 'am thuc mon an nha hang an o dau',
+      th: 'อาหาร ร้านอาหาร กินที่ไหน เมนูอาหาร'
     },
     'getting-around': {
       en: 'transport transportation getting around how to get',
-      ko: '교통 이동 대중교통 가는 법'
+      ko: '교통 이동 대중교통 가는 법',
+      vi: 'giao thong di chuyen phuong tien cong cong cach di',
+      th: 'การเดินทาง ขนส่ง วิธีไป รถสาธารณะ'
     },
     'trip-planner': {
       en: 'things to do attraction sightseeing itinerary',
-      ko: '여행 볼거리 관광 일정'
+      ko: '여행 볼거리 관광 일정',
+      vi: 'du lich diem tham quan lich trinh cho di choi',
+      th: 'ที่เที่ยว จุดท่องเที่ยว แผนการเดินทาง กิจกรรม'
     },
     'long-stay': {
       en: 'living in korea expat resident long stay',
-      ko: '한국 거주 체류 장기체류 생활'
+      ko: '한국 거주 체류 장기체류 생활',
+      vi: 'song o han quoc dinh cu cu tru dai han sinh hoat',
+      th: 'การใช้ชีวิตในเกาหลี พำนักระยะยาว ผู้พำนัก'
     }
   };
 
   function boardBaseKw(jsonUrl) {
-    var m = /([a-z-]+)-(en|ko)\.json(?:$|\?)/.exec(jsonUrl || '');
+    var m = /([a-z-]+)-(en|ko|vi|th)\.json(?:$|\?)/.exec(jsonUrl || '');
     if (!m) { return ''; }
     var entry = BOARD_BASE_KW[m[1]];
     return entry ? (entry[m[2]] || '') : '';
@@ -69,13 +77,19 @@
     });
   }
 
-  function isKo() {
+  // Returns 'ko', 'vi', 'th', or 'en' (default). Most pages don't set
+  // <html lang>, so this falls back to the /ko/, /vi/, or /th/ path segment
+  // every localized page lives under.
+  function getLang() {
     var lang = (document.documentElement.lang || '').toLowerCase();
-    if (lang.indexOf('ko') === 0) { return true; }
-    if (lang.indexOf('en') === 0) { return false; }
-    // Some pages don't set <html lang> at all — fall back to the /ko/ path
-    // segment every Korean page lives under.
-    return /(^|\/)ko(\/|$)/.test(location.pathname);
+    if (lang.indexOf('ko') === 0) { return 'ko'; }
+    if (lang.indexOf('vi') === 0) { return 'vi'; }
+    if (lang.indexOf('th') === 0) { return 'th'; }
+    if (lang.indexOf('en') === 0) { return 'en'; }
+    if (/(^|\/)ko(\/|$)/.test(location.pathname)) { return 'ko'; }
+    if (/(^|\/)vi(\/|$)/.test(location.pathname)) { return 'vi'; }
+    if (/(^|\/)th(\/|$)/.test(location.pathname)) { return 'th'; }
+    return 'en';
   }
 
   function tileHTML(item, hrefFor, thumbFor) {
@@ -83,10 +97,17 @@
     var thumb = thumbFor(item);
     var alt = item.alt || item.title;
     var badge = item.badge ? '<span class="tile-photo-badge">' + esc(item.badge) + '</span>' : '';
-    var ko = isKo();
-    var likeLabel = ko ? '이 글 저장하기' : 'Save this piece';
-    var likeTitle = ko
+    var lang = getLang();
+    var likeLabel = lang === 'ko' ? '이 글 저장하기'
+      : lang === 'vi' ? 'Lưu bài này'
+      : lang === 'th' ? 'บันทึกบทความนี้'
+      : 'Save this piece';
+    var likeTitle = lang === 'ko'
       ? '이 기기에만 저장돼요 — 다른 폰·브라우저로 바꾸면 사라져요. 인기 있는 글을 파악하는 데도 도움돼요.'
+      : lang === 'vi'
+      ? 'Chỉ lưu trên thiết bị này — đổi điện thoại hoặc trình duyệt khác sẽ mất. Cũng giúp chúng tôi biết bài nào được quan tâm nhiều.'
+      : lang === 'th'
+      ? 'บันทึกไว้ในอุปกรณ์นี้เท่านั้น — หากเปลี่ยนโทรศัพท์หรือเบราว์เซอร์ ข้อมูลจะหายไป นอกจากนี้ยังช่วยให้เรารู้ว่าบทความไหนได้รับความนิยม'
       : 'Saved on this device only — switch phones or browsers and it’s gone. Also helps us see what’s popular.';
     return (
       '<div class="tile tile--photo reveal">' +
@@ -131,9 +152,13 @@
   function showLikeToast() {
     try { if (localStorage.getItem(TOAST_SEEN_KEY)) { return; } } catch (e) {}
     ensureToastStyle();
-    var ko = isKo();
-    var msg = ko
+    var lang = getLang();
+    var msg = lang === 'ko'
       ? '좋아요 리스트는 이 브라우저에만 보관 돼요. 즉, 브라우저가 바뀌면 좋아요 리스트는 공유가 안돼요. 그리고 좋아요 누른 글은 상단 메뉴에서 다시 볼 수 있어요.'
+      : lang === 'vi'
+      ? 'Danh sách yêu thích chỉ được lưu trên trình duyệt này — đổi trình duyệt khác thì danh sách sẽ không còn. Bạn có thể xem lại các bài đã lưu từ menu ở trên cùng.'
+      : lang === 'th'
+      ? 'รายการที่บันทึกไว้จะถูกเก็บไว้ในเบราว์เซอร์นี้เท่านั้น — หากเปลี่ยนเบราว์เซอร์ รายการจะไม่ถูกเก็บไว้ คุณสามารถดูบทความที่บันทึกไว้ทั้งหมดได้อีกครั้งจากเมนูด้านบน'
       : 'Your likes are saved to this browser only — switch browsers and the list won’t carry over. You can find everything you’ve liked again from the menu at the top.';
     var toast = document.createElement('div');
     toast.className = 'kr-like-toast';
@@ -145,7 +170,7 @@
     var closeBtn = document.createElement('button');
     closeBtn.type = 'button';
     closeBtn.className = 'kr-like-toast-close';
-    closeBtn.setAttribute('aria-label', ko ? '닫기' : 'Close');
+    closeBtn.setAttribute('aria-label', lang === 'ko' ? '닫기' : lang === 'vi' ? 'Đóng' : lang === 'th' ? 'ปิด' : 'Close');
     closeBtn.textContent = '×';
     closeBtn.addEventListener('click', function () {
       toast.classList.remove('is-visible');
@@ -624,8 +649,9 @@
     if (existing) { existing.remove(); }
     var toast = document.createElement('div');
     toast.className = 'kr-mailto-toast';
-    var isKo = document.documentElement.lang === 'ko' || location.pathname.indexOf('/ko/') !== -1;
-    toast.textContent = (isKo ? '복사됨: ' : 'Copied: ') + email;
+    var lang = getLang();
+    var mailtoPrefix = lang === 'ko' ? '복사됨: ' : lang === 'vi' ? 'Đã sao chép: ' : lang === 'th' ? 'คัดลอกแล้ว: ' : 'Copied: ';
+    toast.textContent = mailtoPrefix + email;
     document.body.appendChild(toast);
     requestAnimationFrame(function () { toast.classList.add('is-visible'); });
     setTimeout(function () {
@@ -634,6 +660,58 @@
     }, 2600);
   }
 
+
+  // Generic "click to copy" for any element carrying data-copy="text" (e.g.
+  // the Korean department-name chips on the pharmacy/hospital guide). Reuses
+  // the same toast styling/element as the mailto-copy feature above.
+  (function wireGenericCopy() {
+    function boot() {
+      document.addEventListener('click', function (e) {
+        var el = e.target && e.target.closest && e.target.closest('[data-copy]');
+        if (!el) { return; }
+        var text = el.getAttribute('data-copy');
+        if (!text) { return; }
+        if (!navigator.clipboard || !navigator.clipboard.writeText) { return; }
+        e.preventDefault();
+        navigator.clipboard.writeText(text).then(function () {
+          showCopyToast(text);
+        }).catch(function () {});
+      });
+    }
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', boot);
+    } else {
+      boot();
+    }
+  })();
+
+  function showCopyToast(text) {
+    if (!document.getElementById('kr-mailto-toast-style')) {
+      var style = document.createElement('style');
+      style.id = 'kr-mailto-toast-style';
+      style.textContent =
+        '.kr-mailto-toast{position:fixed;left:50%;bottom:22px;transform:translate(-50%,12px);' +
+        'background:#1f2420;color:#eef2ec;padding:11px 16px;border-radius:10px;font-size:0.86rem;' +
+        'font-family:"Work Sans",ui-sans-serif,sans-serif;box-shadow:0 12px 28px -12px rgba(0,0,0,.5);' +
+        'opacity:0;transition:opacity .2s ease, transform .2s ease;z-index:999;pointer-events:none;' +
+        'max-width:88vw;text-align:center;}' +
+        '.kr-mailto-toast.is-visible{opacity:1;transform:translate(-50%,0);}';
+      document.head.appendChild(style);
+    }
+    var existing = document.querySelector('.kr-mailto-toast');
+    if (existing) { existing.remove(); }
+    var toast = document.createElement('div');
+    toast.className = 'kr-mailto-toast';
+    var copyLang = getLang();
+    var prefix = copyLang === 'ko' ? '복사됨: ' : copyLang === 'vi' ? 'Đã sao chép: ' : copyLang === 'th' ? 'คัดลอกแล้ว: ' : 'Copied: ';
+    toast.textContent = prefix + text;
+    document.body.appendChild(toast);
+    requestAnimationFrame(function () { toast.classList.add('is-visible'); });
+    setTimeout(function () {
+      toast.classList.remove('is-visible');
+      setTimeout(function () { toast.remove(); }, 250);
+    }, 2600);
+  }
 
   // One-time (per browser) hint bubble pointing at the Saved/Split-Costs icons
   // in the header. Only homepage markup has .header-util, so this is a no-op
@@ -646,10 +724,13 @@
       if (!util) { return; }
       try { if (localStorage.getItem(HINT_SEEN_KEY)) { return; } } catch (e) {}
 
-      var isKo = document.documentElement.lang === 'ko' ||
-                 location.pathname.indexOf('/ko/') !== -1;
-      var msg = isKo
+      var hintLang = getLang();
+      var msg = hintLang === 'ko'
         ? '좋아요 한 글은 여기서, 경비 정산은 여기서 할 수 있어요.'
+        : hintLang === 'vi'
+        ? 'Nhấn vào đây để xem các bài đã lưu, hoặc vào đây để chia tiền.'
+        : hintLang === 'th'
+        ? 'แตะที่นี่เพื่อดูบทความที่บันทึกไว้ หรือแตะที่นี่เพื่อหารค่าใช้จ่าย'
         : 'Tap here to see your saved articles, or here to split costs.';
 
       if (!document.getElementById('kr-header-hint-style')) {
@@ -678,7 +759,7 @@
       var closeBtn = document.createElement('button');
       closeBtn.type = 'button';
       closeBtn.className = 'kr-header-hint-close';
-      closeBtn.setAttribute('aria-label', isKo ? '닫기' : 'Close');
+      closeBtn.setAttribute('aria-label', hintLang === 'ko' ? '닫기' : hintLang === 'vi' ? 'Đóng' : hintLang === 'th' ? 'ปิด' : 'Close');
       closeBtn.textContent = '\u00d7';
       closeBtn.addEventListener('click', function () {
         bubble.classList.remove('is-visible');

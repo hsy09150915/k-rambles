@@ -2,7 +2,9 @@
 
 > 새 콘텐츠 아이디어 제안하기 전에 이 파일부터 확인할 것. 실제 사이트 JSON 기준(2026-09-23).
 
-## Getting Around (이동) (11개)
+## Getting Around (이동) (13개)
+- **배민, 외국인은 못 쓴다고요? 실제로 켜보고 확인했어요** — 키워드: delivery app baemin coupang eats yogiyo shuttle foreigner korea busan food delivery 배달앱 배달의민족 배민 쿠팡이츠 셔틀 요기요 외국인 회원가입 해외카드
+- **아플 때 어디로? 편의점·약국·병원 가이드** — 키워드: pharmacy hospital clinic medicine sick emergency korea busan convenience store otc drug referral tertiary hospital 약국 병원 편의점 상비약 진료과 1차 2차 3차 상급종합병원 진료의뢰서 아플때
 - **부산에서 환전하는 법 — ATM, 환전소 뭐가 유리할까** — 키워드: 환전 환전소 atm 해외카드 인출 캐시어드밴스 cash advance 트래블카드 와이즈 하나은행 우리은행 신한은행 국민은행 네이버지도 부산
 - **한국인데 카드가 왜 안 돼요? — 해외카드 결제 실전 가이드** — 키워드: card payment korea contactless tap nfc credit card foreign card decline apple pay google pay visa mastercard t-money cash 카드결제 컨택리스 해외카드 신용카드 체크카드 애플페이 구글페이 결제거절 티머니 현금
 - **부산에서 짐 보관, 지하철 로커면 대부분 끝나요** — 키워드: luggage storage busan coin locker large suitcase zimcarry delivery gwangalli tourist center free 짐보관 물품보관함 짐캐리 캐리어
