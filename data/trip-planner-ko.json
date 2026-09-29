@@ -90,7 +90,7 @@
         "affiliateLinks": [
           {
             "platform": "KKday",
-            "url": "https://www.kkday.com/ko/product/18874-busan-hanbok-costume-experience-gamcheon-culture-village-korea?cid=26774&ud1=Cheolsu"
+            "url": "https://www.kkday.com/ko/product/18874-busan-hanbok-costume-experience-gamcheon-culture-village-korea?cid=26774&ud1=CheolsuHanbok"
           }
         ]
       },
@@ -98,13 +98,25 @@
         "name": "입고가게",
         "address": "부산 사하구 감천동 2-9",
         "lat": 35.0984206,
-        "lng": 129.0099704
+        "lng": 129.0099704,
+        "affiliateLinks": [
+          {
+            "platform": "KKday",
+            "url": "https://www.kkday.com/ko/product/135365?cid=26774&ud1=ipgogage"
+          }
+        ]
       },
       {
         "name": "한미녀",
         "address": "부산 중구 중앙대로 17 광복지하도상가 A17호",
         "lat": 35.1004731,
-        "lng": 129.0365592
+        "lng": 129.0365592,
+        "affiliateLinks": [
+          {
+            "platform": "KKday",
+            "url": "https://www.kkday.com/ko/product/580327?cid=26774&ud1=Hanminyeo"
+          }
+        ]
       },
       {
         "name": "누아르헤어 광안비치2호점",

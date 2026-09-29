@@ -90,7 +90,7 @@
         "affiliateLinks": [
           {
             "platform": "KKday",
-            "url": "https://www.kkday.com/ko/product/18874-busan-hanbok-costume-experience-gamcheon-culture-village-korea?cid=26774&ud1=Cheolsu"
+            "url": "https://www.kkday.com/en/product/18874-busan-hanbok-costume-experience-gamcheon-culture-village-korea?cid=26774&ud1=ChulsooYounghee"
           }
         ]
       },
@@ -98,13 +98,25 @@
         "name": "Ipgo-gage",
         "address": "2-9 Gamcheon-dong, Saha-gu, Busan",
         "lat": 35.0984206,
-        "lng": 129.0099704
+        "lng": 129.0099704,
+        "affiliateLinks": [
+          {
+            "platform": "KKday",
+            "url": "https://www.kkday.com/en/product/135365?cid=26774&ud1=Ipgogage"
+          }
+        ]
       },
       {
         "name": "Hanminyeo",
         "address": "A17, Gwangbok Underground Arcade, 17 Jungang-daero, Jung-gu, Busan",
         "lat": 35.1004731,
-        "lng": 129.0365592
+        "lng": 129.0365592,
+        "affiliateLinks": [
+          {
+            "platform": "KKday",
+            "url": "https://www.kkday.com/en/product/580327?cid=26774&ud1=Hanminyeo"
+          }
+        ]
       },
       {
         "name": "Noir Hair Gwangan Beach Branch 2",
