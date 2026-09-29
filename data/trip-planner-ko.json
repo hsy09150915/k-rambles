@@ -86,7 +86,13 @@
         "name": "철수와영희",
         "address": "부산 사하구 옥천로 123",
         "lat": 35.0973228,
-        "lng": 129.0102269
+        "lng": 129.0102269,
+        "affiliateLinks": [
+          {
+            "platform": "KKday",
+            "url": "https://www.kkday.com/ko/product/18874-busan-hanbok-costume-experience-gamcheon-culture-village-korea?cid=26774&ud1=Cheolsu"
+          }
+        ]
       },
       {
         "name": "입고가게",
