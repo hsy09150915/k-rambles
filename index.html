@@ -76,8 +76,8 @@
     word-break: keep-all;
   }
 
-  .font-size-ctrl { display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--line); border-radius: 100px; padding: 4px 8px; }
-  .fs-labels { display: inline-flex; align-items: baseline; gap: 3px; }
+  .font-size-ctrl { display: inline-flex; align-items: center; gap: 4px; border: 1px solid var(--line); border-radius: 100px; padding: 4px 5px; }
+  .fs-labels { display: inline-flex; align-items: baseline; gap: 2px; }
   .fs-label { font-family: "Work Sans", sans-serif; font-weight: 600; color: var(--ink-soft); line-height: 1; user-select: none; }
   .fs-label-sm { font-size: 0.68rem; }
   .fs-label-lg { font-size: 1.15rem; }
@@ -126,8 +126,10 @@
   .logo span { color: var(--coral); }
 
   nav.site-nav {
-    display: flex;
-    gap: 26px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    column-gap: 18px;
+    row-gap: 6px;
     font-size: 0.92rem;
   }
 
@@ -136,6 +138,7 @@
     color: var(--ink-soft);
     border-bottom: 1px solid transparent;
     padding-bottom: 2px;
+    white-space: nowrap;
     transition: border-color 0.15s ease, color 0.15s ease;
   }
 
@@ -153,8 +156,8 @@
 
   .header-util { display: flex; align-items: center; gap: 8px; }
   .util-link {
-    display: inline-flex; align-items: center; gap: 6px; text-decoration: none;
-    color: var(--coral-ink); font-size: 0.94rem; font-weight: 600; padding: 8px 15px;
+    display: inline-flex; align-items: center; gap: 3px; text-decoration: none;
+    color: var(--coral-ink); font-size: 0.94rem; font-weight: 600; padding: 8px 10px;
     border-radius: 999px; border: 1.5px solid var(--coral); white-space: nowrap;
     transition: background-color 0.15s ease, color 0.15s ease;
   }
@@ -162,7 +165,7 @@
   .util-link:focus-visible { outline: 2px solid var(--coral); outline-offset: 2px; }
   .util-link svg { width: 18px; height: 18px; stroke: currentColor; flex-shrink: 0; }
   @media (max-width: 640px) {
-    .util-link { flex-direction: column; gap: 2px; padding: 6px 10px; border-radius: 12px; }
+    .util-link { flex-direction: column; gap: 2px; padding: 6px 8px; border-radius: 12px; }
     .util-link .util-label { display: block; font-size: 0.62rem; font-weight: 700; letter-spacing: -0.01em; }
   }
 
