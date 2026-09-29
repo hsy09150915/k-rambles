@@ -15,25 +15,49 @@
         "name": "송도 해상케이블카 (하부·송도베이스테이션)",
         "address": "부산 서구 송도해변로 171",
         "lat": 35.0766433,
-        "lng": 129.0233986
+        "lng": 129.0233986,
+        "affiliateLinks": [
+          {
+            "platform": "KKday",
+            "url": "https://www.kkday.com/en/product/19674-busan-air-cruise-songdo-marine-cable-car-ticket-south-korea?cid=26774&ud1=SongdoCablecar"
+          }
+        ]
       },
       {
         "name": "송도 해상케이블카 (상부·송도스카이파크)",
         "address": "부산 서구 암남공원로 181",
         "lat": 35.0613785,
-        "lng": 129.0204196
+        "lng": 129.0204196,
+        "affiliateLinks": [
+          {
+            "platform": "KKday",
+            "url": "https://www.kkday.com/en/product/19674-busan-air-cruise-songdo-marine-cable-car-ticket-south-korea?cid=26774&ud1=SongdoCablecar"
+          }
+        ]
       },
       {
         "name": "부산타워 (용두산공원)",
         "address": "부산 중구 용두산길 37-30",
         "lat": 35.101154,
-        "lng": 129.032335
+        "lng": 129.032335,
+        "affiliateLinks": [
+          {
+            "platform": "KKday",
+            "url": "https://www.kkday.com/en/product/19378?cid=26774&ud1=BusanTower"
+          }
+        ]
       },
       {
         "name": "송도 요트 선착장",
         "address": "부산 서구 송도해변로 150",
         "lat": 35.0765204,
-        "lng": 129.0223712
+        "lng": 129.0223712,
+        "affiliateLinks": [
+          {
+            "platform": "KKday",
+            "url": "https://www.kkday.com/ko/product/593956?cid=26774&ud1=SongdoYacht"
+          }
+        ]
       }
     ]
   },

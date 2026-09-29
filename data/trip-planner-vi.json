@@ -15,25 +15,49 @@
         "name": "Cáp treo biển Songdo (ga dưới · Songdo Bay Station)",
         "address": "부산 서구 송도해변로 171",
         "lat": 35.0766433,
-        "lng": 129.0233986
+        "lng": 129.0233986,
+        "affiliateLinks": [
+          {
+            "platform": "KKday",
+            "url": "https://www.kkday.com/vi/product/19674-busan-air-cruise-songdo-marine-cable-car-ticket-south-korea?cid=26774&ud1=SongdoCablecar"
+          }
+        ]
       },
       {
         "name": "Cáp treo biển Songdo (ga trên · Songdo Sky Park)",
         "address": "부산 서구 암남공원로 181",
         "lat": 35.0613785,
-        "lng": 129.0204196
+        "lng": 129.0204196,
+        "affiliateLinks": [
+          {
+            "platform": "KKday",
+            "url": "https://www.kkday.com/vi/product/19674-busan-air-cruise-songdo-marine-cable-car-ticket-south-korea?cid=26774&ud1=SongdoCablecar"
+          }
+        ]
       },
       {
         "name": "Tháp Busan (công viên Yongdusan)",
         "address": "부산 중구 용두산길 37-30",
         "lat": 35.101154,
-        "lng": 129.032335
+        "lng": 129.032335,
+        "affiliateLinks": [
+          {
+            "platform": "KKday",
+            "url": "https://www.kkday.com/vi/product/19378?cid=26774&ud1=BusanTower"
+          }
+        ]
       },
       {
         "name": "Bến du thuyền Songdo",
         "address": "부산 서구 송도해변로 150",
         "lat": 35.0765204,
-        "lng": 129.0223712
+        "lng": 129.0223712,
+        "affiliateLinks": [
+          {
+            "platform": "KKday",
+            "url": "https://www.kkday.com/vi/product/593956?cid=26774&ud1=Yacht"
+          }
+        ]
       }
     ]
   },

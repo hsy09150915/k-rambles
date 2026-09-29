@@ -15,25 +15,49 @@
         "name": "Songdo Marine Cable Car (lower · Songdo Bay Station)",
         "address": "171 Songdohaebyeon-ro, Seo-gu, Busan",
         "lat": 35.0766433,
-        "lng": 129.0233986
+        "lng": 129.0233986,
+        "affiliateLinks": [
+          {
+            "platform": "KKday",
+            "url": "https://www.kkday.com/en/product/19674-busan-air-cruise-songdo-marine-cable-car-ticket-south-korea?cid=26774&ud1=SongdoCablecar"
+          }
+        ]
       },
       {
         "name": "Songdo Marine Cable Car (upper · Songdo Sky Park)",
         "address": "181 Amnamgongwon-ro, Seo-gu, Busan",
         "lat": 35.0613785,
-        "lng": 129.0204196
+        "lng": 129.0204196,
+        "affiliateLinks": [
+          {
+            "platform": "KKday",
+            "url": "https://www.kkday.com/en/product/19674-busan-air-cruise-songdo-marine-cable-car-ticket-south-korea?cid=26774&ud1=SongdoCablecar"
+          }
+        ]
       },
       {
         "name": "Busan Tower (Yongdusan Park)",
         "address": "37-30 Yongdusan-gil, Jung-gu, Busan",
         "lat": 35.101154,
-        "lng": 129.032335
+        "lng": 129.032335,
+        "affiliateLinks": [
+          {
+            "platform": "KKday",
+            "url": "https://www.kkday.com/en/product/19378?cid=26774&ud1=BusanTower"
+          }
+        ]
       },
       {
         "name": "Songdo yacht dock",
         "address": "150 Songdohaebyeon-ro, Seo-gu, Busan",
         "lat": 35.0765204,
-        "lng": 129.0223712
+        "lng": 129.0223712,
+        "affiliateLinks": [
+          {
+            "platform": "KKday",
+            "url": "https://www.kkday.com/en/product/593956?cid=26774&ud1=SongdoYacht"
+          }
+        ]
       }
     ]
   },
