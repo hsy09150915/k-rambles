@@ -122,7 +122,13 @@
         "name": "누아르헤어 광안비치2호점",
         "address": "부산 수영구 광안해변로 127 1층",
         "lat": 35.1462967,
-        "lng": 129.1143554
+        "lng": 129.1143554,
+        "affiliateLinks": [
+          {
+            "platform": "Klook",
+            "url": "https://invl.me/clnwyfm"
+          }
+        ]
       }
     ]
   },

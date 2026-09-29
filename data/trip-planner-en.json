@@ -122,7 +122,13 @@
         "name": "Noir Hair Gwangan Beach Branch 2",
         "address": "1F, 127 Gwanganhaebyeon-ro, Suyeong-gu, Busan",
         "lat": 35.1462967,
-        "lng": 129.1143554
+        "lng": 129.1143554,
+        "affiliateLinks": [
+          {
+            "platform": "Klook",
+            "url": "https://invl.me/clnwyfm"
+          }
+        ]
       }
     ]
   },
