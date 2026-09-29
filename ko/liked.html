@@ -119,6 +119,34 @@
   .liked-map-count { font-family: "Space Mono", monospace; font-size: 0.8rem; color: var(--ink-soft); }
   .liked-map { width: 100%; height: 380px; border-radius: 16px; border: 1px solid var(--line); box-shadow: var(--card-shadow); background: var(--paper-raised); }
   .liked-map-note { font-size: 0.82rem; color: var(--ink-soft); margin: 8px 0 0; }
+  .liked-route-panel { margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--line); }
+  .liked-route-title { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 1rem; margin: 0 0 10px; }
+  .liked-route-list { list-style: none; margin: 0 0 12px; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 2px 12px; }
+  .liked-route-list li { display: flex; align-items: center; gap: 8px; padding: 5px 4px; border-radius: 8px; }
+  .liked-route-list li:hover { background: rgba(0,0,0,0.03); }
+  .liked-route-list input[type="checkbox"] { width: 16px; height: 16px; accent-color: var(--coral); flex-shrink: 0; }
+  .liked-route-list label { font-size: 0.84rem; cursor: pointer; }
+  .liked-route-actions { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .liked-route-calc-btn { background: var(--navy); color: #fff; border: none; border-radius: 8px; padding: 9px 18px; font-size: 0.86rem; font-weight: 600; cursor: pointer; font-family: "Work Sans", sans-serif; }
+  .liked-route-calc-btn:disabled { opacity: 0.4; cursor: default; }
+  .liked-route-calc-btn:hover:not(:disabled) { background: var(--navy-ink); }
+  .liked-route-status { font-family: "Space Mono", monospace; font-size: 0.76rem; color: var(--ink-soft); }
+  .liked-route-status.is-error { color: var(--coral-ink); }
+  .liked-route-result { margin-top: 14px; }
+  .liked-route-hint { font-size: 0.78rem; color: var(--ink-soft); margin: 0 0 10px; }
+  .liked-route-order { list-style: none; margin: 0; padding: 0; counter-reset: kr-step; }
+  .liked-route-order li { counter-increment: kr-step; display: flex; align-items: flex-start; gap: 10px; padding: 9px 0; border-bottom: 1px solid var(--line); }
+  .liked-route-order li:last-child { border-bottom: none; }
+  .liked-route-order li::before { content: counter(kr-step); flex-shrink: 0; width: 24px; height: 24px; border-radius: 50%; background: var(--coral); color: #fff; display: flex; align-items: center; justify-content: center; font-family: "Space Mono", monospace; font-size: 0.76rem; font-weight: 700; margin-top: 1px; }
+  .liked-route-order .kr-leg-name { font-weight: 600; font-size: 0.9rem; }
+  .liked-route-order .kr-leg-transit { font-family: "Space Mono", monospace; font-size: 0.74rem; color: var(--coral-ink); margin-top: 2px; }
+  .liked-route-order .kr-leg-transit.kr-driving { color: var(--ink-soft); }
+  .liked-route-order .kr-leg-buttons { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 6px; align-items: center; }
+  .kr-leg-btn { display: inline-flex; align-items: center; gap: 4px; text-decoration: none; font-size: 0.74rem; font-weight: 600; color: #fff; background: var(--navy); border-radius: 6px; padding: 4px 9px; }
+  .kr-leg-btn.kr-driving-btn { background: var(--ink-soft); }
+  .kr-leg-btn.kr-naver-btn { background: #03c75a; }
+  .kr-leg-btn.kr-affiliate-btn { color: var(--coral-ink); background: rgba(217, 83, 42, 0.12); border: 1px solid rgba(217, 83, 42, 0.35); }
+  .liked-route-total { margin-top: 10px; font-size: 0.84rem; font-weight: 600; }
   /* kr-header-narrow-fix */
   @media (max-width: 480px) {
     header.site { padding: 14px 14px; gap: 6px; }
@@ -170,6 +198,19 @@
   </div>
   <div class="liked-map" id="liked-map"></div>
   <p class="liked-map-note">핀을 누르면 어느 글에서 나온 장소인지 볼 수 있어요. 실제 장소가 있는 글만 핀으로 표시돼요 — 정보성 가이드는 핀이 없어요.</p>
+  <div class="liked-route-panel" id="liked-route-panel" hidden>
+    <h3 class="liked-route-title" id="liked-route-title"></h3>
+    <ul class="liked-route-list" id="liked-route-checklist"></ul>
+    <div class="liked-route-actions">
+      <button type="button" class="liked-route-calc-btn" id="liked-route-calc-btn" disabled></button>
+      <span class="liked-route-status" id="liked-route-status"></span>
+    </div>
+    <div class="liked-route-result" id="liked-route-result" hidden>
+      <p class="liked-route-hint" id="liked-route-hint"></p>
+      <ol class="liked-route-order" id="liked-route-order"></ol>
+      <p class="liked-route-total" id="liked-route-total"></p>
+    </div>
+  </div>
 </div>
 
 <div class="liked-grid"></div>

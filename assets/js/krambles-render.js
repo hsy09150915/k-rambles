@@ -479,6 +479,172 @@
     document.head.appendChild(s);
   }
 
+  var ROUTE_STR = {
+    en: {
+      title: 'Plan a route between your saved spots',
+      calcBtn: 'Plan the order',
+      calculating: 'Checking transit times…',
+      fillingGaps: 'Filling in a few driving-time gaps…',
+      failed: 'Distance lookup failed: ',
+      done: 'Done',
+      someDriving: 'Some legs have no public transit — using driving time for those.',
+      toNextTransit: 'Transit to next stop: about ',
+      toNextDriving: 'No public transit — driving to next stop: about ',
+      googleTransit: 'Google Maps transit →',
+      googleDriving: 'Google Maps driving →',
+      naverTransit: 'Naver Map transit →',
+      naverDriving: 'Naver Map driving →',
+      affiliateTag: '(affiliate link)',
+      totalPrefix: 'Total travel time: about ',
+      totalAllTransit: ' · all by public transit',
+      totalSomeDriving: ' (some legs by car)',
+      combineNote: 'Bundling every stop into one link locks the whole trip to a single travel mode — if even one leg has no public transit, the whole thing fails. That’s why each leg below gets its own button.'
+    },
+    ko: {
+      title: '찜한 곳 중 갈 곳 골라서 동선 짜기',
+      calcBtn: '동선 계산하기',
+      calculating: '대중교통 이동시간 조회 중…',
+      fillingGaps: '일부 구간 자동차 이동시간 보충 조회 중…',
+      failed: '이동시간 조회 실패: ',
+      done: '계산 완료',
+      someDriving: '일부 구간은 대중교통이 없어 자동차 이동시간으로 대체했어요.',
+      toNextTransit: '다음 장소까지 대중교통 약 ',
+      toNextDriving: '대중교통 없음 · 자동차 기준 약 ',
+      googleTransit: '구글맵 대중교통 →',
+      googleDriving: '구글맵 자동차 →',
+      naverTransit: '네이버맵 대중교통 →',
+      naverDriving: '네이버맵 자동차 →',
+      affiliateTag: '(제휴링크)',
+      totalPrefix: '총 이동시간: 약 ',
+      totalAllTransit: ' · 전 구간 대중교통',
+      totalSomeDriving: ' (일부 구간 자동차 기준)',
+      combineNote: '전체를 한 링크로 묶으면 이동수단이 하나로 고정돼서, 대중교통 없는 구간이 하나라도 있으면 통째로 실패해요. 그래서 구간마다 알맞은 이동수단으로 따로 버튼을 걸었어요.'
+    },
+    vi: {
+      title: 'Chọn nơi sẽ ghé để lên lộ trình',
+      calcBtn: 'Tính lộ trình',
+      calculating: 'Đang kiểm tra thời gian di chuyển bằng phương tiện công cộng…',
+      fillingGaps: 'Đang bổ sung thời gian đi ô tô cho vài chặng…',
+      failed: 'Không lấy được thời gian di chuyển: ',
+      done: 'Đã tính xong',
+      someDriving: 'Một vài chặng không có phương tiện công cộng — đã dùng thời gian đi ô tô thay thế.',
+      toNextTransit: 'Đến điểm tiếp theo bằng phương tiện công cộng: khoảng ',
+      toNextDriving: 'Không có phương tiện công cộng — đi ô tô khoảng ',
+      googleTransit: 'Google Maps (công cộng) →',
+      googleDriving: 'Google Maps (ô tô) →',
+      naverTransit: 'Naver Map (công cộng) →',
+      naverDriving: 'Naver Map (ô tô) →',
+      affiliateTag: '(liên kết tiếp thị)',
+      totalPrefix: 'Tổng thời gian di chuyển: khoảng ',
+      totalAllTransit: ' · toàn bộ bằng phương tiện công cộng',
+      totalSomeDriving: ' (một vài chặng đi ô tô)',
+      combineNote: 'Gộp tất cả điểm dừng vào một link sẽ khoá cả chuyến đi vào một phương tiện duy nhất — chỉ cần một chặng không có phương tiện công cộng là toàn bộ sẽ lỗi. Vì vậy mỗi chặng bên dưới có nút riêng.'
+    },
+    th: {
+      title: 'เลือกสถานที่ที่จะไปจริงเพื่อวางเส้นทาง',
+      calcBtn: 'คำนวณเส้นทาง',
+      calculating: 'กำลังตรวจสอบเวลาเดินทางด้วยขนส่งสาธารณะ…',
+      fillingGaps: 'กำลังเติมเวลาขับรถสำหรับบางช่วง…',
+      failed: 'ดึงข้อมูลเวลาเดินทางไม่สำเร็จ: ',
+      done: 'คำนวณเสร็จแล้ว',
+      someDriving: 'บางช่วงไม่มีขนส่งสาธารณะ — ใช้เวลาขับรถแทน',
+      toNextTransit: 'ไปจุดต่อไปด้วยขนส่งสาธารณะ: ประมาณ ',
+      toNextDriving: 'ไม่มีขนส่งสาธารณะ — ขับรถประมาณ ',
+      googleTransit: 'Google Maps ขนส่งสาธารณะ →',
+      googleDriving: 'Google Maps ขับรถ →',
+      naverTransit: 'Naver Map ขนส่งสาธารณะ →',
+      naverDriving: 'Naver Map ขับรถ →',
+      affiliateTag: '(ลิงก์พันธมิตร)',
+      totalPrefix: 'เวลาเดินทางรวม: ประมาณ ',
+      totalAllTransit: ' · ขนส่งสาธารณะทั้งหมด',
+      totalSomeDriving: ' (บางช่วงใช้รถยนต์)',
+      combineNote: 'ถ้ารวมทุกจุดไว้ในลิงก์เดียว จะล็อกการเดินทางไว้ที่รูปแบบเดียว หากมีแม้แต่ช่วงเดียวที่ไม่มีขนส่งสาธารณะ เส้นทางทั้งหมดจะใช้งานไม่ได้ จึงแยกปุ่มให้แต่ละช่วงด้านล่างนี้'
+    }
+  };
+
+  function formatRouteDuration(lang, seconds) {
+    var mins = Math.round(seconds / 60);
+    if (lang === 'ko') {
+      if (mins < 60) { return mins + '분'; }
+      var hK = Math.floor(mins / 60), mK = mins % 60;
+      return hK + '시간' + (mK ? ' ' + mK + '분' : '');
+    }
+    if (lang === 'vi') {
+      if (mins < 60) { return mins + ' phút'; }
+      var hV = Math.floor(mins / 60), mV = mins % 60;
+      return hV + ' giờ' + (mV ? ' ' + mV + ' phút' : '');
+    }
+    if (lang === 'th') {
+      if (mins < 60) { return mins + ' นาที'; }
+      var hT = Math.floor(mins / 60), mT = mins % 60;
+      return hT + ' ชม.' + (mT ? ' ' + mT + ' นาที' : '');
+    }
+    if (mins < 60) { return mins + ' min'; }
+    var hE = Math.floor(mins / 60), mE = mins % 60;
+    return hE + 'h' + (mE ? ' ' + mE + 'm' : '');
+  }
+
+  // Exact shortest-path ordering for small N (brute force over permutations);
+  // falls back to a nearest-neighbor heuristic beyond 8 stops to avoid a
+  // factorial blowup (10! = 3.6M) — still runs instantly either way, no
+  // server/AI involved, just arithmetic over the Distance Matrix results.
+  function bestRouteOrder(n, durationMatrix) {
+    var indices = [];
+    for (var i = 0; i < n; i++) { indices.push(i); }
+    var best = null, bestCost = Infinity;
+    function permute(arr, chosen) {
+      if (chosen.length === arr.length) {
+        var cost = 0;
+        for (var k = 0; k < chosen.length - 1; k++) { cost += durationMatrix[chosen[k]][chosen[k + 1]]; }
+        if (cost < bestCost) { bestCost = cost; best = chosen.slice(); }
+        return;
+      }
+      for (var idx = 0; idx < arr.length; idx++) {
+        if (chosen.indexOf(arr[idx]) !== -1) { continue; }
+        chosen.push(arr[idx]);
+        permute(arr, chosen);
+        chosen.pop();
+      }
+    }
+    if (n <= 8) {
+      permute(indices, []);
+    } else {
+      var used = [0], cur = 0;
+      while (used.length < n) {
+        var nextIdx = -1, nextCost = Infinity;
+        for (var j = 0; j < n; j++) {
+          if (used.indexOf(j) !== -1) { continue; }
+          if (durationMatrix[cur][j] < nextCost) { nextCost = durationMatrix[cur][j]; nextIdx = j; }
+        }
+        used.push(nextIdx);
+        cur = nextIdx;
+      }
+      best = used;
+      bestCost = 0;
+      for (var m2 = 0; m2 < best.length - 1; m2++) { bestCost += durationMatrix[best[m2]][best[m2 + 1]]; }
+    }
+    return { order: best, totalSeconds: bestCost };
+  }
+
+  function routeLegGoogleUrl(from, to, nonTransit) {
+    return 'https://www.google.com/maps/dir/?api=1'
+      + '&origin=' + from.lat + ',' + from.lng
+      + '&destination=' + to.lat + ',' + to.lng
+      + '&travelmode=' + (nonTransit ? 'driving' : 'transit');
+  }
+
+  // Modern map.naver.com web directions URL (the same pattern Naver's own
+  // "길찾기 공유하기" produces) — works in any browser, no app required.
+  // Naver's nmap:// app deep link is NOT used here: it only supports one
+  // origin + one destination too, but only opens on mobile with the app
+  // installed, so it can't cover a desktop visitor.
+  function routeLegNaverUrl(from, to, nonTransit) {
+    var mode = nonTransit ? 'car' : 'transit';
+    return 'https://map.naver.com/p/directions/'
+      + from.lng + ',' + from.lat + ',' + encodeURIComponent(from.name) + ',,/'
+      + to.lng + ',' + to.lat + ',' + encodeURIComponent(to.name) + ',,/-/' + mode;
+  }
+
   /**
    * Draws every pin belonging to the current liked list onto a single Google
    * map. A liked article can carry more than one location (e.g. a piece
@@ -486,6 +652,19 @@
    * Articles with an empty/absent `locations` array (how-to/info content)
    * simply contribute no pins. If nothing on the liked list has a location,
    * the whole map block hides itself rather than showing an empty map.
+   *
+   * Also wires the route-planning panel (if its markup is present on the
+   * page): a checklist lets the visitor pick which saved spots they'll
+   * actually visit, "Plan the order" calls the Distance Matrix API (transit,
+   * falling back to driving per-leg where transit doesn't exist) to work out
+   * the lowest-total-time visiting order, and each leg gets its own Google
+   * Maps + Naver Map directions button (never one combined multi-stop link —
+   * that locks the whole trip to one travel mode and fails outright the
+   * moment a single leg has no transit route). A location entry may also
+   * carry an optional `affiliateLinks: [{platform, url}]` array; when
+   * present (e.g. a bookable activity), up to 2 of those show as small
+   * secondary buttons next to that stop.
+   *
    * mapConfig: { apiKey, containerSelector, wrapSelector, countSelector, countTemplate }
    */
   function renderLikedMap(flat, mapConfig) {
@@ -500,11 +679,13 @@
       locs.forEach(function (loc) {
         if (typeof loc.lat === 'number' && typeof loc.lng === 'number') {
           pins.push({
+            id: 'kr-pin-' + pins.length,
             name: loc.name,
             lat: loc.lat,
             lng: loc.lng,
             articleTitle: pair.item.title,
-            articleUrl: articleUrl
+            articleUrl: articleUrl,
+            affiliateLinks: Array.isArray(loc.affiliateLinks) ? loc.affiliateLinks : []
           });
         }
       });
@@ -526,11 +707,46 @@
       var map = new google.maps.Map(mapEl, { center: center, zoom: 13 });
       var bounds = new google.maps.LatLngBounds();
       var openInfoWindow = null;
+      var markerById = {};
+
+      function isChecked(id) {
+        var chk = document.getElementById('kr-chk-' + id);
+        return !!(chk && chk.checked);
+      }
+
+      function refreshMarkerStyles(orderedIds) {
+        pins.forEach(function (pin) {
+          var marker = markerById[pin.id];
+          if (!marker) { return; }
+          var sel = isChecked(pin.id);
+          var label = null;
+          if (orderedIds) {
+            var idx = orderedIds.indexOf(pin.id);
+            if (idx !== -1) { label = String(idx + 1); }
+          }
+          marker.setOpacity(sel ? 1 : 0.45);
+          marker.setLabel(label ? { text: label, color: '#fff', fontWeight: '700' } : null);
+        });
+      }
+
+      function refreshMapFocus() {
+        var selectedPins = pins.filter(function (pin) { return isChecked(pin.id); });
+        if (selectedPins.length === 1) {
+          // fitBounds on a single point zooms in way too far -- just pan
+          // to it and keep whatever zoom level the visitor already had
+          map.panTo({ lat: selectedPins[0].lat, lng: selectedPins[0].lng });
+        } else if (selectedPins.length > 1) {
+          var b = new google.maps.LatLngBounds();
+          selectedPins.forEach(function (pin) { b.extend({ lat: pin.lat, lng: pin.lng }); });
+          map.fitBounds(b);
+        }
+      }
 
       pins.forEach(function (pin) {
         var position = { lat: pin.lat, lng: pin.lng };
         bounds.extend(position);
-        var marker = new google.maps.Marker({ position: position, map: map, title: pin.name });
+        var marker = new google.maps.Marker({ position: position, map: map, title: pin.name, opacity: 0.45 });
+        markerById[pin.id] = marker;
         var infoWindow = new google.maps.InfoWindow({
           content: '<div style="padding:10px 14px;max-width:220px;font-size:13px;line-height:1.5;font-family:inherit;">' +
             '<strong style="display:block;margin-bottom:2px;">' + escapeHtml(pin.name) + '</strong>' +
@@ -538,6 +754,8 @@
             '</div>'
         });
         marker.addListener('click', function () {
+          var chk = document.getElementById('kr-chk-' + pin.id);
+          if (chk) { chk.checked = !chk.checked; onChecklistChange(); }
           if (openInfoWindow) { openInfoWindow.close(); }
           infoWindow.open(map, marker);
           openInfoWindow = infoWindow;
@@ -545,6 +763,147 @@
       });
 
       if (pins.length > 1) { map.fitBounds(bounds); }
+
+      // --- route-planning panel (only if this page's markup has it) ---
+      var panelEl = document.getElementById('liked-route-panel');
+      var checklistEl = document.getElementById('liked-route-checklist');
+      var calcBtn = document.getElementById('liked-route-calc-btn');
+      var statusEl = document.getElementById('liked-route-status');
+      var resultEl = document.getElementById('liked-route-result');
+      var hintEl = document.getElementById('liked-route-hint');
+      var orderEl = document.getElementById('liked-route-order');
+      var totalEl = document.getElementById('liked-route-total');
+      if (!panelEl || !checklistEl || !calcBtn || !statusEl || !resultEl || !hintEl || !orderEl || !totalEl) { return; }
+
+      var lang = getLang();
+      var STR = ROUTE_STR[lang] || ROUTE_STR.en;
+
+      panelEl.hidden = false;
+      document.getElementById('liked-route-title').textContent = STR.title;
+      calcBtn.textContent = STR.calcBtn;
+      hintEl.textContent = STR.combineNote;
+
+      checklistEl.innerHTML = pins.map(function (pin) {
+        return '<li><input type="checkbox" id="kr-chk-' + pin.id + '"><label for="kr-chk-' + pin.id + '">' + escapeHtml(pin.name) + '</label></li>';
+      }).join('');
+
+      function onChecklistChange() {
+        var selected = pins.filter(function (pin) { return isChecked(pin.id); });
+        calcBtn.disabled = selected.length < 2;
+        resultEl.hidden = true;
+        statusEl.textContent = '';
+        statusEl.className = 'liked-route-status';
+        refreshMarkerStyles(null);
+        refreshMapFocus();
+      }
+      checklistEl.addEventListener('change', onChecklistChange);
+
+      function renderRouteResult(orderedPins, orderIdx, matrix, isNonTransit, totalSeconds) {
+        var html = '';
+        var anyNonTransitLeg = false;
+        orderedPins.forEach(function (pin, i) {
+          html += '<li><div><div class="kr-leg-name">' + escapeHtml(pin.name) + '</div>';
+          var buttonsHtml = '';
+          if (i < orderedPins.length - 1) {
+            var a = orderIdx[i], b = orderIdx[i + 1];
+            var secs = matrix[a][b];
+            var nonTransit = isNonTransit[a][b];
+            if (nonTransit) { anyNonTransitLeg = true; }
+            var next = orderedPins[i + 1];
+            html += '<div class="kr-leg-transit' + (nonTransit ? ' kr-driving' : '') + '">'
+              + (nonTransit ? STR.toNextDriving : STR.toNextTransit) + formatRouteDuration(lang, secs)
+              + '</div>';
+            buttonsHtml += '<a class="kr-leg-btn' + (nonTransit ? ' kr-driving-btn' : '') + '" href="' + routeLegGoogleUrl(pin, next, nonTransit) + '" target="_blank" rel="noopener">'
+              + (nonTransit ? STR.googleDriving : STR.googleTransit) + '</a>';
+            buttonsHtml += '<a class="kr-leg-btn kr-naver-btn" href="' + routeLegNaverUrl(pin, next, nonTransit) + '" target="_blank" rel="noopener">'
+              + (nonTransit ? STR.naverDriving : STR.naverTransit) + '</a>';
+          }
+          (pin.affiliateLinks || []).slice(0, 2).forEach(function (link) {
+            if (!link || !link.url) { return; }
+            buttonsHtml += '<a class="kr-leg-btn kr-affiliate-btn" href="' + escapeHtml(link.url) + '" target="_blank" rel="noopener">'
+              + '🎫 ' + escapeHtml(link.platform || '') + ' <span style="font-weight:400;">' + STR.affiliateTag + '</span></a>';
+          });
+          if (buttonsHtml) { html += '<div class="kr-leg-buttons">' + buttonsHtml + '</div>'; }
+          html += '</div></li>';
+        });
+        orderEl.innerHTML = html;
+        totalEl.textContent = STR.totalPrefix + formatRouteDuration(lang, totalSeconds)
+          + (anyNonTransitLeg ? STR.totalSomeDriving : STR.totalAllTransit);
+        resultEl.hidden = false;
+      }
+
+      calcBtn.addEventListener('click', function () {
+        var selected = pins.filter(function (pin) { return isChecked(pin.id); });
+        if (selected.length < 2) { return; }
+        calcBtn.disabled = true;
+        statusEl.className = 'liked-route-status';
+        statusEl.textContent = STR.calculating;
+
+        var service = new google.maps.DistanceMatrixService();
+        var latlngs = selected.map(function (pin) { return { lat: pin.lat, lng: pin.lng }; });
+
+        service.getDistanceMatrix({
+          origins: latlngs,
+          destinations: latlngs,
+          travelMode: google.maps.TravelMode.TRANSIT,
+          unitSystem: google.maps.UnitSystem.METRIC
+        }, function (transitResponse, transitStatus) {
+          if (transitStatus !== 'OK') {
+            calcBtn.disabled = false;
+            statusEl.textContent = STR.failed + transitStatus;
+            statusEl.className = 'liked-route-status is-error';
+            return;
+          }
+          var n = selected.length;
+          var transitMatrix = [], isNonTransit = [], missingCount = 0;
+          for (var i = 0; i < n; i++) {
+            transitMatrix[i] = [];
+            isNonTransit[i] = [];
+            for (var j = 0; j < n; j++) {
+              isNonTransit[i][j] = false;
+              if (i === j) { transitMatrix[i][j] = 0; continue; }
+              var el = transitResponse.rows[i].elements[j];
+              if (el.status === 'OK') { transitMatrix[i][j] = el.duration.value; }
+              else { transitMatrix[i][j] = null; missingCount++; }
+            }
+          }
+
+          function finish(matrix) {
+            calcBtn.disabled = false;
+            var result = bestRouteOrder(n, matrix);
+            var orderedPins = result.order.map(function (idx) { return selected[idx]; });
+            renderRouteResult(orderedPins, result.order, matrix, isNonTransit, result.totalSeconds);
+            refreshMarkerStyles(orderedPins.map(function (p) { return p.id; }));
+            statusEl.textContent = missingCount > 0 ? STR.someDriving : STR.done;
+            statusEl.className = missingCount > 0 ? 'liked-route-status is-error' : 'liked-route-status';
+          }
+
+          if (missingCount === 0) { finish(transitMatrix); return; }
+
+          statusEl.textContent = STR.fillingGaps;
+          service.getDistanceMatrix({
+            origins: latlngs,
+            destinations: latlngs,
+            travelMode: google.maps.TravelMode.DRIVING,
+            unitSystem: google.maps.UnitSystem.METRIC
+          }, function (drivingResponse, drivingStatus) {
+            for (var a = 0; a < n; a++) {
+              for (var b = 0; b < n; b++) {
+                if (transitMatrix[a][b] !== null) { continue; }
+                var drivingEl = drivingStatus === 'OK' ? drivingResponse.rows[a].elements[b] : null;
+                if (drivingEl && drivingEl.status === 'OK') {
+                  // small penalty so the ordering still prefers an all-transit path when one exists
+                  transitMatrix[a][b] = drivingEl.duration.value * 1.15;
+                } else {
+                  transitMatrix[a][b] = 5400; // no data at all -- rough 90min placeholder
+                }
+                isNonTransit[a][b] = true;
+              }
+            }
+            finish(transitMatrix);
+          });
+        });
+      });
     });
   }
 
