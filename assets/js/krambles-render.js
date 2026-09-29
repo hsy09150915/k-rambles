@@ -459,33 +459,34 @@
     return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
   }
 
-  var _naverSdkCallbacks = null;
-  function loadNaverMapsSdk(clientId, callback) {
-    if (window.naver && window.naver.maps && window.naver.maps.Map) { callback(); return; }
-    if (_naverSdkCallbacks) { _naverSdkCallbacks.push(callback); return; }
-    _naverSdkCallbacks = [callback];
-    var s = document.createElement('script');
-    s.src = 'https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=' + encodeURIComponent(clientId);
-    s.onload = function () {
-      var cbs = _naverSdkCallbacks || [];
-      _naverSdkCallbacks = null;
+  var _googleMapsCallbacks = null;
+  function loadGoogleMapsSdk(apiKey, callback) {
+    if (window.google && window.google.maps && window.google.maps.Map) { callback(); return; }
+    if (_googleMapsCallbacks) { _googleMapsCallbacks.push(callback); return; }
+    _googleMapsCallbacks = [callback];
+    window.__krGoogleMapsReady = function () {
+      var cbs = _googleMapsCallbacks || [];
+      _googleMapsCallbacks = null;
       cbs.forEach(function (cb) { cb(); });
     };
+    var s = document.createElement('script');
+    s.src = 'https://maps.googleapis.com/maps/api/js?key=' + encodeURIComponent(apiKey) + '&callback=__krGoogleMapsReady&loading=async';
+    s.async = true;
     s.onerror = function () {
-      console.error('[krambles] Naver Maps SDK failed to load');
-      _naverSdkCallbacks = null;
+      console.error('[krambles] Google Maps SDK failed to load');
+      _googleMapsCallbacks = null;
     };
     document.head.appendChild(s);
   }
 
   /**
-   * Draws every pin belonging to the current liked list onto a single Naver
+   * Draws every pin belonging to the current liked list onto a single Google
    * map. A liked article can carry more than one location (e.g. a piece
    * covering several restaurants); every one of them gets its own marker.
    * Articles with an empty/absent `locations` array (how-to/info content)
    * simply contribute no pins. If nothing on the liked list has a location,
    * the whole map block hides itself rather than showing an empty map.
-   * mapConfig: { clientId, containerSelector, wrapSelector, countSelector, countTemplate }
+   * mapConfig: { apiKey, containerSelector, wrapSelector, countSelector, countTemplate }
    */
   function renderLikedMap(flat, mapConfig) {
     var mapEl = document.querySelector(mapConfig.containerSelector);
@@ -520,23 +521,23 @@
     }
     if (wrap) { wrap.hidden = false; }
 
-    loadNaverMapsSdk(mapConfig.clientId, function () {
-      var center = new naver.maps.LatLng(pins[0].lat, pins[0].lng);
-      var map = new naver.maps.Map(mapEl, { center: center, zoom: 13 });
-      var bounds = new naver.maps.LatLngBounds(center, center);
+    loadGoogleMapsSdk(mapConfig.apiKey, function () {
+      var center = { lat: pins[0].lat, lng: pins[0].lng };
+      var map = new google.maps.Map(mapEl, { center: center, zoom: 13 });
+      var bounds = new google.maps.LatLngBounds();
       var openInfoWindow = null;
 
       pins.forEach(function (pin) {
-        var position = new naver.maps.LatLng(pin.lat, pin.lng);
+        var position = { lat: pin.lat, lng: pin.lng };
         bounds.extend(position);
-        var marker = new naver.maps.Marker({ position: position, map: map, title: pin.name });
-        var infoWindow = new naver.maps.InfoWindow({
+        var marker = new google.maps.Marker({ position: position, map: map, title: pin.name });
+        var infoWindow = new google.maps.InfoWindow({
           content: '<div style="padding:10px 14px;max-width:220px;font-size:13px;line-height:1.5;font-family:inherit;">' +
             '<strong style="display:block;margin-bottom:2px;">' + escapeHtml(pin.name) + '</strong>' +
             '<a href="' + escapeHtml(pin.articleUrl) + '" style="color:#d9532a;text-decoration:none;">' + escapeHtml(pin.articleTitle) + ' →</a>' +
             '</div>'
         });
-        naver.maps.Event.addListener(marker, 'click', function () {
+        marker.addListener('click', function () {
           if (openInfoWindow) { openInfoWindow.close(); }
           infoWindow.open(map, marker);
           openInfoWindow = infoWindow;
