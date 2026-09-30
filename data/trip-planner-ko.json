@@ -1,5 +1,49 @@
 [
   {
+    "title": "걷지 않고 힐링하는 부산 — 사우나·찜질방 추천",
+    "url": "2026-09-29-best-busan-saunas-ko.html",
+    "thumb": "assets/thumbs/trip-planner/best-busan-saunas.jpg",
+    "label": "체험 · 공개중",
+    "alt": "부산 광안리 앞바다가 내려다보이는 사우나 옥상 테라스",
+    "badge": null,
+    "like_id": "trip-planner/2026-09-29-best-busan-saunas-ko.html",
+    "date": "2026-09-29",
+    "kw": "부산 사우나 찜질방 스파랜드 센텀시티 허심청 힐스파 광안해수월드 해운대 동래 오션뷰 스파 힐링",
+    "city": "busan",
+    "locations": [
+      {
+        "name": "스파랜드 센텀시티",
+        "address": "부산 해운대구 센텀남대로 35",
+        "lat": 35.169184,
+        "lng": 129.130367
+      },
+      {
+        "name": "허심청 (농심호텔 온천)",
+        "address": "부산 동래구 온천동 137",
+        "lat": 35.2072,
+        "lng": 129.0784
+      },
+      {
+        "name": "힐스파 (해운대 달맞이길)",
+        "address": "부산 해운대구 달맞이길117번길 11",
+        "lat": 35.16034,
+        "lng": 129.19245,
+        "affiliateLinks": [
+          {
+            "platform": "KKday",
+            "url": "https://www.kkday.com/en/product/267802?cid=26774&ud1=Hillspa"
+          }
+        ]
+      },
+      {
+        "name": "광안해수월드 (호텔 아쿠아펠리스)",
+        "address": "부산 수영구 광안동 192-5",
+        "lat": 35.15333,
+        "lng": 129.11889
+      }
+    ]
+  },
+  {
     "title": "걷지 않고 보는 부산 — 케이블카·전망대·요트 3선",
     "url": "2026-09-23-busan-views-cablecar-tower-yacht-ko.html",
     "thumb": "assets/thumbs/trip-planner/busan-views-cablecar-tower-yacht.jpg",

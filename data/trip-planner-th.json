@@ -1,5 +1,49 @@
 [
   {
+    "title": "เที่ยวปูซานแบบไม่ต้องเดิน — แนะนำซาวน่าและจิมจิลบัง",
+    "url": "2026-09-29-best-busan-saunas-th.html",
+    "thumb": "assets/thumbs/trip-planner/best-busan-saunas.jpg",
+    "label": "ประสบการณ์ · เผยแพร่แล้ว",
+    "alt": "ระเบียงดาดฟ้าซาวน่าที่มองเห็นหาดกวางอัลลี ปูซาน",
+    "badge": null,
+    "like_id": "trip-planner/2026-09-29-best-busan-saunas-th.html",
+    "date": "2026-09-29",
+    "kw": "ปูซาน ซาวน่า จิมจิลบัง สปาแลนด์ เซนทัมซิตี้ เฮอชิมชอง ฮิลสปา กวางอันแฮซูเวิลด์ แฮอุนแด ทงแน วิวทะเล สปา บำบัด",
+    "city": "busan",
+    "locations": [
+      {
+        "name": "สปาแลนด์ เซนทัมซิตี้",
+        "address": "35 Centum-namdae-ro, Haeundae-gu, Busan",
+        "lat": 35.169184,
+        "lng": 129.130367
+      },
+      {
+        "name": "เฮอชิมชอง (ออนเซ็นโรงแรมนงชิม)",
+        "address": "137 Oncheon-dong, Dongnae-gu, Busan",
+        "lat": 35.2072,
+        "lng": 129.0784
+      },
+      {
+        "name": "ฮิลสปา (ดัลมาจิกิล แฮอุนแด)",
+        "address": "11 Dalmaji-gil 117beon-gil, Haeundae-gu, Busan",
+        "lat": 35.16034,
+        "lng": 129.19245,
+        "affiliateLinks": [
+          {
+            "platform": "KKday",
+            "url": "https://www.kkday.com/th/product/267802?cid=26774&ud1=Hillspa"
+          }
+        ]
+      },
+      {
+        "name": "กวางอัน แฮซูเวิลด์ (โรงแรม Aqua Palace)",
+        "address": "192-5 Gwangan-dong, Suyeong-gu, Busan",
+        "lat": 35.15333,
+        "lng": 129.11889
+      }
+    ]
+  },
+  {
     "title": "ชมปูซานโดยไม่ต้องเดิน — 3 วิธี: กระเช้าลอยฟ้า หอชมวิว เรือยอทช์",
     "url": "2026-09-23-busan-views-cablecar-tower-yacht-th.html",
     "thumb": "assets/thumbs/trip-planner/busan-views-cablecar-tower-yacht.jpg",

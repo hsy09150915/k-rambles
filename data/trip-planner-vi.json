@@ -1,5 +1,49 @@
 [
   {
+    "title": "Busan không cần đi bộ — Gợi ý sauna & jjimjilbang",
+    "url": "2026-09-29-best-busan-saunas-vi.html",
+    "thumb": "assets/thumbs/trip-planner/best-busan-saunas.jpg",
+    "label": "Trải nghiệm · Trực tuyến",
+    "alt": "Sân thượng sauna nhìn ra biển Gwangalli, Busan",
+    "badge": null,
+    "like_id": "trip-planner/2026-09-29-best-busan-saunas-vi.html",
+    "date": "2026-09-29",
+    "kw": "busan sauna jjimjilbang spa land centum city heosimcheong hill spa gwangan haesu world haeundae dongnae view bien chua lanh",
+    "city": "busan",
+    "locations": [
+      {
+        "name": "Spa Land Centum City",
+        "address": "35 Centum-namdae-ro, Haeundae-gu, Busan",
+        "lat": 35.169184,
+        "lng": 129.130367
+      },
+      {
+        "name": "Heosimcheong (Suối nước nóng Khách sạn Nongshim)",
+        "address": "137 Oncheon-dong, Dongnae-gu, Busan",
+        "lat": 35.2072,
+        "lng": 129.0784
+      },
+      {
+        "name": "Hill Spa (Dalmaji-gil, Haeundae)",
+        "address": "11 Dalmaji-gil 117beon-gil, Haeundae-gu, Busan",
+        "lat": 35.16034,
+        "lng": 129.19245,
+        "affiliateLinks": [
+          {
+            "platform": "KKday",
+            "url": "https://www.kkday.com/vi/product/267802?cid=26774&ud1=Hillspa"
+          }
+        ]
+      },
+      {
+        "name": "Gwangan Haesu World (Khách sạn Aqua Palace)",
+        "address": "192-5 Gwangan-dong, Suyeong-gu, Busan",
+        "lat": 35.15333,
+        "lng": 129.11889
+      }
+    ]
+  },
+  {
     "title": "Ngắm Busan không cần đi bộ — 3 cách: cáp treo, tháp ngắm cảnh, du thuyền",
     "url": "2026-09-23-busan-views-cablecar-tower-yacht-vi.html",
     "thumb": "assets/thumbs/trip-planner/busan-views-cablecar-tower-yacht.jpg",
