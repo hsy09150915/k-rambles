@@ -41,7 +41,7 @@
   }
 
   * { box-sizing: border-box; }
-  body { margin: 0; background: var(--paper); color: var(--ink); font-family: "Work Sans", ui-sans-serif, system-ui, sans-serif; font-size: 1.0625rem; line-height: 1.6; -webkit-font-smoothing: antialiased; word-break: keep-all; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: "Work Sans", ui-sans-serif, system-ui, sans-serif; font-size: 1.0625rem; line-height: 1.6; -webkit-font-smoothing: antialiased; word-break: keep-all; overflow-wrap: break-word; }
 
   html { font-size: 100%; }
   html[data-fs="xs"] { font-size: 85%; }
@@ -101,7 +101,7 @@
   ul.plain-list li + li { margin-top: 12px; }
 
   table.data-table { width: 100%; border-collapse: collapse; background: var(--paper-raised); font-size: 0.92rem; margin: 4px 0 18px; display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
-  table.data-table th, table.data-table td { text-align: left; padding: 12px 14px; border-bottom: 1px solid var(--line); overflow-wrap: break-word; }
+  table.data-table th, table.data-table td { text-align: left; padding: 12px 14px; border-bottom: 1px solid var(--line); overflow-wrap: break-word; word-break: keep-all; vertical-align: top; }
   table.data-table th:first-child, table.data-table td:first-child { padding-left: 16px; }
   table.data-table th:last-child, table.data-table td:last-child { padding-right: 16px; }
   table.data-table thead th { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; color: var(--ink-soft); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.03em; border-bottom: 1px solid var(--line-strong); }
