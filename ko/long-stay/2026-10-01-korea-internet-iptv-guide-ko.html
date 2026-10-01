@@ -59,6 +59,10 @@
   .mono { font-family: "Space Mono", ui-monospace, "SF Mono", monospace; }
   a.mono { color: var(--navy-ink); text-decoration: underline; text-underline-offset: 2px; }
   a.mono:hover { color: var(--coral-ink); }
+  .keyword-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 6px; }
+  .keyword-link { display: inline-flex; align-items: center; gap: 6px; text-decoration: none; color: var(--ink); background: var(--paper-raised); border: 1px solid var(--line); border-radius: 999px; padding: 8px 14px; font-size: 0.88rem; }
+  .keyword-link:hover { border-color: var(--coral); color: var(--coral-ink); }
+  .keyword-link svg { width: 14px; height: 14px; stroke: var(--ink-soft); fill: none; stroke-width: 2; }
 
   header.site { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px 20px; padding: 26px 28px; max-width: 820px; margin: 0 auto; }
   .header-right { display: flex; align-items: center; flex-wrap: wrap; justify-content: flex-end; gap: 10px 16px; }
@@ -388,7 +392,7 @@
   <ul class="plain-list">
     <li><strong>한국 은행 계좌 자동이체</strong> 또는 <strong>카드 자동이체</strong> 둘 다 가능해요 — 가입할 때 바로 등록하거나, 나중에 각 통신사 앱·고객센터에서 등록할 수 있어요.</li>
     <li>단, 둘 다 <strong>한국에서 발급된 계좌·카드여야 해요.</strong> 해외에서 만든 비자·마스터카드는 브랜드가 같아도 국내 정기결제(자동이체) 시스템에는 등록이 안 되는 경우가 많아요 — 외국인등록증으로 한국 계좌부터 만들고, 그 계좌로 발급받은 국내 체크·신용카드를 쓰는 게 안전해요.</li>
-    <li>자동이체를 걸어두지 않으면 매달 <strong>고지서(지로)</strong>가 집으로 오거나 문자·앱 알림으로 청구서가 와서 그때그때 직접 납부해야 해요.</li>
+    <li>자동이체를 걸어두지 않으면 매달 <strong>고지서(지로 — 은행이나 편의점에서 직접 결제할 수 있게 만든 종이 청구서)</strong>가 집으로 오거나 문자·앱 알림으로 청구서가 와서 그때그때 직접 납부해야 해요.</li>
     <li>관리비처럼 "따로 안 내면 밀리는" 구조이기 때문에, 장기체류자라면 처음 가입할 때 바로 자동이체부터 등록해두는 걸 추천해요.</li>
   </ul>
 </section>
@@ -422,6 +426,11 @@
   <p class="body-text" style="font-size:0.86rem; color:var(--ink-soft);">
     이 글은 일반적인 정보 제공 목적이며, 통신사별 요금·사은품·프로모션은 시기와 대리점에 따라 수시로 바뀌어요. 실제 가입 전에는 반드시 전화나 매장에서 최신 조건을 직접 확인하세요.
   </p>
+  <div class="keyword-links">
+    <a class="keyword-link" href="/ko/long-stay/2026-09-20-korea-phone-plan-guide-ko.html"><svg><use href="#i-link"/></svg>휴대폰 개통 가이드</a>
+    <a class="keyword-link" href="/ko/long-stay/2026-09-30-korea-utility-bills-guide-ko.html"><svg><use href="#i-link"/></svg>관리비·공과금 가이드</a>
+    <a class="keyword-link" href="/ko/long-stay/2026-09-20-korea-bank-account-guide-ko.html"><svg><use href="#i-link"/></svg>은행계좌 개설 가이드</a>
+  </div>
 </section>
 
 <footer class="site">

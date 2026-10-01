@@ -59,6 +59,10 @@
   .mono { font-family: "Space Mono", ui-monospace, "SF Mono", monospace; }
   a.mono { color: var(--navy-ink); text-decoration: underline; text-underline-offset: 2px; }
   a.mono:hover { color: var(--coral-ink); }
+  .keyword-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 6px; }
+  .keyword-link { display: inline-flex; align-items: center; gap: 6px; text-decoration: none; color: var(--ink); background: var(--paper-raised); border: 1px solid var(--line); border-radius: 999px; padding: 8px 14px; font-size: 0.88rem; }
+  .keyword-link:hover { border-color: var(--coral); color: var(--coral-ink); }
+  .keyword-link svg { width: 14px; height: 14px; stroke: var(--ink-soft); fill: none; stroke-width: 2; }
 
   header.site { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px 20px; padding: 26px 28px; max-width: 820px; margin: 0 auto; }
   .header-right { display: flex; align-items: center; flex-wrap: wrap; justify-content: flex-end; gap: 10px 16px; }
@@ -388,7 +392,7 @@
   <ul class="plain-list">
     <li>เลือกได้ทั้ง <strong>หักบัญชีธนาคารเกาหลีอัตโนมัติ</strong> หรือ <strong>ตัดบัตรอัตโนมัติ</strong> — ลงทะเบียนได้ทันทีตอนสมัคร หรือลงทะเบียนทีหลังผ่านแอปหรือศูนย์บริการของแต่ละค่ายก็ได้</li>
     <li>แต่ทั้งสองแบบ<strong>ต้องเป็นบัญชี/บัตรที่ออกในเกาหลีเท่านั้น</strong> บัตร Visa/Mastercard ที่เปิดจากต่างประเทศ แม้จะเป็นแบรนด์เดียวกัน ก็มักลงทะเบียนกับระบบตัดบัญชีอัตโนมัติในประเทศไม่ได้ — วิธีที่ปลอดภัยคือเปิดบัญชีธนาคารเกาหลีด้วยบัตรประจำตัวคนต่างด้าวก่อน แล้วใช้บัตรเดบิต/เครดิตในประเทศที่ออกจากบัญชีนั้น</li>
-    <li>ถ้าไม่ได้ตั้งหักบัญชีอัตโนมัติไว้ ทุกเดือนจะมี <strong>ใบแจ้งหนี้ (จิโร)</strong> ส่งมาที่บ้าน หรือแจ้งเตือนผ่าน SMS/แอป แล้วต้องจ่ายเองทีละเดือน</li>
+    <li>ถ้าไม่ได้ตั้งหักบัญชีอัตโนมัติไว้ ทุกเดือนจะมี <strong>ใบแจ้งหนี้ (เรียกว่า "จิโร" — ใบชำระเงินกระดาษที่จ่ายเป็นเงินสดได้ที่ธนาคารหรือร้านสะดวกซื้อ)</strong> ส่งมาที่บ้าน หรือแจ้งเตือนผ่าน SMS/แอป แล้วต้องจ่ายเองทีละเดือน</li>
     <li>เหมือนค่าส่วนกลาง ที่ถ้าไม่จ่ายเองจะค้างสะสม ดังนั้นถ้าพำนักระยะยาว แนะนำให้ลงทะเบียนหักบัญชีอัตโนมัติไว้ตั้งแต่ตอนสมัครเลย</li>
   </ul>
 </section>
@@ -422,6 +426,11 @@
   <p class="body-text" style="font-size:0.86rem; color:var(--ink-soft);">
     บทความนี้มีจุดประสงค์เพื่อให้ข้อมูลทั่วไป ค่าบริการ ของแถม และโปรโมชันของแต่ละค่ายอาจเปลี่ยนแปลงได้ตลอดเวลาตามช่วงเวลาและตัวแทนจำหน่าย ก่อนสมัครจริงควรตรวจสอบเงื่อนไขล่าสุดโดยตรงทางโทรศัพท์หรือที่หน้าร้านเสมอ
   </p>
+  <div class="keyword-links">
+    <a class="keyword-link" href="/th/long-stay/2026-09-20-korea-phone-plan-guide-th.html"><svg><use href="#i-link"/></svg>คู่มือเปิดใช้มือถือ</a>
+    <a class="keyword-link" href="/th/long-stay/2026-09-30-korea-utility-bills-guide-th.html"><svg><use href="#i-link"/></svg>คู่มือค่าส่วนกลาง & ค่าน้ำค่าไฟ</a>
+    <a class="keyword-link" href="/th/long-stay/2026-09-20-korea-bank-account-guide-th.html"><svg><use href="#i-link"/></svg>คู่มือเปิดบัญชีธนาคาร</a>
+  </div>
 </section>
 
 <footer class="site">

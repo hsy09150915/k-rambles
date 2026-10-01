@@ -59,6 +59,10 @@
   .mono { font-family: "Space Mono", ui-monospace, "SF Mono", monospace; }
   a.mono { color: var(--navy-ink); text-decoration: underline; text-underline-offset: 2px; }
   a.mono:hover { color: var(--coral-ink); }
+  .keyword-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 6px; }
+  .keyword-link { display: inline-flex; align-items: center; gap: 6px; text-decoration: none; color: var(--ink); background: var(--paper-raised); border: 1px solid var(--line); border-radius: 999px; padding: 8px 14px; font-size: 0.88rem; }
+  .keyword-link:hover { border-color: var(--coral); color: var(--coral-ink); }
+  .keyword-link svg { width: 14px; height: 14px; stroke: var(--ink-soft); fill: none; stroke-width: 2; }
 
   header.site { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px 20px; padding: 26px 28px; max-width: 820px; margin: 0 auto; }
   .header-right { display: flex; align-items: center; flex-wrap: wrap; justify-content: flex-end; gap: 10px 16px; }
@@ -388,7 +392,7 @@
   <ul class="plain-list">
     <li>Có thể chọn <strong>tự động trích từ tài khoản ngân hàng Hàn Quốc</strong> hoặc <strong>tự động trừ qua thẻ</strong> — đăng ký ngay lúc làm hợp đồng, hoặc đăng ký sau qua ứng dụng/tổng đài của từng nhà mạng.</li>
     <li>Nhưng cả hai đều phải là <strong>tài khoản/thẻ phát hành tại Hàn Quốc.</strong> Thẻ Visa, Mastercard làm ở nước ngoài dù cùng thương hiệu nhưng nhiều khi không đăng ký được vào hệ thống thanh toán định kỳ (tự động trích) trong nước — cách an toàn là dùng Thẻ đăng ký người nước ngoài để mở tài khoản Hàn Quốc trước, rồi dùng thẻ ghi nợ/tín dụng trong nước phát hành từ tài khoản đó.</li>
-    <li>Nếu không đăng ký tự động trích, hàng tháng sẽ nhận <strong>hóa đơn giấy (giro)</strong> gửi về nhà hoặc thông báo qua tin nhắn/ứng dụng, và phải tự thanh toán từng lần.</li>
+    <li>Nếu không đăng ký tự động trích, hàng tháng sẽ nhận <strong>hóa đơn giấy (gọi là "giro" — một loại phiếu thanh toán có thể trả tiền mặt tại ngân hàng hoặc cửa hàng tiện lợi)</strong> gửi về nhà hoặc thông báo qua tin nhắn/ứng dụng, và phải tự thanh toán từng lần.</li>
     <li>Giống như phí quản lý chung cư, đây là kiểu "không trả riêng thì bị dồn lại", nên nếu cư trú dài hạn, nên đăng ký tự động trích ngay từ khi mới đăng ký dịch vụ.</li>
   </ul>
 </section>
@@ -422,6 +426,11 @@
   <p class="body-text" style="font-size:0.86rem; color:var(--ink-soft);">
     Bài viết này chỉ nhằm mục đích cung cấp thông tin chung, cước phí, quà tặng, chương trình khuyến mãi của từng nhà mạng có thể thay đổi thường xuyên tùy thời điểm và đại lý. Trước khi đăng ký thực tế, hãy chắc chắn kiểm tra trực tiếp điều kiện mới nhất qua điện thoại hoặc tại cửa hàng.
   </p>
+  <div class="keyword-links">
+    <a class="keyword-link" href="/vi/long-stay/2026-09-20-korea-phone-plan-guide-vi.html"><svg><use href="#i-link"/></svg>Hướng dẫn đăng ký sim</a>
+    <a class="keyword-link" href="/vi/long-stay/2026-09-30-korea-utility-bills-guide-vi.html"><svg><use href="#i-link"/></svg>Hướng dẫn phí quản lý & hóa đơn</a>
+    <a class="keyword-link" href="/vi/long-stay/2026-09-20-korea-bank-account-guide-vi.html"><svg><use href="#i-link"/></svg>Hướng dẫn mở tài khoản ngân hàng</a>
+  </div>
 </section>
 
 <footer class="site">

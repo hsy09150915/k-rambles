@@ -59,6 +59,10 @@
   .mono { font-family: "Space Mono", ui-monospace, "SF Mono", monospace; }
   a.mono { color: var(--navy-ink); text-decoration: underline; text-underline-offset: 2px; }
   a.mono:hover { color: var(--coral-ink); }
+  .keyword-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 6px; }
+  .keyword-link { display: inline-flex; align-items: center; gap: 6px; text-decoration: none; color: var(--ink); background: var(--paper-raised); border: 1px solid var(--line); border-radius: 999px; padding: 8px 14px; font-size: 0.88rem; }
+  .keyword-link:hover { border-color: var(--coral); color: var(--coral-ink); }
+  .keyword-link svg { width: 14px; height: 14px; stroke: var(--ink-soft); fill: none; stroke-width: 2; }
 
   header.site { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px 20px; padding: 26px 28px; max-width: 820px; margin: 0 auto; }
   .header-right { display: flex; align-items: center; flex-wrap: wrap; justify-content: flex-end; gap: 10px 16px; }
@@ -388,7 +392,7 @@
   <ul class="plain-list">
     <li>You can use either <strong>automatic transfer from a Korean bank account</strong> or <strong>automatic card payment</strong> — register either right at sign-up, or later through the telecom's app or customer service.</li>
     <li>However, both require an <strong>account or card issued in Korea.</strong> Visa/Mastercard cards issued abroad often can't be registered for Korea's recurring-payment (auto-debit) system even if the brand matches — it's safer to open a Korean bank account with your Alien Registration Card first, then use a domestic debit/credit card issued on that account.</li>
-    <li>If you don't set up auto-pay, you'll get a <strong>paper bill (giro)</strong> at home each month, or a bill via text/app notification, and you have to pay it manually each time.</li>
+    <li>If you don't set up auto-pay, you'll get a <strong>paper bill (called a "giro" — a printed slip you can pay in cash at a bank or convenience store)</strong> at home each month, or a bill via text/app notification, and you have to pay it manually each time.</li>
     <li>Like building maintenance fees, this is a "falls behind if you don't pay it separately" type of charge, so for long-stay residents it's recommended to set up auto-pay right when you first sign up.</li>
   </ul>
 </section>
@@ -422,6 +426,11 @@
   <p class="body-text" style="font-size:0.86rem; color:var(--ink-soft);">
     This article is for general informational purposes — rates, freebies and promotions vary by telecom and change frequently depending on timing and the specific agent. Before actually signing up, be sure to confirm the latest terms directly by phone or in-store.
   </p>
+  <div class="keyword-links">
+    <a class="keyword-link" href="/long-stay/2026-09-20-korea-phone-plan-guide-en.html"><svg><use href="#i-link"/></svg>Phone Plan Guide</a>
+    <a class="keyword-link" href="/long-stay/2026-09-30-korea-utility-bills-guide-en.html"><svg><use href="#i-link"/></svg>Gwallibi & Utility Bills Guide</a>
+    <a class="keyword-link" href="/long-stay/2026-09-20-korea-bank-account-guide-en.html"><svg><use href="#i-link"/></svg>Bank Account Guide</a>
+  </div>
 </section>
 
 <footer class="site">
