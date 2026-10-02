@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Korea's Employment Insurance &amp; Industrial Accident Insurance: A Guide to Unemployment Benefits and Work Injuries for Foreigners | K-Rambles</title>
+<meta name="description" content="How to get treatment and sick-leave benefits through Industrial Accident Insurance if you're hurt at work, the risks of an off-the-record settlement (when an employer quietly settles things themselves), and why you should check now whether you're enrolled in Employment Insurance before you ever need unemployment benefit.">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Work+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap');
+
+  :root {
+    --paper: #ecdfc0;
+    --paper-raised: #fbf8ee;
+    --ink: #372b10;
+    --ink-soft: #6e5c33;
+    --coral: #d9532a;
+    --coral-ink: #9c3b1c;
+    --navy: #1b2a4a;
+    --navy-ink: #26406e;
+    --marigold: #c8891f;
+    --marigold-ink: #8a5c10;
+    --line: rgba(55, 43, 16, 0.16);
+    --line-strong: rgba(55, 43, 16, 0.3);
+    --card-shadow: 0 18px 34px -20px rgba(40, 30, 10, 0.4);
+    --ok: #1a7a3d;
+    --no: #b3261e;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #1b1509; --paper-raised: #2b2211; --ink: #f7f0dd; --ink-soft: #cbb98f;
+      --coral: #ef7448; --coral-ink: #ffb497; --navy: #9fb4e0; --navy-ink: #cfdcf5; --marigold: #e8b24b; --marigold-ink: #ffcf7d;
+      --line: rgba(247,240,221,0.16); --line-strong: rgba(247,240,221,0.3);
+      --card-shadow: 0 18px 34px -18px rgba(0,0,0,0.65);
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #1b1509; --paper-raised: #2b2211; --ink: #f7f0dd; --ink-soft: #cbb98f;
+    --coral: #ef7448; --coral-ink: #ffb497; --navy: #9fb4e0; --navy-ink: #cfdcf5; --marigold: #e8b24b; --marigold-ink: #ffcf7d;
+    --line: rgba(247,240,221,0.16); --line-strong: rgba(247,240,221,0.3);
+    --card-shadow: 0 18px 34px -18px rgba(0,0,0,0.65);
+  }
+
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: "Work Sans", ui-sans-serif, system-ui, sans-serif; font-size: 1.0625rem; line-height: 1.6; -webkit-font-smoothing: antialiased; word-break: keep-all; overflow-wrap: break-word; }
+
+  html { font-size: 100%; }
+  html[data-fs="xs"] { font-size: 85%; }
+  html[data-fs="sm"] { font-size: 92.5%; }
+  html[data-fs="lg"] { font-size: 115%; }
+  html[data-fs="xl"] { font-size: 135%; }
+  .font-size-ctrl { display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--line); border-radius: 100px; padding: 4px 8px; }
+  .fs-labels { display: inline-flex; align-items: baseline; gap: 3px; }
+  .fs-label { font-family: "Work Sans", sans-serif; font-weight: 600; color: var(--ink-soft); line-height: 1; user-select: none; }
+  .fs-label-sm { font-size: 0.68rem; }
+  .fs-label-lg { font-size: 1.15rem; }
+  .fs-step { appearance: none; border: none; background: none; cursor: pointer; color: var(--ink-soft); font-family: "Work Sans", sans-serif; font-weight: 700; font-size: 1.35rem; line-height: 1; width: 30px; height: 30px; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; flex-shrink: 0; }
+  .fs-step:hover:not(:disabled) { background: var(--line); color: var(--ink); }
+  .fs-step:disabled { opacity: 0.32; cursor: default; }
+  a { color: inherit; }
+  .mono { font-family: "Space Mono", ui-monospace, "SF Mono", monospace; }
+  a.mono { color: var(--navy-ink); text-decoration: underline; text-underline-offset: 2px; }
+  a.mono:hover { color: var(--coral-ink); }
+  .keyword-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 6px; }
+  .keyword-link { display: inline-flex; align-items: center; gap: 6px; text-decoration: none; color: var(--ink); background: var(--paper-raised); border: 1px solid var(--line); border-radius: 999px; padding: 8px 14px; font-size: 0.88rem; }
+  .keyword-link:hover { border-color: var(--coral); color: var(--coral-ink); }
+  .keyword-link svg { width: 14px; height: 14px; stroke: var(--ink-soft); fill: none; stroke-width: 2; }
+
+  header.site { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px 20px; padding: 26px 28px; max-width: 820px; margin: 0 auto; }
+  .header-right { display: flex; align-items: center; flex-wrap: wrap; justify-content: flex-end; gap: 10px 16px; }
+  .logo { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 1.2rem; text-decoration: none; white-space: nowrap; }
+  .logo span { color: var(--coral); }
+  .back-link { font-family: "Space Mono", monospace; font-size: 0.78rem; letter-spacing: 0.03em; text-decoration: none; color: var(--ink-soft); display: inline-flex; flex-direction: column; align-items: flex-start; gap: 2px; line-height: 1; white-space: nowrap; }
+  .back-link svg { width: 12px; height: 12px; }
+  .back-link:hover { color: var(--navy-ink); }
+  .lang-switch { display: flex; align-items: center; gap: 6px; font-family: "Space Mono", monospace; font-size: 0.76rem; letter-spacing: 0.03em; }
+  .lang-switch a, .lang-switch span.current { text-decoration: none; padding: 3px 8px; border-radius: 6px; }
+  .lang-switch a { color: var(--ink-soft); }
+  .lang-switch a:hover { color: var(--ink); }
+  .lang-switch span.current { color: var(--ink); font-weight: 700; border: 1px solid var(--line); }
+
+  .art-hero { padding: 10px 28px 24px; max-width: 820px; margin: 0 auto; }
+  .hero-photo-wrap { max-width: 820px; margin: 0 auto 8px; padding: 0 28px; }
+  .hero-photo { display: block; width: 100%; height: auto; border-radius: 16px; box-shadow: var(--card-shadow); border: 1px solid var(--line); }
+  .cite-note { font-size: 0.92rem; color: var(--ink-soft); margin: 10px 0 0; }
+  .stamp { display: inline-flex; align-items: center; gap: 9px; font-family: "Space Mono", monospace; font-size: 0.76rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--navy-ink); border: 1.5px dashed var(--navy); border-radius: 999px; padding: 6px 14px 6px 11px; transform: rotate(-1.5deg); }
+  .stamp::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--navy); display: inline-block; }
+
+  .hero-top { display: flex; align-items: center; gap: 16px; margin: 22px 0 24px; }
+  .hero-icon { width: 40px; height: 40px; stroke: var(--navy-ink); fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; }
+
+  h1.art-title { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: clamp(1.9rem, 4.6vw, 2.7rem); line-height: 1.28; letter-spacing: -0.01em; margin: 0 0 14px; text-wrap: balance; }
+  p.dek { font-size: 1.08rem; color: var(--ink-soft); max-width: 58ch; margin: 0; }
+
+  .updated-badge { display: inline-flex; align-items: center; gap: 7px; font-size: 0.92rem; color: var(--ink-soft); margin: 16px 0 0; }
+  .updated-icon { width: 17px; height: 17px; stroke: var(--navy-ink); fill: none; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+
+  section.block { max-width: 820px; margin: 0 auto; padding: 6px 28px 30px; }
+  section.block.section-gap { padding-top: 30px; }
+
+  .block-head { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+  .block-icon { width: 22px; height: 22px; stroke: var(--navy-ink); fill: none; stroke-width: 1.7; flex-shrink: 0; }
+  .block-title { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 1.3rem; margin: 0; }
+
+  p.body-text { margin: 0 0 14px; }
+  ul.plain-list { list-style: disc; margin: 0 0 14px; padding-left: 1.2em; }
+  ul.plain-list li + li { margin-top: 12px; }
+  ol.plain-list-num { margin: 0 0 14px; padding-left: 1.2em; }
+  ol.plain-list-num li + li { margin-top: 12px; }
+
+  table.data-table { width: 100%; border-collapse: collapse; background: var(--paper-raised); font-size: 0.92rem; margin: 4px 0 18px; word-break: keep-all; overflow-wrap: break-word; }
+  table.data-table th, table.data-table td { text-align: left; padding: 12px 14px; border-bottom: 1px solid var(--line); word-break: keep-all; overflow-wrap: break-word; vertical-align: top; }
+  table.data-table th:first-child, table.data-table td:first-child { padding-left: 16px; }
+  table.data-table th:last-child, table.data-table td:last-child { padding-right: 16px; }
+  table.data-table thead th { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; color: var(--ink-soft); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.03em; border-bottom: 1px solid var(--line-strong); white-space: nowrap; }
+  table.data-table tbody tr:last-child td { border-bottom: none; }
+  table.data-table td p, table.data-table td ul { margin: 0; }
+  table.data-table td ul { padding-left: 1.1em; }
+  table.data-table td li + li, table.data-table td p + p { margin-top: 6px; }
+
+  /* On narrow screens, tables flip from columns to stacked cards so no column gets squeezed into a one-character-wide strip. */
+  @media (max-width: 640px) {
+    table.data-table { display: block; }
+    table.data-table thead { display: none; }
+    table.data-table tbody { display: block; }
+    table.data-table tr { display: block; padding: 14px 16px; margin-bottom: 12px; border: 1px solid var(--line); border-radius: 12px; background: var(--paper-raised); }
+    table.data-table tr:last-child { margin-bottom: 0; }
+    table.data-table td { display: block; padding: 8px 0; border-bottom: 1px solid var(--line); }
+    table.data-table td:first-child { padding-left: 0; }
+    table.data-table td:last-child { padding-right: 0; border-bottom: none; }
+    table.data-table td::before { content: attr(data-label); display: block; font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; color: var(--ink-soft); font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.03em; margin-bottom: 4px; }
+  }
+
+  .callout { background: var(--paper-raised); border: 1px solid var(--line); border-left: 3px solid var(--marigold); border-radius: 12px; padding: 18px 20px; margin: 16px 0 0; box-shadow: var(--card-shadow); }
+  .callout-head { display: flex; align-items: center; gap: 8px; font-weight: 700; margin-bottom: 8px; }
+  .callout-head svg { width: 18px; height: 18px; stroke: var(--marigold-ink); fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+  .callout p { margin: 0; font-size: 0.95rem; color: var(--ink-soft); }
+  .callout p + p { margin-top: 8px; }
+  .callout strong.warn { color: var(--coral-ink); }
+
+  .step-list { list-style: none; margin: 6px 0 0; padding: 0; display: flex; flex-direction: column; gap: 24px; }
+  .step-item { display: flex; flex-direction: column; gap: 8px; }
+  .step-head { display: flex; align-items: flex-start; gap: 12px; }
+  .step-badge { width: 28px; height: 28px; border-radius: 50%; background: var(--coral); color: #fff5ee; font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 0.9rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .step-body h3 { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 1.0rem; margin: 2px 0 4px; }
+  .step-body p { margin: 0; font-size: 0.93rem; color: color-mix(in srgb, var(--ink) 60%, var(--ink-soft)); }
+
+  .official-links { display: flex; flex-wrap: wrap; gap: 10px; margin: 14px 0 0; }
+  .official-link { display: inline-flex; align-items: center; gap: 6px; text-decoration: none; color: var(--ink); background: var(--paper-raised); border: 1px solid var(--line); border-radius: 999px; padding: 8px 14px; font-size: 0.86rem; }
+  .official-link:hover { border-color: var(--navy); color: var(--navy-ink); }
+  .official-link svg { width: 14px; height: 14px; stroke: var(--ink-soft); fill: none; stroke-width: 2; }
+
+  .scroll-top { position: fixed; right: 20px; bottom: 20px; width: 46px; height: 46px; border-radius: 50%; background: var(--coral); color: #fff5ee; display: flex; align-items: center; justify-content: center; box-shadow: var(--card-shadow); border: none; cursor: pointer; opacity: 0; pointer-events: none; transition: opacity 0.2s ease, transform 0.15s ease; z-index: 40; }
+  .scroll-top.visible { opacity: 1; pointer-events: auto; }
+  .scroll-top:hover { transform: translateY(-3px); background: var(--coral-ink); }
+  .scroll-top svg { width: 20px; height: 20px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  @media (prefers-reduced-motion: reduce) { .scroll-top { transition: none; } }
+
+  footer.site { border-top: 1px solid var(--line); padding: 24px 28px 40px; }
+  .footer-inner { max-width: 820px; margin: 0 auto; }
+  .footer-inner .mono { font-size: 0.76rem; color: var(--ink-soft); }
+
+  section.block > * + *, .shop-card > * + * { margin-top: 18px; }
+
+  @media (max-width: 400px) {
+    header.site { padding: 18px 16px; flex-wrap: wrap; row-gap: 10px; }
+    .logo { font-size: 1.02rem; }
+    .header-right { gap: 10px; flex-wrap: wrap; }
+    .art-hero, section.block { padding-left: 16px; padding-right: 16px; }
+  }
+  @media (max-width: 340px) {
+    .logo { font-size: 0.9rem; }
+    .font-size-ctrl { padding: 3px 6px; gap: 5px; }
+  }
+
+  button.official-link { font-family: "Work Sans", sans-serif; }
+
+  .modal-overlay { position: fixed; inset: 0; background: rgba(20, 15, 5, 0.52); display: flex; align-items: flex-end; justify-content: center; z-index: 60; padding: 0; }
+  .modal-overlay[hidden] { display: none; }
+  .modal-card { background: var(--paper-raised); color: var(--ink); width: 100%; max-width: 680px; max-height: 82vh; border-radius: 18px 18px 0 0; box-shadow: var(--card-shadow); padding: 22px 22px calc(22px + env(safe-area-inset-bottom, 0px)); overflow-y: auto; border: 1px solid var(--line); border-bottom: none; }
+  @media (min-width: 720px) {
+    .modal-overlay { align-items: center; }
+    .modal-card { border-radius: 18px; border-bottom: 1px solid var(--line); max-height: 78vh; }
+  }
+  .modal-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 8px; }
+  .modal-head h3 { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 1.1rem; margin: 0; }
+  .modal-close { appearance: none; border: none; background: var(--line); color: var(--ink); width: 30px; height: 30px; border-radius: 50%; font-size: 1.3rem; line-height: 1; cursor: pointer; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
+  .modal-close:hover { background: var(--coral); color: #fff5ee; }
+  .modal-source { font-size: 0.84rem; color: var(--ink-soft); margin: 0 0 16px; }
+  .modal-group + .modal-group { margin-top: 18px; }
+  .modal-group h4 { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 0.95rem; margin: 0 0 6px; display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+  .modal-count { font-family: "Space Mono", monospace; font-weight: 400; font-size: 0.78rem; color: var(--ink-soft); }
+  .modal-countries { font-size: 0.9rem; color: var(--ink-soft); margin: 0; line-height: 1.7; }
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-doc" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.5 4 5.5 4 9s-1.5 6.5-4 9c-2.5-2.5-4-5.5-4-9s1.5-6.5 4-9Z"/></symbol>
+  <symbol id="i-pass" viewBox="0 0 24 24"><path d="M4 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v1.3a1.5 1.5 0 0 0 0 2.9V13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-1.3a1.5 1.5 0 0 0 0-2.9Z" transform="translate(0 2)"/><path d="M9 6.5v11" stroke-dasharray="2 2" transform="translate(0 2)"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M4 12.5 9.5 18 20 6.5"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5.5M12 8v.01"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 9.8h17M8 2.5v5M16 2.5v5"/></symbol>
+  <symbol id="i-link" viewBox="0 0 24 24"><path d="M9.5 14.5 14.5 9.5"/><path d="M8.3 11.7l-1.6 1.6a3 3 0 0 0 4.2 4.2l1.6-1.6"/><path d="M15.7 12.3l1.6-1.6a3 3 0 0 0-4.2-4.2l-1.6 1.6"/></symbol>
+  <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></symbol>
+</svg>
+
+<header class="site">
+  <a class="logo" href="/index.html">K-<span>Rambles</span></a>
+  <div class="header-right">
+    <a class="back-link" href="/long-stay/index.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+      Back to board
+    </a>
+    <div class="font-size-ctrl" role="group" aria-label="Text size"><button type="button" class="fs-step" data-action="dec" aria-label="Decrease text size">−</button><span class="fs-labels" aria-hidden="true"><span class="fs-label fs-label-sm">A</span><span class="fs-label fs-label-lg">A</span></span><button type="button" class="fs-step" data-action="inc" aria-label="Increase text size">+</button></div>
+    <div class="lang-switch" aria-label="Language" data-key="long-stay/2026-10-02-korea-employment-accident-insurance-guide-en"></div>
+  </div>
+</header>
+
+<div class="art-hero">
+  <div class="hero-top">
+    <span class="stamp">Long-Stay · Board 10</span>
+    <svg class="hero-icon"><use href="#i-doc"/></svg>
+  </div>
+  <h1 class="art-title">Korea's Employment Insurance &amp; Industrial Accident Insurance: A Guide to Unemployment Benefits and Work Injuries for Foreigners</h1>
+  <p class="dek">These are two kinds of insurance you should understand before you get hurt or lose your job. Anyone can use Industrial Accident Insurance, but Employment Insurance (unemployment benefit) may not be automatic depending on your visa, so it's important to check your own status now.</p>
+  <p class="updated-badge"><svg class="updated-icon"><use href="#i-calendar"/></svg>As of October 2026</p>
+</div>
+
+
+
+
+<!-- 출처(개정사항 체크 시 참고) — 2026-10-02 확인
+  산재: 산업재해보상보험법 (law.go.kr) / 근로복지공단 https://www.comwel.or.kr / 고용·산재보험 토탈서비스 https://total.comwel.or.kr
+  고용보험 가입(외국인): 고용보험법 시행령 제3조의3, 법제처 해석례 21-0680(2022.1.19, 임의가입은 근로자 신청 + 사업주 동의), 고용노동부 통영지청 안내(E-9·H-2는 실업급여 별도 신청)
+  실업급여 2026: 상한 68,100원/일, 하한 66,048원/일, 급여율 60%, 소정급여일수 120~270일, 수급 기한 이직 후 12개월
+  사업자등록 시 수급: 고용노동부 상담센터 FAQ https://1350.moel.go.kr/home/hp/data/faqView.do?faq_idx=1000001163 (원칙적으로 실업자로 볼 수 없음, 예외: 임대사업자·영업 없는 경우 폐업/휴업 서류 제출·다단계 소비회원)
+  신청 절차(구직신청→교육(신청 전 선수강)→고용센터 수급자격 신청→1~4주 실업인정→인정 다음 날 입금): 고용24 제도안내 https://m.work24.go.kr/cm/c/f/1100/selecSystInfo.do?systId=SI00000411&systCnntId=&systClId=SC00000254
+  상·하한액: 하한 = 2026 최저임금 10,320원 x 80% x 8시간 = 66,048원, 상한 68,100원(복수 보도 확인). 월급 약 330만 원 = 일 평균임금 약 11만 원 기준 계산
+  E-9 사업장 변경(고용센터 신청, 계약 종료 후 1개월, 출입국 근무처 변경 허가, 기한 초과 시 출국): 생활법령정보 https://easylaw.go.kr/CSP/CnpClsMain.laf?popMenu=ov&csmSeq=2042&ccfNo=3&cciNo=2&cnpClsNo=1
+  미확인으로 본문에서 제외·완화한 항목: 산재 신청이 출입국 통보로 이어지는지, 반복수급 감액 시행 여부, 근로복지공단 대표번호, 1350 지원 언어, 시행령 별표(F-2 하위자격, H-2→F-4 통합 후 처리)
+-->
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-info"/></svg>
+    <h2 class="block-title">Key Takeaways</h2>
+  </div>
+  <div class="callout">
+    <div class="callout-head"><svg><use href="#i-info"/></svg>Bottom line</div>
+    <p><strong>① Industrial Accident Insurance (산재보험)</strong> (insurance that pays for treatment and living costs while you rest if you're hurt or become ill because of work) can be claimed <strong>whatever your visa, even if your employer never enrolled you</strong>. The employer pays the whole premium.<br><br><strong>② Employment Insurance (고용보험)</strong> (insurance that pays an unemployment benefit (실업급여) when you lose your job) is different. For foreigners, <strong>enrollment may not be automatic, depending on your visa</strong>. If you don't check "Am I enrolled?" while you're still working, you may not be able to get the benefit when you actually lose your job.<br><br><strong>③ The biggest thing to watch out for:</strong> If there's an accident and your employer says, "Don't file for Industrial Accident Insurance, we'll take care of it ourselves" (an <strong>off-the-record settlement (공상처리)</strong>), it may look easier now. But if your treatment drags on or you have lasting effects later, it's hard to be protected. Section 4 explains this in detail.</p>
+  </div>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-doc"/></svg>
+    <h2 class="block-title">Let's Start With the Key Terms</h2>
+  </div>
+  <p class="body-text">This guide uses a lot of Korean administrative terms. They're hard at first, so here's one table that covers them all. If you hit a word you don't know while reading, come back here.</p>
+  <table class="data-table">
+    <thead>
+      <tr><th>Term</th><th>Plain explanation</th></tr>
+    </thead>
+    <tbody>
+      <tr><td data-label="Term">Industrial Accident Insurance (산재보험, 산업재해보상보험)</td><td data-label="Plain explanation">Insurance where the state (KCOMWEL) pays for treatment and living costs if you're hurt while working (a work accident) or become ill because of work (a work-related illness). Often shortened to "산재". Informally, you can think of it as "work injury insurance"</td></tr>
+      <tr><td data-label="Term">Employment Insurance (고용보험)</td><td data-label="Plain explanation">Insurance that pays an unemployment benefit when you lose your job, and helps with job searching and vocational training</td></tr>
+      <tr><td data-label="Term">Unemployment benefit (실업급여, 구직급여)</td><td data-label="Plain explanation">Money you receive while looking for a new job after losing your old one. The amount is calculated per day, and in practice you receive it every 1 to 4 weeks, as a lump for that period. The official legal name is "구직급여"</td></tr>
+      <tr><td data-label="Term">KCOMWEL (Korea Workers' Compensation &amp; Welfare Service, 근로복지공단)</td><td data-label="Plain explanation">The organization that runs Industrial Accident Insurance. It decides whether to approve treatment costs and pay sick-leave benefits</td></tr>
+      <tr><td data-label="Term">Employment Center (고용센터)</td><td data-label="Plain explanation">A local office of the Ministry of Employment and Labor that handles Employment Insurance (unemployment benefit). You apply for unemployment benefit here</td></tr>
+      <tr><td data-label="Term">Medical care benefit (요양급여)</td><td data-label="Plain explanation">Money that covers the cost of treatment for a work injury (hospital bills, medicine, etc.). Once approved, the basic rule is that you get treated without paying out of pocket</td></tr>
+      <tr><td data-label="Term">Sick-leave (work absence) benefit (휴업급여)</td><td data-label="Plain explanation">Money paid while you can't work because of treatment for a work injury, about 70% of your usual wage</td></tr>
+      <tr><td data-label="Term">Off-the-record settlement (공상처리)</td><td data-label="Plain explanation">When your employer says they'll handle treatment costs themselves instead of you filing an Industrial Accident claim. It's a private deal with no legal protection</td></tr>
+      <tr><td data-label="Term">Separation certificate (이직확인서)</td><td data-label="Plain explanation">A document your employer submits to the Employment Center when you leave, stating why you left. It's the most important document in the unemployment benefit review</td></tr>
+      <tr><td data-label="Term">Insured days (피보험단위기간)</td><td data-label="Plain explanation">The number of days you were enrolled in Employment Insurance and premiums were paid. To get unemployment benefit, you need to have enough of them</td></tr>
+      <tr><td data-label="Term">Workplace (사업장)</td><td data-label="Plain explanation">The company where a worker works (a factory, farm, shop, or any place of work). The owner or representative of that company is called the "employer" (사업주)</td></tr>
+      <tr><td data-label="Term">Workplace change (사업장 변경, E-9)</td><td data-label="Plain explanation">When an E-9 worker leaves their current company and moves to another one. You can't move freely. You need a justifiable reason, and you must apply at the Employment Center and get permission</td></tr>
+      <tr><td data-label="Term">Voluntary enrollment (임의가입)</td><td data-label="Plain explanation">Joining by applying yourself, instead of being enrolled automatically by law. For foreigners, Employment Insurance often works this way depending on the visa</td></tr>
+      <tr><td data-label="Term">Work24 (고용24)</td><td data-label="Plain explanation">The Ministry of Employment and Labor website (work24.go.kr) where you register as a job seeker, apply for unemployment benefit, and more, online</td></tr>
+    </tbody>
+  </table>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-check"/></svg>
+    <h2 class="block-title">1. First Things First: Am I Enrolled in Employment Insurance Right Now?</h2>
+  </div>
+  <div class="callout">
+    <div class="callout-head"><svg><use href="#i-info"/></svg>Why you should check in advance</div>
+    <p><strong>You can file for Industrial Accident Insurance after an accident happens, but you need to check Employment Insurance ahead of time.</strong><br><br>To get unemployment benefit, you need <strong>"a total of 180 days or more enrolled in Employment Insurance within the 18 months before the day you left your job"</strong>. Any time you were enrolled in Employment Insurance earlier than those 18 months does not count toward these 180 days.<br><br>Even if you worked, <strong>periods when you weren't enrolled in Employment Insurance don't count as days.</strong> For example, if you worked for a year without being enrolled and then quit, that year counts as 0 days, and you can't get unemployment benefit.</p>
+  </div>
+  <p class="body-text">For Korean nationals, Employment Insurance is automatic when they start a job. For foreigners, though, <strong>it depends on your visa.</strong> Below is the general breakdown (as of October 2026; the detailed rules may change when the Enforcement Decree is amended).</p>
+  <table class="data-table">
+    <thead>
+      <tr><th>Category</th><th>Applicable visas (examples)</th><th>Employment Insurance (unemployment benefit)</th></tr>
+    </thead>
+    <tbody>
+      <tr><td data-label="Category">Automatic enrollment (mandatory coverage)</td><td data-label="Applicable visas (examples)">Permanent Residence (F-5), Marriage Migrant (F-6), some Residence (F-2) holders</td><td data-label="Employment Insurance (unemployment benefit)">You're enrolled automatically when you start work, like Korean nationals</td></tr>
+      <tr><td data-label="Category">Enroll by applying yourself (voluntary enrollment)</td><td data-label="Applicable visas (examples)">Professional and specific-activity visas (E-1 to E-7), Overseas Korean (F-4), Short-Term Employment (C-4), etc.</td><td data-label="Employment Insurance (unemployment benefit)">Not automatic. You apply yourself, and <strong>your employer's consent is also needed</strong> (Ministry of Government Legislation interpretation). If your employer doesn't know or doesn't consent, you may be working without being enrolled</td></tr>
+      <tr><td data-label="Category">Only partly automatic</td><td data-label="Applicable visas (examples)">Non-Professional Employment (E-9), Working Visit (H-2)</td><td data-label="Employment Insurance (unemployment benefit)">Only the employment stability and vocational skills development premium is automatic, and <strong>you must apply separately for unemployment benefit</strong></td></tr>
+    </tbody>
+  </table>
+  <p class="body-text" style="font-size:0.9rem; color:var(--ink-soft);">The detailed rules for each visa may change when the Enforcement Decree (the law) is amended. The surest way to know your own status is to check it yourself using the methods below.</p>
+  <p class="body-text"><strong>How to check your enrollment status</strong><br><br>① Look at your <strong>pay slip</strong> for an "Employment Insurance" deduction. If it isn't there, you're quite likely not enrolled.<br><br>② Log in to <strong>Work24 (work24.go.kr)</strong> or <strong>KCOMWEL's Employment &amp; Industrial Accident Insurance Total Service</strong> (total.comwel.or.kr), where you can look up your "insured status history". If it's hard to do in Korean, visit your nearest Employment Center with your Alien Registration Card (ARC) and ask.<br><br>③ If you're not enrolled, ask your employer to enroll you and ask the Employment Center how to apply. If you can't sort it out alone, use the contacts in Section 6.</p>
+  <div class="official-links">
+    <a class="official-link" href="https://www.work24.go.kr" target="_blank" rel="noopener"><svg><use href="#i-link"/></svg>Go to Work24</a>
+    <a class="official-link" href="https://total.comwel.or.kr" target="_blank" rel="noopener"><svg><use href="#i-link"/></svg>Employment &amp; Industrial Accident Insurance Total Service</a>
+  </div>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-info"/></svg>
+    <h2 class="block-title">2. If You Get Hurt at Work: Industrial Accident Insurance</h2>
+  </div>
+  <p class="body-text">Industrial Accident Insurance applies if you're hurt at work, <strong>whether you're a foreigner, whatever your visa type, and even if you have no legal residence status</strong> (the Supreme Court has taken the same position). The employer pays the whole premium, and the worker pays nothing. And <strong>even if your employer never enrolled in Industrial Accident Insurance</strong>, the worker can still get compensation. In that case, KCOMWEL pays first and collects from the employer later.</p>
+  <div class="callout">
+    <div class="callout-head"><svg><use href="#i-info"/></svg>What you can get through Industrial Accident Insurance</div>
+    <p><strong>① Medical care benefit</strong> — Helps pay for treatment.<br><br><strong>② Sick-leave benefit</strong> — Pays about 70% of your usual wage while you can't work because of treatment.<br><br><strong>③ Disability benefit</strong> — If a disability remains after treatment, you receive this depending on its severity.<br><br><strong>④ Survivors' benefit</strong> — Paid to the family if the worker dies in the accident.</p>
+  </div>
+  <p class="body-text" style="margin-top:44px;"><strong>Steps to apply</strong></p>
+  <ol class="step-list">
+    <li class="step-item">
+      <div class="step-head">
+        <span class="step-badge">1</span>
+        <div class="step-body">
+          <h3>Get treatment first, and keep evidence</h3>
+          <p>Tell the hospital clearly, "I was hurt at work" (if it's handled as regular health insurance, it gets complicated later). Collect photos of the injury and the scene, messages with your employer, and contact details of any witnesses.</p>
+        </div>
+      </div>
+    </li>
+    <li class="step-item">
+      <div class="step-head">
+        <span class="step-badge">2</span>
+        <div class="step-body">
+          <h3>Prepare the medical care benefit application</h3>
+          <p>You need the "medical care benefit application form" and the "medical opinion for the application" that the hospital writes. Tell the hospital you want to file for Industrial Accident Insurance, and they'll guide you.</p>
+        </div>
+      </div>
+    </li>
+    <li class="step-item">
+      <div class="step-head">
+        <span class="step-badge">3</span>
+        <div class="step-body">
+          <h3>Submit it to KCOMWEL</h3>
+          <p>You can go to a nearby KCOMWEL branch, or submit online through the Employment &amp; Industrial Accident Insurance Total Service. If it's a designated Industrial Accident hospital, the hospital sometimes files for you.</p>
+        </div>
+      </div>
+    </li>
+    <li class="step-item">
+      <div class="step-head">
+        <span class="step-badge">4</span>
+        <div class="step-body">
+          <h3>Your employer's signature isn't strictly required</h3>
+          <p>You can apply even if your employer refuses to sign. KCOMWEL notifies the employer directly.</p>
+        </div>
+      </div>
+    </li>
+    <li class="step-item">
+      <div class="step-head">
+        <span class="step-badge">5</span>
+        <div class="step-body">
+          <h3>Wait for the result</h3>
+          <p>By law, the standard processing time is 7 days. But if an investigation or review is needed, it can take longer, and an illness caused by work (a work-related illness) often takes much longer.</p>
+        </div>
+      </div>
+    </li>
+  </ol>
+  <p class="body-text" style="margin-top:44px;"><strong>Good to know</strong><br><br>① <strong>Filing deadline</strong>: You must claim medical care and sick-leave benefits within 3 years, and disability and survivors' benefits within 5 years (statute of limitations). But if your treatment isn't finished, it's best to apply as soon as possible.<br><br>② <strong>Protection from dismissal</strong>: As a rule, your employer can't fire you while you're being treated for a work injury and for 30 days afterward (Labor Standards Act). Punishing you for filing an Industrial Accident claim is also illegal.<br><br>③ <strong>If your claim is denied</strong>, you can challenge it in this order: request for review, then request for re-review, then an administrative lawsuit.<br><br>④ <strong>Effect on your stay</strong>: If you need long treatment for a work injury, there's a path to change your status to a visa for Industrial Accident treatment (G-1) and continue your stay. But this isn't an automatic right, and immigration authorities decide case by case. If you're worried about your stay, contact the counseling contacts in Section 6 before you apply.</p>
+  <p class="body-text" style="font-size:0.9rem; color:var(--ink-soft);">Separately from Industrial Accident claims, accidents and illnesses that aren't caused by work are handled through health insurance or a foreigner-specific accident insurance you bought yourself.</p>
+  <div class="official-links">
+    <a class="official-link" href="https://www.comwel.or.kr" target="_blank" rel="noopener"><svg><use href="#i-link"/></svg>KCOMWEL</a>
+    <a class="official-link" href="https://total.comwel.or.kr" target="_blank" rel="noopener"><svg><use href="#i-link"/></svg>Employment &amp; Industrial Accident Insurance Total Service</a>
+  </div>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-globe"/></svg>
+    <h2 class="block-title">3. Visas, Legal Stay and Industrial Accidents: Good to Know</h2>
+  </div>
+  <p class="body-text">If a <strong>Non-Professional Employment (E-9) worker</strong> is hurt at work and can't keep working at that company, this is recognized as a reason to change workplaces. The usual deadline for a workplace change (1 month, as a rule) is also known to be extended by the length of your Industrial Accident treatment, so if this applies to you, ask the Foreign Workforce Counseling Center (1577-0071).</p>
+  <p class="body-text">Even if you have <strong>no legal residence status (you're staying illegally)</strong>, you can still file for Industrial Accident Insurance itself. However, this guide has found no official source on how immigration enforcement or reporting is handled during the application. We can't say it is completely safe, so in this situation, always get advice first from the Korea Legal Aid Corporation (132) or a support organization for foreigners.</p>
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-info"/></svg>
+    <h2 class="block-title">4. Off-the-Record Settlements: Be Careful If You Hear This</h2>
+  </div>
+  <div class="callout">
+    <div class="callout-head"><svg><use href="#i-info"/></svg>What is an off-the-record settlement?</div>
+    <p>An <strong>off-the-record settlement (공상처리)</strong> is when your employer says they'll handle treatment costs themselves instead of you filing an Industrial Accident claim. It's not a system set by law. It's <strong>a private promise between the employer and the worker</strong>.</p>
+  </div>
+  <table class="data-table">
+    <thead>
+      <tr><th>Official Industrial Accident claim</th><th>Off-the-record settlement</th></tr>
+    </thead>
+    <tbody>
+      <tr><td data-label="Official Industrial Accident claim">The state (KCOMWEL) pays treatment costs and sick-leave benefits</td><td data-label="Off-the-record settlement">The employer pays only what they promised, and only when they feel like it</td></tr>
+      <tr><td data-label="Official Industrial Accident claim">An official record is kept</td><td data-label="Off-the-record settlement">No record is kept. Your proof that you were hurt also gets weaker over time</td></tr>
+      <tr><td data-label="Official Industrial Accident claim">You're covered even if treatment drags on or the injury comes back</td><td data-label="Off-the-record settlement">If the employer says "we can't pay any more" halfway through, you have little way to push back</td></tr>
+      <tr><td data-label="Official Industrial Accident claim">You can get a disability grade and compensation for lasting effects</td><td data-label="Off-the-record settlement">Even if lasting effects remain, it's hard to get legal compensation</td></tr>
+    </tbody>
+  </table>
+  <p class="body-text"><strong>Why would an employer suggest an off-the-record settlement?</strong> The claim that "premiums go up if you file for Industrial Accident Insurance" is mostly exaggerated (premiums vary with accident history only at workplaces above a certain size). The real reason is often to avoid burdens like a labor office investigation, being named in a serious accident announcement, bidding disadvantages, and safety management liability. Those burdens are the employer's problem, and they're no reason for a worker to give up treatment and compensation.</p>
+  <p class="body-text"><strong>Be suspicious if you hear things like this</strong><br><br>"If you file for Industrial Accident Insurance, you'll get fired / have visa problems" · "Don't tell the hospital you were hurt at work" · "Just get treated with regular health insurance" · being told to sign a paper saying "I will never make any claim" · a company employee keeps following you around at the hospital</p>
+  <p class="body-text"><strong>Even if you've already agreed to an off-the-record settlement</strong>, you can still file for Industrial Accident Insurance later as long as you're within the legal deadline. However, part of the money you already received may be deducted. It's best to get advice before you sign.</p>
+  <p class="body-text" style="font-size:0.9rem; color:var(--ink-soft);">Also, hiding an Industrial Accident, or telling someone to hide one, is punishable for the employer (Occupational Safety and Health Act), and punishing a worker for filing an Industrial Accident claim is punishable too. Knowing that your employer is breaking the law can help you stand firm against pressure.</p>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-check"/></svg>
+    <h2 class="block-title">5. If You Lose Your Job: How to Get Unemployment Benefit</h2>
+  </div>
+  <div class="callout">
+    <div class="callout-head"><svg><use href="#i-info"/></svg>Conditions to qualify</div>
+    <p>You get unemployment benefit if you have <strong>180 days or more enrolled in Employment Insurance</strong> and <strong>you lost your job for a reason that isn't your fault</strong>.<br><br>Here, <strong>18 months</strong> is the period that sets "how far back your enrollment record is counted." Add up all the days you were enrolled in Employment Insurance within the 18 months before the day you left your job, and you need 180 days (about 6 months) or more. Any time you were enrolled earlier than those 18 months doesn't count toward these 180 days.<br><br><strong>Example:</strong> If you leave your job at the end of October 2026, the period reviewed is May 2025 to October 2026. If the days you were enrolled in that period add up to 6 months (180 days) or more, you meet the condition. If you were enrolled for only 3 months (90 days), that's not enough, and a record of 1 year of enrollment from 3 years ago is outside this period, so it isn't counted.<br><br>The 180 days don't need to be consecutive, and they add up even if you change companies in between. That's why checking your enrollment in Section 1 comes first.</p>
+  </div>
+  <p class="body-text"><strong>What if you quit on your own?</strong> As a rule, you can't get it. But you can get it if a <strong>"justifiable reason for leaving"</strong> is recognized. For example: unpaid wages or pay below the minimum wage · working conditions in your contract are very different from reality · discrimination, sexual harassment, or workplace bullying · the company closed or went bankrupt, or you were asked to resign · a commute of 3 hours or more round trip · illness, or needing to care for family · pregnancy, childbirth, or child care · your contract period ended. However, <strong>you need evidence</strong> (text messages, pay records, a medical certificate, etc.).</p>
+  <p class="body-text"><strong>It's also hard to get in these cases</strong><br><br>Unemployment benefit is money for people who are "willing to work but have no job", that is, people who are unemployed. So <strong>if you have a business registration certificate, you're generally not treated as unemployed</strong> (Ministry of Employment and Labor counseling center guidance). The same goes if you're doing other work or have income. The standard is the same for Koreans and foreigners.<br><br>There are exceptions, though. If you only have a business registration but <strong>you're not actually operating</strong>, you can apply by submitting <strong>business closure (or suspension) paperwork</strong>. Rental business owners who only lease out a home or shop (no office, no employees) can sometimes get it. If your situation is unclear, ask the Employment Center or 1350 before you apply.</p>
+  <p class="body-text"><strong>How much do you get? (for those leaving a job in 2026)</strong><br><br>It's calculated as <strong>60%</strong> of your average wage as a daily amount. Each time you get the "unemployment verification" below, you receive that daily amount multiplied by the number of days in that period. The daily cap is 68,100 won and the daily floor is 66,048 won.<br><br>Yes, the gap between the two really is that small. The floor is 80% of the minimum wage (10,320 won per hour) for 8 hours, and the cap is set by law, so the range is narrow. The 60% amount gets pushed into this range, so if your monthly pay is lower than roughly 3,300,000 won you get the floor, and if it's higher you stop at the cap. As a result, most people receive <strong>about 66,000 to 68,000 won per day (roughly 2,000,000 won a month)</strong>.<br><br> You receive it for <strong>120 to 270 days</strong>, depending on how long you were enrolled and your age. <strong>You must apply and receive it within 12 months after leaving your job, and you can't get it after that.</strong> If you apply late, you can't receive the part that falls beyond 12 months, so apply as soon as possible after you leave.</p>
+  <p class="body-text" style="margin-top:44px;"><strong>Steps to apply</strong></p>
+  <ol class="step-list">
+    <li class="step-item">
+      <div class="step-head">
+        <span class="step-badge">1</span>
+        <div class="step-body">
+          <h3>Ask your employer to process the separation certificate</h3>
+          <p>Your employer writes down why you left and submits it to the Employment Center. If the reason is written differently from what really happened (for example, you were dismissed but it says "resigned voluntarily"), you can object at the Employment Center.</p>
+        </div>
+      </div>
+    </li>
+    <li class="step-item">
+      <div class="step-head">
+        <span class="step-badge">2</span>
+        <div class="step-body">
+          <h3>Register as a job seeker on Work24</h3>
+          <p>This is the step where you register online (Work24) that "I'm actively looking for a new job now." Unemployment benefit is money for people who are willing and able to work but can't find a job, so this registration and your job searching afterward matter most. Registering isn't the end. To keep receiving it, you need to do real job-search activities afterward, such as job applications, interviews, job-seeking lectures, and vocational training, and keep records of them.</p>
+        </div>
+      </div>
+    </li>
+    <li class="step-item">
+      <div class="step-head">
+        <span class="step-badge">3</span>
+        <div class="step-body">
+          <h3>Take the eligibility orientation first</h3>
+          <p>This is a session that explains the unemployment benefit system. You must take it before you apply at the Employment Center, and you can choose online or in person. If you take it online, you don't need to go to the center.</p>
+        </div>
+      </div>
+    </li>
+    <li class="step-item">
+      <div class="step-head">
+        <span class="step-badge">4</span>
+        <div class="step-body">
+          <h3>Apply for eligibility at your nearest Employment Center</h3>
+          <p>After finishing the orientation, visit with your Alien Registration Card (ARC) and a copy of your bank book to submit the application form. You don't need a separate trip to the center for the orientation. The visit is just to hand in this application. Some people can submit it online, but in most cases visiting in person is the rule.</p>
+        </div>
+      </div>
+    </li>
+    <li class="step-item">
+      <div class="step-head">
+        <span class="step-badge">5</span>
+        <div class="step-body">
+          <h3>Wait 7 days, then get unemployment verification</h3>
+          <p>After you apply, you wait 7 days. From then on, every 1 to 4 weeks you must prove that "I did job-search activities during that time" to get <strong>unemployment verification (실업인정)</strong>, and the money is usually paid into your own account the day after you're verified. If you didn't do job-search activities or can't prove them, that period isn't recognized, so keep careful records such as your job application history. The Employment Center will explain how verification works and how many times you need it.</p>
+        </div>
+      </div>
+    </li>
+  </ol>
+  <p class="body-text"><strong>Extra care by visa</strong><br><br>① <strong>Non-Professional Employment (E-9)</strong>: Unemployment benefit and <strong>Departure Guarantee Insurance (출국만기보험)</strong> (money you receive instead of severance pay) are completely different systems. Also, if you lose your job, there's a deadline for your stay. Within <strong>1 month from the day your work contract ends, you must file a "workplace change application" (사업장 변경, an application asking to be allowed to work at another company) yourself at the Employment Center for your area of residence</strong> (an exception applies if you couldn't apply because of a work injury or illness, pregnancy or childbirth, etc.), and once a new job is found you must also get permission for a change of workplace from the immigration office. If you don't apply within this deadline, you may have to leave Korea. The period you receive unemployment benefit and the period you're allowed to stay can be different, so be sure to talk to the Foreign Workforce Counseling Center (1577-0071) before you leave your job.<br><br>② <strong>Professional and specific-activity visas (E-7) and other work visas</strong>: If you lose your job, your employer must report it to immigration within 15 days, and you need to move to another company or change your status, for example to Job Seeker (D-10). No official source has been found saying that receiving unemployment benefit hurts your visa, but the more realistic risk is that <strong>you can't stay long on a work visa without a job</strong>.</p>
+  <div class="official-links">
+    <a class="official-link" href="https://www.work24.go.kr" target="_blank" rel="noopener"><svg><use href="#i-link"/></svg>Work24 job seeker registration</a>
+    <a class="official-link" href="https://www.hikorea.go.kr" target="_blank" rel="noopener"><svg><use href="#i-link"/></svg>HiKorea (stay information)</a>
+  </div>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-link"/></svg>
+    <h2 class="block-title">6. Where Can I Ask?</h2>
+  </div>
+  <table class="data-table">
+    <thead>
+      <tr><th>Contact</th><th>What you can ask</th></tr>
+    </thead>
+    <tbody>
+      <tr><td data-label="Contact">Ministry of Employment and Labor Counseling Center <strong>1350</strong></td><td data-label="What you can ask">Labor issues in general, such as unpaid wages, unfair dismissal, and unemployment benefit (check which languages are supported before you use it)</td></tr>
+      <tr><td data-label="Contact">Foreign Workforce Counseling Center <strong>1577-0071</strong></td><td data-label="What you can ask">Counseling for Non-Professional Employment (E-9) workers (supports several languages)</td></tr>
+      <tr><td data-label="Contact">Immigration Contact Center <strong>1345</strong></td><td data-label="What you can ask">Visa and stay issues</td></tr>
+      <tr><td data-label="Contact">Korea Legal Aid Corporation <strong>132</strong></td><td data-label="What you can ask">Free legal advice, support for unpaid wage and Industrial Accident lawsuits</td></tr>
+      <tr><td data-label="Contact">KCOMWEL</td><td data-label="What you can ask">Questions about Industrial Accident Insurance applications and results. Visit a nearby branch or check the website</td></tr>
+    </tbody>
+  </table>
+  <p class="body-text" style="font-size:0.9rem; color:var(--ink-soft);">Some foreign worker support centers closed after their budgets were cut in 2024, so whether one is open differs by region. Always call to check before you go.</p>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-check"/></svg>
+    <h2 class="block-title">To Sum Up</h2>
+  </div>
+  <div class="callout">
+    <div class="callout-head"><svg><use href="#i-info"/></svg>To sum up</div>
+    <p><strong>① While you're working, check your Employment Insurance enrollment status now.</strong> If you're not enrolled, you can't get unemployment benefit when you lose your job.<br><br><strong>② If you're hurt at work</strong>, you can file for Industrial Accident Insurance whatever your visa. Even if your employer suggests an off-the-record settlement, get advice before you sign anything.<br><br><strong>③ If you've lost your job</strong>, check your separation certificate, and apply through Work24 and the Employment Center within 12 months after leaving.<br><br>If it's hard, don't decide alone. Use the counseling contacts in Section 6.</p>
+  </div>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-info"/></svg>
+    <h2 class="block-title">Frequently Asked Questions</h2>
+  </div>
+  <table class="data-table">
+    <thead>
+      <tr><th>Question</th><th>Answer</th></tr>
+    </thead>
+    <tbody>
+      <tr><td data-label="Question">Can I file for Industrial Accident Insurance if I'm staying illegally?</td><td data-label="Answer">Industrial Accident Insurance coverage itself doesn't depend on your residence status. However, no official source has been found on how filing affects your stay, so get advice first from the Korea Legal Aid Corporation (132) or similar before you apply.</td></tr>
+      <tr><td data-label="Question">My employer never enrolled me in the 4 major social insurances. Can I still file for Industrial Accident Insurance?</td><td data-label="Answer">Yes. Even if your employer didn't enroll in Industrial Accident Insurance, the worker can get compensation. In that case, KCOMWEL pays first and collects from the employer.</td></tr>
+      <tr><td data-label="Question">I wasn't enrolled in Employment Insurance. Can I still get unemployment benefit?</td><td data-label="Answer">In principle, it's difficult. You need an enrollment record. However, if you really worked but your employer didn't report it, you can bring proof to the Employment Center and ask them to confirm your enrollment.</td></tr>
+      <tr><td data-label="Question">Will getting unemployment benefit cause problems for my visa?</td><td data-label="Answer">No official source has been found saying that receiving unemployment benefit itself hurts your visa. But a work visa doesn't let you stay long without a job, so check your permitted stay period separately.</td></tr>
+      <tr><td data-label="Question">If I have E-9 Departure Guarantee Insurance, do I not need unemployment benefit?</td><td data-label="Answer">No. They're completely different systems. Departure Guarantee Insurance is money you receive instead of severance pay, while unemployment benefit comes from Employment Insurance.</td></tr>
+    </tbody>
+  </table>
+
+</section>
+
+<section class="block section-gap">
+  <p class="body-text" style="font-size:0.86rem; color:var(--ink-soft);">
+    This guide is for general information only, and visa-by-visa enrollment rules, benefit amounts, and so on may change when laws are amended. For your exact situation, check directly with the Employment Center, KCOMWEL, or the counseling contacts above.
+  </p>
+  <div class="keyword-links">
+    <a class="keyword-link" href="/long-stay/2026-10-01-korea-national-pension-guide-en.html"><svg><use href="#i-link"/></svg>National Pension Guide</a>
+    <a class="keyword-link" href="/long-stay/2026-10-01-korea-health-insurance-guide-en.html"><svg><use href="#i-link"/></svg>Health Insurance Guide</a>
+    <a class="keyword-link" href="/long-stay/2026-09-19-korea-arc-foreign-registration-guide-en.html"><svg><use href="#i-link"/></svg>Alien Registration Card (ARC) Guide</a>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="footer-inner">
+    <span class="mono">K-Rambles · Long-Stay Board</span>
+  </div>
+</footer>
+
+<button type="button" class="scroll-top" aria-label="Back to top">
+  <svg><use href="#i-arrow-up"/></svg>
+</button>
+
+<script>
+(function () {
+  var KEY = 'krambles-fontsize';
+  var STEPS = ['xs', 'sm', 'md', 'lg', 'xl'];
+  var root = document.documentElement;
+  var ctrl = document.querySelector('.font-size-ctrl');
+  if (!ctrl) { return; }
+  var decBtn = ctrl.querySelector('[data-action="dec"]');
+  var incBtn = ctrl.querySelector('[data-action="inc"]');
+  var index = 2;
+
+  function apply(i) {
+    var size = STEPS[i];
+    if (size === 'md') { root.removeAttribute('data-fs'); }
+    else { root.setAttribute('data-fs', size); }
+    decBtn.disabled = i === 0;
+    incBtn.disabled = i === STEPS.length - 1;
+  }
+
+  var saved = 'md';
+  try { saved = localStorage.getItem(KEY) || 'md'; } catch (e) {}
+  index = STEPS.indexOf(saved);
+  if (index === -1) { index = 2; }
+  apply(index);
+
+  decBtn.addEventListener('click', function () {
+    if (index > 0) {
+      index--;
+      apply(index);
+      try { localStorage.setItem(KEY, STEPS[index]); } catch (e) {}
+    }
+  });
+  incBtn.addEventListener('click', function () {
+    if (index < STEPS.length - 1) {
+      index++;
+      apply(index);
+      try { localStorage.setItem(KEY, STEPS[index]); } catch (e) {}
+    }
+  });
+})();
+
+(function () {
+  var btn = document.querySelector('.scroll-top');
+  if (!btn) { return; }
+  function onScroll() {
+    if (window.scrollY > 600) { btn.classList.add('visible'); }
+    else { btn.classList.remove('visible'); }
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  btn.addEventListener('click', function () {
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
+  });
+})();
+
+(function () {
+  function openModal(id) {
+    var modal = document.getElementById(id);
+    if (!modal) { return; }
+    modal.hidden = false;
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal(modal) {
+    modal.hidden = true;
+    document.body.style.overflow = '';
+  }
+  document.querySelectorAll('[data-modal-open]').forEach(function (btn) {
+    btn.addEventListener('click', function () { openModal(btn.getAttribute('data-modal-open')); });
+  });
+  document.querySelectorAll('.modal-overlay').forEach(function (overlay) {
+    overlay.addEventListener('click', function (e) {
+      if (e.target === overlay) { closeModal(overlay); }
+    });
+    overlay.querySelectorAll('[data-modal-close]').forEach(function (btn) {
+      btn.addEventListener('click', function () { closeModal(overlay); });
+    });
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      document.querySelectorAll('.modal-overlay').forEach(function (overlay) {
+        if (!overlay.hidden) { closeModal(overlay); }
+      });
+    }
+  });
+})();
+</script>
+<script src="/assets/js/krambles-render.js"></script>
+<script data-goatcounter="https://krambles.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>

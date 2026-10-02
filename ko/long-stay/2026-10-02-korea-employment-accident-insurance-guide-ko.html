@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>외국인을 위한 한국 고용보험(실업급여)·산재보험 완전정리 | K-Rambles</title>
+<meta name="description" content="일하다 다쳤을 때 산재보험으로 치료·휴업급여를 받는 방법, 공상처리(회사가 몰래 합의하는 것)의 위험, 그리고 실직했을 때 실업급여를 받으려면 지금 고용보험에 가입돼 있는지 미리 확인해야 하는 이유를 정리했어요.">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Work+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap');
+
+  :root {
+    --paper: #ecdfc0;
+    --paper-raised: #fbf8ee;
+    --ink: #372b10;
+    --ink-soft: #6e5c33;
+    --coral: #d9532a;
+    --coral-ink: #9c3b1c;
+    --navy: #1b2a4a;
+    --navy-ink: #26406e;
+    --marigold: #c8891f;
+    --marigold-ink: #8a5c10;
+    --line: rgba(55, 43, 16, 0.16);
+    --line-strong: rgba(55, 43, 16, 0.3);
+    --card-shadow: 0 18px 34px -20px rgba(40, 30, 10, 0.4);
+    --ok: #1a7a3d;
+    --no: #b3261e;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #1b1509; --paper-raised: #2b2211; --ink: #f7f0dd; --ink-soft: #cbb98f;
+      --coral: #ef7448; --coral-ink: #ffb497; --navy: #9fb4e0; --navy-ink: #cfdcf5; --marigold: #e8b24b; --marigold-ink: #ffcf7d;
+      --line: rgba(247,240,221,0.16); --line-strong: rgba(247,240,221,0.3);
+      --card-shadow: 0 18px 34px -18px rgba(0,0,0,0.65);
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #1b1509; --paper-raised: #2b2211; --ink: #f7f0dd; --ink-soft: #cbb98f;
+    --coral: #ef7448; --coral-ink: #ffb497; --navy: #9fb4e0; --navy-ink: #cfdcf5; --marigold: #e8b24b; --marigold-ink: #ffcf7d;
+    --line: rgba(247,240,221,0.16); --line-strong: rgba(247,240,221,0.3);
+    --card-shadow: 0 18px 34px -18px rgba(0,0,0,0.65);
+  }
+
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: "Work Sans", ui-sans-serif, system-ui, sans-serif; font-size: 1.0625rem; line-height: 1.6; -webkit-font-smoothing: antialiased; word-break: keep-all; overflow-wrap: break-word; }
+
+  html { font-size: 100%; }
+  html[data-fs="xs"] { font-size: 85%; }
+  html[data-fs="sm"] { font-size: 92.5%; }
+  html[data-fs="lg"] { font-size: 115%; }
+  html[data-fs="xl"] { font-size: 135%; }
+  .font-size-ctrl { display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--line); border-radius: 100px; padding: 4px 8px; }
+  .fs-labels { display: inline-flex; align-items: baseline; gap: 3px; }
+  .fs-label { font-family: "Work Sans", sans-serif; font-weight: 600; color: var(--ink-soft); line-height: 1; user-select: none; }
+  .fs-label-sm { font-size: 0.68rem; }
+  .fs-label-lg { font-size: 1.15rem; }
+  .fs-step { appearance: none; border: none; background: none; cursor: pointer; color: var(--ink-soft); font-family: "Work Sans", sans-serif; font-weight: 700; font-size: 1.35rem; line-height: 1; width: 30px; height: 30px; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; flex-shrink: 0; }
+  .fs-step:hover:not(:disabled) { background: var(--line); color: var(--ink); }
+  .fs-step:disabled { opacity: 0.32; cursor: default; }
+  a { color: inherit; }
+  .mono { font-family: "Space Mono", ui-monospace, "SF Mono", monospace; }
+  a.mono { color: var(--navy-ink); text-decoration: underline; text-underline-offset: 2px; }
+  a.mono:hover { color: var(--coral-ink); }
+  .keyword-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 6px; }
+  .keyword-link { display: inline-flex; align-items: center; gap: 6px; text-decoration: none; color: var(--ink); background: var(--paper-raised); border: 1px solid var(--line); border-radius: 999px; padding: 8px 14px; font-size: 0.88rem; }
+  .keyword-link:hover { border-color: var(--coral); color: var(--coral-ink); }
+  .keyword-link svg { width: 14px; height: 14px; stroke: var(--ink-soft); fill: none; stroke-width: 2; }
+
+  header.site { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px 20px; padding: 26px 28px; max-width: 820px; margin: 0 auto; }
+  .header-right { display: flex; align-items: center; flex-wrap: wrap; justify-content: flex-end; gap: 10px 16px; }
+  .logo { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 1.2rem; text-decoration: none; white-space: nowrap; }
+  .logo span { color: var(--coral); }
+  .back-link { font-family: "Space Mono", monospace; font-size: 0.78rem; letter-spacing: 0.03em; text-decoration: none; color: var(--ink-soft); display: inline-flex; flex-direction: column; align-items: flex-start; gap: 2px; line-height: 1; white-space: nowrap; }
+  .back-link svg { width: 12px; height: 12px; }
+  .back-link:hover { color: var(--navy-ink); }
+  .lang-switch { display: flex; align-items: center; gap: 6px; font-family: "Space Mono", monospace; font-size: 0.76rem; letter-spacing: 0.03em; }
+  .lang-switch a, .lang-switch span.current { text-decoration: none; padding: 3px 8px; border-radius: 6px; }
+  .lang-switch a { color: var(--ink-soft); }
+  .lang-switch a:hover { color: var(--ink); }
+  .lang-switch span.current { color: var(--ink); font-weight: 700; border: 1px solid var(--line); }
+
+  .art-hero { padding: 10px 28px 24px; max-width: 820px; margin: 0 auto; }
+  .hero-photo-wrap { max-width: 820px; margin: 0 auto 8px; padding: 0 28px; }
+  .hero-photo { display: block; width: 100%; height: auto; border-radius: 16px; box-shadow: var(--card-shadow); border: 1px solid var(--line); }
+  .cite-note { font-size: 0.92rem; color: var(--ink-soft); margin: 10px 0 0; }
+  .stamp { display: inline-flex; align-items: center; gap: 9px; font-family: "Space Mono", monospace; font-size: 0.76rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--navy-ink); border: 1.5px dashed var(--navy); border-radius: 999px; padding: 6px 14px 6px 11px; transform: rotate(-1.5deg); }
+  .stamp::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--navy); display: inline-block; }
+
+  .hero-top { display: flex; align-items: center; gap: 16px; margin: 22px 0 24px; }
+  .hero-icon { width: 40px; height: 40px; stroke: var(--navy-ink); fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; }
+
+  h1.art-title { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: clamp(1.9rem, 4.6vw, 2.7rem); line-height: 1.28; letter-spacing: -0.01em; margin: 0 0 14px; text-wrap: balance; }
+  p.dek { font-size: 1.08rem; color: var(--ink-soft); max-width: 58ch; margin: 0; }
+
+  .updated-badge { display: inline-flex; align-items: center; gap: 7px; font-size: 0.92rem; color: var(--ink-soft); margin: 16px 0 0; }
+  .updated-icon { width: 17px; height: 17px; stroke: var(--navy-ink); fill: none; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+
+  section.block { max-width: 820px; margin: 0 auto; padding: 6px 28px 30px; }
+  section.block.section-gap { padding-top: 30px; }
+
+  .block-head { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+  .block-icon { width: 22px; height: 22px; stroke: var(--navy-ink); fill: none; stroke-width: 1.7; flex-shrink: 0; }
+  .block-title { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 1.3rem; margin: 0; }
+
+  p.body-text { margin: 0 0 14px; }
+  ul.plain-list { list-style: disc; margin: 0 0 14px; padding-left: 1.2em; }
+  ul.plain-list li + li { margin-top: 12px; }
+  ol.plain-list-num { margin: 0 0 14px; padding-left: 1.2em; }
+  ol.plain-list-num li + li { margin-top: 12px; }
+
+  table.data-table { width: 100%; border-collapse: collapse; background: var(--paper-raised); font-size: 0.92rem; margin: 4px 0 18px; word-break: keep-all; overflow-wrap: break-word; }
+  table.data-table th, table.data-table td { text-align: left; padding: 12px 14px; border-bottom: 1px solid var(--line); word-break: keep-all; overflow-wrap: break-word; vertical-align: top; }
+  table.data-table th:first-child, table.data-table td:first-child { padding-left: 16px; }
+  table.data-table th:last-child, table.data-table td:last-child { padding-right: 16px; }
+  table.data-table thead th { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; color: var(--ink-soft); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.03em; border-bottom: 1px solid var(--line-strong); white-space: nowrap; }
+  table.data-table tbody tr:last-child td { border-bottom: none; }
+  table.data-table td p, table.data-table td ul { margin: 0; }
+  table.data-table td ul { padding-left: 1.1em; }
+  table.data-table td li + li, table.data-table td p + p { margin-top: 6px; }
+
+  /* On narrow screens, tables flip from columns to stacked cards so no column gets squeezed into a one-character-wide strip. */
+  @media (max-width: 640px) {
+    table.data-table { display: block; }
+    table.data-table thead { display: none; }
+    table.data-table tbody { display: block; }
+    table.data-table tr { display: block; padding: 14px 16px; margin-bottom: 12px; border: 1px solid var(--line); border-radius: 12px; background: var(--paper-raised); }
+    table.data-table tr:last-child { margin-bottom: 0; }
+    table.data-table td { display: block; padding: 8px 0; border-bottom: 1px solid var(--line); }
+    table.data-table td:first-child { padding-left: 0; }
+    table.data-table td:last-child { padding-right: 0; border-bottom: none; }
+    table.data-table td::before { content: attr(data-label); display: block; font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; color: var(--ink-soft); font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.03em; margin-bottom: 4px; }
+  }
+
+  .callout { background: var(--paper-raised); border: 1px solid var(--line); border-left: 3px solid var(--marigold); border-radius: 12px; padding: 18px 20px; margin: 16px 0 0; box-shadow: var(--card-shadow); }
+  .callout-head { display: flex; align-items: center; gap: 8px; font-weight: 700; margin-bottom: 8px; }
+  .callout-head svg { width: 18px; height: 18px; stroke: var(--marigold-ink); fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+  .callout p { margin: 0; font-size: 0.95rem; color: var(--ink-soft); }
+  .callout p + p { margin-top: 8px; }
+  .callout strong.warn { color: var(--coral-ink); }
+
+  .step-list { list-style: none; margin: 6px 0 0; padding: 0; display: flex; flex-direction: column; gap: 24px; }
+  .step-item { display: flex; flex-direction: column; gap: 8px; }
+  .step-head { display: flex; align-items: flex-start; gap: 12px; }
+  .step-badge { width: 28px; height: 28px; border-radius: 50%; background: var(--coral); color: #fff5ee; font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 0.9rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .step-body h3 { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 1.0rem; margin: 2px 0 4px; }
+  .step-body p { margin: 0; font-size: 0.93rem; color: color-mix(in srgb, var(--ink) 60%, var(--ink-soft)); }
+
+  .official-links { display: flex; flex-wrap: wrap; gap: 10px; margin: 14px 0 0; }
+  .official-link { display: inline-flex; align-items: center; gap: 6px; text-decoration: none; color: var(--ink); background: var(--paper-raised); border: 1px solid var(--line); border-radius: 999px; padding: 8px 14px; font-size: 0.86rem; }
+  .official-link:hover { border-color: var(--navy); color: var(--navy-ink); }
+  .official-link svg { width: 14px; height: 14px; stroke: var(--ink-soft); fill: none; stroke-width: 2; }
+
+  .scroll-top { position: fixed; right: 20px; bottom: 20px; width: 46px; height: 46px; border-radius: 50%; background: var(--coral); color: #fff5ee; display: flex; align-items: center; justify-content: center; box-shadow: var(--card-shadow); border: none; cursor: pointer; opacity: 0; pointer-events: none; transition: opacity 0.2s ease, transform 0.15s ease; z-index: 40; }
+  .scroll-top.visible { opacity: 1; pointer-events: auto; }
+  .scroll-top:hover { transform: translateY(-3px); background: var(--coral-ink); }
+  .scroll-top svg { width: 20px; height: 20px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  @media (prefers-reduced-motion: reduce) { .scroll-top { transition: none; } }
+
+  footer.site { border-top: 1px solid var(--line); padding: 24px 28px 40px; }
+  .footer-inner { max-width: 820px; margin: 0 auto; }
+  .footer-inner .mono { font-size: 0.76rem; color: var(--ink-soft); }
+
+  section.block > * + *, .shop-card > * + * { margin-top: 18px; }
+
+  @media (max-width: 400px) {
+    header.site { padding: 18px 16px; flex-wrap: wrap; row-gap: 10px; }
+    .logo { font-size: 1.02rem; }
+    .header-right { gap: 10px; flex-wrap: wrap; }
+    .art-hero, section.block { padding-left: 16px; padding-right: 16px; }
+  }
+  @media (max-width: 340px) {
+    .logo { font-size: 0.9rem; }
+    .font-size-ctrl { padding: 3px 6px; gap: 5px; }
+  }
+
+  button.official-link { font-family: "Work Sans", sans-serif; }
+
+  .modal-overlay { position: fixed; inset: 0; background: rgba(20, 15, 5, 0.52); display: flex; align-items: flex-end; justify-content: center; z-index: 60; padding: 0; }
+  .modal-overlay[hidden] { display: none; }
+  .modal-card { background: var(--paper-raised); color: var(--ink); width: 100%; max-width: 680px; max-height: 82vh; border-radius: 18px 18px 0 0; box-shadow: var(--card-shadow); padding: 22px 22px calc(22px + env(safe-area-inset-bottom, 0px)); overflow-y: auto; border: 1px solid var(--line); border-bottom: none; }
+  @media (min-width: 720px) {
+    .modal-overlay { align-items: center; }
+    .modal-card { border-radius: 18px; border-bottom: 1px solid var(--line); max-height: 78vh; }
+  }
+  .modal-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 8px; }
+  .modal-head h3 { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 1.1rem; margin: 0; }
+  .modal-close { appearance: none; border: none; background: var(--line); color: var(--ink); width: 30px; height: 30px; border-radius: 50%; font-size: 1.3rem; line-height: 1; cursor: pointer; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
+  .modal-close:hover { background: var(--coral); color: #fff5ee; }
+  .modal-source { font-size: 0.84rem; color: var(--ink-soft); margin: 0 0 16px; }
+  .modal-group + .modal-group { margin-top: 18px; }
+  .modal-group h4 { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 0.95rem; margin: 0 0 6px; display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+  .modal-count { font-family: "Space Mono", monospace; font-weight: 400; font-size: 0.78rem; color: var(--ink-soft); }
+  .modal-countries { font-size: 0.9rem; color: var(--ink-soft); margin: 0; line-height: 1.7; }
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-doc" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.5 4 5.5 4 9s-1.5 6.5-4 9c-2.5-2.5-4-5.5-4-9s1.5-6.5 4-9Z"/></symbol>
+  <symbol id="i-pass" viewBox="0 0 24 24"><path d="M4 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v1.3a1.5 1.5 0 0 0 0 2.9V13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-1.3a1.5 1.5 0 0 0 0-2.9Z" transform="translate(0 2)"/><path d="M9 6.5v11" stroke-dasharray="2 2" transform="translate(0 2)"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M4 12.5 9.5 18 20 6.5"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5.5M12 8v.01"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 9.8h17M8 2.5v5M16 2.5v5"/></symbol>
+  <symbol id="i-link" viewBox="0 0 24 24"><path d="M9.5 14.5 14.5 9.5"/><path d="M8.3 11.7l-1.6 1.6a3 3 0 0 0 4.2 4.2l1.6-1.6"/><path d="M15.7 12.3l1.6-1.6a3 3 0 0 0-4.2-4.2l-1.6 1.6"/></symbol>
+  <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></symbol>
+</svg>
+
+<header class="site">
+  <a class="logo" href="/ko/index.html">K-<span>Rambles</span></a>
+  <div class="header-right">
+    <a class="back-link" href="/ko/long-stay/index.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+      보드로 돌아가기
+    </a>
+    <div class="font-size-ctrl" role="group" aria-label="Text size"><button type="button" class="fs-step" data-action="dec" aria-label="Decrease text size">−</button><span class="fs-labels" aria-hidden="true"><span class="fs-label fs-label-sm">가</span><span class="fs-label fs-label-lg">가</span></span><button type="button" class="fs-step" data-action="inc" aria-label="Increase text size">+</button></div>
+    <div class="lang-switch" aria-label="Language" data-key="long-stay/2026-10-02-korea-employment-accident-insurance-guide-en"></div>
+  </div>
+</header>
+
+<div class="art-hero">
+  <div class="hero-top">
+    <span class="stamp">장기체류 · 보드 10</span>
+    <svg class="hero-icon"><use href="#i-doc"/></svg>
+  </div>
+  <h1 class="art-title">외국인을 위한 한국 고용보험(실업급여)·산재보험 완전정리</h1>
+  <p class="dek">다치거나 실직하기 전에 미리 알아둬야 할 두 가지 보험이에요. 산재보험은 누구나 받을 수 있지만, 고용보험(실업급여)은 비자에 따라 가입이 자동이 아닐 수 있어서 지금 내 상태부터 확인해두는 게 중요해요.</p>
+  <p class="updated-badge"><svg class="updated-icon"><use href="#i-calendar"/></svg>2026년 10월 기준</p>
+</div>
+
+
+
+
+<!-- 출처(개정사항 체크 시 참고) — 2026-10-02 확인
+  산재: 산업재해보상보험법 (law.go.kr) / 근로복지공단 https://www.comwel.or.kr / 고용·산재보험 토탈서비스 https://total.comwel.or.kr
+  고용보험 가입(외국인): 고용보험법 시행령 제3조의3, 법제처 해석례 21-0680(2022.1.19, 임의가입은 근로자 신청 + 사업주 동의), 고용노동부 통영지청 안내(E-9·H-2는 실업급여 별도 신청)
+  실업급여 2026: 상한 68,100원/일, 하한 66,048원/일, 급여율 60%, 소정급여일수 120~270일, 수급 기한 이직 후 12개월
+  사업자등록 시 수급: 고용노동부 상담센터 FAQ https://1350.moel.go.kr/home/hp/data/faqView.do?faq_idx=1000001163 (원칙적으로 실업자로 볼 수 없음, 예외: 임대사업자·영업 없는 경우 폐업/휴업 서류 제출·다단계 소비회원)
+  신청 절차(구직신청→교육(신청 전 선수강)→고용센터 수급자격 신청→1~4주 실업인정→인정 다음 날 입금): 고용24 제도안내 https://m.work24.go.kr/cm/c/f/1100/selecSystInfo.do?systId=SI00000411&systCnntId=&systClId=SC00000254
+  상·하한액: 하한 = 2026 최저임금 10,320원 x 80% x 8시간 = 66,048원, 상한 68,100원(복수 보도 확인). 월급 약 330만 원 = 일 평균임금 약 11만 원 기준 계산
+  E-9 사업장 변경(고용센터 신청, 계약 종료 후 1개월, 출입국 근무처 변경 허가, 기한 초과 시 출국): 생활법령정보 https://easylaw.go.kr/CSP/CnpClsMain.laf?popMenu=ov&csmSeq=2042&ccfNo=3&cciNo=2&cnpClsNo=1
+  미확인으로 본문에서 제외·완화한 항목: 산재 신청이 출입국 통보로 이어지는지, 반복수급 감액 시행 여부, 근로복지공단 대표번호, 1350 지원 언어, 시행령 별표(F-2 하위자격, H-2→F-4 통합 후 처리)
+-->
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-info"/></svg>
+    <h2 class="block-title">핵심 요약</h2>
+  </div>
+  <div class="callout">
+    <div class="callout-head"><svg><use href="#i-info"/></svg>한 줄 결론</div>
+    <p><strong>① 산재보험</strong>(일하다 다치거나 병이 났을 때 치료비와 쉬는 동안의 생활비를 주는 보험)은 <strong>비자와 상관없이, 회사가 가입을 안 했어도</strong> 신청할 수 있어요. 보험료는 전액 회사가 내요.<br><br><strong>② 고용보험</strong>(실직했을 때 실업급여를 주는 보험)은 달라요. 외국인은 <strong>비자에 따라 자동 가입이 아닐 수 있어서</strong>, 일하는 동안 미리 "나는 가입돼 있나?"를 확인해두지 않으면 정작 실직했을 때 받을 수 없어요.<br><br><strong>③ 가장 조심할 것:</strong> 사고가 났는데 회사가 "산재 하지 말고 우리가 알아서 해줄게"라고 하면(<strong>공상처리</strong>), 지금은 편해 보여도 나중에 치료가 길어지거나 후유증이 생기면 보호받기 어려워요. 4장에서 자세히 설명해요.</p>
+  </div>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-doc"/></svg>
+    <h2 class="block-title">먼저 용어부터 정리해요</h2>
+  </div>
+  <p class="body-text">이 글에는 한국어 행정 용어가 많이 나와요. 처음 보면 어려우니, 먼저 표로 한꺼번에 정리할게요. 읽다가 모르는 단어가 나오면 여기로 돌아오세요.</p>
+  <table class="data-table">
+    <thead>
+      <tr><th>용어</th><th>쉬운 설명</th></tr>
+    </thead>
+    <tbody>
+      <tr><td data-label="용어">산재보험(산업재해보상보험)</td><td data-label="쉬운 설명">일하다 다치거나(업무상 사고) 일 때문에 병이 났을 때(업무상 질병) 치료비와 생활비를 국가(근로복지공단)가 주는 보험. 줄여서 "산재"라고 불러요</td></tr>
+      <tr><td data-label="용어">고용보험</td><td data-label="쉬운 설명">실직했을 때 실업급여를 주고, 구직 활동과 직업훈련을 도와주는 보험</td></tr>
+      <tr><td data-label="용어">실업급여(구직급여)</td><td data-label="쉬운 설명">일자리를 잃었을 때, 새 일자리를 구하는 동안 받는 돈. 금액은 하루 단위로 계산하고, 실제로는 1~4주마다 그 기간만큼 모아서 받아요. 법적인 공식 이름은 "구직급여"예요</td></tr>
+      <tr><td data-label="용어">근로복지공단</td><td data-label="쉬운 설명">산재보험을 운영하는 기관. 치료비 승인, 휴업급여 지급을 여기서 결정해요</td></tr>
+      <tr><td data-label="용어">고용센터</td><td data-label="쉬운 설명">고용보험(실업급여)을 담당하는 고용노동부 지역 사무소. 실업급여는 여기서 신청해요</td></tr>
+      <tr><td data-label="용어">요양급여</td><td data-label="쉬운 설명">산재로 치료받는 비용(병원비·약값 등)을 지원해주는 돈. 승인되면 본인 부담 없이 치료받는 게 원칙이에요</td></tr>
+      <tr><td data-label="용어">휴업급여</td><td data-label="쉬운 설명">산재 치료 때문에 일을 못 하는 동안, 평소 임금의 약 70%를 주는 돈</td></tr>
+      <tr><td data-label="용어">공상처리</td><td data-label="쉬운 설명">산재 신청을 하지 않고, 회사가 치료비 등을 직접 해결해주겠다고 하는 것. 법적 보호 장치가 없는 사적인 합의예요</td></tr>
+      <tr><td data-label="용어">이직확인서</td><td data-label="쉬운 설명">회사를 그만둘 때, 회사가 "이 사람은 이런 이유로 퇴사했다"고 고용센터에 제출하는 서류. 실업급여 심사에서 가장 중요한 서류예요</td></tr>
+      <tr><td data-label="용어">피보험단위기간</td><td data-label="쉬운 설명">고용보험에 가입해서 보험료를 낸 날짜 수. 실업급여를 받으려면 일정 기간 이상 채워야 해요</td></tr>
+      <tr><td data-label="용어">사업장</td><td data-label="쉬운 설명">근로자가 일하는 회사(공장, 농장, 가게 등 일하는 곳). 그 회사의 대표(고용주)는 "사업주"라고 불러요</td></tr>
+      <tr><td data-label="용어">사업장 변경(E-9)</td><td data-label="쉬운 설명">E-9 근로자가 지금 일하는 회사를 떠나 다른 회사로 옮기는 것. 마음대로 옮길 수 없고, 정당한 사유가 있을 때 고용센터에 신청하고 허가를 받아야 해요</td></tr>
+      <tr><td data-label="용어">임의가입</td><td data-label="쉬운 설명">법으로 자동 가입되는 게 아니라, 본인이 신청해서 가입하는 방식. 외국인 고용보험은 비자에 따라 이 방식이 많아요</td></tr>
+      <tr><td data-label="용어">고용24</td><td data-label="쉬운 설명">구직 신청, 실업급여 신청 등을 온라인으로 하는 고용노동부 사이트(work24.go.kr)</td></tr>
+    </tbody>
+  </table>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-check"/></svg>
+    <h2 class="block-title">1. 가장 먼저: 지금 내가 고용보험에 가입돼 있나?</h2>
+  </div>
+  <div class="callout">
+    <div class="callout-head"><svg><use href="#i-info"/></svg>왜 미리 확인해야 하나</div>
+    <p><strong>산재는 사고가 난 뒤에 해도 되지만, 고용보험은 미리 확인해둬야 해요.</strong><br><br>실업급여는 <strong>"회사를 그만둔 날부터 과거 18개월이라는 기간 안에 고용보험에 가입했던 날이 총 180일 이상"</strong>이어야 받을 수 있어요. 18개월보다 더 과거에 고용보험에 가입되어 있던 기간은 이 180일 안에 포함되지 않아요.<br><br>일은 했어도 <strong>고용보험에 가입되지 않았던 기간은 날수에 들어가지 않아요.</strong> 예를 들어 가입 없이 1년을 일하다 그만뒀다면, 그 1년은 0일로 계산돼서 실업급여를 받을 수 없어요.</p>
+  </div>
+  <p class="body-text">한국인은 직장에 취업하면 고용보험이 자동으로 가입돼요. 하지만 외국인은 <strong>비자에 따라 달라요.</strong> 아래는 일반적인 구분이에요(2026년 10월 기준, 세부 기준은 시행령이 바뀔 수 있어요).</p>
+  <table class="data-table">
+    <thead>
+      <tr><th>구분</th><th>해당 비자(예시)</th><th>고용보험(실업급여)</th></tr>
+    </thead>
+    <tbody>
+      <tr><td data-label="구분">자동 가입(당연적용)</td><td data-label="해당 비자(예시)">영주(F-5), 결혼이민(F-6), 거주(F-2) 중 일부</td><td data-label="고용보험(실업급여)">한국인처럼 입사하면 자동으로 가입돼요</td></tr>
+      <tr><td data-label="구분">본인 신청으로 가입(임의가입)</td><td data-label="해당 비자(예시)">전문직·특정활동(E-1~E-7), 재외동포(F-4), 단기취업(C-4) 등</td><td data-label="고용보험(실업급여)">자동이 아니에요. 본인이 신청하고 <strong>회사의 동의도 필요</strong>해요(법제처 해석). 회사가 모르거나 동의하지 않으면 가입이 안 된 채로 일하고 있을 수 있어요</td></tr>
+      <tr><td data-label="구분">일부만 자동</td><td data-label="해당 비자(예시)">비전문취업(E-9), 방문취업(H-2)</td><td data-label="고용보험(실업급여)">고용안정·직업능력개발 사업 보험료만 자동이고, <strong>실업급여는 별도로 신청해야 해요</strong></td></tr>
+    </tbody>
+  </table>
+  <p class="body-text" style="font-size:0.9rem; color:var(--ink-soft);">비자별 세부 기준은 시행령(법령)이 개정되면서 바뀔 수 있어요. 정확한 본인 상태는 아래 방법으로 직접 확인하는 게 가장 확실해요.</p>
+  <p class="body-text"><strong>내 가입 상태 확인하는 법</strong><br><br>① <strong>월급 명세서</strong>에 "고용보험" 공제 항목이 있는지 보세요. 없다면 가입이 안 돼 있을 가능성이 커요.<br><br>② <strong>고용24(work24.go.kr)</strong>나 <strong>근로복지공단 고용·산재보험 토탈서비스</strong>(total.comwel.or.kr)에서 로그인 후 "피보험자격 이력"을 조회할 수 있어요. 본인이 한국어로 하기 어려우면 가까운 고용센터에 외국인등록증(ARC)을 가지고 방문해 문의하세요.<br><br>③ 가입이 안 돼 있다면, 회사에 가입을 요청하고 고용센터에 신청 방법을 물어보세요. 혼자 해결이 어려우면 6장의 상담 연락처를 이용하세요.</p>
+  <div class="official-links">
+    <a class="official-link" href="https://www.work24.go.kr" target="_blank" rel="noopener"><svg><use href="#i-link"/></svg>고용24 바로가기</a>
+    <a class="official-link" href="https://total.comwel.or.kr" target="_blank" rel="noopener"><svg><use href="#i-link"/></svg>고용·산재보험 토탈서비스</a>
+  </div>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-info"/></svg>
+    <h2 class="block-title">2. 일하다 다쳤다면: 산재보험</h2>
+  </div>
+  <p class="body-text">산재보험은 <strong>외국인이든, 비자 종류가 무엇이든, 체류자격이 없는 상태이든</strong> 일하다 다쳤다면 적용돼요(대법원 판례도 같은 입장이에요). 보험료는 전액 회사가 내고, 근로자는 한 푼도 안 내요. 그리고 <strong>회사가 산재보험에 가입하지 않았더라도</strong> 근로자는 보상을 받을 수 있어요. 이 경우 공단이 먼저 지급하고 나중에 회사에서 받아가요.</p>
+  <div class="callout">
+    <div class="callout-head"><svg><use href="#i-info"/></svg>산재로 받을 수 있는 것</div>
+    <p><strong>① 요양급여</strong> — 치료비를 지원해줘요.<br><br><strong>② 휴업급여</strong> — 치료 때문에 일을 못 하는 기간에 평소 임금의 약 70%를 줘요.<br><br><strong>③ 장해급여</strong> — 치료 후에도 장애가 남으면 정도에 따라 받아요.<br><br><strong>④ 유족급여</strong> — 사고로 사망한 경우 가족이 받아요.</p>
+  </div>
+  <p class="body-text" style="margin-top:44px;"><strong>신청 순서</strong></p>
+  <ol class="step-list">
+    <li class="step-item">
+      <div class="step-head">
+        <span class="step-badge">1</span>
+        <div class="step-body">
+          <h3>치료부터 받고, 증거를 남겨요</h3>
+          <p>병원에서 "일하다 다쳤다"고 분명히 말하세요(건강보험으로 처리하면 나중에 복잡해져요). 다친 곳과 현장 사진, 회사와 주고받은 메시지, 목격자 연락처를 모아두세요.</p>
+        </div>
+      </div>
+    </li>
+    <li class="step-item">
+      <div class="step-head">
+        <span class="step-badge">2</span>
+        <div class="step-body">
+          <h3>요양급여 신청서를 준비해요</h3>
+          <p>"요양급여신청서"와 병원이 쓰는 "요양급여신청소견서"가 필요해요. 병원에 산재 신청을 하고 싶다고 말하면 안내해줘요.</p>
+        </div>
+      </div>
+    </li>
+    <li class="step-item">
+      <div class="step-head">
+        <span class="step-badge">3</span>
+        <div class="step-body">
+          <h3>근로복지공단에 제출해요</h3>
+          <p>가까운 근로복지공단 지사에 가거나, 고용·산재보험 토탈서비스에서 온라인으로 낼 수 있어요. 산재 지정 병원이면 병원이 대신 신청해주기도 해요.</p>
+        </div>
+      </div>
+    </li>
+    <li class="step-item">
+      <div class="step-head">
+        <span class="step-badge">4</span>
+        <div class="step-body">
+          <h3>회사 서명은 꼭 필요하지 않아요</h3>
+          <p>회사가 서명을 거부해도 신청할 수 있어요. 공단이 직접 회사에 알려요.</p>
+        </div>
+      </div>
+    </li>
+    <li class="step-item">
+      <div class="step-head">
+        <span class="step-badge">5</span>
+        <div class="step-body">
+          <h3>결과를 기다려요</h3>
+          <p>법에서 정한 처리 기간은 원칙적으로 7일이에요. 다만 조사나 심의가 필요하면 더 걸릴 수 있고, 일 때문에 생긴 병(업무상 질병)은 훨씬 오래 걸리는 경우가 많아요.</p>
+        </div>
+      </div>
+    </li>
+  </ol>
+  <p class="body-text" style="margin-top:44px;"><strong>알아둘 점</strong><br><br>① <strong>신청 기한</strong>: 요양급여·휴업급여는 3년, 장해급여·유족급여는 5년 안에 청구해야 해요(소멸시효). 다만 치료가 끝나지 않았다면 가능한 한 빨리 신청하는 게 좋아요.<br><br>② <strong>해고 금지</strong>: 일하다 다쳐서 치료 중인 기간과 그 후 30일 동안은 회사가 해고하지 못하는 게 원칙이에요(근로기준법). 산재를 신청했다는 이유로 불이익을 주는 것도 법으로 금지돼 있어요.<br><br>③ <strong>산재 인정이 거절되면</strong> 심사청구 → 재심사청구 → 행정소송 순서로 다툴 수 있어요.<br><br>④ <strong>체류에 미치는 영향</strong>: 산재로 오래 치료해야 하는 경우, 체류자격을 산재 치료용(G-1)으로 바꿔 체류를 이어갈 수 있는 길이 있어요. 다만 이것은 자동으로 받는 권리가 아니고 사안마다 출입국 당국이 판단해요. 체류에 불안이 있다면 신청 전에 6장의 상담 연락처로 먼저 문의하세요.</p>
+  <p class="body-text" style="font-size:0.9rem; color:var(--ink-soft);">산재 처리와 별개로, 일 때문이 아닌 사고·질병은 건강보험이나 개인이 가입한 외국인 전용 상해보험으로 따로 처리하게 돼요.</p>
+  <div class="official-links">
+    <a class="official-link" href="https://www.comwel.or.kr" target="_blank" rel="noopener"><svg><use href="#i-link"/></svg>근로복지공단</a>
+    <a class="official-link" href="https://total.comwel.or.kr" target="_blank" rel="noopener"><svg><use href="#i-link"/></svg>고용·산재보험 토탈서비스</a>
+  </div>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-globe"/></svg>
+    <h2 class="block-title">3. 비자·합법 체류와 산재: 알아둘 점</h2>
+  </div>
+  <p class="body-text"><strong>비전문취업(E-9) 근로자</strong>는 일하다 다쳐서 그 회사에서 더 일할 수 없는 경우, 사업장을 바꿀 수 있는 사유가 인정돼요. 평소 사업장 변경 기한(원칙적으로 1개월)도 산재 치료 기간만큼 연장되는 것으로 알려져 있으니, 해당되면 외국인력상담센터(1577-0071)에 문의하세요.</p>
+  <p class="body-text"><strong>체류자격이 없는(불법체류) 상태</strong>여도 산재보험 자체는 신청할 수 있어요. 다만 신청 과정에서 출입국 단속·통보가 어떻게 되는지는 이 글에서 확인된 공식 근거가 없어요. 무조건 안전하다고 단정할 수 없으니, 이런 경우는 반드시 법률구조공단(132)이나 외국인 지원 단체에 먼저 상담하세요.</p>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-info"/></svg>
+    <h2 class="block-title">4. 공상처리, 이런 말을 들으면 조심하세요</h2>
+  </div>
+  <div class="callout">
+    <div class="callout-head"><svg><use href="#i-info"/></svg>공상처리가 뭔가요</div>
+    <p><strong>공상처리</strong>란 산재 신청을 하지 않고, 회사가 치료비 등을 직접 해결해주겠다고 하는 거예요. 법에 정해진 제도가 아니라 <strong>회사와 근로자 사이의 사적인 약속</strong>이에요.</p>
+  </div>
+  <table class="data-table">
+    <thead>
+      <tr><th>공식 산재</th><th>공상처리</th></tr>
+    </thead>
+    <tbody>
+      <tr><td data-label="공식 산재">국가(근로복지공단)가 치료비·휴업급여를 줘요</td><td data-label="공상처리">회사가 주겠다고 한 만큼만, 회사 마음에 따라 줘요</td></tr>
+      <tr><td data-label="공식 산재">공식 기록이 남아요</td><td data-label="공상처리">아무 기록이 안 남아요. 나중에 다쳤다는 증거도 약해져요</td></tr>
+      <tr><td data-label="공식 산재">치료가 길어지거나 재발해도 보장돼요</td><td data-label="공상처리">회사가 중간에 "더는 못 준다"고 해도 따질 방법이 약해요</td></tr>
+      <tr><td data-label="공식 산재">장해등급을 받아 후유증 보상을 받을 수 있어요</td><td data-label="공상처리">후유증이 남아도 법적 보상을 받기 어려워요</td></tr>
+    </tbody>
+  </table>
+  <p class="body-text"><strong>회사가 왜 공상처리를 권할까요?</strong> "산재를 하면 보험료가 오른다"는 말은 사실 대부분 과장이에요(보험료가 사고 이력에 따라 달라지는 곳은 일정 규모 이상 사업장이에요). 실제 이유는 노동청 조사, 중대재해 공표, 입찰 불이익, 안전관리 책임 같은 부담을 피하려는 경우가 많아요. 그런 부담은 회사의 문제이고, 근로자가 치료와 보상을 포기할 이유는 아니에요.</p>
+  <p class="body-text"><strong>이런 말을 들으면 의심해보세요</strong><br><br>"산재 하면 잘린다 / 비자에 문제 생긴다" · "병원에서 일하다 다쳤다고 말하지 마라" · "그냥 건강보험으로 치료받아라" · "앞으로 일체 청구하지 않겠다"는 서류에 서명하라고 하는 경우 · 회사 직원이 병원에 계속 따라다니는 경우</p>
+  <p class="body-text"><strong>이미 공상으로 합의했어도</strong> 법에서 정한 기간 안이라면 나중에 산재를 신청할 수 있어요. 다만 이미 받은 돈이 일부 공제될 수 있어요. 서명하기 전에 상담받는 게 가장 좋아요.</p>
+  <p class="body-text" style="font-size:0.9rem; color:var(--ink-soft);">참고로 산재를 숨기거나 숨기도록 시키는 것은 회사에 대한 처벌 대상이고(산업안전보건법), 산재를 신청했다는 이유로 불이익을 주는 것도 처벌 대상이에요. 회사가 법을 어기고 있다는 걸 알아두면 압박에 흔들리지 않을 수 있어요.</p>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-check"/></svg>
+    <h2 class="block-title">5. 실직했을 때: 실업급여 받는 법</h2>
+  </div>
+  <div class="callout">
+    <div class="callout-head"><svg><use href="#i-info"/></svg>받을 수 있는 조건</div>
+    <p>실업급여는 <strong>고용보험에 가입한 날이 180일 이상</strong>이고, <strong>본인 잘못이 아닌 이유로 일자리를 잃은 경우</strong>에 받아요.<br><br>여기서 <strong>18개월</strong>은 "가입 기록을 얼마나 최근 것까지 봐주느냐"를 정한 기간이에요. 회사를 그만둔 날부터 과거 18개월이라는 기간 안에 고용보험에 가입했던 날을 모두 더해서 180일(약 6개월) 이상이면 돼요. 18개월보다 더 과거에 고용보험에 가입되어 있던 기간은 이 180일 안에 포함되지 않아요.<br><br><strong>예시:</strong> 2026년 10월 말에 퇴사하면 심사 대상은 2025년 5월~2026년 10월이에요. 이 기간에 가입했던 날이 합쳐서 6개월(180일) 이상이면 조건을 채워요. 3개월(90일)만 가입돼 있었다면 부족하고, 3년 전에 1년 가입했던 기록은 이 기간 밖이라 인정되지 않아요.<br><br>연속으로 180일일 필요는 없고, 중간에 회사를 옮겨도 합산돼요. 그래서 1장의 가입 확인이 먼저예요.</p>
+  </div>
+  <p class="body-text"><strong>스스로 그만뒀다면?</strong> 원칙적으로 못 받아요. 다만 <strong>"정당한 이직 사유"</strong>가 인정되면 받을 수 있어요. 예를 들어 이런 경우예요. 임금이 밀렸거나 최저임금에 못 미침 · 계약한 근로조건이 실제와 크게 다름 · 차별, 성희롱, 직장 내 괴롭힘 · 회사 폐업·도산, 권고사직 · 통근 시간이 왕복 3시간 이상 · 몸이 아프거나 가족을 간호해야 함 · 임신·출산·육아 · 계약 기간 만료. 단, <strong>증거가 필요</strong>해요(문자, 급여 내역, 진단서 등).</p>
+  <p class="body-text"><strong>이런 경우도 받기 어려워요</strong><br><br>실업급여는 "일하고 싶은데 일자리가 없는 상태", 즉 실업 상태일 때 주는 돈이에요. 그래서 <strong>사업자등록증이 있으면 원칙적으로 실업자로 보지 않아요</strong>(고용노동부 상담센터 안내). 다른 일을 하고 있거나 소득이 있는 경우도 마찬가지예요. 한국인과 외국인 모두 같은 기준이에요.<br><br>다만 예외가 있어요. 사업자등록만 있고 <strong>실제로는 영업을 안 하는 경우</strong>에는 <strong>폐업(또는 휴업) 신고 서류</strong>를 내고 신청할 수 있어요. 집이나 상가를 임대만 하는 임대사업자(사무실·직원 없음)는 받을 수 있는 경우도 있어요. 본인 상황이 애매하면 신청 전에 고용센터나 1350에 먼저 문의하세요.</p>
+  <p class="body-text"><strong>얼마나 받나요? (2026년 퇴사 기준)</strong><br><br>평균 임금의 <strong>60%</strong>를 하루치 금액으로 계산하고, 아래 "실업인정"을 받을 때마다 그 기간의 일수만큼 모아서 받아요. 상한은 하루 68,100원, 하한은 하루 66,048원이에요.<br><br>둘의 차이가 거의 없는 게 맞아요. 하한은 최저임금(시급 10,320원)의 80%로 8시간을 계산한 금액이고, 상한은 법으로 정해진 금액이라 간격이 좁아요. 60%로 계산한 금액이 이 범위 안으로 맞춰지기 때문에, 월급이 대략 330만 원보다 낮으면 하한액을 받고 그보다 높아도 상한액에서 멈춰요. 결과적으로 대부분 <strong>하루 약 6만 6천~6만 8천 원(한 달 약 200만 원 안팎)</strong>을 받게 돼요.<br><br> 받는 기간은 가입 기간과 나이에 따라 <strong>120일~270일</strong>이에요. 퇴사 후 <strong>12개월 안에 신청하고 받아야 하고, 그 뒤에는 못 받아요.</strong> 늦게 신청하면 12개월이 지난 부분은 받을 수 없으니, 퇴사하면 가능한 한 빨리 신청하세요.</p>
+  <p class="body-text" style="margin-top:44px;"><strong>신청 순서</strong></p>
+  <ol class="step-list">
+    <li class="step-item">
+      <div class="step-head">
+        <span class="step-badge">1</span>
+        <div class="step-body">
+          <h3>회사에 이직확인서 처리를 요청해요</h3>
+          <p>회사가 퇴사 이유를 적어서 고용센터에 제출해요. 이유가 실제와 다르게 적혔다면(예: 해고인데 "자진 퇴사"로 적힘) 고용센터에 이의를 제기할 수 있어요.</p>
+        </div>
+      </div>
+    </li>
+    <li class="step-item">
+      <div class="step-head">
+        <span class="step-badge">2</span>
+        <div class="step-body">
+          <h3>고용24에서 구직 신청을 해요</h3>
+          <p>"나는 지금 적극적으로 새 일자리를 찾고 있다"고 온라인(고용24)에 등록하는 단계예요. 실업급여는 일할 의사와 능력이 있는데도 일자리를 못 구한 사람에게 주는 돈이라서, 이 구직 등록과 그 뒤의 구직 활동이 가장 중요해요. 등록으로 끝나는 게 아니라, 이후에 입사 지원, 면접, 취업 특강, 직업훈련 같은 실제 구직 활동을 하고 그 기록을 남겨야 계속 받을 수 있어요.</p>
+        </div>
+      </div>
+    </li>
+    <li class="step-item">
+      <div class="step-head">
+        <span class="step-badge">3</span>
+        <div class="step-body">
+          <h3>수급자격자 교육을 먼저 들어요</h3>
+          <p>실업급여 제도를 설명해주는 교육이에요. 고용센터에 신청하기 전에 미리 받아야 하고, 온라인이나 현장 중에 고를 수 있어요. 온라인으로 받으면 센터에 가지 않아도 돼요.</p>
+        </div>
+      </div>
+    </li>
+    <li class="step-item">
+      <div class="step-head">
+        <span class="step-badge">4</span>
+        <div class="step-body">
+          <h3>가까운 고용센터에서 수급자격 신청을 해요</h3>
+          <p>교육을 마친 뒤 외국인등록증(ARC)과 통장 사본을 가지고 방문해서 신청서를 내요. 교육 때문에 센터를 따로 또 가야 하는 건 아니고, 방문은 이 신청서를 내러 가는 거예요. 일부는 인터넷으로 제출할 수 있지만 대부분은 방문이 원칙이에요.</p>
+        </div>
+      </div>
+    </li>
+    <li class="step-item">
+      <div class="step-head">
+        <span class="step-badge">5</span>
+        <div class="step-body">
+          <h3>7일 대기 후 실업인정을 받아요</h3>
+          <p>신청 후 7일간 기다려요. 그다음부터는 1~4주마다 "그동안 구직 활동을 했다"는 것을 증명해서 <strong>실업인정</strong>을 받아야 하고, 보통 인정받은 다음 날 본인 계좌로 입금돼요. 구직 활동을 안 했거나 증명하지 못하면 그 기간은 인정이 안 되니, 입사 지원 기록 등을 꼼꼼히 남겨두세요. 인정 방법과 필요한 횟수는 고용센터에서 안내해줘요.</p>
+        </div>
+      </div>
+    </li>
+  </ol>
+  <p class="body-text"><strong>비자별로 특히 조심할 점</strong><br><br>① <strong>비전문취업(E-9)</strong>: 실업급여와 <strong>출국만기보험</strong>(퇴직금 대신 받는 돈)은 완전히 다른 제도예요. 그리고 직장을 잃으면 체류 기한이 따로 있어요. 근로계약이 끝난 날부터 <strong>1개월 안에 본인이 거주지 관할 고용센터에 "사업장 변경 신청"(다른 회사로 옮겨서 일하게 해달라는 신청)</strong>을 해야 하고(업무상 재해·질병, 임신·출산 등으로 신청이 불가능했다면 예외), 새 직장이 정해지면 출입국·외국인관서에서 근무처 변경 허가도 받아야 해요. 이 기한 안에 신청하지 않으면 출국해야 할 수 있어요. 실업급여를 받는 기간과 체류가 허용되는 기간이 다를 수 있으니, 퇴사 전에 꼭 외국인력상담센터(1577-0071)와 상의하세요.<br><br>② <strong>전문직·특정활동(E-7) 등 취업 비자</strong>: 일자리를 잃으면 회사가 15일 안에 출입국에 신고하고, 본인은 다른 회사로 옮기거나 구직(D-10) 등으로 체류자격을 바꿔야 해요. 실업급여를 받는다는 것 때문에 비자에 불이익이 있다는 공식 근거는 확인되지 않았지만, <strong>일자리 없이 취업 비자로 오래 있을 수 없다</strong>는 점이 더 현실적인 위험이에요.</p>
+  <div class="official-links">
+    <a class="official-link" href="https://www.work24.go.kr" target="_blank" rel="noopener"><svg><use href="#i-link"/></svg>고용24 구직 신청</a>
+    <a class="official-link" href="https://www.hikorea.go.kr" target="_blank" rel="noopener"><svg><use href="#i-link"/></svg>하이코리아(체류 정보)</a>
+  </div>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-link"/></svg>
+    <h2 class="block-title">6. 어디에 물어볼 수 있나</h2>
+  </div>
+  <table class="data-table">
+    <thead>
+      <tr><th>연락처</th><th>무엇을 물어볼 수 있나</th></tr>
+    </thead>
+    <tbody>
+      <tr><td data-label="연락처">고용노동부 상담센터 <strong>1350</strong></td><td data-label="무엇을 물어볼 수 있나">임금체불, 부당해고, 실업급여 등 노동 문제 전반(외국어 지원 언어는 이용 전 확인하세요)</td></tr>
+      <tr><td data-label="연락처">외국인력상담센터 <strong>1577-0071</strong></td><td data-label="무엇을 물어볼 수 있나">비전문취업(E-9) 근로자를 위한 상담(여러 언어 지원)</td></tr>
+      <tr><td data-label="연락처">외국인종합안내센터 <strong>1345</strong></td><td data-label="무엇을 물어볼 수 있나">비자·체류 문제</td></tr>
+      <tr><td data-label="연락처">대한법률구조공단 <strong>132</strong></td><td data-label="무엇을 물어볼 수 있나">무료 법률 상담, 임금체불·산재 소송 지원</td></tr>
+      <tr><td data-label="연락처">근로복지공단</td><td data-label="무엇을 물어볼 수 있나">산재보험 신청·결과 문의 — 가까운 지사를 방문하거나 홈페이지에서 확인하세요</td></tr>
+    </tbody>
+  </table>
+  <p class="body-text" style="font-size:0.9rem; color:var(--ink-soft);">외국인노동자지원센터는 2024년 예산이 줄면서 문을 닫은 곳이 있어, 지역별로 운영 여부가 달라요. 가기 전에 꼭 전화로 확인하세요.</p>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-check"/></svg>
+    <h2 class="block-title">정리하면</h2>
+  </div>
+  <div class="callout">
+    <div class="callout-head"><svg><use href="#i-info"/></svg>정리하면</div>
+    <p><strong>① 일하는 동안 지금 고용보험 가입 상태를 확인하세요.</strong> 가입이 안 돼 있다면 실직했을 때 실업급여를 받을 수 없어요.<br><br><strong>② 일하다 다치면</strong> 비자와 상관없이 산재를 신청할 수 있어요. 회사가 공상처리를 권해도 서명하기 전에 꼭 상담받으세요.<br><br><strong>③ 실직했다면</strong> 이직확인서를 확인하고, 퇴사 후 12개월 안에 고용24와 고용센터에서 신청하세요.<br><br>어려우면 혼자 판단하지 말고 6장의 상담 연락처를 이용하세요.</p>
+  </div>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-info"/></svg>
+    <h2 class="block-title">자주 묻는 질문</h2>
+  </div>
+  <table class="data-table">
+    <thead>
+      <tr><th>질문</th><th>답변</th></tr>
+    </thead>
+    <tbody>
+      <tr><td data-label="질문">불법체류 상태에서도 산재 신청이 되나?</td><td data-label="답변">산재보험 적용 자체는 체류자격과 상관없어요. 다만 신청 과정에서 체류에 어떤 영향이 있는지는 확인된 공식 근거가 없으니, 신청 전에 법률구조공단(132) 등에 먼저 상담하세요.</td></tr>
+      <tr><td data-label="질문">회사가 4대보험에 가입 안 해줬는데 산재 되나?</td><td data-label="답변">네. 회사가 산재보험에 가입하지 않았더라도 근로자는 산재 보상을 받을 수 있어요. 이 경우 공단이 먼저 지급하고 회사에서 받아가요.</td></tr>
+      <tr><td data-label="질문">고용보험에 가입 안 돼 있었는데 실업급여 받을 수 있나?</td><td data-label="답변">원칙적으로 어려워요. 가입 기록이 있어야 해요. 다만 실제로 일했는데 회사가 신고를 안 한 거라면, 증빙을 갖고 고용센터에 가입 확인을 요청해볼 수 있어요.</td></tr>
+      <tr><td data-label="질문">실업급여 받으면 비자에 문제가 생기나?</td><td data-label="답변">실업급여를 받는 것 자체가 비자에 불이익을 준다는 공식 근거는 확인되지 않았어요. 다만 취업 비자는 일자리가 없는 상태로 오래 머물 수 없으니, 체류 기한은 따로 확인해야 해요.</td></tr>
+      <tr><td data-label="질문">E-9 출국만기보험이 있으면 실업급여는 안 받아도 되나?</td><td data-label="답변">아니요. 둘은 완전히 다른 제도예요. 출국만기보험은 퇴직금 대신 받는 돈이고, 실업급여는 고용보험에서 나와요.</td></tr>
+    </tbody>
+  </table>
+
+</section>
+
+<section class="block section-gap">
+  <p class="body-text" style="font-size:0.86rem; color:var(--ink-soft);">
+    이 글은 일반적인 정보 제공 목적이며, 비자별 가입 기준·급여 금액 등은 법령 개정에 따라 바뀔 수 있어요. 정확한 본인 상황은 고용센터·근로복지공단 또는 위 상담 연락처에 직접 확인하세요.
+  </p>
+  <div class="keyword-links">
+    <a class="keyword-link" href="/ko/long-stay/2026-10-01-korea-national-pension-guide-ko.html"><svg><use href="#i-link"/></svg>국민연금 가이드</a>
+    <a class="keyword-link" href="/ko/long-stay/2026-10-01-korea-health-insurance-guide-ko.html"><svg><use href="#i-link"/></svg>건강보험 가이드</a>
+    <a class="keyword-link" href="/ko/long-stay/2026-09-19-korea-arc-foreign-registration-guide-ko.html"><svg><use href="#i-link"/></svg>외국인등록증(ARC) 가이드</a>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="footer-inner">
+    <span class="mono">K-Rambles · 장기체류 보드</span>
+  </div>
+</footer>
+
+<button type="button" class="scroll-top" aria-label="Back to top">
+  <svg><use href="#i-arrow-up"/></svg>
+</button>
+
+<script>
+(function () {
+  var KEY = 'krambles-fontsize';
+  var STEPS = ['xs', 'sm', 'md', 'lg', 'xl'];
+  var root = document.documentElement;
+  var ctrl = document.querySelector('.font-size-ctrl');
+  if (!ctrl) { return; }
+  var decBtn = ctrl.querySelector('[data-action="dec"]');
+  var incBtn = ctrl.querySelector('[data-action="inc"]');
+  var index = 2;
+
+  function apply(i) {
+    var size = STEPS[i];
+    if (size === 'md') { root.removeAttribute('data-fs'); }
+    else { root.setAttribute('data-fs', size); }
+    decBtn.disabled = i === 0;
+    incBtn.disabled = i === STEPS.length - 1;
+  }
+
+  var saved = 'md';
+  try { saved = localStorage.getItem(KEY) || 'md'; } catch (e) {}
+  index = STEPS.indexOf(saved);
+  if (index === -1) { index = 2; }
+  apply(index);
+
+  decBtn.addEventListener('click', function () {
+    if (index > 0) {
+      index--;
+      apply(index);
+      try { localStorage.setItem(KEY, STEPS[index]); } catch (e) {}
+    }
+  });
+  incBtn.addEventListener('click', function () {
+    if (index < STEPS.length - 1) {
+      index++;
+      apply(index);
+      try { localStorage.setItem(KEY, STEPS[index]); } catch (e) {}
+    }
+  });
+})();
+
+(function () {
+  var btn = document.querySelector('.scroll-top');
+  if (!btn) { return; }
+  function onScroll() {
+    if (window.scrollY > 600) { btn.classList.add('visible'); }
+    else { btn.classList.remove('visible'); }
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  btn.addEventListener('click', function () {
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
+  });
+})();
+
+(function () {
+  function openModal(id) {
+    var modal = document.getElementById(id);
+    if (!modal) { return; }
+    modal.hidden = false;
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal(modal) {
+    modal.hidden = true;
+    document.body.style.overflow = '';
+  }
+  document.querySelectorAll('[data-modal-open]').forEach(function (btn) {
+    btn.addEventListener('click', function () { openModal(btn.getAttribute('data-modal-open')); });
+  });
+  document.querySelectorAll('.modal-overlay').forEach(function (overlay) {
+    overlay.addEventListener('click', function (e) {
+      if (e.target === overlay) { closeModal(overlay); }
+    });
+    overlay.querySelectorAll('[data-modal-close]').forEach(function (btn) {
+      btn.addEventListener('click', function () { closeModal(overlay); });
+    });
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      document.querySelectorAll('.modal-overlay').forEach(function (overlay) {
+        if (!overlay.hidden) { closeModal(overlay); }
+      });
+    }
+  });
+})();
+</script>
+<script src="/assets/js/krambles-render.js"></script>
+<script data-goatcounter="https://krambles.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>

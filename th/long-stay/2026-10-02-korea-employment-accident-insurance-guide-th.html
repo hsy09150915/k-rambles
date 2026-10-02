@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ประกันการจ้างงานและประกันอุบัติเหตุจากการทำงานของเกาหลี: คู่มือเงินช่วยเหลือการว่างงานและอุบัติเหตุจากการทำงานสำหรับชาวต่างชาติ | K-Rambles</title>
+<meta name="description" content="อธิบายวิธีรับค่ารักษาและเงินชดเชยจากประกันอุบัติเหตุจากการทำงานเมื่อบาดเจ็บระหว่างทำงาน อันตรายของ 공상처리 (การที่บริษัทตกลงกันเองแบบเงียบๆ) และเหตุผลที่ควรตรวจสอบล่วงหน้าว่าตอนนี้คุณเข้าร่วมประกันการจ้างงานอยู่หรือไม่ หากอยากรับเงินช่วยเหลือการว่างงานเมื่อตกงาน">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Work+Sans:wght@400;500;600&family=Noto+Sans+Thai:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
+
+  :root {
+    --paper: #ecdfc0;
+    --paper-raised: #fbf8ee;
+    --ink: #372b10;
+    --ink-soft: #6e5c33;
+    --coral: #d9532a;
+    --coral-ink: #9c3b1c;
+    --navy: #1b2a4a;
+    --navy-ink: #26406e;
+    --marigold: #c8891f;
+    --marigold-ink: #8a5c10;
+    --line: rgba(55, 43, 16, 0.16);
+    --line-strong: rgba(55, 43, 16, 0.3);
+    --card-shadow: 0 18px 34px -20px rgba(40, 30, 10, 0.4);
+    --ok: #1a7a3d;
+    --no: #b3261e;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #1b1509; --paper-raised: #2b2211; --ink: #f7f0dd; --ink-soft: #cbb98f;
+      --coral: #ef7448; --coral-ink: #ffb497; --navy: #9fb4e0; --navy-ink: #cfdcf5; --marigold: #e8b24b; --marigold-ink: #ffcf7d;
+      --line: rgba(247,240,221,0.16); --line-strong: rgba(247,240,221,0.3);
+      --card-shadow: 0 18px 34px -18px rgba(0,0,0,0.65);
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #1b1509; --paper-raised: #2b2211; --ink: #f7f0dd; --ink-soft: #cbb98f;
+    --coral: #ef7448; --coral-ink: #ffb497; --navy: #9fb4e0; --navy-ink: #cfdcf5; --marigold: #e8b24b; --marigold-ink: #ffcf7d;
+    --line: rgba(247,240,221,0.16); --line-strong: rgba(247,240,221,0.3);
+    --card-shadow: 0 18px 34px -18px rgba(0,0,0,0.65);
+  }
+
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: "Noto Sans Thai", "Work Sans", ui-sans-serif, system-ui, sans-serif; font-size: 1.0625rem; line-height: 1.6; -webkit-font-smoothing: antialiased; word-break: keep-all; overflow-wrap: break-word; }
+
+  html { font-size: 100%; }
+  html[data-fs="xs"] { font-size: 85%; }
+  html[data-fs="sm"] { font-size: 92.5%; }
+  html[data-fs="lg"] { font-size: 115%; }
+  html[data-fs="xl"] { font-size: 135%; }
+  .font-size-ctrl { display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--line); border-radius: 100px; padding: 4px 8px; }
+  .fs-labels { display: inline-flex; align-items: baseline; gap: 3px; }
+  .fs-label { font-family: "Work Sans", sans-serif; font-weight: 600; color: var(--ink-soft); line-height: 1; user-select: none; }
+  .fs-label-sm { font-size: 0.68rem; }
+  .fs-label-lg { font-size: 1.15rem; }
+  .fs-step { appearance: none; border: none; background: none; cursor: pointer; color: var(--ink-soft); font-family: "Work Sans", sans-serif; font-weight: 700; font-size: 1.35rem; line-height: 1; width: 30px; height: 30px; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; flex-shrink: 0; }
+  .fs-step:hover:not(:disabled) { background: var(--line); color: var(--ink); }
+  .fs-step:disabled { opacity: 0.32; cursor: default; }
+  a { color: inherit; }
+  .mono { font-family: "Space Mono", ui-monospace, "SF Mono", monospace; }
+  a.mono { color: var(--navy-ink); text-decoration: underline; text-underline-offset: 2px; }
+  a.mono:hover { color: var(--coral-ink); }
+  .keyword-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 6px; }
+  .keyword-link { display: inline-flex; align-items: center; gap: 6px; text-decoration: none; color: var(--ink); background: var(--paper-raised); border: 1px solid var(--line); border-radius: 999px; padding: 8px 14px; font-size: 0.88rem; }
+  .keyword-link:hover { border-color: var(--coral); color: var(--coral-ink); }
+  .keyword-link svg { width: 14px; height: 14px; stroke: var(--ink-soft); fill: none; stroke-width: 2; }
+
+  header.site { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px 20px; padding: 26px 28px; max-width: 820px; margin: 0 auto; }
+  .header-right { display: flex; align-items: center; flex-wrap: wrap; justify-content: flex-end; gap: 10px 16px; }
+  .logo { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 1.2rem; text-decoration: none; white-space: nowrap; }
+  .logo span { color: var(--coral); }
+  .back-link { font-family: "Space Mono", monospace; font-size: 0.78rem; letter-spacing: 0.03em; text-decoration: none; color: var(--ink-soft); display: inline-flex; flex-direction: column; align-items: flex-start; gap: 2px; line-height: 1; white-space: nowrap; }
+  .back-link svg { width: 12px; height: 12px; }
+  .back-link:hover { color: var(--navy-ink); }
+  .lang-switch { display: flex; align-items: center; gap: 6px; font-family: "Space Mono", monospace; font-size: 0.76rem; letter-spacing: 0.03em; }
+  .lang-switch a, .lang-switch span.current { text-decoration: none; padding: 3px 8px; border-radius: 6px; }
+  .lang-switch a { color: var(--ink-soft); }
+  .lang-switch a:hover { color: var(--ink); }
+  .lang-switch span.current { color: var(--ink); font-weight: 700; border: 1px solid var(--line); }
+
+  .art-hero { padding: 10px 28px 24px; max-width: 820px; margin: 0 auto; }
+  .hero-photo-wrap { max-width: 820px; margin: 0 auto 8px; padding: 0 28px; }
+  .hero-photo { display: block; width: 100%; height: auto; border-radius: 16px; box-shadow: var(--card-shadow); border: 1px solid var(--line); }
+  .cite-note { font-size: 0.92rem; color: var(--ink-soft); margin: 10px 0 0; }
+  .stamp { display: inline-flex; align-items: center; gap: 9px; font-family: "Space Mono", monospace; font-size: 0.76rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--navy-ink); border: 1.5px dashed var(--navy); border-radius: 999px; padding: 6px 14px 6px 11px; transform: rotate(-1.5deg); }
+  .stamp::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--navy); display: inline-block; }
+
+  .hero-top { display: flex; align-items: center; gap: 16px; margin: 22px 0 24px; }
+  .hero-icon { width: 40px; height: 40px; stroke: var(--navy-ink); fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; }
+
+  h1.art-title { font-family: "Noto Sans Thai", "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: clamp(1.9rem, 4.6vw, 2.7rem); line-height: 1.28; letter-spacing: -0.01em; margin: 0 0 14px; text-wrap: balance; }
+  p.dek { font-size: 1.08rem; color: var(--ink-soft); max-width: 58ch; margin: 0; }
+
+  .updated-badge { display: inline-flex; align-items: center; gap: 7px; font-size: 0.92rem; color: var(--ink-soft); margin: 16px 0 0; }
+  .updated-icon { width: 17px; height: 17px; stroke: var(--navy-ink); fill: none; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+
+  section.block { max-width: 820px; margin: 0 auto; padding: 6px 28px 30px; }
+  section.block.section-gap { padding-top: 30px; }
+
+  .block-head { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+  .block-icon { width: 22px; height: 22px; stroke: var(--navy-ink); fill: none; stroke-width: 1.7; flex-shrink: 0; }
+  .block-title { font-family: "Noto Sans Thai", "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 1.3rem; margin: 0; }
+
+  p.body-text { margin: 0 0 14px; }
+  ul.plain-list { list-style: disc; margin: 0 0 14px; padding-left: 1.2em; }
+  ul.plain-list li + li { margin-top: 12px; }
+  ol.plain-list-num { margin: 0 0 14px; padding-left: 1.2em; }
+  ol.plain-list-num li + li { margin-top: 12px; }
+
+  table.data-table { width: 100%; border-collapse: collapse; background: var(--paper-raised); font-size: 0.92rem; margin: 4px 0 18px; word-break: keep-all; overflow-wrap: break-word; }
+  table.data-table th, table.data-table td { text-align: left; padding: 12px 14px; border-bottom: 1px solid var(--line); word-break: keep-all; overflow-wrap: break-word; vertical-align: top; }
+  table.data-table th:first-child, table.data-table td:first-child { padding-left: 16px; }
+  table.data-table th:last-child, table.data-table td:last-child { padding-right: 16px; }
+  table.data-table thead th { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; color: var(--ink-soft); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.03em; border-bottom: 1px solid var(--line-strong); white-space: nowrap; }
+  table.data-table tbody tr:last-child td { border-bottom: none; }
+  table.data-table td p, table.data-table td ul { margin: 0; }
+  table.data-table td ul { padding-left: 1.1em; }
+  table.data-table td li + li, table.data-table td p + p { margin-top: 6px; }
+
+  /* On narrow screens, tables flip from columns to stacked cards so no column gets squeezed into a one-character-wide strip. */
+  @media (max-width: 640px) {
+    table.data-table { display: block; }
+    table.data-table thead { display: none; }
+    table.data-table tbody { display: block; }
+    table.data-table tr { display: block; padding: 14px 16px; margin-bottom: 12px; border: 1px solid var(--line); border-radius: 12px; background: var(--paper-raised); }
+    table.data-table tr:last-child { margin-bottom: 0; }
+    table.data-table td { display: block; padding: 8px 0; border-bottom: 1px solid var(--line); }
+    table.data-table td:first-child { padding-left: 0; }
+    table.data-table td:last-child { padding-right: 0; border-bottom: none; }
+    table.data-table td::before { content: attr(data-label); display: block; font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; color: var(--ink-soft); font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.03em; margin-bottom: 4px; }
+  }
+
+  .callout { background: var(--paper-raised); border: 1px solid var(--line); border-left: 3px solid var(--marigold); border-radius: 12px; padding: 18px 20px; margin: 16px 0 0; box-shadow: var(--card-shadow); }
+  .callout-head { display: flex; align-items: center; gap: 8px; font-weight: 700; margin-bottom: 8px; }
+  .callout-head svg { width: 18px; height: 18px; stroke: var(--marigold-ink); fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+  .callout p { margin: 0; font-size: 0.95rem; color: var(--ink-soft); }
+  .callout p + p { margin-top: 8px; }
+  .callout strong.warn { color: var(--coral-ink); }
+
+  .step-list { list-style: none; margin: 6px 0 0; padding: 0; display: flex; flex-direction: column; gap: 24px; }
+  .step-item { display: flex; flex-direction: column; gap: 8px; }
+  .step-head { display: flex; align-items: flex-start; gap: 12px; }
+  .step-badge { width: 28px; height: 28px; border-radius: 50%; background: var(--coral); color: #fff5ee; font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 0.9rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .step-body h3 { font-family: "Noto Sans Thai", "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 1.0rem; margin: 2px 0 4px; }
+  .step-body p { margin: 0; font-size: 0.93rem; color: color-mix(in srgb, var(--ink) 60%, var(--ink-soft)); }
+
+  .official-links { display: flex; flex-wrap: wrap; gap: 10px; margin: 14px 0 0; }
+  .official-link { display: inline-flex; align-items: center; gap: 6px; text-decoration: none; color: var(--ink); background: var(--paper-raised); border: 1px solid var(--line); border-radius: 999px; padding: 8px 14px; font-size: 0.86rem; }
+  .official-link:hover { border-color: var(--navy); color: var(--navy-ink); }
+  .official-link svg { width: 14px; height: 14px; stroke: var(--ink-soft); fill: none; stroke-width: 2; }
+
+  .scroll-top { position: fixed; right: 20px; bottom: 20px; width: 46px; height: 46px; border-radius: 50%; background: var(--coral); color: #fff5ee; display: flex; align-items: center; justify-content: center; box-shadow: var(--card-shadow); border: none; cursor: pointer; opacity: 0; pointer-events: none; transition: opacity 0.2s ease, transform 0.15s ease; z-index: 40; }
+  .scroll-top.visible { opacity: 1; pointer-events: auto; }
+  .scroll-top:hover { transform: translateY(-3px); background: var(--coral-ink); }
+  .scroll-top svg { width: 20px; height: 20px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  @media (prefers-reduced-motion: reduce) { .scroll-top { transition: none; } }
+
+  footer.site { border-top: 1px solid var(--line); padding: 24px 28px 40px; }
+  .footer-inner { max-width: 820px; margin: 0 auto; }
+  .footer-inner .mono { font-size: 0.76rem; color: var(--ink-soft); }
+
+  section.block > * + *, .shop-card > * + * { margin-top: 18px; }
+
+  @media (max-width: 400px) {
+    header.site { padding: 18px 16px; flex-wrap: wrap; row-gap: 10px; }
+    .logo { font-size: 1.02rem; }
+    .header-right { gap: 10px; flex-wrap: wrap; }
+    .art-hero, section.block { padding-left: 16px; padding-right: 16px; }
+  }
+  @media (max-width: 340px) {
+    .logo { font-size: 0.9rem; }
+    .font-size-ctrl { padding: 3px 6px; gap: 5px; }
+  }
+
+  button.official-link { font-family: "Work Sans", sans-serif; }
+
+  .modal-overlay { position: fixed; inset: 0; background: rgba(20, 15, 5, 0.52); display: flex; align-items: flex-end; justify-content: center; z-index: 60; padding: 0; }
+  .modal-overlay[hidden] { display: none; }
+  .modal-card { background: var(--paper-raised); color: var(--ink); width: 100%; max-width: 680px; max-height: 82vh; border-radius: 18px 18px 0 0; box-shadow: var(--card-shadow); padding: 22px 22px calc(22px + env(safe-area-inset-bottom, 0px)); overflow-y: auto; border: 1px solid var(--line); border-bottom: none; }
+  @media (min-width: 720px) {
+    .modal-overlay { align-items: center; }
+    .modal-card { border-radius: 18px; border-bottom: 1px solid var(--line); max-height: 78vh; }
+  }
+  .modal-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 8px; }
+  .modal-head h3 { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 1.1rem; margin: 0; }
+  .modal-close { appearance: none; border: none; background: var(--line); color: var(--ink); width: 30px; height: 30px; border-radius: 50%; font-size: 1.3rem; line-height: 1; cursor: pointer; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
+  .modal-close:hover { background: var(--coral); color: #fff5ee; }
+  .modal-source { font-size: 0.84rem; color: var(--ink-soft); margin: 0 0 16px; }
+  .modal-group + .modal-group { margin-top: 18px; }
+  .modal-group h4 { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 0.95rem; margin: 0 0 6px; display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+  .modal-count { font-family: "Space Mono", monospace; font-weight: 400; font-size: 0.78rem; color: var(--ink-soft); }
+  .modal-countries { font-size: 0.9rem; color: var(--ink-soft); margin: 0; line-height: 1.7; }
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-doc" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.5 4 5.5 4 9s-1.5 6.5-4 9c-2.5-2.5-4-5.5-4-9s1.5-6.5 4-9Z"/></symbol>
+  <symbol id="i-pass" viewBox="0 0 24 24"><path d="M4 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v1.3a1.5 1.5 0 0 0 0 2.9V13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-1.3a1.5 1.5 0 0 0 0-2.9Z" transform="translate(0 2)"/><path d="M9 6.5v11" stroke-dasharray="2 2" transform="translate(0 2)"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M4 12.5 9.5 18 20 6.5"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5.5M12 8v.01"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 9.8h17M8 2.5v5M16 2.5v5"/></symbol>
+  <symbol id="i-link" viewBox="0 0 24 24"><path d="M9.5 14.5 14.5 9.5"/><path d="M8.3 11.7l-1.6 1.6a3 3 0 0 0 4.2 4.2l1.6-1.6"/><path d="M15.7 12.3l1.6-1.6a3 3 0 0 0-4.2-4.2l-1.6 1.6"/></symbol>
+  <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></symbol>
+</svg>
+
+<header class="site">
+  <a class="logo" href="/th/index.html">K-<span>Rambles</span></a>
+  <div class="header-right">
+    <a class="back-link" href="/th/long-stay/index.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+      กลับไปที่บอร์ด
+    </a>
+    <div class="font-size-ctrl" role="group" aria-label="Text size"><button type="button" class="fs-step" data-action="dec" aria-label="Decrease text size">−</button><span class="fs-labels" aria-hidden="true"><span class="fs-label fs-label-sm">A</span><span class="fs-label fs-label-lg">A</span></span><button type="button" class="fs-step" data-action="inc" aria-label="Increase text size">+</button></div>
+    <div class="lang-switch" aria-label="Language" data-key="long-stay/2026-10-02-korea-employment-accident-insurance-guide-en"></div>
+  </div>
+</header>
+
+<div class="art-hero">
+  <div class="hero-top">
+    <span class="stamp">พำนักระยะยาว · บอร์ด 10</span>
+    <svg class="hero-icon"><use href="#i-doc"/></svg>
+  </div>
+  <h1 class="art-title">ประกันการจ้างงานและประกันอุบัติเหตุจากการทำงานของเกาหลี: คู่มือเงินช่วยเหลือการว่างงานและอุบัติเหตุจากการทำงานสำหรับชาวต่างชาติ</h1>
+  <p class="dek">ประกันสองประเภทที่ควรรู้ไว้ก่อนจะบาดเจ็บหรือตกงาน ประกันอุบัติเหตุจากการทำงานใช้ได้กับทุกคน แต่ประกันการจ้างงาน (เงินช่วยเหลือการว่างงาน) อาจไม่ได้เข้าร่วมโดยอัตโนมัติ ขึ้นอยู่กับประเภทวีซ่า ดังนั้นควรตรวจสอบสถานะของตัวเองตั้งแต่ตอนนี้</p>
+  <p class="updated-badge"><svg class="updated-icon"><use href="#i-calendar"/></svg>ข้อมูล ณ ตุลาคม 2026</p>
+</div>
+
+
+
+
+<!-- 출처(개정사항 체크 시 참고) — 2026-10-02 확인
+  산재: 산업재해보상보험법 (law.go.kr) / 근로복지공단 https://www.comwel.or.kr / 고용·산재보험 토탈서비스 https://total.comwel.or.kr
+  고용보험 가입(외국인): 고용보험법 시행령 제3조의3, 법제처 해석례 21-0680(2022.1.19, 임의가입은 근로자 신청 + 사업주 동의), 고용노동부 통영지청 안내(E-9·H-2는 실업급여 별도 신청)
+  실업급여 2026: 상한 68,100원/일, 하한 66,048원/일, 급여율 60%, 소정급여일수 120~270일, 수급 기한 이직 후 12개월
+  사업자등록 시 수급: 고용노동부 상담센터 FAQ https://1350.moel.go.kr/home/hp/data/faqView.do?faq_idx=1000001163 (원칙적으로 실업자로 볼 수 없음, 예외: 임대사업자·영업 없는 경우 폐업/휴업 서류 제출·다단계 소비회원)
+  신청 절차(구직신청→교육(신청 전 선수강)→고용센터 수급자격 신청→1~4주 실업인정→인정 다음 날 입금): 고용24 제도안내 https://m.work24.go.kr/cm/c/f/1100/selecSystInfo.do?systId=SI00000411&systCnntId=&systClId=SC00000254
+  상·하한액: 하한 = 2026 최저임금 10,320원 x 80% x 8시간 = 66,048원, 상한 68,100원(복수 보도 확인). 월급 약 330만 원 = 일 평균임금 약 11만 원 기준 계산
+  E-9 사업장 변경(고용센터 신청, 계약 종료 후 1개월, 출입국 근무처 변경 허가, 기한 초과 시 출국): 생활법령정보 https://easylaw.go.kr/CSP/CnpClsMain.laf?popMenu=ov&csmSeq=2042&ccfNo=3&cciNo=2&cnpClsNo=1
+  미확인으로 본문에서 제외·완화한 항목: 산재 신청이 출입국 통보로 이어지는지, 반복수급 감액 시행 여부, 근로복지공단 대표번호, 1350 지원 언어, 시행령 별표(F-2 하위자격, H-2→F-4 통합 후 처리)
+-->
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-info"/></svg>
+    <h2 class="block-title">สรุปประเด็นสำคัญ</h2>
+  </div>
+  <div class="callout">
+    <div class="callout-head"><svg><use href="#i-info"/></svg>สรุปสั้นๆ</div>
+    <p><strong>① ประกันอุบัติเหตุจากการทำงาน (산재)</strong> (ประกันที่จ่ายค่ารักษาและค่าใช้จ่ายในช่วงที่พักรักษาตัว เมื่อคุณบาดเจ็บหรือเจ็บป่วยจากการทำงาน) <strong>ยื่นขอได้ไม่ว่าคุณจะถือวีซ่าประเภทใด และแม้บริษัทจะไม่ได้ทำประกันไว้</strong> เบี้ยประกันบริษัทเป็นผู้จ่ายทั้งหมด<br><br><strong>② ประกันการจ้างงาน (고용보험)</strong> ของเกาหลี (ประกันที่จ่ายเงินช่วยเหลือการว่างงานเมื่อคุณตกงาน) ไม่เหมือนกัน สำหรับชาวต่างชาติ <strong>การเข้าร่วมอาจไม่เป็นไปโดยอัตโนมัติ ขึ้นอยู่กับประเภทวีซ่า</strong> ถ้าคุณไม่ตรวจสอบไว้ล่วงหน้าตั้งแต่ยังทำงานอยู่ว่า "ตอนนี้ฉันเข้าร่วมประกันนี้อยู่หรือเปล่า" เมื่อตกงานจริงๆ คุณอาจไม่ได้รับเงินช่วยเหลือ<br><br><strong>③ สิ่งที่ต้องระวังที่สุด:</strong> ถ้าเกิดอุบัติเหตุแล้วบริษัทบอกว่า "ไม่ต้องยื่นประกันอุบัติเหตุ เดี๋ยวบริษัทจัดการให้เอง" (<strong>공상처리</strong> หรือการตกลงกันเองนอกระบบ) ตอนนี้อาจดูสะดวกดี แต่ถ้าการรักษายืดเยื้อหรือมีอาการแทรกซ้อนในภายหลัง คุณจะได้รับความคุ้มครองได้ยาก เราอธิบายรายละเอียดไว้ในหัวข้อที่ 4</p>
+  </div>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-doc"/></svg>
+    <h2 class="block-title">มาทำความเข้าใจคำศัพท์กันก่อน</h2>
+  </div>
+  <p class="body-text">บทความนี้มีศัพท์ทางราชการของเกาหลีค่อนข้างมาก ซึ่งอาจเข้าใจยากในตอนแรก เราจึงสรุปไว้ในตารางด้านล่างก่อน ถ้าอ่านไปแล้วเจอคำที่ไม่เข้าใจ ให้กลับมาดูที่นี่ได้เลย</p>
+  <table class="data-table">
+    <thead>
+      <tr><th>คำศัพท์</th><th>คำอธิบายง่ายๆ</th></tr>
+    </thead>
+    <tbody>
+      <tr><td data-label="คำศัพท์">ประกันอุบัติเหตุจากการทำงาน (산재보험 / 산업재해보상보험)</td><td data-label="คำอธิบายง่ายๆ">ประกันที่รัฐ (KCOMWEL) จ่ายค่ารักษาและค่าครองชีพให้ เมื่อคุณบาดเจ็บจากการทำงาน (อุบัติเหตุจากการทำงาน) หรือเจ็บป่วยเพราะงาน (โรคจากการทำงาน) เรียกสั้นๆ ว่า "산재"</td></tr>
+      <tr><td data-label="คำศัพท์">ประกันการจ้างงาน (고용보험)</td><td data-label="คำอธิบายง่ายๆ">ประกันของเกาหลีที่จ่ายเงินช่วยเหลือการว่างงานเมื่อคุณตกงาน และช่วยเรื่องการหางานและการฝึกอาชีพ</td></tr>
+      <tr><td data-label="คำศัพท์">เงินช่วยเหลือการว่างงาน (구직급여 / 실업급여)</td><td data-label="คำอธิบายง่ายๆ">เงินที่ได้รับระหว่างหางานใหม่หลังตกงาน คำนวณเป็นรายวัน แต่ในทางปฏิบัติจะรวมเป็นก้อนตามจำนวนวันของแต่ละรอบ ทุก 1–4 สัปดาห์ ชื่อทางกฎหมายอย่างเป็นทางการคือ "구직급여"</td></tr>
+      <tr><td data-label="คำศัพท์">KCOMWEL – หน่วยงานค่าชดเชยและสวัสดิการแรงงานเกาหลี (근로복지공단)</td><td data-label="คำอธิบายง่ายๆ">หน่วยงานที่บริหารประกันอุบัติเหตุจากการทำงาน เป็นผู้ตัดสินอนุมัติค่ารักษาและจ่ายเงินชดเชยระหว่างหยุดงานรักษาตัว</td></tr>
+      <tr><td data-label="คำศัพท์">ศูนย์จัดหางาน (고용센터)</td><td data-label="คำอธิบายง่ายๆ">สำนักงานท้องถิ่นของกระทรวงแรงงานและการจ้างงานที่ดูแลประกันการจ้างงาน (เงินช่วยเหลือการว่างงาน) คุณยื่นขอเงินช่วยเหลือการว่างงานที่นี่</td></tr>
+      <tr><td data-label="คำศัพท์">ค่ารักษาพยาบาลจากประกันอุบัติเหตุ (요양급여)</td><td data-label="คำอธิบายง่ายๆ">เงินสนับสนุนค่ารักษาจากอุบัติเหตุจากการทำงาน (ค่าโรงพยาบาล ค่ายา ฯลฯ) หลักการคือเมื่อได้รับอนุมัติแล้ว คุณรักษาโดยไม่ต้องจ่ายเอง</td></tr>
+      <tr><td data-label="คำศัพท์">เงินชดเชยระหว่างหยุดงานรักษาตัว (휴업급여)</td><td data-label="คำอธิบายง่ายๆ">เงินที่จ่ายประมาณ 70% ของค่าจ้างปกติ ในช่วงที่คุณทำงานไม่ได้เพราะต้องรักษาตัวจากอุบัติเหตุจากการทำงาน</td></tr>
+      <tr><td data-label="คำศัพท์">การตกลงกันเองนอกระบบ ไม่ยื่นเรื่องประกัน (공상처리)</td><td data-label="คำอธิบายง่ายๆ">การที่บริษัทบอกว่าจะจัดการค่ารักษาเองโดยไม่ยื่นขอประกันอุบัติเหตุ เป็นข้อตกลงส่วนตัวที่ไม่มีกลไกคุ้มครองทางกฎหมายรองรับ</td></tr>
+      <tr><td data-label="คำศัพท์">หนังสือรับรองการออกจากงาน (이직확인서)</td><td data-label="คำอธิบายง่ายๆ">เอกสารที่บริษัทส่งให้ศูนย์จัดหางานเมื่อคุณออกจากงาน เพื่อแจ้งว่าคุณออกจากงานด้วยเหตุผลอะไร เป็นเอกสารที่สำคัญที่สุดในการพิจารณาเงินช่วยเหลือการว่างงาน</td></tr>
+      <tr><td data-label="คำศัพท์">จำนวนวันที่เข้าร่วมประกัน (피보험단위기간)</td><td data-label="คำอธิบายง่ายๆ">จำนวนวันที่คุณเข้าร่วมประกันการจ้างงานและจ่ายเบี้ยประกัน ต้องมีให้ครบตามระยะเวลาขั้นต่ำจึงจะรับเงินช่วยเหลือการว่างงานได้</td></tr>
+      <tr><td data-label="คำศัพท์">สถานประกอบการ (사업장)</td><td data-label="คำอธิบายง่ายๆ">สถานที่ที่คุณทำงาน (บริษัท โรงงาน ฟาร์ม ร้านค้า ฯลฯ) ส่วนเจ้าของหรือผู้บริหารเรียกว่า "นายจ้าง (사업주)"</td></tr>
+      <tr><td data-label="คำศัพท์">การเปลี่ยนสถานประกอบการ (사업장 변경) (E-9)</td><td data-label="คำอธิบายง่ายๆ">การที่แรงงาน E-9 ย้ายออกจากบริษัทที่ทำงานอยู่ไปทำงานกับบริษัทอื่น จะย้ายตามใจชอบไม่ได้ ต้องมีเหตุผลที่เหมาะสม และต้องยื่นขอที่ศูนย์จัดหางานเพื่อรับอนุญาต</td></tr>
+      <tr><td data-label="คำศัพท์">สมัครเข้าร่วมโดยสมัครใจ (임의가입)</td><td data-label="คำอธิบายง่ายๆ">รูปแบบที่ไม่ได้เข้าร่วมโดยอัตโนมัติตามกฎหมาย แต่ต้องยื่นสมัครด้วยตัวเอง ประกันการจ้างงานของชาวต่างชาติมักเป็นรูปแบบนี้ ขึ้นอยู่กับประเภทวีซ่า</td></tr>
+      <tr><td data-label="คำศัพท์">Work24 (고용24)</td><td data-label="คำอธิบายง่ายๆ">เว็บไซต์ของกระทรวงแรงงานและการจ้างงาน (work24.go.kr) สำหรับลงทะเบียนหางานและยื่นขอเงินช่วยเหลือการว่างงานออนไลน์</td></tr>
+    </tbody>
+  </table>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-check"/></svg>
+    <h2 class="block-title">1. สิ่งแรกที่ต้องทำ: ตอนนี้คุณเข้าร่วมประกันการจ้างงานอยู่หรือเปล่า?</h2>
+  </div>
+  <div class="callout">
+    <div class="callout-head"><svg><use href="#i-info"/></svg>ทำไมต้องตรวจสอบล่วงหน้า</div>
+    <p><strong>ประกันอุบัติเหตุจากการทำงานยื่นหลังเกิดอุบัติเหตุก็ได้ แต่ประกันการจ้างงานต้องตรวจสอบไว้ล่วงหน้า</strong><br><br>จะรับเงินช่วยเหลือการว่างงานได้ ต้องมี <strong>"จำนวนวันที่เข้าร่วมประกันการจ้างงานรวมอย่างน้อย 180 วัน ภายในช่วง 18 เดือนย้อนหลังนับจากวันที่ออกจากงาน"</strong> ช่วงที่คุณเคยเข้าร่วมประกันการจ้างงานไว้ก่อนหน้า 18 เดือนนั้น จะไม่นับรวมในจำนวน 180 วันนี้<br><br>ต่อให้คุณทำงานจริง แต่ <strong>ช่วงที่ไม่ได้เข้าร่วมประกันการจ้างงานจะไม่ถูกนับเป็นจำนวนวัน</strong> ตัวอย่างเช่น ถ้าคุณทำงานมา 1 ปีโดยไม่ได้เข้าร่วมประกัน แล้วลาออก 1 ปีนั้นจะนับเป็น 0 วัน และคุณจะรับเงินช่วยเหลือการว่างงานไม่ได้</p>
+  </div>
+  <p class="body-text">คนเกาหลีจะเข้าร่วมประกันการจ้างงานโดยอัตโนมัติเมื่อเริ่มทำงาน แต่สำหรับชาวต่างชาติ <strong>ขึ้นอยู่กับประเภทวีซ่า</strong> ตารางด้านล่างเป็นการแบ่งแบบทั่วไป (ข้อมูล ณ ตุลาคม 2026 รายละเอียดอาจเปลี่ยนไปได้ตามการแก้ไขกฎหมายลำดับรอง)</p>
+  <table class="data-table">
+    <thead>
+      <tr><th>ประเภท</th><th>วีซ่าที่เข้าข่าย (ตัวอย่าง)</th><th>ประกันการจ้างงาน (เงินช่วยเหลือการว่างงาน)</th></tr>
+    </thead>
+    <tbody>
+      <tr><td data-label="ประเภท">เข้าร่วมโดยอัตโนมัติ (당연적용)</td><td data-label="วีซ่าที่เข้าข่าย (ตัวอย่าง)">ผู้พำนักถาวร (F-5) ผู้ย้ายถิ่นฐานเพื่อสมรส (F-6) และผู้พำนักอาศัย (F-2) บางประเภท</td><td data-label="ประกันการจ้างงาน (เงินช่วยเหลือการว่างงาน)">เมื่อเริ่มทำงานจะเข้าร่วมโดยอัตโนมัติเหมือนคนเกาหลี</td></tr>
+      <tr><td data-label="ประเภท">สมัครเข้าร่วมด้วยตัวเอง (สมัครเข้าร่วมโดยสมัครใจ, 임의가입)</td><td data-label="วีซ่าที่เข้าข่าย (ตัวอย่าง)">วีซ่าผู้เชี่ยวชาญ/กิจกรรมเฉพาะ (E-1~E-7) ชาวเกาหลีโพ้นทะเล (F-4) ทำงานระยะสั้น (C-4) เป็นต้น</td><td data-label="ประกันการจ้างงาน (เงินช่วยเหลือการว่างงาน)">ไม่เป็นอัตโนมัติ คุณต้องยื่นสมัครเอง และ <strong>ต้องได้รับความยินยอมจากบริษัทด้วย</strong> (ตามการตีความของสำนักงานกฎหมายของรัฐบาลเกาหลี) ถ้าบริษัทไม่รู้หรือไม่ยินยอม คุณอาจทำงานอยู่โดยที่ยังไม่ได้เข้าร่วมประกัน</td></tr>
+      <tr><td data-label="ประเภท">อัตโนมัติเพียงบางส่วน</td><td data-label="วีซ่าที่เข้าข่าย (ตัวอย่าง)">แรงงานทั่วไป (E-9) เยี่ยมเยือนเพื่อทำงาน (H-2)</td><td data-label="ประกันการจ้างงาน (เงินช่วยเหลือการว่างงาน)">เฉพาะเบี้ยประกันส่วนโครงการเสริมสร้างเสถียรภาพการจ้างงานและพัฒนาทักษะอาชีพที่เป็นอัตโนมัติ ส่วน <strong>เงินช่วยเหลือการว่างงานต้องยื่นสมัครแยกต่างหาก</strong></td></tr>
+    </tbody>
+  </table>
+  <p class="body-text" style="font-size:0.9rem; color:var(--ink-soft);">เกณฑ์รายละเอียดของแต่ละวีซ่าอาจเปลี่ยนไปเมื่อมีการแก้ไขกฎหมายลำดับรอง วิธีที่แน่นอนที่สุดคือตรวจสอบสถานะของตัวเองโดยตรงตามวิธีด้านล่าง</p>
+  <p class="body-text"><strong>วิธีตรวจสอบสถานะการเข้าร่วมประกันของคุณ</strong><br><br>① ดูใน <strong>สลิปเงินเดือน</strong> ว่ามีรายการหัก "ประกันการจ้างงาน (고용보험)" หรือไม่ ถ้าไม่มี มีโอกาสสูงที่คุณยังไม่ได้เข้าร่วมประกัน<br><br>② เข้าสู่ระบบที่ <strong>Work24 (work24.go.kr)</strong> หรือ <strong>บริการรวมประกันการจ้างงานและประกันอุบัติเหตุของ KCOMWEL</strong> (total.comwel.or.kr) แล้วตรวจดู "ประวัติสิทธิ์ผู้เอาประกัน (피보험자격 이력)" ได้ ถ้าใช้ภาษาเกาหลีไม่ถนัด ให้ไปสอบถามที่ศูนย์จัดหางานใกล้บ้านพร้อมบัตรประจำตัวคนต่างด้าว (ARC)<br><br>③ ถ้ายังไม่ได้เข้าร่วมประกัน ให้ขอให้บริษัทสมัครให้ และสอบถามวิธียื่นสมัครที่ศูนย์จัดหางาน ถ้าแก้ปัญหาเองไม่ได้ ให้ใช้เบอร์ปรึกษาในหัวข้อที่ 6</p>
+  <div class="official-links">
+    <a class="official-link" href="https://www.work24.go.kr" target="_blank" rel="noopener"><svg><use href="#i-link"/></svg>ไปที่ Work24</a>
+    <a class="official-link" href="https://total.comwel.or.kr" target="_blank" rel="noopener"><svg><use href="#i-link"/></svg>บริการรวมประกันการจ้างงานและประกันอุบัติเหตุ</a>
+  </div>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-info"/></svg>
+    <h2 class="block-title">2. ถ้าบาดเจ็บจากการทำงาน: ประกันอุบัติเหตุจากการทำงาน</h2>
+  </div>
+  <p class="body-text">ประกันอุบัติเหตุจากการทำงานใช้ได้ <strong>ไม่ว่าคุณจะเป็นชาวต่างชาติ ถือวีซ่าประเภทใด หรือแม้จะไม่มีสถานะการพำนักที่ถูกต้อง</strong> ถ้าบาดเจ็บจากการทำงาน (ศาลฎีกาก็มีแนวคำพิพากษาในทิศทางเดียวกัน) เบี้ยประกันบริษัทจ่ายทั้งหมด ลูกจ้างไม่ต้องจ่ายแม้แต่วอนเดียว และ <strong>แม้บริษัทจะไม่ได้ทำประกันอุบัติเหตุจากการทำงานไว้</strong> ลูกจ้างก็ยังรับค่าชดเชยได้ ในกรณีนี้ KCOMWEL จะจ่ายให้ก่อน แล้วค่อยเรียกเก็บคืนจากบริษัทภายหลัง</p>
+  <div class="callout">
+    <div class="callout-head"><svg><use href="#i-info"/></svg>สิ่งที่ได้รับจากประกันอุบัติเหตุจากการทำงาน</div>
+    <p><strong>① ค่ารักษาพยาบาลจากประกันอุบัติเหตุ (요양급여)</strong> — สนับสนุนค่ารักษา<br><br><strong>② เงินชดเชยระหว่างหยุดงานรักษาตัว (휴업급여)</strong> — จ่ายประมาณ 70% ของค่าจ้างปกติ ในช่วงที่ทำงานไม่ได้เพราะต้องรักษาตัว<br><br><strong>③ เงินชดเชยความพิการ</strong> — ถ้ารักษาแล้วยังมีความพิการหลงเหลือ จะได้รับตามระดับความพิการ<br><br><strong>④ เงินชดเชยผู้รอดชีวิต</strong> — ครอบครัวได้รับในกรณีที่เสียชีวิตจากอุบัติเหตุ</p>
+  </div>
+  <p class="body-text" style="margin-top:44px;"><strong>ขั้นตอนการยื่นขอ</strong></p>
+  <ol class="step-list">
+    <li class="step-item">
+      <div class="step-head">
+        <span class="step-badge">1</span>
+        <div class="step-body">
+          <h3>รักษาตัวก่อน และเก็บหลักฐานไว้</h3>
+          <p>แจ้งที่โรงพยาบาลให้ชัดเจนว่า "บาดเจ็บจากการทำงาน" (ถ้าใช้ประกันสุขภาพรักษา ภายหลังจะยุ่งยาก) รวบรวมรูปบาดแผลและรูปที่เกิดเหตุ ข้อความที่คุยกับบริษัท และเบอร์ติดต่อพยานไว้</p>
+        </div>
+      </div>
+    </li>
+    <li class="step-item">
+      <div class="step-head">
+        <span class="step-badge">2</span>
+        <div class="step-body">
+          <h3>เตรียมใบคำขอรับค่ารักษาพยาบาล</h3>
+          <p>ต้องใช้ "ใบคำขอรับค่ารักษาพยาบาล (요양급여신청서)" และ "ความเห็นแพทย์ประกอบคำขอ (요양급여신청소견서)" ที่โรงพยาบาลเป็นผู้เขียน ถ้าบอกโรงพยาบาลว่าต้องการยื่นขอประกันอุบัติเหตุจากการทำงาน โรงพยาบาลจะแนะนำให้</p>
+        </div>
+      </div>
+    </li>
+    <li class="step-item">
+      <div class="step-head">
+        <span class="step-badge">3</span>
+        <div class="step-body">
+          <h3>ยื่นที่ KCOMWEL</h3>
+          <p>ไปที่สาขา KCOMWEL ใกล้บ้าน หรือยื่นออนไลน์ผ่านบริการรวมประกันการจ้างงานและประกันอุบัติเหตุก็ได้ ถ้าเป็นโรงพยาบาลที่ได้รับการกำหนดสำหรับอุบัติเหตุจากการทำงาน บางครั้งโรงพยาบาลจะยื่นแทนให้</p>
+        </div>
+      </div>
+    </li>
+    <li class="step-item">
+      <div class="step-head">
+        <span class="step-badge">4</span>
+        <div class="step-body">
+          <h3>ไม่จำเป็นต้องให้บริษัทเซ็นชื่อ</h3>
+          <p>แม้บริษัทจะปฏิเสธที่จะเซ็น คุณก็ยังยื่นขอได้ KCOMWEL จะแจ้งบริษัทเอง</p>
+        </div>
+      </div>
+    </li>
+    <li class="step-item">
+      <div class="step-head">
+        <span class="step-badge">5</span>
+        <div class="step-body">
+          <h3>รอผลการพิจารณา</h3>
+          <p>ระยะเวลาดำเนินการที่กฎหมายกำหนดคือ 7 วันตามหลักการ แต่ถ้าต้องมีการสอบสวนหรือพิจารณา อาจใช้เวลานานกว่านั้น และโรคที่เกิดจากการทำงาน (โรคจากการทำงาน) มักใช้เวลานานกว่ามาก</p>
+        </div>
+      </div>
+    </li>
+  </ol>
+  <p class="body-text" style="margin-top:44px;"><strong>ข้อควรรู้</strong><br><br>① <strong>กำหนดเวลายื่นขอ</strong>: ค่ารักษาพยาบาลและเงินชดเชยระหว่างหยุดงานรักษาตัวต้องเรียกร้องภายใน 3 ปี เงินชดเชยความพิการและเงินชดเชยผู้รอดชีวิตภายใน 5 ปี (อายุความ) แต่ถ้ายังรักษาไม่เสร็จ ควรยื่นให้เร็วที่สุดเท่าที่ทำได้<br><br>② <strong>ห้ามเลิกจ้าง</strong>: หลักการคือบริษัทเลิกจ้างไม่ได้ ในช่วงที่คุณรักษาตัวจากการบาดเจ็บในการทำงาน และอีก 30 วันหลังจากนั้น (พระราชบัญญัติมาตรฐานแรงงาน) การปฏิบัติไม่ดีต่อคุณเพราะคุณยื่นขอประกันอุบัติเหตุก็ผิดกฎหมายเช่นกัน<br><br>③ <strong>ถ้าไม่ได้รับการรับรองว่าเป็นอุบัติเหตุจากการทำงาน</strong> คุณสามารถโต้แย้งได้ตามลำดับ คือ การยื่นขอให้ตรวจสอบ (심사청구) → การยื่นขอให้ตรวจสอบอีกครั้ง (재심사청구) → ฟ้องคดีปกครอง<br><br>④ <strong>ผลต่อการพำนัก</strong>: ถ้าต้องรักษาตัวนานจากอุบัติเหตุจากการทำงาน มีช่องทางเปลี่ยนสถานะการพำนักเป็นวีซ่าสำหรับรักษาตัวจากอุบัติเหตุจากการทำงาน (G-1) เพื่ออยู่ต่อได้ แต่นี่ไม่ใช่สิทธิ์ที่ได้รับโดยอัตโนมัติ เจ้าหน้าที่ตรวจคนเข้าเมืองจะพิจารณาเป็นรายกรณี ถ้าคุณกังวลเรื่องการพำนัก ให้สอบถามที่เบอร์ปรึกษาในหัวข้อที่ 6 ก่อนยื่นขอ</p>
+  <p class="body-text" style="font-size:0.9rem; color:var(--ink-soft);">นอกจากการดำเนินการเรื่องประกันอุบัติเหตุจากการทำงานแล้ว อุบัติเหตุหรือการเจ็บป่วยที่ไม่ได้เกิดจากการทำงานจะต้องดำเนินการแยกต่างหาก ผ่านประกันสุขภาพ หรือประกันอุบัติเหตุสำหรับชาวต่างชาติที่คุณทำไว้เอง</p>
+  <div class="official-links">
+    <a class="official-link" href="https://www.comwel.or.kr" target="_blank" rel="noopener"><svg><use href="#i-link"/></svg>KCOMWEL</a>
+    <a class="official-link" href="https://total.comwel.or.kr" target="_blank" rel="noopener"><svg><use href="#i-link"/></svg>บริการรวมประกันการจ้างงานและประกันอุบัติเหตุ</a>
+  </div>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-globe"/></svg>
+    <h2 class="block-title">3. วีซ่า การพำนักที่ถูกกฎหมาย และประกันอุบัติเหตุจากการทำงาน: ข้อควรรู้</h2>
+  </div>
+  <p class="body-text"><strong>แรงงานทั่วไป (E-9)</strong> ที่บาดเจ็บจากการทำงานจนทำงานต่อที่บริษัทนั้นไม่ได้ จะได้รับการยอมรับเหตุผลในการเปลี่ยนสถานประกอบการ (사업장 변경) และมีข้อมูลว่ากำหนดเวลาเปลี่ยนสถานประกอบการตามปกติ (หลักการคือ 1 เดือน) จะขยายออกไปตามระยะเวลารักษาตัวจากอุบัติเหตุจากการทำงานด้วย ถ้าคุณเข้าข่าย ให้สอบถามที่ศูนย์ให้คำปรึกษาแรงงานต่างชาติ (1577-0071)</p>
+  <p class="body-text">แม้ <strong>ไม่มีสถานะการพำนักที่ถูกต้อง (อยู่เกินกำหนด)</strong> ก็ยื่นขอประกันอุบัติเหตุจากการทำงานได้ แต่ในบทความนี้ยังไม่พบหลักฐานทางการที่ยืนยันได้ว่าในขั้นตอนการยื่นขอ จะมีการตรวจจับหรือแจ้งต่อตรวจคนเข้าเมืองอย่างไร จึงไม่อาจบอกได้ว่าปลอดภัยแน่นอน ในกรณีเช่นนี้ ควรปรึกษาสำนักงานช่วยเหลือทางกฎหมายเกาหลี (132) หรือองค์กรช่วยเหลือชาวต่างชาติก่อนเสมอ</p>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-info"/></svg>
+    <h2 class="block-title">4. ระวังไว้ถ้าได้ยินคำพูดแบบนี้เกี่ยวกับ 공상처리 (การตกลงกันเองนอกระบบ)</h2>
+  </div>
+  <div class="callout">
+    <div class="callout-head"><svg><use href="#i-info"/></svg>공상처리 คืออะไร</div>
+    <p><strong>공상처리 (การตกลงกันเองนอกระบบ ไม่ยื่นเรื่องประกัน)</strong> คือการที่บริษัทบอกว่าจะจัดการค่ารักษาเองโดยไม่ยื่นขอประกันอุบัติเหตุจากการทำงาน ไม่ใช่ระบบที่กฎหมายกำหนด แต่เป็น <strong>ข้อตกลงส่วนตัวระหว่างบริษัทกับลูกจ้าง</strong></p>
+  </div>
+  <table class="data-table">
+    <thead>
+      <tr><th>ประกันอุบัติเหตุจากการทำงานอย่างเป็นทางการ</th><th>การตกลงกันเองนอกระบบ (공상처리)</th></tr>
+    </thead>
+    <tbody>
+      <tr><td data-label="ประกันอุบัติเหตุจากการทำงานอย่างเป็นทางการ">รัฐ (KCOMWEL) จ่ายค่ารักษาและเงินชดเชยระหว่างหยุดงานรักษาตัวให้</td><td data-label="การตกลงกันเองนอกระบบ (공상처리)">ได้เท่าที่บริษัทบอกว่าจะให้เท่านั้น และให้ตามที่บริษัทเห็นสมควร</td></tr>
+      <tr><td data-label="ประกันอุบัติเหตุจากการทำงานอย่างเป็นทางการ">มีบันทึกอย่างเป็นทางการ</td><td data-label="การตกลงกันเองนอกระบบ (공상처리)">ไม่มีบันทึกใดๆ หลักฐานว่าคุณบาดเจ็บก็จะอ่อนลงในภายหลัง</td></tr>
+      <tr><td data-label="ประกันอุบัติเหตุจากการทำงานอย่างเป็นทางการ">ได้รับความคุ้มครองแม้การรักษายืดเยื้อหรืออาการกลับมาเป็นซ้ำ</td><td data-label="การตกลงกันเองนอกระบบ (공상처리)">ถ้าบริษัทบอกกลางคันว่า "ให้ต่อไม่ไหวแล้ว" คุณมีวิธีเรียกร้องน้อยมาก</td></tr>
+      <tr><td data-label="ประกันอุบัติเหตุจากการทำงานอย่างเป็นทางการ">ได้รับการประเมินระดับความพิการและรับค่าชดเชยอาการแทรกซ้อนได้</td><td data-label="การตกลงกันเองนอกระบบ (공상처리)">แม้มีอาการแทรกซ้อนหลงเหลือ ก็รับค่าชดเชยตามกฎหมายได้ยาก</td></tr>
+    </tbody>
+  </table>
+  <p class="body-text"><strong>ทำไมบริษัทถึงแนะนำให้ตกลงกันเอง?</strong> คำพูดที่ว่า "ถ้ายื่นประกันอุบัติเหตุ เบี้ยประกันจะแพงขึ้น" ส่วนใหญ่แล้วเป็นการพูดเกินจริง (เบี้ยประกันที่เปลี่ยนไปตามประวัติอุบัติเหตุ มีเฉพาะสถานประกอบการที่มีขนาดตั้งแต่ระดับหนึ่งขึ้นไป) เหตุผลจริงๆ มักเป็นการหลีกเลี่ยงภาระอย่างการถูกสำนักงานแรงงานสอบสวน การถูกเปิดเผยชื่อว่าเกิดอุบัติเหตุร้ายแรง การเสียเปรียบในการประมูลงาน และความรับผิดชอบด้านการจัดการความปลอดภัย ภาระเหล่านี้เป็นปัญหาของบริษัท ไม่ใช่เหตุผลที่ลูกจ้างต้องสละสิทธิ์การรักษาและค่าชดเชย</p>
+  <p class="body-text"><strong>ถ้าได้ยินคำพูดแบบนี้ ให้สงสัยไว้ก่อน</strong><br><br>"ถ้ายื่นประกันอุบัติเหตุจะถูกไล่ออก / วีซ่าจะมีปัญหา" · "อย่าบอกที่โรงพยาบาลว่าบาดเจ็บจากการทำงาน" · "ใช้ประกันสุขภาพรักษาไปเลย" · กรณีที่ให้เซ็นเอกสารว่า "จะไม่เรียกร้องใดๆ ทั้งสิ้นต่อไป" · กรณีที่พนักงานบริษัทตามไปโรงพยาบาลตลอด</p>
+  <p class="body-text"><strong>แม้จะตกลงกันเองไปแล้ว</strong> ถ้ายังอยู่ในกำหนดเวลาที่กฎหมายระบุ คุณก็ยังยื่นขอประกันอุบัติเหตุจากการทำงานภายหลังได้ เพียงแต่เงินที่ได้รับไปแล้วอาจถูกหักออกบางส่วน การปรึกษาก่อนเซ็นชื่อเป็นวิธีที่ดีที่สุด</p>
+  <p class="body-text" style="font-size:0.9rem; color:var(--ink-soft);">นอกจากนี้ การปกปิดอุบัติเหตุจากการทำงานหรือสั่งให้ปกปิดเป็นความผิดที่บริษัทต้องถูกลงโทษ (พระราชบัญญัติความปลอดภัยและอนามัยในการทำงาน) และการปฏิบัติไม่ดีต่อลูกจ้างเพราะเขายื่นขอประกันอุบัติเหตุก็มีโทษเช่นกัน ถ้ารู้ว่าบริษัทกำลังฝ่าฝืนกฎหมาย คุณก็จะไม่หวั่นไหวเมื่อถูกกดดัน</p>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-check"/></svg>
+    <h2 class="block-title">5. เมื่อตกงาน: วิธีรับเงินช่วยเหลือการว่างงาน</h2>
+  </div>
+  <div class="callout">
+    <div class="callout-head"><svg><use href="#i-info"/></svg>เงื่อนไขที่จะได้รับ</div>
+    <p>เงินช่วยเหลือการว่างงานจะได้รับเมื่อ <strong>มีวันที่เข้าร่วมประกันการจ้างงานอย่างน้อย 180 วัน</strong> และ <strong>ตกงานด้วยเหตุผลที่ไม่ใช่ความผิดของตัวเอง</strong><br><br><strong>18 เดือน</strong> ในที่นี้คือช่วงเวลาที่กำหนดว่า "จะนับย้อนดูประวัติการเข้าร่วมประกันไปไกลแค่ไหน" ให้รวมวันที่เคยเข้าร่วมประกันการจ้างงานทั้งหมดภายในช่วง 18 เดือนย้อนหลังนับจากวันที่ออกจากงาน ถ้ารวมได้ตั้งแต่ 180 วัน (ประมาณ 6 เดือน) ขึ้นไปก็ถือว่าครบเงื่อนไข ช่วงที่เคยเข้าร่วมประกันไว้ก่อนหน้า 18 เดือนนั้น จะไม่นับรวมในจำนวน 180 วันนี้<br><br><strong>ตัวอย่าง:</strong> ถ้าลาออกปลายเดือนตุลาคม 2026 ช่วงที่ใช้พิจารณาคือพฤษภาคม 2025 ถึงตุลาคม 2026 ถ้าจำนวนวันที่เข้าร่วมประกันในช่วงนี้รวมกันได้ 6 เดือน (180 วัน) ขึ้นไป ก็ครบเงื่อนไข ถ้าเข้าร่วมประกันไว้เพียง 3 เดือน (90 วัน) ถือว่าไม่พอ และบันทึกว่าเคยเข้าร่วมประกัน 1 ปีเมื่อ 3 ปีก่อนอยู่นอกช่วงนี้ จึงไม่ได้รับการนับ<br><br>ไม่จำเป็นต้องต่อเนื่อง 180 วัน และถ้าย้ายบริษัทระหว่างทางก็นับรวมกันได้ นี่คือเหตุผลที่การตรวจสอบสถานะการเข้าร่วมประกันในหัวข้อที่ 1 ต้องมาก่อน</p>
+  </div>
+  <p class="body-text"><strong>ถ้าลาออกเอง?</strong> ตามหลักการแล้วจะรับไม่ได้ แต่ถ้า <strong>"เหตุผลที่ลาออกได้อย่างชอบธรรม (정당한 이직 사유)"</strong> ได้รับการยอมรับ ก็รับได้ ตัวอย่างเช่น ค่าจ้างค้างจ่ายหรือต่ำกว่าค่าจ้างขั้นต่ำ · เงื่อนไขการทำงานที่ตกลงกันไว้ต่างจากความเป็นจริงมาก · การเลือกปฏิบัติ การล่วงละเมิดทางเพศ การกลั่นแกล้งในที่ทำงาน · บริษัทปิดกิจการหรือล้มละลาย การถูกแนะนำให้ลาออก · ใช้เวลาเดินทางไป-กลับรวม 3 ชั่วโมงขึ้นไป · ป่วยหรือต้องดูแลสมาชิกในครอบครัว · ตั้งครรภ์ คลอดบุตร เลี้ยงดูบุตร · สัญญาจ้างสิ้นสุดลง แต่ <strong>ต้องมีหลักฐาน</strong> (ข้อความ รายละเอียดการจ่ายเงินเดือน ใบรับรองแพทย์ ฯลฯ)</p>
+  <p class="body-text"><strong>กรณีเหล่านี้ก็รับได้ยาก</strong><br><br>เงินช่วยเหลือการว่างงานเป็นเงินที่จ่ายให้ในสถานะ "อยากทำงานแต่ไม่มีงาน" หรือสถานะว่างงาน ดังนั้น <strong>ถ้ามีใบทะเบียนประกอบธุรกิจ ตามหลักการจะไม่ถือว่าคุณว่างงาน</strong> (ตามคำแนะนำของศูนย์ให้คำปรึกษา กระทรวงแรงงานและการจ้างงาน) กรณีที่ทำงานอื่นอยู่หรือมีรายได้ก็เช่นเดียวกัน ใช้เกณฑ์เดียวกันทั้งคนเกาหลีและชาวต่างชาติ<br><br>แต่มีข้อยกเว้น ถ้ามีเพียงใบทะเบียนประกอบธุรกิจ แต่ <strong>ในความเป็นจริงไม่ได้ทำธุรกิจ</strong> คุณสามารถยื่นขอได้โดยส่ง <strong>เอกสารแจ้งปิดกิจการ (หรือพักกิจการ)</strong> ผู้ประกอบธุรกิจให้เช่าที่ปล่อยเช่าบ้านหรือร้านค้าอย่างเดียว (ไม่มีสำนักงานและไม่มีพนักงาน) บางกรณีก็รับได้ ถ้าสถานการณ์ของคุณไม่ชัดเจน ให้สอบถามศูนย์จัดหางานหรือเบอร์ 1350 ก่อนยื่นขอ</p>
+  <p class="body-text"><strong>จะได้เท่าไหร่? (กรณีออกจากงานในปี 2026)</strong><br><br>คิดเป็นรายวันที่ <strong>60%</strong> ของค่าจ้างเฉลี่ย และทุกครั้งที่ได้รับ "การรับรองสถานะว่างงาน (실업인정)" ตามด้านล่าง จะรวมจ่ายตามจำนวนวันของรอบนั้น เพดานสูงสุดคือวันละ 68,100 วอน และขั้นต่ำคือวันละ 66,048 วอน<br><br>ที่สองตัวเลขห่างกันน้อยมากนั้นถูกต้องแล้ว ขั้นต่ำคือค่าจ้างขั้นต่ำ (ชั่วโมงละ 10,320 วอน) คูณ 80% แล้วคิด 8 ชั่วโมง ส่วนเพดานสูงสุดเป็นจำนวนเงินที่กฎหมายกำหนด ช่วงจึงแคบ ยอดที่คำนวณจาก 60% จะถูกปรับให้อยู่ในช่วงนี้ ดังนั้นถ้าเงินเดือนต่ำกว่าประมาณ 3,300,000 วอน จะได้ขั้นต่ำ และถ้าสูงกว่านั้นก็จะหยุดอยู่ที่เพดานสูงสุด ผลคือส่วนใหญ่จะได้ <strong>วันละประมาณ 66,000–68,000 วอน (เดือนละประมาณ 2,000,000 วอน)</strong><br><br> ระยะเวลาที่ได้รับคือ <strong>120–270 วัน</strong> ขึ้นอยู่กับระยะเวลาที่เข้าร่วมประกันและอายุ <strong>ต้องยื่นขอและรับให้เสร็จภายใน 12 เดือนหลังออกจากงาน หลังจากนั้นจะรับไม่ได้</strong> ถ้ายื่นช้า ส่วนที่เลย 12 เดือนจะรับไม่ได้ ดังนั้นเมื่อออกจากงานแล้ว ให้ยื่นขอเร็วที่สุดเท่าที่ทำได้</p>
+  <p class="body-text" style="margin-top:44px;"><strong>ขั้นตอนการยื่นขอ</strong></p>
+  <ol class="step-list">
+    <li class="step-item">
+      <div class="step-head">
+        <span class="step-badge">1</span>
+        <div class="step-body">
+          <h3>ขอให้บริษัทดำเนินการหนังสือรับรองการออกจากงาน (이직확인서)</h3>
+          <p>บริษัทจะเขียนเหตุผลที่คุณออกจากงานแล้วส่งให้ศูนย์จัดหางาน ถ้าเหตุผลที่เขียนไม่ตรงกับความจริง (เช่น ถูกเลิกจ้างแต่เขียนว่า "ลาออกเอง") คุณสามารถคัดค้านที่ศูนย์จัดหางานได้</p>
+        </div>
+      </div>
+    </li>
+    <li class="step-item">
+      <div class="step-head">
+        <span class="step-badge">2</span>
+        <div class="step-body">
+          <h3>ลงทะเบียนหางานที่ Work24 (고용24)</h3>
+          <p>เป็นขั้นตอนที่คุณลงทะเบียนออนไลน์ (Work24) ว่า "ตอนนี้ฉันกำลังหางานใหม่อย่างจริงจัง" เงินช่วยเหลือการว่างงานเป็นเงินที่จ่ายให้คนที่ตั้งใจและพร้อมจะทำงาน แต่หางานไม่ได้ ดังนั้นการลงทะเบียนหางานนี้และกิจกรรมหางานหลังจากนั้นจึงสำคัญที่สุด การลงทะเบียนไม่ใช่จุดสิ้นสุด หลังจากนั้นคุณต้องหางานจริงๆ เช่น สมัครงาน สัมภาษณ์ ฟังบรรยายพิเศษเรื่องการหางาน หรือฝึกอาชีพ และเก็บบันทึกไว้ จึงจะรับต่อไปได้</p>
+        </div>
+      </div>
+    </li>
+    <li class="step-item">
+      <div class="step-head">
+        <span class="step-badge">3</span>
+        <div class="step-body">
+          <h3>เข้ารับการอบรมผู้มีสิทธิ์รับเงิน (수급자격자 교육) ก่อน</h3>
+          <p>เป็นการอบรมที่อธิบายระบบเงินช่วยเหลือการว่างงาน ต้องเข้ารับก่อนยื่นขอที่ศูนย์จัดหางาน และเลือกได้ว่าจะอบรมออนไลน์หรือไปเข้าร่วมด้วยตัวเอง ถ้าอบรมออนไลน์ก็ไม่ต้องไปที่ศูนย์</p>
+        </div>
+      </div>
+    </li>
+    <li class="step-item">
+      <div class="step-head">
+        <span class="step-badge">4</span>
+        <div class="step-body">
+          <h3>ยื่นขอสิทธิ์รับเงินที่ศูนย์จัดหางานใกล้บ้าน</h3>
+          <p>เมื่ออบรมเสร็จแล้ว ให้ไปที่ศูนย์พร้อมบัตรประจำตัวคนต่างด้าว (ARC) และสำเนาสมุดบัญชีธนาคารเพื่อยื่นใบคำขอ ไม่ต้องไปที่ศูนย์แยกต่างหากเพื่ออบรม การไปที่ศูนย์คือไปยื่นใบคำขอนี้ บางส่วนส่งทางอินเทอร์เน็ตได้ แต่ส่วนใหญ่หลักการคือต้องไปด้วยตัวเอง</p>
+        </div>
+      </div>
+    </li>
+    <li class="step-item">
+      <div class="step-head">
+        <span class="step-badge">5</span>
+        <div class="step-body">
+          <h3>รอ 7 วัน แล้วรับการรับรองสถานะว่างงาน (실업인정)</h3>
+          <p>หลังยื่นขอ ให้รอ 7 วัน หลังจากนั้นทุก 1–4 สัปดาห์ คุณต้องพิสูจน์ว่า "ช่วงที่ผ่านมาได้หางานจริง" เพื่อรับ <strong>การรับรองสถานะว่างงาน (실업인정)</strong> โดยปกติเงินจะเข้าบัญชีของคุณในวันถัดจากวันที่ได้รับการรับรอง ถ้าไม่ได้หางานหรือพิสูจน์ไม่ได้ ช่วงนั้นจะไม่ได้รับการรับรอง จึงควรเก็บบันทึกการสมัครงานเป็นต้นไว้ให้ครบถ้วน วิธีการรับรองและจำนวนครั้งที่ต้องทำ ศูนย์จัดหางานจะแนะนำให้</p>
+        </div>
+      </div>
+    </li>
+  </ol>
+  <p class="body-text"><strong>ข้อควรระวังเป็นพิเศษสำหรับแต่ละวีซ่า</strong><br><br>① <strong>แรงงานทั่วไป (E-9)</strong>: เงินช่วยเหลือการว่างงานกับ <strong>ประกันครบกำหนดออกนอกประเทศ (출국만기보험)</strong> (เงินที่ได้รับแทนเงินชดเชยการเลิกจ้าง) เป็นคนละระบบกันโดยสิ้นเชิง และเมื่อตกงานจะมีกำหนดเวลาการพำนักแยกต่างหาก คุณต้อง <strong>ยื่น "ขอเปลี่ยนสถานประกอบการ (사업장 변경)" (คำขอย้ายไปทำงานกับบริษัทอื่น) ด้วยตัวเองที่ศูนย์จัดหางานที่ดูแลพื้นที่ที่พักของคุณ ภายใน 1 เดือน นับจากวันที่สัญญาจ้างสิ้นสุด</strong> (ยกเว้นกรณียื่นไม่ได้เพราะอุบัติเหตุหรือโรคจากการทำงาน การตั้งครรภ์ หรือการคลอดบุตร เป็นต้น) และเมื่อได้งานใหม่แล้ว ต้องขออนุญาตเปลี่ยนสถานที่ทำงานที่สำนักงานตรวจคนเข้าเมืองด้วย ถ้าไม่ยื่นขอภายในกำหนดนี้ คุณอาจต้องออกนอกประเทศ ระยะเวลาที่รับเงินช่วยเหลือการว่างงานกับระยะเวลาที่อนุญาตให้พำนักอาจไม่เท่ากัน ดังนั้นก่อนลาออกให้ปรึกษาที่ศูนย์ให้คำปรึกษาแรงงานต่างชาติ (1577-0071) ให้แน่ใจ<br><br>② <strong>วีซ่าทำงานอย่างผู้เชี่ยวชาญ/กิจกรรมเฉพาะ (E-7) เป็นต้น</strong>: เมื่อตกงาน บริษัทต้องแจ้งตรวจคนเข้าเมืองภายใน 15 วัน และตัวคุณเองต้องย้ายไปบริษัทอื่นหรือเปลี่ยนสถานะการพำนักเป็นวีซ่าหางาน (D-10) เป็นต้น ยังไม่พบหลักฐานทางการว่าการรับเงินช่วยเหลือการว่างงานทำให้วีซ่าเสียเปรียบ แต่ <strong>การอยู่ด้วยวีซ่าทำงานโดยไม่มีงานทำเป็นเวลานานไม่ได้</strong> ถือเป็นความเสี่ยงที่เป็นจริงมากกว่า</p>
+  <div class="official-links">
+    <a class="official-link" href="https://www.work24.go.kr" target="_blank" rel="noopener"><svg><use href="#i-link"/></svg>ลงทะเบียนหางานที่ Work24</a>
+    <a class="official-link" href="https://www.hikorea.go.kr" target="_blank" rel="noopener"><svg><use href="#i-link"/></svg>HiKorea (ข้อมูลการพำนัก)</a>
+  </div>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-link"/></svg>
+    <h2 class="block-title">6. ถามได้ที่ไหนบ้าง</h2>
+  </div>
+  <table class="data-table">
+    <thead>
+      <tr><th>เบอร์ติดต่อ</th><th>สอบถามเรื่องอะไรได้</th></tr>
+    </thead>
+    <tbody>
+      <tr><td data-label="เบอร์ติดต่อ">ศูนย์ให้คำปรึกษา กระทรวงแรงงานและการจ้างงาน <strong>1350</strong></td><td data-label="สอบถามเรื่องอะไรได้">ปัญหาแรงงานโดยทั่วไป เช่น ค่าจ้างค้างจ่าย การเลิกจ้างที่ไม่เป็นธรรม เงินช่วยเหลือการว่างงาน (ภาษาต่างประเทศที่รองรับ ควรตรวจสอบก่อนใช้บริการ)</td></tr>
+      <tr><td data-label="เบอร์ติดต่อ">ศูนย์ให้คำปรึกษาแรงงานต่างชาติ <strong>1577-0071</strong></td><td data-label="สอบถามเรื่องอะไรได้">ให้คำปรึกษาสำหรับแรงงานทั่วไป (E-9) (รองรับหลายภาษา)</td></tr>
+      <tr><td data-label="เบอร์ติดต่อ">ศูนย์ข้อมูลชาวต่างชาติ <strong>1345</strong></td><td data-label="สอบถามเรื่องอะไรได้">เรื่องวีซ่าและการพำนัก</td></tr>
+      <tr><td data-label="เบอร์ติดต่อ">สำนักงานช่วยเหลือทางกฎหมายเกาหลี <strong>132</strong></td><td data-label="สอบถามเรื่องอะไรได้">ปรึกษากฎหมายฟรี ช่วยเหลือการฟ้องร้องเรื่องค่าจ้างค้างจ่ายและอุบัติเหตุจากการทำงาน</td></tr>
+      <tr><td data-label="เบอร์ติดต่อ">KCOMWEL (근로복지공단)</td><td data-label="สอบถามเรื่องอะไรได้">สอบถามการยื่นขอและผลของประกันอุบัติเหตุจากการทำงาน — ไปที่สาขาใกล้บ้าน หรือตรวจสอบจากเว็บไซต์</td></tr>
+    </tbody>
+  </table>
+  <p class="body-text" style="font-size:0.9rem; color:var(--ink-soft);">ศูนย์ช่วยเหลือแรงงานต่างชาติบางแห่งปิดตัวลงเพราะงบประมาณปี 2024 ลดลง การเปิดให้บริการจึงแตกต่างกันไปตามพื้นที่ ก่อนไปให้โทรสอบถามเสมอ</p>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-check"/></svg>
+    <h2 class="block-title">สรุป</h2>
+  </div>
+  <div class="callout">
+    <div class="callout-head"><svg><use href="#i-info"/></svg>สรุป</div>
+    <p><strong>① ตรวจสอบสถานะการเข้าร่วมประกันการจ้างงานของคุณตั้งแต่ยังทำงานอยู่</strong> ถ้ายังไม่ได้เข้าร่วม เมื่อตกงานคุณจะรับเงินช่วยเหลือการว่างงานไม่ได้<br><br><strong>② ถ้าบาดเจ็บจากการทำงาน</strong> คุณยื่นขอประกันอุบัติเหตุจากการทำงานได้ไม่ว่าจะถือวีซ่าประเภทใด แม้บริษัทจะแนะนำให้ตกลงกันเองนอกระบบ (공상처리) ก็ต้องปรึกษาก่อนเซ็นชื่อ<br><br><strong>③ ถ้าตกงาน</strong> ให้ตรวจสอบหนังสือรับรองการออกจากงาน แล้วยื่นขอที่ Work24 และศูนย์จัดหางานภายใน 12 เดือนหลังออกจากงาน<br><br>ถ้ายากเกินไป อย่าตัดสินใจเองคนเดียว ให้ใช้เบอร์ปรึกษาในหัวข้อที่ 6</p>
+  </div>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-info"/></svg>
+    <h2 class="block-title">คำถามที่พบบ่อย</h2>
+  </div>
+  <table class="data-table">
+    <thead>
+      <tr><th>คำถาม</th><th>คำตอบ</th></tr>
+    </thead>
+    <tbody>
+      <tr><td data-label="คำถาม">ถ้าอยู่เกินกำหนดวีซ่า ยื่นขอประกันอุบัติเหตุจากการทำงานได้ไหม?</td><td data-label="คำตอบ">การใช้ประกันอุบัติเหตุจากการทำงานไม่เกี่ยวกับสถานะการพำนัก แต่ในขั้นตอนการยื่นขอจะมีผลต่อการพำนักอย่างไรนั้น ยังไม่พบหลักฐานทางการที่ยืนยันได้ จึงควรปรึกษาสำนักงานช่วยเหลือทางกฎหมายเกาหลี (132) เป็นต้น ก่อนยื่นขอ</td></tr>
+      <tr><td data-label="คำถาม">บริษัทไม่ได้ทำประกันสังคม 4 ประเภท (4대보험) ให้ ยังใช้ประกันอุบัติเหตุจากการทำงานได้ไหม?</td><td data-label="คำตอบ">ได้ แม้บริษัทจะไม่ได้ทำประกันอุบัติเหตุจากการทำงานไว้ ลูกจ้างก็ยังรับค่าชดเชยได้ ในกรณีนี้ KCOMWEL จะจ่ายให้ก่อน แล้วเรียกเก็บคืนจากบริษัท</td></tr>
+      <tr><td data-label="คำถาม">ถ้าไม่ได้เข้าร่วมประกันการจ้างงานไว้ จะรับเงินช่วยเหลือการว่างงานได้ไหม?</td><td data-label="คำตอบ">ตามหลักการแล้วทำได้ยาก ต้องมีบันทึกการเข้าร่วมประกัน แต่ถ้าคุณทำงานจริงแล้วบริษัทไม่ได้แจ้ง คุณสามารถนำหลักฐานไปขอให้ศูนย์จัดหางานตรวจสอบการเข้าร่วมประกันได้</td></tr>
+      <tr><td data-label="คำถาม">ถ้ารับเงินช่วยเหลือการว่างงาน วีซ่าจะมีปัญหาไหม?</td><td data-label="คำตอบ">ยังไม่พบหลักฐานทางการว่าการรับเงินช่วยเหลือการว่างงานเองทำให้วีซ่าเสียเปรียบ แต่วีซ่าทำงานอยู่โดยไม่มีงานทำเป็นเวลานานไม่ได้ จึงต้องตรวจสอบกำหนดเวลาการพำนักแยกต่างหาก</td></tr>
+      <tr><td data-label="คำถาม">ถ้า E-9 มีประกันครบกำหนดออกนอกประเทศ (출국만기보험) แล้ว ไม่ต้องรับเงินช่วยเหลือการว่างงานได้ไหม?</td><td data-label="คำตอบ">ไม่ได้ ทั้งสองเป็นคนละระบบกัน ประกันครบกำหนดออกนอกประเทศคือเงินที่ได้รับแทนเงินชดเชยการเลิกจ้าง ส่วนเงินช่วยเหลือการว่างงานมาจากประกันการจ้างงาน</td></tr>
+    </tbody>
+  </table>
+
+</section>
+
+<section class="block section-gap">
+  <p class="body-text" style="font-size:0.86rem; color:var(--ink-soft);">
+    บทความนี้จัดทำเพื่อให้ข้อมูลทั่วไป เกณฑ์การเข้าร่วมประกันของแต่ละวีซ่าและจำนวนเงินต่างๆ อาจเปลี่ยนไปตามการแก้ไขกฎหมาย สำหรับสถานการณ์ที่แน่นอนของคุณ ให้ตรวจสอบโดยตรงกับศูนย์จัดหางาน KCOMWEL หรือเบอร์ปรึกษาข้างต้น
+  </p>
+  <div class="keyword-links">
+    <a class="keyword-link" href="/th/long-stay/2026-10-01-korea-national-pension-guide-th.html"><svg><use href="#i-link"/></svg>คู่มือบำนาญแห่งชาติ</a>
+    <a class="keyword-link" href="/th/long-stay/2026-10-01-korea-health-insurance-guide-th.html"><svg><use href="#i-link"/></svg>คู่มือประกันสุขภาพ</a>
+    <a class="keyword-link" href="/th/long-stay/2026-09-19-korea-arc-foreign-registration-guide-th.html"><svg><use href="#i-link"/></svg>คู่มือบัตรประจำตัวคนต่างด้าว (ARC)</a>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="footer-inner">
+    <span class="mono">K-Rambles · บอร์ดพำนักระยะยาว</span>
+  </div>
+</footer>
+
+<button type="button" class="scroll-top" aria-label="Back to top">
+  <svg><use href="#i-arrow-up"/></svg>
+</button>
+
+<script>
+(function () {
+  var KEY = 'krambles-fontsize';
+  var STEPS = ['xs', 'sm', 'md', 'lg', 'xl'];
+  var root = document.documentElement;
+  var ctrl = document.querySelector('.font-size-ctrl');
+  if (!ctrl) { return; }
+  var decBtn = ctrl.querySelector('[data-action="dec"]');
+  var incBtn = ctrl.querySelector('[data-action="inc"]');
+  var index = 2;
+
+  function apply(i) {
+    var size = STEPS[i];
+    if (size === 'md') { root.removeAttribute('data-fs'); }
+    else { root.setAttribute('data-fs', size); }
+    decBtn.disabled = i === 0;
+    incBtn.disabled = i === STEPS.length - 1;
+  }
+
+  var saved = 'md';
+  try { saved = localStorage.getItem(KEY) || 'md'; } catch (e) {}
+  index = STEPS.indexOf(saved);
+  if (index === -1) { index = 2; }
+  apply(index);
+
+  decBtn.addEventListener('click', function () {
+    if (index > 0) {
+      index--;
+      apply(index);
+      try { localStorage.setItem(KEY, STEPS[index]); } catch (e) {}
+    }
+  });
+  incBtn.addEventListener('click', function () {
+    if (index < STEPS.length - 1) {
+      index++;
+      apply(index);
+      try { localStorage.setItem(KEY, STEPS[index]); } catch (e) {}
+    }
+  });
+})();
+
+(function () {
+  var btn = document.querySelector('.scroll-top');
+  if (!btn) { return; }
+  function onScroll() {
+    if (window.scrollY > 600) { btn.classList.add('visible'); }
+    else { btn.classList.remove('visible'); }
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  btn.addEventListener('click', function () {
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
+  });
+})();
+
+(function () {
+  function openModal(id) {
+    var modal = document.getElementById(id);
+    if (!modal) { return; }
+    modal.hidden = false;
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal(modal) {
+    modal.hidden = true;
+    document.body.style.overflow = '';
+  }
+  document.querySelectorAll('[data-modal-open]').forEach(function (btn) {
+    btn.addEventListener('click', function () { openModal(btn.getAttribute('data-modal-open')); });
+  });
+  document.querySelectorAll('.modal-overlay').forEach(function (overlay) {
+    overlay.addEventListener('click', function (e) {
+      if (e.target === overlay) { closeModal(overlay); }
+    });
+    overlay.querySelectorAll('[data-modal-close]').forEach(function (btn) {
+      btn.addEventListener('click', function () { closeModal(overlay); });
+    });
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      document.querySelectorAll('.modal-overlay').forEach(function (overlay) {
+        if (!overlay.hidden) { closeModal(overlay); }
+      });
+    }
+  });
+})();
+</script>
+<script src="/assets/js/krambles-render.js"></script>
+<script data-goatcounter="https://krambles.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
