@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>외국인을 위한 한국 근로계약서·최저임금·퇴직금 완전정리 | K-Rambles</title>
+<link rel="canonical" href="https://k-rambles.com/ko/long-stay/2026-10-02-korea-employment-contract-severance-guide-ko.html">
+<meta name="description" content="일을 시작할 때 받아야 하는 근로계약서에 무엇이 적혀 있어야 하는지, 월급이 최저임금 이상인지 확인하는 법, 그만둘 때 퇴직금을 받는 조건과 계산 방법, 월급이나 퇴직금을 못 받았을 때 어디에 말해야 하는지 정리했어요.">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Work+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap');
+
+  :root {
+    --paper: #ecdfc0;
+    --paper-raised: #fbf8ee;
+    --ink: #372b10;
+    --ink-soft: #6e5c33;
+    --coral: #d9532a;
+    --coral-ink: #9c3b1c;
+    --navy: #1b2a4a;
+    --navy-ink: #26406e;
+    --marigold: #c8891f;
+    --marigold-ink: #8a5c10;
+    --line: rgba(55, 43, 16, 0.16);
+    --line-strong: rgba(55, 43, 16, 0.3);
+    --card-shadow: 0 18px 34px -20px rgba(40, 30, 10, 0.4);
+    --ok: #1a7a3d;
+    --no: #b3261e;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #1b1509; --paper-raised: #2b2211; --ink: #f7f0dd; --ink-soft: #cbb98f;
+      --coral: #ef7448; --coral-ink: #ffb497; --navy: #9fb4e0; --navy-ink: #cfdcf5; --marigold: #e8b24b; --marigold-ink: #ffcf7d;
+      --line: rgba(247,240,221,0.16); --line-strong: rgba(247,240,221,0.3);
+      --card-shadow: 0 18px 34px -18px rgba(0,0,0,0.65);
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #1b1509; --paper-raised: #2b2211; --ink: #f7f0dd; --ink-soft: #cbb98f;
+    --coral: #ef7448; --coral-ink: #ffb497; --navy: #9fb4e0; --navy-ink: #cfdcf5; --marigold: #e8b24b; --marigold-ink: #ffcf7d;
+    --line: rgba(247,240,221,0.16); --line-strong: rgba(247,240,221,0.3);
+    --card-shadow: 0 18px 34px -18px rgba(0,0,0,0.65);
+  }
+
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: "Work Sans", ui-sans-serif, system-ui, sans-serif; font-size: 1.0625rem; line-height: 1.6; -webkit-font-smoothing: antialiased; word-break: keep-all; overflow-wrap: break-word; }
+
+  html { font-size: 100%; }
+  html[data-fs="xs"] { font-size: 85%; }
+  html[data-fs="sm"] { font-size: 92.5%; }
+  html[data-fs="lg"] { font-size: 115%; }
+  html[data-fs="xl"] { font-size: 135%; }
+  .font-size-ctrl { display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--line); border-radius: 100px; padding: 4px 8px; }
+  .fs-labels { display: inline-flex; align-items: baseline; gap: 3px; }
+  .fs-label { font-family: "Work Sans", sans-serif; font-weight: 600; color: var(--ink-soft); line-height: 1; user-select: none; }
+  .fs-label-sm { font-size: 0.68rem; }
+  .fs-label-lg { font-size: 1.15rem; }
+  .fs-step { appearance: none; border: none; background: none; cursor: pointer; color: var(--ink-soft); font-family: "Work Sans", sans-serif; font-weight: 700; font-size: 1.35rem; line-height: 1; width: 30px; height: 30px; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; flex-shrink: 0; }
+  .fs-step:hover:not(:disabled) { background: var(--line); color: var(--ink); }
+  .fs-step:disabled { opacity: 0.32; cursor: default; }
+  a { color: inherit; }
+  .mono { font-family: "Space Mono", ui-monospace, "SF Mono", monospace; }
+  a.mono { color: var(--navy-ink); text-decoration: underline; text-underline-offset: 2px; }
+  a.mono:hover { color: var(--coral-ink); }
+  .keyword-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 6px; }
+  .keyword-link { display: inline-flex; align-items: center; gap: 6px; text-decoration: none; color: var(--ink); background: var(--paper-raised); border: 1px solid var(--line); border-radius: 999px; padding: 8px 14px; font-size: 0.88rem; }
+  .keyword-link:hover { border-color: var(--coral); color: var(--coral-ink); }
+  .keyword-link svg { width: 14px; height: 14px; stroke: var(--ink-soft); fill: none; stroke-width: 2; }
+
+  header.site { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px 20px; padding: 26px 28px; max-width: 820px; margin: 0 auto; }
+  .header-right { display: flex; align-items: center; flex-wrap: wrap; justify-content: flex-end; gap: 10px 16px; }
+  .logo { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 1.2rem; text-decoration: none; white-space: nowrap; }
+  .logo span { color: var(--coral); }
+  .back-link { font-family: "Space Mono", monospace; font-size: 0.78rem; letter-spacing: 0.03em; text-decoration: none; color: var(--ink-soft); display: inline-flex; flex-direction: column; align-items: flex-start; gap: 2px; line-height: 1; white-space: nowrap; }
+  .back-link svg { width: 12px; height: 12px; }
+  .back-link:hover { color: var(--navy-ink); }
+  .lang-switch { display: flex; align-items: center; gap: 6px; font-family: "Space Mono", monospace; font-size: 0.76rem; letter-spacing: 0.03em; }
+  .lang-switch a, .lang-switch span.current { text-decoration: none; padding: 3px 8px; border-radius: 6px; }
+  .lang-switch a { color: var(--ink-soft); }
+  .lang-switch a:hover { color: var(--ink); }
+  .lang-switch span.current { color: var(--ink); font-weight: 700; border: 1px solid var(--line); }
+
+  .art-hero { padding: 10px 28px 24px; max-width: 820px; margin: 0 auto; }
+  .hero-photo-wrap { max-width: 820px; margin: 0 auto 8px; padding: 0 28px; }
+  .hero-photo { display: block; width: 100%; height: auto; border-radius: 16px; box-shadow: var(--card-shadow); border: 1px solid var(--line); }
+  .cite-note { font-size: 0.92rem; color: var(--ink-soft); margin: 10px 0 0; }
+  .stamp { display: inline-flex; align-items: center; gap: 9px; font-family: "Space Mono", monospace; font-size: 0.76rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--navy-ink); border: 1.5px dashed var(--navy); border-radius: 999px; padding: 6px 14px 6px 11px; transform: rotate(-1.5deg); }
+  .stamp::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--navy); display: inline-block; }
+
+  .hero-top { display: flex; align-items: center; gap: 16px; margin: 22px 0 24px; }
+  .hero-icon { width: 40px; height: 40px; stroke: var(--navy-ink); fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; }
+
+  h1.art-title { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: clamp(1.9rem, 4.6vw, 2.7rem); line-height: 1.28; letter-spacing: -0.01em; margin: 0 0 14px; text-wrap: balance; }
+  p.dek { font-size: 1.08rem; color: var(--ink-soft); max-width: 58ch; margin: 0; }
+
+  .updated-badge { display: inline-flex; align-items: center; gap: 7px; font-size: 0.92rem; color: var(--ink-soft); margin: 16px 0 0; }
+  .updated-icon { width: 17px; height: 17px; stroke: var(--navy-ink); fill: none; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+
+  section.block { max-width: 820px; margin: 0 auto; padding: 6px 28px 30px; }
+  section.block.section-gap { padding-top: 30px; }
+
+  .block-head { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+  .block-icon { width: 22px; height: 22px; stroke: var(--navy-ink); fill: none; stroke-width: 1.7; flex-shrink: 0; }
+  .block-title { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 1.3rem; margin: 0; }
+
+  p.body-text { margin: 0 0 14px; }
+  ul.plain-list { list-style: disc; margin: 0 0 14px; padding-left: 1.2em; }
+  ul.plain-list li + li { margin-top: 12px; }
+  ol.plain-list-num { margin: 0 0 14px; padding-left: 1.2em; }
+  ol.plain-list-num li + li { margin-top: 12px; }
+
+  table.data-table { width: 100%; border-collapse: collapse; background: var(--paper-raised); font-size: 0.92rem; margin: 4px 0 18px; word-break: keep-all; overflow-wrap: break-word; }
+  table.data-table th, table.data-table td { text-align: left; padding: 12px 14px; border-bottom: 1px solid var(--line); word-break: keep-all; overflow-wrap: break-word; vertical-align: top; }
+  table.data-table th:first-child, table.data-table td:first-child { padding-left: 16px; }
+  table.data-table th:last-child, table.data-table td:last-child { padding-right: 16px; }
+  table.data-table thead th { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; color: var(--ink-soft); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.03em; border-bottom: 1px solid var(--line-strong); white-space: nowrap; }
+  table.data-table tbody tr:last-child td { border-bottom: none; }
+  table.data-table td p, table.data-table td ul { margin: 0; }
+  table.data-table td ul { padding-left: 1.1em; }
+  table.data-table td li + li, table.data-table td p + p { margin-top: 6px; }
+
+  /* On narrow screens, tables flip from columns to stacked cards so no column gets squeezed into a one-character-wide strip. */
+  @media (max-width: 640px) {
+    table.data-table { display: block; }
+    table.data-table thead { display: none; }
+    table.data-table tbody { display: block; }
+    table.data-table { background: transparent; }
+    table.data-table tr { display: block; padding: 14px 16px; margin-bottom: 12px; border: 2px solid var(--line-strong); border-radius: 0; background: var(--paper-raised); }
+    table.data-table tr:last-child { margin-bottom: 0; }
+    table.data-table td { display: block; padding: 8px 0; border-bottom: 1px solid var(--line); }
+    table.data-table td:first-child { padding-left: 0; }
+    table.data-table td:last-child { padding-right: 0; border-bottom: none; }
+    table.data-table td::before { content: attr(data-label); display: block; font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; color: var(--ink-soft); font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.03em; margin-bottom: 4px; }
+  }
+
+  .callout { background: var(--paper-raised); border: 1px solid var(--line); border-left: 3px solid var(--marigold); border-radius: 12px; padding: 18px 20px; margin: 16px 0 0; box-shadow: var(--card-shadow); }
+  .callout-head { display: flex; align-items: center; gap: 8px; font-weight: 700; margin-bottom: 8px; }
+  .callout-head svg { width: 18px; height: 18px; stroke: var(--marigold-ink); fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+  .callout p { margin: 0; font-size: 0.95rem; color: var(--ink-soft); }
+  .callout p + p { margin-top: 8px; }
+  .callout strong.warn { color: var(--coral-ink); }
+
+  .step-list { list-style: none; margin: 6px 0 0; padding: 0; display: flex; flex-direction: column; gap: 24px; }
+  .step-item { display: flex; flex-direction: column; gap: 8px; }
+  .step-head { display: flex; align-items: flex-start; gap: 12px; }
+  .step-badge { width: 28px; height: 28px; border-radius: 50%; background: var(--coral); color: #fff5ee; font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 0.9rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .step-body h3 { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 1.0rem; margin: 2px 0 4px; }
+  .step-body p { margin: 0; font-size: 0.93rem; color: color-mix(in srgb, var(--ink) 60%, var(--ink-soft)); }
+
+  .official-links { display: flex; flex-wrap: wrap; gap: 10px; margin: 14px 0 0; }
+  .official-link { display: inline-flex; align-items: center; gap: 6px; text-decoration: none; color: var(--ink); background: var(--paper-raised); border: 1px solid var(--line); border-radius: 999px; padding: 8px 14px; font-size: 0.86rem; }
+  .official-link:hover { border-color: var(--navy); color: var(--navy-ink); }
+  .official-link svg { width: 14px; height: 14px; stroke: var(--ink-soft); fill: none; stroke-width: 2; }
+
+  .scroll-top { position: fixed; right: 20px; bottom: 20px; width: 46px; height: 46px; border-radius: 50%; background: var(--coral); color: #fff5ee; display: flex; align-items: center; justify-content: center; box-shadow: var(--card-shadow); border: none; cursor: pointer; opacity: 0; pointer-events: none; transition: opacity 0.2s ease, transform 0.15s ease; z-index: 40; }
+  .scroll-top.visible { opacity: 1; pointer-events: auto; }
+  .scroll-top:hover { transform: translateY(-3px); background: var(--coral-ink); }
+  .scroll-top svg { width: 20px; height: 20px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  @media (prefers-reduced-motion: reduce) { .scroll-top { transition: none; } }
+
+  footer.site { border-top: 1px solid var(--line); padding: 24px 28px 40px; }
+  .footer-inner { max-width: 820px; margin: 0 auto; }
+  .footer-inner .mono { font-size: 0.76rem; color: var(--ink-soft); }
+
+  section.block > * + *, .shop-card > * + * { margin-top: 18px; }
+  section.block > .callout + *, section.block > table.data-table + *, section.block > ol.step-list + *, section.block > .official-links + * { margin-top: 44px; }
+  section.block > table.data-table + p.body-text[style*="font-size:0.9rem"] { margin-top: 18px; }
+
+  @media (max-width: 400px) {
+    header.site { padding: 18px 16px; flex-wrap: wrap; row-gap: 10px; }
+    .logo { font-size: 1.02rem; }
+    .header-right { gap: 10px; flex-wrap: wrap; }
+    .art-hero, section.block { padding-left: 16px; padding-right: 16px; }
+  }
+  @media (max-width: 340px) {
+    .logo { font-size: 0.9rem; }
+    .font-size-ctrl { padding: 3px 6px; gap: 5px; }
+  }
+
+  button.official-link { font-family: "Work Sans", sans-serif; }
+
+  .modal-overlay { position: fixed; inset: 0; background: rgba(20, 15, 5, 0.52); display: flex; align-items: flex-end; justify-content: center; z-index: 60; padding: 0; }
+  .modal-overlay[hidden] { display: none; }
+  .modal-card { background: var(--paper-raised); color: var(--ink); width: 100%; max-width: 680px; max-height: 82vh; border-radius: 18px 18px 0 0; box-shadow: var(--card-shadow); padding: 22px 22px calc(22px + env(safe-area-inset-bottom, 0px)); overflow-y: auto; border: 1px solid var(--line); border-bottom: none; }
+  @media (min-width: 720px) {
+    .modal-overlay { align-items: center; }
+    .modal-card { border-radius: 18px; border-bottom: 1px solid var(--line); max-height: 78vh; }
+  }
+  .modal-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 8px; }
+  .modal-head h3 { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 1.1rem; margin: 0; }
+  .modal-close { appearance: none; border: none; background: var(--line); color: var(--ink); width: 30px; height: 30px; border-radius: 50%; font-size: 1.3rem; line-height: 1; cursor: pointer; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
+  .modal-close:hover { background: var(--coral); color: #fff5ee; }
+  .modal-source { font-size: 0.84rem; color: var(--ink-soft); margin: 0 0 16px; }
+  .modal-group + .modal-group { margin-top: 18px; }
+  .modal-group h4 { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 0.95rem; margin: 0 0 6px; display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+  .modal-count { font-family: "Space Mono", monospace; font-weight: 400; font-size: 0.78rem; color: var(--ink-soft); }
+  .modal-countries { font-size: 0.9rem; color: var(--ink-soft); margin: 0; line-height: 1.7; }
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-doc" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.5 4 5.5 4 9s-1.5 6.5-4 9c-2.5-2.5-4-5.5-4-9s1.5-6.5 4-9Z"/></symbol>
+  <symbol id="i-pass" viewBox="0 0 24 24"><path d="M4 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v1.3a1.5 1.5 0 0 0 0 2.9V13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-1.3a1.5 1.5 0 0 0 0-2.9Z" transform="translate(0 2)"/><path d="M9 6.5v11" stroke-dasharray="2 2" transform="translate(0 2)"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M4 12.5 9.5 18 20 6.5"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5.5M12 8v.01"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 9.8h17M8 2.5v5M16 2.5v5"/></symbol>
+  <symbol id="i-link" viewBox="0 0 24 24"><path d="M9.5 14.5 14.5 9.5"/><path d="M8.3 11.7l-1.6 1.6a3 3 0 0 0 4.2 4.2l1.6-1.6"/><path d="M15.7 12.3l1.6-1.6a3 3 0 0 0-4.2-4.2l-1.6 1.6"/></symbol>
+  <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></symbol>
+</svg>
+
+<header class="site">
+  <a class="logo" href="/ko/index.html">K-<span>Rambles</span></a>
+  <div class="header-right">
+    <a class="back-link" href="/ko/long-stay/index.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+      보드로 돌아가기
+    </a>
+    <div class="font-size-ctrl" role="group" aria-label="Text size"><button type="button" class="fs-step" data-action="dec" aria-label="Decrease text size">−</button><span class="fs-labels" aria-hidden="true"><span class="fs-label fs-label-sm">가</span><span class="fs-label fs-label-lg">가</span></span><button type="button" class="fs-step" data-action="inc" aria-label="Increase text size">+</button></div>
+    <div class="lang-switch" aria-label="Language" data-key="long-stay/2026-10-02-korea-employment-contract-severance-guide-en"></div>
+  </div>
+</header>
+
+<div class="art-hero">
+  <div class="hero-top">
+    <span class="stamp">장기체류 · 보드 11</span>
+    <svg class="hero-icon"><use href="#i-doc"/></svg>
+  </div>
+  <h1 class="art-title">외국인을 위한 한국 근로계약서·최저임금·퇴직금 완전정리</h1>
+  <p class="dek">근로계약서를 쓸 때는 적힌 내용과 월급이 최저임금 이상인지를, 그만둘 때는 퇴직금을 확인하세요. 이 세 가지를 미리 알아두면 임금 문제가 생겨도 당황하지 않고 대응할 수 있어요.</p>
+  <p class="updated-badge"><svg class="updated-icon"><use href="#i-calendar"/></svg>2026년 10월 기준</p>
+</div>
+
+
+
+
+<!-- 출처(개정사항 체크 시 참고) — 2026-10-02 확인
+  근로조건 명시·서면 교부: 근로기준법 제17조 (law.go.kr, 2026.8.20 시행본 확인), 근로조건 서면 미명시 시 벌금 최대 500만 원(근로기준법 제114조, 노무 자료 확인)
+  최저임금 2026: 시간급 10,320원, 일급 82,560원, 월 환산 2,156,880원(209시간), 고용노동부 보도자료 https://www.moel.go.kr/news/enews/report/enewsView.do?news_seq=18144 / 외국인도 동일 적용·임금 지급 원칙·진정·소송: 생활법령정보 https://easylaw.go.kr/CSP/CnpClsMain.laf?popMenu=ov&csmSeq=2042&ccfNo=3&cciNo=1&cnpClsNo=4
+  주휴수당: 고용노동부 1350 상담 기준 https://1350.moel.go.kr/rtmview.do?id=1000059852 (4주 평균 주 15시간 이상, 소정근로일 개근)
+  퇴직금: 생활법령정보 https://easylaw.go.kr/CSP/CnpClsMain.laf?popMenu=ov&csmSeq=1002&ccfNo=4&cciNo=3&cnpClsNo=1 (1년 이상, 14일, 지연이자 최대 연 20%, 시효 3년), 평균임금 30일분·통상임금 하한은 근로기준법·퇴직급여법 일반 원칙
+  E-9 보험(출국만기보험 8.3%, 임금체불보증보험 연 15,000원·한도 400만 원, 귀국비용보험, 상해보험): 외국인고용관리시스템 https://www.eps.go.kr/eo/EmployPerSystem.eo?tabGb=06, 노무법인 자료 https://k-labor.co.kr/main/klabor_04_view.html?pgubun=4&lang=ko&find=&chapter_idx=413&items_idx=5665
+  출국만기보험 출국 후 14일 내 지급·통상임금 기준 차액은 사업주 지급·시효 3년: 정책브리핑 https://www.korea.kr/news/policyNewsView.do?newsId=148781107 (2014년 개정 내용, 현행 확인 필요)
+  원어민 강사: 서울중앙지법 2017 판결 https://www.etoday.co.kr/news/view/1499185 / 대법원 2019 https://www.hankookilbo.com/news/article/201910221508734836 / 퇴직금 사전 포기 약정 무효·프리랜서 계약 실질 판단 https://k-labor.co.kr/inc/board_read.html?idx1=384&lang=ko&TB_NAME=TB_BOARD&Prt=2
+  출국만기보험금 신청 절차(고용센터 출국계획 신고 1개월 전, 보험사 신청 7일 전, 수령 방식, 상담 1600-0266): 삼성화재 https://www.samsungfire.com/foreign/P_E07_07_05_001.html / 생활법령정보 https://www.easylaw.go.kr/CSP/CnpClsMainBtr.laf?popMenu=ov&csmSeq=2042&ccfNo=4&cciNo=2&cnpClsNo=1 (신청서 서식·전화번호는 출처 간 상이, 이용 전 확인)
+  서면 명시 항목: 근로기준법 제17조(임금 구성항목·계산방법·지급방법, 소정근로시간, 휴일, 연차), 기간제법 제17조(근로계약기간, 단시간 근로자는 근로일·근로일별 근로시간), 위반 시 근로기준법 벌금 500만 원 이하·기간제법 과태료(2026-10-04 노무 자료 확인, 시행령 제8조 원문은 직접 확인 못함)
+  귀국비용보험(의무, 3개월 내, 과태료 80~320만 원, 국가군 1군 40만[중국·필리핀·인도네시아·태국·베트남]/2군 50만[기타, 네팔 포함]/3군 60만[스리랑카], 최대 108.3% 증액, 지급사유 중 '사업장 이탈 후 자진출국·강제퇴거'는 본문에서 제외: https://www.hrdkorea.or.kr/1/3/3/3 , 공항 현금지급: 인천공항 1·2터미널 2018 보도, 김해공항 삼성화재 안내)·상해보험(의무, 15일 내[기산일: 입국일 또는 계약 시작일, 출처 간 상이], 일시납·보험기간=근로계약기간(최대 3년)·근로자 부담: 고용24(EPS) https://www.eps.go.kr/eo/EmployPerSystem.eo?tabGb=06 ; 예시 25세 남 약 19,400원/3년: https://eps.go.kr/eo/EmployJobProc.eo?natNm=kr&tabGb=05 (같은 EPS 다른 페이지에는 30세 남 1년 9,100원, 삼성화재 페이지에는 30세 남 15,600원으로 자료 간 상이 → 본문에는 25세 예시만 사용, 실제 금액은 가입 시 확인) 30세 남 15,600/여 15,100·40세 남 29,900/여 20,100·50세 남 82,600/여 38,100, 과태료 최대 500만 원, 상해 사망 3,000만/질병 사망 1,500만, 연령·성별 보험료): 삼성화재 https://www.samsungfire.com/foreign/P_E07_06_02_00.html , https://m.samsungfire.com/foreign/P_E07_06_03_00.html / 4대 보험 안내 https://eps.hrdkorea.or.kr/e9/user/intro/intro.do?method=epsInsurances (2026-10-04 확인)
+  출국만기보험금 수령(공항 현금은 출국 당일, 계좌 입금은 출국일부터 14일): 생활법령정보·삼성화재 안내 2026-10-04 확인
+  미확인으로 본문에서 제외·완화한 항목: 출국만기보험을 삼성화재 외에 취급하는 보험사 유무, 귀국비용·상해보험 가입 절차 상세, 귀국비용보험 증액 108.3%의 산정 기준, H-2(방문취업)의 출국만기보험 적용 여부(자료마다 상이), 불법체류 상태에서 진정 시 체류 영향, 1350 지원 언어, 체당금, 수습 90% 감액 요건, 법률구조공단 지원 소득 기준, 표준근로계약서 세부 항목
+-->
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-info"/></svg>
+    <h2 class="block-title">핵심 요약</h2>
+  </div>
+  <div class="callout">
+    <div class="callout-head"><svg><use href="#i-info"/></svg>한 줄 결론</div>
+    <p><strong>① 근로계약서</strong>는 일을 시작할 때 <strong>종이(또는 전자 파일)로 받아야</strong> 해요. 월급, 하루 일하는 시간, 쉬는 날, 연차휴가가 반드시 적혀 있어야 하고(근로기준법 제17조), 회사가 이걸 안 주면 회사가 처벌받을 수 있어요.<br><br><strong>② 최저임금</strong>은 2026년 기준 <strong>시간당 10,320원</strong>이고, 외국인에게도 똑같이 적용돼요. 하루 8시간 주 5일 일하면 월급은 최소 <strong>2,156,880원</strong>이에요.<br><br><strong>③ 퇴직금</strong>은 <strong>1년 이상 일했고 일주일에 평균 15시간 이상 일했다면</strong> 받아요. 그만둔 날부터 <strong>14일 안에</strong> 줘야 해요. 다만 <strong>E-9 비자</strong>는 퇴직금 대신 <strong>출국만기보험</strong>으로 받고, 출국할 때 공항에서 현금으로 받거나 출국한 날부터 14일 안에 계좌로 받아요.<br><br><strong>④ 못 받았다면</strong> 증거를 모으고 노동포털에 진정(조사해달라는 신청)을 낼 수 있어요. 월급과 퇴직금을 받을 권리는 <strong>3년</strong>이 지나면 사라져요.</p>
+  </div>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-doc"/></svg>
+    <h2 class="block-title">먼저 용어부터 정리해요</h2>
+  </div>
+  <p class="body-text">이 글에는 한국어 노동 용어가 많이 나와요. 처음 보면 어려우니, 먼저 표로 한꺼번에 정리할게요. 읽다가 모르는 단어가 나오면 여기로 돌아오세요.</p>
+  <table class="data-table">
+    <thead>
+      <tr><th>용어</th><th>쉬운 설명</th></tr>
+    </thead>
+    <tbody>
+      <tr><td data-label="용어">근로계약서</td><td data-label="쉬운 설명">"이 일을 하면 월급은 얼마, 하루 몇 시간 일한다"를 회사와 근로자가 약속해서 적은 문서</td></tr>
+      <tr><td data-label="용어">소정근로시간</td><td data-label="쉬운 설명">계약서에 "이 시간만큼 일하기로 했다"고 적은 근로시간. 실제로 일한 시간이 아니라 약속한 시간이에요</td></tr>
+      <tr><td data-label="용어">최저임금</td><td data-label="쉬운 설명">법으로 정해진 최소한의 시간당 임금. 이보다 적게 주기로 계약해도 그 약속은 무효예요</td></tr>
+      <tr><td data-label="용어">주휴수당</td><td data-label="쉬운 설명">일주일을 쉬지 않고 일했을 때, 쉬는 날(주휴일) 하루치를 일한 것처럼 월급에 더해서 주는 돈</td></tr>
+      <tr><td data-label="용어">임금명세서</td><td data-label="쉬운 설명">이번 달 월급이 어떤 항목으로 얼마가 계산됐는지 적은 내역서. 회사는 월급을 줄 때 이걸 같이 줘야 해요</td></tr>
+      <tr><td data-label="용어">평균임금</td><td data-label="쉬운 설명">퇴직금을 계산하는 기준이 되는 하루 임금. 그만두기 전 3개월 동안 받은 돈을 그 기간의 날수로 나눠서 구해요</td></tr>
+      <tr><td data-label="용어">퇴직금</td><td data-label="쉬운 설명">1년 이상 일하고 그만둘 때 회사가 주는 돈. 1년에 30일치 평균임금이 기본이에요</td></tr>
+      <tr><td data-label="용어">고용허가제(E-9)</td><td data-label="쉬운 설명">정부가 정한 제도로 외국인이 제조업·농축산업·어업·건설업 등에서 일하는 비자(비전문취업, E-9)</td></tr>
+      <tr><td data-label="용어">출국만기보험</td><td data-label="쉬운 설명">E-9 근로자의 퇴직금 대신, 회사가 매달 보험료를 내서 쌓아두었다가 한국을 떠난 뒤 받는 보험</td></tr>
+      <tr><td data-label="용어">임금체불</td><td data-label="쉬운 설명">회사가 월급이나 퇴직금을 정해진 날짜에 주지 않는 것</td></tr>
+      <tr><td data-label="용어">진정</td><td data-label="쉬운 설명">고용노동부에 "회사가 법을 어겼으니 조사해달라"고 신청하는 것</td></tr>
+    </tbody>
+  </table>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-check"/></svg>
+    <h2 class="block-title">1. 근로계약서: 사인하기 전에 이것부터 확인하세요</h2>
+  </div>
+  <div class="callout">
+    <div class="callout-head"><svg><use href="#i-info"/></svg>왜 중요한가</div>
+    <p>근로계약서는 <strong>일을 시작할 때</strong> 써야 하고, 회사는 서명한 뒤 <strong>본인 몫을 꼭 줘야</strong> 해요. 회사에만 있고 본인이 못 받았다면, 나중에 약속 내용을 증명할 방법이 없어요. 꼭 사진이라도 찍어서 본인 휴대폰에 남기세요.</p>
+  </div>
+  <p class="body-text">법(근로기준법 제17조, 기간제법 제17조)에서 <strong>서면(종이 또는 전자문서)으로 명시해야 한다고 정한 항목</strong>은 아래와 같아요. 이게 빠져 있으면 서명하기 전에 회사에 추가해달라고 요청하세요.</p>
+  <table class="data-table">
+    <thead>
+      <tr><th>항목</th><th>확인할 것</th></tr>
+    </thead>
+    <tbody>
+      <tr><td data-label="항목">임금</td><td data-label="확인할 것">월급인지 시급인지, 금액이 얼마인지, 어떤 수당이 포함되는지(기본급·야간수당 등), 계산 방법, 월급날, 지급 방법(계좌이체 등). 기숙사비·식비처럼 월급에서 빼는 돈이 있다면 그 금액과 계산 방법도 함께 적혀 있어야 해요</td></tr>
+      <tr><td data-label="항목">계약 기간</td><td data-label="확인할 것">일할 기간이 정해진 계약이라면 언제부터 언제까지인지(시작일과 끝나는 날). 자동으로 연장되는지도 확인하세요</td></tr>
+      <tr><td data-label="항목">소정근로시간</td><td data-label="확인할 것">하루 몇 시간, 시작·끝나는 시각, 쉬는 시간(휴게시간)</td></tr>
+      <tr><td data-label="항목">휴일</td><td data-label="확인할 것">일주일에 쉬는 날(주휴일)이 무슨 요일인지, 공휴일에 쉬는지</td></tr>
+      <tr><td data-label="항목">연차 유급휴가</td><td data-label="확인할 것">쉬어도 월급이 나가는 휴가가 있는지, 몇 일인지</td></tr>
+      <tr><td data-label="항목">취업 장소와 하는 일</td><td data-label="확인할 것">어디에서 어떤 일을 하는지(계약서와 실제 일이 다르면 문제가 돼요)</td></tr>
+    </tbody>
+  </table>
+  <p class="body-text"><strong>월급 지급 규칙</strong><br><br>월급은 법으로 정해진 방법이 있어요. <strong>매월 1회 이상, 정해진 날짜에, 현금(통화)으로, 본인에게 직접, 전액</strong> 줘야 해요. 월급을 줄 때 <strong>임금명세서</strong>도 함께 줘야 해요.</p>
+  <div class="callout">
+    <div class="callout-head"><svg><use href="#i-info"/></svg>E-9 근로자라면</div>
+    <p><strong>E-9(비전문취업) 근로자</strong>는 정부가 정한 <strong>표준근로계약서</strong>를 쓰고, 일하러 오기 전에 계약을 맺어요. 한국에 와서 새 계약서를 쓰라고 하면 원래 계약서와 비교해보고, 임금이나 근로시간이 불리하게 바뀌었다면 서명 전에 상담받으세요(6장).</p>
+  </div>
+  <div class="callout">
+    <div class="callout-head"><svg><use href="#i-info"/></svg>계약서가 없다면</div>
+    <p><strong>계약서를 안 썼어도</strong> 일한 사실이 있으면 월급과 퇴직금을 받을 권리는 그대로예요. 다만 얼마를 받기로 했는지 증명하기 어려우니, 아래 사항을 모아두세요.<br><br>① 월급이 들어온 <strong>통장 내역</strong><br><br>② <strong>출퇴근 기록</strong>(사진·메모)<br><br>③ 일을 지시한 <strong>메신저 대화</strong><br><br>④ 같이 일한 사람의 연락처</p>
+  </div>
+  <div class="official-links">
+    <a class="official-link" href="https://labor.moel.go.kr" target="_blank" rel="noopener"><svg><use href="#i-link"/></svg>고용노동부 노동포털</a>
+  </div>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-info"/></svg>
+    <h2 class="block-title">2. 내 월급이 최저임금 이상인가?</h2>
+  </div>
+  <p class="body-text">2026년 최저임금은 <strong>시간당 10,320원</strong>이고 2026년 1월 1일부터 적용돼요. 외국인도 업종이나 비자와 상관없이 똑같이 적용돼요. 최저임금보다 적게 주기로 계약했더라도 그 부분은 무효가 되고, 최저임금만큼 줘야 해요.</p>
+  <table class="data-table">
+    <thead>
+      <tr><th>기준</th><th>2026년 최저임금</th></tr>
+    </thead>
+    <tbody>
+      <tr><td data-label="기준">시간급</td><td data-label="2026년 최저임금">10,320원</td></tr>
+      <tr><td data-label="기준">일급(하루 8시간)</td><td data-label="2026년 최저임금">82,560원</td></tr>
+      <tr><td data-label="기준">월급(주 40시간 근무, 월 209시간 기준)</td><td data-label="2026년 최저임금">2,156,880원</td></tr>
+    </tbody>
+  </table>
+  <p class="body-text"><strong>계약서에 적힌 월급이 최저임금 이상인지 계산해보세요.</strong> 월급을 <strong>209</strong>로 나누면 시급이 나와요.<br><br><strong>왜 209로 나누나요?</strong> 월급에는 일한 날의 임금만 들어 있는 게 아니에요. 법은 일주일에 하루는 쉬게 하고, <strong>그 쉬는 날(주휴일)에도 일한 것처럼 임금을 주라고</strong> 해요. 이 쉬는 날 몫의 돈을 <strong>주휴수당</strong>이라고 불러요. 그래서 월급 안에는 이미 쉬는 날 몫이 들어 있고, 시급을 구할 때는 <strong>일한 시간과 쉬는 날로 쳐주는 시간을 모두 합친 시간</strong>으로 나눠야 해요.<br><br>주 40시간 일하는 사람은 일주일에 일한 시간 40시간 + 쉬는 날 8시간 = 48시간으로 계산해요. 한 달은 약 4.35주라서, 48시간 × 4.35주 = 약 <strong>209시간</strong>이에요.<br><br>예) 월급이 2,100,000원이면, 2,100,000 ÷ 209 = <strong>약 10,048원</strong>이에요. 최저임금 10,320원보다 적으니 <strong>최저임금 미달</strong>이에요.</p>
+  <p class="body-text"><strong>월급제도 주휴수당을 받나요?</strong> 월급제는 별도로 받는 돈은 없어요. 월급 안에 이미 주휴수당이 들어 있기 때문이에요. 반대로 <strong>시급제</strong>는 일한 시간만큼만 계산하기 때문에, 쉬는 날 몫을 주휴수당으로 따로 더해서 줘야 해요. 아래에서 시급제 계산을 설명해요.</p>
+  <p class="body-text"><strong>이런 돈은 계산에서 빼야 해요.</strong> 연장근무·야간·휴일근무에 대한 가산수당(더 쳐주는 돈)은 최저임금에 포함되지 않아요. 그래서 "월급 총액은 많은데 기본급만 보면 최저임금 미달"일 수 있어요. 명세서에서 기본급 항목을 확인하세요.</p>
+  <p class="body-text"><strong>시급제라면 주휴수당도 받아야 해요.</strong> 아래 두 조건을 모두 채우면 쉬는 날 하루치 임금을 더 받아요.<br><br>① 계약서에 정한 근로시간이 <strong>4주 평균 일주일에 15시간 이상</strong><br><br>② 그 주에 일하기로 한 날을 <strong>모두 출근</strong>(지각·조퇴는 결근으로 보지 않아요)<br><br>예) 시급 10,320원, 하루 8시간 주 5일 근무라면, 일주일에 (40시간 + 주휴 8시간) × 10,320원 = <strong>495,360원</strong>이에요. 월급제는 위에서 설명했듯 주휴수당이 월급에 이미 포함돼 있어요.</p>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-check"/></svg>
+    <h2 class="block-title">3. 퇴직금: 받는 조건과 계산 방법</h2>
+  </div>
+  <div class="callout">
+    <div class="callout-head"><svg><use href="#i-info"/></svg>받을 수 있는 조건</div>
+    <p>퇴직금은 아래 두 가지를 모두 채우면 받아요.<br><br>① <strong>같은 회사에서 1년 이상</strong> 계속 일했을 것<br><br>② 계약서에 정한 근로시간이 <strong>4주 평균 일주일에 15시간 이상</strong>일 것<br><br>1년을 못 채우고 그만두면 퇴직금이 없어요. 반대로 계약이 끊겼다가 곧바로 다시 이어졌거나, 짧은 계약을 계속 반복해서 이어서 일한 경우에는 이어진 기간을 합쳐서 1년으로 계산한 판례가 있어요.</p>
+  </div>
+  <p class="body-text"><strong>퇴직금은 이렇게 계산해요.</strong><br><br>① 그만두기 전 <strong>3개월 동안 받은 돈 전부</strong>(월급, 수당 등)를 더해요.<br><br>② 그 돈을 <strong>그 3개월의 총 날수</strong>(보통 90~92일)로 나누면 하루 임금(<strong>평균임금</strong>)이 나와요.<br><br>③ 하루 임금에 <strong>30</strong>을 곱하면 <strong>1년치 퇴직금</strong>이에요.<br><br>④ 여기에 <strong>일한 기간</strong>을 곱해요. 일한 기간은 <strong>1년 단위로 끊지 않고 일한 날수에 맞춰서</strong> 계산해요. 공식으로 쓰면 <strong>하루 임금 × 30 × (일한 날수 ÷ 365)</strong>예요. 그래서 3년 6개월을 일했다면 3배가 아니라 <strong>3.5배</strong>, 2년 3개월이면 약 2.25배가 돼요. 3년을 꽉 채워야만 3배를 받는 방식이 아니에요.<br><br>예) 월급 250만 원을 받았고, 그만두기 전 3개월이 92일이었다면, 7,500,000 ÷ 92 = 약 81,522원이에요. 여기에 30일을 곱하면 1년치가 약 245만 원이에요.<br><br>· 2년 일했다면 약 <strong>489만 원</strong><br><br>· 3년 6개월 일했다면 약 <strong>856만 원</strong>(245만 원 × 3.5)<br><br>하루 임금은 <strong>그만두기 직전 3개월</strong>만 보고 계산해요. 일하는 동안 월급이 올랐다면 오른 뒤의 월급이 기준이에요.</p>
+  <p class="body-text">상여금이나 연차수당이 있으면 계산이 달라질 수 있어요. 이럴 때는 고용노동부 홈페이지의 퇴직금 계산기를 쓰거나 상담받으세요. 참고로 평균임금이 통상임금(평소 정해진 임금)보다 적게 나오면 통상임금으로 계산해요.</p>
+  <p class="body-text"><strong>언제까지 줘야 하나요?</strong> 그만둔 날부터 <strong>14일 안에</strong> 줘야 해요. 당사자끼리 합의하면 늦출 수 있어요. 늦으면 14일이 지난 날부터 <strong>최대 연 20%의 지연이자</strong>를 붙여서 받을 수 있어요. 퇴직금을 받을 권리는 <strong>3년</strong>이 지나면 사라져요.</p>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-info"/></svg>
+    <h2 class="block-title">4. 비자에 따라 퇴직금을 받는 방법이 달라요</h2>
+  </div>
+  <p class="body-text">퇴직금은 법이 정한 <strong>1년에 30일치 평균임금</strong>이 기본이에요. 다만 받는 방법은 비자에 따라 달라요.</p>
+  <table class="data-table">
+    <thead>
+      <tr><th>비자</th><th>퇴직금 받는 방법</th></tr>
+    </thead>
+    <tbody>
+      <tr><td data-label="비자">E-9(비전문취업)</td><td data-label="퇴직금 받는 방법">퇴직금 대신 <strong>출국만기보험</strong>. 회사가 가입하고 보험료를 내요. 한국을 <strong>떠난 뒤</strong> 받아요(아래 설명)</td></tr>
+      <tr><td data-label="비자">E-2(회화지도), E-7(특정활동), F-4, F-2, F-5, F-6 등</td><td data-label="퇴직금 받는 방법">일반 근로자와 같은 <strong>일반 퇴직금</strong>. 1년 이상 일했다면 그만둔 날부터 14일 안에 받아요</td></tr>
+    </tbody>
+  </table>
+  <p class="body-text"><strong>E-9 근로자의 보험 4가지</strong><br><br>E-9 근로자는 아래 보험이 있어요. 이름이 비슷해서 헷갈리기 쉬워요.</p>
+  <table class="data-table">
+    <thead>
+      <tr><th>보험</th><th>누가 가입하나</th><th>무엇을 위한 보험인가</th></tr>
+    </thead>
+    <tbody>
+      <tr><td data-label="보험">출국만기보험</td><td data-label="누가 가입하나">회사(월 통상임금의 8.3%를 회사가 부담)</td><td data-label="무엇을 위한 보험인가"><strong>퇴직금 대신</strong> 받는 돈. 공항에서 출국 당일 현금으로, 또는 출국일부터 14일 안에 계좌로 받아요</td></tr>
+      <tr><td data-label="보험">임금체불보증보험</td><td data-label="누가 가입하나">회사(해당 사업장만 가입, 연 15,000원)</td><td data-label="무엇을 위한 보험인가">월급이 밀렸을 때 최대 400만 원을 받는 보험. 퇴직금 대신이 아니에요</td></tr>
+      <tr><td data-label="보험">귀국비용보험</td><td data-label="누가 가입하나">근로자 본인(의무)</td><td data-label="무엇을 위한 보험인가">귀국길 경비로 쓰는 <strong>정해진 금액</strong>(국적별 40만~60만 원)을 받는 보험. 비행기 값 전체를 보장하는 보험이 아니에요. 퇴직금도 아니에요</td></tr>
+      <tr><td data-label="보험">상해보험</td><td data-label="누가 가입하나">근로자 본인(의무)</td><td data-label="무엇을 위한 보험인가">일이 아닌 다른 이유로 사망하거나 장애가 남았을 때 받는 보험. 병원비를 대주는 보험이 아니에요. 퇴직금도 아니에요</td></tr>
+    </tbody>
+  </table>
+  <p class="body-text"><strong>귀국비용보험과 상해보험은 어떤 보험인가요?</strong><br><br><strong>① 귀국비용보험</strong><br><br>E-9(와 H-2) 근로자가 <strong>의무로 가입</strong>해요. 근로계약 효력이 생긴 날부터 <strong>3개월 안에</strong> 가입해야 하고, 가입하지 않으면 80만~320만 원의 과태료가 있어요.<br><br>보험료는 국적에 따라 달라요. 베트남·태국·중국·필리핀·인도네시아는 <strong>40만 원</strong>, 네팔을 포함한 그 밖의 나라는 <strong>50만 원</strong>, 스리랑카는 <strong>60만 원</strong>이에요. 취업교육기관에서 통장을 만들고, 정해진 기한 안에 자동이체로 내요. 고용24 안내에는 한 번에 내는(일시금) 방식으로 나와 있어요. 나눠서 낼 수 있는지는 가입할 때 확인하세요.<br><br>한국을 떠날 때 <strong>정해진 금액</strong>을 받아요. 받는 금액은 낸 보험료와 같은 수준(국적별 40만~60만 원)이라, 보험이라기보다 <strong>귀국 경비로 미리 맡겨두는 돈을 돌려받는 것</strong>에 가까워요. 가입 기간에 따라 조금 늘어나요(최대 108.3%까지). 실제 항공권 값만큼 주는 게 아니라 정해진 금액을 주기 때문에, 비행기 값 전체를 보장하는 보험은 아니에요. 체류 기간이 끝나서 출국하거나, 개인 사정으로 체류 기간 전에 출국할 때 지급돼요. 받을 권리는 3년 안에 청구하지 않으면 한국산업인력공단으로 넘어가요.<br><br><strong>② 상해보험</strong><br><br>이것도 근로자가 <strong>의무로 가입</strong>해요. 일반 보험회사에서 개인이 골라 드는 보험이 아니라, 삼성화재의 <strong>외국인근로자 전용보험</strong> 상품이에요. 입국한 날(또는 근로계약이 시작된 날)부터 <strong>15일 안에</strong> 가입해야 하고, 가입하지 않으면 최대 500만 원의 과태료가 있어요. 정확히 어느 날부터 15일을 세는지는 안내가 달라서 확인하지 못했어요.<br><br>일하다 다치는 경우(산재)가 아니라 <strong>일이 아닌 이유</strong>로 사망하거나 장애가 남았을 때 받는 보험이에요. 상해로 사망하면 3,000만 원, 장애는 최대 3,000만 원, 질병으로 사망하면 1,500만 원이에요. 보험료는 <strong>매월 내는 게 아니라 한 번에 내요(일시납)</strong>. 보험 기간은 근로계약 기간(최대 3년)이고, 그 기간의 보험료를 한꺼번에 내요. 근로자 본인이 부담해요. 금액은 나이·성별·보험 기간에 따라 달라요. 고용24 안내의 예시는 <strong>25세 남성이 3년에 약 19,400원</strong>이에요. 다른 안내 자료에는 이와 다른 예시 금액도 있어서, 실제 금액은 가입할 때 삼성화재에 확인하세요. 산재보험과 중복해서 받을 수는 없어요.<br><br>가입 절차의 자세한 방법은 확인하지 못했어요. 삼성화재 외국인근로자 전용보험 상담(1600-0266)이나 외국인력상담센터(1577-0071)에 물어보세요.</p>
+  <p class="body-text"><strong>출국만기보험은 이렇게 신청하고 받아요.</strong><br><br>① <strong>출국 예정일 1개월 전</strong>까지 <strong>고용센터에 출국 계획을 신고</strong>해요.<br><br>② <strong>출국 예정일 최소 7일 전</strong>까지 고용허가제 공식 안내에 나오는 보험사(삼성화재 외국인근로자 전용보험)에 보험금 지급을 신청해요. 보험금신청서·동의서, 여권 사본, 출국예정사실확인서를 팩스로 보내요. 상담 전화는 1600-0266이에요.<br><br>③ <strong>받는 방법</strong>을 골라요. 방법에 따라 받는 시기가 달라요.<br><br>· <strong>공항에서 현금으로 받기</strong>: 출국하는 날 인천공항·김해공항에서 그날 바로 받아요. 다른 공항에서도 받을 수 있는지는 확인하지 못했어요. 다른 공항으로 출국한다면 아래 계좌 입금 방법을 쓰거나 삼성화재(1600-0266)에 먼저 물어보세요.<br><br>· <strong>한국 은행 계좌로 받기</strong>: 출국한 날부터 14일 안에 입금돼요.<br><br>· <strong>본국(국적 국가) 은행 계좌로 받기</strong>: 출국한 날부터 14일 안에 입금돼요.<br><br>출국한 뒤에 신청했다면, 신청한 날부터 14일 안에 받아요.<br><br>④ 보험은 <strong>통상임금</strong> 기준(8.3%)으로 쌓이고, 법의 퇴직금은 <strong>평균임금</strong> 기준이에요. 그래서 금액이 다를 수 있고, 보험금이 퇴직금보다 적으면 <strong>차액은 회사가 직접 줘야</strong> 해요.<br><br>⑤ 보험금을 받을 권리는 지급 사유가 생긴 날부터 <strong>3년</strong>이 지나면 사라져요.</p>
+  <p class="body-text"><strong>E-2(영어 강사 등) 근로자라면</strong><br><br>학원과 "프리랜서 계약"을 맺었더라도, 학원이 일을 지시하고 감독했다면 법원은 <strong>근로자로 인정</strong>해요. 이 경우 퇴직금, 주휴수당, 연차휴가 수당을 줘야 하고, 이 판단은 대법원까지 이어졌어요.<br><br>이 판결들에는 이런 내용도 담겨 있어요. 퇴직금을 받지 않겠다는 약속은 미리 해도 법에 어긋나서 <strong>효력이 없다</strong>고 봤어요. 그리고 2017년 서울중앙지법은 "시급에 퇴직금이 포함돼 있다"는 학원의 주장을 <strong>받아들이지 않았어요</strong>.</p>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-info"/></svg>
+    <h2 class="block-title">5. 월급이나 퇴직금을 못 받았다면</h2>
+  </div>
+  <p class="body-text" style="margin-top:44px;"><strong>대응 순서</strong></p>
+  <ol class="step-list">
+    <li class="step-item">
+      <div class="step-head">
+        <span class="step-badge">1</span>
+        <div class="step-body">
+          <h3>증거를 모아요</h3>
+          <p>근로계약서, 월급이 들어온 통장 내역, 임금명세서, 출퇴근 기록(사진·메모), 일을 지시한 메신저 대화를 모으세요. 계약서가 없어도 이런 자료로 일한 기간과 받기로 한 돈을 증명할 수 있어요.</p>
+        </div>
+      </div>
+    </li>
+    <li class="step-item">
+      <div class="step-head">
+        <span class="step-badge">2</span>
+        <div class="step-body">
+          <h3>회사에 먼저 요청해요</h3>
+          <p>메신저나 문자로 "몇 월 월급(또는 퇴직금)을 아직 못 받았다, 언제까지 달라"고 날짜와 금액을 적어 보내세요. 이 기록이 나중에 증거가 돼요. 말로만 요청하면 증명하기 어려워요.</p>
+        </div>
+      </div>
+    </li>
+    <li class="step-item">
+      <div class="step-head">
+        <span class="step-badge">3</span>
+        <div class="step-body">
+          <h3>노동포털에서 진정을 내요</h3>
+          <p>고용노동부 노동포털(labor.moel.go.kr)에서 인터넷으로 진정을 낼 수 있어요. 가까운 고용노동부 사무소에 직접 가서 신청할 수도 있어요. 진정은 "회사가 법을 어겼으니 조사해달라"는 신청이에요.</p>
+        </div>
+      </div>
+    </li>
+    <li class="step-item">
+      <div class="step-head">
+        <span class="step-badge">4</span>
+        <div class="step-body">
+          <h3>상담을 받아요</h3>
+          <p>혼자 하기 어렵다면 고용노동부 상담센터(1350), 외국인력상담센터(1577-0071), 대한법률구조공단(132)에 전화하세요. 연락처는 6장에 정리했어요.</p>
+        </div>
+      </div>
+    </li>
+    <li class="step-item">
+      <div class="step-head">
+        <span class="step-badge">5</span>
+        <div class="step-body">
+          <h3>법원 소송도 방법이에요</h3>
+          <p>진정으로 해결이 안 되면 법원에 민사소송을 내서 받을 수 있어요. 대한법률구조공단에서 무료 상담과 지원을 받을 수 있는지 먼저 확인하세요.</p>
+        </div>
+      </div>
+    </li>
+  </ol>
+  <p class="body-text"><strong>E-9 근로자라면</strong> 회사가 임금체불보증보험에 가입했을 때, 월급이 밀리면 최대 400만 원까지 이 보험으로 받을 수 있어요. 가입 여부는 외국인력상담센터(1577-0071)에 확인하세요.</p>
+  <div class="official-links">
+    <a class="official-link" href="https://labor.moel.go.kr/anmtDclrCntr/main.do" target="_blank" rel="noopener"><svg><use href="#i-link"/></svg>고용노동부 노동포털(진정)</a>
+  </div>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-link"/></svg>
+    <h2 class="block-title">6. 어디에 물어볼 수 있나</h2>
+  </div>
+  <table class="data-table">
+    <thead>
+      <tr><th>연락처</th><th>무엇을 물어볼 수 있나</th></tr>
+    </thead>
+    <tbody>
+      <tr><td data-label="연락처">고용노동부 상담센터 <strong>1350</strong></td><td data-label="무엇을 물어볼 수 있나">임금체불, 퇴직금, 근로계약서 등 노동 문제 전반(외국어 지원 언어는 이용 전 확인하세요)</td></tr>
+      <tr><td data-label="연락처">외국인력상담센터 <strong>1577-0071</strong></td><td data-label="무엇을 물어볼 수 있나">비전문취업(E-9) 근로자를 위한 상담(여러 언어 지원)</td></tr>
+      <tr><td data-label="연락처">외국인종합안내센터 <strong>1345</strong></td><td data-label="무엇을 물어볼 수 있나">비자·체류 문제</td></tr>
+      <tr><td data-label="연락처">대한법률구조공단 <strong>132</strong></td><td data-label="무엇을 물어볼 수 있나">무료 법률 상담, 임금체불 소송 지원</td></tr>
+      <tr><td data-label="연락처">고용노동부 노동포털</td><td data-label="무엇을 물어볼 수 있나">인터넷으로 임금체불 진정 신청(labor.moel.go.kr)</td></tr>
+    </tbody>
+  </table>
+  <p class="body-text" style="font-size:0.9rem; color:var(--ink-soft);">외국인노동자지원센터는 2024년 예산이 줄면서 문을 닫은 곳이 있어, 지역별로 운영 여부가 달라요. 가기 전에 꼭 전화로 확인하세요.</p>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-check"/></svg>
+    <h2 class="block-title">정리하면</h2>
+  </div>
+  <div class="callout">
+    <div class="callout-head"><svg><use href="#i-info"/></svg>정리하면</div>
+    <p><strong>① 사인하기 전에</strong> 근로계약서에 월급, 근로시간, 쉬는 날, 연차가 적혀 있는지 확인하고, 서명한 뒤 본인 몫을 꼭 받으세요.<br><br><strong>② 계약서를 쓸 때</strong> 월급을 209로 나눠서 내 시급이 10,320원 이상인지 확인하세요.<br><br><strong>③ 1년 이상 일하고 그만두면</strong> 14일 안에 퇴직금을 받아요. E-9라면 출국만기보험으로 한국을 떠날 때 받아요.<br><br><strong>④ 못 받았다면</strong> 증거를 모으고, 3년이 지나기 전에 노동포털 진정이나 6장의 상담 연락처를 이용하세요.</p>
+  </div>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-info"/></svg>
+    <h2 class="block-title">자주 묻는 질문</h2>
+  </div>
+  <table class="data-table">
+    <thead>
+      <tr><th>질문</th><th>답변</th></tr>
+    </thead>
+    <tbody>
+      <tr><td data-label="질문">계약서 없이 일했는데 월급과 퇴직금을 받을 수 있나?</td><td data-label="답변">네. 일한 사실이 있으면 권리는 그대로예요. 다만 얼마를 받기로 했는지 증명해야 하니 통장 내역, 출퇴근 기록, 메신저 대화를 모아두세요.</td></tr>
+      <tr><td data-label="질문">계약 기간이 1년보다 짧은데 퇴직금이 있나?</td><td data-label="답변">1년 이상 일하지 않았다면 퇴직금이 없어요. 다만 짧은 계약을 끊김 없이 반복해서 이어서 일했다면 합쳐서 1년으로 계산한 판례가 있으니, 이어서 일했다면 상담받아보세요.</td></tr>
+      <tr><td data-label="질문">"월급에 퇴직금이 포함돼 있다"고 하는데 맞나?</td><td data-label="답변">법원이 시급에 퇴직금이 포함됐다는 학원의 주장을 받아주지 않은 판결이 있어요(2017년 서울중앙지법). 이런 설명을 들으면 서명하기 전에 상담받으세요.</td></tr>
+      <tr><td data-label="질문">E-9인데 퇴직금은 어떻게 받나?</td><td data-label="답변">한국에서는 받지 않고, 출국만기보험으로 받아요. 출국하는 날 공항에서 현금으로 받거나, 출국한 날부터 14일 안에 계좌로 받아요. 법의 퇴직금보다 금액이 적으면 차액은 회사가 줘야 해요.</td></tr>
+      <tr><td data-label="질문">주 15시간보다 적게 일해도 퇴직금이 나오나?</td><td data-label="답변">4주 평균 일주일에 15시간 미만이면 퇴직금 대상이 아니에요. 다만 계약서에는 15시간 미만으로 써놓고 실제로는 더 일했다면 상담받아보세요.</td></tr>
+      <tr><td data-label="질문">그만둔 지 오래됐는데 지금도 받을 수 있나?</td><td data-label="답변">월급과 퇴직금은 <strong>3년</strong>, E-9 출국만기보험금도 <strong>3년</strong>이 지나면 받을 권리가 사라져요. </td></tr>
+    </tbody>
+  </table>
+
+</section>
+
+<section class="block section-gap">
+  <p class="body-text" style="font-size:0.86rem; color:var(--ink-soft);">
+    이 글은 일반적인 정보 제공 목적이며, 금액·기준은 법령 개정에 따라 바뀔 수 있어요. 정확한 본인 상황은 고용노동부 또는 위 상담 연락처에 직접 확인하세요.
+  </p>
+  <div class="keyword-links">
+    <a class="keyword-link" href="/ko/long-stay/2026-10-02-korea-employment-accident-insurance-guide-ko.html"><svg><use href="#i-link"/></svg>고용보험·산재보험 가이드</a>
+    <a class="keyword-link" href="/ko/long-stay/2026-10-01-korea-national-pension-guide-ko.html"><svg><use href="#i-link"/></svg>국민연금 가이드</a>
+    <a class="keyword-link" href="/ko/long-stay/2026-09-19-korea-arc-foreign-registration-guide-ko.html"><svg><use href="#i-link"/></svg>외국인등록증(ARC) 가이드</a>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="footer-inner">
+    <span class="mono">K-Rambles · 장기체류 보드</span>
+  </div>
+</footer>
+
+<button type="button" class="scroll-top" aria-label="Back to top">
+  <svg><use href="#i-arrow-up"/></svg>
+</button>
+
+<script>
+(function () {
+  var KEY = 'krambles-fontsize';
+  var STEPS = ['xs', 'sm', 'md', 'lg', 'xl'];
+  var root = document.documentElement;
+  var ctrl = document.querySelector('.font-size-ctrl');
+  if (!ctrl) { return; }
+  var decBtn = ctrl.querySelector('[data-action="dec"]');
+  var incBtn = ctrl.querySelector('[data-action="inc"]');
+  var index = 2;
+
+  function apply(i) {
+    var size = STEPS[i];
+    if (size === 'md') { root.removeAttribute('data-fs'); }
+    else { root.setAttribute('data-fs', size); }
+    decBtn.disabled = i === 0;
+    incBtn.disabled = i === STEPS.length - 1;
+  }
+
+  var saved = 'md';
+  try { saved = localStorage.getItem(KEY) || 'md'; } catch (e) {}
+  index = STEPS.indexOf(saved);
+  if (index === -1) { index = 2; }
+  apply(index);
+
+  decBtn.addEventListener('click', function () {
+    if (index > 0) {
+      index--;
+      apply(index);
+      try { localStorage.setItem(KEY, STEPS[index]); } catch (e) {}
+    }
+  });
+  incBtn.addEventListener('click', function () {
+    if (index < STEPS.length - 1) {
+      index++;
+      apply(index);
+      try { localStorage.setItem(KEY, STEPS[index]); } catch (e) {}
+    }
+  });
+})();
+
+(function () {
+  var btn = document.querySelector('.scroll-top');
+  if (!btn) { return; }
+  function onScroll() {
+    if (window.scrollY > 600) { btn.classList.add('visible'); }
+    else { btn.classList.remove('visible'); }
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  btn.addEventListener('click', function () {
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
+  });
+})();
+
+(function () {
+  function openModal(id) {
+    var modal = document.getElementById(id);
+    if (!modal) { return; }
+    modal.hidden = false;
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal(modal) {
+    modal.hidden = true;
+    document.body.style.overflow = '';
+  }
+  document.querySelectorAll('[data-modal-open]').forEach(function (btn) {
+    btn.addEventListener('click', function () { openModal(btn.getAttribute('data-modal-open')); });
+  });
+  document.querySelectorAll('.modal-overlay').forEach(function (overlay) {
+    overlay.addEventListener('click', function (e) {
+      if (e.target === overlay) { closeModal(overlay); }
+    });
+    overlay.querySelectorAll('[data-modal-close]').forEach(function (btn) {
+      btn.addEventListener('click', function () { closeModal(overlay); });
+    });
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      document.querySelectorAll('.modal-overlay').forEach(function (overlay) {
+        if (!overlay.hidden) { closeModal(overlay); }
+      });
+    }
+  });
+})();
+</script>
+<script src="/assets/js/krambles-render.js"></script>
+<script data-goatcounter="https://krambles.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
