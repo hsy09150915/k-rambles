@@ -63,6 +63,7 @@
   header.site { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 26px 28px; max-width: 1040px; margin: 0 auto; }
   .logo { font-family: "Bricolage Grotesque", ui-sans-serif, sans-serif; font-weight: 700; font-size: 1.35rem; letter-spacing: -0.01em; white-space: nowrap; }
   .logo span { color: var(--coral); }
+  a.logo { text-decoration: none; color: inherit; }
   .header-right { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; row-gap: 8px; }
   .back-link { display: inline-flex; align-items: center; gap: 6px; text-decoration: none; color: var(--ink-soft); font-size: 0.92rem; white-space: nowrap; }
   .back-link:hover { color: var(--ink); }
@@ -173,11 +174,8 @@
 <body>
 
 <header class="site">
-  <a class="back-link" href="/th/index.html"><svg><use href="#i-arrow-left"/></svg>
-      กลับไปที่ K-Rambles
-    </a>
+  <a class="logo" href="/th/index.html">K-<span>Rambles</span></a>
   <div class="header-right">
-    <div class="logo">K-<span>Rambles</span></div>
     <div class="font-size-ctrl" role="group" aria-label="Text size"><button type="button" class="fs-step" data-action="dec" aria-label="Decrease text size">−</button><span class="fs-labels" aria-hidden="true"><span class="fs-label fs-label-sm">A</span><span class="fs-label fs-label-lg">A</span></span><button type="button" class="fs-step" data-action="inc" aria-label="Increase text size">+</button></div>
     <div class="lang-switch" aria-label="Language" data-key="split-calculator"></div>
   </div>
