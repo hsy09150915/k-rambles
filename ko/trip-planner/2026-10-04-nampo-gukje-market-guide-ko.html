@@ -645,6 +645,7 @@
   var URL_ = document.querySelector('link[rel="canonical"]').href;
   var TITLE = document.title.replace(/ \| K-Rambles$/, '');
   var CARD = '/assets/cards/nampo-gukje-market-guide.jpg';
+  var isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent) || (navigator.maxTouchPoints > 1 && /Macintosh/.test(navigator.userAgent));
   var toast = document.querySelector('.share-toast'), tt;
   function say(msg) { if (!toast) { return; } toast.textContent = msg; toast.classList.add('show'); clearTimeout(tt); tt = setTimeout(function () { toast.classList.remove('show'); }, 2200); }
   function copy(text, ok) {
@@ -656,14 +657,28 @@
     var kind = b.getAttribute('data-share');
     if (kind === 'tags') { copy(Array.prototype.map.call(document.querySelectorAll('.keyword-links .keyword-link'), function (a) { return a.textContent.trim(); }).join(' ') + ' #krambles', '해시태그를 복사했어요'); return; }
     if (kind === 'link') {
-      if (navigator.share) { navigator.share({ title: TITLE, url: URL_ }).catch(function () {}); } else { copy(URL_, '링크를 복사했어요'); }
+      if (isMobile && navigator.share) { navigator.share({ title: TITLE, url: URL_ }).catch(function () {}); } else { copy(URL_, '링크를 복사했어요'); }
       return;
     }
     if (kind === 'photo') {
-      fetch(CARD).then(function (r) { return r.blob(); }).then(function (blob) {
-        var file = new File([blob], 'k-rambles-busan.jpg', { type: 'image/jpeg' });
-        if (navigator.canShare && navigator.canShare({ files: [file] })) { return navigator.share({ files: [file] }).catch(function () {}); }
-        var a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'k-rambles-busan.jpg'; document.body.appendChild(a); a.click(); document.body.removeChild(a); say('사진을 저장했어요');
+      var fileName = 'k-rambles-nampo-gukje-market.jpg';
+      function download(blob) {
+        var a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = fileName; document.body.appendChild(a); a.click(); document.body.removeChild(a); say('사진을 저장했어요');
+      }
+      function load() { return fetch(CARD).then(function (r) { return r.blob(); }); }
+      if (!isMobile && window.showSaveFilePicker) {
+        /* PC: 다른 이름으로 저장 창 */
+        window.showSaveFilePicker({ suggestedName: fileName, types: [{ description: 'JPEG 이미지', accept: { 'image/jpeg': ['.jpg'] } }] }).then(function (handle) {
+          return load().then(function (blob) {
+            return handle.createWritable().then(function (w) { return w.write(blob).then(function () { return w.close(); }); });
+          }).then(function () { say('사진을 저장했어요'); });
+        }).catch(function (err) { if (!err || err.name !== 'AbortError') { load().then(download).catch(function () { window.open(CARD, '_blank'); }); } });
+        return;
+      }
+      load().then(function (blob) {
+        var file = new File([blob], fileName, { type: 'image/jpeg' });
+        if (isMobile && navigator.canShare && navigator.canShare({ files: [file] })) { return navigator.share({ files: [file] }).catch(function () {}); }
+        download(blob);
       }).catch(function () { window.open(CARD, '_blank'); });
     }
   });
