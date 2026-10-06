@@ -632,7 +632,8 @@
 
   copyBtn.addEventListener('click', function () {
     var text = buildSummaryText();
-    if (navigator.share) { navigator.share({ text: text }).catch(function () {}); return; }
+    var isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent) || (navigator.maxTouchPoints > 1 && /Macintosh/.test(navigator.userAgent));
+    if (isMobile && navigator.share) { navigator.share({ text: text }).catch(function () {}); return; }
     if (navigator.clipboard && navigator.clipboard.writeText) {
       navigator.clipboard.writeText(text).then(showCopyToast).catch(function () { openCopyModal(text); });
     } else {
