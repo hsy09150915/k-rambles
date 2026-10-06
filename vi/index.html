@@ -209,11 +209,50 @@
 
   .hero-text { flex: 1 1 380px; min-width: 0; }
 
-  .hero-visual { flex: 1 1 300px; max-width: 420px; margin: 0 auto; }
-  .hero-visual svg { width: 100%; height: auto; display: block; }
+  .hero-visual { flex: 1 1 300px; max-width: 330px; margin: 0 auto; }
 
+  /* PC: portrait photo as an instant-print card */
+  .hero-photo {
+    position: relative;
+    margin: 0;
+    background: #fdfcf8;
+    padding: 14px 14px 0;
+    border-radius: 4px;
+    transform: rotate(2deg);
+    box-shadow: 0 1px 2px rgba(27, 42, 74, 0.2), 0 18px 34px -14px rgba(27, 42, 74, 0.5);
+  }
+  .hero-photo img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; }
+  .hero-photo figcaption {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-style: italic;
+    font-size: 1.3rem;
+    color: #1b2a4a;
+    text-align: center;
+    padding: 14px 0 20px;
+  }
+  .hero-photo-tape {
+    position: absolute; top: -13px; left: 50%;
+    width: 84px; height: 26px;
+    transform: translateX(-50%) rotate(-3deg);
+    background: rgba(217, 83, 42, 0.28);
+    border-left: 2px dashed rgba(217, 83, 42, 0.45);
+    border-right: 2px dashed rgba(217, 83, 42, 0.45);
+    z-index: 2;
+  }
+
+  /* Phone: wide photo, edge to edge, fading into the page at top and bottom */
   @media (max-width: 760px) {
-    .hero-visual { order: -1; max-width: 320px; }
+    .hero { padding-top: 0; gap: 0; }
+    .hero-visual { order: -1; max-width: none; width: calc(100% + 56px); margin: 0 -28px; }
+    .hero-photo { background: none; padding: 0; border-radius: 0; transform: none; box-shadow: none; }
+    .hero-photo img {
+      aspect-ratio: 16 / 10;
+      object-position: 62% 50%;
+      -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 24%, #000 70%, transparent 100%);
+      mask-image: linear-gradient(to bottom, transparent 0, #000 24%, #000 70%, transparent 100%);
+    }
+    .hero-photo figcaption, .hero-photo-tape { display: none; }
+    .hero-text { margin-top: -4px; }
   }
 
   .stamp {
@@ -813,49 +852,14 @@
     </div>
   </div>
   <div class="hero-visual">
-    <svg viewBox="0 0 420 320" role="img" aria-label="Minh họa đường nét bờ biển Busan, cầu treo, đồi và biển">
-      <rect x="6" y="6" width="408" height="308" rx="20" fill="var(--paper-raised)" stroke="var(--coral)" stroke-width="2" stroke-dasharray="7 7" transform="rotate(-1.2 210 160)"/>
-      <circle cx="340" cy="78" r="24" fill="var(--coral)" opacity="0.9"/>
-      <path d="M66 58q8-10 16 0q8-10 16 0" fill="none" stroke="var(--navy)" stroke-width="1.4" stroke-linecap="round" opacity="0.55"/>
-      <path d="M116 86q6-8 12 0q6-8 12 0" fill="none" stroke="var(--navy)" stroke-width="1.4" stroke-linecap="round" opacity="0.55"/>
-      <path d="M0 235 C 30 190 55 150 78 130 C 95 150 105 175 118 190 C 135 165 150 145 168 150 C 185 170 200 210 215 235 Z" fill="var(--navy)" opacity="0.15"/>
-      <path d="M0 235 C 30 190 55 150 78 130 C 95 150 105 175 118 190 C 135 165 150 145 168 150 C 185 170 200 210 215 235" fill="none" stroke="var(--navy)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      <g fill="var(--navy)" opacity="0.85">
-        <rect x="182" y="185" width="14" height="50"/>
-        <rect x="200" y="163" width="16" height="72"/>
-        <rect x="220" y="197" width="12" height="38"/>
-        <rect x="236" y="177" width="14" height="58"/>
-      </g>
-      <g fill="var(--marigold)">
-        <rect x="186" y="195" width="3" height="3"/>
-        <rect x="186" y="207" width="3" height="3"/>
-        <rect x="204" y="178" width="3" height="3"/>
-        <rect x="204" y="194" width="3" height="3"/>
-        <rect x="204" y="210" width="3" height="3"/>
-        <rect x="240" y="192" width="3" height="3"/>
-        <rect x="240" y="207" width="3" height="3"/>
-      </g>
-      <path d="M255 235 L255 200 L400 200 L400 235" fill="none" stroke="var(--navy)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M273 200 L273 108" fill="none" stroke="var(--navy)" stroke-width="2" stroke-linecap="round"/>
-      <path d="M382 200 L382 108" fill="none" stroke="var(--navy)" stroke-width="2" stroke-linecap="round"/>
-      <path d="M273 113 Q327 88 382 113" fill="none" stroke="var(--navy)" stroke-width="1.4" opacity="0.55"/>
-      <g fill="none" stroke="var(--navy)" stroke-width="1.2" opacity="0.5">
-        <path d="M283 200 L273 132"/>
-        <path d="M298 200 L273 142"/>
-        <path d="M313 200 L273 156"/>
-        <path d="M328 200 L328 110"/>
-        <path d="M343 200 L382 156"/>
-        <path d="M358 200 L382 142"/>
-        <path d="M373 200 L382 132"/>
-      </g>
-      <path d="M0 320 L0 242 Q60 227 120 242 T240 242 T360 242 T420 242 L420 320 Z" fill="var(--navy)" opacity="0.1"/>
-      <path d="M10 257 Q40 250 70 257 T130 257" fill="none" stroke="var(--navy)" stroke-width="1.4" opacity="0.5"/>
-      <path d="M160 270 Q190 263 220 270 T280 270" fill="none" stroke="var(--navy)" stroke-width="1.4" opacity="0.5"/>
-      <path d="M300 252 Q330 245 360 252 T410 252" fill="none" stroke="var(--navy)" stroke-width="1.4" opacity="0.5"/>
-      <path d="M40 277 L100 277 L88 294 L52 294 Z" fill="var(--paper-raised)" stroke="var(--navy)" stroke-width="2" stroke-linejoin="round"/>
-      <path d="M70 277 L70 260" fill="none" stroke="var(--navy)" stroke-width="2" stroke-linecap="round"/>
-      <path d="M70 262 L86 269 L70 269 Z" fill="var(--coral)" opacity="0.7"/>
-    </svg>
+    <figure class="hero-photo">
+      <span class="hero-photo-tape" aria-hidden="true"></span>
+      <picture>
+        <source media="(max-width: 760px)" srcset="/assets/hero/busan-bridge-wide.jpg" width="1200" height="586">
+        <img src="/assets/hero/busan-marina-portrait.jpg" width="720" height="900" alt="Ảnh bờ biển và đường chân trời Busan" fetchpriority="high" decoding="async">
+      </picture>
+      <figcaption>Busan · giờ vàng</figcaption>
+    </figure>
   </div>
 </section>
 
