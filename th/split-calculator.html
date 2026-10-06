@@ -6,6 +6,15 @@
 <title>เครื่องคำนวณหารค่าใช้จ่ายทริป | K-Rambles</title>
 <link rel="canonical" href="https://k-rambles.com/th/split-calculator.html">
 <meta name="description" content="หารค่าใช้จ่ายกลุ่มทริปเป็นเงินวอนโดยไม่ต้องมีแอปหรือบัญชี — กรอกว่าใครจ่ายอะไรไปเท่าไหร่ ระบบจะสรุปให้ว่าใครต้องโอนให้ใครเท่าไหร่แบบสั้นที่สุด">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="K-Rambles">
+<meta property="og:locale" content="th_TH">
+<meta property="og:title" content="เครื่องคำนวณหารค่าใช้จ่ายทริป | K-Rambles">
+<meta property="og:description" content="หารค่าใช้จ่ายกลุ่มทริปเป็นเงินวอนโดยไม่ต้องมีแอปหรือบัญชี — กรอกว่าใครจ่ายอะไรไปเท่าไหร่ ระบบจะสรุปให้ว่าใครต้องโอนให้ใครเท่าไหร่แบบสั้นที่สุด">
+<meta property="og:url" content="https://k-rambles.com/th/split-calculator.html">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="เครื่องคำนวณหารค่าใช้จ่ายทริป | K-Rambles">
+<meta name="twitter:description" content="หารค่าใช้จ่ายกลุ่มทริปเป็นเงินวอนโดยไม่ต้องมีแอปหรือบัญชี — กรอกว่าใครจ่ายอะไรไปเท่าไหร่ ระบบจะสรุปให้ว่าใครต้องโอนให้ใครเท่าไหร่แบบสั้นที่สุด">
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Work+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&family=Noto+Sans+Thai:wght@400;500;600;700&display=swap');
 
@@ -175,8 +184,7 @@
 <div class="hero">
   <div class="icon-badge"><svg><use href="#i-calc"/></svg></div>
   <h1 class="hero-title">เครื่องคำนวณหารค่าใช้จ่ายทริป</h1>
-  <p class="hero-dek">สุดท้ายก็มักมีคนหนึ่งที่ต้องออกเงินก่อนให้กลุ่ม กรอกว่าใครจ่ายไปเท่าไหร่ แล้วระบบจะคำนวณรายการโอนเงินที่สั้นที่สุดให้ — เป็นเงินวอน</p>
-  <p class="note">ทุกอย่างที่คุณกรอกจะถูกบันทึกไว้ในเบราว์เซอร์นี้ — ไม่ต้องมีบัญชี ไม่ต้องมีแอป ปิดแท็บแล้วกลับมาใหม่ระหว่างทริปก็ยังอยู่<br><br><strong class="note-warn">แต่ถ้าเปลี่ยนเบราว์เซอร์หรือล้างการตั้งค่า ข้อมูลทั้งหมดจะหายไป</strong><br><br>เวลาจะเคลียร์เงินกับเพื่อน ใช้ปุ่ม "คัดลอกสรุป" ด้านล่างแล้ววางในแชทกลุ่มได้เลย</p>
+  <p class="note">ทุกอย่างที่คุณกรอกจะถูกบันทึกไว้เฉพาะในเบราว์เซอร์นี้ ปิดแท็บแล้วกลับมาใหม่ระหว่างทริปก็ยังอยู่<br><br><strong class="note-warn">แต่ถ้าเปลี่ยนเบราว์เซอร์หรือล้างการตั้งค่าเบราว์เซอร์ ข้อมูลทั้งหมดจะหายไป</strong><br><br>คุณสามารถแชร์การหารค่าใช้จ่ายให้เพื่อนได้</p>
 </div>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -261,7 +269,7 @@
     </div>
     <ul class="settle-list" id="settle-list"></ul>
     <div class="row" style="margin-top:16px">
-      <button class="btn btn-ghost" id="copy-btn">คัดลอกสรุป</button>
+      <button class="btn btn-ghost" id="copy-btn">แชร์</button>
       <button class="btn btn-ghost" id="reset-btn">ล้างข้อมูลทั้งหมด</button>
       <span class="copy-toast" id="copy-toast" hidden>คัดลอกแล้ว!</span>
     </div>
@@ -270,7 +278,7 @@
 
 <div class="copy-modal-backdrop" id="copy-modal-backdrop" hidden>
   <div class="copy-modal" role="dialog" aria-modal="true" aria-labelledby="copy-modal-title">
-    <h3 id="copy-modal-title">คัดลอกสรุป</h3>
+    <h3 id="copy-modal-title">แชร์</h3>
     <p>เบราว์เซอร์ของคุณบล็อกการคัดลอกอัตโนมัติ ข้อความด้านล่างถูกเลือกไว้แล้ว — แตะ <strong>คัดลอก</strong> หรือกดค้างเพื่อคัดลอกเอง</p>
     <textarea id="copy-modal-text" readonly rows="10"></textarea>
     <div class="copy-modal-actions">
@@ -567,8 +575,18 @@
   });
 
   function buildSummaryText() {
-    var lines = ['สรุปค่าใช้จ่ายทริป:', '', 'ยอดคงเหลือ:'];
     var fx = fxActive();
+    var lines = ['สรุปค่าใช้จ่ายทริป:', ''];
+    if (state.expenses.length) {
+      lines.push('รายการค่าใช้จ่าย:');
+      state.expenses.forEach(function (e, n) {
+        var i = n + 1;
+        var fxP = fx ? ' (' + fxFormat(e.amount, false) + ')' : '';
+        lines.push(i + '. ' + (e.desc || '(ไม่มีรายละเอียด)') + ' — ' + e.paidBy + ' จ่าย ' + fmt(e.amount) + fxP + ' · หาร ' + e.splitAmong.length + ' คน');
+      });
+      lines.push('');
+    }
+    lines.push('ยอดคงเหลือ:');
     if (!state.participants.length) {
       lines.push('ยังไม่มีสมาชิก');
     } else {
@@ -590,8 +608,9 @@
     }
     if (fx) {
       var code = fxCurrency.value === 'OTHER' ? '' : (' ' + fxCurrency.value);
-      lines.push('', '((แปลงที่อัตรา 1' + code + ' = ' + fxRate.value + ' ₩)');
+      lines.push('', '(แปลงที่อัตรา 1' + code + ' = ' + fxRate.value + ' ₩)');
     }
+    lines.push('', 'https://k-rambles.com/th/');
     return lines.join('\n');
   }
 
@@ -613,6 +632,7 @@
 
   copyBtn.addEventListener('click', function () {
     var text = buildSummaryText();
+    if (navigator.share) { navigator.share({ text: text }).catch(function () {}); return; }
     if (navigator.clipboard && navigator.clipboard.writeText) {
       navigator.clipboard.writeText(text).then(showCopyToast).catch(function () { openCopyModal(text); });
     } else {

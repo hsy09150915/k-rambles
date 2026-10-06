@@ -6,6 +6,15 @@
 <title>Trip Expense Splitter | K-Rambles</title>
 <link rel="canonical" href="https://k-rambles.com/split-calculator.html">
 <meta name="description" content="Split group travel costs in Korean won without an app or account — enter what everyone paid, get the shortest list of who owes who.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="K-Rambles">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Trip Expense Splitter | K-Rambles">
+<meta property="og:description" content="Split group travel costs in Korean won without an app or account — enter what everyone paid, get the shortest list of who owes who.">
+<meta property="og:url" content="https://k-rambles.com/split-calculator.html">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Trip Expense Splitter | K-Rambles">
+<meta name="twitter:description" content="Split group travel costs in Korean won without an app or account — enter what everyone paid, get the shortest list of who owes who.">
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Work+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap');
 
@@ -175,8 +184,7 @@
 <div class="hero">
   <div class="icon-badge"><svg><use href="#i-calc"/></svg></div>
   <h1 class="hero-title">Trip Expense Splitter</h1>
-  <p class="hero-dek">Someone always ends up covering the group's bills. Enter what everyone paid, and this works out the shortest list of who sends who how much — in won.</p>
-  <p class="note">Everything you enter is saved right in this browser — no account, no app. Close the tab and come back mid-trip, it's still here.<br><br><strong class="note-warn">But switch browsers or clear your browser settings, and everything you've entered here disappears.</strong><br><br>To settle up with friends, use "Copy summary" below and paste it into your group chat.</p>
+  <p class="note">Everything you enter is saved only in this browser. Close the tab and come back mid-trip, it's still here.<br><br><strong class="note-warn">But if you switch browsers or clear your browser settings, everything you've entered disappears.</strong><br><br>You can share the split with friends.</p>
 </div>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -261,7 +269,7 @@
     </div>
     <ul class="settle-list" id="settle-list"></ul>
     <div class="row" style="margin-top:16px">
-      <button class="btn btn-ghost" id="copy-btn">Copy summary</button>
+      <button class="btn btn-ghost" id="copy-btn">Share</button>
       <button class="btn btn-ghost" id="reset-btn">Reset everything</button>
       <span class="copy-toast" id="copy-toast" hidden>Copied!</span>
     </div>
@@ -270,7 +278,7 @@
 
 <div class="copy-modal-backdrop" id="copy-modal-backdrop" hidden>
   <div class="copy-modal" role="dialog" aria-modal="true" aria-labelledby="copy-modal-title">
-    <h3 id="copy-modal-title">Copy summary</h3>
+    <h3 id="copy-modal-title">Share</h3>
     <p>Your browser blocked the quick copy. The text below is already selected — tap <strong>Copy</strong>, or press and hold to copy it yourself.</p>
     <textarea id="copy-modal-text" readonly rows="10"></textarea>
     <div class="copy-modal-actions">
@@ -567,8 +575,18 @@
   });
 
   function buildSummaryText() {
-    var lines = ['Trip expense summary:', '', 'Balances:'];
     var fx = fxActive();
+    var lines = ['Trip expense summary:', ''];
+    if (state.expenses.length) {
+      lines.push('Expenses:');
+      state.expenses.forEach(function (e, n) {
+        var i = n + 1;
+        var fxP = fx ? ' (' + fxFormat(e.amount, false) + ')' : '';
+        lines.push(i + '. ' + (e.desc || '(no description)') + ' — paid by ' + e.paidBy + ' ' + fmt(e.amount) + fxP + ' · split ' + e.splitAmong.length + ' ways');
+      });
+      lines.push('');
+    }
+    lines.push('Balances:');
     if (!state.participants.length) {
       lines.push('No participants yet.');
     } else {
@@ -592,6 +610,7 @@
       var code = fxCurrency.value === 'OTHER' ? '' : (' ' + fxCurrency.value);
       lines.push('', '(Converted at 1' + code + ' = ' + fxRate.value + ' ₩)');
     }
+    lines.push('', 'https://k-rambles.com/');
     return lines.join('\n');
   }
 
@@ -613,6 +632,7 @@
 
   copyBtn.addEventListener('click', function () {
     var text = buildSummaryText();
+    if (navigator.share) { navigator.share({ text: text }).catch(function () {}); return; }
     if (navigator.clipboard && navigator.clipboard.writeText) {
       navigator.clipboard.writeText(text).then(showCopyToast).catch(function () { openCopyModal(text); });
     } else {

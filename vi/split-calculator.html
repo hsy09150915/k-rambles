@@ -6,6 +6,15 @@
 <title>Máy tính chia tiền chuyến đi | K-Rambles</title>
 <link rel="canonical" href="https://k-rambles.com/vi/split-calculator.html">
 <meta name="description" content="Chia chi phí nhóm bằng won Hàn Quốc mà không cần app hay tài khoản — nhập số tiền mỗi người đã trả, nhận danh sách ngắn nhất về ai nợ ai.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="K-Rambles">
+<meta property="og:locale" content="vi_VN">
+<meta property="og:title" content="Máy tính chia tiền chuyến đi | K-Rambles">
+<meta property="og:description" content="Chia chi phí nhóm bằng won Hàn Quốc mà không cần app hay tài khoản — nhập số tiền mỗi người đã trả, nhận danh sách ngắn nhất về ai nợ ai.">
+<meta property="og:url" content="https://k-rambles.com/vi/split-calculator.html">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Máy tính chia tiền chuyến đi | K-Rambles">
+<meta name="twitter:description" content="Chia chi phí nhóm bằng won Hàn Quốc mà không cần app hay tài khoản — nhập số tiền mỗi người đã trả, nhận danh sách ngắn nhất về ai nợ ai.">
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Work+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap');
 
@@ -175,8 +184,7 @@
 <div class="hero">
   <div class="icon-badge"><svg><use href="#i-calc"/></svg></div>
   <h1 class="hero-title">Máy tính chia tiền chuyến đi</h1>
-  <p class="hero-dek">Luôn có ai đó phải ứng tiền trước cho cả nhóm. Nhập số tiền mỗi người đã trả, hệ thống sẽ tính ra danh sách chuyển khoản ngắn nhất — bằng won.</p>
-  <p class="note">Mọi thứ bạn nhập được lưu ngay trên trình duyệt này — không cần tài khoản, không cần app. Đóng tab rồi quay lại giữa chuyến đi, dữ liệu vẫn còn.<br><br><strong class="note-warn">Nhưng nếu đổi trình duyệt hoặc xóa cài đặt, mọi thứ bạn nhập sẽ biến mất.</strong><br><br>Để thanh toán với bạn bè, dùng "Sao chép tóm tắt" bên dưới và dán vào nhóm chat.</p>
+  <p class="note">Mọi thứ bạn nhập chỉ được lưu trên trình duyệt này. Đóng tab rồi quay lại giữa chuyến đi, dữ liệu vẫn còn.<br><br><strong class="note-warn">Nhưng nếu đổi trình duyệt hoặc xóa cài đặt trình duyệt, mọi thứ bạn nhập sẽ biến mất.</strong><br><br>Bạn có thể chia sẻ bảng chia tiền với bạn bè.</p>
 </div>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -261,7 +269,7 @@
     </div>
     <ul class="settle-list" id="settle-list"></ul>
     <div class="row" style="margin-top:16px">
-      <button class="btn btn-ghost" id="copy-btn">Sao chép tóm tắt</button>
+      <button class="btn btn-ghost" id="copy-btn">Chia sẻ</button>
       <button class="btn btn-ghost" id="reset-btn">Xóa tất cả</button>
       <span class="copy-toast" id="copy-toast" hidden>Đã sao chép!</span>
     </div>
@@ -270,7 +278,7 @@
 
 <div class="copy-modal-backdrop" id="copy-modal-backdrop" hidden>
   <div class="copy-modal" role="dialog" aria-modal="true" aria-labelledby="copy-modal-title">
-    <h3 id="copy-modal-title">Sao chép tóm tắt</h3>
+    <h3 id="copy-modal-title">Chia sẻ</h3>
     <p>Trình duyệt của bạn đã chặn sao chép nhanh. Văn bản bên dưới đã được chọn sẵn — nhấn <strong>Sao chép</strong>, hoặc nhấn giữ để tự sao chép.</p>
     <textarea id="copy-modal-text" readonly rows="10"></textarea>
     <div class="copy-modal-actions">
@@ -567,8 +575,18 @@
   });
 
   function buildSummaryText() {
-    var lines = ['Tóm tắt chi phí chuyến đi:', '', 'Số dư:'];
     var fx = fxActive();
+    var lines = ['Tóm tắt chi phí chuyến đi:', ''];
+    if (state.expenses.length) {
+      lines.push('Chi phí:');
+      state.expenses.forEach(function (e, n) {
+        var i = n + 1;
+        var fxP = fx ? ' (' + fxFormat(e.amount, false) + ')' : '';
+        lines.push(i + '. ' + (e.desc || '(không có mô tả)') + ' — ' + e.paidBy + ' trả ' + fmt(e.amount) + fxP + ' · chia ' + e.splitAmong.length + ' người');
+      });
+      lines.push('');
+    }
+    lines.push('Số dư:');
     if (!state.participants.length) {
       lines.push('Chưa có thành viên nào.');
     } else {
@@ -590,8 +608,9 @@
     }
     if (fx) {
       var code = fxCurrency.value === 'OTHER' ? '' : (' ' + fxCurrency.value);
-      lines.push('', '((Quy đổi theo tỷ giá 1' + code + ' = ' + fxRate.value + ' ₩)');
+      lines.push('', '(Quy đổi theo tỷ giá 1' + code + ' = ' + fxRate.value + ' ₩)');
     }
+    lines.push('', 'https://k-rambles.com/vi/');
     return lines.join('\n');
   }
 
@@ -613,6 +632,7 @@
 
   copyBtn.addEventListener('click', function () {
     var text = buildSummaryText();
+    if (navigator.share) { navigator.share({ text: text }).catch(function () {}); return; }
     if (navigator.clipboard && navigator.clipboard.writeText) {
       navigator.clipboard.writeText(text).then(showCopyToast).catch(function () { openCopyModal(text); });
     } else {
