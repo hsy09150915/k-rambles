@@ -1,5 +1,67 @@
 [
   {
+    "title": "Nampo-dong & Gukje Market — เดินเที่ยวย่านเมืองเก่าปูซานให้จบในหนึ่งวัน",
+    "url": "2026-10-04-nampo-gukje-market-guide-th.html",
+    "thumb": "assets/thumbs/trip-planner/nampo-gukje-market-guide.jpg",
+    "label": "แผนเที่ยว · เผยแพร่แล้ว",
+    "alt": "ตรอกตลาดย่านเมืองเก่าปูซานที่เต็มไปด้วยป้ายร้านค้า",
+    "badge": null,
+    "like_id": "trip-planner/2026-10-04-nampo-gukje-market-guide-th.html",
+    "date": "2026-10-06",
+    "kw": "ปูซาน นัมโพดง ตลาดกุกเจ ตลาดบูพยองคังทง ถนนหนังสือโบซองดง สวนยงดูซาน ปูซานทาวเวอร์ 40 Steps สะพานยอนโด BIFF ย่านเมืองเก่า ตลาดกลางคืน ชากัลชี",
+    "city": "busan",
+    "locations": [
+      {
+        "name": "40 Steps Cultural Center",
+        "address": "49 Donggwang-gil, Jung-gu, Busan",
+        "lat": 35.104,
+        "lng": 129.036
+      },
+      {
+        "name": "Busan Museum of Modern History Annex",
+        "address": "104 Daecheong-ro, Jung-gu, Busan",
+        "lat": 35.1013,
+        "lng": 129.0346
+      },
+      {
+        "name": "Boseong-dong Book Alley",
+        "address": "Bosu-dong 1-ga, Jung-gu, Busan",
+        "lat": 35.1066,
+        "lng": 129.0231
+      },
+      {
+        "name": "Bupyeong Kkangtong Market",
+        "address": "Bupyeong 1-gil, Jung-gu, Busan",
+        "lat": 35.1018,
+        "lng": 129.0267
+      },
+      {
+        "name": "Gukje Market",
+        "address": "Sinchang-dong 4-ga 40-5, Jung-gu, Busan",
+        "lat": 35.1008,
+        "lng": 129.0287
+      },
+      {
+        "name": "BIFF Square",
+        "address": "BIFF Square-ro, Jung-gu, Busan",
+        "lat": 35.0987,
+        "lng": 129.0285
+      },
+      {
+        "name": "Yongdusan Park & Busan Tower",
+        "address": "37-55 Yongdusan-gil, Jung-gu, Busan",
+        "lat": 35.1005,
+        "lng": 129.0324
+      },
+      {
+        "name": "Yeongdo Bridge",
+        "address": "Jung-gu / Yeongdo-gu, Busan",
+        "lat": 35.0958,
+        "lng": 129.0365
+      }
+    ]
+  },
+  {
     "title": "เที่ยวปูซานแบบไม่ต้องเดิน — แนะนำซาวน่าและจิมจิลบัง",
     "url": "2026-09-29-best-busan-saunas-th.html",
     "thumb": "assets/thumbs/trip-planner/best-busan-saunas.jpg",
