@@ -1,5 +1,67 @@
 [
   {
+    "title": "남포동·국제시장 일대, 하루 안에 걷는 부산 원도심",
+    "url": "2026-10-04-nampo-gukje-market-guide-ko.html",
+    "thumb": "assets/thumbs/trip-planner/nampo-gukje-market-guide.jpg",
+    "label": "여행 계획 · 공개중",
+    "alt": "간판이 빼곡한 부산 원도심 시장 골목",
+    "badge": null,
+    "like_id": "trip-planner/2026-10-04-nampo-gukje-market-guide-ko.html",
+    "date": "2026-10-06",
+    "kw": "부산 남포동 국제시장 부평깡통시장 보수동 책방골목 용두산공원 부산타워 40계단 영도대교 BIFF광장 원도심 시장 야시장 자갈치",
+    "city": "busan",
+    "locations": [
+      {
+        "name": "40계단문화관",
+        "address": "부산 중구 동광길 49",
+        "lat": 35.104,
+        "lng": 129.036
+      },
+      {
+        "name": "부산근현대역사관 별관",
+        "address": "부산 중구 대청로 104",
+        "lat": 35.1013,
+        "lng": 129.0346
+      },
+      {
+        "name": "보수동 책방골목",
+        "address": "부산 중구 보수동1가",
+        "lat": 35.1066,
+        "lng": 129.0231
+      },
+      {
+        "name": "부평깡통시장",
+        "address": "부산 중구 부평1길 48",
+        "lat": 35.1018,
+        "lng": 129.0267
+      },
+      {
+        "name": "국제시장",
+        "address": "부산 중구 신창동4가 40-5",
+        "lat": 35.1008,
+        "lng": 129.0287
+      },
+      {
+        "name": "BIFF광장",
+        "address": "부산 중구 비프광장로",
+        "lat": 35.0987,
+        "lng": 129.0285
+      },
+      {
+        "name": "용두산공원·부산타워",
+        "address": "부산 중구 용두산길 37-55",
+        "lat": 35.1005,
+        "lng": 129.0324
+      },
+      {
+        "name": "영도대교",
+        "address": "부산 중구 중앙동 - 영도구 대교동",
+        "lat": 35.0958,
+        "lng": 129.0365
+      }
+    ]
+  },
+  {
     "title": "걷지 않고 힐링하는 부산 — 사우나·찜질방 추천",
     "url": "2026-09-29-best-busan-saunas-ko.html",
     "thumb": "assets/thumbs/trip-planner/best-busan-saunas.jpg",

@@ -1,5 +1,67 @@
 [
   {
+    "title": "Nampo-dong & chợ Gukje — Một ngày dạo bộ khu phố cổ Busan",
+    "url": "2026-10-04-nampo-gukje-market-guide-vi.html",
+    "thumb": "assets/thumbs/trip-planner/nampo-gukje-market-guide.jpg",
+    "label": "Lộ trình · Trực tuyến",
+    "alt": "Con hẻm chợ chi chít biển hiệu ở khu phố cổ Busan",
+    "badge": null,
+    "like_id": "trip-planner/2026-10-04-nampo-gukje-market-guide-vi.html",
+    "date": "2026-10-06",
+    "kw": "busan nampo-dong cho gukje bupyeong kkangtong pho sach boseong-dong cong vien yongdusan busan tower 40 steps cau yeongdo quang truong biff cho dem jagalchi",
+    "city": "busan",
+    "locations": [
+      {
+        "name": "Nhà văn hóa 40 Steps",
+        "address": "49 Donggwang-gil, Jung-gu, Busan",
+        "lat": 35.104,
+        "lng": 129.036
+      },
+      {
+        "name": "Busan Museum of Modern History Annex",
+        "address": "104 Daecheong-ro, Jung-gu, Busan",
+        "lat": 35.1013,
+        "lng": 129.0346
+      },
+      {
+        "name": "Phố sách Boseong-dong",
+        "address": "Bosu-dong 1-ga, Jung-gu, Busan",
+        "lat": 35.1066,
+        "lng": 129.0231
+      },
+      {
+        "name": "Chợ Bupyeong Kkangtong",
+        "address": "Bupyeong 1-gil, Jung-gu, Busan",
+        "lat": 35.1018,
+        "lng": 129.0267
+      },
+      {
+        "name": "Chợ Gukje",
+        "address": "Sinchang-dong 4-ga 40-5, Jung-gu, Busan",
+        "lat": 35.1008,
+        "lng": 129.0287
+      },
+      {
+        "name": "Quảng trường BIFF",
+        "address": "BIFF Square-ro, Jung-gu, Busan",
+        "lat": 35.0987,
+        "lng": 129.0285
+      },
+      {
+        "name": "Công viên Yongdusan & Busan Tower",
+        "address": "37-55 Yongdusan-gil, Jung-gu, Busan",
+        "lat": 35.1005,
+        "lng": 129.0324
+      },
+      {
+        "name": "Cầu Yeongdo",
+        "address": "Jung-gu / Yeongdo-gu, Busan",
+        "lat": 35.0958,
+        "lng": 129.0365
+      }
+    ]
+  },
+  {
     "title": "Busan không cần đi bộ — Gợi ý sauna & jjimjilbang",
     "url": "2026-09-29-best-busan-saunas-vi.html",
     "thumb": "assets/thumbs/trip-planner/best-busan-saunas.jpg",

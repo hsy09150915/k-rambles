@@ -1,5 +1,67 @@
 [
   {
+    "title": "Nampo-dong & Gukje Market — A One-Day Walk Through Old Downtown Busan",
+    "url": "2026-10-04-nampo-gukje-market-guide-en.html",
+    "thumb": "assets/thumbs/trip-planner/nampo-gukje-market-guide.jpg",
+    "label": "Trip plan · live",
+    "alt": "A narrow market alley packed with signs in old downtown Busan",
+    "badge": null,
+    "like_id": "trip-planner/2026-10-04-nampo-gukje-market-guide-en.html",
+    "date": "2026-10-06",
+    "kw": "busan nampo-dong gukje market bupyeong kkangtong boseong-dong book alley yongdusan park busan tower 40 steps yeongdo bridge biff square old downtown night market jagalchi",
+    "city": "busan",
+    "locations": [
+      {
+        "name": "40 Steps Cultural Center",
+        "address": "49 Donggwang-gil, Jung-gu, Busan",
+        "lat": 35.104,
+        "lng": 129.036
+      },
+      {
+        "name": "Busan Museum of Modern History Annex",
+        "address": "104 Daecheong-ro, Jung-gu, Busan",
+        "lat": 35.1013,
+        "lng": 129.0346
+      },
+      {
+        "name": "Boseong-dong Book Alley",
+        "address": "Bosu-dong 1-ga, Jung-gu, Busan",
+        "lat": 35.1066,
+        "lng": 129.0231
+      },
+      {
+        "name": "Bupyeong Kkangtong Market",
+        "address": "Bupyeong 1-gil, Jung-gu, Busan",
+        "lat": 35.1018,
+        "lng": 129.0267
+      },
+      {
+        "name": "Gukje Market",
+        "address": "Sinchang-dong 4-ga 40-5, Jung-gu, Busan",
+        "lat": 35.1008,
+        "lng": 129.0287
+      },
+      {
+        "name": "BIFF Square",
+        "address": "BIFF Square-ro, Jung-gu, Busan",
+        "lat": 35.0987,
+        "lng": 129.0285
+      },
+      {
+        "name": "Yongdusan Park & Busan Tower",
+        "address": "37-55 Yongdusan-gil, Jung-gu, Busan",
+        "lat": 35.1005,
+        "lng": 129.0324
+      },
+      {
+        "name": "Yeongdo Bridge",
+        "address": "Jung-gu / Yeongdo-gu, Busan",
+        "lat": 35.0958,
+        "lng": 129.0365
+      }
+    ]
+  },
+  {
     "title": "Busan Without the Walking — Sauna & Jjimjilbang Picks",
     "url": "2026-09-29-best-busan-saunas-en.html",
     "thumb": "assets/thumbs/trip-planner/best-busan-saunas.jpg",
