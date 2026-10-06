@@ -140,7 +140,9 @@
   .settle-amount { margin-left: auto; font-family: "Space Mono", monospace; font-weight: 700; color: var(--coral-ink); }
 
   .empty-msg { font-size: 0.88rem; color: var(--ink-soft); padding: 8px 2px; }
-  .copy-toast { font-size: 0.82rem; color: var(--green-ink); margin-left: 8px; }
+  .copy-toast { position: fixed; top: 22px; left: 50%; transform: translateX(-50%); z-index: 200; background: #1f2420; color: #fff; font-size: 0.95rem; font-weight: 600; padding: 12px 22px; border-radius: 999px; box-shadow: 0 10px 30px -10px rgba(0,0,0,.45); pointer-events: none; animation: toast-fade 2s ease forwards; }
+  .copy-toast[hidden] { display: none; }
+  @keyframes toast-fade { 0% { opacity: 0; transform: translate(-50%, -10px); } 12% { opacity: 1; transform: translate(-50%, 0); } 80% { opacity: 1; } 100% { opacity: 0; } }
 
   .copy-modal-backdrop { position: fixed; inset: 0; background: rgba(15, 18, 15, 0.55); display: flex; align-items: center; justify-content: center; padding: 20px; z-index: 200; }
   .copy-modal-backdrop[hidden] { display: none; }
