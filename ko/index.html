@@ -243,10 +243,12 @@
   /* Phone: wide photo, edge to edge, fading into the page at top and bottom */
   @media (max-width: 760px) {
     .hero { padding-top: 0; gap: 0; }
-    .hero-visual { order: -1; max-width: none; width: calc(100% + 56px); margin: 0 -28px; }
+    .hero-visual { order: -1; flex: 0 0 calc(100% + 56px); max-width: none; width: calc(100% + 56px); margin: 0 -28px; }
+    .hero-text { flex-basis: 100%; }
     .hero-photo { background: none; padding: 0; border-radius: 0; transform: none; box-shadow: none; }
     .hero-photo img {
       aspect-ratio: 16 / 10;
+      max-height: 340px;
       object-position: 62% 50%;
       -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 24%, #000 70%, transparent 100%);
       mask-image: linear-gradient(to bottom, transparent 0, #000 24%, #000 70%, transparent 100%);
