@@ -1,5 +1,55 @@
 [
   {
+    "title": "Time to Spare at Busan Station or the Ferry Terminal — A Meal, Coffee and a Walk",
+    "url": "2026-10-07-busan-station-layover-guide-en.html",
+    "thumb": "assets/thumbs/trip-planner/busan-station-layover-guide.jpg",
+    "label": "Trip plan · live",
+    "alt": "Two red-brick buildings near Busan Station and a lit-up bridge at the North Port at night",
+    "badge": null,
+    "like_id": "trip-planner/2026-10-07-busan-station-layover-guide-en.html",
+    "date": "2026-10-07",
+    "kw": "busan station international ferry terminal layover spare time choryang dwaeji gukbap bonjeon yeongdong milmyeon bokgyeok busandang jeongjitgan brown hands baekje bukhang north port waterfront park sunset night view cafe bakery luggage storage",
+    "city": "busan",
+    "locations": [
+      {
+        "name": "Bonjeon Dwaeji Gukbap",
+        "address": "1200-6 Choryang-dong, Dong-gu, Busan",
+        "lat": 35.116,
+        "lng": 129.0391
+      },
+      {
+        "name": "Yeongdong Milmyeon & Dwaeji Gukbap",
+        "address": "12 Jungang-daero 209beon-gil, Dong-gu, Busan",
+        "lat": 35.1155,
+        "lng": 129.0392
+      },
+      {
+        "name": "Bokgyeok",
+        "address": "1196-2 Choryang-dong, Dong-gu, Busan",
+        "lat": 35.1158,
+        "lng": 129.0388
+      },
+      {
+        "name": "Busandang & Jeongjitgan",
+        "address": "11 Jungang-daero 209beon-gil, Dong-gu, Busan",
+        "lat": 35.1151,
+        "lng": 129.0397
+      },
+      {
+        "name": "Brown Hands Baekje",
+        "address": "Choryang-dong, Dong-gu, Busan",
+        "lat": 35.1153,
+        "lng": 129.0379
+      },
+      {
+        "name": "Bukhang Waterfront Park",
+        "address": "Bukhang, Dong-gu, Busan",
+        "lat": 35.111,
+        "lng": 129.0445
+      }
+    ]
+  },
+  {
     "title": "Nampo-dong & Gukje Market — A One-Day Walk Through Old Downtown Busan",
     "url": "2026-10-04-nampo-gukje-market-guide-en.html",
     "thumb": "assets/thumbs/trip-planner/nampo-gukje-market-guide.jpg",

@@ -1,5 +1,55 @@
 [
   {
+    "title": "Còn thời gian ở ga Busan hoặc bến phà quốc tế — Ăn, cà phê và dạo bộ",
+    "url": "2026-10-07-busan-station-layover-guide-vi.html",
+    "thumb": "assets/thumbs/trip-planner/busan-station-layover-guide.jpg",
+    "label": "Lộ trình · Trực tuyến",
+    "alt": "Hai tòa nhà gạch đỏ gần ga Busan và cây cầu lên đèn ở bến Bukhang về đêm",
+    "badge": null,
+    "like_id": "trip-planner/2026-10-07-busan-station-layover-guide-vi.html",
+    "date": "2026-10-07",
+    "kw": "busan ga busan ben pha quoc te con thoi gian choryang dwaeji gukbap bonjeon yeongdong milmyeon bokgyeok busandang jeongjitgan brown hands baekje bukhang cong vien hoang hon canh dem ca phe tiem banh gui hanh ly",
+    "city": "busan",
+    "locations": [
+      {
+        "name": "Bonjeon Dwaeji Gukbap",
+        "address": "1200-6 Choryang-dong, Dong-gu, Busan",
+        "lat": 35.116,
+        "lng": 129.0391
+      },
+      {
+        "name": "Yeongdong Milmyeon & Dwaeji Gukbap",
+        "address": "12 Jungang-daero 209beon-gil, Dong-gu, Busan",
+        "lat": 35.1155,
+        "lng": 129.0392
+      },
+      {
+        "name": "Bokgyeok",
+        "address": "1196-2 Choryang-dong, Dong-gu, Busan",
+        "lat": 35.1158,
+        "lng": 129.0388
+      },
+      {
+        "name": "Busandang & Jeongjitgan",
+        "address": "11 Jungang-daero 209beon-gil, Dong-gu, Busan",
+        "lat": 35.1151,
+        "lng": 129.0397
+      },
+      {
+        "name": "Brown Hands Baekje",
+        "address": "Choryang-dong, Dong-gu, Busan",
+        "lat": 35.1153,
+        "lng": 129.0379
+      },
+      {
+        "name": "Công viên ven nước Bukhang",
+        "address": "Bukhang, Dong-gu, Busan",
+        "lat": 35.111,
+        "lng": 129.0445
+      }
+    ]
+  },
+  {
     "title": "Nampo-dong & chợ Gukje — Một ngày dạo bộ khu phố cổ Busan",
     "url": "2026-10-04-nampo-gukje-market-guide-vi.html",
     "thumb": "assets/thumbs/trip-planner/nampo-gukje-market-guide.jpg",

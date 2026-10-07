@@ -1,5 +1,55 @@
 [
   {
+    "title": "부산역·국제여객터미널에서 시간이 남을 때 - 식사, 커피, 산책",
+    "url": "2026-10-07-busan-station-layover-guide-ko.html",
+    "thumb": "assets/thumbs/trip-planner/busan-station-layover-guide.jpg",
+    "label": "여행 계획 · 공개중",
+    "alt": "부산당과 브라운핸즈백제의 붉은 벽돌 건물, 야경이 켜진 북항 다리",
+    "badge": null,
+    "like_id": "trip-planner/2026-10-07-busan-station-layover-guide-ko.html",
+    "date": "2026-10-07",
+    "kw": "부산역 국제여객터미널 시간 남을 때 환승 대기 초량 돼지국밥 본전돼지국밥 영동밀면 복계옥 부산당 브라운핸즈백제 북항 친수공원 노을 야경 카페 빵 짐 보관",
+    "city": "busan",
+    "locations": [
+      {
+        "name": "본전돼지국밥",
+        "address": "부산 동구 초량동 1200-6",
+        "lat": 35.116,
+        "lng": 129.0391
+      },
+      {
+        "name": "영동밀면&돼지국밥",
+        "address": "부산 동구 중앙대로209번길 12",
+        "lat": 35.1155,
+        "lng": 129.0392
+      },
+      {
+        "name": "복계옥",
+        "address": "부산 동구 초량동 1196-2",
+        "lat": 35.1158,
+        "lng": 129.0388
+      },
+      {
+        "name": "부산당",
+        "address": "부산 동구 초량동 470-1",
+        "lat": 35.1151,
+        "lng": 129.0397
+      },
+      {
+        "name": "브라운핸즈백제",
+        "address": "부산 동구 초량동",
+        "lat": 35.1153,
+        "lng": 129.0379
+      },
+      {
+        "name": "북항 친수공원",
+        "address": "부산 동구 북항",
+        "lat": 35.111,
+        "lng": 129.0445
+      }
+    ]
+  },
+  {
     "title": "남포동·국제시장 일대, 하루 안에 걷는 부산 원도심",
     "url": "2026-10-04-nampo-gukje-market-guide-ko.html",
     "thumb": "assets/thumbs/trip-planner/nampo-gukje-market-guide.jpg",

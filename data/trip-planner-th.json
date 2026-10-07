@@ -1,5 +1,55 @@
 [
   {
+    "title": "มีเวลาว่างที่สถานีปูซานหรือท่าเรือโดยสารระหว่างประเทศ — กิน ดื่มกาแฟ เดินเล่น",
+    "url": "2026-10-07-busan-station-layover-guide-th.html",
+    "thumb": "assets/thumbs/trip-planner/busan-station-layover-guide.jpg",
+    "label": "แผนเที่ยว · เผยแพร่แล้ว",
+    "alt": "อาคารอิฐแดงสองหลังใกล้สถานีปูซานและสะพานที่เปิดไฟยามค่ำคืนที่ท่าเรือบุกฮัง",
+    "badge": null,
+    "like_id": "trip-planner/2026-10-07-busan-station-layover-guide-th.html",
+    "date": "2026-10-07",
+    "kw": "ปูซาน สถานีปูซาน ท่าเรือโดยสารระหว่างประเทศ เวลาว่าง ชอรยัง ทแวจีกุกบับ บอนจอน ยองดง มิลมยอน พกกเยอก ปูซานดัง จองจิตกัน บราวน์แฮนด์ส แพกเจ บุกฮัง สวนริมน้ำ พระอาทิตย์ตก วิวกลางคืน คาเฟ่ เบเกอรี ฝากกระเป๋า",
+    "city": "busan",
+    "locations": [
+      {
+        "name": "Bonjeon Dwaeji Gukbap",
+        "address": "1200-6 Choryang-dong, Dong-gu, Busan",
+        "lat": 35.116,
+        "lng": 129.0391
+      },
+      {
+        "name": "Yeongdong Milmyeon & Dwaeji Gukbap",
+        "address": "12 Jungang-daero 209beon-gil, Dong-gu, Busan",
+        "lat": 35.1155,
+        "lng": 129.0392
+      },
+      {
+        "name": "Bokgyeok",
+        "address": "1196-2 Choryang-dong, Dong-gu, Busan",
+        "lat": 35.1158,
+        "lng": 129.0388
+      },
+      {
+        "name": "Busandang & Jeongjitgan",
+        "address": "11 Jungang-daero 209beon-gil, Dong-gu, Busan",
+        "lat": 35.1151,
+        "lng": 129.0397
+      },
+      {
+        "name": "Brown Hands Baekje",
+        "address": "Choryang-dong, Dong-gu, Busan",
+        "lat": 35.1153,
+        "lng": 129.0379
+      },
+      {
+        "name": "สวนริมน้ำบุกฮัง",
+        "address": "Bukhang, Dong-gu, Busan",
+        "lat": 35.111,
+        "lng": 129.0445
+      }
+    ]
+  },
+  {
     "title": "Nampo-dong & Gukje Market — เดินเที่ยวย่านเมืองเก่าปูซานให้จบในหนึ่งวัน",
     "url": "2026-10-04-nampo-gukje-market-guide-th.html",
     "thumb": "assets/thumbs/trip-planner/nampo-gukje-market-guide.jpg",
