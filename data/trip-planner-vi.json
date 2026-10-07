@@ -313,7 +313,14 @@
     "date": "2026-09-04",
     "kw": "amisan observatory sunset busan quan sat hoang hon 아미산 전망대 노을",
     "city": "busan",
-    "locations": []
+    "locations": [
+      {
+        "name": "Đài quan sát Amisan",
+        "address": "77 Daedaenakjo 2-gil, Saha-gu, Busan",
+        "lat": 35.052753,
+        "lng": 128.9607821
+      }
+    ]
   },
   {
     "title": "Quá cảnh sân bay Gimhae, bạn có thể đi xa đến đâu?",
@@ -339,7 +346,14 @@
     "date": "2026-09-03",
     "kw": "busan venice jangnim port cang jangnim 장림포구 부네치아",
     "city": "busan",
-    "locations": []
+    "locations": [
+      {
+        "name": "Cảng Jangnimpo (Venice Busan)",
+        "address": "74 Jangnim-ro 93beon-gil, Saha-gu, Busan",
+        "lat": 35.0793069,
+        "lng": 128.9516016
+      }
+    ]
   },
   {
     "title": "Làng Gamcheon, trước khi bấm máy",
@@ -352,6 +366,13 @@
     "date": "2026-09-02",
     "kw": "gamcheon culture village painted houses busan lang van hoa 감천문화마을",
     "city": "busan",
-    "locations": []
+    "locations": [
+      {
+        "name": "Trung tâm thông tin Làng văn hóa Gamcheon",
+        "address": "203 Gamnae 2-ro, Saha-gu, Busan",
+        "lat": 35.0974932,
+        "lng": 129.010604
+      }
+    ]
   }
 ]

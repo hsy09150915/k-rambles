@@ -117,7 +117,7 @@
         if (!entry) { return; }
         var html = LANG_ORDER.filter(function (l) { return entry[l]; }).map(function (l) {
           if (l === myLang) { return '<span class="current">' + LANG_LABEL[l] + '</span>'; }
-          return '<a href="' + esc(entry[l]) + '">' + LANG_LABEL[l] + '</a>';
+          return '<a href="' + esc(entry[l] + (key === 'liked' ? location.search : '')) + '">' + LANG_LABEL[l] + '</a>';
         }).join('');
         node.innerHTML = html;
       });
@@ -420,16 +420,40 @@
       }
     }
 
-    if (!likedIds.length) { showEmpty(0); return; }
+    var sharedRoute = parseSharedRoute();
+    if (!likedIds.length && !sharedRoute) { showEmpty(0); return; }
 
     var assetBase = config.assetBase || '';
     Promise.all(config.boards.map(function (board) {
       return fetchJSON(board.jsonUrl).then(function (raw) {
-        return raw.filter(function (item) { return likedIds.indexOf(item.like_id) !== -1; })
+        return raw.filter(function (item) { return sharedRoute || likedIds.indexOf(item.like_id) !== -1; })
           .map(function (item) { return { item: item, board: board }; });
       }).catch(function () { return []; });
     })).then(function (groups) {
       var flat = [].concat.apply([], groups);
+      var shared = null;
+      if (sharedRoute) {
+        // resolve the shared stops against the site's own articles, keeping the sender's order
+        var byHash = {};
+        flat.forEach(function (pair) { byHash[shareHash(shareArticleKey(pair.item))] = pair; });
+        var stops = [], usedPairs = [];
+        sharedRoute.stops.forEach(function (st, idx) {
+          var pair = byHash[st.h];
+          var loc = pair && (pair.item.locations || [])[st.i];
+          if (!loc || typeof loc.lat !== 'number' || typeof loc.lng !== 'number') { return; }
+          stops.push({ pair: pair, locIdx: st.i, leg: sharedRoute.legs[idx] || null });
+          if (usedPairs.indexOf(pair) === -1) { usedPairs.push(pair); }
+        });
+        if (stops.length >= 2) {
+          shared = { stops: stops };
+          flat = usedPairs;
+          var heroEl = document.querySelector('.liked-hero');
+          if (heroEl) { heroEl.hidden = true; heroEl.style.display = 'none'; }
+        } else {
+          sharedRoute = null;
+          flat = flat.filter(function (pair) { return likedIds.indexOf(pair.item.like_id) !== -1; });
+        }
+      }
       flat.sort(function (a, b) {
         var ad = a.item.date || '0000-00-00', bd = b.item.date || '0000-00-00';
         if (ad === bd) { return 0; }
@@ -451,7 +475,7 @@
         if (countEl) { countEl.textContent = fillCountTemplate(config.countTemplate, flat.length); }
       }
 
-      if (config.map) { renderLikedMap(flat, config.map); }
+      if (config.map) { renderLikedMap(flat, config.map, shared); }
     }).catch(function (err) { console.error('[krambles] liked render failed:', err); });
   }
 
@@ -481,6 +505,14 @@
 
   var ROUTE_STR = {
     en: {
+      shareBtn: 'Share this route',
+      linkCopied: 'Link copied',
+      shareTitle: 'My Busan route — K-Rambles',
+      sharedTitle: 'A route shared with you',
+      sharedMeta: '{n} stops · about {t} total · view only',
+      saveToLikes: '♡ Add to my likes',
+      savedToLikes: '✓ Added to your likes',
+      recalcBtn: 'Recalculate in my own order',
       title: 'Plan a route between your saved spots',
       calcBtn: 'Plan the order',
       calculating: 'Checking transit times…',
@@ -501,6 +533,14 @@
       combineNote: 'Bundling every stop into one link locks the whole trip to a single travel mode — if even one leg has no public transit, the whole thing fails. That’s why each leg below gets its own button.'
     },
     ko: {
+      shareBtn: '동선 공유하기',
+      linkCopied: '링크를 복사했어요',
+      shareTitle: '내가 짠 부산 동선 — K-Rambles',
+      sharedTitle: '친구가 공유한 동선이에요',
+      sharedMeta: '장소 {n}곳 · 총 이동시간 약 {t} · 읽기 전용',
+      saveToLikes: '♡ 내 좋아요에 담기',
+      savedToLikes: '✓ 내 좋아요에 담았어요',
+      recalcBtn: '내 순서로 다시 계산',
       title: '찜한 곳 중 갈 곳 골라서 동선 짜기',
       calcBtn: '동선 계산하기',
       calculating: '대중교통 이동시간 조회 중…',
@@ -521,6 +561,14 @@
       combineNote: '전체를 한 링크로 묶으면 이동수단이 하나로 고정돼서, 대중교통 없는 구간이 하나라도 있으면 통째로 실패해요. 그래서 구간마다 알맞은 이동수단으로 따로 버튼을 걸었어요.'
     },
     vi: {
+      shareBtn: 'Chia sẻ lộ trình',
+      linkCopied: 'Đã sao chép liên kết',
+      shareTitle: 'Lộ trình Busan của tôi — K-Rambles',
+      sharedTitle: 'Lộ trình được chia sẻ với bạn',
+      sharedMeta: '{n} điểm dừng · tổng khoảng {t} · chỉ xem',
+      saveToLikes: '♡ Thêm vào mục Đã lưu',
+      savedToLikes: '✓ Đã thêm vào mục Đã lưu',
+      recalcBtn: 'Tính lại theo thứ tự của tôi',
       title: 'Chọn nơi sẽ ghé để lên lộ trình',
       calcBtn: 'Tính lộ trình',
       calculating: 'Đang kiểm tra thời gian di chuyển bằng phương tiện công cộng…',
@@ -541,6 +589,14 @@
       combineNote: 'Gộp tất cả điểm dừng vào một link sẽ khoá cả chuyến đi vào một phương tiện duy nhất — chỉ cần một chặng không có phương tiện công cộng là toàn bộ sẽ lỗi. Vì vậy mỗi chặng bên dưới có nút riêng.'
     },
     th: {
+      shareBtn: 'แชร์เส้นทางนี้',
+      linkCopied: 'คัดลอกลิงก์แล้ว',
+      shareTitle: 'เส้นทางปูซานของฉัน — K-Rambles',
+      sharedTitle: 'เส้นทางที่เพื่อนแชร์ให้',
+      sharedMeta: '{n} จุด · รวมประมาณ {t} · ดูอย่างเดียว',
+      saveToLikes: '♡ เพิ่มในรายการที่บันทึกไว้',
+      savedToLikes: '✓ เพิ่มในรายการที่บันทึกไว้แล้ว',
+      recalcBtn: 'คำนวณใหม่ตามลำดับของฉัน',
       title: 'เลือกสถานที่ที่จะไปจริงเพื่อวางเส้นทาง',
       calcBtn: 'คำนวณเส้นทาง',
       calculating: 'กำลังตรวจสอบเวลาเดินทางด้วยขนส่งสาธารณะ…',
@@ -645,6 +701,70 @@
       + to.lng + ',' + to.lat + ',' + encodeURIComponent(to.name) + ',,/-/' + mode;
   }
 
+
+  // ---- Route sharing -------------------------------------------------------
+  // A shared link carries only short article ids + the visiting order + the leg
+  // durations the sender already calculated, e.g. ?r=1k9x2a.0,zq1w3b.0&t=28,35c
+  // (r = article-hash.pin-index in order; t = minutes per leg, "c" = by car).
+  // The receiver's browser looks the ids up in the site's own data files, so no
+  // server is involved, and the link works in whichever language the page is.
+  function shareArticleKey(item) {
+    var f = String(item.like_id || '').split('/').pop().replace(/\.html$/i, '');
+    return f.replace(/-(en|ko|vi|th)$/i, '');
+  }
+  function shareHash(str) {
+    var h = 0x811c9dc5;
+    for (var i = 0; i < str.length; i++) { h ^= str.charCodeAt(i); h = Math.imul(h, 0x01000193) >>> 0; }
+    return h.toString(36);
+  }
+  function parseSharedRoute() {
+    var q;
+    try { q = new URLSearchParams(location.search); } catch (e) { return null; }
+    var r = q.get('r');
+    if (!r) { return null; }
+    var stops = r.split(',').map(function (tok) {
+      var m = /^([0-9a-z]+)\.(\d{1,2})$/.exec(tok);
+      return m ? { h: m[1], i: parseInt(m[2], 10) } : null;
+    }).filter(Boolean).slice(0, 40);
+    if (stops.length < 2) { return null; }
+    var legs = String(q.get('t') || '').split(',').map(function (tok) {
+      var m = /^(\d{1,4})(c?)$/.exec(tok);
+      return m ? { secs: parseInt(m[1], 10) * 60, car: m[2] === 'c' } : null;
+    });
+    return { stops: stops, legs: legs };
+  }
+  function ensureShareStyle() {
+    if (document.getElementById('kr-share-style')) { return; }
+    var st = document.createElement('style');
+    st.id = 'kr-share-style';
+    st.textContent =
+      '.kr-share-btn{background:#fff;color:var(--navy,#1b2a4a);border:1.5px solid var(--navy,#1b2a4a);border-radius:8px;padding:8px 15px;font-size:.86rem;font-weight:600;cursor:pointer;font-family:inherit}' +
+      '.kr-share-btn:hover{background:rgba(27,42,74,.06)}' +
+      '.kr-shared-banner{max-width:1040px;margin:6px auto 22px;padding:0 28px;box-sizing:border-box}' +
+      '.kr-shared-banner-in{display:flex;align-items:center;gap:36px;flex-wrap:wrap;background:#fff6f2;border:1px solid #f3cdbf;border-radius:14px;padding:16px 22px}' +
+      '.kr-shared-banner b{display:block;font-family:"Bricolage Grotesque",sans-serif;font-size:1.08rem;margin-bottom:3px}' +
+      '.kr-shared-banner span.kr-shared-meta{font-size:.84rem;color:var(--ink-soft,#5a625c)}' +
+      '.kr-save-btn{flex:0 0 auto;background:var(--coral,#e8654a);color:#fff;border:none;border-radius:8px;padding:9px 16px;font-size:.88rem;font-weight:700;cursor:pointer;font-family:inherit;white-space:nowrap}' +
+      '.kr-save-btn[disabled]{background:#5b8a6a;cursor:default}' +
+      '@media(max-width:700px){.kr-shared-banner{padding:0 16px}.kr-shared-banner-in{gap:14px;padding:16px}}';
+    document.head.appendChild(st);
+  }
+  function copyText(text) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      return navigator.clipboard.writeText(text);
+    }
+    return new Promise(function (resolve, reject) {
+      try {
+        var ta = document.createElement('textarea');
+        ta.value = text; ta.setAttribute('readonly', ''); ta.style.cssText = 'position:fixed;left:-9999px;top:0';
+        document.body.appendChild(ta); ta.select();
+        var ok = document.execCommand('copy');
+        document.body.removeChild(ta);
+        if (ok) { resolve(); } else { reject(new Error('copy failed')); }
+      } catch (e) { reject(e); }
+    });
+  }
+
   /**
    * Draws every pin belonging to the current liked list onto a single Google
    * map. A liked article can carry more than one location (e.g. a piece
@@ -667,29 +787,34 @@
    *
    * mapConfig: { apiKey, containerSelector, wrapSelector, countSelector, countTemplate }
    */
-  function renderLikedMap(flat, mapConfig) {
+  function renderLikedMap(flat, mapConfig, shared) {
     var mapEl = document.querySelector(mapConfig.containerSelector);
     if (!mapEl) { return; }
     var wrap = mapConfig.wrapSelector && document.querySelector(mapConfig.wrapSelector);
 
     var pins = [];
-    flat.forEach(function (pair) {
-      var locs = pair.item.locations || [];
-      var articleUrl = hrefForHome(pair.board, pair.item);
-      locs.forEach(function (loc) {
-        if (typeof loc.lat === 'number' && typeof loc.lng === 'number') {
-          pins.push({
-            id: 'kr-pin-' + pins.length,
-            name: loc.name,
-            lat: loc.lat,
-            lng: loc.lng,
-            articleTitle: pair.item.title,
-            articleUrl: articleUrl,
-            affiliateLinks: Array.isArray(loc.affiliateLinks) ? loc.affiliateLinks : []
-          });
-        }
+    function makePin(pair, loc, locIdx) {
+      return {
+        id: 'kr-pin-' + pins.length,
+        name: loc.name,
+        lat: loc.lat,
+        lng: loc.lng,
+        articleTitle: pair.item.title,
+        articleUrl: hrefForHome(pair.board, pair.item),
+        articleHash: shareHash(shareArticleKey(pair.item)),
+        locIdx: locIdx,
+        affiliateLinks: Array.isArray(loc.affiliateLinks) ? loc.affiliateLinks : []
+      };
+    }
+    if (shared) {
+      shared.stops.forEach(function (st) { pins.push(makePin(st.pair, st.pair.item.locations[st.locIdx], st.locIdx)); });
+    } else {
+      flat.forEach(function (pair) {
+        (pair.item.locations || []).forEach(function (loc, locIdx) {
+          if (typeof loc.lat === 'number' && typeof loc.lng === 'number') { pins.push(makePin(pair, loc, locIdx)); }
+        });
       });
-    });
+    }
 
     if (mapConfig.countSelector && mapConfig.countTemplate) {
       var countEl = document.querySelector(mapConfig.countSelector);
@@ -755,7 +880,7 @@
         });
         marker.addListener('click', function () {
           var chk = document.getElementById('kr-chk-' + pin.id);
-          if (chk) { chk.checked = !chk.checked; onChecklistChange(); }
+          if (chk && !shared) { chk.checked = !chk.checked; onChecklistChange(); }
           if (openInfoWindow) { openInfoWindow.close(); }
           infoWindow.open(map, marker);
           openInfoWindow = infoWindow;
@@ -783,6 +908,36 @@
       calcBtn.textContent = STR.calcBtn;
       hintEl.textContent = STR.combineNote;
 
+      // --- share button (appears once a route has been worked out) ---
+      var shareBtn = document.createElement('button');
+      shareBtn.type = 'button';
+      shareBtn.className = 'kr-share-btn';
+      shareBtn.textContent = STR.shareBtn;
+      shareBtn.hidden = true;
+      shareBtn.setAttribute('data-goatcounter-click', 'share-route');
+      ensureShareStyle();
+      calcBtn.parentNode.insertBefore(shareBtn, statusEl);
+      var shareState = null;
+      shareBtn.addEventListener('click', function () {
+        if (!shareState) { return; }
+        var stopsParam = shareState.pins.map(function (pin) { return pin.articleHash + '.' + pin.locIdx; }).join(',');
+        var legsParam = [];
+        for (var k = 0; k < shareState.pins.length - 1; k++) {
+          var a = shareState.order[k], b = shareState.order[k + 1];
+          legsParam.push(Math.max(1, Math.round(shareState.matrix[a][b] / 60)) + (shareState.isNonTransit[a][b] ? 'c' : ''));
+        }
+        var url = location.origin + location.pathname + '?r=' + stopsParam + '&t=' + legsParam.join(',');
+        var coarse = window.matchMedia && window.matchMedia('(pointer: coarse)').matches;
+        if (coarse && navigator.share) {
+          navigator.share({ title: STR.shareTitle, url: url }).catch(function () {});
+          return;
+        }
+        copyText(url).then(function () {
+          statusEl.textContent = STR.linkCopied;
+          statusEl.className = 'liked-route-status';
+        }).catch(function () { window.prompt('', url); });
+      });
+
       checklistEl.innerHTML = pins.map(function (pin) {
         return '<li><input type="checkbox" id="kr-chk-' + pin.id + '"><label for="kr-chk-' + pin.id + '">' + escapeHtml(pin.name) + '</label></li>';
       }).join('');
@@ -791,12 +946,15 @@
         var selected = pins.filter(function (pin) { return isChecked(pin.id); });
         calcBtn.disabled = selected.length < 2;
         resultEl.hidden = true;
+        shareBtn.hidden = true;
         statusEl.textContent = '';
         statusEl.className = 'liked-route-status';
         refreshMarkerStyles(null);
         refreshMapFocus();
       }
       checklistEl.addEventListener('change', onChecklistChange);
+
+      if (shared) { setupSharedView(); }
 
       function renderRouteResult(orderedPins, orderIdx, matrix, isNonTransit, totalSeconds) {
         var html = '';
@@ -830,12 +988,67 @@
         totalEl.textContent = STR.totalPrefix + formatRouteDuration(lang, totalSeconds)
           + (anyNonTransitLeg ? STR.totalSomeDriving : STR.totalAllTransit);
         resultEl.hidden = false;
+        shareState = { pins: orderedPins, order: orderIdx, matrix: matrix, isNonTransit: isNonTransit };
+        shareBtn.hidden = false;
+      }
+
+      // --- read-only view of a route someone shared ---
+      function setupSharedView() {
+        var n = pins.length;
+        pins.forEach(function (pin) { var c = document.getElementById('kr-chk-' + pin.id); if (c) { c.checked = true; } });
+        checklistEl.style.display = 'none';
+        calcBtn.disabled = false;
+        calcBtn.textContent = STR.recalcBtn;
+        document.getElementById('liked-route-title').style.display = 'none';
+        hintEl.style.display = 'none';
+        var headEl = wrap && wrap.querySelector('.liked-map-head');
+        var noteEl = wrap && wrap.querySelector('.liked-map-note');
+        if (headEl) { headEl.style.display = 'none'; }
+        if (noteEl) { noteEl.style.display = 'none'; }
+
+        // durations come from the link itself, so the receiver triggers no distance lookups
+        var matrix = [], nonTransit = [], total = 0, idx = [];
+        for (var i = 0; i < n; i++) {
+          idx.push(i); matrix[i] = []; nonTransit[i] = [];
+          for (var j = 0; j < n; j++) { matrix[i][j] = 0; nonTransit[i][j] = false; }
+        }
+        for (var k = 0; k < n - 1; k++) {
+          var leg = shared.stops[k].leg;
+          if (leg) { matrix[k][k + 1] = leg.secs; nonTransit[k][k + 1] = leg.car; total += leg.secs; }
+        }
+        renderRouteResult(pins, idx, matrix, nonTransit, total);
+        refreshMarkerStyles(pins.map(function (p) { return p.id; }));
+        refreshMapFocus();
+
+        // banner
+        ensureShareStyle();
+        var banner = document.createElement('div');
+        banner.className = 'kr-shared-banner';
+        banner.innerHTML = '<div class="kr-shared-banner-in"><div><b>' + escapeHtml(STR.sharedTitle) + '</b>'
+          + '<span class="kr-shared-meta">' + escapeHtml(STR.sharedMeta.replace('{n}', String(n)).replace('{t}', formatRouteDuration(lang, total))) + '</span></div>'
+          + '<button type="button" class="kr-save-btn" data-goatcounter-click="save-shared-route">' + escapeHtml(STR.saveToLikes) + '</button></div>';
+        wrap.parentNode.insertBefore(banner, wrap);
+        var saveBtn = banner.querySelector('.kr-save-btn');
+        saveBtn.addEventListener('click', function () {
+          var current;
+          try { current = JSON.parse(localStorage.getItem('krambles-likes') || '[]'); } catch (e) { current = []; }
+          flat.forEach(function (pair) {
+            if (current.indexOf(pair.item.like_id) === -1) { current.push(pair.item.like_id); }
+            var heart = document.querySelector('.tile-like-btn[data-like-id="' + pair.item.like_id + '"]');
+            if (heart) { heart.classList.add('is-liked'); heart.setAttribute('aria-pressed', 'true'); }
+          });
+          try { localStorage.setItem('krambles-likes', JSON.stringify(current)); } catch (e) {}
+          saveBtn.textContent = STR.savedToLikes;
+          saveBtn.disabled = true;
+        });
       }
 
       calcBtn.addEventListener('click', function () {
+        if (checklistEl.style.display === 'none') { checklistEl.style.display = ''; calcBtn.textContent = STR.calcBtn; }
         var selected = pins.filter(function (pin) { return isChecked(pin.id); });
         if (selected.length < 2) { return; }
         calcBtn.disabled = true;
+        shareBtn.hidden = true;
         statusEl.className = 'liked-route-status';
         statusEl.textContent = STR.calculating;
 
