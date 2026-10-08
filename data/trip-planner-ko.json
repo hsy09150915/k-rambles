@@ -1,5 +1,31 @@
 [
   {
+    "title": "광안리 야경, 가기 전에 알아둘 것 - 드론쇼 시간과 보는 자리",
+    "url": "2026-10-08-gwangalli-night-guide-ko.html",
+    "thumb": "assets/thumbs/trip-planner/gwangalli-night-guide.jpg",
+    "label": "여행 계획 · 공개중",
+    "alt": "푸른 하늘 아래 광안리 모래사장 너머로 보이는 광안대교",
+    "badge": null,
+    "like_id": "trip-planner/2026-10-08-gwangalli-night-guide-ko.html",
+    "date": "2026-10-08",
+    "kw": "광안리 광안대교 드론쇼 수영구 부산 야경 밀락더마켓 민락수변공원 불꽃축제 부산불꽃축제 카페 맥주 삼겹살 한우 곱창 닭볶음탕 광안역 금련산역",
+    "city": "busan",
+    "locations": [
+      {
+        "name": "광안리 해수욕장",
+        "address": "부산 수영구 광안해변로 219",
+        "lat": 35.1532,
+        "lng": 129.1186
+      },
+      {
+        "name": "밀락더마켓",
+        "address": "부산 수영구 민락수변로17번길 56",
+        "lat": 35.1545,
+        "lng": 129.1281
+      }
+    ]
+  },
+  {
     "title": "이기대 해안산책로 - 1993년에야 열린 화산암 절벽길",
     "url": "2026-10-07-igidae-coastal-walk-guide-ko.html",
     "thumb": "assets/thumbs/trip-planner/igidae-coastal-walk-guide.jpg",
