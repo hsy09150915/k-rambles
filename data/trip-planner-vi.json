@@ -1,5 +1,43 @@
 [
   {
+    "title": "Đường đi bộ ven biển Igidae — Con đường vách đá núi lửa chỉ mở cửa từ năm 1993",
+    "url": "2026-10-07-igidae-coastal-walk-guide-vi.html",
+    "thumb": "assets/thumbs/trip-planner/igidae-coastal-walk-guide.jpg",
+    "label": "Lộ trình · Trực tuyến",
+    "alt": "Cây cầu sáng đèn và bờ đá sóng vỗ của đường đi bộ ven biển Igidae về đêm",
+    "badge": null,
+    "like_id": "trip-planner/2026-10-07-igidae-coastal-walk-guide-vi.html",
+    "date": "2026-10-08",
+    "kw": "igidae oryukdo di bo ven bien nam-gu busan skywalk vach da dia chat du thuyen haeundae dongsaengmal nui lua",
+    "city": "busan",
+    "locations": [
+      {
+        "name": "Đài ngắm cảnh Dongsaengmal (Igidae)",
+        "address": "San 1, Yongho-dong, Nam-gu, Busan",
+        "lat": 35.1319,
+        "lng": 129.1212
+      },
+      {
+        "name": "Oryukdo Skywalk",
+        "address": "137 Oryukdo-ro, Nam-gu, Busan",
+        "lat": 35.1016,
+        "lng": 129.1231
+      },
+      {
+        "name": "Du thuyền Haeundae (bến Mipo)",
+        "address": "33-1 Dalmaji-gil 62beon-gil, Haeundae-gu, Busan",
+        "lat": 35.1587,
+        "lng": 129.1767
+      },
+      {
+        "name": "Công viên tưởng niệm UN",
+        "address": "93 UN Pyeonghwa-ro, Nam-gu, Busan",
+        "lat": 35.1277,
+        "lng": 129.0957
+      }
+    ]
+  },
+  {
     "title": "Còn thời gian ở ga Busan hoặc bến phà quốc tế — Ăn, cà phê và dạo bộ",
     "url": "2026-10-07-busan-station-layover-guide-vi.html",
     "thumb": "assets/thumbs/trip-planner/busan-station-layover-guide.jpg",

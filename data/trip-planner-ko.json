@@ -1,5 +1,43 @@
 [
   {
+    "title": "이기대 해안산책로 - 1993년에야 열린 화산암 절벽길",
+    "url": "2026-10-07-igidae-coastal-walk-guide-ko.html",
+    "thumb": "assets/thumbs/trip-planner/igidae-coastal-walk-guide.jpg",
+    "label": "여행 계획 · 공개중",
+    "alt": "밤에 조명이 켜진 이기대 해안산책로의 다리와 파도치는 바위 해안",
+    "badge": null,
+    "like_id": "trip-planner/2026-10-07-igidae-coastal-walk-guide-ko.html",
+    "date": "2026-10-08",
+    "kw": "이기대 오륙도 해안산책로 남구 부산 용호동 동생말 전망대 스카이워크 해식동굴 화산암 절벽 구리광산 유람선 해운대유람선 지질공원 걷기 일몰 야경",
+    "city": "busan",
+    "locations": [
+      {
+        "name": "이기대 동생말 전망대",
+        "address": "부산 남구 용호동 산1",
+        "lat": 35.1319,
+        "lng": 129.1212
+      },
+      {
+        "name": "오륙도 스카이워크",
+        "address": "부산광역시 남구 오륙도로 137",
+        "lat": 35.1016,
+        "lng": 129.1231
+      },
+      {
+        "name": "해운대유람선 (미포 선착장)",
+        "address": "부산 해운대구 달맞이길62번길 33-1",
+        "lat": 35.1587,
+        "lng": 129.1767
+      },
+      {
+        "name": "UN기념공원",
+        "address": "부산 남구 유엔평화로 93",
+        "lat": 35.1277,
+        "lng": 129.0957
+      }
+    ]
+  },
+  {
     "title": "부산역·국제여객터미널에서 시간이 남을 때 - 식사, 커피, 산책",
     "url": "2026-10-07-busan-station-layover-guide-ko.html",
     "thumb": "assets/thumbs/trip-planner/busan-station-layover-guide.jpg",

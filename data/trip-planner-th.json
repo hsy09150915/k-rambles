@@ -1,5 +1,43 @@
 [
   {
+    "title": "ทางเดินริมทะเลอีกีแด — เส้นทางหน้าผาหินภูเขาไฟที่เพิ่งเปิดให้เข้าได้เมื่อปี 1993",
+    "url": "2026-10-07-igidae-coastal-walk-guide-th.html",
+    "thumb": "assets/thumbs/trip-planner/igidae-coastal-walk-guide.jpg",
+    "label": "แผนเที่ยว · เผยแพร่แล้ว",
+    "alt": "สะพานที่เปิดไฟสว่างและชายฝั่งหินที่มีคลื่นซัดของทางเดินริมทะเลอีกีแดยามค่ำคืน",
+    "badge": null,
+    "like_id": "trip-planner/2026-10-07-igidae-coastal-walk-guide-th.html",
+    "date": "2026-10-08",
+    "kw": "อีกีแด โอรยุกโด เดินชายฝั่ง นัมกู ปูซาน สกายวอล์ก หน้าผา อุทยานธรณี เรือล่องทะเล แฮอุนแด ทงแซงมัล ภูเขาไฟ",
+    "city": "busan",
+    "locations": [
+      {
+        "name": "จุดชมวิวทงแซงมัล (อีกีแด)",
+        "address": "San 1, Yongho-dong, Nam-gu, Busan",
+        "lat": 35.1319,
+        "lng": 129.1212
+      },
+      {
+        "name": "สกายวอล์กโอรยุกโด",
+        "address": "137 Oryukdo-ro, Nam-gu, Busan",
+        "lat": 35.1016,
+        "lng": 129.1231
+      },
+      {
+        "name": "เรือล่องทะเลแฮอุนแด (ท่าเรือมีโป)",
+        "address": "33-1 Dalmaji-gil 62beon-gil, Haeundae-gu, Busan",
+        "lat": 35.1587,
+        "lng": 129.1767
+      },
+      {
+        "name": "สวนอนุสรณ์ UN",
+        "address": "93 UN Pyeonghwa-ro, Nam-gu, Busan",
+        "lat": 35.1277,
+        "lng": 129.0957
+      }
+    ]
+  },
+  {
     "title": "มีเวลาว่างที่สถานีปูซานหรือท่าเรือโดยสารระหว่างประเทศ — กิน ดื่มกาแฟ เดินเล่น",
     "url": "2026-10-07-busan-station-layover-guide-th.html",
     "thumb": "assets/thumbs/trip-planner/busan-station-layover-guide.jpg",

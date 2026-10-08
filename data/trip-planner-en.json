@@ -1,5 +1,43 @@
 [
   {
+    "title": "Igidae Coastal Walk — A Volcanic Cliff Trail That Only Opened in 1993",
+    "url": "2026-10-07-igidae-coastal-walk-guide-en.html",
+    "thumb": "assets/thumbs/trip-planner/igidae-coastal-walk-guide.jpg",
+    "label": "Trip plan · live",
+    "alt": "The lit-up bridge and surf-washed rocky coast of the Igidae Coastal Walk at night",
+    "badge": null,
+    "like_id": "trip-planner/2026-10-07-igidae-coastal-walk-guide-en.html",
+    "date": "2026-10-08",
+    "kw": "igidae oryukdo coastal walk nam-gu busan skywalk sea cliff geopark haeundae cruise dongsaengmal volcanic",
+    "city": "busan",
+    "locations": [
+      {
+        "name": "Igidae Dongsaengmal Observatory",
+        "address": "San 1, Yongho-dong, Nam-gu, Busan",
+        "lat": 35.1319,
+        "lng": 129.1212
+      },
+      {
+        "name": "Oryukdo Skywalk",
+        "address": "137 Oryukdo-ro, Nam-gu, Busan",
+        "lat": 35.1016,
+        "lng": 129.1231
+      },
+      {
+        "name": "Haeundae Cruise (Mipo Pier)",
+        "address": "33-1 Dalmaji-gil 62beon-gil, Haeundae-gu, Busan",
+        "lat": 35.1587,
+        "lng": 129.1767
+      },
+      {
+        "name": "UN Memorial Cemetery",
+        "address": "93 UN Pyeonghwa-ro, Nam-gu, Busan",
+        "lat": 35.1277,
+        "lng": 129.0957
+      }
+    ]
+  },
+  {
     "title": "Time to Spare at Busan Station or the Ferry Terminal — A Meal, Coffee and a Walk",
     "url": "2026-10-07-busan-station-layover-guide-en.html",
     "thumb": "assets/thumbs/trip-planner/busan-station-layover-guide.jpg",
