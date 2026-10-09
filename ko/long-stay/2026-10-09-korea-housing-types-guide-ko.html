@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="ko">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>한국 월세 집, 어떤 종류를 고를까 — 아파트·빌라·오피스텔·상가주택 | K-Rambles</title>
+<link rel="canonical" href="https://k-rambles.com/ko/long-stay/2026-10-09-korea-housing-types-guide-ko.html">
+<link rel="alternate" hreflang="ko" href="https://k-rambles.com/ko/long-stay/2026-10-09-korea-housing-types-guide-ko.html">
+<link rel="alternate" hreflang="en" href="https://k-rambles.com/long-stay/2026-10-09-korea-housing-types-guide-en.html">
+<link rel="alternate" hreflang="vi" href="https://k-rambles.com/vi/long-stay/2026-10-09-korea-housing-types-guide-vi.html">
+<link rel="alternate" hreflang="th" href="https://k-rambles.com/th/long-stay/2026-10-09-korea-housing-types-guide-th.html">
+<link rel="alternate" hreflang="x-default" href="https://k-rambles.com/long-stay/2026-10-09-korea-housing-types-guide-en.html">
+<meta name="description" content="한국에서 월세로 살 집을 고르기 전에 알아둘 것. 아파트, 빌라, 오피스텔, 상가주택의 차이와 원룸·투룸 구조, 평수 읽는 법, 풀옵션, 이사할 때 짐 처분하는 법을 정리했어요.">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Work+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap');
+
+  :root {
+    --paper: #ecdfc0;
+    --paper-raised: #fbf8ee;
+    --ink: #372b10;
+    --ink-soft: #6e5c33;
+    --coral: #d9532a;
+    --coral-ink: #9c3b1c;
+    --navy: #1b2a4a;
+    --navy-ink: #26406e;
+    --marigold: #c8891f;
+    --marigold-ink: #8a5c10;
+    --line: rgba(55, 43, 16, 0.16);
+    --line-strong: rgba(55, 43, 16, 0.3);
+    --card-shadow: 0 18px 34px -20px rgba(40, 30, 10, 0.4);
+    --ok: #1a7a3d;
+    --no: #b3261e;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #1b1509; --paper-raised: #2b2211; --ink: #f7f0dd; --ink-soft: #cbb98f;
+      --coral: #ef7448; --coral-ink: #ffb497; --navy: #9fb4e0; --navy-ink: #cfdcf5; --marigold: #e8b24b; --marigold-ink: #ffcf7d;
+      --line: rgba(247,240,221,0.16); --line-strong: rgba(247,240,221,0.3);
+      --card-shadow: 0 18px 34px -18px rgba(0,0,0,0.65);
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #1b1509; --paper-raised: #2b2211; --ink: #f7f0dd; --ink-soft: #cbb98f;
+    --coral: #ef7448; --coral-ink: #ffb497; --navy: #9fb4e0; --navy-ink: #cfdcf5; --marigold: #e8b24b; --marigold-ink: #ffcf7d;
+    --line: rgba(247,240,221,0.16); --line-strong: rgba(247,240,221,0.3);
+    --card-shadow: 0 18px 34px -18px rgba(0,0,0,0.65);
+  }
+
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: "Work Sans", ui-sans-serif, system-ui, sans-serif; font-size: 1.0625rem; line-height: 1.6; -webkit-font-smoothing: antialiased; word-break: keep-all; overflow-wrap: break-word; }
+
+  html { font-size: 100%; }
+  html[data-fs="xs"] { font-size: 85%; }
+  html[data-fs="sm"] { font-size: 92.5%; }
+  html[data-fs="lg"] { font-size: 115%; }
+  html[data-fs="xl"] { font-size: 135%; }
+  .font-size-ctrl { display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--line); border-radius: 100px; padding: 4px 8px; }
+  .fs-labels { display: inline-flex; align-items: baseline; gap: 3px; }
+  .fs-label { font-family: "Work Sans", sans-serif; font-weight: 600; color: var(--ink-soft); line-height: 1; user-select: none; }
+  .fs-label-sm { font-size: 0.68rem; }
+  .fs-label-lg { font-size: 1.15rem; }
+  .fs-step { appearance: none; border: none; background: none; cursor: pointer; color: var(--ink-soft); font-family: "Work Sans", sans-serif; font-weight: 700; font-size: 1.35rem; line-height: 1; width: 30px; height: 30px; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; flex-shrink: 0; }
+  .fs-step:hover:not(:disabled) { background: var(--line); color: var(--ink); }
+  .fs-step:disabled { opacity: 0.32; cursor: default; }
+  a { color: inherit; }
+  .mono { font-family: "Space Mono", ui-monospace, "SF Mono", monospace; }
+  a.mono { color: var(--navy-ink); text-decoration: underline; text-underline-offset: 2px; }
+  a.mono:hover { color: var(--coral-ink); }
+  .keyword-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 6px; }
+  .keyword-link { display: inline-flex; align-items: center; gap: 6px; text-decoration: none; color: var(--ink); background: var(--paper-raised); border: 1px solid var(--line); border-radius: 999px; padding: 8px 14px; font-size: 0.88rem; }
+  .keyword-link:hover { border-color: var(--coral); color: var(--coral-ink); }
+  .keyword-link svg { width: 14px; height: 14px; stroke: var(--ink-soft); fill: none; stroke-width: 2; }
+
+  header.site { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px 20px; padding: 26px 28px; max-width: 820px; margin: 0 auto; }
+  .header-right { display: flex; align-items: center; flex-wrap: wrap; justify-content: flex-end; gap: 10px 16px; }
+  .logo { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 1.2rem; text-decoration: none; white-space: nowrap; }
+  .logo span { color: var(--coral); }
+  .back-link { font-family: "Space Mono", monospace; font-size: 0.78rem; letter-spacing: 0.03em; text-decoration: none; color: var(--ink-soft); display: inline-flex; flex-direction: column; align-items: flex-start; gap: 2px; line-height: 1; white-space: nowrap; }
+  .back-link svg { width: 12px; height: 12px; }
+  .back-link:hover { color: var(--navy-ink); }
+  .lang-switch { display: flex; align-items: center; gap: 6px; font-family: "Space Mono", monospace; font-size: 0.76rem; letter-spacing: 0.03em; }
+  .lang-switch a, .lang-switch span.current { text-decoration: none; padding: 3px 8px; border-radius: 6px; }
+  .lang-switch a { color: var(--ink-soft); }
+  .lang-switch a:hover { color: var(--ink); }
+  .lang-switch span.current { color: var(--ink); font-weight: 700; border: 1px solid var(--line); }
+
+  .art-hero { padding: 10px 28px 24px; max-width: 820px; margin: 0 auto; }
+  .hero-photo-wrap { max-width: 820px; margin: 0 auto 8px; padding: 0 28px; }
+  .hero-photo { display: block; width: 100%; height: auto; border-radius: 16px; box-shadow: var(--card-shadow); border: 1px solid var(--line); }
+  .cite-note { font-size: 0.92rem; color: var(--ink-soft); margin: 10px 0 0; }
+  .stamp { display: inline-flex; align-items: center; gap: 9px; font-family: "Space Mono", monospace; font-size: 0.76rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--navy-ink); border: 1.5px dashed var(--navy); border-radius: 999px; padding: 6px 14px 6px 11px; transform: rotate(-1.5deg); }
+  .stamp::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--navy); display: inline-block; }
+
+  .hero-top { display: flex; align-items: center; gap: 16px; margin: 22px 0 24px; }
+  .hero-icon { width: 40px; height: 40px; stroke: var(--navy-ink); fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; }
+
+  h1.art-title { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: clamp(1.9rem, 4.6vw, 2.7rem); line-height: 1.28; letter-spacing: -0.01em; margin: 0 0 14px; text-wrap: balance; }
+  p.dek { font-size: 1.08rem; color: var(--ink-soft); max-width: 58ch; margin: 0; }
+
+  .updated-badge { display: inline-flex; align-items: center; gap: 7px; font-size: 0.92rem; color: var(--ink-soft); margin: 16px 0 0; }
+  .updated-icon { width: 17px; height: 17px; stroke: var(--navy-ink); fill: none; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+
+  section.block { max-width: 820px; margin: 0 auto; padding: 6px 28px 30px; }
+  section.block.section-gap { padding-top: 30px; }
+
+  .block-head { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+  .block-icon { width: 22px; height: 22px; stroke: var(--navy-ink); fill: none; stroke-width: 1.7; flex-shrink: 0; }
+  .block-title { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 1.3rem; margin: 0; }
+
+  p.body-text { margin: 0 0 14px; }
+  ul.plain-list { list-style: disc; margin: 0 0 14px; padding-left: 1.2em; }
+  ul.plain-list li + li { margin-top: 12px; }
+  ol.plain-list-num { margin: 0 0 14px; padding-left: 1.2em; }
+  ol.plain-list-num li + li { margin-top: 12px; }
+
+  table.data-table { width: 100%; border-collapse: collapse; background: var(--paper-raised); font-size: 0.92rem; margin: 4px 0 18px; word-break: keep-all; overflow-wrap: break-word; }
+  table.data-table th, table.data-table td { text-align: left; padding: 12px 14px; border-bottom: 1px solid var(--line); word-break: keep-all; overflow-wrap: break-word; vertical-align: top; }
+  table.data-table th:first-child, table.data-table td:first-child { padding-left: 16px; }
+  table.data-table th:last-child, table.data-table td:last-child { padding-right: 16px; }
+  table.data-table thead th { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; color: var(--ink-soft); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.03em; border-bottom: 1px solid var(--line-strong); white-space: nowrap; }
+  table.data-table tbody tr:last-child td { border-bottom: none; }
+  table.data-table td p, table.data-table td ul { margin: 0; }
+  table.data-table td ul { padding-left: 1.1em; }
+  table.data-table td li + li, table.data-table td p + p { margin-top: 6px; }
+
+  /* On narrow screens, tables flip from columns to stacked cards so no column gets squeezed into a one-character-wide strip. */
+  @media (max-width: 640px) {
+    table.data-table { display: block; }
+    table.data-table thead { display: none; }
+    table.data-table tbody { display: block; }
+    table.data-table { background: transparent; }
+    table.data-table tr { display: block; padding: 14px 16px; margin-bottom: 12px; border: 2px solid var(--line-strong); border-radius: 0; background: var(--paper-raised); }
+    table.data-table tr:last-child { margin-bottom: 0; }
+    table.data-table td { display: block; padding: 8px 0; border-bottom: 1px solid var(--line); }
+    table.data-table td:first-child { padding-left: 0; }
+    table.data-table td:last-child { padding-right: 0; border-bottom: none; }
+    table.data-table td::before { content: attr(data-label); display: block; font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; color: var(--ink-soft); font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.03em; margin-bottom: 4px; }
+  }
+
+  .callout { background: var(--paper-raised); border: 1px solid var(--line); border-left: 3px solid var(--marigold); border-radius: 12px; padding: 18px 20px; margin: 16px 0 0; box-shadow: var(--card-shadow); }
+  .callout-head { display: flex; align-items: center; gap: 8px; font-weight: 700; margin-bottom: 8px; }
+  .callout-head svg { width: 18px; height: 18px; stroke: var(--marigold-ink); fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+  .callout p { margin: 0; font-size: 0.95rem; color: var(--ink-soft); }
+  .callout p + p { margin-top: 8px; }
+  .callout strong.warn { color: var(--coral-ink); }
+
+  .step-list { list-style: none; margin: 6px 0 0; padding: 0; display: flex; flex-direction: column; gap: 24px; }
+  .step-item { display: flex; flex-direction: column; gap: 8px; }
+  .step-head { display: flex; align-items: flex-start; gap: 12px; }
+  .step-badge { width: 28px; height: 28px; border-radius: 50%; background: var(--coral); color: #fff5ee; font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 0.9rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .step-body h3 { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 1.0rem; margin: 2px 0 4px; }
+  .step-body p { margin: 0; font-size: 0.93rem; color: color-mix(in srgb, var(--ink) 60%, var(--ink-soft)); }
+
+  .official-links { display: flex; flex-wrap: wrap; gap: 10px; margin: 14px 0 0; }
+  .official-link { display: inline-flex; align-items: center; gap: 6px; text-decoration: none; color: var(--ink); background: var(--paper-raised); border: 1px solid var(--line); border-radius: 999px; padding: 8px 14px; font-size: 0.86rem; }
+  .official-link:hover { border-color: var(--navy); color: var(--navy-ink); }
+  .official-link svg { width: 14px; height: 14px; stroke: var(--ink-soft); fill: none; stroke-width: 2; }
+
+  .scroll-top { position: fixed; right: 20px; bottom: 20px; width: 46px; height: 46px; border-radius: 50%; background: var(--coral); color: #fff5ee; display: flex; align-items: center; justify-content: center; box-shadow: var(--card-shadow); border: none; cursor: pointer; opacity: 0; pointer-events: none; transition: opacity 0.2s ease, transform 0.15s ease; z-index: 40; }
+  .scroll-top.visible { opacity: 1; pointer-events: auto; }
+  .scroll-top:hover { transform: translateY(-3px); background: var(--coral-ink); }
+  .scroll-top svg { width: 20px; height: 20px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  @media (prefers-reduced-motion: reduce) { .scroll-top { transition: none; } }
+
+  footer.site { border-top: 1px solid var(--line); padding: 24px 28px 40px; }
+  .footer-inner { max-width: 820px; margin: 0 auto; }
+  .footer-inner .mono { font-size: 0.76rem; color: var(--ink-soft); }
+
+  section.block > * + *, .shop-card > * + * { margin-top: 18px; }
+  section.block > .callout + *, section.block > table.data-table + *, section.block > ol.step-list + *, section.block > .official-links + * { margin-top: 44px; }
+  section.block > table.data-table + p.body-text[style*="font-size:0.9rem"] { margin-top: 18px; }
+
+  @media (max-width: 400px) {
+    header.site { padding: 18px 16px; flex-wrap: wrap; row-gap: 10px; }
+    .logo { font-size: 1.02rem; }
+    .header-right { gap: 10px; flex-wrap: wrap; }
+    .art-hero, section.block { padding-left: 16px; padding-right: 16px; }
+  }
+  @media (max-width: 340px) {
+    .logo { font-size: 0.9rem; }
+    .font-size-ctrl { padding: 3px 6px; gap: 5px; }
+  }
+
+  button.official-link { font-family: "Work Sans", sans-serif; }
+
+  .modal-overlay { position: fixed; inset: 0; background: rgba(20, 15, 5, 0.52); display: flex; align-items: flex-end; justify-content: center; z-index: 60; padding: 0; }
+  .modal-overlay[hidden] { display: none; }
+  .modal-card { background: var(--paper-raised); color: var(--ink); width: 100%; max-width: 680px; max-height: 82vh; border-radius: 18px 18px 0 0; box-shadow: var(--card-shadow); padding: 22px 22px calc(22px + env(safe-area-inset-bottom, 0px)); overflow-y: auto; border: 1px solid var(--line); border-bottom: none; }
+  @media (min-width: 720px) {
+    .modal-overlay { align-items: center; }
+    .modal-card { border-radius: 18px; border-bottom: 1px solid var(--line); max-height: 78vh; }
+  }
+  .modal-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 8px; }
+  .modal-head h3 { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 1.1rem; margin: 0; }
+  .modal-close { appearance: none; border: none; background: var(--line); color: var(--ink); width: 30px; height: 30px; border-radius: 50%; font-size: 1.3rem; line-height: 1; cursor: pointer; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
+  .modal-close:hover { background: var(--coral); color: #fff5ee; }
+  .modal-source { font-size: 0.84rem; color: var(--ink-soft); margin: 0 0 16px; }
+  .modal-group + .modal-group { margin-top: 18px; }
+  .modal-group h4 { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 0.95rem; margin: 0 0 6px; display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+  .modal-count { font-family: "Space Mono", monospace; font-weight: 400; font-size: 0.78rem; color: var(--ink-soft); }
+  .modal-countries { font-size: 0.9rem; color: var(--ink-soft); margin: 0; line-height: 1.7; }
+  table.data-table.keep { display: table; width: 100%; border-collapse: separate; border-spacing: 0; border: 1px solid var(--line-strong); border-radius: 12px; overflow: hidden; background: var(--paper-raised); }
+  table.data-table.keep thead { display: table-header-group; }
+  table.data-table.keep tbody { display: table-row-group; }
+  table.data-table.keep tr { display: table-row; padding: 0; margin: 0; border: 0; background: transparent; }
+  table.data-table.keep th { text-align: left; padding: 9px 14px; font-size: 0.8rem; color: var(--ink-soft); background: rgba(127,127,127,0.10); border: 0; border-bottom: 1px solid var(--line-strong); white-space: nowrap; text-transform: none; letter-spacing: 0; }
+  table.data-table.keep td { display: table-cell; padding: 11px 14px; border: 0; border-bottom: 1px solid var(--line); font-size: 0.95rem; line-height: 1.5; vertical-align: top; text-align: left; }
+  table.data-table.keep td::before { content: none; display: none; }
+  table.data-table.keep td:first-child { white-space: nowrap; background: rgba(127,127,127,0.06); border-right: 1px solid var(--line); }
+  table.data-table.keep tr:last-child td { border-bottom: 0; }
+  @media (max-width: 560px) { table.data-table.keep td, table.data-table.keep th { padding: 10px 11px; font-size: 0.92rem; } }
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-doc" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.5 4 5.5 4 9s-1.5 6.5-4 9c-2.5-2.5-4-5.5-4-9s1.5-6.5 4-9Z"/></symbol>
+  <symbol id="i-pass" viewBox="0 0 24 24"><path d="M4 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v1.3a1.5 1.5 0 0 0 0 2.9V13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-1.3a1.5 1.5 0 0 0 0-2.9Z" transform="translate(0 2)"/><path d="M9 6.5v11" stroke-dasharray="2 2" transform="translate(0 2)"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M4 12.5 9.5 18 20 6.5"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5.5M12 8v.01"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 9.8h17M8 2.5v5M16 2.5v5"/></symbol>
+  <symbol id="i-link" viewBox="0 0 24 24"><path d="M9.5 14.5 14.5 9.5"/><path d="M8.3 11.7l-1.6 1.6a3 3 0 0 0 4.2 4.2l1.6-1.6"/><path d="M15.7 12.3l1.6-1.6a3 3 0 0 0-4.2-4.2l-1.6 1.6"/></symbol>
+  <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></symbol>
+</svg>
+
+<header class="site">
+  <a class="logo" href="/ko/index.html">K-<span>Rambles</span></a>
+  <div class="header-right">
+    <a class="back-link" href="/ko/long-stay/index.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+      보드로 돌아가기
+    </a>
+    <div class="font-size-ctrl" role="group" aria-label="Text size"><button type="button" class="fs-step" data-action="dec" aria-label="Decrease text size">−</button><span class="fs-labels" aria-hidden="true"><span class="fs-label fs-label-sm">가</span><span class="fs-label fs-label-lg">가</span></span><button type="button" class="fs-step" data-action="inc" aria-label="Increase text size">+</button></div>
+    <div class="lang-switch" aria-label="Language" data-key="long-stay/2026-10-09-korea-housing-types-guide-en"></div>
+  </div>
+</header>
+
+<div class="art-hero">
+  <div class="hero-top">
+    <span class="stamp">장기체류 · 보드 12</span>
+    <svg class="hero-icon"><use href="#i-doc"/></svg>
+  </div>
+  <h1 class="art-title">한국 월세 집, 어떤 종류를 고를까 — 아파트·빌라·오피스텔·상가주택</h1>
+  <p class="dek">월세 집을 보러 가면 "빌라", "오피스텔", "분리형 원룸", "10평" 같은 말이 쏟아져요. 계약하기 전에 이 말들이 무슨 뜻인지, 집마다 무엇이 다른지 먼저 알아두세요.</p>
+  <p class="updated-badge"><svg class="updated-icon"><use href="#i-calendar"/></svg>2026년 10월 기준</p>
+</div>
+
+<!--
+  출처(개정사항 체크 시 참고) — 2026-10-09 확인
+  주택 유형: 아파트 5개 층 이상(건축법 시행령), 빌라는 법적 용어가 아니며 건축물대장상 연립·다세대·다가구, 다가구 3개 층 이하·19가구 이하·660㎡ 이하, 오피스텔 업무시설(건축법)·준주택(주택법 시행령): https://seoulstart.com/ko/guides/korea-apartment-types
+  오피스텔 주거용/업무용·전입신고·주택임대차보호법·건축물대장 확인: 세이프홈즈 https://safehomes.kr/insights/ap-200-주거용-비주거용-오피스텔-주택임대차보호법-오피스텔-전입신고-막는-이유
+  오피스텔 관리비(계약면적 평당 1만~1.5만 원, 포함 항목, 장기수선충당금): 세이프홈즈 https://safehomes.kr/insights/ap-423-오피스텔-관리비-평균-비용과-계약-전-확인해야-할-정보
+  원룸 구조(일반형·분리형·오픈형·복층)와 평수대, 투룸 13평 이상: houseinfo.kr https://houseinfo.kr/blog/0060-studio-structure-complete-guide/ (블로그 1건 → "보통"으로 완화)
+  풀옵션 구성 예: 당근 부동산 매물 설명 https://realty.daangn.com/articles/4259423 (한 매물 예시, 매물마다 다름)
+  당근 사용법: https://expatguidekorea.com/article/how-to-buy-and-sell-used-goods-with-karrot.html (영어 화면, 휴대폰 번호 인증, 0원=무료나눔)
+  대형폐기물·가전 무상수거·아름다운가게: https://kowork.kr/en/blog/dispose-of-large-items-in-Korea (과태료 최대 100만 원은 블로그 1건 → 금액 제외)
+  평 환산 1평≈3.3058㎡는 일반 상식으로 사용(공식 출처 페이지는 열람 불가)
+  외국인 체류지 변경신고가 전입신고를 갈음(출입국관리법 제88조의2), 등록외국인 이사 후 15일 이내: https://seoulstart.com/ko/guides/wolse-explained / https://view.asiae.co.kr/article/2022090808325418131
+  오피스텔 사무실 임대(부가세 과세) 후 임차인 전입 시 주택 간주·부가세·주택 수 세금 영향: 세무사 답변 https://taxly.kr/qna/138213-일반임대사업자-오피스텔-전입신고-된-경우 / 세이프홈즈(위 오피스텔 글)
+  아파트 전용 84㎡ 국민평형·59㎡ 인기: https://kbthink.com/realestate/issue/hosing-251027.html / 방 2~4개·빌라 1.5룸~30평 3룸·오피스텔 5~7평·상가주택 설명은 사용자 설명
+  미확인으로 본문에서 제외: 건축물대장 표제부·전유부·위반건축물 표시의 정확한 위치(일반 설명만), 연립·다세대 면적 기준 숫자, 상가주택 임차 시 구체적 주의점, 반지하·옥탑, 오피스텔 전용률 수치, 부산 월세 시세, 당근 가입 시 한국 번호 필수 여부
+-->
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-info"/></svg>
+    <h2 class="block-title">한눈에 보기</h2>
+  </div>
+  <table class="data-table keep">
+    <thead>
+      <tr><th>형태</th><th>한 줄 설명</th><th>크기와 구조(보통)</th></tr>
+    </thead>
+    <tbody>
+      <tr><td data-label="형태"><strong>아파트</strong></td><td data-label="한 줄 설명">5층 이상의 공동주택. 단지 안에 여러 동이 모여 있어요. 방은 보통 2~4개예요</td><td data-label="크기와 구조(보통)">보통 전용면적 59㎡(실평수 약 18평), 84㎡(실평수 약 25평)예요. 84㎡는 "국민 평형"이라 불러요</td></tr>
+      <tr><td data-label="형태"><strong>빌라</strong></td><td data-label="한 줄 설명">보통 4층 이하의 저층 공동주택이에요</td><td data-label="크기와 구조(보통)">보통 약 30㎡의 1.5룸부터 약 99㎡(30평)의 3룸까지 있어요</td></tr>
+      <tr><td data-label="형태"><strong>오피스텔</strong></td><td data-label="한 줄 설명">업무시설이지만 주거로 많이 써요. 가전·가구가 갖춰진 곳이 많아요</td><td data-label="크기와 구조(보통)">보통 5~7평(약 17~23㎡) 원룸이 많고, 1.5룸도 있어요</td></tr>
+      <tr><td data-label="형태"><strong>상가주택</strong></td><td data-label="한 줄 설명">1층은 가게, 위층은 집으로 쓰는 건물</td><td data-label="크기와 구조(보통)">집마다 달라요</td></tr>
+    </tbody>
+  </table>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-doc"/></svg>
+    <h2 class="block-title">주거 형태별로 뭐가 다른가요</h2>
+  </div>
+  <p class="body-text"><strong>아파트</strong>는 법으로 5개 층 이상의 공동주택을 말해요. 보통 여러 동이 모인 단지 형태이고, 단지마다 이름(예: ○○아파트)이 있어요. 방은 보통 2~4개이고, 전용면적 59㎡(실평수 약 18평)와 84㎡(실평수 약 25평)가 흔해요. 84㎡는 보통 4인 가족이 살기 알맞은 크기로 여겨져서 "국민 평형"이라고 불러요. 요즘은 1~2인 가구가 늘면서 59㎡ 같은 작은 크기도 인기가 많아요.</p>
+  <p class="body-text"><strong>빌라</strong>는 법에 있는 용어가 아니라, 아파트보다 작게 지은 저층 공동주택을 부르는 말이에요. 보통 4층 이하로 지은 저층 건물이에요. 서류상으로는 연립주택, 다세대주택, 다가구주택으로 나뉘지만, 월세를 구할 때 이 구분까지 따질 필요는 없어요. 이런 종류가 있다는 정도만 알아두세요. 건물 모양은 비슷해요. 크기는 보통 약 30㎡의 1.5룸부터 약 99㎡(30평)의 3룸까지 다양해요. 계약할 때 부동산에서 건축물대장과 등기부등본을 떼어서 설명해 주니, 그때 잘 들으면 돼요.</p>
+  <p class="body-text"><strong>오피스텔</strong>은 건축법상 업무시설이고, 주택법 시행령에서는 준주택으로 분류돼서 주거로 쓸 수 있어요. 오피스텔은 사무실(office)과 호텔(hotel)을 합친 말이에요. 사무실로도, 살 집으로도 쓸 수 있게 만든 건물이라는 뜻이에요. 대부분의 오피스텔은 주거가 가능하도록 설계되어 있어서 살기에 문제가 없어요. 가구 수가 많아서 관리사무소와 경비원이 있는 경우가 많고, 그래서 건물 관리가 잘 되는 편이에요. 다만 모든 오피스텔이 그런 건 아니라서, 관리사무소와 경비원이 있는지는 집을 볼 때 확인하세요. 크기는 보통 5~7평(약 17~23㎡) 원룸이 많고, 1.5룸도 있어요. 오피스텔과 아파트를 합친 "아파텔"이라는 말도 있어요. 공식 용어는 아니고, 아파트처럼 큰 크기의 오피스텔도 있다는 뜻이에요.</p>
+  <p class="body-text"><strong>상가주택</strong>은 1층은 가게, 위층은 집으로 쓰는 건물이에요. 보통 처음부터 주거용 집으로 지은 건물이 아니라서, 나중에 주방과 욕실 정도를 갖춘 곳이 많아요. 그래서 거주 환경은 다른 집보다 상대적으로 덜 좋을 수 있어요.</p>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-doc"/></svg>
+    <h2 class="block-title">이 글에 나오는 용어</h2>
+  </div>
+  <p class="body-text">집을 구할 때 자주 듣는 말이에요. 미리 알아 두면 중개사의 설명이 훨씬 잘 들려요.</p>
+  <table class="data-table keep">
+    <thead>
+      <tr><th>용어</th><th>뜻</th></tr>
+    </thead>
+    <tbody>
+      <tr><td data-label="용어"><strong>전입신고</strong></td><td data-label="뜻">살고 있는 주소를 새 집으로 옮겼다고 주민센터에 알리는 신고예요. 외국인은 전입신고 대신 체류지 변경신고를 해요</td></tr>
+      <tr><td data-label="용어"><strong>확정일자</strong></td><td data-label="뜻">임대차계약서에 날짜 도장을 받는 거예요. 집에 문제가 생겼을 때 보증금을 돌려받을 순서를 정해 줘요</td></tr>
+      <tr><td data-label="용어"><strong>건축물대장</strong></td><td data-label="뜻">건물의 용도, 면적, 층수 같은 정보를 적은 정부의 공식 장부예요. 부동산에서 떼어서 보여 줘요</td></tr>
+      <tr><td data-label="용어"><strong>표제부</strong></td><td data-label="뜻">건축물대장에서 건물 전체의 정보(주소, 층수, 주용도 등)를 적은 칸이에요</td></tr>
+      <tr><td data-label="용어"><strong>전유부</strong></td><td data-label="뜻">건축물대장에서 각 호실의 정보(용도, 면적 등)를 적은 칸이에요</td></tr>
+      <tr><td data-label="용어"><strong>주용도</strong></td><td data-label="뜻">건물을 무엇에 쓰도록 허가받았는지를 말해요. 예: 공동주택, 업무시설</td></tr>
+      <tr><td data-label="용어"><strong>등기부등본</strong></td><td data-label="뜻">집의 주인이 누구인지, 대출이나 담보가 잡혀 있는지를 적은 서류예요</td></tr>
+      <tr><td data-label="용어"><strong>특약</strong></td><td data-label="뜻">계약서에 기본 문구 외에 따로 더 적는 약속이에요</td></tr>
+    </tbody>
+  </table>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-check"/></svg>
+    <h2 class="block-title">오피스텔은 전입신고가 가능한지 꼭 확인하세요</h2>
+  </div>
+  <p class="body-text">오피스텔은 <strong>실제로 주거용으로 쓰는 경우</strong>에 주택임대차보호법의 보호를 받을 수 있어요. 집을 넘겨받고 전입신고를 하면, 그 다음 날부터 법으로 보호를 받아요. 집주인이 바뀌거나 집이 팔려도 계약 기간 동안 계속 살 수 있고, 보증금도 지킬 수 있어요. 여기에 확정일자까지 받으면, 집이 경매로 넘어가는 것 같은 특수한 경우에 다른 채권자보다 순서에 따라 먼저 보증금을 돌려받을 수 있어요. 집주인이 보증금을 잘 돌려주는 평소에는 쓸 일이 없지만, 집이 넘어가는 경우를 대비하는 장치예요.</p>
+  <p class="body-text">그런데 "전입신고가 안 된다"고 하는 오피스텔이 있어요. 이유는 집주인의 세금과 용도 신고 때문이에요.</p>
+  <ul class="plain-list">
+    <li>집주인이 이 오피스텔을 <strong>사무실로 임대하는 것으로 신고</strong>해 놓은 경우가 있어요. 사무실로 빌려주면 월세에 <strong>부가세 10%</strong>가 붙고, 집주인이 부가세 신고를 해요.</li>
+    <li>그런데 임차인이 전입신고를 하면 사무실이 아니라 <strong>주택으로 쓰는 것</strong>으로 봐요. 그러면 집주인이 신고한 용도와 달라서, 신고와 세금 문제가 생겨요.</li>
+    <li>주택으로 보면 집주인의 주택 수에도 들어가서 다른 세금에 영향을 줄 수 있어요.</li>
+  </ul>
+  <p class="body-text">집주인 사정을 알면 이야기하기 쉬워요. 전입신고가 가능한 오피스텔인지는 계약 전에 부동산에 꼭 물어보세요. 전입신고가 안 되는 집이라면 보증금 보호를 받기 어려우니, 보증금이 클수록 위험하다는 점을 기억하고 월세 같은 조건을 집주인과 조율해 보세요.</p>
+  <p class="body-text"><strong>건축물대장은 보통 부동산에서 설명해 줘요. 이 부분을 알아 두면 더 잘 들려요.</strong></p>
+  <ul class="plain-list">
+    <li><strong>용도</strong> — 건물 전체 칸(표제부)의 주용도와 호실 칸(전유부)의 용도가 "업무시설(오피스텔)"로 되어 있는지 보세요.</li>
+    <li><strong>전용면적</strong> — 호실 칸(전유부)에 적힌 전용면적이 광고에서 본 평수와 맞는지 보세요.</li>
+    <li>건축물대장만으로는 전입신고가 가능한지 알 수 없어요. 이건 집주인의 임대 신고와 관련되어 있으니, 중개사에게 직접 물어보고 가능하다는 내용을 계약서 특약에 적어 두세요.</li>
+  </ul>
+  <div class="callout">
+    <div class="callout-head"><svg><use href="#i-info"/></svg>외국인은 체류지 변경신고를 해요</div>
+    <p>외국인등록증(ARC)을 가진 외국인이 이사하면 이사한 날부터 15일 안에 체류지 변경신고를 해야 해요. 이 신고가 전입신고를 대신해요. 그래서 <strong>전입신고를 따로 한 번 더 할 필요는 없어요.</strong> 집을 넘겨받은 상태에서 체류지 변경신고를 하고 확정일자까지 받으면 보증금을 보호받을 수 있어요. 자세한 절차는 <a href="/ko/long-stay/2026-09-30-korea-long-stay-housing-guide-ko.html">월세 계약 가이드</a>와 <a href="/ko/long-stay/2026-09-19-korea-arc-foreign-registration-guide-ko.html">외국인등록증(ARC) 가이드</a>를 보세요.</p>
+  </div>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-info"/></svg>
+    <h2 class="block-title">방 구조와 크기 — 원룸, 1.5룸, 투룸</h2>
+  </div>
+  <p class="body-text">집 구조는 방이 몇 개인지로 나눠요. 거실과 주방은 따로 방으로 세지 않고 한 공간에 함께 있는 경우가 많아요.</p>
+  <table class="data-table keep">
+    <thead>
+      <tr><th>구조</th><th>특징</th><th>크기(보통)</th></tr>
+    </thead>
+    <tbody>
+      <tr><td data-label="구조"><strong>원룸</strong></td><td data-label="특징">방, 거실, 주방이 하나의 사각형 공간에 모두 있어요. 방이 따로 없어요</td><td data-label="크기(보통)">약 17~30㎡(5~9평)</td></tr>
+      <tr><td data-label="구조"><strong>1.5룸</strong></td><td data-label="특징">"분리형 원룸"이라고도 해요. 방이 하나 있고, 거실과 주방이 함께 있어요. 오피스텔에서는 벽과 문 대신 미닫이로 방을 구분하는 경우도 많아요</td><td data-label="크기(보통)">약 30㎡(9평) 안팎부터</td></tr>
+      <tr><td data-label="구조"><strong>투룸</strong></td><td data-label="특징">방이 두 개이고, 거실과 주방이 함께 있어요</td><td data-label="크기(보통)">약 33~96㎡(10~20평대)로 다양해요</td></tr>
+      <tr><td data-label="구조"><strong>복층</strong></td><td data-label="특징">층고를 이용해 위층에 침실을 둬요. 위층은 보통 사람이 서 있을 수 없는 높이라서 앉거나 누워서 지내는 공간이에요. 계단이 불편할 수 있어요</td><td data-label="크기(보통)">바닥 면적 기준으로 보통 약 17~26㎡(5~8평)</td></tr>
+    </tbody>
+  </table>
+  <p class="body-text">크기는 집마다 다르니 숫자만 보지 말고 직접 보세요. 창문 방향과 크기, 환기, 방음을 확인하는 게 좋아요.</p>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-info"/></svg>
+    <h2 class="block-title">평수라는 말 — 이렇게 읽어요</h2>
+  </div>
+  <p class="body-text">한국에서는 집 크기를 <strong>평</strong>으로 말하는 일이 많아요. 서류에는 ㎡로 적혀 있어도 매물 광고나 중개사는 평으로 말해요. <strong>1평은 약 3.3㎡</strong>예요.</p>
+  <table class="data-table keep">
+    <thead>
+      <tr><th>평</th><th>㎡로 바꾸면 (평 × 3.3058)</th></tr>
+    </thead>
+    <tbody>
+      <tr><td data-label="평">6평</td><td data-label="㎡로 바꾸면 (평 × 3.3058)">약 19.8㎡</td></tr>
+      <tr><td data-label="평">8평</td><td data-label="㎡로 바꾸면 (평 × 3.3058)">약 26.4㎡</td></tr>
+      <tr><td data-label="평">10평</td><td data-label="㎡로 바꾸면 (평 × 3.3058)">약 33.1㎡</td></tr>
+      <tr><td data-label="평">13평</td><td data-label="㎡로 바꾸면 (평 × 3.3058)">약 43.0㎡</td></tr>
+    </tbody>
+  </table>
+  <p class="body-text">같은 "10평"이라도 어떤 면적인지 달라요.</p>
+  <table class="data-table keep">
+    <thead>
+      <tr><th>면적</th><th>뜻</th></tr>
+    </thead>
+    <tbody>
+      <tr><td data-label="면적"><strong>전용면적</strong></td><td data-label="뜻">방 안에서 내가 실제로 쓰는 면적이에요. "실평수"라는 말을 많이 써요</td></tr>
+      <tr><td data-label="면적"><strong>공급면적·계약면적</strong></td><td data-label="뜻">전용면적에 복도, 계단 같은 공용 공간을 더한 면적. 오피스텔 계약면적에는 주차장 등도 포함돼서, 계약면적이 같아도 실제로 쓰는 공간은 훨씬 작을 수 있어요</td></tr>
+    </tbody>
+  </table>
+  <p class="body-text">아파트 광고에서는 전용 84㎡를 "34평형"이라고 부르는 경우가 많아요. 전용면적이 아니라 공급면적으로 센 평수예요. 그래서 같은 집이라도 광고의 "34평"과 실평수 약 25평이 함께 나올 수 있어요.</p>
+  <p class="body-text">광고에 나온 평수가 전용면적인지 계약면적인지 중개사에게 꼭 물어보세요.</p>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-check"/></svg>
+    <h2 class="block-title">풀옵션과 관리비</h2>
+  </div>
+  <p class="body-text"><strong>풀옵션</strong>은 가전과 가구가 기본으로 갖춰져 있다는 뜻이에요. 오피스텔은 물론 요즘 새로 지은 빌라도 풀옵션인 경우가 많아요. 에어컨, 냉장고, 세탁기, 옷장, 인덕션 같은 것이 들어 있는 경우가 많아요. 다만 <strong>TV와 침대는 대부분 포함되지 않아요.</strong> 매물마다 다르니, <strong>무엇이 포함되는지는 집마다 확인</strong>하세요.</p>
+  <ul class="plain-list">
+    <li>입주할 때 집 안의 가전과 가구가 임대인이 적은 목록과 맞는지 확인하고, 상태를 사진으로 찍어 두세요.</li>
+  </ul>
+  <p class="body-text">가전과 가구가 고장 났을 때는 보통 이렇게 나눠요. 임차인이 잘못 써서 생긴 고장은 임차인이 수리하고, 오래 써서 자연스럽게 낡거나 생긴 고장은 임대인이 수리해 줘요. 이 내용은 부동산 계약서에 기본 문구로 들어 있는 경우가 많아요. 모든 경우를 하나하나 정해서 적기는 어려워요.</p>
+  <p class="body-text">오피스텔은 <strong>관리비</strong>가 아파트보다 비싼 편이에요. 계약면적을 기준으로 보통 1평(3.3㎡)당 1만~1만 5천 원이에요. 예를 들어 계약면적이 10평이면 월 10만~15만 원 정도예요. 오피스텔은 인터넷과 IPTV(TV 방송) 요금이 관리비에 포함되지 않고 따로 내요. IPTV는 인터넷으로 TV를 보는 서비스인데, 2025년 하반기 기준으로 한국 유료 TV 방송 가입자의 약 60%가 이 방식이에요.</p>
+  <p class="body-text">관리비는 건물마다 달라요. 외국인은 관리비가 적당한지 판단하기 어려우니, 오피스텔이든 빌라든 계약 전에 부동산에 <strong>관리비가 보통 얼마쯤 나오는지, 적당한 수준인지</strong> 물어보세요. 항목별 설명과 공과금 내는 방법은 아래 가이드에서 볼 수 있어요.</p>
+  <div class="keyword-links">
+    <a class="keyword-link" href="/ko/long-stay/2026-09-30-korea-utility-bills-guide-ko.html"><svg><use href="#i-link"/></svg>관리비·공과금 완전정리</a>
+    <a class="keyword-link" href="/ko/long-stay/2026-10-01-korea-internet-iptv-guide-ko.html"><svg><use href="#i-link"/></svg>인터넷·IPTV 가이드</a>
+  </div>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-doc"/></svg>
+    <h2 class="block-title">이사 갈 때 짐은 어떻게 하나요</h2>
+  </div>
+  <p class="body-text">이사할 때 가구와 가전을 어떻게 처분할지 미리 생각해 두세요. 대표적인 방법은 이래요.</p>
+  <table class="data-table keep">
+    <thead>
+      <tr><th>방법</th><th>어떻게</th></tr>
+    </thead>
+    <tbody>
+      <tr><td data-label="방법"><strong>당근 (중고거래 앱)</strong></td><td data-label="어떻게">동네 사람끼리 사고파는 앱이에요. 영어 화면을 지원하고, 휴대폰 번호 인증으로 가입해요. 사진을 올리고 가격을 정하면 돼요. 가격을 0으로 하면 "무료나눔"이 돼요.</td></tr>
+      <tr><td data-label="방법"><strong>대형폐기물 스티커</strong></td><td data-label="어떻게">소파, 매트리스, 책상 같은 큰 가구는 스티커를 붙여서 내놔요. 스티커는 주민센터, 편의점(CU·GS25·세븐일레븐), 구청 홈페이지에서 살 수 있고, 1,000원부터 크기에 따라 달라요. 관리사무소나 경비실이 있는 곳에서는 대신 처리해 주기도 해요. 그런 곳에서는 먼저 물어보고, 금액을 경비실에 내도 돼요. 물건을 내놓기 전에 경비원이나 관리사무소에 확인하고, 지정된 장소에 내놓으세요. 스티커 없이 내놓으면 과태료가 나올 수 있어요.</td></tr>
+      <tr><td data-label="방법"><strong>가전제품</strong></td><td data-label="어떻게">냉장고, 세탁기, TV는 따로 처리해요. 지자체가 무료로 수거해 주는 곳이 많아서, 구청에 전화로 신청하세요.</td></tr>
+    </tbody>
+  </table>
+  <div class="callout">
+    <div class="callout-head"><svg><use href="#i-info"/></svg>당근을 쓰려면</div>
+    <p>당근은 휴대폰 번호 인증으로 가입해요. 한국 번호가 아직 없다면 <a href="/ko/long-stay/2026-09-20-korea-phone-plan-guide-ko.html">휴대폰 개통 가이드</a>를 먼저 보세요.</p>
+  </div>
+
+</section>
+<section class="block section-gap">
+  <p class="body-text" style="font-size:0.86rem; color:var(--ink-soft);">
+    이 글은 일반적인 정보 제공 목적이며, 실제 계약 조건과 절차는 지역·매물·시점에 따라 다를 수 있어요. 계약 전 공인중개사와 관할 주민센터에 직접 확인하는 걸 추천해요.
+  </p>
+  <div class="keyword-links">
+    <a class="keyword-link" href="/ko/long-stay/2026-09-30-korea-long-stay-housing-guide-ko.html"><svg><use href="#i-link"/></svg>장기체류 숙소 구하기 가이드</a>
+    <a class="keyword-link" href="/ko/long-stay/2026-09-19-korea-arc-foreign-registration-guide-ko.html"><svg><use href="#i-link"/></svg>외국인등록증(ARC) 가이드</a>
+    <a class="keyword-link" href="/ko/long-stay/2026-09-20-korea-phone-plan-guide-ko.html"><svg><use href="#i-link"/></svg>휴대폰 개통 가이드</a>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="footer-inner">
+    <span class="mono">K-Rambles · 장기체류 보드</span>
+  </div>
+</footer>
+
+<button type="button" class="scroll-top" aria-label="Back to top">
+  <svg><use href="#i-arrow-up"/></svg>
+</button>
+
+<script>
+(function () {
+  var KEY = 'krambles-fontsize';
+  var STEPS = ['xs', 'sm', 'md', 'lg', 'xl'];
+  var root = document.documentElement;
+  var ctrl = document.querySelector('.font-size-ctrl');
+  if (!ctrl) { return; }
+  var decBtn = ctrl.querySelector('[data-action="dec"]');
+  var incBtn = ctrl.querySelector('[data-action="inc"]');
+  var index = 2;
+
+  function apply(i) {
+    var size = STEPS[i];
+    if (size === 'md') { root.removeAttribute('data-fs'); }
+    else { root.setAttribute('data-fs', size); }
+    decBtn.disabled = i === 0;
+    incBtn.disabled = i === STEPS.length - 1;
+  }
+
+  var saved = 'md';
+  try { saved = localStorage.getItem(KEY) || 'md'; } catch (e) {}
+  index = STEPS.indexOf(saved);
+  if (index === -1) { index = 2; }
+  apply(index);
+
+  decBtn.addEventListener('click', function () {
+    if (index > 0) {
+      index--;
+      apply(index);
+      try { localStorage.setItem(KEY, STEPS[index]); } catch (e) {}
+    }
+  });
+  incBtn.addEventListener('click', function () {
+    if (index < STEPS.length - 1) {
+      index++;
+      apply(index);
+      try { localStorage.setItem(KEY, STEPS[index]); } catch (e) {}
+    }
+  });
+})();
+
+(function () {
+  var btn = document.querySelector('.scroll-top');
+  if (!btn) { return; }
+  function onScroll() {
+    if (window.scrollY > 600) { btn.classList.add('visible'); }
+    else { btn.classList.remove('visible'); }
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  btn.addEventListener('click', function () {
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
+  });
+})();
+
+(function () {
+  function openModal(id) {
+    var modal = document.getElementById(id);
+    if (!modal) { return; }
+    modal.hidden = false;
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal(modal) {
+    modal.hidden = true;
+    document.body.style.overflow = '';
+  }
+  document.querySelectorAll('[data-modal-open]').forEach(function (btn) {
+    btn.addEventListener('click', function () { openModal(btn.getAttribute('data-modal-open')); });
+  });
+  document.querySelectorAll('.modal-overlay').forEach(function (overlay) {
+    overlay.addEventListener('click', function (e) {
+      if (e.target === overlay) { closeModal(overlay); }
+    });
+    overlay.querySelectorAll('[data-modal-close]').forEach(function (btn) {
+      btn.addEventListener('click', function () { closeModal(overlay); });
+    });
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      document.querySelectorAll('.modal-overlay').forEach(function (overlay) {
+        if (!overlay.hidden) { closeModal(overlay); }
+      });
+    }
+  });
+})();
+</script>
+<script src="/assets/js/krambles-render.js"></script>
+<script data-goatcounter="https://krambles.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
