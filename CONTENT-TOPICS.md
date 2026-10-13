@@ -2,8 +2,7 @@
 
 > 새 콘텐츠 아이디어 제안하기 전에 이 파일부터 확인할 것. 실제 사이트 JSON 기준(2026-09-23).
 
-## Getting Around (이동) (14개)
-- **부산 식당 예약·줄서기, 한국 전화번호 없이 하는 법 (캐치테이블 글로벌 중심)** — 키워드: restaurant reservation waitlist catchtable global naver map tabling busan restaurant foreigner phone number 식당 예약 줄서기 웨이팅 캐치테이블 네이버 예약 테이블링 부산 맛집 외국인 전화번호
+## Getting Around (이동) (13개)
 - **외국인을 위한 한국 배달앱: 배민·셔틀·요기요 직접 해봤어요** — 키워드: delivery app baemin coupang eats yogiyo shuttle foreigner korea busan food delivery 배달앱 배달의민족 배민 쿠팡이츠 셔틀 요기요 외국인 회원가입 해외카드
 - **아플 때 어디로? 편의점·약국·병원 가이드** — 키워드: pharmacy hospital clinic medicine sick emergency korea busan convenience store otc drug referral tertiary hospital 약국 병원 편의점 상비약 진료과 1차 2차 3차 상급종합병원 진료의뢰서 아플때
 - **부산에서 환전하는 법 — ATM, 환전소 뭐가 유리할까** — 키워드: 환전 환전소 atm 해외카드 인출 캐시어드밴스 cash advance 트래블카드 와이즈 하나은행 우리은행 신한은행 국민은행 네이버지도 부산
@@ -33,7 +32,8 @@
 - **부네치아(장림포구): 알록달록한 포구, 솔직한 후기** — 키워드: 부산 장림포구 부네치아 항구 배 노을 사하구 바다뷰 경치
 - **감천문화마을: 사진 명소와 가기 전에 알아둘 것** — 키워드: 부산 감천 문화마을 벽화 사진 사하구 벽화마을 뷰 경치 포토스팟
 
-## Taste (미식) (5개)
+## Taste (미식) (6개)
+- **부산 식당 예약·줄서기, 한국 전화번호 없이 하는 법 (캐치테이블 글로벌 중심)** — 키워드: restaurant reservation waitlist catchtable global naver map tabling busan restaurant foreigner phone number 식당 예약 줄서기 웨이팅 캐치테이블 네이버 예약 테이블링 부산 맛집 외국인 전화번호
 - **태종대 해녀촌: 바닷가에서 먹는 회, 아직도 대야에서 썰어줄까?** — 키워드: 태종대 해녀촌 자갈마당 회 산낙지 멍게 감지해변 조개구이 영도 부산
 - **부산 시민이 뽑은 돼지국밥집 20곳** — 키워드: 돼지국밥 국밥 부산돼지국밥대전 시민추천 로컬맛집 부산 음식
 - **부산 밀면, 냉면과는 다른 이야기** — 키워드: 밀면 냉면 차이 국수 부산 음식 로컬맛집 위로음식

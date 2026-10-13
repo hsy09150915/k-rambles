@@ -83,12 +83,6 @@
     "th": "/th/getting-around/2026-09-26-korea-delivery-apps-guide-th.html",
     "vi": "/vi/getting-around/2026-09-26-korea-delivery-apps-guide-vi.html"
   },
-  "getting-around/2026-10-12-busan-restaurant-reservation-waiting-guide-en": {
-    "en": "/getting-around/2026-10-12-busan-restaurant-reservation-waiting-guide-en.html",
-    "ko": "/ko/getting-around/2026-10-12-busan-restaurant-reservation-waiting-guide-ko.html",
-    "th": "/th/getting-around/2026-10-12-busan-restaurant-reservation-waiting-guide-th.html",
-    "vi": "/vi/getting-around/2026-10-12-busan-restaurant-reservation-waiting-guide-vi.html"
-  },
   "getting-around/index": {
     "en": "/getting-around/index.html",
     "ko": "/ko/getting-around/index.html",
@@ -172,6 +166,12 @@
     "ko": "/ko/taste/2026-09-23-busan-dwaeji-gukbap-20-ko.html",
     "th": "/th/taste/2026-09-23-busan-dwaeji-gukbap-20-th.html",
     "vi": "/vi/taste/2026-09-23-busan-dwaeji-gukbap-20-vi.html"
+  },
+  "taste/2026-10-12-busan-restaurant-reservation-waiting-guide-en": {
+    "en": "/taste/2026-10-12-busan-restaurant-reservation-waiting-guide-en.html",
+    "ko": "/ko/taste/2026-10-12-busan-restaurant-reservation-waiting-guide-ko.html",
+    "th": "/th/taste/2026-10-12-busan-restaurant-reservation-waiting-guide-th.html",
+    "vi": "/vi/taste/2026-10-12-busan-restaurant-reservation-waiting-guide-vi.html"
   },
   "taste/index": {
     "en": "/taste/index.html",
