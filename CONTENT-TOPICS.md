@@ -2,7 +2,8 @@
 
 > 새 콘텐츠 아이디어 제안하기 전에 이 파일부터 확인할 것. 실제 사이트 JSON 기준(2026-09-23).
 
-## Getting Around (이동) (13개)
+## Getting Around (이동) (14개)
+- **부산 식당 예약·줄서기, 한국 전화번호 없이 하는 법 (캐치테이블 글로벌 중심)** — 키워드: restaurant reservation waitlist catchtable global naver map tabling busan restaurant foreigner phone number 식당 예약 줄서기 웨이팅 캐치테이블 네이버 예약 테이블링 부산 맛집 외국인 전화번호
 - **외국인을 위한 한국 배달앱: 배민·셔틀·요기요 직접 해봤어요** — 키워드: delivery app baemin coupang eats yogiyo shuttle foreigner korea busan food delivery 배달앱 배달의민족 배민 쿠팡이츠 셔틀 요기요 외국인 회원가입 해외카드
 - **아플 때 어디로? 편의점·약국·병원 가이드** — 키워드: pharmacy hospital clinic medicine sick emergency korea busan convenience store otc drug referral tertiary hospital 약국 병원 편의점 상비약 진료과 1차 2차 3차 상급종합병원 진료의뢰서 아플때
 - **부산에서 환전하는 법 — ATM, 환전소 뭐가 유리할까** — 키워드: 환전 환전소 atm 해외카드 인출 캐시어드밴스 cash advance 트래블카드 와이즈 하나은행 우리은행 신한은행 국민은행 네이버지도 부산

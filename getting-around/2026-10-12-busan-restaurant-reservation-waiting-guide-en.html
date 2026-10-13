@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Restaurant Reservations &amp; Waitlists in Busan Without a Korean Phone Number (Catchtable Global Guide) | K-Rambles</title>
+<link rel="canonical" href="https://k-rambles.com/getting-around/2026-10-12-busan-restaurant-reservation-waiting-guide-en.html">
+<link rel="alternate" hreflang="ko" href="https://k-rambles.com/ko/getting-around/2026-10-12-busan-restaurant-reservation-waiting-guide-ko.html">
+<link rel="alternate" hreflang="en" href="https://k-rambles.com/getting-around/2026-10-12-busan-restaurant-reservation-waiting-guide-en.html">
+<link rel="alternate" hreflang="vi" href="https://k-rambles.com/vi/getting-around/2026-10-12-busan-restaurant-reservation-waiting-guide-vi.html">
+<link rel="alternate" hreflang="th" href="https://k-rambles.com/th/getting-around/2026-10-12-busan-restaurant-reservation-waiting-guide-th.html">
+<link rel="alternate" hreflang="x-default" href="https://k-rambles.com/getting-around/2026-10-12-busan-restaurant-reservation-waiting-guide-en.html">
+<meta name="description" content="How to reserve a table or join a waitlist at popular Busan restaurants without a Korean phone number. Built around the Catchtable Global app, with notes on Naver Map, Tabling and what to do when a tablet gets stuck.">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Work+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap');
+
+  :root {
+    --paper: #ecdfc0;
+    --paper-raised: #fbf8ee;
+    --ink: #372b10;
+    --ink-soft: #6e5c33;
+    --coral: #d9532a;
+    --coral-ink: #9c3b1c;
+    --navy: #1b2a4a;
+    --navy-ink: #26406e;
+    --marigold: #c8891f;
+    --marigold-ink: #8a5c10;
+    --line: rgba(55, 43, 16, 0.16);
+    --line-strong: rgba(55, 43, 16, 0.3);
+    --card-shadow: 0 18px 34px -20px rgba(40, 30, 10, 0.4);
+    --ok: #1a7a3d;
+    --no: #b3261e;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #1b1509; --paper-raised: #2b2211; --ink: #f7f0dd; --ink-soft: #cbb98f;
+      --coral: #ef7448; --coral-ink: #ffb497; --navy: #9fb4e0; --navy-ink: #cfdcf5; --marigold: #e8b24b; --marigold-ink: #ffcf7d;
+      --line: rgba(247,240,221,0.16); --line-strong: rgba(247,240,221,0.3);
+      --card-shadow: 0 18px 34px -18px rgba(0,0,0,0.65);
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #1b1509; --paper-raised: #2b2211; --ink: #f7f0dd; --ink-soft: #cbb98f;
+    --coral: #ef7448; --coral-ink: #ffb497; --navy: #9fb4e0; --navy-ink: #cfdcf5; --marigold: #e8b24b; --marigold-ink: #ffcf7d;
+    --line: rgba(247,240,221,0.16); --line-strong: rgba(247,240,221,0.3);
+    --card-shadow: 0 18px 34px -18px rgba(0,0,0,0.65);
+  }
+
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: "Work Sans", ui-sans-serif, system-ui, sans-serif; font-size: 1.0625rem; line-height: 1.6; -webkit-font-smoothing: antialiased; word-break: keep-all; overflow-wrap: break-word; }
+
+  html { font-size: 100%; }
+  html[data-fs="xs"] { font-size: 85%; }
+  html[data-fs="sm"] { font-size: 92.5%; }
+  html[data-fs="lg"] { font-size: 115%; }
+  html[data-fs="xl"] { font-size: 135%; }
+  .font-size-ctrl { display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--line); border-radius: 100px; padding: 4px 8px; }
+  .fs-labels { display: inline-flex; align-items: baseline; gap: 3px; }
+  .fs-label { font-family: "Work Sans", sans-serif; font-weight: 600; color: var(--ink-soft); line-height: 1; user-select: none; }
+  .fs-label-sm { font-size: 0.68rem; }
+  .fs-label-lg { font-size: 1.15rem; }
+  .fs-step { appearance: none; border: none; background: none; cursor: pointer; color: var(--ink-soft); font-family: "Work Sans", sans-serif; font-weight: 700; font-size: 1.35rem; line-height: 1; width: 30px; height: 30px; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; flex-shrink: 0; }
+  .fs-step:hover:not(:disabled) { background: var(--line); color: var(--ink); }
+  .fs-step:disabled { opacity: 0.32; cursor: default; }
+  a { color: inherit; }
+  .mono { font-family: "Space Mono", ui-monospace, "SF Mono", monospace; }
+  a.mono { color: var(--navy-ink); text-decoration: underline; text-underline-offset: 2px; }
+  a.mono:hover { color: var(--coral-ink); }
+  .keyword-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 6px; }
+  .keyword-link { display: inline-flex; align-items: center; gap: 6px; text-decoration: none; color: var(--ink); background: var(--paper-raised); border: 1px solid var(--line); border-radius: 999px; padding: 8px 14px; font-size: 0.88rem; }
+  .keyword-link:hover { border-color: var(--coral); color: var(--coral-ink); }
+  .keyword-link svg { width: 14px; height: 14px; stroke: var(--ink-soft); fill: none; stroke-width: 2; }
+
+  header.site { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px 20px; padding: 26px 28px; max-width: 820px; margin: 0 auto; }
+  .header-right { display: flex; align-items: center; flex-wrap: wrap; justify-content: flex-end; gap: 10px 16px; }
+  .logo { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 1.2rem; text-decoration: none; white-space: nowrap; }
+  .logo span { color: var(--coral); }
+  .back-link { font-family: "Space Mono", monospace; font-size: 0.78rem; letter-spacing: 0.03em; text-decoration: none; color: var(--ink-soft); display: inline-flex; flex-direction: column; align-items: flex-start; gap: 2px; line-height: 1; white-space: nowrap; }
+  .back-link svg { width: 12px; height: 12px; }
+  .back-link:hover { color: var(--navy-ink); }
+  .lang-switch { display: flex; align-items: center; gap: 6px; font-family: "Space Mono", monospace; font-size: 0.76rem; letter-spacing: 0.03em; }
+  .lang-switch a, .lang-switch span.current { text-decoration: none; padding: 3px 8px; border-radius: 6px; }
+  .lang-switch a { color: var(--ink-soft); }
+  .lang-switch a:hover { color: var(--ink); }
+  .lang-switch span.current { color: var(--ink); font-weight: 700; border: 1px solid var(--line); }
+
+  .art-hero { padding: 10px 28px 24px; max-width: 820px; margin: 0 auto; }
+  .hero-photo-wrap { max-width: 820px; margin: 0 auto 8px; padding: 0 28px; }
+  .hero-photo { display: block; width: 100%; height: auto; border-radius: 16px; box-shadow: var(--card-shadow); border: 1px solid var(--line); }
+  .cite-note { font-size: 0.92rem; color: var(--ink-soft); margin: 10px 0 0; }
+  .stamp { display: inline-flex; align-items: center; gap: 9px; font-family: "Space Mono", monospace; font-size: 0.76rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--navy-ink); border: 1.5px dashed var(--navy); border-radius: 999px; padding: 6px 14px 6px 11px; transform: rotate(-1.5deg); }
+  .stamp::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--navy); display: inline-block; }
+
+  .hero-top { display: flex; align-items: center; gap: 16px; margin: 22px 0 24px; }
+  .hero-icon { width: 40px; height: 40px; stroke: var(--navy-ink); fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; }
+
+  h1.art-title { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: clamp(1.9rem, 4.6vw, 2.7rem); line-height: 1.28; letter-spacing: -0.01em; margin: 0 0 14px; text-wrap: balance; }
+  p.dek { font-size: 1.08rem; color: var(--ink-soft); max-width: 58ch; margin: 0; }
+
+  .updated-badge { display: inline-flex; align-items: center; gap: 7px; font-size: 0.92rem; color: var(--ink-soft); margin: 16px 0 0; }
+  .updated-icon { width: 17px; height: 17px; stroke: var(--navy-ink); fill: none; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+
+  section.block { max-width: 820px; margin: 0 auto; padding: 6px 28px 30px; }
+  section.block.section-gap { padding-top: 30px; }
+
+  .block-head { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+  .block-icon { width: 22px; height: 22px; stroke: var(--navy-ink); fill: none; stroke-width: 1.7; flex-shrink: 0; }
+  .block-title { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 1.3rem; margin: 0; }
+
+  p.body-text { margin: 0 0 14px; }
+  ul.plain-list { list-style: disc; margin: 0 0 14px; padding-left: 1.2em; }
+  ul.plain-list li + li { margin-top: 12px; }
+  ol.plain-list-num { margin: 0 0 14px; padding-left: 1.2em; }
+  ol.plain-list-num li + li { margin-top: 12px; }
+
+  table.data-table { width: 100%; border-collapse: collapse; background: var(--paper-raised); font-size: 0.92rem; margin: 4px 0 18px; word-break: keep-all; overflow-wrap: break-word; }
+  table.data-table th, table.data-table td { text-align: left; padding: 12px 14px; border-bottom: 1px solid var(--line); word-break: keep-all; overflow-wrap: break-word; vertical-align: top; }
+  table.data-table th:first-child, table.data-table td:first-child { padding-left: 16px; }
+  table.data-table th:last-child, table.data-table td:last-child { padding-right: 16px; }
+  table.data-table thead th { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; color: var(--ink-soft); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.03em; border-bottom: 1px solid var(--line-strong); white-space: nowrap; }
+  table.data-table tbody tr:last-child td { border-bottom: none; }
+  table.data-table td p, table.data-table td ul { margin: 0; }
+  table.data-table td ul { padding-left: 1.1em; }
+  table.data-table td li + li, table.data-table td p + p { margin-top: 6px; }
+
+  /* On narrow screens, tables flip from columns to stacked cards so no column gets squeezed into a one-character-wide strip. */
+  @media (max-width: 640px) {
+    table.data-table { display: block; }
+    table.data-table thead { display: none; }
+    table.data-table tbody { display: block; }
+    table.data-table { background: transparent; }
+    table.data-table tr { display: block; padding: 14px 16px; margin-bottom: 12px; border: 2px solid var(--line-strong); border-radius: 0; background: var(--paper-raised); }
+    table.data-table tr:last-child { margin-bottom: 0; }
+    table.data-table td { display: block; padding: 8px 0; border-bottom: 1px solid var(--line); }
+    table.data-table td:first-child { padding-left: 0; }
+    table.data-table td:last-child { padding-right: 0; border-bottom: none; }
+    table.data-table td::before { content: attr(data-label); display: block; font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; color: var(--ink-soft); font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.03em; margin-bottom: 4px; }
+  }
+
+  .callout { background: var(--paper-raised); border: 1px solid var(--line); border-left: 3px solid var(--marigold); border-radius: 12px; padding: 18px 20px; margin: 16px 0 0; box-shadow: var(--card-shadow); }
+  .callout-head { display: flex; align-items: center; gap: 8px; font-weight: 700; margin-bottom: 8px; }
+  .callout-head svg { width: 18px; height: 18px; stroke: var(--marigold-ink); fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+  .callout p { margin: 0; font-size: 0.95rem; color: var(--ink-soft); }
+  .callout p + p { margin-top: 8px; }
+  .callout strong.warn { color: var(--coral-ink); }
+
+  .step-list { list-style: none; margin: 6px 0 0; padding: 0; display: flex; flex-direction: column; gap: 24px; }
+  .step-item { display: flex; flex-direction: column; gap: 8px; }
+  .step-head { display: flex; align-items: flex-start; gap: 12px; }
+  .step-badge { width: 28px; height: 28px; border-radius: 50%; background: var(--coral); color: #fff5ee; font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 0.9rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .step-body h3 { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 1.0rem; margin: 2px 0 4px; }
+  .step-body p { margin: 0; font-size: 0.93rem; color: color-mix(in srgb, var(--ink) 60%, var(--ink-soft)); }
+
+  .official-links { display: flex; flex-wrap: wrap; gap: 10px; margin: 14px 0 0; }
+  .official-link { display: inline-flex; align-items: center; gap: 6px; text-decoration: none; color: var(--ink); background: var(--paper-raised); border: 1px solid var(--line); border-radius: 999px; padding: 8px 14px; font-size: 0.86rem; }
+  .official-link:hover { border-color: var(--navy); color: var(--navy-ink); }
+  .official-link svg { width: 14px; height: 14px; stroke: var(--ink-soft); fill: none; stroke-width: 2; }
+
+  .scroll-top { position: fixed; right: 20px; bottom: 20px; width: 46px; height: 46px; border-radius: 50%; background: var(--coral); color: #fff5ee; display: flex; align-items: center; justify-content: center; box-shadow: var(--card-shadow); border: none; cursor: pointer; opacity: 0; pointer-events: none; transition: opacity 0.2s ease, transform 0.15s ease; z-index: 40; }
+  .scroll-top.visible { opacity: 1; pointer-events: auto; }
+  .scroll-top:hover { transform: translateY(-3px); background: var(--coral-ink); }
+  .scroll-top svg { width: 20px; height: 20px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  @media (prefers-reduced-motion: reduce) { .scroll-top { transition: none; } }
+
+  footer.site { border-top: 1px solid var(--line); padding: 24px 28px 40px; }
+  .footer-inner { max-width: 820px; margin: 0 auto; }
+  .footer-inner .mono { font-size: 0.76rem; color: var(--ink-soft); }
+
+  section.block > * + *, .shop-card > * + * { margin-top: 18px; }
+  section.block > .callout + *, section.block > table.data-table + *, section.block > ol.step-list + *, section.block > .official-links + * { margin-top: 44px; }
+  section.block > table.data-table + p.body-text[style*="font-size:0.9rem"] { margin-top: 18px; }
+
+  @media (max-width: 400px) {
+    header.site { padding: 18px 16px; flex-wrap: wrap; row-gap: 10px; }
+    .logo { font-size: 1.02rem; }
+    .header-right { gap: 10px; flex-wrap: wrap; }
+    .art-hero, section.block { padding-left: 16px; padding-right: 16px; }
+  }
+  @media (max-width: 340px) {
+    .logo { font-size: 0.9rem; }
+    .font-size-ctrl { padding: 3px 6px; gap: 5px; }
+  }
+
+  button.official-link { font-family: "Work Sans", sans-serif; }
+
+  .modal-overlay { position: fixed; inset: 0; background: rgba(20, 15, 5, 0.52); display: flex; align-items: flex-end; justify-content: center; z-index: 60; padding: 0; }
+  .modal-overlay[hidden] { display: none; }
+  .modal-card { background: var(--paper-raised); color: var(--ink); width: 100%; max-width: 680px; max-height: 82vh; border-radius: 18px 18px 0 0; box-shadow: var(--card-shadow); padding: 22px 22px calc(22px + env(safe-area-inset-bottom, 0px)); overflow-y: auto; border: 1px solid var(--line); border-bottom: none; }
+  @media (min-width: 720px) {
+    .modal-overlay { align-items: center; }
+    .modal-card { border-radius: 18px; border-bottom: 1px solid var(--line); max-height: 78vh; }
+  }
+  .modal-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 8px; }
+  .modal-head h3 { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 1.1rem; margin: 0; }
+  .modal-close { appearance: none; border: none; background: var(--line); color: var(--ink); width: 30px; height: 30px; border-radius: 50%; font-size: 1.3rem; line-height: 1; cursor: pointer; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
+  .modal-close:hover { background: var(--coral); color: #fff5ee; }
+  .modal-source { font-size: 0.84rem; color: var(--ink-soft); margin: 0 0 16px; }
+  .modal-group + .modal-group { margin-top: 18px; }
+  .modal-group h4 { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 0.95rem; margin: 0 0 6px; display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+  .modal-count { font-family: "Space Mono", monospace; font-weight: 400; font-size: 0.78rem; color: var(--ink-soft); }
+  .modal-countries { font-size: 0.9rem; color: var(--ink-soft); margin: 0; line-height: 1.7; }
+  table.data-table.keep { display: table; width: 100%; border-collapse: separate; border-spacing: 0; border: 1px solid var(--line-strong); border-radius: 12px; overflow: hidden; background: var(--paper-raised); }
+  table.data-table.keep thead { display: table-header-group; }
+  table.data-table.keep tbody { display: table-row-group; }
+  table.data-table.keep tr { display: table-row; padding: 0; margin: 0; border: 0; background: transparent; }
+  table.data-table.keep th { text-align: left; padding: 9px 14px; font-size: 0.8rem; color: var(--ink-soft); background: rgba(127,127,127,0.10); border: 0; border-bottom: 1px solid var(--line-strong); white-space: nowrap; text-transform: none; letter-spacing: 0; }
+  table.data-table.keep td { display: table-cell; padding: 11px 14px; border: 0; border-bottom: 1px solid var(--line); font-size: 0.95rem; line-height: 1.5; vertical-align: top; text-align: left; }
+  table.data-table.keep td::before { content: none; display: none; }
+  table.data-table.keep td:first-child { white-space: nowrap; background: rgba(127,127,127,0.06); border-right: 1px solid var(--line); }
+  table.data-table.keep tr:last-child td { border-bottom: 0; }
+  @media (max-width: 560px) { table.data-table.keep td, table.data-table.keep th { padding: 10px 11px; font-size: 0.92rem; } }
+  table.data-table.keep td:first-child, table.data-table.keep th { white-space: normal; }
+  table.data-table.keep td { overflow-wrap: break-word; }
+  table.data-table.keep td:first-child { white-space: normal; min-width: 6.2em; }
+  .share-icon-btn { font: inherit; cursor: pointer; width: 38px; height: 38px; border-radius: 50%; border: 1px solid var(--line); background: transparent; color: var(--ink); display: inline-flex; align-items: center; justify-content: center; padding: 0; }
+  .share-icon-btn:hover { border-color: var(--coral); color: var(--coral-ink); }
+  .share-icon-btn svg { width: 18px; height: 18px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  .share-toast { position: fixed; left: 50%; bottom: 84px; transform: translateX(-50%); background: var(--ink); color: #fff; font-size: .88rem; padding: 10px 18px; border-radius: 999px; opacity: 0; pointer-events: none; transition: opacity .2s; z-index: 50; }
+  .share-toast.show { opacity: 1; }
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-doc" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.5 4 5.5 4 9s-1.5 6.5-4 9c-2.5-2.5-4-5.5-4-9s1.5-6.5 4-9Z"/></symbol>
+  <symbol id="i-pass" viewBox="0 0 24 24"><path d="M4 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v1.3a1.5 1.5 0 0 0 0 2.9V13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-1.3a1.5 1.5 0 0 0 0-2.9Z" transform="translate(0 2)"/><path d="M9 6.5v11" stroke-dasharray="2 2" transform="translate(0 2)"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M4 12.5 9.5 18 20 6.5"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5.5M12 8v.01"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 9.8h17M8 2.5v5M16 2.5v5"/></symbol>
+  <symbol id="i-link" viewBox="0 0 24 24"><path d="M9.5 14.5 14.5 9.5"/><path d="M8.3 11.7l-1.6 1.6a3 3 0 0 0 4.2 4.2l1.6-1.6"/><path d="M15.7 12.3l1.6-1.6a3 3 0 0 0-4.2-4.2l-1.6 1.6"/></symbol>
+  <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></symbol>
+</svg>
+
+<header class="site">
+  <a class="logo" href="/index.html">K-<span>Rambles</span></a>
+  <div class="header-right">
+    <a class="back-link" href="/getting-around/index.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+      Back to board
+    </a>
+    <div class="font-size-ctrl" role="group" aria-label="Text size"><button type="button" class="fs-step" data-action="dec" aria-label="Decrease text size">−</button><span class="fs-labels" aria-hidden="true"><span class="fs-label fs-label-sm">A</span><span class="fs-label fs-label-lg">A</span></span><button type="button" class="fs-step" data-action="inc" aria-label="Increase text size">+</button></div>
+    <button type="button" class="share-icon-btn" data-share="link" data-goatcounter-click="share:restaurant-waiting-link" aria-label="Share this article"><svg viewBox="0 0 24 24"><path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7"/><path d="M12 15V4"/><path d="m8 8 4-4 4 4"/></svg></button>
+    <div class="lang-switch" aria-label="Language" data-key="getting-around/2026-10-12-busan-restaurant-reservation-waiting-guide-en"></div>
+  </div>
+</header>
+
+<div class="art-hero">
+  <div class="hero-top">
+    <span class="stamp">Getting Around · Board 14</span>
+    <svg class="hero-icon"><use href="#i-pass"/></svg>
+  </div>
+  <h1 class="art-title">Restaurant Reservations & Waitlists in Busan Without a Korean Phone Number (Catchtable Global Guide)</h1>
+  <p class="dek">If you've been stopped by a tablet outside a popular restaurant asking for a Korean phone number, there are ways to get in line without one. This guide is built around the most practical app, and covers what each app can and can't do and what to try when you get stuck.</p>
+  <p class="updated-badge"><svg class="updated-icon"><use href="#i-calendar"/></svg>As of October 2026 — how each restaurant handles waiting changes often. Check the restaurant's page in the app before you go.</p>
+</div>
+
+<!--
+  출처(개정사항 체크 시 참고) — 2026-10-12 확인.
+  캐치테이블 글로벌(구글·애플·이메일 가입, 한국 번호 불필요, 해외 카드 예약금, 예약/원격 줄서기/현장 줄서기 버튼, 20개 언어): VisitKorea https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=205615 , https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=1590988
+  캐치테이블 국내판=한국 통신사 본인인증, 글로벌판은 별도 앱: https://keyskorea.com/journal/catchtable-global-guide , https://lacha.co.kr/korea-guide/ko/catch-table-waiting-app-korea-foreigner (2026-08-18)
+  네이버 여권 인증 2026-06-04 도입: NAVER Corp. 보도자료 https://www.navercorp.com/en/media/pressReleasesDetail?seq=10034413 (2026-06-09), 조선비즈 https://biz.chosun.com/it-science/ict/2026/06/09/ZJE3ZWYEHBFBRN4PKRUHHC2QWU/
+  한국 번호 요구 실태: 중앙일보 https://www.koreajoongangdaily.com/business/declined-cards-reservation-hassles-digital-barriers-still-undermine-the-korea-travel-experience/12519453 (2026-05-11), r/koreatravel https://www.reddit.com/r/koreatravel/comments/1g1y6yz/korean_phone_number_to_get_served (2024-10)
+  네이버 아이디→실명회원 전환(여권 인증)→예약 순서: 전자신문 https://m.etnews.com/20260604000276 (2026-06-04), 네이버 도움말 https://help.naver.com/service/11713/contents/24752?lang=en
+  캐치테이블 한국판/글로벌판 앱 구분(앱 이름 CATCHTABLE: Book Restaurants, 20개 언어, 번호 불필요): Google Play kr.co.catchtable.global.catchtable_global , App Store id1639046576 (2026-10-12 확인) / 글로벌판에 없는 가게 후기: App Store 후기 2022-11·2023
+  테이블링은 외국인용 버전 없음·앱 화면 한국어만: 직접 설치 확인(2026-10-13)
+  이재모피자 부산역점 원격 줄서기(34번째, 30분 미만, 20번째쯤 도착 인증): https://ilovefood.tistory.com/461 (2026-06-11)
+  캐치테이블 공식 알림 설명: 스토어 소개(예약 확인=이메일·앱 알림) https://play.google.com/store/apps/details?id=kr.co.catchtable.global.catchtable_global , 공식 스토어 소개(예약·줄서기 현황=My Dining 탭) / 공식 블로그(줄서기 다국어·이메일 알림 언급) https://blog.catchtable.net/stories_page/best-restaurants-with-waiting-in-multiple-languages
+  네이버 '줄서기' 버튼=테이블링·나우웨이팅 연동, 클릭 시 파트너사 사이트로 이동: 스마트플레이스 공지 https://smartplace.naver.com/notices/1036 (2026-06-10), 네이버 고객센터 https://help.naver.com/ (실시간 대기정보 연동 안내)
+  1330 여행 안내(8개 언어): VisitKorea 위 링크
+-->
+
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-info"/></svg>
+    <h2 class="block-title">1. The Short Answer — the Catchtable Global App Is All You Need</h2>
+  </div>
+  <p class="body-text">The most practical app for foreign visitors is the <strong>Catchtable Global app</strong> (캐치테이블 글로벌). You sign up with a Google or Apple account, search for restaurants in English, and then reserve a table or join the line. The Naver Map app (네이버 지도) also lets you book, but few restaurants take reservations there, so treat it as a <strong>backup</strong>.</p>
+  <table class="data-table keep">
+      <thead>
+        <tr><th>App</th><th>Korean no.?</th><th>Language</th><th>Pick</th></tr>
+      </thead>
+      <tbody>
+        <tr><td data-label="App"><strong>Catchtable Global app</strong></td><td data-label="Korean no.?">No</td><td data-label="Language">20 languages</td><td data-label="Pick">Best</td></tr>
+        <tr><td data-label="App"><strong>Naver Map app</strong></td><td data-label="Korean no.?">No</td><td data-label="Language">English</td><td data-label="Pick">Backup</td></tr>
+        <tr><td data-label="App"><strong>Tabling app (테이블링)</strong></td><td data-label="Korean no.?">Yes</td><td data-label="Language">Korean</td><td data-label="Pick">Skip</td></tr>
+        <tr><td data-label="App"><strong>Door tablet</strong></td><td data-label="Korean no.?">Varies</td><td data-label="Language">Korean</td><td data-label="Pick">Ask staff</td></tr>
+      </tbody>
+    </table>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-info"/></svg>
+    <h2 class="block-title">2. Why Do Restaurants Ask for a Phone Number?</h2>
+  </div>
+  <p class="body-text">Popular restaurants don't have staff handing out numbers. They use a <strong>tablet at the door or an app to take your place in line</strong>, then call you by text message or app notification when it's your turn. That's why they need a number to reach you.</p>
+  <p class="body-text">The Korea Tourism Organization also says that most of these reservation and waiting systems either require a Korean phone number or don't accept foreign cards. A May 2026 JoongAng Daily report pointed out the same thing about kiosk queues at restaurants and cafés that ask you to register a Korean number. There are also traveler posts about being turned away at several restaurants because they had no number.</p>
+  <div class="callout">
+    <div class="callout-head"><svg><use href="#i-check"/></svg>Worth knowing</div>
+    <p>If there are hardly any people outside a restaurant but the screen says dozens of parties are waiting, the line is <strong>inside the app</strong>. Everyone is waiting nearby and walks in when they get a notification.</p>
+  </div>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-info"/></svg>
+    <h2 class="block-title">3. The Catchtable Global App — Install This First</h2>
+  </div>
+  <p class="body-text">The Catchtable app comes in two versions: the <strong>Korean version</strong> that Koreans use, and the <strong>Global version</strong> for foreigners. The names and icons look alike, so it's easy to mix them up.</p>
+  <table class="data-table keep">
+      <thead>
+        <tr><th>Item</th><th>Korean version</th><th>Global version</th></tr>
+      </thead>
+      <tbody>
+        <tr><td data-label="Item"><strong>App name</strong></td><td data-label="Korean version">Catchtable (캐치테이블)</td><td data-label="Global version">CATCHTABLE: Book Restaurants</td></tr>
+        <tr><td data-label="Item"><strong>Sign-up</strong></td><td data-label="Korean version">Korean phone verification</td><td data-label="Global version">Google, Apple or email</td></tr>
+        <tr><td data-label="Item"><strong>Payment</strong></td><td data-label="Korean version">Korean cards</td><td data-label="Global version">Foreign cards accepted</td></tr>
+        <tr><td data-label="Item"><strong>Language</strong></td><td data-label="Korean version">Korean</td><td data-label="Global version">20 languages, including English</td></tr>
+        <tr><td data-label="Item"><strong>Restaurants</strong></td><td data-label="Korean version">All</td><td data-label="Global version">Some may be missing</td></tr>
+      </tbody>
+    </table>
+  <p class="body-text"><strong>Even if the Korean version is already on your phone</strong>, it has no setting to switch to English. Download the Global version <strong>separately</strong> from the app store. The accounts of the two apps are not linked.</p>
+  <p class="body-text">The Global version lets you sign up with a Google or Apple account or an email address. You don't need a Korean number to sign up. You can receive reservation confirmations by email and in-app notifications. You can see your reservations and waitlists in one place in the app's <strong>My Dining</strong> tab, and when the app first asks, <strong>turn notifications on</strong>. A restaurant that appears in the Korean version may not show up in the Global version. If that happens, check the Naver Map app or the tablet at the restaurant.</p>
+  <p class="body-text">The app has many restaurants, and each one has <strong>reviews and ratings</strong>, which makes choosing in English easy. Many Koreans use the app too, so there are plenty of local reviews. Restaurants come in two types. At a <strong>reservation</strong> restaurant, you pay a deposit and lock in a table. At a restaurant that doesn't take reservations and only has <strong>a waitlist (line)</strong>, you take a place in line through the app.</p>
+  <p class="body-text"><strong>The method differs from restaurant to restaurant.</strong> The buttons on the restaurant's page show you which one it uses. There are three main ones.</p>
+  <table class="data-table keep">
+      <thead>
+        <tr><th>Method</th><th>How it works</th><th>Note</th></tr>
+      </thead>
+      <tbody>
+        <tr><td data-label="Method"><strong><strong>Remote waitlist</strong><br><small>Join Remote Waitlist</small></strong></td><td data-label="How it works">You join the line from the app while seeing how many parties are waiting right now. You get a notification when your turn comes</td><td data-label="Note">Usually no deposit. You need to wait near the restaurant</td></tr>
+        <tr><td data-label="Method"><strong><strong>Booking + deposit</strong><br><small>Reserve</small></strong></td><td data-label="How it works">You choose a date and time and pay a deposit in advance to confirm your table</td><td data-label="Note">Pay with a foreign card. A <strong>phone number</strong> is required before you pay</td></tr>
+        <tr><td data-label="Method"><strong><strong>Phone booking</strong><br><small>Reserve by phone</small></strong></td><td data-label="How it works">The app only shows the restaurant's phone number. You call the restaurant to book</td><td data-label="Note">The call has to be in Korean. You can ask your accommodation staff to help</td></tr>
+      </tbody>
+    </table>
+  <p class="body-text">With the <strong>booking + deposit</strong> method, a <strong>phone number</strong> field comes up while you enter your booking details. It's required, so you can't leave it empty. Pick a country code and enter your number. The screen says, "If you have a Korean phone number, please use it. The restaurant may need to contact you." So if you've bought a <strong>Korean SIM, use that number</strong>; if not, use your number from home. You have to finish the booking within the <strong>10 minutes</strong> shown on the screen, and it's only complete once the payment goes through.</p>
+  <p class="body-text"><strong>A Busan example.</strong> In a June 2026 review of the Busan Station branch of Ijaemo Pizza, the writer joined the remote waitlist as party number 34 around 4 p.m. on a weekend and got in within 30 minutes. They say that when you reach about the 20th spot, the app asks you to confirm your arrival, so wait nearby rather than going far.</p>
+  <div class="callout">
+    <div class="callout-head"><svg><use href="#i-check"/></svg>Try this</div>
+    <p>When you open a restaurant's page, you can see the booking method right away. Some restaurants let you <strong>choose a date and time</strong> to reserve, and if there's a wait you can <strong>join the line</strong>. If there's no wait, the number of waiting parties shows <strong>0</strong>. In that case, just go.</p>
+  </div>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-info"/></svg>
+    <h2 class="block-title">4. The Naver Map App — Possible, but Not Very Practical</h2>
+  </div>
+  <p class="body-text">The Naver Map app (네이버 지도) is the <strong>map app</strong> Koreans use to find directions and look up places. Restaurant pages have a booking function built in, so if a restaurant takes reservations there, you can book through the app.</p>
+  <p class="body-text">There are a few reasons it's hard for foreigners to use, though.</p>
+  <ul class="plain-list">
+    <li><strong>Few restaurants take bookings.</strong> Most places on the map only show information, and only some have a booking button.</li>
+    <li><strong>The app is complicated.</strong> Map, search, booking and ordering are all mixed into one app, so there are many steps before you reach the booking screen.</li>
+    <li><strong>You must log in to Naver.</strong> To book, you also have to verify your identity.</li>
+  </ul>
+  <p class="body-text">Identity verification used to need a Korean mobile number, but from <strong>June 4, 2026</strong> Naver introduced <strong>passport verification</strong> for foreigners. Passport verification is Naver's way of confirming <strong>who you are</strong>. The steps are:</p>
+  <ul class="plain-list">
+    <li><strong>1. Create a Naver ID.</strong> You can sign up without a Korean number.</li>
+    <li><strong>2. Verify with your passport.</strong> You go through a passport check and face verification.</li>
+    <li><strong>3. Find the restaurant in the Naver Map app.</strong> You can only book through Naver at restaurants whose page has a <strong>Reserve</strong> button. The <strong>줄서기 (join the line)</strong> button on a page takes you to another company's queue screen, such as Tabling.</li>
+  </ul>
+  <p class="body-text">Naver says it will extend the supported services and languages step by step. The app supports English, but the booking and verification screens may show some Korean.</p>
+  <div class="callout">
+    <div class="callout-head"><svg><use href="#i-check"/></svg>Try this</div>
+    <p>The Naver Map app is useful for directions and checking where a restaurant is. For reservations and waitlists, <strong>search in the Catchtable Global app first</strong>, and only check for a Reserve button in the Naver Map app if the restaurant isn't there.</p>
+  </div>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-info"/></svg>
+    <h2 class="block-title">5. The Tabling App (테이블링) — Nothing in It for Foreigners</h2>
+  </div>
+  <p class="body-text">The Tabling app is a queuing app that Koreans use. There's no version for foreigners, and <strong>even if you set your phone to English before installing, every screen is in Korean</strong>. It requires a Korean number and carrier verification to sign up, so there's no reason for a foreigner to install it.</p>
+  <p class="body-text">At restaurants that use Tabling, you join the line on <strong>the tablet at the door</strong>. You don't need to install the app. Use the methods in section 6 below.</p>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-info"/></svg>
+    <h2 class="block-title">6. When the Tablet at the Restaurant Won't Let You In</h2>
+  </div>
+  <ul class="plain-list">
+    <li><strong>1. Try entering a foreign number.</strong> Some restaurants accept one and some don't. It depends on the device and the restaurant.</li>
+    <li><strong>2. Show the staff one of the sentences below.</strong></li>
+    <li><strong>3. If that doesn't work,</strong> try a time when the line is short, such as right after opening or a weekday lunch, or find another restaurant.</li>
+  </ul>
+  <table class="data-table keep">
+      <thead>
+        <tr><th>Situation</th><th>Sentence to show the staff (Korean)</th></tr>
+      </thead>
+      <tbody>
+        <tr><td data-label="Situation"><strong>Asking them to register you in the line</strong></td><td data-label="Sentence to show the staff (Korean)">한국 전화번호가 없는데, 대기 등록을 도와주실 수 있나요?<br><small>Hanguk jeonhwabeonhoga eopneunde, daegi deungnogeul dowajusil su innayo?</small><br><small>"I don't have a Korean phone number. Could you help me register in the line?"</small></td></tr>
+        <tr><td data-label="Situation"><strong>Asking them to book by phone</strong></td><td data-label="Sentence to show the staff (Korean)">이 식당에 전화해서 예약해 주실 수 있나요?<br><small>I sikdange jeonhwahaeseo yeyakae jusil su innayo?</small><br><small>"Could you call this restaurant and make a reservation for me?"</small></td></tr>
+        <tr><td data-label="Situation"><strong>Asking how many parties are ahead</strong></td><td data-label="Sentence to show the staff (Korean)">지금 몇 팀 기다리고 있어요?<br><small>Jigeum myeot tim gidarigo isseoyo?</small><br><small>"How many parties are waiting now?"</small></td></tr>
+        <tr><td data-label="Situation"><strong>Asking to wait without the app</strong></td><td data-label="Sentence to show the staff (Korean)">앱 없이 가게 앞에서 기다려도 될까요?<br><small>Aep eopsi gage apeseo gidaryeodo doelkkayo?</small><br><small>"Can I wait in front of the restaurant without the app?"</small></td></tr>
+      </tbody>
+    </table>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-info"/></svg>
+    <h2 class="block-title">7. Which One to Use When?</h2>
+  </div>
+  <table class="data-table keep">
+      <thead>
+        <tr><th>Situation</th><th>What to use</th></tr>
+      </thead>
+      <tbody>
+        <tr><td data-label="Situation"><strong>Omakase or fine dining</strong></td><td data-label="What to use">Reserve in the Catchtable Global app. You pay the deposit with a foreign card</td></tr>
+        <tr><td data-label="Situation"><strong>A famous restaurant with a long line</strong></td><td data-label="What to use">Join the remote waitlist and look around nearby</td></tr>
+        <tr><td data-label="Situation"><strong>The app only shows "Reserve by phone"</strong></td><td data-label="What to use">Ask your accommodation staff to call, or show them the sentence in section 6</td></tr>
+        <tr><td data-label="Situation"><strong>A restaurant not in the Catchtable app</strong></td><td data-label="What to use">In the Naver Map app, check whether its page has a Reserve button</td></tr>
+        <tr><td data-label="Situation"><strong>A restaurant that only uses the Tabling app</strong></td><td data-label="What to use">Use the tablet at the door, and ask the staff if it doesn't work</td></tr>
+      </tbody>
+    </table>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-info"/></svg>
+    <h2 class="block-title">8. Frequently Asked Questions</h2>
+  </div>
+  <p class="body-text"><strong>If I don't have a Korean number, can I not get in line?</strong><br>You can with the Catchtable Global app. The Naver Map app also lets you book once you verify with your passport, but few restaurants take bookings there. Naver's join-the-line button takes you to another company's screen, such as Tabling. At restaurants that only use the Tabling app, you need the tablet or help from the staff.</p>
+  <p class="body-text"><strong>Do I get the deposit back?</strong><br>Many restaurants deduct it from your bill when you visit. Cancellation rules differ by restaurant, so check on the payment screen.</p>
+  <p class="body-text"><strong>What if there's no line at the restaurant?</strong><br>The restaurant's page in the Catchtable app shows the number of waiting parties as 0. In that case, just go.</p>
+  <p class="body-text"><strong>What if nothing works?</strong><br>Ask your accommodation staff to call for you. The Korea Tourism Organization's travel helpline <strong>1330</strong> (+82-2-1330) gives advice in 8 languages, including English, Japanese and Chinese.</p>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-info"/></svg>
+    <h2 class="block-title">To Sum Up</h2>
+  </div>
+  <table class="data-table keep">
+      <thead>
+        <tr><th>Topic</th><th>One thing to remember</th></tr>
+      </thead>
+      <tbody>
+        <tr><td data-label="Topic"><strong>First app to install</strong></td><td data-label="One thing to remember">The Catchtable Global app (it is a different app from the Korean version)</td></tr>
+        <tr><td data-label="Topic"><strong>Naver Map app</strong></td><td data-label="One thing to remember">You can use it after passport verification, but few restaurants take bookings</td></tr>
+        <tr><td data-label="Topic"><strong>Tabling app</strong></td><td data-label="One thing to remember">Korean only, so there is no need to install it. Use the tablet at the door</td></tr>
+        <tr><td data-label="Topic"><strong>When stuck</strong></td><td data-label="One thing to remember">Try a foreign number, then show the staff a sentence</td></tr>
+      </tbody>
+    </table>
+  <p class="body-text" style="margin-top:18px">If you're curious about maps and payment, also read our <a href="/getting-around/2026-09-07-naver-map-app-guide.html">Naver Map guide</a> and our <a href="/getting-around/2026-09-24-korea-card-payment-guide-en.html">foreign card payment guide</a>.</p>
+</section>
+
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-link"/></svg>
+    <h2 class="block-title">Related searches</h2>
+  </div>
+  <div class="keyword-links">
+    <a class="keyword-link" href="/index.html?q=restaurant%20reservation"><svg><use href="#i-link"/></svg>#Restaurant reservation</a>
+    <a class="keyword-link" href="/index.html?q=waitlist"><svg><use href="#i-link"/></svg>#Waitlist</a>
+    <a class="keyword-link" href="/index.html?q=catchtable"><svg><use href="#i-link"/></svg>#Catchtable</a>
+    <a class="keyword-link" href="/index.html?q=naver%20map%20reservation"><svg><use href="#i-link"/></svg>#Naver Map reservation</a>
+    <a class="keyword-link" href="/index.html?q=tabling"><svg><use href="#i-link"/></svg>#Tabling</a>
+    <a class="keyword-link" href="/index.html?q=busan%20restaurant"><svg><use href="#i-link"/></svg>#Busan restaurant</a>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="footer-inner">
+    <span class="mono">K-Rambles Busan · Getting Around board</span>
+  </div>
+</footer>
+
+<button type="button" class="scroll-top" aria-label="Back to top">
+  <svg><use href="#i-arrow-up"/></svg>
+</button>
+
+<script>
+(function () {
+  var KEY = 'krambles-fontsize';
+  var STEPS = ['xs', 'sm', 'md', 'lg', 'xl'];
+  var root = document.documentElement;
+  var ctrl = document.querySelector('.font-size-ctrl');
+  if (!ctrl) { return; }
+  var decBtn = ctrl.querySelector('[data-action="dec"]');
+  var incBtn = ctrl.querySelector('[data-action="inc"]');
+  var index = 2;
+
+  function apply(i) {
+    var size = STEPS[i];
+    if (size === 'md') { root.removeAttribute('data-fs'); }
+    else { root.setAttribute('data-fs', size); }
+    decBtn.disabled = i === 0;
+    incBtn.disabled = i === STEPS.length - 1;
+  }
+
+  var saved = 'md';
+  try { saved = localStorage.getItem(KEY) || 'md'; } catch (e) {}
+  index = STEPS.indexOf(saved);
+  if (index === -1) { index = 2; }
+  apply(index);
+
+  decBtn.addEventListener('click', function () {
+    if (index > 0) {
+      index--;
+      apply(index);
+      try { localStorage.setItem(KEY, STEPS[index]); } catch (e) {}
+    }
+  });
+  incBtn.addEventListener('click', function () {
+    if (index < STEPS.length - 1) {
+      index++;
+      apply(index);
+      try { localStorage.setItem(KEY, STEPS[index]); } catch (e) {}
+    }
+  });
+})();
+
+(function () {
+  var btn = document.querySelector('.scroll-top');
+  if (!btn) { return; }
+  function onScroll() {
+    if (window.scrollY > 600) { btn.classList.add('visible'); }
+    else { btn.classList.remove('visible'); }
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  btn.addEventListener('click', function () {
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
+  });
+})();
+
+(function () {
+  function openModal(id) {
+    var modal = document.getElementById(id);
+    if (!modal) { return; }
+    modal.hidden = false;
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal(modal) {
+    modal.hidden = true;
+    document.body.style.overflow = '';
+  }
+  document.querySelectorAll('[data-modal-open]').forEach(function (btn) {
+    btn.addEventListener('click', function () { openModal(btn.getAttribute('data-modal-open')); });
+  });
+  document.querySelectorAll('.modal-overlay').forEach(function (overlay) {
+    overlay.addEventListener('click', function (e) {
+      if (e.target === overlay) { closeModal(overlay); }
+    });
+    overlay.querySelectorAll('[data-modal-close]').forEach(function (btn) {
+      btn.addEventListener('click', function () { closeModal(overlay); });
+    });
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      document.querySelectorAll('.modal-overlay').forEach(function (overlay) {
+        if (!overlay.hidden) { closeModal(overlay); }
+      });
+    }
+  });
+})();
+</script>
+<script src="/assets/js/krambles-render.js"></script>
+<div class="share-toast" role="status" aria-live="polite"></div>
+<script>
+(function () {
+  var URL_ = document.querySelector('link[rel="canonical"]').href;
+  var TITLE = document.title.replace(/ \| K-Rambles$/, '');
+  var isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent) || (navigator.maxTouchPoints > 1 && /Macintosh/.test(navigator.userAgent));
+  var toast = document.querySelector('.share-toast'), tt;
+  function say(msg) { if (!toast) { return; } toast.textContent = msg; toast.classList.add('show'); clearTimeout(tt); tt = setTimeout(function () { toast.classList.remove('show'); }, 2200); }
+  function copy(text, ok) {
+    function fallback() { var t = document.createElement('textarea'); t.value = text; t.style.position = 'fixed'; t.style.opacity = '0'; document.body.appendChild(t); t.select(); try { document.execCommand('copy'); say(ok); } catch (e) { say('Could not copy the link'); } document.body.removeChild(t); }
+    if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(function () { say(ok); }, fallback); } else { fallback(); }
+  }
+  document.addEventListener('click', function (e) {
+    var b = e.target.closest('[data-share="link"]'); if (!b) { return; }
+    if (isMobile && navigator.share) { navigator.share({ title: TITLE, url: URL_ }).catch(function () {}); } else { copy(URL_, 'Link copied'); }
+  });
+})();
+</script>
+<script data-goatcounter="https://krambles.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>

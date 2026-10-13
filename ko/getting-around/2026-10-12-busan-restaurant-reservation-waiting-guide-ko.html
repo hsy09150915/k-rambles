@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="ko">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>부산 식당 예약·줄서기, 한국 전화번호 없이 하는 법 (캐치테이블 글로벌 중심) | K-Rambles</title>
+<link rel="canonical" href="https://k-rambles.com/ko/getting-around/2026-10-12-busan-restaurant-reservation-waiting-guide-ko.html">
+<link rel="alternate" hreflang="ko" href="https://k-rambles.com/ko/getting-around/2026-10-12-busan-restaurant-reservation-waiting-guide-ko.html">
+<link rel="alternate" hreflang="en" href="https://k-rambles.com/getting-around/2026-10-12-busan-restaurant-reservation-waiting-guide-en.html">
+<link rel="alternate" hreflang="vi" href="https://k-rambles.com/vi/getting-around/2026-10-12-busan-restaurant-reservation-waiting-guide-vi.html">
+<link rel="alternate" hreflang="th" href="https://k-rambles.com/th/getting-around/2026-10-12-busan-restaurant-reservation-waiting-guide-th.html">
+<link rel="alternate" hreflang="x-default" href="https://k-rambles.com/getting-around/2026-10-12-busan-restaurant-reservation-waiting-guide-en.html">
+<meta name="description" content="한국 전화번호가 없어도 부산 인기 식당에 예약하고 줄 서는 법. 캐치테이블 글로벌 사용법을 중심으로, 네이버 지도·테이블링 앱과 막혔을 때 쓰는 방법을 정리했어요.">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Work+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap');
+
+  :root {
+    --paper: #ecdfc0;
+    --paper-raised: #fbf8ee;
+    --ink: #372b10;
+    --ink-soft: #6e5c33;
+    --coral: #d9532a;
+    --coral-ink: #9c3b1c;
+    --navy: #1b2a4a;
+    --navy-ink: #26406e;
+    --marigold: #c8891f;
+    --marigold-ink: #8a5c10;
+    --line: rgba(55, 43, 16, 0.16);
+    --line-strong: rgba(55, 43, 16, 0.3);
+    --card-shadow: 0 18px 34px -20px rgba(40, 30, 10, 0.4);
+    --ok: #1a7a3d;
+    --no: #b3261e;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #1b1509; --paper-raised: #2b2211; --ink: #f7f0dd; --ink-soft: #cbb98f;
+      --coral: #ef7448; --coral-ink: #ffb497; --navy: #9fb4e0; --navy-ink: #cfdcf5; --marigold: #e8b24b; --marigold-ink: #ffcf7d;
+      --line: rgba(247,240,221,0.16); --line-strong: rgba(247,240,221,0.3);
+      --card-shadow: 0 18px 34px -18px rgba(0,0,0,0.65);
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #1b1509; --paper-raised: #2b2211; --ink: #f7f0dd; --ink-soft: #cbb98f;
+    --coral: #ef7448; --coral-ink: #ffb497; --navy: #9fb4e0; --navy-ink: #cfdcf5; --marigold: #e8b24b; --marigold-ink: #ffcf7d;
+    --line: rgba(247,240,221,0.16); --line-strong: rgba(247,240,221,0.3);
+    --card-shadow: 0 18px 34px -18px rgba(0,0,0,0.65);
+  }
+
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: "Work Sans", ui-sans-serif, system-ui, sans-serif; font-size: 1.0625rem; line-height: 1.6; -webkit-font-smoothing: antialiased; word-break: keep-all; overflow-wrap: break-word; }
+
+  html { font-size: 100%; }
+  html[data-fs="xs"] { font-size: 85%; }
+  html[data-fs="sm"] { font-size: 92.5%; }
+  html[data-fs="lg"] { font-size: 115%; }
+  html[data-fs="xl"] { font-size: 135%; }
+  .font-size-ctrl { display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--line); border-radius: 100px; padding: 4px 8px; }
+  .fs-labels { display: inline-flex; align-items: baseline; gap: 3px; }
+  .fs-label { font-family: "Work Sans", sans-serif; font-weight: 600; color: var(--ink-soft); line-height: 1; user-select: none; }
+  .fs-label-sm { font-size: 0.68rem; }
+  .fs-label-lg { font-size: 1.15rem; }
+  .fs-step { appearance: none; border: none; background: none; cursor: pointer; color: var(--ink-soft); font-family: "Work Sans", sans-serif; font-weight: 700; font-size: 1.35rem; line-height: 1; width: 30px; height: 30px; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; flex-shrink: 0; }
+  .fs-step:hover:not(:disabled) { background: var(--line); color: var(--ink); }
+  .fs-step:disabled { opacity: 0.32; cursor: default; }
+  a { color: inherit; }
+  .mono { font-family: "Space Mono", ui-monospace, "SF Mono", monospace; }
+  a.mono { color: var(--navy-ink); text-decoration: underline; text-underline-offset: 2px; }
+  a.mono:hover { color: var(--coral-ink); }
+  .keyword-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 6px; }
+  .keyword-link { display: inline-flex; align-items: center; gap: 6px; text-decoration: none; color: var(--ink); background: var(--paper-raised); border: 1px solid var(--line); border-radius: 999px; padding: 8px 14px; font-size: 0.88rem; }
+  .keyword-link:hover { border-color: var(--coral); color: var(--coral-ink); }
+  .keyword-link svg { width: 14px; height: 14px; stroke: var(--ink-soft); fill: none; stroke-width: 2; }
+
+  header.site { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px 20px; padding: 26px 28px; max-width: 820px; margin: 0 auto; }
+  .header-right { display: flex; align-items: center; flex-wrap: wrap; justify-content: flex-end; gap: 10px 16px; }
+  .logo { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 1.2rem; text-decoration: none; white-space: nowrap; }
+  .logo span { color: var(--coral); }
+  .back-link { font-family: "Space Mono", monospace; font-size: 0.78rem; letter-spacing: 0.03em; text-decoration: none; color: var(--ink-soft); display: inline-flex; flex-direction: column; align-items: flex-start; gap: 2px; line-height: 1; white-space: nowrap; }
+  .back-link svg { width: 12px; height: 12px; }
+  .back-link:hover { color: var(--navy-ink); }
+  .lang-switch { display: flex; align-items: center; gap: 6px; font-family: "Space Mono", monospace; font-size: 0.76rem; letter-spacing: 0.03em; }
+  .lang-switch a, .lang-switch span.current { text-decoration: none; padding: 3px 8px; border-radius: 6px; }
+  .lang-switch a { color: var(--ink-soft); }
+  .lang-switch a:hover { color: var(--ink); }
+  .lang-switch span.current { color: var(--ink); font-weight: 700; border: 1px solid var(--line); }
+
+  .art-hero { padding: 10px 28px 24px; max-width: 820px; margin: 0 auto; }
+  .hero-photo-wrap { max-width: 820px; margin: 0 auto 8px; padding: 0 28px; }
+  .hero-photo { display: block; width: 100%; height: auto; border-radius: 16px; box-shadow: var(--card-shadow); border: 1px solid var(--line); }
+  .cite-note { font-size: 0.92rem; color: var(--ink-soft); margin: 10px 0 0; }
+  .stamp { display: inline-flex; align-items: center; gap: 9px; font-family: "Space Mono", monospace; font-size: 0.76rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--navy-ink); border: 1.5px dashed var(--navy); border-radius: 999px; padding: 6px 14px 6px 11px; transform: rotate(-1.5deg); }
+  .stamp::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--navy); display: inline-block; }
+
+  .hero-top { display: flex; align-items: center; gap: 16px; margin: 22px 0 24px; }
+  .hero-icon { width: 40px; height: 40px; stroke: var(--navy-ink); fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; }
+
+  h1.art-title { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: clamp(1.9rem, 4.6vw, 2.7rem); line-height: 1.28; letter-spacing: -0.01em; margin: 0 0 14px; text-wrap: balance; }
+  p.dek { font-size: 1.08rem; color: var(--ink-soft); max-width: 58ch; margin: 0; }
+
+  .updated-badge { display: inline-flex; align-items: center; gap: 7px; font-size: 0.92rem; color: var(--ink-soft); margin: 16px 0 0; }
+  .updated-icon { width: 17px; height: 17px; stroke: var(--navy-ink); fill: none; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+
+  section.block { max-width: 820px; margin: 0 auto; padding: 6px 28px 30px; }
+  section.block.section-gap { padding-top: 30px; }
+
+  .block-head { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+  .block-icon { width: 22px; height: 22px; stroke: var(--navy-ink); fill: none; stroke-width: 1.7; flex-shrink: 0; }
+  .block-title { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 1.3rem; margin: 0; }
+
+  p.body-text { margin: 0 0 14px; }
+  ul.plain-list { list-style: disc; margin: 0 0 14px; padding-left: 1.2em; }
+  ul.plain-list li + li { margin-top: 12px; }
+  ol.plain-list-num { margin: 0 0 14px; padding-left: 1.2em; }
+  ol.plain-list-num li + li { margin-top: 12px; }
+
+  table.data-table { width: 100%; border-collapse: collapse; background: var(--paper-raised); font-size: 0.92rem; margin: 4px 0 18px; word-break: keep-all; overflow-wrap: break-word; }
+  table.data-table th, table.data-table td { text-align: left; padding: 12px 14px; border-bottom: 1px solid var(--line); word-break: keep-all; overflow-wrap: break-word; vertical-align: top; }
+  table.data-table th:first-child, table.data-table td:first-child { padding-left: 16px; }
+  table.data-table th:last-child, table.data-table td:last-child { padding-right: 16px; }
+  table.data-table thead th { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; color: var(--ink-soft); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.03em; border-bottom: 1px solid var(--line-strong); white-space: nowrap; }
+  table.data-table tbody tr:last-child td { border-bottom: none; }
+  table.data-table td p, table.data-table td ul { margin: 0; }
+  table.data-table td ul { padding-left: 1.1em; }
+  table.data-table td li + li, table.data-table td p + p { margin-top: 6px; }
+
+  /* On narrow screens, tables flip from columns to stacked cards so no column gets squeezed into a one-character-wide strip. */
+  @media (max-width: 640px) {
+    table.data-table { display: block; }
+    table.data-table thead { display: none; }
+    table.data-table tbody { display: block; }
+    table.data-table { background: transparent; }
+    table.data-table tr { display: block; padding: 14px 16px; margin-bottom: 12px; border: 2px solid var(--line-strong); border-radius: 0; background: var(--paper-raised); }
+    table.data-table tr:last-child { margin-bottom: 0; }
+    table.data-table td { display: block; padding: 8px 0; border-bottom: 1px solid var(--line); }
+    table.data-table td:first-child { padding-left: 0; }
+    table.data-table td:last-child { padding-right: 0; border-bottom: none; }
+    table.data-table td::before { content: attr(data-label); display: block; font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; color: var(--ink-soft); font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.03em; margin-bottom: 4px; }
+  }
+
+  .callout { background: var(--paper-raised); border: 1px solid var(--line); border-left: 3px solid var(--marigold); border-radius: 12px; padding: 18px 20px; margin: 16px 0 0; box-shadow: var(--card-shadow); }
+  .callout-head { display: flex; align-items: center; gap: 8px; font-weight: 700; margin-bottom: 8px; }
+  .callout-head svg { width: 18px; height: 18px; stroke: var(--marigold-ink); fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+  .callout p { margin: 0; font-size: 0.95rem; color: var(--ink-soft); }
+  .callout p + p { margin-top: 8px; }
+  .callout strong.warn { color: var(--coral-ink); }
+
+  .step-list { list-style: none; margin: 6px 0 0; padding: 0; display: flex; flex-direction: column; gap: 24px; }
+  .step-item { display: flex; flex-direction: column; gap: 8px; }
+  .step-head { display: flex; align-items: flex-start; gap: 12px; }
+  .step-badge { width: 28px; height: 28px; border-radius: 50%; background: var(--coral); color: #fff5ee; font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 0.9rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .step-body h3 { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 1.0rem; margin: 2px 0 4px; }
+  .step-body p { margin: 0; font-size: 0.93rem; color: color-mix(in srgb, var(--ink) 60%, var(--ink-soft)); }
+
+  .official-links { display: flex; flex-wrap: wrap; gap: 10px; margin: 14px 0 0; }
+  .official-link { display: inline-flex; align-items: center; gap: 6px; text-decoration: none; color: var(--ink); background: var(--paper-raised); border: 1px solid var(--line); border-radius: 999px; padding: 8px 14px; font-size: 0.86rem; }
+  .official-link:hover { border-color: var(--navy); color: var(--navy-ink); }
+  .official-link svg { width: 14px; height: 14px; stroke: var(--ink-soft); fill: none; stroke-width: 2; }
+
+  .scroll-top { position: fixed; right: 20px; bottom: 20px; width: 46px; height: 46px; border-radius: 50%; background: var(--coral); color: #fff5ee; display: flex; align-items: center; justify-content: center; box-shadow: var(--card-shadow); border: none; cursor: pointer; opacity: 0; pointer-events: none; transition: opacity 0.2s ease, transform 0.15s ease; z-index: 40; }
+  .scroll-top.visible { opacity: 1; pointer-events: auto; }
+  .scroll-top:hover { transform: translateY(-3px); background: var(--coral-ink); }
+  .scroll-top svg { width: 20px; height: 20px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  @media (prefers-reduced-motion: reduce) { .scroll-top { transition: none; } }
+
+  footer.site { border-top: 1px solid var(--line); padding: 24px 28px 40px; }
+  .footer-inner { max-width: 820px; margin: 0 auto; }
+  .footer-inner .mono { font-size: 0.76rem; color: var(--ink-soft); }
+
+  section.block > * + *, .shop-card > * + * { margin-top: 18px; }
+  section.block > .callout + *, section.block > table.data-table + *, section.block > ol.step-list + *, section.block > .official-links + * { margin-top: 44px; }
+  section.block > table.data-table + p.body-text[style*="font-size:0.9rem"] { margin-top: 18px; }
+
+  @media (max-width: 400px) {
+    header.site { padding: 18px 16px; flex-wrap: wrap; row-gap: 10px; }
+    .logo { font-size: 1.02rem; }
+    .header-right { gap: 10px; flex-wrap: wrap; }
+    .art-hero, section.block { padding-left: 16px; padding-right: 16px; }
+  }
+  @media (max-width: 340px) {
+    .logo { font-size: 0.9rem; }
+    .font-size-ctrl { padding: 3px 6px; gap: 5px; }
+  }
+
+  button.official-link { font-family: "Work Sans", sans-serif; }
+
+  .modal-overlay { position: fixed; inset: 0; background: rgba(20, 15, 5, 0.52); display: flex; align-items: flex-end; justify-content: center; z-index: 60; padding: 0; }
+  .modal-overlay[hidden] { display: none; }
+  .modal-card { background: var(--paper-raised); color: var(--ink); width: 100%; max-width: 680px; max-height: 82vh; border-radius: 18px 18px 0 0; box-shadow: var(--card-shadow); padding: 22px 22px calc(22px + env(safe-area-inset-bottom, 0px)); overflow-y: auto; border: 1px solid var(--line); border-bottom: none; }
+  @media (min-width: 720px) {
+    .modal-overlay { align-items: center; }
+    .modal-card { border-radius: 18px; border-bottom: 1px solid var(--line); max-height: 78vh; }
+  }
+  .modal-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 8px; }
+  .modal-head h3 { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 1.1rem; margin: 0; }
+  .modal-close { appearance: none; border: none; background: var(--line); color: var(--ink); width: 30px; height: 30px; border-radius: 50%; font-size: 1.3rem; line-height: 1; cursor: pointer; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
+  .modal-close:hover { background: var(--coral); color: #fff5ee; }
+  .modal-source { font-size: 0.84rem; color: var(--ink-soft); margin: 0 0 16px; }
+  .modal-group + .modal-group { margin-top: 18px; }
+  .modal-group h4 { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 0.95rem; margin: 0 0 6px; display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+  .modal-count { font-family: "Space Mono", monospace; font-weight: 400; font-size: 0.78rem; color: var(--ink-soft); }
+  .modal-countries { font-size: 0.9rem; color: var(--ink-soft); margin: 0; line-height: 1.7; }
+  table.data-table.keep { display: table; width: 100%; border-collapse: separate; border-spacing: 0; border: 1px solid var(--line-strong); border-radius: 12px; overflow: hidden; background: var(--paper-raised); }
+  table.data-table.keep thead { display: table-header-group; }
+  table.data-table.keep tbody { display: table-row-group; }
+  table.data-table.keep tr { display: table-row; padding: 0; margin: 0; border: 0; background: transparent; }
+  table.data-table.keep th { text-align: left; padding: 9px 14px; font-size: 0.8rem; color: var(--ink-soft); background: rgba(127,127,127,0.10); border: 0; border-bottom: 1px solid var(--line-strong); white-space: nowrap; text-transform: none; letter-spacing: 0; }
+  table.data-table.keep td { display: table-cell; padding: 11px 14px; border: 0; border-bottom: 1px solid var(--line); font-size: 0.95rem; line-height: 1.5; vertical-align: top; text-align: left; }
+  table.data-table.keep td::before { content: none; display: none; }
+  table.data-table.keep td:first-child { white-space: nowrap; background: rgba(127,127,127,0.06); border-right: 1px solid var(--line); }
+  table.data-table.keep tr:last-child td { border-bottom: 0; }
+  @media (max-width: 560px) { table.data-table.keep td, table.data-table.keep th { padding: 10px 11px; font-size: 0.92rem; } }
+  table.data-table.keep td:first-child { white-space: normal; min-width: 6.2em; }
+  .share-icon-btn { font: inherit; cursor: pointer; width: 38px; height: 38px; border-radius: 50%; border: 1px solid var(--line); background: transparent; color: var(--ink); display: inline-flex; align-items: center; justify-content: center; padding: 0; }
+  .share-icon-btn:hover { border-color: var(--coral); color: var(--coral-ink); }
+  .share-icon-btn svg { width: 18px; height: 18px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  .share-toast { position: fixed; left: 50%; bottom: 84px; transform: translateX(-50%); background: var(--ink); color: #fff; font-size: .88rem; padding: 10px 18px; border-radius: 999px; opacity: 0; pointer-events: none; transition: opacity .2s; z-index: 50; }
+  .share-toast.show { opacity: 1; }
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-doc" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.5 4 5.5 4 9s-1.5 6.5-4 9c-2.5-2.5-4-5.5-4-9s1.5-6.5 4-9Z"/></symbol>
+  <symbol id="i-pass" viewBox="0 0 24 24"><path d="M4 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v1.3a1.5 1.5 0 0 0 0 2.9V13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-1.3a1.5 1.5 0 0 0 0-2.9Z" transform="translate(0 2)"/><path d="M9 6.5v11" stroke-dasharray="2 2" transform="translate(0 2)"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M4 12.5 9.5 18 20 6.5"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5.5M12 8v.01"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 9.8h17M8 2.5v5M16 2.5v5"/></symbol>
+  <symbol id="i-link" viewBox="0 0 24 24"><path d="M9.5 14.5 14.5 9.5"/><path d="M8.3 11.7l-1.6 1.6a3 3 0 0 0 4.2 4.2l1.6-1.6"/><path d="M15.7 12.3l1.6-1.6a3 3 0 0 0-4.2-4.2l-1.6 1.6"/></symbol>
+  <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></symbol>
+</svg>
+
+<header class="site">
+  <a class="logo" href="/ko/index.html">K-<span>Rambles</span></a>
+  <div class="header-right">
+    <a class="back-link" href="/ko/getting-around/index.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+      보드로 돌아가기
+    </a>
+    <div class="font-size-ctrl" role="group" aria-label="Text size"><button type="button" class="fs-step" data-action="dec" aria-label="Decrease text size">−</button><span class="fs-labels" aria-hidden="true"><span class="fs-label fs-label-sm">가</span><span class="fs-label fs-label-lg">가</span></span><button type="button" class="fs-step" data-action="inc" aria-label="Increase text size">+</button></div>
+    <button type="button" class="share-icon-btn" data-share="link" data-goatcounter-click="share:restaurant-waiting-link" aria-label="글 공유하기"><svg viewBox="0 0 24 24"><path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7"/><path d="M12 15V4"/><path d="m8 8 4-4 4 4"/></svg></button>
+    <div class="lang-switch" aria-label="Language" data-key="getting-around/2026-10-12-busan-restaurant-reservation-waiting-guide-en"></div>
+  </div>
+</header>
+
+<div class="art-hero">
+  <div class="hero-top">
+    <span class="stamp">이동, 팁 · 보드 14</span>
+    <svg class="hero-icon"><use href="#i-pass"/></svg>
+  </div>
+  <h1 class="art-title">부산 식당 예약·줄서기, 한국 전화번호 없이 하는 법 (캐치테이블 글로벌 중심)</h1>
+  <p class="dek">인기 식당 앞 태블릿에서 한국 전화번호를 입력하라는 화면에 막혔다면, 번호 없이 줄 서는 방법이 있어요. 가장 실용적인 앱 하나를 중심으로, 앱별로 되는 것과 안 되는 것, 막혔을 때 쓰는 방법을 정리했어요.</p>
+  <p class="updated-badge"><svg class="updated-icon"><use href="#i-calendar"/></svg>2026년 10월 기준 — 가게별 대기 방식은 자주 바뀌어요. 가기 전에 앱의 가게 페이지에서 현재 방식을 확인해 주세요.</p>
+</div>
+
+<!--
+  출처(개정사항 체크 시 참고) — 2026-10-12 확인.
+  캐치테이블 글로벌(구글·애플·이메일 가입, 한국 번호 불필요, 해외 카드 예약금, 예약/원격 줄서기/현장 줄서기 버튼, 20개 언어): VisitKorea https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=205615 , https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=1590988
+  캐치테이블 국내판=한국 통신사 본인인증, 글로벌판은 별도 앱: https://keyskorea.com/journal/catchtable-global-guide , https://lacha.co.kr/korea-guide/ko/catch-table-waiting-app-korea-foreigner (2026-08-18)
+  네이버 여권 인증 2026-06-04 도입: NAVER Corp. 보도자료 https://www.navercorp.com/en/media/pressReleasesDetail?seq=10034413 (2026-06-09), 조선비즈 https://biz.chosun.com/it-science/ict/2026/06/09/ZJE3ZWYEHBFBRN4PKRUHHC2QWU/
+  한국 번호 요구 실태: 중앙일보 https://www.koreajoongangdaily.com/business/declined-cards-reservation-hassles-digital-barriers-still-undermine-the-korea-travel-experience/12519453 (2026-05-11), r/koreatravel https://www.reddit.com/r/koreatravel/comments/1g1y6yz/korean_phone_number_to_get_served (2024-10)
+  네이버 아이디→실명회원 전환(여권 인증)→예약 순서: 전자신문 https://m.etnews.com/20260604000276 (2026-06-04), 네이버 도움말 https://help.naver.com/service/11713/contents/24752?lang=en
+  캐치테이블 한국판/글로벌판 앱 구분(앱 이름 CATCHTABLE: Book Restaurants, 20개 언어, 번호 불필요): Google Play kr.co.catchtable.global.catchtable_global , App Store id1639046576 (2026-10-12 확인) / 글로벌판에 없는 가게 후기: App Store 후기 2022-11·2023
+  테이블링은 외국인용 버전 없음·앱 화면 한국어만: 직접 설치 확인(2026-10-13)
+  이재모피자 부산역점 원격 줄서기(34번째, 30분 미만, 20번째쯤 도착 인증): https://ilovefood.tistory.com/461 (2026-06-11)
+  캐치테이블 공식 알림 설명: 스토어 소개(예약 확인=이메일·앱 알림) https://play.google.com/store/apps/details?id=kr.co.catchtable.global.catchtable_global , 공식 스토어 소개(예약·줄서기 현황=My Dining 탭) / 공식 블로그(줄서기 다국어·이메일 알림 언급) https://blog.catchtable.net/stories_page/best-restaurants-with-waiting-in-multiple-languages
+  네이버 '줄서기' 버튼=테이블링·나우웨이팅 연동, 클릭 시 파트너사 사이트로 이동: 스마트플레이스 공지 https://smartplace.naver.com/notices/1036 (2026-06-10), 네이버 고객센터 https://help.naver.com/ (실시간 대기정보 연동 안내)
+  1330 여행 안내(8개 언어): VisitKorea 위 링크
+-->
+
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-info"/></svg>
+    <h2 class="block-title">1. 먼저 결론부터 — 캐치테이블 글로벌 앱 하나면 돼요</h2>
+  </div>
+  <p class="body-text">외국인에게 가장 실용적인 앱은 <strong>캐치테이블 글로벌 앱</strong>이에요. 구글·애플 계정으로 가입하고, 영어로 가게를 찾고, 예약하거나 줄을 서요. 네이버 지도 앱도 길은 열려 있지만 예약되는 가게가 적어서 <strong>보조 수단</strong>으로 보세요.</p>
+  <table class="data-table keep">
+      <thead>
+        <tr><th>앱</th><th>번호 없이 가입</th><th>언어</th><th>추천</th></tr>
+      </thead>
+      <tbody>
+        <tr><td data-label="앱"><strong>캐치테이블 글로벌 앱</strong></td><td data-label="번호 없이 가입">가능</td><td data-label="언어">영어 등 20개</td><td data-label="추천">가장 추천</td></tr>
+        <tr><td data-label="앱"><strong>네이버 지도 앱</strong></td><td data-label="번호 없이 가입">가능 (여권 인증)</td><td data-label="언어">지도는 영어</td><td data-label="추천">보조</td></tr>
+        <tr><td data-label="앱"><strong>테이블링 앱</strong></td><td data-label="번호 없이 가입">의미 없어요</td><td data-label="언어">한국어만</td><td data-label="추천">가게 태블릿</td></tr>
+        <tr><td data-label="앱"><strong>가게 앞 태블릿</strong></td><td data-label="번호 없이 가입">가게마다 달라요</td><td data-label="언어">한국어</td><td data-label="추천">직원 도움</td></tr>
+      </tbody>
+    </table>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-info"/></svg>
+    <h2 class="block-title">2. 왜 전화번호를 달라고 할까요?</h2>
+  </div>
+  <p class="body-text">인기 식당은 직원이 줄을 세우지 않고, <strong>가게 앞 태블릿이나 앱으로 순번</strong>을 받아요. 순서가 되면 문자나 앱 알림으로 불러줘요. 그래서 연락받을 번호가 필요해요.</p>
+  <p class="body-text">한국관광공사도 이런 예약·대기 시스템 대부분이 한국 전화번호를 요구하거나 외국 카드를 받지 않는다고 안내해요. 2026년 5월 중앙일보 보도에서도 식당과 카페의 키오스크 대기가 한국 번호 등록을 요구한다고 짚었어요. 번호가 없다는 이유로 식당 여러 곳에서 거절당했다는 여행자 글도 있어요.</p>
+  <div class="callout">
+    <div class="callout-head"><svg><use href="#i-check"/></svg>눈여겨볼 점</div>
+    <p>가게 앞에 사람이 별로 없는데 대기 팀 수가 수십 팀으로 표시돼 있다면, 줄이 <strong>앱 안에</strong> 있는 거예요. 다들 근처에서 기다리다가 알림을 받고 들어와요.</p>
+  </div>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-info"/></svg>
+    <h2 class="block-title">3. 캐치테이블 글로벌 앱 — 가장 먼저 깔 앱</h2>
+  </div>
+  <p class="body-text">캐치테이블 앱은 두 가지 버전이 있어요. 한국 사람이 쓰는 <strong>한국판</strong>과 외국인용 <strong>글로벌판</strong>이에요. 이름과 아이콘이 비슷해서 헷갈리기 쉬워요.</p>
+  <table class="data-table keep">
+      <thead>
+        <tr><th>구분</th><th>한국판</th><th>글로벌판</th></tr>
+      </thead>
+      <tbody>
+        <tr><td data-label="구분"><strong>앱 이름</strong></td><td data-label="한국판">캐치테이블 (한국판)</td><td data-label="글로벌판">CATCHTABLE: Book Restaurants</td></tr>
+        <tr><td data-label="구분"><strong>가입</strong></td><td data-label="한국판">한국 번호 인증</td><td data-label="글로벌판">구글·애플·이메일</td></tr>
+        <tr><td data-label="구분"><strong>결제</strong></td><td data-label="한국판">한국 카드</td><td data-label="글로벌판">해외 카드도 가능</td></tr>
+        <tr><td data-label="구분"><strong>언어</strong></td><td data-label="한국판">한국어</td><td data-label="글로벌판">영어 등 20개</td></tr>
+        <tr><td data-label="구분"><strong>가게 수</strong></td><td data-label="한국판">전체</td><td data-label="글로벌판">일부는 없을 수 있어요</td></tr>
+      </tbody>
+    </table>
+  <p class="body-text"><strong>한국판이 이미 깔려 있어도</strong> 앱 안에는 영어로 바꾸는 설정이 없어요. 스토어에서 글로벌판을 <strong>따로</strong> 받아야 하고, 두 앱의 계정은 서로 이어지지 않아요.</p>
+  <p class="body-text">글로벌판은 구글·애플 계정이나 이메일로 가입해요. 가입할 때는 한국 번호가 필요 없어요. 예약 확인은 이메일과 앱 알림으로 받을 수 있어요. 예약과 줄서기 현황은 앱의 <strong>My Dining</strong> 탭에서 한 번에 볼 수 있고, 앱을 처음 열 때 뜨는 <strong>알림은 켜 두세요</strong>. 한국판에는 있는 가게가 글로벌판에서 안 보일 수도 있어요. 그럴 땐 네이버 지도 앱이나 가게 앞 태블릿을 확인하세요.</p>
+  <p class="body-text">앱 안에는 등록된 식당이 많고, 가게마다 <strong>리뷰와 평점</strong>이 있어서 영어로 고르기 편해요. 한국 사람도 많이 쓰는 앱이라 현지 후기가 쌓여 있어요. 가게는 두 종류예요. <strong>예약</strong>이 되는 가게는 예약금을 내고 자리를 잡아요. 예약은 안 받고 <strong>입장 대기(줄서기)</strong>만 받는 가게는 앱으로 순번을 걸 수 있어요.</p>
+  <p class="body-text">예약 방법은 <strong>가게마다 달라요</strong>. 가게 페이지에 보이는 <strong>버튼</strong>을 보면 그 가게의 방식을 알 수 있어요. 크게 세 가지예요.</p>
+  <table class="data-table keep">
+      <thead>
+        <tr><th>방식</th><th>어떻게 하나요</th><th>알아둘 점</th></tr>
+      </thead>
+      <tbody>
+        <tr><td data-label="방식"><strong><strong>원격 줄서기</strong><br><small>Join Remote Waitlist</small></strong></td><td data-label="어떻게 하나요">지금 대기 팀 수를 보면서 앱으로 줄을 서요. 순서가 오면 알림이 와요</td><td data-label="알아둘 점">예약금이 보통 없어요. 가게 근처에서 기다려야 해요</td></tr>
+        <tr><td data-label="방식"><strong><strong>예약 + 예약금</strong><br><small>Reserve</small></strong></td><td data-label="어떻게 하나요">날짜와 시간을 정하고 예약금을 미리 결제해서 자리를 확정해요</td><td data-label="알아둘 점">해외 카드로 내요. 결제 전에 <strong>전화번호</strong>를 넣어요 (필수)</td></tr>
+        <tr><td data-label="방식"><strong><strong>전화 예약</strong><br><small>Reserve by phone</small></strong></td><td data-label="어떻게 하나요">앱에는 가게 전화번호만 나와요. 가게에 전화해서 예약해요</td><td data-label="알아둘 점">한국어로 통화해야 해요. 숙소 직원에게 부탁할 수 있어요</td></tr>
+      </tbody>
+    </table>
+  <p class="body-text"><strong>예약 + 예약금</strong> 방식은 예약 정보를 입력하다가 <strong>전화번호</strong> 칸이 나와요. 필수 칸이라 비워 둘 수 없어요. 국가 번호를 고르고 번호를 넣으면 돼요. 화면에는 "한국 번호가 있으면 그 번호를 써 주세요. 식당이 연락할 수 있어요"라고 나와요. 그래서 <strong>한국 유심을 샀다면 그 번호</strong>를, 없으면 내 나라 번호를 넣으세요. 예약은 화면에 뜨는 <strong>10분 안에</strong> 마쳐야 하고, 결제까지 끝나야 완료돼요.</p>
+  <p class="body-text"><strong>부산 사례</strong>예요. 이재모피자 부산역점은 2026년 6월 후기에서 주말 오후 4시쯤 34번째로 원격 줄서기를 걸었고, 30분이 안 돼 들어갔다고 해요. 순번이 20번째쯤 되면 앱이 도착 인증을 요청하니 멀리 가지 말고 근처에서 기다리라고 해요.</p>
+  <div class="callout">
+    <div class="callout-head"><svg><use href="#i-check"/></svg>이렇게 해보세요</div>
+    <p>가게를 찾아 페이지를 열면 예약 방식이 바로 보여요. <strong>날짜와 시간을 고르는 예약</strong>이 되는 가게도 있고, 대기가 있으면 <strong>대기를 걸 수</strong> 있어요. 대기가 없는 가게는 웨이팅이 <strong>0</strong>으로 떠요. 그럴 땐 바로 가면 돼요.</p>
+  </div>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-info"/></svg>
+    <h2 class="block-title">4. 네이버 지도 앱 — 길은 열렸지만 실용성은 낮아요</h2>
+  </div>
+  <p class="body-text">네이버 지도 앱은 한국 사람들이 길을 찾고 가게를 검색할 때 쓰는 <strong>지도 앱</strong>이에요. 가게 정보 안에 예약 기능이 들어 있어서, 예약을 받는 가게라면 여기서도 예약할 수 있어요.</p>
+  <p class="body-text">다만 외국인에게는 쓰기 어려운 이유가 몇 가지 있어요.</p>
+  <ul class="plain-list">
+    <li><strong>예약되는 가게가 적어요.</strong> 지도에 있는 가게 대부분은 정보만 보여 주고, 예약 버튼이 있는 가게는 일부예요.</li>
+    <li><strong>앱 구조가 복잡해요.</strong> 지도, 검색, 예약, 주문이 한 앱에 섞여 있어서 예약 화면을 찾기까지 단계가 많아요.</li>
+    <li><strong>네이버 로그인이 꼭 필요해요.</strong> 예약하려면 본인 확인까지 해야 해요.</li>
+  </ul>
+  <p class="body-text">본인 확인은 원래 한국 휴대폰 번호가 필요했지만, 네이버는 <strong>2026년 6월 4일</strong>부터 외국인용 <strong>여권 인증</strong>을 도입했어요. 여권 인증은 지도가 아니라 <strong>본인 확인 방법</strong>이에요. 순서는 이래요.</p>
+  <ul class="plain-list">
+    <li><strong>1. 네이버 아이디를 만들어요.</strong> 한국 번호 없이 가입할 수 있어요.</li>
+    <li><strong>2. 여권 인증을 해요.</strong> 여권 확인과 얼굴 인증을 거쳐요.</li>
+    <li><strong>3. 네이버 지도 앱에서 가게를 찾아요.</strong> 가게 페이지에 <strong>예약</strong> 버튼이 있는 가게만 네이버로 예약할 수 있어요. 페이지의 <strong>줄서기</strong> 버튼은 테이블링 같은 다른 업체의 줄서기 화면으로 이동해요.</li>
+  </ul>
+  <p class="body-text">네이버는 적용 서비스와 언어 지원을 앞으로 단계적으로 넓힌다고 밝혔어요. 이 앱은 영어를 지원하지만 예약과 인증 화면은 한국어가 섞여 보일 수 있어요.</p>
+  <div class="callout">
+    <div class="callout-head"><svg><use href="#i-check"/></svg>이렇게 해보세요</div>
+    <p>길 찾기와 가게 위치 확인에는 네이버 지도 앱이 유용해요. 예약과 줄서기는 <strong>캐치테이블 글로벌 앱에서 먼저 검색</strong>하고, 거기에 없는 가게일 때만 네이버 지도 앱에서 예약 버튼을 확인하세요.</p>
+  </div>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-info"/></svg>
+    <h2 class="block-title">5. 테이블링 앱 — 외국인에게는 쓸 곳이 없어요</h2>
+  </div>
+  <p class="body-text">테이블링 앱은 한국 사람이 쓰는 줄서기 앱이에요. 외국인용 버전이 없고, <strong>폰 언어를 영어로 바꾸고 설치해도 화면은 모두 한국어</strong>예요. 한국 번호와 통신사 인증으로 가입하는 구조라서 외국인이 설치해 둘 이유가 없어요.</p>
+  <p class="body-text">테이블링 앱을 쓰는 가게를 만나면 <strong>가게 앞 태블릿</strong>으로 줄을 서요. 앱은 깔지 않아도 되고, 아래 6번의 방법을 쓰세요.</p>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-info"/></svg>
+    <h2 class="block-title">6. 가게 앞 태블릿에서 막혔을 때</h2>
+  </div>
+  <ul class="plain-list">
+    <li><strong>1. 외국 번호를 입력해 보세요.</strong> 되는 가게도 있고 안 되는 가게도 있어요. 기기와 가게마다 달라요.</li>
+    <li><strong>2. 직원에게 아래 문장을 보여 주세요.</strong></li>
+    <li><strong>3. 그래도 안 되면</strong> 오픈 직후나 평일 점심처럼 대기가 짧은 시간대를 노리거나 다른 가게를 찾아보세요.</li>
+  </ul>
+  <table class="data-table keep">
+      <thead>
+        <tr><th>상황</th><th>직원에게 보여 줄 문장</th></tr>
+      </thead>
+      <tbody>
+        <tr><td data-label="상황"><strong>대기 등록을 부탁할 때</strong></td><td data-label="직원에게 보여 줄 문장">한국 전화번호가 없는데, 대기 등록을 도와주실 수 있나요?<br><small>Hanguk jeonhwabeonhoga eopneunde, daegi deungnogeul dowajusil su innayo?</small></td></tr>
+        <tr><td data-label="상황"><strong>전화 예약을 부탁할 때</strong></td><td data-label="직원에게 보여 줄 문장">이 식당에 전화해서 예약해 주실 수 있나요?<br><small>I sikdange jeonhwahaeseo yeyakae jusil su innayo?</small></td></tr>
+        <tr><td data-label="상황"><strong>남은 팀을 물을 때</strong></td><td data-label="직원에게 보여 줄 문장">지금 몇 팀 기다리고 있어요?<br><small>Jigeum myeot tim gidarigo isseoyo?</small></td></tr>
+        <tr><td data-label="상황"><strong>앱 없이 기다릴 때</strong></td><td data-label="직원에게 보여 줄 문장">앱 없이 가게 앞에서 기다려도 될까요?<br><small>Aep eopsi gage apeseo gidaryeodo doelkkayo?</small></td></tr>
+      </tbody>
+    </table>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-info"/></svg>
+    <h2 class="block-title">7. 어떤 때 무엇을 쓸까요?</h2>
+  </div>
+  <table class="data-table keep">
+      <thead>
+        <tr><th>상황</th><th>추천</th></tr>
+      </thead>
+      <tbody>
+        <tr><td data-label="상황"><strong>오마카세·파인다이닝</strong></td><td data-label="추천">캐치테이블 글로벌 앱에서 예약. 예약금은 해외 카드로 내요</td></tr>
+        <tr><td data-label="상황"><strong>줄이 긴 유명 가게</strong></td><td data-label="추천">원격 줄서기를 걸고 근처를 구경해요</td></tr>
+        <tr><td data-label="상황"><strong>앱에 "전화 예약"만 있는 가게</strong></td><td data-label="추천">숙소 직원에게 전화를 부탁하거나, 아래 6번 문장을 보여 주세요</td></tr>
+        <tr><td data-label="상황"><strong>캐치테이블 앱에 없는 가게</strong></td><td data-label="추천">네이버 지도 앱 가게 페이지에서 예약 버튼이 있는지 확인해요</td></tr>
+        <tr><td data-label="상황"><strong>테이블링 앱만 쓰는 가게</strong></td><td data-label="추천">가게 앞 태블릿을 쓰고, 안 되면 직원에게 부탁해요</td></tr>
+      </tbody>
+    </table>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-info"/></svg>
+    <h2 class="block-title">8. 자주 묻는 질문</h2>
+  </div>
+  <p class="body-text"><strong>한국 번호가 없으면 줄을 못 서나요?</strong><br>캐치테이블 글로벌 앱으로 할 수 있어요. 네이버 지도 앱도 여권 인증을 하면 예약할 수 있지만 예약되는 가게가 적어요. 네이버의 줄서기 버튼은 테이블링 같은 다른 업체 화면으로 연결돼요. 테이블링 앱만 쓰는 가게는 태블릿이나 직원 도움이 필요해요.</p>
+  <p class="body-text"><strong>예약금은 돌려받나요?</strong><br>방문하면 식사 금액에서 빼 주는 방식이 많아요. 취소 규정은 가게마다 달라서 결제 화면에서 확인하세요.</p>
+  <p class="body-text"><strong>가게에 줄이 없으면요?</strong><br>캐치테이블 앱의 가게 페이지에 웨이팅이 0으로 떠요. 그럴 땐 바로 가면 돼요.</p>
+  <p class="body-text"><strong>어떤 방법도 안 되면요?</strong><br>숙소 직원에게 전화를 부탁해 보세요. 한국관광공사 여행 안내 전화 <strong>1330</strong>(+82-2-1330)은 영어, 일본어, 중국어 등 8개 언어로 상담해요.</p>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-info"/></svg>
+    <h2 class="block-title">정리하면</h2>
+  </div>
+  <table class="data-table keep">
+      <thead>
+        <tr><th>주제</th><th>기억해 둘 한 가지</th></tr>
+      </thead>
+      <tbody>
+        <tr><td data-label="주제"><strong>첫 번째 앱</strong></td><td data-label="기억해 둘 한 가지">캐치테이블 글로벌 앱 (국내판과 다른 앱이에요)</td></tr>
+        <tr><td data-label="주제"><strong>네이버 지도 앱</strong></td><td data-label="기억해 둘 한 가지">여권 인증으로 쓸 수 있지만 예약되는 가게가 적어요</td></tr>
+        <tr><td data-label="주제"><strong>테이블링 앱</strong></td><td data-label="기억해 둘 한 가지">한국어만 있어서 깔 필요가 없어요. 가게 앞 태블릿을 써요</td></tr>
+        <tr><td data-label="주제"><strong>막혔을 때</strong></td><td data-label="기억해 둘 한 가지">외국 번호, 직원 문장 순서로 시도해요</td></tr>
+      </tbody>
+    </table>
+  <p class="body-text" style="margin-top:18px">지도와 결제가 궁금하다면 <a href="/ko/getting-around/2026-09-07-naver-map-app-guide.html">네이버 지도 사용법</a>과 <a href="/ko/getting-around/2026-09-24-korea-card-payment-guide-ko.html">해외카드 결제 가이드</a>도 함께 읽어 보세요.</p>
+</section>
+
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-link"/></svg>
+    <h2 class="block-title">관련 검색어</h2>
+  </div>
+  <div class="keyword-links">
+    <a class="keyword-link" href="/ko/index.html?q=%EC%8B%9D%EB%8B%B9%20%EC%98%88%EC%95%BD"><svg><use href="#i-link"/></svg>#식당 예약</a>
+    <a class="keyword-link" href="/ko/index.html?q=%EC%A4%84%EC%84%9C%EA%B8%B0"><svg><use href="#i-link"/></svg>#줄서기</a>
+    <a class="keyword-link" href="/ko/index.html?q=%EC%9B%A8%EC%9D%B4%ED%8C%85"><svg><use href="#i-link"/></svg>#웨이팅</a>
+    <a class="keyword-link" href="/ko/index.html?q=%EC%BA%90%EC%B9%98%ED%85%8C%EC%9D%B4%EB%B8%94"><svg><use href="#i-link"/></svg>#캐치테이블</a>
+    <a class="keyword-link" href="/ko/index.html?q=%EB%84%A4%EC%9D%B4%EB%B2%84%20%EC%98%88%EC%95%BD"><svg><use href="#i-link"/></svg>#네이버 예약</a>
+    <a class="keyword-link" href="/ko/index.html?q=%ED%85%8C%EC%9D%B4%EB%B8%94%EB%A7%81"><svg><use href="#i-link"/></svg>#테이블링</a>
+    <a class="keyword-link" href="/ko/index.html?q=%EB%A7%9B%EC%A7%91"><svg><use href="#i-link"/></svg>#부산 맛집</a>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="footer-inner">
+    <span class="mono">K-Rambles Busan · 이동, 팁 보드</span>
+  </div>
+</footer>
+
+<button type="button" class="scroll-top" aria-label="Back to top">
+  <svg><use href="#i-arrow-up"/></svg>
+</button>
+
+<script>
+(function () {
+  var KEY = 'krambles-fontsize';
+  var STEPS = ['xs', 'sm', 'md', 'lg', 'xl'];
+  var root = document.documentElement;
+  var ctrl = document.querySelector('.font-size-ctrl');
+  if (!ctrl) { return; }
+  var decBtn = ctrl.querySelector('[data-action="dec"]');
+  var incBtn = ctrl.querySelector('[data-action="inc"]');
+  var index = 2;
+
+  function apply(i) {
+    var size = STEPS[i];
+    if (size === 'md') { root.removeAttribute('data-fs'); }
+    else { root.setAttribute('data-fs', size); }
+    decBtn.disabled = i === 0;
+    incBtn.disabled = i === STEPS.length - 1;
+  }
+
+  var saved = 'md';
+  try { saved = localStorage.getItem(KEY) || 'md'; } catch (e) {}
+  index = STEPS.indexOf(saved);
+  if (index === -1) { index = 2; }
+  apply(index);
+
+  decBtn.addEventListener('click', function () {
+    if (index > 0) {
+      index--;
+      apply(index);
+      try { localStorage.setItem(KEY, STEPS[index]); } catch (e) {}
+    }
+  });
+  incBtn.addEventListener('click', function () {
+    if (index < STEPS.length - 1) {
+      index++;
+      apply(index);
+      try { localStorage.setItem(KEY, STEPS[index]); } catch (e) {}
+    }
+  });
+})();
+
+(function () {
+  var btn = document.querySelector('.scroll-top');
+  if (!btn) { return; }
+  function onScroll() {
+    if (window.scrollY > 600) { btn.classList.add('visible'); }
+    else { btn.classList.remove('visible'); }
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  btn.addEventListener('click', function () {
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
+  });
+})();
+
+(function () {
+  function openModal(id) {
+    var modal = document.getElementById(id);
+    if (!modal) { return; }
+    modal.hidden = false;
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal(modal) {
+    modal.hidden = true;
+    document.body.style.overflow = '';
+  }
+  document.querySelectorAll('[data-modal-open]').forEach(function (btn) {
+    btn.addEventListener('click', function () { openModal(btn.getAttribute('data-modal-open')); });
+  });
+  document.querySelectorAll('.modal-overlay').forEach(function (overlay) {
+    overlay.addEventListener('click', function (e) {
+      if (e.target === overlay) { closeModal(overlay); }
+    });
+    overlay.querySelectorAll('[data-modal-close]').forEach(function (btn) {
+      btn.addEventListener('click', function () { closeModal(overlay); });
+    });
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      document.querySelectorAll('.modal-overlay').forEach(function (overlay) {
+        if (!overlay.hidden) { closeModal(overlay); }
+      });
+    }
+  });
+})();
+</script>
+<script src="/assets/js/krambles-render.js"></script>
+<div class="share-toast" role="status" aria-live="polite"></div>
+<script>
+(function () {
+  var URL_ = document.querySelector('link[rel="canonical"]').href;
+  var TITLE = document.title.replace(/ \| K-Rambles$/, '');
+  var isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent) || (navigator.maxTouchPoints > 1 && /Macintosh/.test(navigator.userAgent));
+  var toast = document.querySelector('.share-toast'), tt;
+  function say(msg) { if (!toast) { return; } toast.textContent = msg; toast.classList.add('show'); clearTimeout(tt); tt = setTimeout(function () { toast.classList.remove('show'); }, 2200); }
+  function copy(text, ok) {
+    function fallback() { var t = document.createElement('textarea'); t.value = text; t.style.position = 'fixed'; t.style.opacity = '0'; document.body.appendChild(t); t.select(); try { document.execCommand('copy'); say(ok); } catch (e) { say('복사하지 못했어요'); } document.body.removeChild(t); }
+    if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(function () { say(ok); }, fallback); } else { fallback(); }
+  }
+  document.addEventListener('click', function (e) {
+    var b = e.target.closest('[data-share="link"]'); if (!b) { return; }
+    if (isMobile && navigator.share) { navigator.share({ title: TITLE, url: URL_ }).catch(function () {}); } else { copy(URL_, '링크를 복사했어요'); }
+  });
+})();
+</script>
+<script data-goatcounter="https://krambles.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
