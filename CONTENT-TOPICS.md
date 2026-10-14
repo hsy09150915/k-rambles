@@ -32,7 +32,8 @@
 - **부네치아(장림포구): 알록달록한 포구, 솔직한 후기** — 키워드: 부산 장림포구 부네치아 항구 배 노을 사하구 바다뷰 경치
 - **감천문화마을: 사진 명소와 가기 전에 알아둘 것** — 키워드: 부산 감천 문화마을 벽화 사진 사하구 벽화마을 뷰 경치 포토스팟
 
-## Taste (미식) (6개)
+## Taste (미식) (7개)
+- **부산 식당 이용법, 외국인이 가장 많이 묻는 12가지 — 혼밥·셀프·계산·팁** — 키워드: restaurant etiquette eating alone honbap self service tipping banchan call bell allergy vegetarian vegan break time busan restaurant foreigner 식당 에티켓 이용법 혼밥 혼자 셀프 팁 계산 호출벨 반찬 브레이크타임 알레르기 채식 비건 부산 맛집 외국인
 - **부산 식당 예약·줄서기, 한국 전화번호 없이 하는 법 (캐치테이블 글로벌 중심)** — 키워드: restaurant reservation waitlist catchtable global naver map tabling busan restaurant foreigner phone number 식당 예약 줄서기 웨이팅 캐치테이블 네이버 예약 테이블링 부산 맛집 외국인 전화번호
 - **태종대 해녀촌: 바닷가에서 먹는 회, 아직도 대야에서 썰어줄까?** — 키워드: 태종대 해녀촌 자갈마당 회 산낙지 멍게 감지해변 조개구이 영도 부산
 - **부산 시민이 뽑은 돼지국밥집 20곳** — 키워드: 돼지국밥 국밥 부산돼지국밥대전 시민추천 로컬맛집 부산 음식

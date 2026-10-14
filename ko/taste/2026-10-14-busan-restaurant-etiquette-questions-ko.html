@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="ko">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>부산 식당 이용법, 외국인이 가장 많이 묻는 12가지 — 혼밥·셀프·계산·팁 | K-Rambles</title>
+<link rel="canonical" href="https://k-rambles.com/ko/taste/2026-10-14-busan-restaurant-etiquette-questions-ko.html">
+<link rel="alternate" hreflang="ko" href="https://k-rambles.com/ko/taste/2026-10-14-busan-restaurant-etiquette-questions-ko.html">
+<link rel="alternate" hreflang="en" href="https://k-rambles.com/taste/2026-10-14-busan-restaurant-etiquette-questions-en.html">
+<link rel="alternate" hreflang="vi" href="https://k-rambles.com/vi/taste/2026-10-14-busan-restaurant-etiquette-questions-vi.html">
+<link rel="alternate" hreflang="th" href="https://k-rambles.com/th/taste/2026-10-14-busan-restaurant-etiquette-questions-th.html">
+<link rel="alternate" hreflang="x-default" href="https://k-rambles.com/taste/2026-10-14-busan-restaurant-etiquette-questions-en.html">
+<meta name="description" content="부산 식당에서 혼자 먹어도 되는지, 물·반찬은 셀프인지, 직원은 어떻게 부르고 계산은 어디서 하는지, 팁은 필요한지. 외국인이 가장 많이 묻는 식당 이용법 12가지를 정리했어요.">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Work+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap');
+
+  :root {
+    --paper: #ecdfc0;
+    --paper-raised: #fbf8ee;
+    --ink: #372b10;
+    --ink-soft: #6e5c33;
+    --coral: #d9532a;
+    --coral-ink: #9c3b1c;
+    --navy: #1b2a4a;
+    --navy-ink: #26406e;
+    --marigold: #c8891f;
+    --marigold-ink: #8a5c10;
+    --line: rgba(55, 43, 16, 0.16);
+    --line-strong: rgba(55, 43, 16, 0.3);
+    --card-shadow: 0 18px 34px -20px rgba(40, 30, 10, 0.4);
+    --ok: #1a7a3d;
+    --no: #b3261e;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #1b1509; --paper-raised: #2b2211; --ink: #f7f0dd; --ink-soft: #cbb98f;
+      --coral: #ef7448; --coral-ink: #ffb497; --navy: #9fb4e0; --navy-ink: #cfdcf5; --marigold: #e8b24b; --marigold-ink: #ffcf7d;
+      --line: rgba(247,240,221,0.16); --line-strong: rgba(247,240,221,0.3);
+      --card-shadow: 0 18px 34px -18px rgba(0,0,0,0.65);
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #1b1509; --paper-raised: #2b2211; --ink: #f7f0dd; --ink-soft: #cbb98f;
+    --coral: #ef7448; --coral-ink: #ffb497; --navy: #9fb4e0; --navy-ink: #cfdcf5; --marigold: #e8b24b; --marigold-ink: #ffcf7d;
+    --line: rgba(247,240,221,0.16); --line-strong: rgba(247,240,221,0.3);
+    --card-shadow: 0 18px 34px -18px rgba(0,0,0,0.65);
+  }
+
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: "Work Sans", ui-sans-serif, system-ui, sans-serif; font-size: 1.0625rem; line-height: 1.6; -webkit-font-smoothing: antialiased; word-break: keep-all; overflow-wrap: break-word; }
+
+  html { font-size: 100%; }
+  html[data-fs="xs"] { font-size: 85%; }
+  html[data-fs="sm"] { font-size: 92.5%; }
+  html[data-fs="lg"] { font-size: 115%; }
+  html[data-fs="xl"] { font-size: 135%; }
+  .font-size-ctrl { display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--line); border-radius: 100px; padding: 4px 8px; }
+  .fs-labels { display: inline-flex; align-items: baseline; gap: 3px; }
+  .fs-label { font-family: "Work Sans", sans-serif; font-weight: 600; color: var(--ink-soft); line-height: 1; user-select: none; }
+  .fs-label-sm { font-size: 0.68rem; }
+  .fs-label-lg { font-size: 1.15rem; }
+  .fs-step { appearance: none; border: none; background: none; cursor: pointer; color: var(--ink-soft); font-family: "Work Sans", sans-serif; font-weight: 700; font-size: 1.35rem; line-height: 1; width: 30px; height: 30px; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; flex-shrink: 0; }
+  .fs-step:hover:not(:disabled) { background: var(--line); color: var(--ink); }
+  .fs-step:disabled { opacity: 0.32; cursor: default; }
+  a { color: inherit; }
+  .mono { font-family: "Space Mono", ui-monospace, "SF Mono", monospace; }
+  a.mono { color: var(--navy-ink); text-decoration: underline; text-underline-offset: 2px; }
+  a.mono:hover { color: var(--coral-ink); }
+  .keyword-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 6px; }
+  .keyword-link { display: inline-flex; align-items: center; gap: 6px; text-decoration: none; color: var(--ink); background: var(--paper-raised); border: 1px solid var(--line); border-radius: 999px; padding: 8px 14px; font-size: 0.88rem; }
+  .keyword-link:hover { border-color: var(--coral); color: var(--coral-ink); }
+  .keyword-link svg { width: 14px; height: 14px; stroke: var(--ink-soft); fill: none; stroke-width: 2; }
+
+  header.site { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px 20px; padding: 26px 28px; max-width: 820px; margin: 0 auto; }
+  .header-right { display: flex; align-items: center; flex-wrap: wrap; justify-content: flex-end; gap: 10px 16px; }
+  .logo { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 1.2rem; text-decoration: none; white-space: nowrap; }
+  .logo span { color: var(--coral); }
+  .back-link { font-family: "Space Mono", monospace; font-size: 0.78rem; letter-spacing: 0.03em; text-decoration: none; color: var(--ink-soft); display: inline-flex; flex-direction: column; align-items: flex-start; gap: 2px; line-height: 1; white-space: nowrap; }
+  .back-link svg { width: 12px; height: 12px; }
+  .back-link:hover { color: var(--navy-ink); }
+  .lang-switch { display: flex; align-items: center; gap: 6px; font-family: "Space Mono", monospace; font-size: 0.76rem; letter-spacing: 0.03em; }
+  .lang-switch a, .lang-switch span.current { text-decoration: none; padding: 3px 8px; border-radius: 6px; }
+  .lang-switch a { color: var(--ink-soft); }
+  .lang-switch a:hover { color: var(--ink); }
+  .lang-switch span.current { color: var(--ink); font-weight: 700; border: 1px solid var(--line); }
+
+  .art-hero { padding: 10px 28px 24px; max-width: 820px; margin: 0 auto; }
+  .hero-photo-wrap { max-width: 820px; margin: 0 auto 8px; padding: 0 28px; }
+  .hero-photo { display: block; width: 100%; height: auto; border-radius: 16px; box-shadow: var(--card-shadow); border: 1px solid var(--line); }
+  .cite-note { font-size: 0.92rem; color: var(--ink-soft); margin: 10px 0 0; }
+  .stamp { display: inline-flex; align-items: center; gap: 9px; font-family: "Space Mono", monospace; font-size: 0.76rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--navy-ink); border: 1.5px dashed var(--navy); border-radius: 999px; padding: 6px 14px 6px 11px; transform: rotate(-1.5deg); }
+  .stamp::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--navy); display: inline-block; }
+
+  .hero-top { display: flex; align-items: center; gap: 16px; margin: 22px 0 24px; }
+  .hero-icon { width: 40px; height: 40px; stroke: var(--navy-ink); fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; }
+
+  h1.art-title { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: clamp(1.9rem, 4.6vw, 2.7rem); line-height: 1.28; letter-spacing: -0.01em; margin: 0 0 14px; text-wrap: balance; }
+  p.dek { font-size: 1.08rem; color: var(--ink-soft); max-width: 58ch; margin: 0; }
+
+  .updated-badge { display: inline-flex; align-items: center; gap: 7px; font-size: 0.92rem; color: var(--ink-soft); margin: 16px 0 0; }
+  .updated-icon { width: 17px; height: 17px; stroke: var(--navy-ink); fill: none; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+
+  section.block { max-width: 820px; margin: 0 auto; padding: 6px 28px 30px; }
+  section.block.section-gap { padding-top: 30px; }
+
+  .block-head { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+  .block-icon { width: 22px; height: 22px; stroke: var(--navy-ink); fill: none; stroke-width: 1.7; flex-shrink: 0; }
+  .block-title { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 1.3rem; margin: 0; }
+
+  p.body-text { margin: 0 0 14px; }
+  ul.plain-list { list-style: disc; margin: 0 0 14px; padding-left: 1.2em; }
+  ul.plain-list li + li { margin-top: 12px; }
+  ol.plain-list-num { margin: 0 0 14px; padding-left: 1.2em; }
+  ol.plain-list-num li + li { margin-top: 12px; }
+
+  table.data-table { width: 100%; border-collapse: collapse; background: var(--paper-raised); font-size: 0.92rem; margin: 4px 0 18px; word-break: keep-all; overflow-wrap: break-word; }
+  table.data-table th, table.data-table td { text-align: left; padding: 12px 14px; border-bottom: 1px solid var(--line); word-break: keep-all; overflow-wrap: break-word; vertical-align: top; }
+  table.data-table th:first-child, table.data-table td:first-child { padding-left: 16px; }
+  table.data-table th:last-child, table.data-table td:last-child { padding-right: 16px; }
+  table.data-table thead th { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; color: var(--ink-soft); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.03em; border-bottom: 1px solid var(--line-strong); white-space: nowrap; }
+  table.data-table tbody tr:last-child td { border-bottom: none; }
+  table.data-table td p, table.data-table td ul { margin: 0; }
+  table.data-table td ul { padding-left: 1.1em; }
+  table.data-table td li + li, table.data-table td p + p { margin-top: 6px; }
+
+  /* On narrow screens, tables flip from columns to stacked cards so no column gets squeezed into a one-character-wide strip. */
+  @media (max-width: 640px) {
+    table.data-table { display: block; }
+    table.data-table thead { display: none; }
+    table.data-table tbody { display: block; }
+    table.data-table { background: transparent; }
+    table.data-table tr { display: block; padding: 14px 16px; margin-bottom: 12px; border: 2px solid var(--line-strong); border-radius: 0; background: var(--paper-raised); }
+    table.data-table tr:last-child { margin-bottom: 0; }
+    table.data-table td { display: block; padding: 8px 0; border-bottom: 1px solid var(--line); }
+    table.data-table td:first-child { padding-left: 0; }
+    table.data-table td:last-child { padding-right: 0; border-bottom: none; }
+    table.data-table td::before { content: attr(data-label); display: block; font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; color: var(--ink-soft); font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.03em; margin-bottom: 4px; }
+  }
+
+  .callout { background: var(--paper-raised); border: 1px solid var(--line); border-left: 3px solid var(--marigold); border-radius: 12px; padding: 18px 20px; margin: 16px 0 0; box-shadow: var(--card-shadow); }
+  .callout-head { display: flex; align-items: center; gap: 8px; font-weight: 700; margin-bottom: 8px; }
+  .callout-head svg { width: 18px; height: 18px; stroke: var(--marigold-ink); fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+  .callout p { margin: 0; font-size: 0.95rem; color: var(--ink-soft); }
+  .callout p + p { margin-top: 8px; }
+  .callout strong.warn { color: var(--coral-ink); }
+
+  .step-list { list-style: none; margin: 6px 0 0; padding: 0; display: flex; flex-direction: column; gap: 24px; }
+  .step-item { display: flex; flex-direction: column; gap: 8px; }
+  .step-head { display: flex; align-items: flex-start; gap: 12px; }
+  .step-badge { width: 28px; height: 28px; border-radius: 50%; background: var(--coral); color: #fff5ee; font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 0.9rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .step-body h3 { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 1.0rem; margin: 2px 0 4px; }
+  .step-body p { margin: 0; font-size: 0.93rem; color: color-mix(in srgb, var(--ink) 60%, var(--ink-soft)); }
+
+  .official-links { display: flex; flex-wrap: wrap; gap: 10px; margin: 14px 0 0; }
+  .official-link { display: inline-flex; align-items: center; gap: 6px; text-decoration: none; color: var(--ink); background: var(--paper-raised); border: 1px solid var(--line); border-radius: 999px; padding: 8px 14px; font-size: 0.86rem; }
+  .official-link:hover { border-color: var(--navy); color: var(--navy-ink); }
+  .official-link svg { width: 14px; height: 14px; stroke: var(--ink-soft); fill: none; stroke-width: 2; }
+
+  .scroll-top { position: fixed; right: 20px; bottom: 20px; width: 46px; height: 46px; border-radius: 50%; background: var(--coral); color: #fff5ee; display: flex; align-items: center; justify-content: center; box-shadow: var(--card-shadow); border: none; cursor: pointer; opacity: 0; pointer-events: none; transition: opacity 0.2s ease, transform 0.15s ease; z-index: 40; }
+  .scroll-top.visible { opacity: 1; pointer-events: auto; }
+  .scroll-top:hover { transform: translateY(-3px); background: var(--coral-ink); }
+  .scroll-top svg { width: 20px; height: 20px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  @media (prefers-reduced-motion: reduce) { .scroll-top { transition: none; } }
+
+  footer.site { border-top: 1px solid var(--line); padding: 24px 28px 40px; }
+  .footer-inner { max-width: 820px; margin: 0 auto; }
+  .footer-inner .mono { font-size: 0.76rem; color: var(--ink-soft); }
+
+  section.block > * + *, .shop-card > * + * { margin-top: 18px; }
+  section.block > .callout + *, section.block > table.data-table + *, section.block > ol.step-list + *, section.block > .official-links + * { margin-top: 44px; }
+  section.block > table.data-table + p.body-text[style*="font-size:0.9rem"] { margin-top: 18px; }
+
+  @media (max-width: 400px) {
+    header.site { padding: 18px 16px; flex-wrap: wrap; row-gap: 10px; }
+    .logo { font-size: 1.02rem; }
+    .header-right { gap: 10px; flex-wrap: wrap; }
+    .art-hero, section.block { padding-left: 16px; padding-right: 16px; }
+  }
+  @media (max-width: 340px) {
+    .logo { font-size: 0.9rem; }
+    .font-size-ctrl { padding: 3px 6px; gap: 5px; }
+  }
+
+  button.official-link { font-family: "Work Sans", sans-serif; }
+
+  .modal-overlay { position: fixed; inset: 0; background: rgba(20, 15, 5, 0.52); display: flex; align-items: flex-end; justify-content: center; z-index: 60; padding: 0; }
+  .modal-overlay[hidden] { display: none; }
+  .modal-card { background: var(--paper-raised); color: var(--ink); width: 100%; max-width: 680px; max-height: 82vh; border-radius: 18px 18px 0 0; box-shadow: var(--card-shadow); padding: 22px 22px calc(22px + env(safe-area-inset-bottom, 0px)); overflow-y: auto; border: 1px solid var(--line); border-bottom: none; }
+  @media (min-width: 720px) {
+    .modal-overlay { align-items: center; }
+    .modal-card { border-radius: 18px; border-bottom: 1px solid var(--line); max-height: 78vh; }
+  }
+  .modal-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 8px; }
+  .modal-head h3 { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 1.1rem; margin: 0; }
+  .modal-close { appearance: none; border: none; background: var(--line); color: var(--ink); width: 30px; height: 30px; border-radius: 50%; font-size: 1.3rem; line-height: 1; cursor: pointer; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
+  .modal-close:hover { background: var(--coral); color: #fff5ee; }
+  .modal-source { font-size: 0.84rem; color: var(--ink-soft); margin: 0 0 16px; }
+  .modal-group + .modal-group { margin-top: 18px; }
+  .modal-group h4 { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 0.95rem; margin: 0 0 6px; display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+  .modal-count { font-family: "Space Mono", monospace; font-weight: 400; font-size: 0.78rem; color: var(--ink-soft); }
+  .modal-countries { font-size: 0.9rem; color: var(--ink-soft); margin: 0; line-height: 1.7; }
+  table.data-table.keep { display: table; width: 100%; border-collapse: separate; border-spacing: 0; border: 1px solid var(--line-strong); border-radius: 12px; overflow: hidden; background: var(--paper-raised); }
+  table.data-table.keep thead { display: table-header-group; }
+  table.data-table.keep tbody { display: table-row-group; }
+  table.data-table.keep tr { display: table-row; padding: 0; margin: 0; border: 0; background: transparent; }
+  table.data-table.keep th { text-align: left; padding: 9px 14px; font-size: 0.8rem; color: var(--ink-soft); background: rgba(127,127,127,0.10); border: 0; border-bottom: 1px solid var(--line-strong); white-space: nowrap; text-transform: none; letter-spacing: 0; }
+  table.data-table.keep td { display: table-cell; padding: 11px 14px; border: 0; border-bottom: 1px solid var(--line); font-size: 0.95rem; line-height: 1.5; vertical-align: top; text-align: left; }
+  table.data-table.keep td::before { content: none; display: none; }
+  table.data-table.keep td:first-child { white-space: nowrap; background: rgba(127,127,127,0.06); border-right: 1px solid var(--line); }
+  table.data-table.keep tr:last-child td { border-bottom: 0; }
+  @media (max-width: 560px) { table.data-table.keep td, table.data-table.keep th { padding: 10px 11px; font-size: 0.92rem; } }
+  table.data-table.keep td:first-child { white-space: normal; min-width: 6.2em; }
+  .share-icon-btn { font: inherit; cursor: pointer; width: 38px; height: 38px; border-radius: 50%; border: 1px solid var(--line); background: transparent; color: var(--ink); display: inline-flex; align-items: center; justify-content: center; padding: 0; }
+  .share-icon-btn:hover { border-color: var(--coral); color: var(--coral-ink); }
+  .share-icon-btn svg { width: 18px; height: 18px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  .share-toast { position: fixed; left: 50%; bottom: 84px; transform: translateX(-50%); background: var(--ink); color: #fff; font-size: .88rem; padding: 10px 18px; border-radius: 999px; opacity: 0; pointer-events: none; transition: opacity .2s; z-index: 50; }
+  .share-toast.show { opacity: 1; }
+  .copy-btn { appearance: none; border: 1px solid var(--line-strong); background: var(--paper-raised); color: var(--ink); border-radius: 999px; padding: 2px 10px 2px 8px; margin-left: 6px; font-size: 0.78rem; line-height: 1.5; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; font-family: "Work Sans", ui-sans-serif, sans-serif; vertical-align: baseline; white-space: nowrap; }
+  a.copy-btn { text-decoration: none; }
+  .eti-figs { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin: 18px 0 6px; }
+  .eti-fig { margin: 0; border: 1px solid var(--line); border-radius: 14px; overflow: hidden; background: #fff; }
+  .eti-fig img { display: block; width: 100%; height: auto; }
+  .eti-fig figcaption { padding: 8px 12px 10px; font-size: .8rem; color: var(--ink-soft); line-height: 1.45; background: var(--paper-raised); }
+  .copy-btn:hover { border-color: var(--coral); color: var(--coral-ink); }
+  .copy-btn:focus-visible { outline: 2px solid var(--coral); outline-offset: 2px; }
+  .copy-btn svg { width: 12px; height: 12px; stroke: currentColor; fill: none; stroke-width: 2; }
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-doc" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.5 4 5.5 4 9s-1.5 6.5-4 9c-2.5-2.5-4-5.5-4-9s1.5-6.5 4-9Z"/></symbol>
+  <symbol id="i-pass" viewBox="0 0 24 24"><path d="M4 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v1.3a1.5 1.5 0 0 0 0 2.9V13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-1.3a1.5 1.5 0 0 0 0-2.9Z" transform="translate(0 2)"/><path d="M9 6.5v11" stroke-dasharray="2 2" transform="translate(0 2)"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M4 12.5 9.5 18 20 6.5"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5.5M12 8v.01"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 9.8h17M8 2.5v5M16 2.5v5"/></symbol>
+  <symbol id="i-link" viewBox="0 0 24 24"><path d="M9.5 14.5 14.5 9.5"/><path d="M8.3 11.7l-1.6 1.6a3 3 0 0 0 4.2 4.2l1.6-1.6"/><path d="M15.7 12.3l1.6-1.6a3 3 0 0 0-4.2-4.2l-1.6 1.6"/></symbol>
+  <symbol id="i-map" viewBox="0 0 24 24"><path d="M9 4.5 4 6.5v13l5-2 6 2 5-2v-13l-5 2-6-2Z"/><path d="M9 4.5v13M15 6.5v13"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="11" height="11" rx="1.6"/><path d="M15 9V5.6A1.6 1.6 0 0 0 13.4 4H5.6A1.6 1.6 0 0 0 4 5.6v7.8A1.6 1.6 0 0 0 5.6 15H9"/></symbol>
+  <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></symbol>
+</svg>
+
+<header class="site">
+  <a class="logo" href="/ko/index.html">K-<span>Rambles</span></a>
+  <div class="header-right">
+    <a class="back-link" href="/ko/taste/index.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+      보드로 돌아가기
+    </a>
+    <div class="font-size-ctrl" role="group" aria-label="Text size"><button type="button" class="fs-step" data-action="dec" aria-label="Decrease text size">−</button><span class="fs-labels" aria-hidden="true"><span class="fs-label fs-label-sm">가</span><span class="fs-label fs-label-lg">가</span></span><button type="button" class="fs-step" data-action="inc" aria-label="Increase text size">+</button></div>
+    <button type="button" class="share-icon-btn" data-share="link" data-goatcounter-click="share:restaurant-etiquette-link" aria-label="글 공유하기"><svg viewBox="0 0 24 24"><path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7"/><path d="M12 15V4"/><path d="m8 8 4-4 4 4"/></svg></button>
+    <div class="lang-switch" aria-label="Language" data-key="taste/2026-10-14-busan-restaurant-etiquette-questions-en"></div>
+  </div>
+</header>
+
+<div class="art-hero">
+  <div class="hero-top">
+    <span class="stamp">미식 · 보드 08</span>
+    <svg class="hero-icon"><use href="#i-doc"/></svg>
+  </div>
+  <h1 class="art-title">부산 식당 이용법, 외국인이 가장 많이 묻는 12가지 — 혼밥·셀프·계산·팁</h1>
+  <p class="dek">식당에 들어갔는데 어디에 앉아야 할지, 물은 어디서 가져오는지, 계산은 언제 하는지 헷갈린 적이 있다면 이 글이 도움이 돼요. 부산 식당에서 외국인이 가장 자주 묻는 12가지를 정리했어요.</p>
+  <p class="updated-badge"><svg class="updated-icon"><use href="#i-calendar"/></svg>2026년 10월 기준 — 식당마다 방식이 조금씩 달라요. 가게 입구와 테이블의 안내문을 먼저 확인해 주세요.</p>
+</div>
+<div class="hero-photo-wrap">
+  <img class="hero-photo" src="/assets/hero/busan-restaurant-etiquette-hero.jpg" alt="좁은 식당 골목을 걷는 두 여행자의 뒷모습, 한 사람은 캐리어를 끌고 있다" width="1640" height="820">
+</div>
+
+<!--
+  출처(개정사항 체크 시 참고) — 2026-10-14 확인.
+  한국관광공사 VisitKorea 식당 이용 안내(팁은 필요하지도 기대되지도 않음, 반찬·물 추가 무료, 셀프 물·반찬·무인 주문기 증가, 호출벨, 수저 서랍): https://english.visitkorea.or.kr/svc/contents/infoBscView.do?vcontsId=140727
+  식사 피크 시간(점심 12~1시, 저녁 6~7시)·장사 잘 되는 곳은 테이블 회전율 때문에 혼자 안 받는 경우: 사용자 제공 현장 경험 + 중앙일보 2025-09-06 https://v.daum.net/v/20250906060150849 (거절 사유=테이블 회전율·매출, 혼밥 거부는 법적 제재 대상 아님)
+  네이버 플레이스 검색 결과 반영 요소(검색어와 정보의 유사도, 업체·카테고리 인기도, 거리, 정보 충실성): https://help.naver.com/service/30026/contents/23473?lang=ko / 맛집 검색 필터 '이 외 키워드'는 사용자 리뷰·연관성·인기도 점수화: https://help.naver.com/service/30026/contents/20417?lang=ko / 키워드 리뷰(방문자가 고르는 업종별 키워드): NAVER Corp. 2021-07-09 https://www.navercorp.com/media/pressReleasesDetail?seq=30485
+  '혼밥' 검색어가 내부적으로 어떤 필드(리뷰 키워드/소개/대표키워드)와 매칭되는지는 비공개 → 본문은 공식 안내 범위(리뷰 키워드가 쌓이고 사용자 리뷰가 검색에 반영)로만 서술.
+  네이버 '혼밥하기 좋아요' = 방문자가 리뷰에서 고르는 키워드 리뷰(총 360개 키워드, 검색결과 리뷰 키워드 필터 2022-12 도입): NAVER Corp. 보도자료 https://www.navercorp.com/media/pressReleasesDetail?seq=31006 / 사업주 키워드 설정: https://help.naver.com/service/30026/contents/20504?lang=ko / 가게 상세 화면 확인 예: https://m.place.naver.com/restaurant/587929920/review/visitor
+  알레르기 표시 의무 외식업소(어린이 기호식품 조리·판매 + 가맹점 포함 점포 100개 이상 프랜차이즈): 어린이 식생활안전관리 특별법 시행령(국가법령정보센터), 대한급식신문 2017-06-02 https://www.fsnews.co.kr/news/articleView.html?idxno=21353 / 일반 음식점은 학교급식·어린이집·유치원·가공식품만 의무: 국민소통 sotong.go.kr 2025-02-03 / 알레르기 표시 대상 목록(알류·우유·메밀·땅콩·대두·밀·고등어·게·새우·돼지고기·복숭아·토마토·아황산류·호두·닭고기·쇠고기·오징어·조개류·잣): 식품등의 표시·광고에 관한 법률 시행규칙 별표 2
+  채식 안내(고기·생선 육수 주의, 비빔밥·김밥 재료 확인): VisitKorea https://english.visitkorea.or.kr/svc/contents/infoHtmlView.do?vcontsId=158975 / 비건 식당 수·네이버 검색 결과 구성, 셀프 표시, 호출벨 위치와 표시기, 선결제 구조, 계산 방식, 팁 반환, 고기 굽기·가위 문화, 고추 개수 표기: 사용자 제공 현장 경험(공식 자료 없음).
+  메뉴별 혼자 먹기 쉬움/2인분 이상 요구, 브레이크타임·라스트오더, 고기 굽기 방식, 포장 가능 여부, 선결제·후결제: 공식 자료 없음 → 일반 관행으로 "가게마다 달라요" 표현.
+-->
+
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-info"/></svg>
+    <h2 class="block-title">한눈에 보기</h2>
+  </div>
+  <p class="body-text">한국 식당은 해외와 다른 점이 몇 가지 있어요. <strong>혼자 먹을 수 있는지, 물과 반찬은 어떻게 받는지, 직원은 어떻게 부르는지, 계산은 어디서 하는지</strong>가 가장 많이 나오는 질문이에요. 부산 식당에서 외국인이 자주 묻는 12가지를 순서대로 정리했어요.</p>
+  <table class="data-table keep">
+      <thead>
+        <tr><th>궁금한 점</th><th>짧은 답</th><th>자세히</th></tr>
+      </thead>
+      <tbody>
+        <tr><td data-label="궁금한 점"><strong>혼자 가도 돼요</strong></td><td data-label="짧은 답">한산한 곳은 괜찮고, 붐비는 식사 시간엔 안 받는 곳도 있어요</td><td data-label="자세히">1~3번</td></tr>
+        <tr><td data-label="궁금한 점"><strong>물·반찬은요</strong></td><td data-label="짧은 답">"셀프"라고 적혀 있으면 직접, 아니면 직원에게</td><td data-label="자세히">4번</td></tr>
+        <tr><td data-label="궁금한 점"><strong>직원은 어떻게 불러요</strong></td><td data-label="짧은 답">테이블의 호출벨을 눌러요</td><td data-label="자세히">5번</td></tr>
+        <tr><td data-label="궁금한 점"><strong>주문과 계산은요</strong></td><td data-label="짧은 답">나갈 때 카운터, 또는 주문할 때 선결제</td><td data-label="자세히">6~7번</td></tr>
+        <tr><td data-label="궁금한 점"><strong>팁은요</strong></td><td data-label="짧은 답">필요 없어요</td><td data-label="자세히">8번</td></tr>
+        <tr><td data-label="궁금한 점"><strong>문 닫는 시간은요</strong></td><td data-label="짧은 답">쉬는 시간과 주문 마감이 따로 있어요</td><td data-label="자세히">9번</td></tr>
+      </tbody>
+    </table>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-info"/></svg>
+    <h2 class="block-title">1. 혼자 가도 되나요?</h2>
+  </div>
+  <p class="body-text">혼자 가도 받아주는 식당이 많아요. 다만 <strong>관광객이 많거나 장사가 잘 되는 식당은 식사 시간에 혼자 온 손님을 받지 않는 곳</strong>이 있어요. 한 테이블에서 최대한 많이 팔아야 하기 때문이에요. 한국에서 가장 붐비는 시간은 보통 <strong>점심 12시~1시와 저녁 6시~7시</strong>예요.</p>
+  <p class="body-text">반대로 손님이 항상 많지 않은 식당은 혼자 가도 대부분 괜찮다고 해요. 붐비는 시간을 피해 가면 혼자서도 받아줄 가능성이 커져요. 혼자 갔다가 거절당해도 가게 사정이니, 다른 가게로 가면 돼요.</p>
+  <p class="body-text">다만 <strong>메뉴에 따라 2인분 이상을 주문해야 하는 식당</strong>도 있어서, 혼자 먹을 수 있는지는 메뉴에 따라 달라질 수 있어요. 아래 3번을 참고하세요.</p>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-info"/></svg>
+    <h2 class="block-title">2. 혼밥 가능한 식당은 어떻게 찾아요?</h2>
+  </div>
+  <p class="body-text"><strong>네이버 지도 앱</strong>에서는 한글로 <strong>"혼밥"</strong>을 <button type="button" class="copy-btn" data-copy="혼밥" aria-label="혼밥 복사"><svg><use href="#i-copy"/></svg>복사</button><a class="copy-btn" href="https://map.naver.com/p/search/%ED%98%BC%EB%B0%A5" target="_blank" rel="noopener" aria-label="네이버 지도에서 혼밥 검색"><svg><use href="#i-map"/></svg>지도</a> 검색해야 해요. "혼밥"은 한국어로 "혼자 먹는 밥"을 줄인 말이에요.</p>
+  <p class="body-text">이미 혼자 식사를 한 사람들이 쓴 리뷰를 바탕으로 지도에서 검색되는 것으로 보여요.</p>
+  <table class="data-table keep">
+      <thead>
+        <tr><th>하는 일</th><th>방법</th></tr>
+      </thead>
+      <tbody>
+        <tr><td data-label="하는 일"><strong>검색</strong></td><td data-label="방법">찾는 동네가 화면에 보이게 지도 앱을 움직여 놓고, 검색창에 "혼밥"을 입력해요</td></tr>
+        <tr><td data-label="하는 일"><strong>들어갈 때</strong></td><td data-label="방법">입구에서 검지 손가락 하나를 펴서 보여주세요. 한 명이라는 뜻이라 다 알아들어요. "한 명이요"라고 말해도 돼요</td></tr>
+      </tbody>
+    </table>
+  <p class="body-text">네이버 지도 앱 설치와 영어 설정은 <a href="/ko/getting-around/2026-09-07-naver-map-app-guide.html">부산여행, 구글맵보다 한국 지도앱을 써야 덜 헤매죠</a>에 정리해 두었어요.</p>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-info"/></svg>
+    <h2 class="block-title">3. 혼자 먹기 쉬운 메뉴는 뭐예요?</h2>
+  </div>
+  <p class="body-text">메뉴에 따라 혼자 먹기 쉬운 정도가 달라요. 1인분을 따로 파는 메뉴는 혼자 가기 쉽고, 여럿이 나눠 먹는 메뉴는 <strong>2인분 이상</strong>을 주문해야 하는 가게가 많아요. 같은 찌개라도 <strong>김치찌개·된장찌개</strong>는 1인분으로 나오는 곳이 많지만, <strong>김치전골</strong>은 2인분부터일 가능성이 아주 높아요.</p>
+  <table class="data-table keep">
+      <thead>
+        <tr><th>혼자 먹기 쉬워요</th><th>2인분부터인 곳 많아요</th></tr>
+      </thead>
+      <tbody>
+        <tr><td data-label="혼자 먹기 쉬워요">돼지국밥, 순대국밥, 밀면, 칼국수</td><td data-label="2인분부터인 곳 많아요">삼겹살 같은 고기구이</td></tr>
+        <tr><td data-label="혼자 먹기 쉬워요">김치찌개, 된장찌개</td><td data-label="2인분부터인 곳 많아요">김치전골, 부대찌개, 감자탕</td></tr>
+        <tr><td data-label="혼자 먹기 쉬워요">김밥, 분식, 비빔밥, 덮밥</td><td data-label="2인분부터인 곳 많아요">곱창·막창구이</td></tr>
+        <tr><td data-label="혼자 먹기 쉬워요">백반 정식, 라면</td><td data-label="2인분부터인 곳 많아요">샤브샤브, 족발·보쌈</td></tr>
+      </tbody>
+    </table>
+  <p class="body-text">이 구분이 확정적인 것은 아니에요. 가게마다 달라서 <strong>예외</strong>가 있어요. 1인 샤브샤브나 1인 고기 정식을 따로 파는 가게도 있고, 반대로 국밥이나 칼국수도 2인분부터 받는 가게가 있을 수 있어요.</p>
+  <p class="body-text">가게마다 달라서, 들어가기 전에 <strong>"한 명이에요. 1인분 되나요?"</strong>라고 물어보면 확실해요. 부산 대표 혼밥 메뉴인 돼지국밥집이 궁금하다면 <a href="/ko/taste/2026-09-23-busan-dwaeji-gukbap-20-ko.html">부산 시민이 뽑은 돼지국밥집 20곳</a>을 보세요.</p>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-info"/></svg>
+    <h2 class="block-title">4. 물과 반찬, 수저는 어떻게 받아요?</h2>
+  </div>
+  <p class="body-text">기본 반찬은 보통 더 먹어도 돈을 더 받지 않아요.</p>
+  <p class="body-text">다만 <strong>물과 반찬을 받는 방법</strong>은 가게마다 달라요. 어떤 방법인지는 <strong>"셀프"</strong>라는 글자로 알 수 있어요. "셀프"는 영어 self에서 온 말로, <strong>손님이 직접 가져다 먹는다</strong>는 뜻이에요.</p>
+  <table class="data-table keep">
+      <thead>
+        <tr><th>이런 모습이면</th><th>이렇게 해요</th></tr>
+      </thead>
+      <tbody>
+        <tr><td data-label="이런 모습이면"><strong>반찬이 담긴 낮은 냉장고 위에 "셀프"라고 적혀 있어요</strong></td><td data-label="이렇게 해요">기본 반찬도 직접 가져다 먹으면 돼요</td></tr>
+        <tr><td data-label="이런 모습이면"><strong>"셀프"라는 글자가 안 보여요</strong></td><td data-label="이렇게 해요">직원을 불러서 더 먹고 싶은 반찬을 가리키며 검지 손가락으로 1을 만들어 보여주세요. "반찬 더 주세요"라고 말해도 좋아요</td></tr>
+        <tr><td data-label="이런 모습이면"><strong>직원이 물통을 가져다줘요</strong></td><td data-label="이렇게 해요">약 1ℓ 크기의 반투명 플라스틱 통이나 스테인리스 통에 담아 줘요</td></tr>
+        <tr><td data-label="이런 모습이면"><strong>정수기 근처에 "셀프"라고 적혀 있어요</strong></td><td data-label="이렇게 해요">직접 물을 받아서 마시면 돼요</td></tr>
+        <tr><td data-label="이런 모습이면"><strong>수저가 안 보여요</strong></td><td data-label="이렇게 해요">보통 테이블 옆면 서랍이나 테이블 위 수저통에 있어요</td></tr>
+      </tbody>
+    </table>
+  <p class="body-text">아래 사진은 테이블 옆면 서랍을 열어 본 모습이에요. 수저와 젓가락, 휴지가 칸마다 들어 있어요.</p>
+  <div class="eti-figs">
+    <figure class="eti-fig"><img src="/assets/img/restaurant-table-drawer-cutlery.jpg" alt="테이블 옆면 서랍을 열어 보면 수저, 검은 젓가락, 휴지와 물티슈가 칸마다 들어 있다" width="900" height="670" loading="lazy"><figcaption>테이블 옆면 서랍 안쪽</figcaption></figure>
+  </div>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-info"/></svg>
+    <h2 class="block-title">5. 직원은 어떻게 불러요?</h2>
+  </div>
+  <p class="body-text">테이블마다 있는 <strong>호출벨</strong>을 눌러요. 벨은 보통 <strong>테이블 모서리나 코너 부분</strong>에 있고, 옆면 서랍 바깥쪽에 붙어 있는 가게도 있어요.</p>
+  <p class="body-text">벨을 누르면 직원에게 잘 보이는 곳에 <strong>소리와 함께 내 테이블 번호가 떠요</strong>. 직원은 그 번호를 보고 달려와요. 벨이 없는 가게에서는 "여기요"라고 부르거나 손을 들어 직원과 눈을 맞추세요.</p>
+  <div class="eti-figs">
+    <figure class="eti-fig"><img src="/assets/img/restaurant-call-bell.jpg" alt="테이블에 두는 둥근 빨간색 호출벨" width="640" height="480" loading="lazy"><figcaption>호출벨</figcaption></figure>
+    <figure class="eti-fig"><img src="/assets/img/restaurant-call-display.jpg" alt="벨을 누르면 테이블 번호가 빨간 숫자로 뜨는 직원용 표시기" width="511" height="383" loading="lazy"><figcaption>직원이 보는 표시기에 테이블 번호가 떠요</figcaption></figure>
+  </div>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-info"/></svg>
+    <h2 class="block-title">6. 주문은 어떻게 해요?</h2>
+  </div>
+  <p class="body-text">식당마다 주문 방식이 달라요. 주문 방식은 크게 세 가지예요.</p>
+  <table class="data-table keep">
+      <thead>
+        <tr><th>방식</th><th>어떻게 해요</th></tr>
+      </thead>
+      <tbody>
+        <tr><td data-label="방식"><strong>직원에게</strong></td><td data-label="어떻게 해요">자리에 앉아 메뉴판을 보고 "이거 주세요"라고 하고, 메뉴를 가리켜요</td></tr>
+        <tr><td data-label="방식"><strong>키오스크</strong></td><td data-label="어떻게 해요">입구 화면에서 메뉴를 고르고 결제해요. 결제 후 자리에 앉아요</td></tr>
+        <tr><td data-label="방식"><strong>테이블 오더</strong></td><td data-label="어떻게 해요">테이블 위 태블릿으로 주문해요. 결제는 가게마다 달라요</td></tr>
+      </tbody>
+    </table>
+  <p class="body-text"><strong>테이블 오더 기기에서 결제를 끝내야 주문이 완료되는 가게</strong>도 있어요. 보통 태블릿과 카드 리더기가 함께 있으면 먼저 결제하는 시스템이에요.</p>
+  <p class="body-text">한국어만 나오는 화면이나 메뉴판은 <strong>파파고 앱</strong>의 카메라 번역으로 읽어 보세요.</p>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-info"/></svg>
+    <h2 class="block-title">7. 계산은 언제, 어디서 해요?</h2>
+  </div>
+  <p class="body-text">직원에게 주문하는 식당은 <strong>다 먹고 나갈 때 입구 쪽 카운터</strong>에서 계산해요. 자리에서 기다려도 직원이 계산하러 오지 않아요. 카운터로 가서 "계산해 주세요"라고 하면 돼요.</p>
+  <p class="body-text">직원이 테이블로 와서 계산하고 카드를 돌려주는 방식은 고급 레스토랑에서는 있을 수 있지만, 보통 식당에서는 거의 하지 않아요.</p>
+  <p class="body-text">키오스크나 테이블 오더를 쓰는 식당은 <strong>주문할 때 먼저 결제(선결제)</strong>하는 곳이 많아요. 선결제인지는 주문 화면에서 확인할 수 있어요.</p>
+  <div class="callout">
+    <div class="callout-head"><svg><use href="#i-check"/></svg>이렇게 해보세요</div>
+    <p>해외 카드가 결제되지 않아 당황한 적이 있다면 <a href="/ko/getting-around/2026-09-24-korea-card-payment-guide-ko.html">한국인데 카드가 왜 안 돼요? — 해외카드 결제 실전 가이드</a>를 함께 보세요.</p>
+  </div>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-info"/></svg>
+    <h2 class="block-title">8. 팁은 줘야 하나요?</h2>
+  </div>
+  <p class="body-text">아니요. 한국에는 팁 문화가 없어서 <strong>팁을 주지 않아도 괜찮아요</strong>. 메뉴에 적힌 가격이 곧 내는 금액이에요.</p>
+  <p class="body-text">간혹 말없이 테이블에 팁을 올려놓고 나가면, 식당 직원이 뛰어와서 "돈을 놓고 가셨어요"라며 되돌려 주는 경우도 있어요.</p>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-info"/></svg>
+    <h2 class="block-title">9. 문 닫는 시간에 헛걸음하지 않으려면요?</h2>
+  </div>
+  <p class="body-text">점심과 저녁 사이에 문을 닫는 <strong>쉬는 시간(브레이크타임)</strong>이 있는 식당이 많아요. 영업 종료보다 일찍 주문을 마감하는 <strong>주문 마감(라스트오더)</strong>이 따로 있는 가게도 있어요.</p>
+  <p class="body-text">네이버 지도 앱의 가게 정보에서 영업시간과 휴무일을 확인하세요.</p>
+  <div class="callout">
+    <div class="callout-head"><svg><use href="#i-check"/></svg>이렇게 해보세요</div>
+    <p>인기 식당은 영업 시간 전에 줄이 생기는 곳도 있어요. 줄서기와 예약은 <a href="/ko/taste/2026-10-12-busan-restaurant-reservation-waiting-guide-ko.html">부산 식당 예약·줄서기, 한국 전화번호 없이 하는 법</a>을 보세요.</p>
+  </div>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-info"/></svg>
+    <h2 class="block-title">10. 고깃집에서는 누가 고기를 구워요?</h2>
+  </div>
+  <p class="body-text">고깃집은 가게마다 달라요. <strong>직원이 처음부터 구워 주는 곳, 처음에만 구워 주는 곳, 손님이 직접 굽는 곳</strong>이 있어요. 자리에 앉을 때 <strong>"고기 구워 주시나요?"</strong>라고 물어보면 돼요.</p>
+  <p class="body-text">집게와 가위는 보통 테이블 위에 미리 놓여 있지 않고, <strong>고기를 가져올 때 함께 가져다줘요</strong>. 혼자 갈 때는 고기구이를 2인분 이상 시켜야 하는 곳이 많다는 점(3번)도 기억해 두세요.</p>
+  <p class="body-text">한국에는 <strong>음식을 가위로 자르는 문화</strong>가 있어요. 서양에서 온 외국인은 처음 보면 많이 놀랄 수 있지만, 음식 전용 가위를 쓰기 때문에 위생에는 문제가 없어요. 칼보다 훨씬 빠르고 편해서, 빠르고 효율적인 것을 좋아하는 한국 문화에 잘 맞는 방식이에요.</p>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-info"/></svg>
+    <h2 class="block-title">11. 남은 음식은 포장할 수 있어요?</h2>
+  </div>
+  <p class="body-text">포장 가능 여부는 <strong>가게마다 달라요.</strong> 국물이 있는 음식은 안 되는 곳이 많아요. 먹기 전에 "포장돼요?"라고 먼저 물어보세요. 안 된다고 하면 그대로 두고 나오면 돼요.</p>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-info"/></svg>
+    <h2 class="block-title">12. 알레르기, 채식, 맵기는 어떻게 말해요?</h2>
+  </div>
+  <p class="body-text">한국에서 메뉴에 알레르기 성분 표시가 <strong>의무인 외식업소는 어린이 기호식품을 파는 점포 100개 이상 프랜차이즈 등 일부</strong>예요. 동네 식당 메뉴판에는 표시가 없는 곳이 많아요. 그래서 <strong>주문할 때 직원에게 직접 말해야</strong> 해요.</p>
+  <p class="body-text">메뉴판에는 매운 정도를 <strong>음식 사진 옆 빨간 고추 그림의 개수</strong>로 표시하는 곳이 많아요. 보통 고추 1개에서 3개까지 표시하는데, <strong>3개는 매운 음식을 잘 못 먹는 외국인에게는 많이 매울 수 있어요.</strong></p>
+  <table class="data-table keep">
+      <thead>
+        <tr><th>하고 싶은 말</th><th>한국어 문구</th></tr>
+      </thead>
+      <tbody>
+        <tr><td data-label="하고 싶은 말"><strong>알레르기가 있어요</strong></td><td data-label="한국어 문구">땅콩 알레르기가 있어요</td></tr>
+        <tr><td data-label="하고 싶은 말"><strong>빼 주세요</strong></td><td data-label="한국어 문구">새우 빼 주세요</td></tr>
+        <tr><td data-label="하고 싶은 말"><strong>조금 덜 맵게 해 주세요</strong></td><td data-label="한국어 문구">덜 맵게 해 주세요</td></tr>
+        <tr><td data-label="하고 싶은 말"><strong>전혀 맵지 않게 해 주세요</strong></td><td data-label="한국어 문구">안 맵게 해 주세요</td></tr>
+        <tr><td data-label="하고 싶은 말"><strong>저는 채식주의자예요</strong></td><td data-label="한국어 문구">저는 채식주의자예요</td></tr>
+        <tr><td data-label="하고 싶은 말"><strong>고기 없는 메뉴가 뭐예요?</strong></td><td data-label="한국어 문구">고기 없는 메뉴가 뭐예요?</td></tr>
+        <tr><td data-label="하고 싶은 말"><strong>생선도 안 먹어요</strong></td><td data-label="한국어 문구">이거 물고기 들어가요?</td></tr>
+      </tbody>
+    </table>
+  <p class="body-text">한국의 알레르기 표시 대상에는 메밀, 돼지고기, 쇠고기, 닭고기도 들어 있어요. 다른 나라 목록과 다르니 확인해 보세요. 채식이라면 국물 요리의 육수가 고기나 멸치로 우린 경우가 많으니 "육수도 고기로 만들어요?"라고 물어보세요.</p>
+  <p class="body-text">한국에는 <strong>비건 식당이 많지 않은 편</strong>이에요. 네이버 지도 앱에서 "비건"으로 검색해도 가게 수가 적고 디저트 카페가 많이 나와요. 그래서 일반 식당에서 <strong>야채 위주의 메뉴를 고르는 쪽이 더 빠를 수 있어요.</strong> 아래는 고기가 들어가지 않는 편인 메뉴예요.</p>
+  <table class="data-table keep">
+      <thead>
+        <tr><th>메뉴</th><th>주문할 때 확인할 점</th></tr>
+      </thead>
+      <tbody>
+        <tr><td data-label="메뉴"><strong>산채비빔밥, 야채비빔밥</strong></td><td data-label="주문할 때 확인할 점">나물과 채소를 밥에 비벼 먹어요. 위에 올라가는 고기와 계란을 빼 달라고 하세요</td></tr>
+        <tr><td data-label="메뉴"><strong>도토리묵, 묵무침</strong></td><td data-label="주문할 때 확인할 점">묵에 채소를 곁들여요. 양념에 들어가는 재료는 가게마다 달라요</td></tr>
+        <tr><td data-label="메뉴"><strong>두부조림</strong></td><td data-label="주문할 때 확인할 점">두부를 양념에 졸인 반찬이에요</td></tr>
+        <tr><td data-label="메뉴"><strong>콩국수</strong></td><td data-label="주문할 때 확인할 점">콩 국물에 국수를 말아요. 주로 여름에 팔아요</td></tr>
+        <tr><td data-label="메뉴"><strong>감자전, 야채전</strong></td><td data-label="주문할 때 확인할 점">채소로 부친 전이에요. 해물파전처럼 해산물이 든 전은 피하세요</td></tr>
+        <tr><td data-label="메뉴"><strong>야채김밥</strong></td><td data-label="주문할 때 확인할 점">햄·어묵·계란이 들어갈 수 있으니 빼 달라고 하세요</td></tr>
+      </tbody>
+    </table>
+  <p class="body-text">찌개, 국, 국수는 고기나 멸치 육수를 쓰는 곳이 많아요. 반찬도 멸치볶음, 어묵, 계란말이처럼 눈으로 보고는 알기 어려운 것이 있으니 "이거 고기 들어가요?"라고 확인해 보세요. 다만 한국에서 "고기"라고 하면 소고기·돼지고기 같은 육고기만 떠올리고 생선은 생각하지 않는 경우가 많아요. <strong>생선도 먹지 않는다면 "이거 물고기 들어가요?"라고 따로 물어보세요.</strong></p>
+
+</section>
+<section class="block section-gap">
+  <div class="block-head">
+    <svg class="block-icon"><use href="#i-info"/></svg>
+    <h2 class="block-title">정리하면</h2>
+  </div>
+  <table class="data-table keep">
+      <thead>
+        <tr><th>주제</th><th>기억해 둘 한 가지</th></tr>
+      </thead>
+      <tbody>
+        <tr><td data-label="주제"><strong>혼밥</strong></td><td data-label="기억해 둘 한 가지">네이버 지도 앱에서 "혼밥"을 검색해요</td></tr>
+        <tr><td data-label="주제"><strong>물·반찬</strong></td><td data-label="기억해 둘 한 가지">"셀프"라고 적혀 있으면 직접 가져와요</td></tr>
+        <tr><td data-label="주제"><strong>직원 호출</strong></td><td data-label="기억해 둘 한 가지">테이블의 호출벨을 눌러요</td></tr>
+        <tr><td data-label="주제"><strong>계산</strong></td><td data-label="기억해 둘 한 가지">나갈 때 카운터, 또는 주문할 때 선결제</td></tr>
+        <tr><td data-label="주제"><strong>팁</strong></td><td data-label="기억해 둘 한 가지">필요 없어요</td></tr>
+        <tr><td data-label="주제"><strong>알레르기</strong></td><td data-label="기억해 둘 한 가지">직원에게 직접 말해요</td></tr>
+      </tbody>
+    </table>
+  <p class="body-text" style="margin-top:18px">한국 생활 전반이 궁금하다면 <a href="/ko/long-stay/2026-10-10-korea-everyday-culture-questions-ko.html">한국인은 왜 나이부터 물어볼까? 한국 일상 12가지</a>도 함께 읽어 보세요.</p>
+
+</section>
+
+<section class="block section-gap">
+  <div class="block-head"><svg class="block-icon"><use href="#i-link"/></svg><h2 class="block-title">관련 검색어</h2></div>
+  <div class="keyword-links">
+    <a class="keyword-link" href="/ko/index.html?q=%EC%8B%9D%EB%8B%B9%20%EC%97%90%ED%8B%B0%EC%BC%93"><svg><use href="#i-link"/></svg>#식당 에티켓</a>
+    <a class="keyword-link" href="/ko/index.html?q=%ED%98%BC%EB%B0%A5"><svg><use href="#i-link"/></svg>#혼밥</a>
+    <a class="keyword-link" href="/ko/index.html?q=%ED%8C%81"><svg><use href="#i-link"/></svg>#팁</a>
+    <a class="keyword-link" href="/ko/index.html?q=%EB%B8%8C%EB%A0%88%EC%9D%B4%ED%81%AC%ED%83%80%EC%9E%84"><svg><use href="#i-link"/></svg>#브레이크타임</a>
+    <a class="keyword-link" href="/ko/index.html?q=%EC%95%8C%EB%A0%88%EB%A5%B4%EA%B8%B0"><svg><use href="#i-link"/></svg>#알레르기</a>
+    <a class="keyword-link" href="/ko/index.html?q=%EB%A7%9B%EC%A7%91"><svg><use href="#i-link"/></svg>#부산 맛집</a>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="footer-inner">
+    <span class="mono">K-Rambles Busan · 미식 보드</span>
+  </div>
+</footer>
+
+<button type="button" class="scroll-top" aria-label="Back to top">
+  <svg><use href="#i-arrow-up"/></svg>
+</button>
+
+<script>
+(function () {
+  var KEY = 'krambles-fontsize';
+  var STEPS = ['xs', 'sm', 'md', 'lg', 'xl'];
+  var root = document.documentElement;
+  var ctrl = document.querySelector('.font-size-ctrl');
+  if (!ctrl) { return; }
+  var decBtn = ctrl.querySelector('[data-action="dec"]');
+  var incBtn = ctrl.querySelector('[data-action="inc"]');
+  var index = 2;
+
+  function apply(i) {
+    var size = STEPS[i];
+    if (size === 'md') { root.removeAttribute('data-fs'); }
+    else { root.setAttribute('data-fs', size); }
+    decBtn.disabled = i === 0;
+    incBtn.disabled = i === STEPS.length - 1;
+  }
+
+  var saved = 'md';
+  try { saved = localStorage.getItem(KEY) || 'md'; } catch (e) {}
+  index = STEPS.indexOf(saved);
+  if (index === -1) { index = 2; }
+  apply(index);
+
+  decBtn.addEventListener('click', function () {
+    if (index > 0) {
+      index--;
+      apply(index);
+      try { localStorage.setItem(KEY, STEPS[index]); } catch (e) {}
+    }
+  });
+  incBtn.addEventListener('click', function () {
+    if (index < STEPS.length - 1) {
+      index++;
+      apply(index);
+      try { localStorage.setItem(KEY, STEPS[index]); } catch (e) {}
+    }
+  });
+})();
+
+(function () {
+  var btn = document.querySelector('.scroll-top');
+  if (!btn) { return; }
+  function onScroll() {
+    if (window.scrollY > 600) { btn.classList.add('visible'); }
+    else { btn.classList.remove('visible'); }
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  btn.addEventListener('click', function () {
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
+  });
+})();
+
+(function () {
+  function openModal(id) {
+    var modal = document.getElementById(id);
+    if (!modal) { return; }
+    modal.hidden = false;
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal(modal) {
+    modal.hidden = true;
+    document.body.style.overflow = '';
+  }
+  document.querySelectorAll('[data-modal-open]').forEach(function (btn) {
+    btn.addEventListener('click', function () { openModal(btn.getAttribute('data-modal-open')); });
+  });
+  document.querySelectorAll('.modal-overlay').forEach(function (overlay) {
+    overlay.addEventListener('click', function (e) {
+      if (e.target === overlay) { closeModal(overlay); }
+    });
+    overlay.querySelectorAll('[data-modal-close]').forEach(function (btn) {
+      btn.addEventListener('click', function () { closeModal(overlay); });
+    });
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      document.querySelectorAll('.modal-overlay').forEach(function (overlay) {
+        if (!overlay.hidden) { closeModal(overlay); }
+      });
+    }
+  });
+})();
+</script>
+<script src="/assets/js/krambles-render.js"></script>
+<div class="share-toast" role="status" aria-live="polite"></div>
+<script>
+(function () {
+  var URL_ = document.querySelector('link[rel="canonical"]').href;
+  var TITLE = document.title.replace(/ \| K-Rambles$/, '');
+  var isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent) || (navigator.maxTouchPoints > 1 && /Macintosh/.test(navigator.userAgent));
+  var toast = document.querySelector('.share-toast'), tt;
+  function say(msg) { if (!toast) { return; } toast.textContent = msg; toast.classList.add('show'); clearTimeout(tt); tt = setTimeout(function () { toast.classList.remove('show'); }, 2200); }
+  function copy(text, ok) {
+    function fallback() { var t = document.createElement('textarea'); t.value = text; t.style.position = 'fixed'; t.style.opacity = '0'; document.body.appendChild(t); t.select(); try { document.execCommand('copy'); say(ok); } catch (e) { say('복사하지 못했어요'); } document.body.removeChild(t); }
+    if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(function () { say(ok); }, fallback); } else { fallback(); }
+  }
+  document.addEventListener('click', function (e) {
+    var b = e.target.closest('[data-share="link"]'); if (!b) { return; }
+    if (isMobile && navigator.share) { navigator.share({ title: TITLE, url: URL_ }).catch(function () {}); } else { copy(URL_, '링크를 복사했어요'); }
+  });
+})();
+</script>
+<script data-goatcounter="https://krambles.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
