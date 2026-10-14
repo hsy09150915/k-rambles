@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nam-gu Bulky Waste Fees</title>
+<meta name="robots" content="noindex">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Work+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap');
+
+  :root {
+    --paper: #ecdfc0;
+    --paper-raised: #fbf8ee;
+    --ink: #372b10;
+    --ink-soft: #6e5c33;
+    --coral: #d9532a;
+    --coral-ink: #9c3b1c;
+    --navy: #1b2a4a;
+    --navy-ink: #26406e;
+    --marigold: #c8891f;
+    --marigold-ink: #8a5c10;
+    --line: rgba(55, 43, 16, 0.16);
+    --line-strong: rgba(55, 43, 16, 0.3);
+    --card-shadow: 0 18px 34px -20px rgba(40, 30, 10, 0.4);
+    --ok: #1a7a3d;
+    --no: #b3261e;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #1b1509; --paper-raised: #2b2211; --ink: #f7f0dd; --ink-soft: #cbb98f;
+      --coral: #ef7448; --coral-ink: #ffb497; --navy: #9fb4e0; --navy-ink: #cfdcf5; --marigold: #e8b24b; --marigold-ink: #ffcf7d;
+      --line: rgba(247,240,221,0.16); --line-strong: rgba(247,240,221,0.3);
+      --card-shadow: 0 18px 34px -18px rgba(0,0,0,0.65);
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #1b1509; --paper-raised: #2b2211; --ink: #f7f0dd; --ink-soft: #cbb98f;
+    --coral: #ef7448; --coral-ink: #ffb497; --navy: #9fb4e0; --navy-ink: #cfdcf5; --marigold: #e8b24b; --marigold-ink: #ffcf7d;
+    --line: rgba(247,240,221,0.16); --line-strong: rgba(247,240,221,0.3);
+    --card-shadow: 0 18px 34px -18px rgba(0,0,0,0.65);
+  }
+
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: "Work Sans", ui-sans-serif, system-ui, sans-serif; font-size: 1.0625rem; line-height: 1.6; -webkit-font-smoothing: antialiased; word-break: keep-all; overflow-wrap: break-word; }
+
+  html { font-size: 100%; }
+  html[data-fs="xs"] { font-size: 85%; }
+  html[data-fs="sm"] { font-size: 92.5%; }
+  html[data-fs="lg"] { font-size: 115%; }
+  html[data-fs="xl"] { font-size: 135%; }
+  .font-size-ctrl { display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--line); border-radius: 100px; padding: 4px 8px; }
+  .fs-labels { display: inline-flex; align-items: baseline; gap: 3px; }
+  .fs-label { font-family: "Work Sans", sans-serif; font-weight: 600; color: var(--ink-soft); line-height: 1; user-select: none; }
+  .fs-label-sm { font-size: 0.68rem; }
+  .fs-label-lg { font-size: 1.15rem; }
+  .fs-step { appearance: none; border: none; background: none; cursor: pointer; color: var(--ink-soft); font-family: "Work Sans", sans-serif; font-weight: 700; font-size: 1.35rem; line-height: 1; width: 30px; height: 30px; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; flex-shrink: 0; }
+  .fs-step:hover:not(:disabled) { background: var(--line); color: var(--ink); }
+  .fs-step:disabled { opacity: 0.32; cursor: default; }
+  a { color: inherit; }
+  .mono { font-family: "Space Mono", ui-monospace, "SF Mono", monospace; }
+  a.mono { color: var(--navy-ink); text-decoration: underline; text-underline-offset: 2px; }
+  a.mono:hover { color: var(--coral-ink); }
+  .keyword-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 6px; }
+  .keyword-link { display: inline-flex; align-items: center; gap: 6px; text-decoration: none; color: var(--ink); background: var(--paper-raised); border: 1px solid var(--line); border-radius: 999px; padding: 8px 14px; font-size: 0.88rem; }
+  .keyword-link:hover { border-color: var(--coral); color: var(--coral-ink); }
+  .keyword-link svg { width: 14px; height: 14px; stroke: var(--ink-soft); fill: none; stroke-width: 2; }
+
+  header.site { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px 20px; padding: 26px 28px; max-width: 820px; margin: 0 auto; }
+  .header-right { display: flex; align-items: center; flex-wrap: wrap; justify-content: flex-end; gap: 10px 16px; }
+  .logo { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 1.2rem; text-decoration: none; white-space: nowrap; }
+  .logo span { color: var(--coral); }
+  .back-link { font-family: "Space Mono", monospace; font-size: 0.78rem; letter-spacing: 0.03em; text-decoration: none; color: var(--ink-soft); display: inline-flex; flex-direction: column; align-items: flex-start; gap: 2px; line-height: 1; white-space: nowrap; }
+  .back-link svg { width: 12px; height: 12px; }
+  .back-link:hover { color: var(--navy-ink); }
+  .lang-switch { display: flex; align-items: center; gap: 6px; font-family: "Space Mono", monospace; font-size: 0.76rem; letter-spacing: 0.03em; }
+  .lang-switch a, .lang-switch span.current { text-decoration: none; padding: 3px 8px; border-radius: 6px; }
+  .lang-switch a { color: var(--ink-soft); }
+  .lang-switch a:hover { color: var(--ink); }
+  .lang-switch span.current { color: var(--ink); font-weight: 700; border: 1px solid var(--line); }
+
+  .art-hero { padding: 10px 28px 24px; max-width: 820px; margin: 0 auto; }
+  .hero-photo-wrap { max-width: 820px; margin: 0 auto 8px; padding: 0 28px; }
+  .hero-photo { display: block; width: 100%; height: auto; border-radius: 16px; box-shadow: var(--card-shadow); border: 1px solid var(--line); }
+  .cite-note { font-size: 0.92rem; color: var(--ink-soft); margin: 10px 0 0; }
+  .stamp { display: inline-flex; align-items: center; gap: 9px; font-family: "Space Mono", monospace; font-size: 0.76rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--navy-ink); border: 1.5px dashed var(--navy); border-radius: 999px; padding: 6px 14px 6px 11px; transform: rotate(-1.5deg); }
+  .stamp::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--navy); display: inline-block; }
+
+  .hero-top { display: flex; align-items: center; gap: 16px; margin: 22px 0 24px; }
+  .hero-icon { width: 40px; height: 40px; stroke: var(--navy-ink); fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; }
+
+  h1.art-title { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: clamp(1.9rem, 4.6vw, 2.7rem); line-height: 1.28; letter-spacing: -0.01em; margin: 0 0 14px; text-wrap: balance; }
+  p.dek { font-size: 1.08rem; color: var(--ink-soft); max-width: 58ch; margin: 0; }
+
+  .updated-badge { display: inline-flex; align-items: center; gap: 7px; font-size: 0.92rem; color: var(--ink-soft); margin: 16px 0 0; }
+  .updated-icon { width: 17px; height: 17px; stroke: var(--navy-ink); fill: none; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+
+  section.block { max-width: 820px; margin: 0 auto; padding: 6px 28px 30px; }
+  section.block.section-gap { padding-top: 30px; }
+
+  .block-head { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+  .block-icon { width: 22px; height: 22px; stroke: var(--navy-ink); fill: none; stroke-width: 1.7; flex-shrink: 0; }
+  .block-title { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 1.3rem; margin: 0; }
+
+  p.body-text { margin: 0 0 14px; }
+  ul.plain-list { list-style: disc; margin: 0 0 14px; padding-left: 1.2em; }
+  ul.plain-list li + li { margin-top: 12px; }
+  ol.plain-list-num { margin: 0 0 14px; padding-left: 1.2em; }
+  ol.plain-list-num li + li { margin-top: 12px; }
+
+  table.data-table { width: 100%; border-collapse: collapse; background: var(--paper-raised); font-size: 0.92rem; margin: 4px 0 18px; word-break: keep-all; overflow-wrap: break-word; }
+  table.data-table th, table.data-table td { text-align: left; padding: 12px 14px; border-bottom: 1px solid var(--line); word-break: keep-all; overflow-wrap: break-word; vertical-align: top; }
+  table.data-table th:first-child, table.data-table td:first-child { padding-left: 16px; }
+  table.data-table th:last-child, table.data-table td:last-child { padding-right: 16px; }
+  table.data-table thead th { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; color: var(--ink-soft); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.03em; border-bottom: 1px solid var(--line-strong); white-space: nowrap; }
+  table.data-table tbody tr:last-child td { border-bottom: none; }
+  table.data-table td p, table.data-table td ul { margin: 0; }
+  table.data-table td ul { padding-left: 1.1em; }
+  table.data-table td li + li, table.data-table td p + p { margin-top: 6px; }
+
+  /* On narrow screens, tables flip from columns to stacked cards so no column gets squeezed into a one-character-wide strip. */
+  @media (max-width: 640px) {
+    table.data-table { display: block; }
+    table.data-table thead { display: none; }
+    table.data-table tbody { display: block; }
+    table.data-table { background: transparent; }
+    table.data-table tr { display: block; padding: 14px 16px; margin-bottom: 12px; border: 2px solid var(--line-strong); border-radius: 0; background: var(--paper-raised); }
+    table.data-table tr:last-child { margin-bottom: 0; }
+    table.data-table td { display: block; padding: 8px 0; border-bottom: 1px solid var(--line); }
+    table.data-table td:first-child { padding-left: 0; }
+    table.data-table td:last-child { padding-right: 0; border-bottom: none; }
+    table.data-table td::before { content: attr(data-label); display: block; font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; color: var(--ink-soft); font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.03em; margin-bottom: 4px; }
+  }
+
+  .callout { background: var(--paper-raised); border: 1px solid var(--line); border-left: 3px solid var(--marigold); border-radius: 12px; padding: 18px 20px; margin: 16px 0 0; box-shadow: var(--card-shadow); }
+  .callout-head { display: flex; align-items: center; gap: 8px; font-weight: 700; margin-bottom: 8px; }
+  .callout-head svg { width: 18px; height: 18px; stroke: var(--marigold-ink); fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+  .callout p { margin: 0; font-size: 0.95rem; color: var(--ink-soft); }
+  .callout p + p { margin-top: 8px; }
+  .callout strong.warn { color: var(--coral-ink); }
+
+  .step-list { list-style: none; margin: 6px 0 0; padding: 0; display: flex; flex-direction: column; gap: 24px; }
+  .step-item { display: flex; flex-direction: column; gap: 8px; }
+  .step-head { display: flex; align-items: flex-start; gap: 12px; }
+  .step-badge { width: 28px; height: 28px; border-radius: 50%; background: var(--coral); color: #fff5ee; font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 0.9rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .step-body h3 { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 1.0rem; margin: 2px 0 4px; }
+  .step-body p { margin: 0; font-size: 0.93rem; color: color-mix(in srgb, var(--ink) 60%, var(--ink-soft)); }
+
+  .official-links { display: flex; flex-wrap: wrap; gap: 10px; margin: 14px 0 0; }
+  .official-link { display: inline-flex; align-items: center; gap: 6px; text-decoration: none; color: var(--ink); background: var(--paper-raised); border: 1px solid var(--line); border-radius: 999px; padding: 8px 14px; font-size: 0.86rem; }
+  .official-link:hover { border-color: var(--navy); color: var(--navy-ink); }
+  .official-link svg { width: 14px; height: 14px; stroke: var(--ink-soft); fill: none; stroke-width: 2; }
+
+  .scroll-top { position: fixed; right: 20px; bottom: 20px; width: 46px; height: 46px; border-radius: 50%; background: var(--coral); color: #fff5ee; display: flex; align-items: center; justify-content: center; box-shadow: var(--card-shadow); border: none; cursor: pointer; opacity: 0; pointer-events: none; transition: opacity 0.2s ease, transform 0.15s ease; z-index: 40; }
+  .scroll-top.visible { opacity: 1; pointer-events: auto; }
+  .scroll-top:hover { transform: translateY(-3px); background: var(--coral-ink); }
+  .scroll-top svg { width: 20px; height: 20px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  @media (prefers-reduced-motion: reduce) { .scroll-top { transition: none; } }
+
+  footer.site { border-top: 1px solid var(--line); padding: 24px 28px 40px; }
+  .footer-inner { max-width: 820px; margin: 0 auto; }
+  .footer-inner .mono { font-size: 0.76rem; color: var(--ink-soft); }
+
+  section.block > * + *, .shop-card > * + * { margin-top: 18px; }
+  section.block > .callout + *, section.block > table.data-table + *, section.block > ol.step-list + *, section.block > .official-links + * { margin-top: 44px; }
+  section.block > table.data-table + p.body-text[style*="font-size:0.9rem"] { margin-top: 18px; }
+
+  @media (max-width: 400px) {
+    header.site { padding: 18px 16px; flex-wrap: wrap; row-gap: 10px; }
+    .logo { font-size: 1.02rem; }
+    .header-right { gap: 10px; flex-wrap: wrap; }
+    .art-hero, section.block { padding-left: 16px; padding-right: 16px; }
+  }
+  @media (max-width: 340px) {
+    .logo { font-size: 0.9rem; }
+    .font-size-ctrl { padding: 3px 6px; gap: 5px; }
+  }
+
+  button.official-link { font-family: "Work Sans", sans-serif; }
+
+  .modal-overlay { position: fixed; inset: 0; background: rgba(20, 15, 5, 0.52); display: flex; align-items: flex-end; justify-content: center; z-index: 60; padding: 0; }
+  .modal-overlay[hidden] { display: none; }
+  .modal-card { background: var(--paper-raised); color: var(--ink); width: 100%; max-width: 680px; max-height: 82vh; border-radius: 18px 18px 0 0; box-shadow: var(--card-shadow); padding: 22px 22px calc(22px + env(safe-area-inset-bottom, 0px)); overflow-y: auto; border: 1px solid var(--line); border-bottom: none; }
+  @media (min-width: 720px) {
+    .modal-overlay { align-items: center; }
+    .modal-card { border-radius: 18px; border-bottom: 1px solid var(--line); max-height: 78vh; }
+  }
+  .modal-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 8px; }
+  .modal-head h3 { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 1.1rem; margin: 0; }
+  .modal-close { appearance: none; border: none; background: var(--line); color: var(--ink); width: 30px; height: 30px; border-radius: 50%; font-size: 1.3rem; line-height: 1; cursor: pointer; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
+  .modal-close:hover { background: var(--coral); color: #fff5ee; }
+  .modal-source { font-size: 0.84rem; color: var(--ink-soft); margin: 0 0 16px; }
+  .modal-group + .modal-group { margin-top: 18px; }
+  .modal-group h4 { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 0.95rem; margin: 0 0 6px; display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+  .modal-count { font-family: "Space Mono", monospace; font-weight: 400; font-size: 0.78rem; color: var(--ink-soft); }
+  .modal-countries { font-size: 0.9rem; color: var(--ink-soft); margin: 0; line-height: 1.7; }
+  table.data-table.keep { display: table; width: 100%; border-collapse: separate; border-spacing: 0; border: 1px solid var(--line-strong); border-radius: 12px; overflow: hidden; background: var(--paper-raised); }
+  table.data-table.keep thead { display: table-header-group; }
+  table.data-table.keep tbody { display: table-row-group; }
+  table.data-table.keep tr { display: table-row; padding: 0; margin: 0; border: 0; background: transparent; }
+  table.data-table.keep th { text-align: left; padding: 9px 14px; font-size: 0.8rem; color: var(--ink-soft); background: rgba(127,127,127,0.10); border: 0; border-bottom: 1px solid var(--line-strong); white-space: nowrap; text-transform: none; letter-spacing: 0; }
+  table.data-table.keep td { display: table-cell; padding: 11px 14px; border: 0; border-bottom: 1px solid var(--line); font-size: 0.95rem; line-height: 1.5; vertical-align: top; text-align: left; }
+  table.data-table.keep td::before { content: none; display: none; }
+  table.data-table.keep td:first-child { white-space: nowrap; background: rgba(127,127,127,0.06); border-right: 1px solid var(--line); }
+  table.data-table.keep tr:last-child td { border-bottom: 0; }
+  @media (max-width: 560px) { table.data-table.keep td, table.data-table.keep th { padding: 10px 11px; font-size: 0.92rem; } }
+  table.data-table.keep td:first-child { white-space: normal; min-width: 6.2em; }
+  .share-icon-btn { font: inherit; cursor: pointer; width: 38px; height: 38px; border-radius: 50%; border: 1px solid var(--line); background: transparent; color: var(--ink); display: inline-flex; align-items: center; justify-content: center; padding: 0; }
+  .share-icon-btn:hover { border-color: var(--coral); color: var(--coral-ink); }
+  .share-icon-btn svg { width: 18px; height: 18px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  .share-toast { position: fixed; left: 50%; bottom: 84px; transform: translateX(-50%); background: var(--ink); color: #fff; font-size: .88rem; padding: 10px 18px; border-radius: 999px; opacity: 0; pointer-events: none; transition: opacity .2s; z-index: 50; }
+  .share-toast.show { opacity: 1; }
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-doc" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.5 4 5.5 4 9s-1.5 6.5-4 9c-2.5-2.5-4-5.5-4-9s1.5-6.5 4-9Z"/></symbol>
+  <symbol id="i-pass" viewBox="0 0 24 24"><path d="M4 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v1.3a1.5 1.5 0 0 0 0 2.9V13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-1.3a1.5 1.5 0 0 0 0-2.9Z" transform="translate(0 2)"/><path d="M9 6.5v11" stroke-dasharray="2 2" transform="translate(0 2)"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M4 12.5 9.5 18 20 6.5"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5.5M12 8v.01"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 9.8h17M8 2.5v5M16 2.5v5"/></symbol>
+  <symbol id="i-link" viewBox="0 0 24 24"><path d="M9.5 14.5 14.5 9.5"/><path d="M8.3 11.7l-1.6 1.6a3 3 0 0 0 4.2 4.2l1.6-1.6"/><path d="M15.7 12.3l1.6-1.6a3 3 0 0 0-4.2-4.2l-1.6 1.6"/></symbol>
+  <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></symbol>
+</svg>
+
+<main style="max-width:820px;margin:0 auto;padding:16px">
+<table class="data-table keep"><thead><tr><th>Item</th><th>Size / type</th><th>Fee</th></tr></thead><tbody>
+<tr><td><strong>Gas oven range</strong><br><small>가스오븐레인지</small></td><td>All sizes</td><td>₩4,000</td></tr>
+<tr><td><strong>Air purifier</strong><br><small>공기청정기</small></td><td>Length 1 m or more</td><td>₩6,000</td></tr>
+<tr><td style="border-bottom:0"><strong>Refrigerator (household)</strong><br><small>냉장고(가정용)</small></td><td>Under 300 ℓ</td><td>₩8,000</td></tr>
+<tr><td style="border-bottom:0"></td><td>300 ℓ to under 500 ℓ</td><td>₩12,000</td></tr>
+<tr><td></td><td>500 ℓ or more</td><td>₩17,000</td></tr>
+<tr><td><strong>Copier</strong><br><small>복사기</small></td><td>All sizes</td><td>₩8,000</td></tr>
+<tr><td style="border-bottom:0"><strong>Washing machine</strong><br><small>세탁기</small></td><td>Under 5 kg</td><td>₩4,000</td></tr>
+<tr><td style="border-bottom:0"></td><td>5 kg to under 10 kg</td><td>₩5,000</td></tr>
+<tr><td></td><td>10 kg or more</td><td>₩7,000</td></tr>
+<tr><td style="border-bottom:0"><strong>Air conditioner</strong><br><small>에어컨</small></td><td>Wall-mounted</td><td>₩5,000</td></tr>
+<tr><td></td><td>Standing</td><td>₩8,000</td></tr>
+<tr><td style="border-bottom:0"><strong>Fan heater</strong><br><small>온풍기</small></td><td>Width under 70 cm</td><td>₩6,000</td></tr>
+<tr><td></td><td>Width 70 cm or more</td><td>₩8,000</td></tr>
+<tr><td style="border-bottom:0"><strong>Jade mat / heated mat / medical mat</strong><br><small>옥매트·온수매트·의료용매트</small></td><td>1 person (width up to 100 cm)</td><td>₩6,000</td></tr>
+<tr><td style="border-bottom:0"></td><td>2 people (width up to 150 cm)</td><td>₩9,000</td></tr>
+<tr><td></td><td>Medical mat</td><td>₩11,000</td></tr>
+<tr><td style="border-bottom:0"><strong>Electric heating pad</strong><br><small>전기장판</small></td><td>1 person (width up to 100 cm)</td><td>₩4,000</td></tr>
+<tr><td style="border-bottom:0"></td><td>2 people (width up to 150 cm)</td><td>₩6,000</td></tr>
+<tr><td></td><td>3 people (width 151 cm or more)</td><td>₩9,000</td></tr>
+<tr><td><strong>Electric oven range</strong><br><small>전기오븐레인지</small></td><td>All sizes</td><td>₩5,000</td></tr>
+<tr><td><strong>Stereo system (speakers charged separately)</strong><br><small>전축(받침 별도)</small></td><td>All sizes</td><td>₩6,000</td></tr>
+<tr><td style="border-bottom:0"><strong>Television</strong><br><small>텔레비전</small></td><td>Under 29 in</td><td>₩3,000</td></tr>
+<tr><td style="border-bottom:0"></td><td>29 in to under 49 in</td><td>₩4,000</td></tr>
+<tr><td></td><td>49 in or more</td><td>₩10,000</td></tr>
+</tbody></table>
+<div style="height:28px"></div>
+<table class="data-table keep"><thead><tr><th>Item</th><th>Size / type</th><th>Fee</th></tr></thead><tbody>
+<tr><td style="border-bottom:0"><strong>Living room cabinet / TV stand / low horizontal furniture</strong><br><small>거실장식장(문갑, TV 받침, 가로형 가구)</small></td><td>Length under 90 cm</td><td>₩4,000</td></tr>
+<tr><td style="border-bottom:0"></td><td>90 cm to under 120 cm</td><td>₩7,000</td></tr>
+<tr><td></td><td>120 cm or more</td><td>₩9,000</td></tr>
+<tr><td style="border-bottom:0"><strong>Low dining table</strong><br><small>상</small></td><td>Under 6 people</td><td>₩2,000</td></tr>
+<tr><td></td><td>6 people or more</td><td>₩3,000</td></tr>
+<tr><td style="border-bottom:0"><strong>Chest of drawers</strong><br><small>서랍장</small></td><td>3 tiers or fewer</td><td>₩5,000</td></tr>
+<tr><td style="border-bottom:0"></td><td>4 tiers</td><td>₩7,000</td></tr>
+<tr><td style="border-bottom:0"></td><td>5 tiers</td><td>₩9,000</td></tr>
+<tr><td></td><td>6 tiers or more</td><td>₩11,000</td></tr>
+<tr><td style="border-bottom:0"><strong>Sofa (cushions charged separately)</strong><br><small>소파(쿠션 별도)</small></td><td>1 seat (width 0.8 m)</td><td>₩6,000</td></tr>
+<tr><td style="border-bottom:0"></td><td>2 seats (width 1.2 m)</td><td>₩10,000</td></tr>
+<tr><td style="border-bottom:0"></td><td>3 seats (width 1.8 m)</td><td>₩13,000</td></tr>
+<tr><td></td><td>Recliner</td><td>Sofa fee + ₩5,000</td></tr>
+<tr><td style="border-bottom:0"><strong>Dining table (glass top charged separately)</strong><br><small>식탁(유리 별도)</small></td><td>Wood, under 6 seats</td><td>₩5,000</td></tr>
+<tr><td style="border-bottom:0"></td><td>Wood, 6 seats or more</td><td>₩7,000</td></tr>
+<tr><td style="border-bottom:0"></td><td>Marble, under 6 seats</td><td>₩14,000</td></tr>
+<tr><td></td><td>Marble, 6 seats or more</td><td>₩18,000</td></tr>
+<tr><td style="border-bottom:0"><strong>Shoe cabinet</strong><br><small>신발장</small></td><td>Length under 1 m</td><td>₩5,000</td></tr>
+<tr><td></td><td>1 m or more</td><td>₩8,000</td></tr>
+<tr><td><strong>Mirror / picture frame / glass</strong><br><small>거울, 액자, 유리</small></td><td>Per 40 cm of length</td><td>₩1,000</td></tr>
+<tr><td style="border-bottom:0"><strong>Chair</strong><br><small>의자</small></td><td>Steel (folding chair)</td><td>₩2,000</td></tr>
+<tr><td style="border-bottom:0"></td><td>Wood</td><td>₩3,000</td></tr>
+<tr><td style="border-bottom:0"></td><td>Swivel / office chair</td><td>₩5,000</td></tr>
+<tr><td></td><td>Massage chair</td><td>₩25,000</td></tr>
+<tr><td style="border-bottom:0"><strong>Wardrobe</strong><br><small>장롱</small></td><td>Under 90 cm</td><td>₩8,000</td></tr>
+<tr><td></td><td>90 cm or more</td><td>₩12,000</td></tr>
+<tr><td style="border-bottom:0"><strong>Display / curio / china cabinet</strong><br><small>장식장, 진열장, 찬장</small></td><td>Width under 85 cm</td><td>₩8,000</td></tr>
+<tr><td style="border-bottom:0"></td><td>85 cm to under 110 cm</td><td>₩12,000</td></tr>
+<tr><td></td><td>110 cm or more</td><td>₩14,000</td></tr>
+<tr><td style="border-bottom:0"><strong>Window frame</strong><br><small>창문(틀)</small></td><td>Wood or steel</td><td>₩3,000</td></tr>
+<tr><td></td><td>High-performance sash</td><td>₩6,000</td></tr>
+<tr><td style="border-bottom:0"><strong>Desk</strong><br><small>책상</small></td><td>Single-pedestal (small)</td><td>₩6,000</td></tr>
+<tr><td></td><td>Double-pedestal (large)</td><td>₩9,000</td></tr>
+<tr><td style="border-bottom:0"><strong>Bookcase</strong><br><small>책장</small></td><td>Height under 90 cm</td><td>₩7,000</td></tr>
+<tr><td style="border-bottom:0"></td><td>90 cm to under 120 cm</td><td>₩9,000</td></tr>
+<tr><td></td><td>120 cm or more</td><td>₩11,000</td></tr>
+<tr><td style="border-bottom:0"><strong>Mattress</strong><br><small>침대 매트리스</small></td><td>Standard, single</td><td>₩8,000</td></tr>
+<tr><td style="border-bottom:0"></td><td>Standard, double</td><td>₩10,000</td></tr>
+<tr><td style="border-bottom:0"></td><td>Latex / pocket spring, single</td><td>₩11,000</td></tr>
+<tr><td></td><td>Latex / pocket spring, double</td><td>₩15,000</td></tr>
+<tr><td style="border-bottom:0"><strong>Bed frame</strong><br><small>침대틀(프레임)</small></td><td>Standard, single</td><td>₩5,000</td></tr>
+<tr><td style="border-bottom:0"></td><td>Standard, double</td><td>₩8,000</td></tr>
+<tr><td style="border-bottom:0"></td><td>Drawer / platform / sofa type, single</td><td>₩12,000</td></tr>
+<tr><td></td><td>Drawer / platform / sofa type, double</td><td>₩15,000</td></tr>
+<tr><td style="border-bottom:0"><strong>Clay / stone bed</strong><br><small>흙·돌침대</small></td><td>Single</td><td>₩28,000</td></tr>
+<tr><td></td><td>Double</td><td>₩38,000</td></tr>
+<tr><td style="border-bottom:0"><strong>Piano</strong><br><small>피아노</small></td><td>Digital</td><td>₩8,000</td></tr>
+<tr><td style="border-bottom:0"></td><td>Upright</td><td>₩20,000</td></tr>
+<tr><td></td><td>Grand</td><td>₩30,000</td></tr>
+<tr><td style="border-bottom:0"><strong>Dressing table (mirror included, chair charged separately)</strong><br><small>화장대(거울 포함, 의자 별도)</small></td><td>1-tier storage</td><td>₩6,000</td></tr>
+<tr><td style="border-bottom:0"></td><td>2-tier storage</td><td>₩8,000</td></tr>
+<tr><td></td><td>3-tier storage or more</td><td>₩9,000</td></tr>
+</tbody></table>
+<div style="height:28px"></div>
+<table class="data-table keep"><thead><tr><th>Item</th><th>Size / type</th><th>Fee</th></tr></thead><tbody>
+<tr><td style="border-bottom:0"><strong>Bag</strong><br><small>가방류</small></td><td>Small (non-travel)</td><td>₩1,000</td></tr>
+<tr><td style="border-bottom:0"></td><td>Large travel bag</td><td>₩3,000</td></tr>
+<tr><td></td><td>Golf bag</td><td>₩4,000</td></tr>
+<tr><td><strong>Signboard</strong><br><small>간판</small></td><td>Per 1 m of length</td><td>₩5,000</td></tr>
+<tr><td><strong>Dog house</strong><br><small>개집</small></td><td>All sizes</td><td>₩5,000</td></tr>
+<tr><td><strong>Cat tower</strong><br><small>고양이타워</small></td><td>All sizes</td><td>₩5,000</td></tr>
+<tr><td style="border-bottom:0"><strong>Oil tank</strong><br><small>기름탱크</small></td><td>Under 400 ℓ</td><td>₩4,000</td></tr>
+<tr><td></td><td>400 ℓ or more</td><td>₩6,000</td></tr>
+<tr><td style="border-bottom:0"><strong>Safe (excluding large industrial)</strong><br><small>금고(대형업소용 제외)</small></td><td>Under 60 cm</td><td>₩30,000</td></tr>
+<tr><td></td><td>60 cm or more</td><td>₩40,000</td></tr>
+<tr><td><strong>Stove</strong><br><small>난로</small></td><td>All sizes</td><td>₩5,000</td></tr>
+<tr><td style="border-bottom:0"><strong>Floor mat (daecheori / summer mat)</strong><br><small>돗자리(대자리)</small></td><td>Standard, single</td><td>₩2,000</td></tr>
+<tr><td style="border-bottom:0"></td><td>Standard, double</td><td>₩3,000</td></tr>
+<tr><td></td><td>Large "majak" mat</td><td>₩7,000</td></tr>
+<tr><td style="border-bottom:0"><strong>Wood</strong><br><small>목재류</small></td><td>Garden trees (per 100 ℓ sack)</td><td>₩8,000</td></tr>
+<tr><td></td><td>Scrap lumber (per 1-ton truck load)</td><td>₩80,000</td></tr>
+<tr><td style="border-bottom:0"><strong>Door leaf</strong><br><small>문짝</small></td><td>Wood / steel</td><td>₩4,000</td></tr>
+<tr><td style="border-bottom:0"></td><td>High-performance sash</td><td>₩6,000</td></tr>
+<tr><td style="border-bottom:0"></td><td>Regular glass door</td><td>₩5,000</td></tr>
+<tr><td></td><td>Tempered glass door</td><td>₩10,000</td></tr>
+<tr><td style="border-bottom:0"><strong>Water tank (FRP)</strong><br><small>물탱크(FRP)</small></td><td>Under 1 ton</td><td>₩15,000</td></tr>
+<tr><td></td><td>1 ton or more</td><td>₩25,000</td></tr>
+<tr><td style="border-bottom:0"><strong>Pillow (cushion included)</strong><br><small>베개(쿠션포함)</small></td><td>Length under 40 cm</td><td>₩1,000</td></tr>
+<tr><td style="border-bottom:0"></td><td>40 cm to under 60 cm</td><td>₩2,000</td></tr>
+<tr><td></td><td>60 cm or more</td><td>₩3,000</td></tr>
+<tr><td><strong>Toilet (tank included)</strong><br><small>변기(물통포함)</small></td><td>All sizes</td><td>₩8,000</td></tr>
+<tr><td><strong>Folding screen</strong><br><small>병풍</small></td><td>All sizes</td><td>₩4,000</td></tr>
+<tr><td><strong>Boiler</strong><br><small>보일러</small></td><td>All sizes</td><td>₩7,000</td></tr>
+<tr><td><strong>Walker</strong><br><small>보행기</small></td><td>All sizes</td><td>₩2,000</td></tr>
+<tr><td><strong>Washbasin</strong><br><small>세면기</small></td><td>All sizes</td><td>₩5,000</td></tr>
+<tr><td><strong>Umbrella</strong><br><small>우산</small></td><td>All sizes</td><td>₩1,000</td></tr>
+<tr><td style="border-bottom:0"><strong>Baby stroller</strong><br><small>유모차</small></td><td>Small</td><td>₩3,000</td></tr>
+<tr><td></td><td>Large</td><td>₩5,000</td></tr>
+<tr><td><strong>Floor mattress pad / blanket</strong><br><small>요(담요)</small></td><td>All sizes</td><td>₩2,000</td></tr>
+<tr><td style="border-bottom:0"><strong>Bedding (duvet)</strong><br><small>이불</small></td><td>Single-layer, per piece</td><td>₩2,000</td></tr>
+<tr><td></td><td>Cotton-filled, per piece</td><td>₩4,000</td></tr>
+<tr><td style="border-bottom:0"><strong>Exercise equipment</strong><br><small>운동기구</small></td><td>Small equipment</td><td>₩4,000</td></tr>
+<tr><td style="border-bottom:0"></td><td>Indoor bike</td><td>₩7,000</td></tr>
+<tr><td></td><td>Treadmill</td><td>₩11,000</td></tr>
+<tr><td style="border-bottom:0"><strong>Bicycle</strong><br><small>자전거</small></td><td>Child</td><td>₩2,000</td></tr>
+<tr><td></td><td>Teen / adult</td><td>₩3,000</td></tr>
+<tr><td style="border-bottom:0"><strong>Large earthenware jar</strong><br><small>장독</small></td><td>Height under 30 cm</td><td>₩1,000</td></tr>
+<tr><td style="border-bottom:0"></td><td>30 cm to under 70 cm</td><td>₩3,000</td></tr>
+<tr><td></td><td>70 cm or more</td><td>₩5,000</td></tr>
+<tr><td><strong>Flooring boards</strong><br><small>장판류</small></td><td>Per 1 m²</td><td>₩1,000</td></tr>
+<tr><td style="border-bottom:0"><strong>Sewing machine frame</strong><br><small>재봉틀</small></td><td>Frame</td><td>₩1,000</td></tr>
+<tr><td></td><td>Wooden cabinet</td><td>₩4,000</td></tr>
+<tr><td style="border-bottom:0"><strong>Septic tank</strong><br><small>정화조통</small></td><td>Under 10 people</td><td>₩25,000</td></tr>
+<tr><td></td><td>10 people or more</td><td>₩40,000</td></tr>
+<tr><td><strong>Desktop book stand</strong><br><small>책꽂이(탁상용)</small></td><td>Per tier</td><td>₩1,000</td></tr>
+<tr><td><strong>Tent</strong><br><small>천막(텐트)</small></td><td>Per 100 ℓ sack</td><td>₩7,000</td></tr>
+<tr><td><strong>Carpet</strong><br><small>카펫</small></td><td>Per 1 m²</td><td>₩2,500</td></tr>
+<tr><td><strong>Partition panel</strong><br><small>칸막이(패널)</small></td><td>Per 1 m²</td><td>₩4,000</td></tr>
+<tr><td style="border-bottom:0"><strong>Steel cabinet</strong><br><small>캐비닛(철재)</small></td><td>Height under 1 m</td><td>₩3,000</td></tr>
+<tr><td></td><td>1 m or more</td><td>₩5,000</td></tr>
+<tr><td style="border-bottom:0"><strong>Waste tire (excluding special vehicles)</strong><br><small>폐타이어(특수용 제외)</small></td><td>Vehicles up to 1 ton</td><td>₩5,000</td></tr>
+<tr><td></td><td>Vehicles up to 2.5 tons</td><td>₩7,000</td></tr>
+<tr><td><strong>Wooden platform bench (pyeongsang)</strong><br><small>평상</small></td><td>Per 1 m²</td><td>₩6,000</td></tr>
+<tr><td style="border-bottom:0"><strong>Waste synthetic resin</strong><br><small>폐합성수지</small></td><td>Per 100 ℓ sack</td><td>₩6,000</td></tr>
+<tr><td></td><td>Per 1,000 kg</td><td>₩250,000</td></tr>
+<tr><td><strong>Plywood</strong><br><small>합판</small></td><td>Per 1 m²</td><td>₩3,000</td></tr>
+<tr><td style="border-bottom:0"><strong>Light fixture (shade included)</strong><br><small>형광등(갓포함)</small></td><td>Standard</td><td>₩1,000</td></tr>
+<tr><td></td><td>Decorative</td><td>₩4,000</td></tr>
+</tbody></table>
+</main>
