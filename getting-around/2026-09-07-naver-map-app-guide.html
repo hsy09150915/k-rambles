@@ -157,6 +157,12 @@
   .keyword-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 6px; }
   .keyword-link { display: inline-flex; align-items: center; gap: 6px; padding: 8px 16px; border: 1.5px solid var(--marigold); border-radius: 100px; color: var(--marigold-ink); font-size: 0.86rem; font-weight: 600; text-decoration: none; background: var(--paper-raised); }
   .keyword-link:hover { background: var(--marigold); color: #2a1c05; }
+  .store-list { list-style: none; margin: 0 0 18px; padding: 0; display: grid; gap: 12px; }
+  .store-list li { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; }
+  .store-name { font-weight: 700; min-width: 9.5em; }
+  .store-links { display: flex; flex-wrap: wrap; gap: 8px; }
+  .store-link { display: inline-flex; align-items: center; padding: 7px 14px; border: 1.5px solid var(--marigold); border-radius: 100px; color: var(--marigold-ink); font-size: 0.84rem; font-weight: 600; text-decoration: none; background: var(--paper-raised); }
+  .store-link:hover { background: var(--marigold); color: #2a1c05; }
   .keyword-link svg { width: 13px; height: 13px; stroke: currentColor; fill: none; stroke-width: 2; }
 
   footer.site { border-top: 1px solid var(--line); padding: 24px 28px 40px; }
@@ -214,10 +220,10 @@
   <p class="body-text">Getting transit info right in Busan is easier with a few apps installed ahead of time.</p>
   <p class="body-text">Most tourists default to Google Maps, but since it's not built by a local company, it tends to be less accurate here — plenty of reviews back that up. I recommend trying a more accurate Korea-specific app instead of Google Maps.</p>
   <p class="body-text">So here are three apps worth installing before a Korea (Busan) trip:</p>
-  <ul class="plain-list">
-    <li>Kakao Subway</li>
-    <li>Naver Map</li>
-    <li>Kakao Map</li>
+  <ul class="store-list">
+    <li><span class="store-name">Kakao Subway</span><span class="store-links"><a class="store-link" href="https://play.google.com/store/apps/details?id=net.orizinal.subway&hl=en" target="_blank" rel="noopener">Google Play</a><a class="store-link" href="https://apps.apple.com/kr/app/id1095533900?l=en-GB" target="_blank" rel="noopener">App Store</a></span></li>
+    <li><span class="store-name">Naver Map</span><span class="store-links"><a class="store-link" href="https://play.google.com/store/apps/details?id=com.nhn.android.nmap&hl=en" target="_blank" rel="noopener">Google Play</a><a class="store-link" href="https://apps.apple.com/kr/app/id311867728?l=en-GB" target="_blank" rel="noopener">App Store</a></span></li>
+    <li><span class="store-name">Kakao Map</span><span class="store-links"><a class="store-link" href="https://play.google.com/store/apps/details?id=net.daum.android.map&hl=en" target="_blank" rel="noopener">Google Play</a><a class="store-link" href="https://apps.apple.com/kr/app/id304608425?l=en-GB" target="_blank" rel="noopener">App Store</a></span></li>
   </ul>
   <p class="body-text">Android and iOS screens may differ slightly, but the overall steps are similar (the screenshots below are from Android).</p>
   <ul class="plain-list">

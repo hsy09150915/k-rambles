@@ -157,6 +157,12 @@
   .keyword-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 6px; }
   .keyword-link { display: inline-flex; align-items: center; gap: 6px; padding: 8px 16px; border: 1.5px solid var(--marigold); border-radius: 100px; color: var(--marigold-ink); font-size: 0.86rem; font-weight: 600; text-decoration: none; background: var(--paper-raised); }
   .keyword-link:hover { background: var(--marigold); color: #2a1c05; }
+  .store-list { list-style: none; margin: 0 0 18px; padding: 0; display: grid; gap: 12px; }
+  .store-list li { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; }
+  .store-name { font-weight: 700; min-width: 9.5em; }
+  .store-links { display: flex; flex-wrap: wrap; gap: 8px; }
+  .store-link { display: inline-flex; align-items: center; padding: 7px 14px; border: 1.5px solid var(--marigold); border-radius: 100px; color: var(--marigold-ink); font-size: 0.84rem; font-weight: 600; text-decoration: none; background: var(--paper-raised); }
+  .store-link:hover { background: var(--marigold); color: #2a1c05; }
   .keyword-link svg { width: 13px; height: 13px; stroke: currentColor; fill: none; stroke-width: 2; }
 
   footer.site { border-top: 1px solid var(--line); padding: 24px 28px 40px; }
@@ -214,10 +220,10 @@
   <p class="body-text">부산 여행에서 교통 정보를 제대로 챙기려면 미리 설치해두면 좋은 앱들이 있어요.</p>
   <p class="body-text">대부분의 관광객은 구글지도를 쓰시겠지만, 현지 기업이 만든 앱이 아니다 보니 오류가 많을 수밖에 없고 실제로도 그런 후기가 많은 편이에요. 구글맵 대신, 더 정확한 한국 전용 앱을 써보는 걸 추천해요.</p>
   <p class="body-text">그래서 한국(부산) 여행 전에 설치해두면 편리한 앱 3가지를 소개할게요.</p>
-  <ul class="plain-list">
-    <li>카카오지하철</li>
-    <li>네이버지도</li>
-    <li>카카오맵</li>
+  <ul class="store-list">
+    <li><span class="store-name">카카오지하철</span><span class="store-links"><a class="store-link" href="https://play.google.com/store/apps/details?id=net.orizinal.subway&hl=ko" target="_blank" rel="noopener">Google Play</a><a class="store-link" href="https://apps.apple.com/kr/app/id1095533900" target="_blank" rel="noopener">App Store</a></span></li>
+    <li><span class="store-name">네이버지도</span><span class="store-links"><a class="store-link" href="https://play.google.com/store/apps/details?id=com.nhn.android.nmap&hl=ko" target="_blank" rel="noopener">Google Play</a><a class="store-link" href="https://apps.apple.com/kr/app/id311867728" target="_blank" rel="noopener">App Store</a></span></li>
+    <li><span class="store-name">카카오맵</span><span class="store-links"><a class="store-link" href="https://play.google.com/store/apps/details?id=net.daum.android.map&hl=ko" target="_blank" rel="noopener">Google Play</a><a class="store-link" href="https://apps.apple.com/kr/app/id304608425" target="_blank" rel="noopener">App Store</a></span></li>
   </ul>
   <p class="body-text">안드로이드와 iOS는 설정 화면이 조금 다를 수 있지만 맥락은 비슷해요 (아래 화면은 안드로이드 기준이에요).</p>
   <ul class="plain-list">
