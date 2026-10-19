@@ -1,5 +1,49 @@
 [
   {
+    "title": "부산 해운대 하루 코스, 동백섬·해변·블루라인파크·청사포 동선 정리",
+    "url": "2026-10-15-busan-haeundae-day-course-ko.html",
+    "thumb": "assets/thumbs/trip-planner/haeundae-day-course.jpg",
+    "label": "여행 계획 · 공개중",
+    "alt": "푸른 바다와 모래사장이 이어지는 해운대 해수욕장",
+    "badge": null,
+    "like_id": "trip-planner/2026-10-15-busan-haeundae-day-course-ko.html",
+    "date": "2026-10-15",
+    "kw": "해운대 해운대해수욕장 동백섬 누리마루 누리마루APEC하우스 더베이101 마린시티 해운대시장 구남로 해리단길 동해남부선 블루라인파크 해변열차 스카이캡슐 미포 달맞이길 문탠로드 해월전망대 청사포 청사포다릿돌 송정 부산 해운대구 하루코스 당일치기",
+    "city": "busan",
+    "locations": [
+      {
+        "name": "누리마루 APEC하우스",
+        "address": "부산 해운대구 동백로 116",
+        "lat": 35.1589,
+        "lng": 129.1521
+      },
+      {
+        "name": "해운대 해수욕장",
+        "address": "부산 해운대구 우동",
+        "lat": 35.1587,
+        "lng": 129.1604
+      },
+      {
+        "name": "더베이101",
+        "address": "부산 해운대구 동백로 52",
+        "lat": 35.1556,
+        "lng": 129.153
+      },
+      {
+        "name": "블루라인파크 미포정거장",
+        "address": "부산 해운대구 달맞이길62번길 13",
+        "lat": 35.1604,
+        "lng": 129.1759
+      },
+      {
+        "name": "청사포정거장",
+        "address": "부산 해운대구 청사포로 116",
+        "lat": 35.1623,
+        "lng": 129.1912
+      }
+    ]
+  },
+  {
     "title": "광안리 야경, 가기 전에 알아둘 것 - 드론쇼 시간과 보는 자리",
     "url": "2026-10-08-gwangalli-night-guide-ko.html",
     "thumb": "assets/thumbs/trip-planner/gwangalli-night-guide.jpg",

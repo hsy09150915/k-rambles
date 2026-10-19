@@ -1,5 +1,49 @@
 [
   {
+    "title": "เที่ยวแฮอุนแดปูซานหนึ่งวัน: เกาะทงแบก ชายหาด บลูไลน์พาร์ค และชองซาโพ",
+    "url": "2026-10-15-busan-haeundae-day-course-th.html",
+    "thumb": "assets/thumbs/trip-planner/haeundae-day-course.jpg",
+    "label": "แผนเที่ยว · เผยแพร่แล้ว",
+    "alt": "หาดแฮอุนแดและทะเล",
+    "badge": null,
+    "like_id": "trip-planner/2026-10-15-busan-haeundae-day-course-th.html",
+    "date": "2026-10-15",
+    "kw": "แฮอุนแด haeundae หาดแฮอุนแด เกาะทงแบก dongbaek นูรีมารู เดอะเบย์ 101 the bay 101 มารีนซิตี้ marine city ตลาดแฮอุนแด แฮรีดันกิล haeridan-gil สายทงแฮนัมบู donghae nambu บลูไลน์พาร์ค blue line park รถไฟชายหาด สกายแคปซูล sky capsule มีโพ ทัลมาจีกิล dalmaji-gil มุนแทนโร้ด ชองซาโพ cheongsapo ซงจอง ปูซาน เที่ยวหนึ่งวัน",
+    "city": "busan",
+    "locations": [
+      {
+        "name": "นูรีมารู เอเปคเฮาส์",
+        "address": "116 Dongbaek-ro เขตแฮอุนแด ปูซาน",
+        "lat": 35.1589,
+        "lng": 129.1521
+      },
+      {
+        "name": "หาดแฮอุนแด",
+        "address": "เขตแฮอุนแด ปูซาน",
+        "lat": 35.1587,
+        "lng": 129.1604
+      },
+      {
+        "name": "เดอะเบย์ 101",
+        "address": "52 Dongbaek-ro เขตแฮอุนแด ปูซาน",
+        "lat": 35.1556,
+        "lng": 129.153
+      },
+      {
+        "name": "สถานีมีโพ บลูไลน์พาร์ค",
+        "address": "13 Dalmaji-gil 62beon-gil เขตแฮอุนแด ปูซาน",
+        "lat": 35.1604,
+        "lng": 129.1759
+      },
+      {
+        "name": "สถานีชองซาโพ",
+        "address": "116 Cheongsapo-ro เขตแฮอุนแด ปูซาน",
+        "lat": 35.1623,
+        "lng": 129.1912
+      }
+    ]
+  },
+  {
     "title": "กวางกัลลีตอนกลางคืน — เวลาโดรนโชว์ จุดชม และสิ่งที่ควรรู้ก่อนไป",
     "url": "2026-10-08-gwangalli-night-guide-th.html",
     "thumb": "assets/thumbs/trip-planner/gwangalli-night-guide.jpg",

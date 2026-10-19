@@ -1,5 +1,49 @@
 [
   {
+    "title": "Busan Haeundae One-Day Course: Dongbaek Island, the Beach, Blue Line Park and Cheongsapo",
+    "url": "2026-10-15-busan-haeundae-day-course-en.html",
+    "thumb": "assets/thumbs/trip-planner/haeundae-day-course.jpg",
+    "label": "Trip plan · live",
+    "alt": "Haeundae Beach and the sea",
+    "badge": null,
+    "like_id": "trip-planner/2026-10-15-busan-haeundae-day-course-en.html",
+    "date": "2026-10-15",
+    "kw": "haeundae haeundae beach dongbaek island nurimaru apec house the bay 101 marine city haeundae market gunam-ro haeridan-gil donghae nambu line blue line park beach train sky capsule mipo dalmaji-gil moontan road haewol observatory cheongsapo daritdol songjeong busan one day itinerary",
+    "city": "busan",
+    "locations": [
+      {
+        "name": "Nurimaru APEC House",
+        "address": "116 Dongbaek-ro, Haeundae-gu, Busan",
+        "lat": 35.1589,
+        "lng": 129.1521
+      },
+      {
+        "name": "Haeundae Beach",
+        "address": "Haeundae-gu, Busan",
+        "lat": 35.1587,
+        "lng": 129.1604
+      },
+      {
+        "name": "The Bay 101",
+        "address": "52 Dongbaek-ro, Haeundae-gu, Busan",
+        "lat": 35.1556,
+        "lng": 129.153
+      },
+      {
+        "name": "Blue Line Park Mipo Station",
+        "address": "13 Dalmaji-gil 62beon-gil, Haeundae-gu, Busan",
+        "lat": 35.1604,
+        "lng": 129.1759
+      },
+      {
+        "name": "Cheongsapo Station",
+        "address": "116 Cheongsapo-ro, Haeundae-gu, Busan",
+        "lat": 35.1623,
+        "lng": 129.1912
+      }
+    ]
+  },
+  {
     "title": "Gwangalli at Night — Drone Show Times, Where to Watch, and What to Know Before You Go",
     "url": "2026-10-08-gwangalli-night-guide-en.html",
     "thumb": "assets/thumbs/trip-planner/gwangalli-night-guide.jpg",

@@ -1,5 +1,49 @@
 [
   {
+    "title": "Lộ trình một ngày ở Haeundae, Busan: đảo Dongbaek, bãi biển, Blue Line Park và Cheongsapo",
+    "url": "2026-10-15-busan-haeundae-day-course-vi.html",
+    "thumb": "assets/thumbs/trip-planner/haeundae-day-course.jpg",
+    "label": "Lộ trình · Trực tuyến",
+    "alt": "Bãi biển Haeundae và biển",
+    "badge": null,
+    "like_id": "trip-planner/2026-10-15-busan-haeundae-day-course-vi.html",
+    "date": "2026-10-15",
+    "kw": "haeundae bai bien haeundae dongbaek dao dongbaek nurimaru apec house the bay 101 marine city cho haeundae gunam-ro haeridan-gil donghae nambu blue line park beach train sky capsule mipo dalmaji-gil moontan road haewol cheongsapo daritdol songjeong busan mot ngay lo trinh",
+    "city": "busan",
+    "locations": [
+      {
+        "name": "Nurimaru APEC House",
+        "address": "116 Dongbaek-ro, Haeundae-gu, Busan",
+        "lat": 35.1589,
+        "lng": 129.1521
+      },
+      {
+        "name": "Bãi biển Haeundae",
+        "address": "Haeundae-gu, Busan",
+        "lat": 35.1587,
+        "lng": 129.1604
+      },
+      {
+        "name": "The Bay 101",
+        "address": "52 Dongbaek-ro, Haeundae-gu, Busan",
+        "lat": 35.1556,
+        "lng": 129.153
+      },
+      {
+        "name": "Ga Mipo, Blue Line Park",
+        "address": "13 Dalmaji-gil 62beon-gil, Haeundae-gu, Busan",
+        "lat": 35.1604,
+        "lng": 129.1759
+      },
+      {
+        "name": "Ga Cheongsapo",
+        "address": "116 Cheongsapo-ro, Haeundae-gu, Busan",
+        "lat": 35.1623,
+        "lng": 129.1912
+      }
+    ]
+  },
+  {
     "title": "Gwangalli về đêm — Giờ diễn drone, chỗ xem và những điều cần biết trước khi đi",
     "url": "2026-10-08-gwangalli-night-guide-vi.html",
     "thumb": "assets/thumbs/trip-planner/gwangalli-night-guide.jpg",
