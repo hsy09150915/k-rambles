@@ -130,6 +130,17 @@
 
   .logo span { color: var(--coral); }
 
+
+  .menu-wrap { position: relative; }
+  .menu-btn { width: 42px; height: 42px; border-radius: 12px; border: 1px solid var(--line); background: var(--paper-raised); display: inline-flex; align-items: center; justify-content: center; cursor: pointer; color: var(--ink); }
+  .menu-btn:hover { border-color: var(--coral); }
+  .menu-btn svg { width: 22px; height: 22px; }
+  .menu-panel { position: absolute; top: 50px; left: 0; z-index: 50; min-width: 170px; background: var(--paper-raised); border: 1px solid var(--line); border-radius: 14px; box-shadow: var(--card-shadow); padding: 8px; display: none; }
+  .menu-panel.open { display: block; }
+  @media (max-width: 640px) { .menu-panel { left: auto; right: 0; } }
+  .menu-panel a { display: block; padding: 11px 14px; border-radius: 9px; text-decoration: none; color: var(--ink); font-size: 0.98rem; }
+  .menu-panel a:hover, .menu-panel a:focus-visible { background: var(--paper); color: var(--coral-ink); }
+
   nav.site-nav {
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -832,12 +843,15 @@
 
 <header class="site">
   <div class="logo">K-<span>Rambles</span></div>
-  <nav class="site-nav" aria-label="섹션 링크">
-    <a href="#trip-planner">여행 계획</a>
-    <a href="#getting-around">이동, 팁</a>
-    <a href="#food-stories">미식</a>
-    <a href="#long-stay">장기체류</a>
-  </nav>
+  <div class="menu-wrap">
+    <button type="button" class="menu-btn" aria-label="메뉴" aria-expanded="false" aria-controls="menu-panel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+    <nav class="menu-panel" id="menu-panel" aria-label="섹션 링크">
+      <a href="#trip-planner">여행 계획</a>
+      <a href="#getting-around">이동, 팁</a>
+      <a href="#food-stories">미식</a>
+      <a href="#long-stay">장기체류</a>
+    </nav>
+  </div>
   <div class="header-right">
     <div class="header-util">
       <a href="/ko/liked.html" class="util-link" aria-label="내 여행 플래너"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-heart"/></svg><span class="util-label">내 여행 플래너</span></a>
@@ -985,7 +999,6 @@
 
 <section class="board" id="boards">
   <div class="board-head">
-    <p class="eyebrow">지금까지의 보드</p>
     <h2 class="board-title">네 개의 보드</h2>
     <p>보드를 눌러 열람하거나, 핀을 눌러 바로 이동하세요.</p>
 
@@ -1138,5 +1151,12 @@
 </script>
 <script data-goatcounter="https://krambles.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
+<script>
+(function(){var b=document.querySelector('.menu-btn'),m=document.getElementById('menu-panel');if(!b||!m)return;
+function c(){m.classList.remove('open');b.setAttribute('aria-expanded','false');}
+b.addEventListener('click',function(e){e.stopPropagation();var o=m.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});
+m.addEventListener('click',c);document.addEventListener('click',function(e){if(!m.contains(e.target))c();});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')c();});})();
+</script>
 </body>
 </html>

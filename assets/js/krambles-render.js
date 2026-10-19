@@ -831,7 +831,7 @@
     },
     ko: {
       addTitle: '직접 장소 추가하기',
-      addHint: '한국 안의 어떤 장소든 검색해서 추가하고, 아래에서 체크하면 동선에 넣을 수 있어요.',
+      addHint: '',
       searchPh: '한국 내 장소 검색 (이름이나 주소)',
       searching: '검색 중…',
       noResults: '검색 결과가 없어요',
@@ -854,7 +854,7 @@
       sharedPlanTitle: '친구가 공유한 일정이에요',
       tooManyDay: '하루에는 10곳까지만 계산할 수 있어요.',
       pickOne: '장소를 하나 이상 체크해 주세요.',
-      tipActive: '지도의 핀이나 목록의 이름을 누르면 같은 장소가 지도와 목록에서 함께 강조돼요.',
+      tipActive: '지도의 핀이나 목록의 이름을 누르면 같은 장소가 지도와 목록에서 함께 강조돼요.<br>여행 날짜를 선택하면 날짜별로 동선을 짤 수 있어요.',
       sharedLabel: '공유'
     },
     vi: {
@@ -990,7 +990,7 @@
       '.kr-date{font:inherit;font-size:.82rem;padding:5px 8px;border:1px solid var(--line-strong,#cfcabd);border-radius:8px;background:#fff;color:inherit;max-width:100%}' +
       '.kr-del{background:none;border:none;font-size:1.1rem;line-height:1;color:var(--ink-soft,#5a625c);cursor:pointer;padding:4px 7px;border-radius:6px}' +
       '.kr-del:hover{background:rgba(0,0,0,.06)}' +
-      '.kr-plan-tools{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:12px}' +
+      '.kr-plan-tools{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:12px;padding-bottom:22px;margin-bottom:6px;border-bottom:1px solid var(--line,#e5e0d8)}' +
       '.kr-tool-btn{background:#fff;color:var(--navy,#1b2a4a);border:1.5px solid var(--navy,#1b2a4a);border-radius:8px;padding:8px 14px;font-size:.84rem;font-weight:600;cursor:pointer;font-family:inherit}' +
       '.kr-tool-btn:hover{background:rgba(27,42,74,.06)}' +
       '.liked-route-order li.kr-day-head{counter-increment:none;counter-reset:kr-step;display:block;border-bottom:none;padding:16px 0 4px;font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:1rem;color:var(--navy,#1b2a4a)}' +
@@ -1339,7 +1339,7 @@
       // --- add your own places (Places API, Korea only) ---
       var addBox = document.createElement('div');
       addBox.className = 'kr-add-box';
-      addBox.innerHTML = '<h3>' + escapeHtml(PS.addTitle) + '</h3><p class="kr-add-hint">' + escapeHtml(PS.addHint) + '</p>'
+      addBox.innerHTML = '<h3>' + escapeHtml(PS.addTitle) + '</h3>' + (PS.addHint ? '<p class="kr-add-hint">' + escapeHtml(PS.addHint) + '</p>' : '')
         + '<input type="text" class="kr-add-input" autocomplete="off" placeholder="' + escapeHtml(PS.searchPh) + '" aria-label="' + escapeHtml(PS.searchPh) + '">'
         + '<ul class="kr-add-results" hidden></ul>';
       panelEl.insertBefore(addBox, panelEl.firstChild);
@@ -1347,7 +1347,7 @@
       var resultsEl = addBox.querySelector('.kr-add-results');
       var tipEl = document.createElement('p');
       tipEl.className = 'kr-tip';
-      tipEl.textContent = PS.tipActive;
+      tipEl.innerHTML = escapeHtml(PS.tipActive).replace(/&lt;br&gt;/g, '<br>');
       checklistEl.parentNode.insertBefore(tipEl, checklistEl);
 
       var placesLib = null, sessionToken = null, searchTimer = null, searchSeq = 0, lastSuggestions = [];
