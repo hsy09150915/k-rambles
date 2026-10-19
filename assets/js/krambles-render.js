@@ -776,6 +776,8 @@
       '.kr-share-btn:hover{background:rgba(27,42,74,.06)}' +
       '.kr-shared-banner{max-width:1040px;margin:6px auto 22px;padding:0 28px;box-sizing:border-box}' +
       '.kr-shared-banner-in{display:flex;align-items:center;gap:36px;flex-wrap:wrap;background:#fff6f2;border:1px solid #f3cdbf;border-radius:14px;padding:16px 22px}' +
+      '.kr-shared-note{display:block;margin-top:8px}' +
+      '.kr-plan-note{flex-basis:100%;margin:8px 0 0;font-size:.8rem;color:var(--ink-soft,#5a625c)}' +
       '.kr-shared-banner b{display:block;font-family:"Bricolage Grotesque",sans-serif;font-size:1.08rem;margin-bottom:3px}' +
       '.kr-shared-banner span.kr-shared-meta{font-size:.84rem;color:var(--ink-soft,#5a625c)}' +
       '.kr-save-btn{flex:0 0 auto;background:var(--coral,#e8654a);color:#fff;border:none;border-radius:8px;padding:9px 16px;font-size:.88rem;font-weight:700;cursor:pointer;font-family:inherit;white-space:nowrap}' +
@@ -822,6 +824,8 @@
       fileLoaded: 'Plan loaded: {n} places',
       linkTooLong: 'Link copied. It is long, so for big plans a saved file is more reliable.',
       importShared: 'Add to my plan',
+      sharedPlanNote: 'Like it? Tap the button below to save it to your planner.<br>It isn’t saved on this device until you do.',
+      toolsNote: 'Save plan files to move or back up between your own devices. To send a plan to a friend, use “Share this route” and send the link.',
       importedShared: '✓ Added to your plan',
       sharedPlanTitle: 'A plan shared with you',
       tooManyDay: 'Please keep each day to 10 places or fewer.',
@@ -850,6 +854,8 @@
       fileLoaded: '일정을 불러왔어요: {n}곳',
       linkTooLong: '링크를 복사했어요. 길이가 길어서 큰 일정은 파일로 저장하는 게 더 확실해요.',
       importShared: '내 일정에 담기',
+      sharedPlanNote: '마음에 들면 아래 버튼을 눌러 내 플래너에 저장하세요.<br>누르기 전에는 이 기기에 저장되지 않아요.',
+      toolsNote: '일정 파일은 내 폰·PC끼리 옮기거나 백업할 때 쓰세요. 친구에게 보낼 때는 "동선 공유하기"를 눌러 링크로 보내세요.',
       importedShared: '✓ 내 일정에 담았어요',
       sharedPlanTitle: '친구가 공유한 일정이에요',
       tooManyDay: '하루에는 10곳까지만 계산할 수 있어요.',
@@ -878,6 +884,8 @@
       fileLoaded: 'Đã mở lịch trình: {n} địa điểm',
       linkTooLong: 'Đã sao chép liên kết. Liên kết khá dài, nên với lịch trình lớn hãy lưu thành tệp cho chắc.',
       importShared: 'Thêm vào lịch trình của tôi',
+      sharedPlanNote: 'Nếu thích, hãy nhấn nút bên dưới để lưu vào lộ trình của bạn.<br>Cho đến khi nhấn, nội dung chưa được lưu trên thiết bị này.',
+      toolsNote: 'Tệp lịch trình dùng để chuyển hoặc sao lưu giữa các thiết bị của bạn. Muốn gửi cho bạn bè, hãy nhấn “Chia sẻ lộ trình” và gửi liên kết.',
       importedShared: '✓ Đã thêm vào lịch trình của bạn',
       sharedPlanTitle: 'Lịch trình được chia sẻ với bạn',
       tooManyDay: 'Mỗi ngày chỉ tính được tối đa 10 địa điểm.',
@@ -906,6 +914,8 @@
       fileLoaded: 'เปิดแผนแล้ว: {n} แห่ง',
       linkTooLong: 'คัดลอกลิงก์แล้ว ลิงก์ค่อนข้างยาว สำหรับแผนใหญ่ควรบันทึกเป็นไฟล์จะแน่นอนกว่า',
       importShared: 'เพิ่มในแผนของฉัน',
+      sharedPlanNote: 'ถ้าถูกใจ แตะปุ่มด้านล่างเพื่อบันทึกลงแผนเที่ยวของคุณ<br>ก่อนแตะ จะยังไม่ถูกบันทึกไว้ในอุปกรณ์นี้',
+      toolsNote: 'ไฟล์แผนใช้ย้ายหรือสำรองข้อมูลระหว่างอุปกรณ์ของคุณเอง ถ้าจะส่งให้เพื่อน ให้กด “แชร์เส้นทางนี้” แล้วส่งลิงก์',
       importedShared: '✓ เพิ่มในแผนของคุณแล้ว',
       sharedPlanTitle: 'แผนที่เพื่อนแชร์ให้',
       tooManyDay: 'คำนวณได้ไม่เกิน 10 แห่งต่อวัน',
@@ -1446,6 +1456,7 @@
       tools.innerHTML = '<button type="button" class="kr-tool-btn" data-act="save" data-goatcounter-click="plan-save-file">' + escapeHtml(PS.saveFile) + '</button>'
         + '<button type="button" class="kr-tool-btn" data-act="load" data-goatcounter-click="plan-load-file">' + escapeHtml(PS.loadFile) + '</button>'
         + '<input type="file" accept=".json,application/json" hidden>';
+      var toolsNote = document.createElement('p'); toolsNote.className = 'kr-plan-note'; toolsNote.textContent = PS.toolsNote; tools.appendChild(toolsNote);
       calcBtn.parentNode.parentNode.insertBefore(tools, calcBtn.parentNode.nextSibling);
       var fileInput = tools.querySelector('input[type=file]');
 
@@ -1636,7 +1647,8 @@
         var banner = document.createElement('div');
         banner.className = 'kr-shared-banner';
         banner.innerHTML = '<div class="kr-shared-banner-in"><div><b>' + escapeHtml(PS.sharedPlanTitle) + '</b>'
-          + '<span class="kr-shared-meta">' + escapeHtml(STR.sharedMeta.replace('{n}', String(pins.length)).replace('{t}', total ? formatRouteDuration(lang, total) : '–')) + '</span></div>'
+          + '<span class="kr-shared-meta">' + escapeHtml(STR.sharedMeta.replace('{n}', String(pins.length)).replace('{t}', total ? formatRouteDuration(lang, total) : '–').replace(/\s*·\s*[^·]*$/, '')) + '</span>'
+          + '<span class="kr-shared-meta kr-shared-note">' + escapeHtml(PS.sharedPlanNote).replace(/&lt;br&gt;/g, '<br>') + '</span></div>'
           + '<button type="button" class="kr-save-btn" data-goatcounter-click="save-shared-plan">' + escapeHtml(PS.importShared) + '</button></div>';
         wrap.parentNode.insertBefore(banner, wrap);
         var saveBtn = banner.querySelector('.kr-save-btn');
