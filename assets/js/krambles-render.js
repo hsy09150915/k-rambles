@@ -560,6 +560,8 @@
       googleDriving: 'Google Maps driving →',
       naverTransit: 'Naver Map transit →',
       naverDriving: 'Naver Map driving →',
+      thNo: 'No.', thPlace: 'Place', thMove: 'Next leg',
+      legTransit: 'Transit ~', legDriving: 'Driving ~', legG: 'Google', legN: 'Naver',
       affiliateTag: '(affiliate link)',
       totalPrefix: 'Total travel time: about ',
       totalAllTransit: ' · all by public transit',
@@ -588,6 +590,8 @@
       googleDriving: '구글맵 자동차 →',
       naverTransit: '네이버맵 대중교통 →',
       naverDriving: '네이버맵 자동차 →',
+      thNo: '번호', thPlace: '장소', thMove: '이동',
+      legTransit: '대중교통 약 ', legDriving: '자동차 약 ', legG: '구글', legN: '네이버',
       affiliateTag: '(제휴링크)',
       totalPrefix: '총 이동시간: 약 ',
       totalAllTransit: ' · 전 구간 대중교통',
@@ -616,6 +620,8 @@
       googleDriving: 'Google Maps (ô tô) →',
       naverTransit: 'Naver Map (công cộng) →',
       naverDriving: 'Naver Map (ô tô) →',
+      thNo: 'STT', thPlace: 'Địa điểm', thMove: 'Di chuyển',
+      legTransit: 'Công cộng ~', legDriving: 'Ô tô ~', legG: 'Google', legN: 'Naver',
       affiliateTag: '(liên kết tiếp thị)',
       totalPrefix: 'Tổng thời gian di chuyển: khoảng ',
       totalAllTransit: ' · toàn bộ bằng phương tiện công cộng',
@@ -644,6 +650,8 @@
       googleDriving: 'Google Maps ขับรถ →',
       naverTransit: 'Naver Map ขนส่งสาธารณะ →',
       naverDriving: 'Naver Map ขับรถ →',
+      thNo: 'ลำดับ', thPlace: 'สถานที่', thMove: 'การเดินทาง',
+      legTransit: 'ขนส่งสาธารณะ ~', legDriving: 'ขับรถ ~', legG: 'Google', legN: 'Naver',
       affiliateTag: '(ลิงก์พันธมิตร)',
       totalPrefix: 'เวลาเดินทางรวม: ประมาณ ',
       totalAllTransit: ' · ขนส่งสาธารณะทั้งหมด',
@@ -1016,6 +1024,30 @@
       '@media(max-width:560px){.kr-plan-tools{grid-template-columns:1fr}}' +
       '.kr-tool-btn{background:#fff;color:var(--navy,#1b2a4a);border:1.5px solid var(--navy,#1b2a4a);border-radius:8px;padding:8px 14px;font-size:.84rem;font-weight:600;cursor:pointer;font-family:inherit}' +
       '.kr-tool-btn:hover{background:rgba(27,42,74,.06)}' +
+      '.liked-route-order li.kr-grp{display:block;counter-increment:none;border-bottom:none;padding:6px 0 4px}' +
+      '.liked-route-order li.kr-grp::before{display:none}' +
+      '.kr-tbl{border:1px solid var(--line-strong,#cfcabd);border-radius:14px;overflow:hidden;background:var(--paper-raised,#fff)}' +
+      '.kr-th,.kr-stop{display:grid;grid-template-columns:40px minmax(0,1fr) 26px clamp(104px,36%,150px)}' +
+      '.kr-th{background:#e3e7e1;font-size:.74rem;font-weight:700;color:var(--ink-soft,#5a625c);text-align:center;white-space:nowrap;border-bottom:1px solid var(--line-strong,#cfcabd)}' +
+      '.kr-th span{padding:8px 2px}.kr-th span:nth-child(2){text-align:left;padding-left:10px}.kr-th .kr-th-mv{grid-column:3 / 5}' +
+      '.kr-stop{min-height:64px}.kr-stop.kr-has-leg{min-height:104px}' +
+      '.kr-no,.kr-ar{background:#f6e7e2}' +
+      '.kr-no{display:flex;align-items:center;justify-content:center;border-bottom:1px solid var(--line,#e5e0d8)}' +
+      '.kr-no b{width:26px;height:26px;border-radius:50%;background:var(--coral,#e8654a);color:#fff;display:flex;align-items:center;justify-content:center;font-size:.82rem;font-weight:700}' +
+      '.kr-nm{display:flex;align-items:center;padding:10px 6px 10px 10px;min-width:0;border-bottom:1px solid var(--line,#e5e0d8);background:#f6f8f5;line-height:1.3;word-break:keep-all;overflow-wrap:anywhere}' +
+      '.kr-stop:last-child .kr-no,.kr-stop:last-child .kr-nm{border-bottom:0}' +
+      '.kr-stop.is-active .kr-nm{background:rgba(232,101,74,.14)}' +
+      '.kr-ar,.kr-lg{position:relative}' +
+      '.kr-lg{background:#fff6f2;border-left:1px solid #f3cdbf}' +
+      '.kr-ar svg{position:absolute;left:0;bottom:0;width:24px;height:48px;transform:translateY(50%);overflow:visible;z-index:2}' +
+      '.kr-leg-box{position:absolute;left:0;right:0;bottom:0;transform:translateY(50%);z-index:2;padding:0 8px;display:flex;flex-direction:column;gap:6px;box-sizing:border-box}' +
+      '.kr-leg-box .kr-leg-transit{font-weight:700;font-size:.8rem;color:var(--coral-ink,#b8431f);line-height:1.25}' +
+      '.kr-leg-box .kr-leg-transit.kr-driving{color:var(--ink-soft,#5a625c)}' +
+      '.kr-leg-box .kr-leg-buttons{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin:0}' +
+      '.kr-leg-box .kr-leg-btn{justify-content:center;background:#fff;color:var(--navy,#1b2a4a);border:1.5px solid var(--navy,#1b2a4a);border-radius:8px;padding:7px 0;font-size:.78rem;font-weight:800}' +
+      '.kr-leg-box .kr-naver-btn{border-color:#03a94d;color:#05813b;background:#fff}' +
+      '.kr-leg-box .kr-driving-btn{border-style:dashed}' +
+      '.kr-aff{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}' +
       '.liked-route-order li.kr-day-head{counter-increment:none;counter-reset:kr-step;display:block;border-bottom:none;padding:16px 0 4px;font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:1rem;color:var(--navy,#1b2a4a)}' +
       '.liked-route-order li.kr-day-head::before{display:none}' +
       '.kr-tip{font-size:.78rem;color:var(--ink-soft,#5a625c);margin:10px 0 0}' +
@@ -1152,7 +1184,7 @@
       function setActive(id, opts) {
         opts = opts || {};
         activeId = id;
-        var all = document.querySelectorAll('#liked-route-checklist li, #liked-route-order li');
+        var all = document.querySelectorAll('#liked-route-checklist li, #liked-route-order .kr-stop');
         for (var i = 0; i < all.length; i++) {
           var on = all[i].getAttribute('data-pin') === id;
           all[i].classList.toggle('is-active', on);
@@ -1255,30 +1287,35 @@
         var labels = {};
         groups.forEach(function (g) {
           if (showHeads) { html += '<li class="kr-day-head">' + escapeHtml(g.date ? formatPlanDate(lang, g.date) : PS.undated) + '</li>'; }
+          html += '<li class="kr-grp"><div class="kr-tbl" role="table"><div class="kr-th"><span>' + STR.thNo + '</span><span>' + STR.thPlace + '</span><span class="kr-th-mv">' + STR.thMove + '</span></div>';
           g.pins.forEach(function (pin, i) {
             labels[pin.id] = i + 1;
-            html += '<li data-pin="' + pin.id + '"><div><div class="kr-leg-name" data-pin="' + pin.id + '">' + escapeHtml(pin.name) + '</div>';
-            var buttonsHtml = '';
-            if (i < g.pins.length - 1) {
+            var hasLeg = i < g.pins.length - 1;
+            var legHtml = '';
+            if (hasLeg) {
               var leg = g.legs[i] || { secs: 0, car: false };
               var next = g.pins[i + 1];
-              if (leg.secs) {
-                html += '<div class="kr-leg-transit' + (leg.car ? ' kr-driving' : '') + '">'
-                  + (leg.car ? STR.toNextDriving : STR.toNextTransit) + formatRouteDuration(lang, leg.secs) + '</div>';
-              }
-              buttonsHtml += '<a class="kr-leg-btn' + (leg.car ? ' kr-driving-btn' : '') + '" href="' + routeLegGoogleUrl(pin, next, leg.car) + '" target="_blank" rel="noopener">'
-                + (leg.car ? STR.googleDriving : STR.googleTransit) + '</a>';
-              buttonsHtml += '<a class="kr-leg-btn kr-naver-btn" href="' + routeLegNaverUrl(pin, next, leg.car) + '" target="_blank" rel="noopener">'
-                + (leg.car ? STR.naverDriving : STR.naverTransit) + '</a>';
+              legHtml = '<div class="kr-leg-box">'
+                + (leg.secs ? '<div class="kr-leg-transit' + (leg.car ? ' kr-driving' : '') + '">' + (leg.car ? STR.legDriving : STR.legTransit) + formatRouteDuration(lang, leg.secs) + '</div>' : '')
+                + '<div class="kr-leg-buttons">'
+                + '<a class="kr-leg-btn' + (leg.car ? ' kr-driving-btn' : '') + '" href="' + routeLegGoogleUrl(pin, next, leg.car) + '" target="_blank" rel="noopener" aria-label="' + escapeHtml(leg.car ? STR.googleDriving : STR.googleTransit) + '">' + STR.legG + '</a>'
+                + '<a class="kr-leg-btn kr-naver-btn' + (leg.car ? ' kr-driving-btn' : '') + '" href="' + routeLegNaverUrl(pin, next, leg.car) + '" target="_blank" rel="noopener" aria-label="' + escapeHtml(leg.car ? STR.naverDriving : STR.naverTransit) + '">' + STR.legN + '</a>'
+                + '</div></div>';
             }
+            var affHtml = '';
             (pin.affiliateLinks || []).slice(0, 2).forEach(function (link) {
               if (!link || !link.url) { return; }
-              buttonsHtml += '<a class="kr-leg-btn kr-affiliate-btn" href="' + escapeHtml(link.url) + '" target="_blank" rel="noopener">'
+              affHtml += '<a class="kr-leg-btn kr-affiliate-btn" href="' + escapeHtml(link.url) + '" target="_blank" rel="noopener">'
                 + '🎫 ' + escapeHtml(link.platform || '') + ' <span style="font-weight:400;">' + STR.affiliateTag + '</span></a>';
             });
-            if (buttonsHtml) { html += '<div class="kr-leg-buttons">' + buttonsHtml + '</div>'; }
-            html += '</div></li>';
+            html += '<div class="kr-stop' + (hasLeg ? ' kr-has-leg' : '') + '" data-pin="' + pin.id + '">'
+              + '<div class="kr-no"><b>' + (i + 1) + '</b></div>'
+              + '<div class="kr-nm"><div><div class="kr-leg-name" data-pin="' + pin.id + '">' + escapeHtml(pin.name) + '</div>'
+              + (affHtml ? '<div class="kr-aff">' + affHtml + '</div>' : '') + '</div></div>'
+              + '<div class="kr-ar">' + (hasLeg ? '<svg viewBox="0 0 24 48" aria-hidden="true"><defs><marker id="krmk" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="4.5" markerHeight="4.5" markerUnits="strokeWidth" orient="auto"><path d="M1 1 L9 5 L1 9 Z" fill="#e8654a"/></marker></defs><path d="M5 3 A26 26 0 0 1 5 45" fill="none" stroke="#e8654a" stroke-width="3" stroke-linecap="round" marker-end="url(#krmk)"/></svg>' : '') + '</div>'
+              + '<div class="kr-lg">' + legHtml + '</div></div>';
           });
+          html += '</div></li>';
         });
         orderEl.innerHTML = html;
         totalEl.textContent = totalSeconds
