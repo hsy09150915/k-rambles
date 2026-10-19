@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>좋아요 글 모음 | K-Rambles</title>
+<title>내 여행 플래너 | K-Rambles</title>
 <link rel="canonical" href="https://k-rambles.com/ko/liked.html">
 <link rel="alternate" hreflang="ko" href="https://k-rambles.com/ko/liked.html">
 <link rel="alternate" hreflang="en" href="https://k-rambles.com/liked.html">
 <link rel="alternate" hreflang="vi" href="https://k-rambles.com/vi/liked.html">
 <link rel="alternate" hreflang="th" href="https://k-rambles.com/th/liked.html">
 <link rel="alternate" hreflang="x-default" href="https://k-rambles.com/liked.html">
-<meta name="description" content="하트 누른 글들만 모아서 한눈에 보기 — 계정 없이 이 브라우저에 저장돼요.">
+<meta name="description" content="하트 누른 글과 직접 찾은 장소로 날짜별 여행 동선을 짜 보세요. 계정 없이 이 브라우저에 저장돼요.">
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Work+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap');
 
@@ -84,7 +84,8 @@
   h1.liked-title { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: clamp(2.1rem, 4.6vw, 3.1rem); line-height: 1.05; letter-spacing: -0.02em; margin: 0 0 12px; text-wrap: balance; }
   p.liked-dek { font-size: 1.08rem; color: var(--ink-soft); max-width: 60ch; margin: 0 0 8px; }
   p.liked-count { font-family: "Space Mono", monospace; font-size: 0.82rem; letter-spacing: 0.05em; text-transform: uppercase; color: var(--ink-soft); margin: 0 0 8px; }
-  p.liked-note { font-size: 0.88rem; color: var(--ink-soft); margin: 18px 0 0; padding: 14px 16px; background: var(--paper-raised); border-radius: 12px; border: 1px solid var(--line); }
+  p.liked-note { font-size: 0.88rem; color: var(--ink-soft); margin: 8px 0 0; padding: 14px 16px; background: var(--paper-raised); border-radius: 12px; border: 1px solid var(--line); }
+  .note-lead { color: var(--ink); font-size: 1rem; }
   .note-warn { color: var(--coral-ink); font-weight: 700; }
 
   .liked-grid { max-width: 1040px; margin: 0 auto; padding: 10px 28px 60px; display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 20px; }
@@ -183,11 +184,8 @@
 </header>
 
 <div class="liked-hero">
-  <div class="liked-icon-badge"><svg><use href="#i-heart"/></svg></div>
-  <h1 class="liked-title">좋아요 글 모음</h1>
-  <p class="liked-dek">하트 누른 글들을 한곳에 모아봤어요.</p>
-  <p class="liked-count">0개 저장됨</p>
-  <p class="liked-note">좋아요 리스트는 이 브라우저에만 보관 돼요.<br><br><strong class="note-warn">브라우저가 바뀌거나 설정을 지우면 여기 있는 좋아요 리스트는 사라져요.</strong></p>
+  <h1 class="liked-title">내 여행 플래너</h1>
+  <p class="liked-note"><strong class="note-lead">하트 누른 글과 가고 싶은 장소를 모아 날짜별 동선을 짜 보세요.</strong><br><br>저장한 글과 장소는 이 브라우저에만 보관돼요.<br><br><strong class="note-warn">브라우저를 바꾸거나 설정을 지우면 사라지니, 중요한 일정은 "일정 파일로 저장"해 두세요.</strong></p>
 </div>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -201,7 +199,7 @@
 
 <div class="liked-map-wrap" id="liked-map-wrap" hidden>
   <div class="liked-map-head">
-    <h2 class="liked-map-title">좋아요한 장소, 지도로 보기</h2>
+    <h2 class="liked-map-title">내 장소, 지도로 보기</h2>
     <span class="liked-map-count mono">0개</span>
   </div>
   <div class="liked-map" id="liked-map"></div>
@@ -226,7 +224,7 @@
 <div class="liked-empty" id="liked-empty" hidden>
   <div class="liked-empty-card">
     <svg><use href="#i-heart"/></svg>
-    <p>아직 좋아요한 글이 없어요. 사이트 어디서든 카드의 하트를 누르면 여기 모여요.</p>
+    <p>아직 저장한 글이 없어요. 사이트 어디서든 카드의 하트를 누르면 여기 모여요.</p>
     <p><a href="/ko/index.html">보드 둘러보기 →</a></p>
   </div>
 </div>
@@ -249,8 +247,6 @@
     ],
     gridSelector: '.liked-grid',
     emptySelector: '#liked-empty',
-    countSelector: '.liked-count',
-    countTemplate: '{n}개 저장됨',
     map: {
       apiKey: 'AIzaSyCKeJzUktRHQ-eGLExEqkscLMBSJpTFVmg',
       containerSelector: '#liked-map',

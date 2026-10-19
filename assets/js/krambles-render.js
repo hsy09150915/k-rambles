@@ -194,7 +194,7 @@
     ensureToastStyle();
     var lang = getLang();
     var msg = lang === 'ko'
-      ? '좋아요 리스트는 이 브라우저에만 보관 돼요. 즉, 브라우저가 바뀌면 좋아요 리스트는 공유가 안돼요. 그리고 좋아요 누른 글은 상단 메뉴에서 다시 볼 수 있어요.'
+      ? '저장한 글은 이 브라우저에만 보관돼요. 브라우저를 바꾸면 목록이 옮겨지지 않아요. 저장한 글은 상단 "내 여행 플래너"에서 다시 볼 수 있어요.'
       : lang === 'vi'
       ? 'Danh sách yêu thích chỉ được lưu trên trình duyệt này — đổi trình duyệt khác thì danh sách sẽ không còn. Bạn có thể xem lại các bài đã lưu từ menu ở trên cùng.'
       : lang === 'th'
@@ -572,10 +572,10 @@
       shareTitle: '내가 짠 부산 동선 — K-Rambles',
       sharedTitle: '친구가 공유한 동선이에요',
       sharedMeta: '장소 {n}곳 · 총 이동시간 약 {t} · 읽기 전용',
-      saveToLikes: '♡ 내 좋아요에 담기',
-      savedToLikes: '✓ 내 좋아요에 담았어요',
+      saveToLikes: '♡ 내 플래너에 담기',
+      savedToLikes: '✓ 내 플래너에 담았어요',
       recalcBtn: '내 순서로 다시 계산',
-      title: '찜한 곳 중 갈 곳 골라서 동선 짜기',
+      title: '갈 곳을 골라 날짜별 동선 짜기',
       calcBtn: '동선 계산하기',
       calculating: '대중교통 이동시간 조회 중…',
       fillingGaps: '일부 구간 자동차 이동시간 보충 조회 중…',
@@ -1934,7 +1934,7 @@
 
       var hintLang = getLang();
       var msg = hintLang === 'ko'
-        ? '좋아요 한 글은 여기서, 경비 정산은 여기서 할 수 있어요.'
+        ? '저장한 글과 동선은 여기서, 경비 정산은 여기서 할 수 있어요.'
         : hintLang === 'vi'
         ? 'Nhấn vào đây để xem các bài đã lưu, hoặc vào đây để chia tiền.'
         : hintLang === 'th'
