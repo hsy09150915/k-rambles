@@ -777,7 +777,9 @@
       '.kr-shared-banner{max-width:1040px;margin:6px auto 22px;padding:0 28px;box-sizing:border-box}' +
       '.kr-shared-banner-in{display:flex;align-items:center;gap:36px;flex-wrap:wrap;background:#fff6f2;border:1px solid #f3cdbf;border-radius:14px;padding:16px 22px}' +
       '.kr-shared-note{display:block;margin-top:8px}' +
-      '.kr-plan-note{flex-basis:100%;margin:8px 0 0;font-size:.8rem;color:var(--ink-soft,#5a625c)}' +
+      '.kr-plan-tools .kr-share-btn[hidden]{display:none!important}' +
+      '.kr-plan-tools .kr-tool-btn,.kr-plan-tools .kr-share-btn{font-size:.84rem}' +
+      '.kr-plan-note{margin:2px 0 0;font-size:.8rem;color:var(--ink-soft,#5a625c)}' +
       '.kr-shared-banner b{display:block;font-family:"Bricolage Grotesque",sans-serif;font-size:1.08rem;margin-bottom:3px}' +
       '.kr-shared-banner span.kr-shared-meta{font-size:.84rem;color:var(--ink-soft,#5a625c)}' +
       '.kr-save-btn{flex:0 0 auto;background:var(--coral,#e8654a);color:#fff;border:none;border-radius:8px;padding:9px 16px;font-size:.88rem;font-weight:700;cursor:pointer;font-family:inherit;white-space:nowrap}' +
@@ -991,8 +993,13 @@
       '.kr-add-results li.kr-msg{cursor:default;color:var(--ink-soft,#5a625c)}' +
       '.kr-add-results li.kr-msg:hover{background:none}' +
       '.liked-route-list{grid-template-columns:1fr!important}' +
-      '.liked-route-list li{flex-wrap:wrap;transition:background .15s}' +
-      '.liked-route-list li label{flex:1 1 150px;min-width:0}' +
+      '.liked-route-list li{display:grid;grid-template-columns:auto minmax(0,1fr) auto 9.5rem 30px;align-items:center;column-gap:8px;row-gap:6px;transition:background .15s}' +
+      '.liked-route-list li>input[type=checkbox]{grid-column:1}' +
+      '.liked-route-list li>label{grid-column:2;min-width:0;overflow-wrap:anywhere}' +
+      '.liked-route-list li>.kr-chip{grid-column:3}' +
+      '.liked-route-list li>.kr-date{grid-column:4;width:100%;box-sizing:border-box;height:36px}' +
+      '.liked-route-list li>.kr-del{grid-column:5}' +
+      '@media(max-width:560px){.liked-route-list li{grid-template-columns:auto minmax(0,1fr) auto 30px}.liked-route-list li>.kr-chip{grid-column:3;grid-row:1}.liked-route-list li>.kr-del{grid-column:4;grid-row:1}.liked-route-list li>.kr-date{grid-column:2 / 5;grid-row:2;max-width:11rem}}' +
       '.liked-route-list li.is-active,.liked-route-order li.is-active{background:rgba(232,101,74,.14);box-shadow:inset 3px 0 0 var(--coral,#e8654a)}' +
       '.liked-route-list li.is-active label,.liked-route-order li.is-active .kr-leg-name{font-weight:800;color:var(--coral-ink,#b8431f)}' +
       '.kr-leg-name{cursor:pointer}' +
@@ -1000,7 +1007,13 @@
       '.kr-date{font:inherit;font-size:.82rem;padding:5px 8px;border:1px solid var(--line-strong,#cfcabd);border-radius:8px;background:#fff;color:inherit;max-width:100%}' +
       '.kr-del{background:none;border:none;font-size:1.1rem;line-height:1;color:var(--ink-soft,#5a625c);cursor:pointer;padding:4px 7px;border-radius:6px}' +
       '.kr-del:hover{background:rgba(0,0,0,.06)}' +
-      '.kr-plan-tools{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:12px;padding-bottom:22px;margin-bottom:6px;border-bottom:1px solid var(--line,#e5e0d8)}' +
+      '.liked-route-actions{display:grid!important;grid-template-columns:1fr;gap:10px}' +
+      '.liked-route-actions .liked-route-calc-btn{width:100%;min-height:46px;font-size:.92rem}' +
+      '.liked-route-status:empty{display:none}' +
+      '.kr-plan-tools{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:10px;padding-bottom:22px;margin-bottom:6px;border-bottom:1px solid var(--line,#e5e0d8)}' +
+      '.kr-plan-tools .kr-tool-btn,.kr-plan-tools .kr-share-btn{width:100%;min-height:46px;padding:8px 10px;line-height:1.25;text-align:center;display:flex;align-items:center;justify-content:center}' +
+      '.kr-plan-note{grid-column:1/-1}' +
+      '@media(max-width:560px){.kr-plan-tools{grid-template-columns:1fr}}' +
       '.kr-tool-btn{background:#fff;color:var(--navy,#1b2a4a);border:1.5px solid var(--navy,#1b2a4a);border-radius:8px;padding:8px 14px;font-size:.84rem;font-weight:600;cursor:pointer;font-family:inherit}' +
       '.kr-tool-btn:hover{background:rgba(27,42,74,.06)}' +
       '.liked-route-order li.kr-day-head{counter-increment:none;counter-reset:kr-step;display:block;border-bottom:none;padding:16px 0 4px;font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:1rem;color:var(--navy,#1b2a4a)}' +
@@ -1456,6 +1469,8 @@
       tools.innerHTML = '<button type="button" class="kr-tool-btn" data-act="save" data-goatcounter-click="plan-save-file">' + escapeHtml(PS.saveFile) + '</button>'
         + '<button type="button" class="kr-tool-btn" data-act="load" data-goatcounter-click="plan-load-file">' + escapeHtml(PS.loadFile) + '</button>'
         + '<input type="file" accept=".json,application/json" hidden>';
+      tools.insertBefore(shareBtn, tools.firstChild);
+      shareBtn.className = 'kr-share-btn';
       var toolsNote = document.createElement('p'); toolsNote.className = 'kr-plan-note'; toolsNote.textContent = PS.toolsNote; tools.appendChild(toolsNote);
       calcBtn.parentNode.parentNode.insertBefore(tools, calcBtn.parentNode.nextSibling);
       var fileInput = tools.querySelector('input[type=file]');
