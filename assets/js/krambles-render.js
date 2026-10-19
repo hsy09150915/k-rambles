@@ -469,10 +469,10 @@
             var pr = byHash2[st.h];
             var lc = pr && (pr.item.locations || [])[st.i];
             if (!lc || typeof lc.lat !== 'number' || typeof lc.lng !== 'number') { return; }
-            planStops.push({ name: lc.name, lat: lc.lat, lng: lc.lng, url: hrefForHome(pr.board, pr.item), articleTitle: pr.item.title, date: st.date, m: st.m, car: st.car });
+            planStops.push({ name: lc.name, lat: lc.lat, lng: lc.lng, url: hrefForHome(pr.board, pr.item), articleTitle: pr.item.title, date: st.date, m: st.m, car: st.car, memo: st.memo });
             if (planPairs.indexOf(pr) === -1) { planPairs.push(pr); }
           } else {
-            planStops.push({ name: st.name, lat: st.lat, lng: st.lng, url: '', articleTitle: '', date: st.date, m: st.m, car: st.car });
+            planStops.push({ name: st.name, lat: st.lat, lng: st.lng, url: '', articleTitle: '', date: st.date, m: st.m, car: st.car, memo: st.memo });
           }
         });
         if (planStops.length) {
@@ -561,10 +561,12 @@
       naverTransit: 'Naver Map transit →',
       naverDriving: 'Naver Map driving →',
       thNo: 'No.', thPlace: 'Place', thMove: 'Next leg',
-      legTransit: 'Transit ~', legDriving: 'Driving ~', legG: 'Google', legN: 'Naver',
+      legTransit: 'Travel ~', legDriving: 'Driving ~', legG: 'Google', legN: 'Naver',
+      memoPh: 'Note (optional)', affTitle: 'Tickets & bookings (affiliate links)',
+      viewBtn: 'View as a simple schedule', viewTitle: 'My schedule', viewPdf: 'Save as PDF', viewClose: 'Close', viewPdfNote: 'For a PDF, choose “Save as PDF” in the print window.', thNext: 'To next stop',
       affiliateTag: '(affiliate link)',
       totalPrefix: 'Total travel time: about ',
-      totalAllTransit: ' · all by public transit',
+      totalAllTransit: '',
       totalSomeDriving: ' (some legs by car)',
       combineNote: 'Bundling every stop into one link locks the whole trip to a single travel mode — if even one leg has no public transit, the whole thing fails. That’s why each leg below gets its own button.'
     },
@@ -591,10 +593,12 @@
       naverTransit: '네이버맵 대중교통 →',
       naverDriving: '네이버맵 자동차 →',
       thNo: '번호', thPlace: '장소', thMove: '이동',
-      legTransit: '대중교통 약 ', legDriving: '자동차 약 ', legG: '구글', legN: '네이버',
+      legTransit: '이동 약 ', legDriving: '자동차 약 ', legG: '구글', legN: '네이버',
+      memoPh: '메모 (선택)', affTitle: '예약·티켓 링크 (제휴링크)',
+      viewBtn: '일정표로 간단히 보기', viewTitle: '내 일정표', viewPdf: 'PDF로 저장', viewClose: '닫기', viewPdfNote: 'PDF로 저장하려면 인쇄 창에서 “PDF로 저장”을 선택하세요.', thNext: '다음 장소까지',
       affiliateTag: '(제휴링크)',
       totalPrefix: '총 이동시간: 약 ',
-      totalAllTransit: ' · 전 구간 대중교통',
+      totalAllTransit: '',
       totalSomeDriving: ' (일부 구간 자동차 기준)',
       combineNote: '전체를 한 링크로 묶으면 이동수단이 하나로 고정돼서, 대중교통 없는 구간이 하나라도 있으면 통째로 실패해요. 그래서 구간마다 알맞은 이동수단으로 따로 버튼을 걸었어요.'
     },
@@ -621,10 +625,12 @@
       naverTransit: 'Naver Map (công cộng) →',
       naverDriving: 'Naver Map (ô tô) →',
       thNo: 'STT', thPlace: 'Địa điểm', thMove: 'Di chuyển',
-      legTransit: 'Công cộng ~', legDriving: 'Ô tô ~', legG: 'Google', legN: 'Naver',
+      legTransit: 'Di chuyển ~', legDriving: 'Ô tô ~', legG: 'Google', legN: 'Naver',
+      memoPh: 'Ghi chú (tùy chọn)', affTitle: 'Vé & đặt chỗ (liên kết tiếp thị)',
+      viewBtn: 'Xem lịch trình dạng bảng', viewTitle: 'Lịch trình của tôi', viewPdf: 'Lưu PDF', viewClose: 'Đóng', viewPdfNote: 'Để lưu PDF, hãy chọn “Lưu dưới dạng PDF” trong cửa sổ in.', thNext: 'Đến điểm tiếp theo',
       affiliateTag: '(liên kết tiếp thị)',
       totalPrefix: 'Tổng thời gian di chuyển: khoảng ',
-      totalAllTransit: ' · toàn bộ bằng phương tiện công cộng',
+      totalAllTransit: '',
       totalSomeDriving: ' (một vài chặng đi ô tô)',
       combineNote: 'Gộp tất cả điểm dừng vào một link sẽ khoá cả chuyến đi vào một phương tiện duy nhất — chỉ cần một chặng không có phương tiện công cộng là toàn bộ sẽ lỗi. Vì vậy mỗi chặng bên dưới có nút riêng.'
     },
@@ -651,10 +657,12 @@
       naverTransit: 'Naver Map ขนส่งสาธารณะ →',
       naverDriving: 'Naver Map ขับรถ →',
       thNo: 'ลำดับ', thPlace: 'สถานที่', thMove: 'การเดินทาง',
-      legTransit: 'ขนส่งสาธารณะ ~', legDriving: 'ขับรถ ~', legG: 'Google', legN: 'Naver',
+      legTransit: 'เดินทาง ~', legDriving: 'ขับรถ ~', legG: 'Google', legN: 'Naver',
+      memoPh: 'บันทึก (ไม่บังคับ)', affTitle: 'ตั๋วและการจอง (ลิงก์พันธมิตร)',
+      viewBtn: 'ดูเป็นตารางแบบย่อ', viewTitle: 'แผนเที่ยวของฉัน', viewPdf: 'บันทึกเป็น PDF', viewClose: 'ปิด', viewPdfNote: 'หากต้องการ PDF ให้เลือก “บันทึกเป็น PDF” ในหน้าต่างพิมพ์', thNext: 'ไปจุดถัดไป',
       affiliateTag: '(ลิงก์พันธมิตร)',
       totalPrefix: 'เวลาเดินทางรวม: ประมาณ ',
-      totalAllTransit: ' · ขนส่งสาธารณะทั้งหมด',
+      totalAllTransit: '',
       totalSomeDriving: ' (บางช่วงใช้รถยนต์)',
       combineNote: 'ถ้ารวมทุกจุดไว้ในลิงก์เดียว จะล็อกการเดินทางไว้ที่รูปแบบเดียว หากมีแม้แต่ช่วงเดียวที่ไม่มีขนส่งสาธารณะ เส้นทางทั้งหมดจะใช้งานไม่ได้ จึงแยกปุ่มให้แต่ละช่วงด้านล่างนี้'
     }
@@ -958,6 +966,7 @@
     d = String(d || '');
     return /^\d{8}$/.test(d) ? d.slice(0, 4) + '-' + d.slice(4, 6) + '-' + d.slice(6, 8) : '';
   }
+  function cleanMemo(v) { return String(v == null ? '' : v).replace(/[\u0000-\u001f\u007f]/g, ' ').trim().slice(0, 80); }
   function validIsoDate(d) { return /^\d{4}-\d{2}-\d{2}$/.test(String(d || '')); }
 
   // ?p= carries a whole plan: [kind, ...] per stop, in the sender's order.
@@ -975,9 +984,9 @@
     arr.slice(0, 60).forEach(function (t) {
       if (!Array.isArray(t)) { return; }
       if (t[0] === 'a' && /^[0-9a-z]+$/.test(String(t[1])) && isFinite(t[2])) {
-        stops.push({ kind: 'a', h: String(t[1]), i: parseInt(t[2], 10), date: compactToIso(t[3]), m: +t[4] || 0, car: !!t[5] });
+        stops.push({ kind: 'a', h: String(t[1]), i: parseInt(t[2], 10), date: compactToIso(t[3]), m: +t[4] || 0, car: !!t[5], memo: cleanMemo(t[6]) });
       } else if (t[0] === 'c' && isFinite(t[2]) && isFinite(t[3])) {
-        stops.push({ kind: 'c', name: String(t[1]).slice(0, 80), lat: +t[2], lng: +t[3], date: compactToIso(t[4]), m: +t[5] || 0, car: !!t[6] });
+        stops.push({ kind: 'c', name: String(t[1]).slice(0, 80), lat: +t[2], lng: +t[3], date: compactToIso(t[4]), m: +t[5] || 0, car: !!t[6], memo: cleanMemo(t[7]) });
       }
     });
     return stops.length ? { stops: stops } : null;
@@ -1048,6 +1057,31 @@
       '.kr-leg-box .kr-naver-btn{border-color:#03a94d;color:#05813b;background:#fff}' +
       '.kr-leg-box .kr-driving-btn{border-style:dashed}' +
       '.kr-aff{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}' +
+      '.liked-route-list li>.kr-memo-in{grid-column:2 / -1;width:100%;box-sizing:border-box;font:inherit;font-size:.84rem;padding:8px 10px;border:1px solid var(--line-strong,#cfcabd);border-radius:8px;background:#fff;color:inherit}' +
+      '.kr-nm .kr-leg-name{font-weight:700;font-size:.9rem;line-height:1.3}' +
+      '.kr-memo{display:block;margin-top:4px;font-size:.76rem;font-weight:500;color:var(--ink-soft,#5a625c);line-height:1.35}' +
+      '.kr-view-btn{display:flex;align-items:center;justify-content:center;width:100%;min-height:46px;margin:14px 0 0;background:#fff;color:var(--navy,#1b2a4a);border:1.5px solid var(--navy,#1b2a4a);border-radius:8px;font-weight:700;font-size:.9rem;font-family:inherit;cursor:pointer}' +
+      '.kr-view-btn:hover{background:rgba(27,42,74,.06)}' +
+      '.kr-affbox{margin-top:14px;padding:12px 14px;border:1px solid var(--line-strong,#cfcabd);border-radius:12px;background:var(--paper-raised,#fff)}' +
+      '.kr-affbox[hidden]{display:none}' +
+      '.kr-affbox h4{margin:0 0 6px;font-size:.86rem}' +
+      '.kr-affrow{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:7px 0;border-top:1px solid var(--line,#e5e0d8);font-size:.84rem}' +
+      '.kr-affrow:first-of-type{border-top:0}' +
+      '.kr-affbtns{display:flex;gap:6px;flex-shrink:0}' +
+      '.kr-affbtn{width:92px;box-sizing:border-box;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:.76rem;font-weight:700;color:var(--coral-ink,#b8431f);background:rgba(217,83,42,.12);border:1px solid rgba(217,83,42,.35);border-radius:6px;padding:5px 6px;text-decoration:none}' +
+      '.kr-view{position:fixed;inset:0;z-index:100000;overflow:auto;background:var(--paper,#f4f1ea);-webkit-overflow-scrolling:touch}' +
+      '.kr-view-in{max-width:760px;margin:0 auto;padding:16px 16px 40px;box-sizing:border-box}' +
+      '.kr-view-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:6px}' +
+      '.kr-view-logo{font-family:"Bricolage Grotesque",ui-sans-serif,sans-serif;font-weight:700;font-size:1.25rem;letter-spacing:-.01em;text-decoration:none;color:var(--navy,#1b2a4a);white-space:nowrap}.kr-view-logo span{color:var(--coral,#e8654a)}.kr-view-title{margin:10px 0 4px;font-size:1.15rem}' +
+      '.kr-view-acts{display:flex;gap:8px}' +
+      '.kr-view-acts button{font:inherit;font-size:.8rem;font-weight:700;padding:7px 12px;border-radius:8px;cursor:pointer;background:#fff;color:var(--navy,#1b2a4a);border:1.5px solid var(--navy,#1b2a4a)}' +
+      '.kr-view-note{margin:0 0 12px;font-size:.76rem;color:var(--ink-soft,#5a625c)}' +
+      '.kr-vday{display:flex;align-items:center;gap:8px;font-weight:800;font-size:.95rem;color:var(--navy,#1b2a4a);margin:16px 0 8px}' +
+      '.kr-dd{width:12px;height:12px;border-radius:50%;display:inline-block}' +
+      '.kr-view .kr-tbl+.kr-vday{margin-top:22px}' +
+      '.kr-view-map{height:300px;margin-top:20px;border-radius:12px;overflow:hidden;background:#e8efe8}' +
+      '.kr-th .kr-th-mv{white-space:normal}' +
+      '@media print{@page{size:A4;margin:12mm}body.kr-viewing>*:not(.kr-view){display:none!important}body.kr-viewing .kr-view{position:static!important;overflow:visible!important}.kr-view .no-print{display:none!important}.kr-view *{-webkit-print-color-adjust:exact;print-color-adjust:exact}.kr-view .kr-stop,.kr-view .kr-view-map{break-inside:avoid}}' +
       '.liked-route-order li.kr-day-head{counter-increment:none;counter-reset:kr-step;display:block;border-bottom:none;padding:16px 0 4px;font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:1rem;color:var(--navy,#1b2a4a)}' +
       '.liked-route-order li.kr-day-head::before{display:none}' +
       '.kr-tip{font-size:.78rem;color:var(--ink-soft,#5a625c);margin:10px 0 0}' +
@@ -1086,11 +1120,13 @@
 
     var pins = [];
     var customSeq = 0;
-    var state = persist ? readJSON(PLAN_KEY, { dates: {}, checked: {} }) : { dates: {}, checked: {} };
+    var state = persist ? readJSON(PLAN_KEY, { dates: {}, checked: {} }) : { dates: {}, checked: {}, memos: {} };
     if (!state.dates) { state.dates = {}; }
     if (!state.checked) { state.checked = {}; }
+    if (!state.memos) { state.memos = {}; }
 
     function pinKey(pin) { return pin.kind === 'article' ? 'a:' + pin.articleHash + '.' + pin.locIdx : 'c:' + pin.cid; }
+    function memoOf(pin) { return (state.memos && state.memos[pinKey(pin)]) || ''; }
     function saveState() { if (persist) { writeJSON(PLAN_KEY, state); } }
     function saveCustom() {
       if (!persist) { return; }
@@ -1262,8 +1298,10 @@
             var m = leg ? Math.max(1, Math.round(leg.secs / 60)) : 0;
             var c = leg && leg.car ? 1 : 0;
             var d = isoToCompact(g.date);
-            if (pin.kind === 'article') { arr.push(['a', pin.articleHash, pin.locIdx, d, m, c]); }
-            else { arr.push(['c', pin.name, +pin.lat.toFixed(5), +pin.lng.toFixed(5), d, m, c]); }
+            var mm = memoOf(pin);
+            var row = pin.kind === 'article' ? ['a', pin.articleHash, pin.locIdx, d, m, c] : ['c', pin.name, +pin.lat.toFixed(5), +pin.lng.toFixed(5), d, m, c];
+            if (mm) { row.push(mm); }
+            arr.push(row);
           });
         });
         return location.origin + location.pathname + '?p=' + b64urlEncode(JSON.stringify(arr));
@@ -1281,46 +1319,86 @@
         }).catch(function () { window.prompt('', url); });
       });
 
+      var DAY_COLORS = ['#e8654a', '#1b6ca8', '#2e9e5b', '#8a4fb0', '#c98a00'];
+      var lastTotals = { total: 0, anyCar: false };
+      function dayText(g) { return g.date ? formatPlanDate(lang, g.date) : PS.undated; }
+
+      function tableHtml(g, view) {
+        var html = '<div class="kr-tbl" role="table"><div class="kr-th"><span>' + STR.thNo + '</span><span>' + STR.thPlace + '</span><span class="kr-th-mv">' + (view ? STR.thNext : STR.thMove) + '</span></div>';
+        g.pins.forEach(function (pin, i) {
+          var hasLeg = i < g.pins.length - 1;
+          var legHtml = '';
+          if (hasLeg) {
+            var leg = g.legs[i] || { secs: 0, car: false };
+            var next = g.pins[i + 1];
+            legHtml = '<div class="kr-leg-box">'
+              + (leg.secs ? '<div class="kr-leg-transit' + (leg.car ? ' kr-driving' : '') + '">' + (leg.car ? STR.legDriving : STR.legTransit) + formatRouteDuration(lang, leg.secs) + '</div>' : '')
+              + '<div class="kr-leg-buttons">'
+              + '<a class="kr-leg-btn' + (leg.car ? ' kr-driving-btn' : '') + '" href="' + routeLegGoogleUrl(pin, next, leg.car) + '" target="_blank" rel="noopener" aria-label="' + escapeHtml(leg.car ? STR.googleDriving : STR.googleTransit) + '">' + STR.legG + '</a>'
+              + '<a class="kr-leg-btn kr-naver-btn' + (leg.car ? ' kr-driving-btn' : '') + '" href="' + routeLegNaverUrl(pin, next, leg.car) + '" target="_blank" rel="noopener" aria-label="' + escapeHtml(leg.car ? STR.naverDriving : STR.naverTransit) + '">' + STR.legN + '</a>'
+              + '</div></div>';
+          }
+          var mm = memoOf(pin);
+          html += '<div class="kr-stop' + (hasLeg ? ' kr-has-leg' : '') + '"' + (view ? '' : ' data-pin="' + pin.id + '"') + '>'
+            + '<div class="kr-no"><b>' + (i + 1) + '</b></div>'
+            + '<div class="kr-nm"><div><div class="kr-leg-name"' + (view ? '' : ' data-pin="' + pin.id + '"') + '>' + escapeHtml(pin.name) + '</div>'
+            + (mm ? '<span class="kr-memo">' + escapeHtml(mm) + '</span>' : '') + '</div></div>'
+            + '<div class="kr-ar">' + (hasLeg ? '<svg viewBox="0 0 24 48" aria-hidden="true"><path d="M5 3 A26 26 0 0 1 5 45" fill="none" stroke="#e8654a" stroke-width="3" stroke-linecap="round" marker-end="url(#krmk)"/></svg>' : '') + '</div>'
+            + '<div class="kr-lg">' + legHtml + '</div></div>';
+        });
+        return html + '</div>';
+      }
+
+      function ensureArrowDefs() {
+        if (document.getElementById('krmk-defs')) { return; }
+        var d = document.createElement('div');
+        d.id = 'krmk-defs';
+        d.setAttribute('aria-hidden', 'true');
+        d.style.cssText = 'position:absolute;width:0;height:0;overflow:hidden';
+        d.innerHTML = '<svg width="0" height="0"><defs><marker id="krmk" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="4.5" markerHeight="4.5" markerUnits="strokeWidth" orient="auto"><path d="M1 1 L9 5 L1 9 Z" fill="#e8654a"/></marker></defs></svg>';
+        document.body.appendChild(d);
+      }
+
+      var viewBtn = document.createElement('button');
+      viewBtn.type = 'button';
+      viewBtn.className = 'kr-view-btn';
+      viewBtn.textContent = STR.viewBtn;
+      viewBtn.setAttribute('data-goatcounter-click', 'route-table-view');
+      totalEl.parentNode.insertBefore(viewBtn, totalEl.nextSibling);
+      var affEl = document.createElement('div');
+      affEl.className = 'kr-affbox';
+      affEl.hidden = true;
+      totalEl.parentNode.insertBefore(affEl, viewBtn.nextSibling);
+
       function renderRouteResult(groups, totalSeconds, anyCar) {
+        ensureArrowDefs();
         var html = '';
         var showHeads = groups.length > 1 || (groups[0] && groups[0].date);
         var labels = {};
         groups.forEach(function (g) {
-          if (showHeads) { html += '<li class="kr-day-head">' + escapeHtml(g.date ? formatPlanDate(lang, g.date) : PS.undated) + '</li>'; }
-          html += '<li class="kr-grp"><div class="kr-tbl" role="table"><div class="kr-th"><span>' + STR.thNo + '</span><span>' + STR.thPlace + '</span><span class="kr-th-mv">' + STR.thMove + '</span></div>';
-          g.pins.forEach(function (pin, i) {
-            labels[pin.id] = i + 1;
-            var hasLeg = i < g.pins.length - 1;
-            var legHtml = '';
-            if (hasLeg) {
-              var leg = g.legs[i] || { secs: 0, car: false };
-              var next = g.pins[i + 1];
-              legHtml = '<div class="kr-leg-box">'
-                + (leg.secs ? '<div class="kr-leg-transit' + (leg.car ? ' kr-driving' : '') + '">' + (leg.car ? STR.legDriving : STR.legTransit) + formatRouteDuration(lang, leg.secs) + '</div>' : '')
-                + '<div class="kr-leg-buttons">'
-                + '<a class="kr-leg-btn' + (leg.car ? ' kr-driving-btn' : '') + '" href="' + routeLegGoogleUrl(pin, next, leg.car) + '" target="_blank" rel="noopener" aria-label="' + escapeHtml(leg.car ? STR.googleDriving : STR.googleTransit) + '">' + STR.legG + '</a>'
-                + '<a class="kr-leg-btn kr-naver-btn' + (leg.car ? ' kr-driving-btn' : '') + '" href="' + routeLegNaverUrl(pin, next, leg.car) + '" target="_blank" rel="noopener" aria-label="' + escapeHtml(leg.car ? STR.naverDriving : STR.naverTransit) + '">' + STR.legN + '</a>'
-                + '</div></div>';
-            }
-            var affHtml = '';
-            (pin.affiliateLinks || []).slice(0, 2).forEach(function (link) {
-              if (!link || !link.url) { return; }
-              affHtml += '<a class="kr-leg-btn kr-affiliate-btn" href="' + escapeHtml(link.url) + '" target="_blank" rel="noopener">'
-                + '🎫 ' + escapeHtml(link.platform || '') + ' <span style="font-weight:400;">' + STR.affiliateTag + '</span></a>';
-            });
-            html += '<div class="kr-stop' + (hasLeg ? ' kr-has-leg' : '') + '" data-pin="' + pin.id + '">'
-              + '<div class="kr-no"><b>' + (i + 1) + '</b></div>'
-              + '<div class="kr-nm"><div><div class="kr-leg-name" data-pin="' + pin.id + '">' + escapeHtml(pin.name) + '</div>'
-              + (affHtml ? '<div class="kr-aff">' + affHtml + '</div>' : '') + '</div></div>'
-              + '<div class="kr-ar">' + (hasLeg ? '<svg viewBox="0 0 24 48" aria-hidden="true"><defs><marker id="krmk" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="4.5" markerHeight="4.5" markerUnits="strokeWidth" orient="auto"><path d="M1 1 L9 5 L1 9 Z" fill="#e8654a"/></marker></defs><path d="M5 3 A26 26 0 0 1 5 45" fill="none" stroke="#e8654a" stroke-width="3" stroke-linecap="round" marker-end="url(#krmk)"/></svg>' : '') + '</div>'
-              + '<div class="kr-lg">' + legHtml + '</div></div>';
-          });
-          html += '</div></li>';
+          if (showHeads) { html += '<li class="kr-day-head">' + escapeHtml(dayText(g)) + '</li>'; }
+          g.pins.forEach(function (pin, i) { labels[pin.id] = i + 1; });
+          html += '<li class="kr-grp">' + tableHtml(g, false) + '</li>';
         });
         orderEl.innerHTML = html;
+        var seen = {}, affRows = '';
+        groups.forEach(function (g) {
+          g.pins.forEach(function (pin) {
+            if (seen[pin.id]) { return; }
+            seen[pin.id] = true;
+            var links = (pin.affiliateLinks || []).filter(function (l) { return l && l.url; }).slice(0, 2);
+            if (!links.length) { return; }
+            affRows += '<div class="kr-affrow"><span>' + escapeHtml(pin.name) + '</span><span class="kr-affbtns">'
+              + links.map(function (l) { return '<a class="kr-affbtn" href="' + escapeHtml(l.url) + '" target="_blank" rel="noopener sponsored">' + escapeHtml(l.platform || '') + '</a>'; }).join('')
+              + '</span></div>';
+          });
+        });
+        affEl.innerHTML = affRows ? '<h4>' + escapeHtml(STR.affTitle) + '</h4>' + affRows : '';
+        affEl.hidden = !affRows;
         totalEl.textContent = totalSeconds
           ? STR.totalPrefix + formatRouteDuration(lang, totalSeconds) + (anyCar ? STR.totalSomeDriving : STR.totalAllTransit)
           : '';
+        lastTotals = { total: totalSeconds, anyCar: anyCar };
         resultEl.hidden = false;
         shareState = groups;
         shareBtn.hidden = false;
@@ -1328,6 +1406,64 @@
         refreshMarkerStyles();
         if (activeId) { setActive(activeId, { open: false }); }
       }
+
+      // --- the simple schedule view (table + map), also what gets printed to PDF ---
+      var viewEl = null, viewKey = null;
+      function closeView() {
+        if (!viewEl) { return; }
+        document.removeEventListener('keydown', viewKey);
+        viewEl.parentNode.removeChild(viewEl);
+        viewEl = null;
+        document.body.classList.remove('kr-viewing');
+      }
+      function openView() {
+        if (!shareState || viewEl) { return; }
+        ensureArrowDefs();
+        var groups = shareState;
+        var showHeads = groups.length > 1 || (groups[0] && groups[0].date);
+        var body = '';
+        groups.forEach(function (g, gi) {
+          if (showHeads) { body += '<div class="kr-vday"><span class="kr-dd" style="background:' + DAY_COLORS[gi % DAY_COLORS.length] + '"></span>' + escapeHtml(dayText(g)) + '</div>'; }
+          body += tableHtml(g, true);
+        });
+        viewEl = document.createElement('div');
+        viewEl.className = 'kr-view';
+        viewEl.setAttribute('role', 'dialog');
+        viewEl.setAttribute('aria-modal', 'true');
+        var logoA = document.querySelector('a.logo');
+        var homeHref = (logoA && logoA.getAttribute('href')) || '/';
+        viewEl.innerHTML = '<div class="kr-view-in"><div class="kr-view-head"><a class="kr-view-logo" href="' + escapeHtml(homeHref) + '" target="_blank" rel="noopener">K-<span>Rambles</span></a><span class="kr-view-acts no-print">'
+          + '<button type="button" class="kr-vpdf" data-goatcounter-click="route-table-pdf">' + escapeHtml(STR.viewPdf) + '</button>'
+          + '<button type="button" class="kr-vclose">' + escapeHtml(STR.viewClose) + '</button></span></div>'
+          + '<h2 class="kr-view-title">' + escapeHtml(STR.viewTitle) + '</h2>'
+          + '<p class="kr-view-note no-print">' + escapeHtml(STR.viewPdfNote) + '</p>'
+          + body + '<div class="kr-view-map" id="kr-view-map"></div></div>';
+        document.body.appendChild(viewEl);
+        document.body.classList.add('kr-viewing');
+        viewEl.querySelector('.kr-vclose').addEventListener('click', closeView);
+        viewEl.querySelector('.kr-vpdf').addEventListener('click', function () { window.print(); });
+        viewKey = function (ev) { if (ev.key === 'Escape') { closeView(); } };
+        document.addEventListener('keydown', viewKey);
+        var mapBox = viewEl.querySelector('#kr-view-map');
+        try {
+          var vm = new google.maps.Map(mapBox, { zoom: 13, center: { lat: groups[0].pins[0].lat, lng: groups[0].pins[0].lng }, mapTypeControl: false, streetViewControl: false, fullscreenControl: false });
+          var bounds = new google.maps.LatLngBounds(), count = 0;
+          groups.forEach(function (g, gi) {
+            g.pins.forEach(function (pin, i) {
+              var pos = { lat: pin.lat, lng: pin.lng };
+              new google.maps.Marker({
+                position: pos, map: vm, title: pin.name,
+                label: { text: String(i + 1), color: '#fff', fontWeight: '700', fontSize: '12px' },
+                icon: { path: 0, scale: 12, fillColor: DAY_COLORS[gi % DAY_COLORS.length], fillOpacity: 1, strokeColor: '#fff', strokeWeight: 2 }
+              });
+              bounds.extend(pos); count++;
+            });
+          });
+          if (count > 1) { vm.fitBounds(bounds); }
+        } catch (err) { mapBox.style.display = 'none'; }
+        var first = viewEl.querySelector('.kr-vclose'); if (first) { first.focus(); }
+      }
+      viewBtn.addEventListener('click', openView);
 
       orderEl.addEventListener('click', function (e) {
         var t = e.target.closest ? e.target.closest('.kr-leg-name') : null;
@@ -1343,6 +1479,7 @@
             + '<label for="kr-chk-' + pin.id + '" data-name="' + pin.id + '">' + escapeHtml(pin.name) + '</label>'
             + (isMine ? '<span class="kr-chip">' + escapeHtml(PS.myPlace) + '</span>' : '')
             + '<input type="date" class="kr-date" data-pin="' + pin.id + '" value="' + escapeHtml(state.dates[key] || '') + '" aria-label="' + escapeHtml(PS.dateLabel) + '">'
+            + '<input type="text" class="kr-memo-in" data-pin="' + pin.id + '" maxlength="80" value="' + escapeHtml(state.memos[key] || '') + '" placeholder="' + escapeHtml(STR.memoPh) + '" aria-label="' + escapeHtml(STR.memoPh) + '">'
             + (isMine ? '<button type="button" class="kr-del" data-del="' + pin.id + '" aria-label="' + escapeHtml(PS.remove) + '" title="' + escapeHtml(PS.remove) + '">×</button>' : '')
             + '</li>';
         }).join('');
@@ -1376,6 +1513,16 @@
           onPlanChange();
         }
       });
+      checklistEl.addEventListener('input', function (e) {
+        var t = e.target;
+        if (!t.classList || !t.classList.contains('kr-memo-in')) { return; }
+        var p3 = pinById(t.getAttribute('data-pin'));
+        if (!p3) { return; }
+        var mv = cleanMemo(t.value);
+        if (mv) { state.memos[pinKey(p3)] = mv; } else { delete state.memos[pinKey(p3)]; }
+        saveState();
+        if (shareState && !resultEl.hidden) { renderRouteResult(shareState, lastTotals.total, lastTotals.anyCar); }
+      });
       checklistEl.addEventListener('click', function (e) {
         var del = e.target.closest ? e.target.closest('.kr-del') : null;
         if (del) {
@@ -1384,7 +1531,7 @@
           if (!pin) { return; }
           if (markerById[id]) { markerById[id].setMap(null); delete markerById[id]; delete infoById[id]; }
           pins.splice(pins.indexOf(pin), 1);
-          delete state.checked[pinKey(pin)]; delete state.dates[pinKey(pin)];
+          delete state.checked[pinKey(pin)]; delete state.dates[pinKey(pin)]; delete state.memos[pinKey(pin)];
           saveCustom(); saveState(); updateCount(); renderChecklist(); onPlanChange();
           return;
         }
@@ -1524,6 +1671,7 @@
         return list.map(function (x) {
           var o = { name: x.pin.name, lat: +x.pin.lat.toFixed(6), lng: +x.pin.lng.toFixed(6), date: x.date || '' };
           if (x.pin.address) { o.address = x.pin.address; }
+          var mm2 = memoOf(x.pin); if (mm2) { o.memo = mm2; }
           if (x.pin.kind === 'article') { o.article = x.pin.articleHash; o.pinIndex = x.pin.locIdx; }
           return o;
         });
@@ -1570,6 +1718,7 @@
           }
           state.checked[pinKey(existing)] = true;
           if (date) { state.dates[pinKey(existing)] = date; }
+          var memoIn = cleanMemo(st.memo); if (memoIn) { state.memos[pinKey(existing)] = memoIn; }
           added++;
         });
         saveCustom(); saveState(); updateCount(); renderChecklist(); onPlanChange(); refreshMapFocus();
@@ -1683,6 +1832,7 @@
           g.legs.push(st.m ? { secs: st.m * 60, car: st.car } : null);
           state.checked[pinKey(pin)] = true;
           if (st.date) { state.dates[pinKey(pin)] = st.date; }
+          if (st.memo) { state.memos[pinKey(pin)] = st.memo; }
         });
         order.sort(function (a, b) { if (a === b) { return 0; } if (!a) { return 1; } if (!b) { return -1; } return a < b ? -1 : 1; });
         var groups = order.map(function (k) {
@@ -1707,7 +1857,7 @@
         saveBtn.addEventListener('click', function () {
           var customs = readJSON(CUSTOM_KEY, []);
           var st2 = readJSON(PLAN_KEY, { dates: {}, checked: {} });
-          if (!st2.dates) { st2.dates = {}; } if (!st2.checked) { st2.checked = {}; }
+          if (!st2.dates) { st2.dates = {}; } if (!st2.checked) { st2.checked = {}; } if (!st2.memos) { st2.memos = {}; }
           groups.forEach(function (g) {
             g.pins.forEach(function (pin) {
               var dup = null;
@@ -1719,6 +1869,7 @@
               }
               st2.checked['c:' + dup.id] = true;
               if (g.date) { st2.dates['c:' + dup.id] = g.date; }
+              var mm3 = memoOf(pin); if (mm3) { st2.memos['c:' + dup.id] = mm3; }
             });
           });
           writeJSON(CUSTOM_KEY, customs); writeJSON(PLAN_KEY, st2);
