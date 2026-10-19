@@ -196,10 +196,10 @@
     var msg = lang === 'ko'
       ? '저장한 글은 이 브라우저에만 보관돼요. 브라우저를 바꾸면 목록이 옮겨지지 않아요. 저장한 글은 상단 "내 여행 플래너"에서 다시 볼 수 있어요.'
       : lang === 'vi'
-      ? 'Danh sách yêu thích chỉ được lưu trên trình duyệt này — đổi trình duyệt khác thì danh sách sẽ không còn. Bạn có thể xem lại các bài đã lưu từ menu ở trên cùng.'
+      ? 'Các bài đã lưu chỉ được giữ trong trình duyệt này — đổi trình duyệt thì danh sách sẽ không chuyển theo. Bạn có thể xem lại ở mục “Lộ trình của tôi” phía trên.'
       : lang === 'th'
-      ? 'รายการที่บันทึกไว้จะถูกเก็บไว้ในเบราว์เซอร์นี้เท่านั้น — หากเปลี่ยนเบราว์เซอร์ รายการจะไม่ถูกเก็บไว้ คุณสามารถดูบทความที่บันทึกไว้ทั้งหมดได้อีกครั้งจากเมนูด้านบน'
-      : 'Your likes are saved to this browser only — switch browsers and the list won’t carry over. You can find everything you’ve liked again from the menu at the top.';
+      ? 'บทความที่บันทึกไว้จะถูกเก็บในเบราว์เซอร์นี้เท่านั้น — หากเปลี่ยนเบราว์เซอร์ รายการจะไม่ถูกย้ายตามไป ดูอีกครั้งได้ที่ “แผนเที่ยวของฉัน” ด้านบน'
+      : 'Saved pieces stay in this browser only — switch browsers and the list won’t carry over. You can find them again under “My Trip Planner” at the top.';
     var toast = document.createElement('div');
     toast.className = 'kr-like-toast';
 
@@ -544,15 +544,15 @@
       shareTitle: 'My Busan route — K-Rambles',
       sharedTitle: 'A route shared with you',
       sharedMeta: '{n} stops · about {t} total · view only',
-      saveToLikes: '♡ Add to my likes',
-      savedToLikes: '✓ Added to your likes',
+      saveToLikes: '♡ Add to my planner',
+      savedToLikes: '✓ Added to your planner',
       recalcBtn: 'Recalculate in my own order',
-      title: 'Plan a route between your saved spots',
+      title: 'Pick your stops and plan the route by date',
       calcBtn: 'Plan the order',
       calculating: 'Checking transit times…',
       fillingGaps: 'Filling in a few driving-time gaps…',
       failed: 'Distance lookup failed: ',
-      done: 'Done',
+      done: 'Route ready',
       someDriving: 'Some legs have no public transit — using driving time for those.',
       toNextTransit: 'Transit to next stop: about ',
       toNextDriving: 'No public transit — driving to next stop: about ',
@@ -600,10 +600,10 @@
       shareTitle: 'Lộ trình Busan của tôi — K-Rambles',
       sharedTitle: 'Lộ trình được chia sẻ với bạn',
       sharedMeta: '{n} điểm dừng · tổng khoảng {t} · chỉ xem',
-      saveToLikes: '♡ Thêm vào mục Đã lưu',
-      savedToLikes: '✓ Đã thêm vào mục Đã lưu',
+      saveToLikes: '♡ Thêm vào lộ trình của tôi',
+      savedToLikes: '✓ Đã thêm vào lộ trình của tôi',
       recalcBtn: 'Tính lại theo thứ tự của tôi',
-      title: 'Chọn nơi sẽ ghé để lên lộ trình',
+      title: 'Chọn nơi sẽ ghé và lên lộ trình theo ngày',
       calcBtn: 'Tính lộ trình',
       calculating: 'Đang kiểm tra thời gian di chuyển bằng phương tiện công cộng…',
       fillingGaps: 'Đang bổ sung thời gian đi ô tô cho vài chặng…',
@@ -628,10 +628,10 @@
       shareTitle: 'เส้นทางปูซานของฉัน — K-Rambles',
       sharedTitle: 'เส้นทางที่เพื่อนแชร์ให้',
       sharedMeta: '{n} จุด · รวมประมาณ {t} · ดูอย่างเดียว',
-      saveToLikes: '♡ เพิ่มในรายการที่บันทึกไว้',
-      savedToLikes: '✓ เพิ่มในรายการที่บันทึกไว้แล้ว',
+      saveToLikes: '♡ เพิ่มในแผนเที่ยวของฉัน',
+      savedToLikes: '✓ เพิ่มในแผนเที่ยวของฉันแล้ว',
       recalcBtn: 'คำนวณใหม่ตามลำดับของฉัน',
-      title: 'เลือกสถานที่ที่จะไปจริงเพื่อวางเส้นทาง',
+      title: 'เลือกสถานที่และวางเส้นทางตามวันที่',
       calcBtn: 'คำนวณเส้นทาง',
       calculating: 'กำลังตรวจสอบเวลาเดินทางด้วยขนส่งสาธารณะ…',
       fillingGaps: 'กำลังเติมเวลาขับรถสำหรับบางช่วง…',
@@ -803,7 +803,7 @@
   var PLAN_STR = {
     en: {
       addTitle: 'Add your own places',
-      addHint: 'Search any place in Korea, then tick it below to include it in your route.',
+      addHint: '',
       searchPh: 'Search a place in Korea (name or address)',
       searching: 'Searching…',
       noResults: 'No places found',
@@ -826,7 +826,7 @@
       sharedPlanTitle: 'A plan shared with you',
       tooManyDay: 'Please keep each day to 10 places or fewer.',
       pickOne: 'Tick at least one place.',
-      tipActive: 'Tap a pin or a name: the matching place is highlighted on the map and in the list.',
+      tipActive: 'Tap a pin or a name: the matching place is highlighted on the map and in the list.<br>Pick a travel date to plan your route day by day.',
       sharedLabel: 'Shared'
     },
     ko: {
@@ -859,7 +859,7 @@
     },
     vi: {
       addTitle: 'Tự thêm địa điểm',
-      addHint: 'Tìm bất kỳ địa điểm nào ở Hàn Quốc, rồi tích chọn bên dưới để đưa vào lộ trình.',
+      addHint: '',
       searchPh: 'Tìm địa điểm ở Hàn Quốc (tên hoặc địa chỉ)',
       searching: 'Đang tìm…',
       noResults: 'Không tìm thấy địa điểm',
@@ -882,12 +882,12 @@
       sharedPlanTitle: 'Lịch trình được chia sẻ với bạn',
       tooManyDay: 'Mỗi ngày chỉ tính được tối đa 10 địa điểm.',
       pickOne: 'Hãy tích chọn ít nhất một địa điểm.',
-      tipActive: 'Chạm vào ghim hoặc tên địa điểm: nơi tương ứng sẽ được làm nổi bật trên bản đồ và trong danh sách.',
+      tipActive: 'Chạm vào ghim hoặc tên địa điểm: nơi tương ứng sẽ được làm nổi bật trên bản đồ và trong danh sách.<br>Chọn ngày đi để lên lộ trình theo từng ngày.',
       sharedLabel: 'Chia sẻ'
     },
     th: {
       addTitle: 'เพิ่มสถานที่ของคุณเอง',
-      addHint: 'ค้นหาสถานที่ใดก็ได้ในเกาหลี แล้วติ๊กเลือกด้านล่างเพื่อใส่ในเส้นทาง',
+      addHint: '',
       searchPh: 'ค้นหาสถานที่ในเกาหลี (ชื่อหรือที่อยู่)',
       searching: 'กำลังค้นหา…',
       noResults: 'ไม่พบสถานที่',
@@ -910,7 +910,7 @@
       sharedPlanTitle: 'แผนที่เพื่อนแชร์ให้',
       tooManyDay: 'คำนวณได้ไม่เกิน 10 แห่งต่อวัน',
       pickOne: 'โปรดติ๊กเลือกอย่างน้อยหนึ่งแห่ง',
-      tipActive: 'แตะหมุดหรือชื่อสถานที่ แล้วสถานที่เดียวกันจะถูกไฮไลต์ทั้งบนแผนที่และในรายการ',
+      tipActive: 'แตะหมุดหรือชื่อสถานที่ แล้วสถานที่เดียวกันจะถูกไฮไลต์ทั้งบนแผนที่และในรายการ<br>เลือกวันที่เดินทางเพื่อวางเส้นทางทีละวัน',
       sharedLabel: 'แชร์'
     }
   };
@@ -1936,10 +1936,10 @@
       var msg = hintLang === 'ko'
         ? '하트 누른 글과 여행 동선은 여기서 확인할 수 있어요.'
         : hintLang === 'vi'
-        ? 'Nhấn vào đây để xem các bài đã lưu, hoặc vào đây để chia tiền.'
+        ? 'Các bài bạn đã thả tim và lộ trình nằm ở đây.'
         : hintLang === 'th'
-        ? 'แตะที่นี่เพื่อดูบทความที่บันทึกไว้ หรือแตะที่นี่เพื่อหารค่าใช้จ่าย'
-        : 'Tap here to see your saved articles, or here to split costs.';
+        ? 'บทความที่กดหัวใจและเส้นทางของคุณอยู่ที่นี่'
+        : 'Your hearted pieces and trip routes are here.';
 
       if (!document.getElementById('kr-header-hint-style')) {
         var style = document.createElement('style');

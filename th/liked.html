@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>รายการที่บันทึกไว้ | K-Rambles</title>
+<title>แผนเที่ยวของฉัน | K-Rambles</title>
 <link rel="canonical" href="https://k-rambles.com/th/liked.html">
 <link rel="alternate" hreflang="ko" href="https://k-rambles.com/ko/liked.html">
 <link rel="alternate" hreflang="en" href="https://k-rambles.com/liked.html">
 <link rel="alternate" hreflang="vi" href="https://k-rambles.com/vi/liked.html">
 <link rel="alternate" hreflang="th" href="https://k-rambles.com/th/liked.html">
 <link rel="alternate" hreflang="x-default" href="https://k-rambles.com/liked.html">
-<meta name="description" content="The pieces you've tapped the heart on, collected in one place — saved right in this browser, no account needed.">
+<meta name="description" content="วางแผนเส้นทางทีละวันจากบทความที่กดหัวใจและสถานที่ที่ค้นหาเอง — เก็บไว้ในเบราว์เซอร์นี้ ไม่ต้องสมัครบัญชี">
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Work+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&family=Noto+Sans+Thai:wght@400;500;600;700&display=swap');
 
@@ -84,7 +84,8 @@
   h1.liked-title { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: clamp(2.1rem, 4.6vw, 3.1rem); line-height: 1.05; letter-spacing: -0.02em; margin: 0 0 12px; text-wrap: balance; }
   p.liked-dek { font-size: 1.08rem; color: var(--ink-soft); max-width: 60ch; margin: 0 0 8px; }
   p.liked-count { font-family: "Space Mono", monospace; font-size: 0.82rem; letter-spacing: 0.05em; text-transform: uppercase; color: var(--ink-soft); margin: 0 0 8px; }
-  p.liked-note { font-size: 0.88rem; color: var(--ink-soft); margin: 18px 0 0; padding: 14px 16px; background: var(--paper-raised); border-radius: 12px; border: 1px solid var(--line); }
+  p.liked-note { font-size: 0.88rem; color: var(--ink-soft); margin: 8px 0 0; padding: 14px 16px; background: var(--paper-raised); border-radius: 12px; border: 1px solid var(--line); }
+  .note-lead { color: var(--ink); font-size: 1rem; }
   .note-warn { color: var(--coral-ink); font-weight: 700; }
 
   .liked-grid { max-width: 1040px; margin: 0 auto; padding: 10px 28px 60px; display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 20px; }
@@ -183,11 +184,8 @@
 </header>
 
 <div class="liked-hero">
-  <div class="liked-icon-badge"><svg><use href="#i-heart"/></svg></div>
-  <h1 class="liked-title">รายการที่บันทึกไว้</h1>
-  <p class="liked-dek">ทุกบทความที่คุณกดหัวใจไว้ อยู่รวมกันที่นี่</p>
-  <p class="liked-count">0 saved</p>
-  <p class="liked-note">รายการที่บันทึกไว้จะถูกเก็บไว้ในเบราว์เซอร์นี้เท่านั้น<br><br><strong class="note-warn">หากเปลี่ยนเบราว์เซอร์หรือล้างการตั้งค่า รายการนี้จะหายไป</strong></p>
+  <h1 class="liked-title">แผนเที่ยวของฉัน</h1>
+  <p class="liked-note"><strong class="note-lead">รวมบทความที่กดหัวใจและสถานที่ที่อยากไป แล้ววางแผนเส้นทางทีละวัน</strong><br><br>บทความและสถานที่ที่บันทึกไว้จะถูกเก็บไว้ในเบราว์เซอร์นี้เท่านั้น<br><br><strong class="note-warn">หากเปลี่ยนเบราว์เซอร์หรือล้างการตั้งค่า ข้อมูลจะหายไป — ใช้ “บันทึกแผนเป็นไฟล์” เพื่อเก็บแผนสำคัญไว้</strong></p>
 </div>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -201,11 +199,10 @@
 
 <div class="liked-map-wrap" id="liked-map-wrap" hidden>
   <div class="liked-map-head">
-    <h2 class="liked-map-title">สถานที่ที่คุณบันทึกไว้ บนแผนที่</h2>
+    <h2 class="liked-map-title">สถานที่ของฉัน บนแผนที่</h2>
     <span class="liked-map-count mono">0 pins</span>
   </div>
   <div class="liked-map" id="liked-map"></div>
-  <p class="liked-map-note">แตะที่พินเพื่อดูว่าเป็นของบทความไหน — เฉพาะบทความที่พูดถึงสถานที่จริงเท่านั้นที่จะมีพิน คู่มือทั่วไปจะไม่มีพิน</p>
   <div class="liked-route-panel" id="liked-route-panel" hidden>
     <h3 class="liked-route-title" id="liked-route-title"></h3>
     <ul class="liked-route-list" id="liked-route-checklist"></ul>
@@ -226,7 +223,7 @@
 <div class="liked-empty" id="liked-empty" hidden>
   <div class="liked-empty-card">
     <svg><use href="#i-heart"/></svg>
-    <p>ยังไม่มีบทความที่บันทึกไว้ แตะรูปหัวใจที่การ์ดใดก็ได้ทั่วเว็บไซต์เพื่อบันทึกไว้ที่นี่</p>
+    <p>ยังไม่มีรายการที่บันทึกไว้ แตะรูปหัวใจที่การ์ดใดก็ได้ทั่วเว็บไซต์ แล้วจะมารวมกันที่นี่</p>
     <p><a href="/th/index.html">ดูหมวดหมู่ทั้งหมด →</a></p>
   </div>
 </div>
@@ -249,8 +246,6 @@
     ],
     gridSelector: '.liked-grid',
     emptySelector: '#liked-empty',
-    countSelector: '.liked-count',
-    countTemplate: '{n} บทความที่บันทึกไว้',
     map: {
       apiKey: 'AIzaSyCKeJzUktRHQ-eGLExEqkscLMBSJpTFVmg',
       containerSelector: '#liked-map',

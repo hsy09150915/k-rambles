@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Liked | K-Rambles</title>
+<title>My Trip Planner | K-Rambles</title>
 <link rel="canonical" href="https://k-rambles.com/liked.html">
 <link rel="alternate" hreflang="ko" href="https://k-rambles.com/ko/liked.html">
 <link rel="alternate" hreflang="en" href="https://k-rambles.com/liked.html">
 <link rel="alternate" hreflang="vi" href="https://k-rambles.com/vi/liked.html">
 <link rel="alternate" hreflang="th" href="https://k-rambles.com/th/liked.html">
 <link rel="alternate" hreflang="x-default" href="https://k-rambles.com/liked.html">
-<meta name="description" content="The pieces you've tapped the heart on, collected in one place — saved right in this browser, no account needed.">
+<meta name="description" content="Plan your trip day by day from the pieces you've hearted and places you search yourself — saved right in this browser, no account needed.">
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Work+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap');
 
@@ -84,7 +84,8 @@
   h1.liked-title { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: clamp(2.1rem, 4.6vw, 3.1rem); line-height: 1.05; letter-spacing: -0.02em; margin: 0 0 12px; text-wrap: balance; }
   p.liked-dek { font-size: 1.08rem; color: var(--ink-soft); max-width: 60ch; margin: 0 0 8px; }
   p.liked-count { font-family: "Space Mono", monospace; font-size: 0.82rem; letter-spacing: 0.05em; text-transform: uppercase; color: var(--ink-soft); margin: 0 0 8px; }
-  p.liked-note { font-size: 0.88rem; color: var(--ink-soft); margin: 18px 0 0; padding: 14px 16px; background: var(--paper-raised); border-radius: 12px; border: 1px solid var(--line); }
+  p.liked-note { font-size: 0.88rem; color: var(--ink-soft); margin: 8px 0 0; padding: 14px 16px; background: var(--paper-raised); border-radius: 12px; border: 1px solid var(--line); }
+  .note-lead { color: var(--ink); font-size: 1rem; }
   .note-warn { color: var(--coral-ink); font-weight: 700; }
 
   .liked-grid { max-width: 1040px; margin: 0 auto; padding: 10px 28px 60px; display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 20px; }
@@ -183,11 +184,8 @@
 </header>
 
 <div class="liked-hero">
-  <div class="liked-icon-badge"><svg><use href="#i-heart"/></svg></div>
-  <h1 class="liked-title">Liked</h1>
-  <p class="liked-dek">Everything you've tapped the heart on, in one place.</p>
-  <p class="liked-count">0 saved</p>
-  <p class="liked-note">Your likes are saved to this browser only.<br><br><strong class="note-warn">If you switch browsers or clear your browser settings, this list will disappear.</strong></p>
+  <h1 class="liked-title">My Trip Planner</h1>
+  <p class="liked-note"><strong class="note-lead">Collect the pieces you've hearted and the places you want to visit, then plan your route day by day.</strong><br><br>Your saved pieces and places are kept in this browser only.<br><br><strong class="note-warn">If you switch browsers or clear your settings, they'll disappear — use “Save plan to a file” to keep important plans.</strong></p>
 </div>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -201,11 +199,10 @@
 
 <div class="liked-map-wrap" id="liked-map-wrap" hidden>
   <div class="liked-map-head">
-    <h2 class="liked-map-title">Your saved spots, on the map</h2>
+    <h2 class="liked-map-title">Your places, on the map</h2>
     <span class="liked-map-count mono">0 pins</span>
   </div>
   <div class="liked-map" id="liked-map"></div>
-  <p class="liked-map-note">Tap a pin to see which saved piece it belongs to. Only pieces about an actual place show up here — how-to guides don't have a pin.</p>
   <div class="liked-route-panel" id="liked-route-panel" hidden>
     <h3 class="liked-route-title" id="liked-route-title"></h3>
     <ul class="liked-route-list" id="liked-route-checklist"></ul>
@@ -226,7 +223,7 @@
 <div class="liked-empty" id="liked-empty" hidden>
   <div class="liked-empty-card">
     <svg><use href="#i-heart"/></svg>
-    <p>No saved pieces yet. Tap the heart on any card across the site to save it here.</p>
+    <p>Nothing saved yet. Tap the heart on any card across the site and it will gather here.</p>
     <p><a href="/index.html">Browse the boards →</a></p>
   </div>
 </div>
@@ -249,8 +246,6 @@
     ],
     gridSelector: '.liked-grid',
     emptySelector: '#liked-empty',
-    countSelector: '.liked-count',
-    countTemplate: '{n} {n:pin|pins} saved',
     map: {
       apiKey: 'AIzaSyCKeJzUktRHQ-eGLExEqkscLMBSJpTFVmg',
       containerSelector: '#liked-map',
