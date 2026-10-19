@@ -1934,7 +1934,7 @@
 
       var hintLang = getLang();
       var msg = hintLang === 'ko'
-        ? '저장한 글과 동선은 여기서, 경비 정산은 여기서 할 수 있어요.'
+        ? '하트 누른 글과 여행 동선은 여기서 확인할 수 있어요.'
         : hintLang === 'vi'
         ? 'Nhấn vào đây để xem các bài đã lưu, hoặc vào đây để chia tiền.'
         : hintLang === 'th'
