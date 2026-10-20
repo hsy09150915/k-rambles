@@ -1,5 +1,49 @@
 [
   {
+    "title": "부산 송정에서 해동용궁사까지, 동해선과 버스로 가는 동쪽 해안 코스",
+    "url": "2026-10-19-busan-songjeong-yonggungsa-east-course-ko.html",
+    "thumb": "assets/thumbs/trip-planner/songjeong-east-course.jpg",
+    "label": "여행 계획 · 공개중",
+    "alt": "해 질 녘 바위 해안을 따라 서 있는 오시리아의 계단식 흰 건물",
+    "badge": null,
+    "like_id": "trip-planner/2026-10-19-busan-songjeong-yonggungsa-east-course-ko.html",
+    "date": "2026-10-20",
+    "kw": "송정 송정해수욕장 해동용궁사 오랑대 오랑대공원 오시리아 오시리아역 동해선 롯데월드 롯데월드어드벤처 롯데몰 스카이라인루지 루지 기장 동부산 해운대역 버스 A02 181번 부산 동쪽 코스 당일치기",
+    "city": "busan",
+    "locations": [
+      {
+        "name": "송정해수욕장",
+        "address": "부산 해운대구 송정해변로 62",
+        "lat": 35.17877,
+        "lng": 129.19989
+      },
+      {
+        "name": "오시리아역",
+        "address": "부산 기장군 기장읍 동부산관광로",
+        "lat": 35.19655,
+        "lng": 129.20944
+      },
+      {
+        "name": "롯데월드 어드벤처 부산",
+        "address": "부산 기장군 기장읍 동부산관광로 42",
+        "lat": 35.19639,
+        "lng": 129.215
+      },
+      {
+        "name": "해동용궁사",
+        "address": "부산 기장군 기장읍 용궁길 86",
+        "lat": 35.18838,
+        "lng": 129.22329
+      },
+      {
+        "name": "오랑대공원",
+        "address": "부산 기장군 기장읍 연화리",
+        "lat": 35.2057,
+        "lng": 129.2277
+      }
+    ]
+  },
+  {
     "title": "부산 해운대 하루 코스, 동백섬·해변·블루라인파크·청사포 동선 정리",
     "url": "2026-10-15-busan-haeundae-day-course-ko.html",
     "thumb": "assets/thumbs/trip-planner/haeundae-day-course.jpg",

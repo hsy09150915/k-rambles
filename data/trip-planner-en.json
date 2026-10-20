@@ -1,5 +1,49 @@
 [
   {
+    "title": "Busan East Coast Course: Songjeong Beach, Haedong Yonggungsa Temple and Orangdae Park by Donghae Line and Bus",
+    "url": "2026-10-19-busan-songjeong-yonggungsa-east-course-en.html",
+    "thumb": "assets/thumbs/trip-planner/songjeong-east-course.jpg",
+    "label": "Trip plan · live",
+    "alt": "Terraced white buildings along a rocky coast at sunset in Osiria",
+    "badge": null,
+    "like_id": "trip-planner/2026-10-19-busan-songjeong-yonggungsa-east-course-en.html",
+    "date": "2026-10-20",
+    "kw": "songjeong songjeong beach haedong yonggungsa temple orangdae orangdae park osiria osiria station donghae line lotte world lotte world adventure busan lotte mall skyline luge luge gijang haeundae station bus a02 181 busan east coast one day itinerary",
+    "city": "busan",
+    "locations": [
+      {
+        "name": "Songjeong Beach",
+        "address": "62 Songjeonghaebyeon-ro, Haeundae-gu, Busan",
+        "lat": 35.17877,
+        "lng": 129.19989
+      },
+      {
+        "name": "Osiria Station",
+        "address": "Dongbusan Gwangwang-ro, Gijang-gun, Busan",
+        "lat": 35.19655,
+        "lng": 129.20944
+      },
+      {
+        "name": "Lotte World Adventure Busan",
+        "address": "42 Dongbusan Gwangwang-ro, Gijang-gun, Busan",
+        "lat": 35.19639,
+        "lng": 129.215
+      },
+      {
+        "name": "Haedong Yonggungsa Temple",
+        "address": "86 Yonggung-gil, Gijang-gun, Busan",
+        "lat": 35.18838,
+        "lng": 129.22329
+      },
+      {
+        "name": "Orangdae Park",
+        "address": "Yeonhwa-ri, Gijang-gun, Busan",
+        "lat": 35.2057,
+        "lng": 129.2277
+      }
+    ]
+  },
+  {
     "title": "Busan Haeundae One-Day Course: Dongbaek Island, the Beach, Blue Line Park and Cheongsapo",
     "url": "2026-10-15-busan-haeundae-day-course-en.html",
     "thumb": "assets/thumbs/trip-planner/haeundae-day-course.jpg",

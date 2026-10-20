@@ -1,5 +1,49 @@
 [
   {
+    "title": "เส้นทางชายฝั่งตะวันออกปูซาน: หาดซงจอง วัดแฮดงยงกุงซา และสวนโอรังแด ด้วยสายทงแฮและรถบัส",
+    "url": "2026-10-19-busan-songjeong-yonggungsa-east-course-th.html",
+    "thumb": "assets/thumbs/trip-planner/songjeong-east-course.jpg",
+    "label": "แผนเที่ยว · เผยแพร่แล้ว",
+    "alt": "อาคารสีขาวเรียงเป็นชั้นริมชายฝั่งหินยามพระอาทิตย์ตกที่โอชิเรีย",
+    "badge": null,
+    "like_id": "trip-planner/2026-10-19-busan-songjeong-yonggungsa-east-course-th.html",
+    "date": "2026-10-20",
+    "kw": "ซงจอง หาดซงจอง songjeong แฮดงยงกุงซา haedong yonggungsa โอรังแด orangdae โอชิเรีย osiria สายทงแฮ donghae ล็อตเต้ เวิลด์ lotte world ล็อตเต้มอลล์ lotte mall สกายไลน์ ลูจ skyline luge คิจัง gijang สถานีแฮอุนแด รถบัส a02 181 ปูซาน ชายฝั่งตะวันออก เที่ยวหนึ่งวัน",
+    "city": "busan",
+    "locations": [
+      {
+        "name": "หาดซงจอง",
+        "address": "62 Songjeonghaebyeon-ro เขตแฮอุนแด ปูซาน",
+        "lat": 35.17877,
+        "lng": 129.19989
+      },
+      {
+        "name": "สถานีโอชิเรีย",
+        "address": "Dongbusan Gwangwang-ro อำเภอคิจัง ปูซาน",
+        "lat": 35.19655,
+        "lng": 129.20944
+      },
+      {
+        "name": "ล็อตเต้ เวิลด์ แอดเวนเจอร์ ปูซาน",
+        "address": "42 Dongbusan Gwangwang-ro อำเภอคิจัง ปูซาน",
+        "lat": 35.19639,
+        "lng": 129.215
+      },
+      {
+        "name": "วัดแฮดงยงกุงซา",
+        "address": "86 Yonggung-gil อำเภอคิจัง ปูซาน",
+        "lat": 35.18838,
+        "lng": 129.22329
+      },
+      {
+        "name": "สวนโอรังแด",
+        "address": "Yeonhwa-ri อำเภอคิจัง ปูซาน",
+        "lat": 35.2057,
+        "lng": 129.2277
+      }
+    ]
+  },
+  {
     "title": "เที่ยวแฮอุนแดปูซานหนึ่งวัน: เกาะทงแบก ชายหาด บลูไลน์พาร์ค และชองซาโพ",
     "url": "2026-10-15-busan-haeundae-day-course-th.html",
     "thumb": "assets/thumbs/trip-planner/haeundae-day-course.jpg",

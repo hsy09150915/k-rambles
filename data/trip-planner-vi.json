@@ -1,5 +1,49 @@
 [
   {
+    "title": "Lộ trình bờ biển phía đông Busan: bãi biển Songjeong, chùa Haedong Yonggungsa và công viên Orangdae bằng tuyến Donghae và xe buýt",
+    "url": "2026-10-19-busan-songjeong-yonggungsa-east-course-vi.html",
+    "thumb": "assets/thumbs/trip-planner/songjeong-east-course.jpg",
+    "label": "Lộ trình · Trực tuyến",
+    "alt": "Những tòa nhà trắng xếp bậc thang dọc bờ biển đá lúc hoàng hôn ở Osiria",
+    "badge": null,
+    "like_id": "trip-planner/2026-10-19-busan-songjeong-yonggungsa-east-course-vi.html",
+    "date": "2026-10-20",
+    "kw": "songjeong bai bien songjeong haedong yonggungsa chua orangdae cong vien orangdae osiria ga osiria donghae tuyen donghae lotte world lotte world adventure busan lotte mall skyline luge luge gijang ga haeundae xe buyt a02 181 busan bo bien phia dong lo trinh mot ngay",
+    "city": "busan",
+    "locations": [
+      {
+        "name": "Bãi biển Songjeong",
+        "address": "62 Songjeonghaebyeon-ro, Haeundae-gu, Busan",
+        "lat": 35.17877,
+        "lng": 129.19989
+      },
+      {
+        "name": "Ga Osiria",
+        "address": "Dongbusan Gwangwang-ro, Gijang-gun, Busan",
+        "lat": 35.19655,
+        "lng": 129.20944
+      },
+      {
+        "name": "Lotte World Adventure Busan",
+        "address": "42 Dongbusan Gwangwang-ro, Gijang-gun, Busan",
+        "lat": 35.19639,
+        "lng": 129.215
+      },
+      {
+        "name": "Chùa Haedong Yonggungsa",
+        "address": "86 Yonggung-gil, Gijang-gun, Busan",
+        "lat": 35.18838,
+        "lng": 129.22329
+      },
+      {
+        "name": "Công viên Orangdae",
+        "address": "Yeonhwa-ri, Gijang-gun, Busan",
+        "lat": 35.2057,
+        "lng": 129.2277
+      }
+    ]
+  },
+  {
     "title": "Lộ trình một ngày ở Haeundae, Busan: đảo Dongbaek, bãi biển, Blue Line Park và Cheongsapo",
     "url": "2026-10-15-busan-haeundae-day-course-vi.html",
     "thumb": "assets/thumbs/trip-planner/haeundae-day-course.jpg",
