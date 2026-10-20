@@ -1,0 +1,287 @@
+# K-Rambles
+
+> Busan travel and long-stay information for visitors and foreign residents, checked against official sources (operator websites and official blogs, app-store listings tested by the author, Naver Map and Google Maps for transport, Busan local-government sites). Written by a Korean who has lived in Busan for decades. Available in English, Korean, Vietnamese and Thai. Each article shows its date; fares, schedules and opening details can change.
+
+- About and method: https://k-rambles.com/about.html
+- Sitemap: https://k-rambles.com/sitemap.xml
+- Contact for corrections: see the About page
+
+## English
+
+- Category pages: [Trip planning](https://k-rambles.com/trip-planner/index.html), [Getting around Busan](https://k-rambles.com/getting-around/index.html), [Food](https://k-rambles.com/taste/index.html), [Long-stay living](https://k-rambles.com/long-stay/index.html)
+
+### Trip planning
+
+- [Busan East Coast Course: Songjeong Beach, Haedong Yonggungsa Temple and Orangdae Park by Donghae Line and Bus](https://k-rambles.com/trip-planner/2026-10-19-busan-songjeong-yonggungsa-east-course-en.html) — 2026-10-20
+- [Busan Haeundae One-Day Course: Dongbaek Island, the Beach, Blue Line Park and Cheongsapo](https://k-rambles.com/trip-planner/2026-10-15-busan-haeundae-day-course-en.html) — 2026-10-15
+- [Gwangalli at Night — Drone Show Times, Where to Watch, and What to Know Before You Go](https://k-rambles.com/trip-planner/2026-10-08-gwangalli-night-guide-en.html) — 2026-10-08
+- [Igidae Coastal Walk — A Volcanic Cliff Trail That Only Opened in 1993](https://k-rambles.com/trip-planner/2026-10-07-igidae-coastal-walk-guide-en.html) — 2026-10-08
+- [Time to Spare at Busan Station or the Ferry Terminal — A Meal, Coffee and a Walk](https://k-rambles.com/trip-planner/2026-10-07-busan-station-layover-guide-en.html) — 2026-10-07
+- [Nampo-dong & Gukje Market — A One-Day Walk Through Old Downtown Busan](https://k-rambles.com/trip-planner/2026-10-04-nampo-gukje-market-guide-en.html) — 2026-10-06
+- [Busan Without the Walking — Sauna & Jjimjilbang Picks](https://k-rambles.com/trip-planner/2026-09-29-best-busan-saunas-en.html) — 2026-09-29
+- [Seeing Busan Without Walking — Cable Car, Observation Tower, Yacht](https://k-rambles.com/trip-planner/2026-09-23-busan-views-cablecar-tower-yacht-en.html) — 2026-09-23
+- [Taejongdae, Done Right — From the Danubi Train to Yeongdo Lighthouse and Sinseon Rock](https://k-rambles.com/trip-planner/2026-09-22-taejongdae-guide-en.html) — 2026-09-22
+- [Korea Arrival Card vs K-ETA — What's the Difference?](https://k-rambles.com/trip-planner/2026-09-19-korea-entry-eta-arrival-card-guide-en.html) — 2026-09-19
+- [Where to Rent a Hanbok in Busan](https://k-rambles.com/trip-planner/2026-09-06-busan-hanbok-rental-guide.html) — 2026-09-06
+- [Huinnyeoul Culture Village, the Alley Closest to the Sea — Closed Cafés Filtered Out](https://k-rambles.com/trip-planner/2026-09-06-huinnyeoul-culture-village.html) — 2026-09-06
+- [Amidong Tombstone Village in Busan: What to Know Before You Go](https://k-rambles.com/trip-planner/2026-09-05-amidong-tombstone-village.html) — 2026-09-05
+- [Amisan Observatory, Busan: The Sunset View Everyone Agrees On](https://k-rambles.com/trip-planner/2026-09-04-amisan-observatory.html) — 2026-09-04
+- [How far can your Gimhae layover take you?](https://k-rambles.com/trip-planner/2026-09-03-gimhae-layover-guide.html) — 2026-09-03
+- [Busan Venice (Jangnim Port): Colorful Harbor, Honest Review](https://k-rambles.com/trip-planner/2026-09-03-busan-venice-jangnimpogu.html) — 2026-09-03
+- [Gamcheon Culture Village: Photo Spots & What to Know Before You Go](https://k-rambles.com/trip-planner/2026-09-02-gamcheon-culture-village.html) — 2026-09-02
+
+### Getting around Busan
+
+- [Korean Delivery Apps for Foreigners: We Tried Baemin, Shuttle & Yogiyo](https://k-rambles.com/getting-around/2026-09-26-korea-delivery-apps-guide-en.html) — 2026-09-26
+- [Sick in Korea? Convenience Store, Pharmacy, or Hospital](https://k-rambles.com/getting-around/2026-09-25-korea-pharmacy-hospital-guide-en.html) — 2026-09-25
+- [Why Won’t My Card Work in Korea? — A Practical Guide](https://k-rambles.com/getting-around/2026-09-24-korea-card-payment-guide-en.html) — 2026-09-24
+- [Luggage Storage in Busan — Subway Lockers Handle Most of It](https://k-rambles.com/getting-around/2026-09-24-busan-luggage-storage-en.html) — 2026-09-24
+- [How to Shop and Get Your Tax Refund in Busan](https://k-rambles.com/getting-around/2026-09-23-busan-tax-refund-en.html) — 2026-09-23
+- [How to Exchange Money in Busan — ATM or Currency Exchange, Which Wins?](https://k-rambles.com/getting-around/2026-09-17-currency-exchange-atm-guide-en.html) — 2026-09-17
+- [How to Ride the Bus in Korea — From Front/Back Doors to Center-Lane Stops](https://k-rambles.com/getting-around/2026-09-13-bus-riding-guide.html) — 2026-09-13
+- [Busan SIM & eSIM Guide — The 3 Carriers, Plus How to Pay Less](https://k-rambles.com/getting-around/2026-09-13-korea-sim-esim-guide.html) — 2026-09-13
+- [How to Ride a Taxi in Busan Without the Hassle](https://k-rambles.com/getting-around/2026-09-12-taxi-guide.html) — 2026-09-12
+- [How to Ride the Busan Subway Without Getting Confused](https://k-rambles.com/getting-around/2026-09-11-subway-navigation-guide.html) — 2026-09-11
+- [Google Maps Will Get You Lost in Busan — Use a Korean Map App Instead](https://k-rambles.com/getting-around/2026-09-07-naver-map-app-guide.html) — 2026-09-07
+- [Gimhae Airport to Haeundae: How to Get There](https://k-rambles.com/getting-around/2026-09-02-airport-to-haeundae.html) — 2026-09-02
+- [Busan Transit Cards Are Simpler Than They Look — Here's All You Need to Know](https://k-rambles.com/getting-around/2026-09-02-tmoney-explained.html) — 2026-09-02
+
+### Food
+
+- [Busan Cafe Culture Guide: Why Korean Cafes Are Special — Winter Iced Americanos, Studying in Cafes, Desserts and Jeonpo Cafe Street](https://k-rambles.com/taste/2026-10-15-busan-cafe-culture-guide-en.html) — 2026-10-15
+- [Busan Restaurant Guide for Foreigners: 12 Most-Asked Questions — Eating Alone, Self-Service, Paying and Tipping](https://k-rambles.com/taste/2026-10-14-busan-restaurant-etiquette-questions-en.html) — 2026-10-14
+- [Restaurant Reservations & Waitlists in Busan Without a Korean Phone Number (Catchtable Global Guide)](https://k-rambles.com/taste/2026-10-12-busan-restaurant-reservation-waiting-guide-en.html) — 2026-10-12
+- [20 Dwaeji Gukbap Spots, Picked by Busan Locals](https://k-rambles.com/taste/2026-09-23-busan-dwaeji-gukbap-20-en.html) — 2026-09-23
+- [Taejongdae Haenyeo Village: Sashimi by the Sea, Still Sliced in a Basin?](https://k-rambles.com/taste/2026-09-21-taejongdae-haenyeo-raw-seafood-en.html) — 2026-09-21
+- [Milmyeon, Busan's Wheat Cold Noodles: How It Differs from Naengmyeon](https://k-rambles.com/taste/2026-09-06-milmyeon-guide.html) — 2026-09-06
+- [How to actually eat hoe at Jagalchi Market](https://k-rambles.com/taste/2026-09-04-jagalchi-hoe-guide.html) — 2026-09-04
+- [Dwaeji Gukbap, Busan's Pork Soup: The Dish a War Left Behind](https://k-rambles.com/taste/taste-dwaeji-gukbap.html)
+
+### Long-stay living
+
+- [Busan Trash Rules: When and How to Throw Things Away — 11 Waste Sorting Questions Foreigners Ask Most](https://k-rambles.com/long-stay/2026-10-10-korea-trash-recycling-guide-en.html) — 2026-10-14
+- [Why Do Koreans Ask Your Age First? 12 Everyday Korea Questions Foreigners Ask Most](https://k-rambles.com/long-stay/2026-10-10-korea-everyday-culture-questions-en.html) — 2026-10-10
+- [Do You Have to Go to Hoesik? 12 Korean Workplace & Campus Questions Foreigners Ask Most](https://k-rambles.com/long-stay/2026-10-10-korea-workplace-school-questions-en.html) — 2026-10-10
+- [Why Do Busan People Sound Like They're Fighting? 12 Busan People & Dialect Questions](https://k-rambles.com/long-stay/2026-10-10-korea-busan-people-dialect-questions-en.html) — 2026-10-10
+- [Korea Monthly Rent: Apartment, Villa, Officetel & Shop-House Compared](https://k-rambles.com/long-stay/2026-10-09-korea-housing-types-guide-en.html) — 2026-10-09
+- [Korea's Employment Contract, Minimum Wage & Severance Pay: A Complete Guide for Foreigners](https://k-rambles.com/long-stay/2026-10-02-korea-employment-contract-severance-guide-en.html) — 2026-10-04
+- [Korea's Employment Insurance & Industrial Accident Insurance: A Guide to Unemployment Benefits and Work Injuries for Foreigners](https://k-rambles.com/long-stay/2026-10-02-korea-employment-accident-insurance-guide-en.html) — 2026-10-02
+- [Korea's National Pension (NPS): Full Guide to Enrollment & Lump-Sum Refund for Foreigners](https://k-rambles.com/long-stay/2026-10-01-korea-national-pension-guide-en.html) — 2026-10-01
+- [National Health Insurance in Korea: Full Guide for Foreigners](https://k-rambles.com/long-stay/2026-10-01-korea-health-insurance-guide-en.html) — 2026-10-01
+- [Korea Home Internet & IPTV Setup, Fully Explained for Foreigners](https://k-rambles.com/long-stay/2026-10-01-korea-internet-iptv-guide-en.html) — 2026-10-01
+- [Korea's Maintenance Fees (Gwallibi) & Utility Bills for Foreigners](https://k-rambles.com/long-stay/2026-09-30-korea-utility-bills-guide-en.html) — 2026-09-30
+- [Finding Long-Stay Housing in Korea as a Foreigner](https://k-rambles.com/long-stay/2026-09-30-korea-long-stay-housing-guide-en.html) — 2026-09-30
+- [Getting a Korean Phone Line as a Long-Term Resident — Why Identity Verification Fails](https://k-rambles.com/long-stay/2026-09-20-korea-phone-plan-guide-en.html) — 2026-09-20
+- [How to Open a Korean Bank Account as a Long-Term Foreign Resident](https://k-rambles.com/long-stay/2026-09-20-korea-bank-account-guide-en.html) — 2026-09-20
+- [Do I Need a Korean Alien Registration Card (ARC)?](https://k-rambles.com/long-stay/2026-09-19-korea-arc-foreign-registration-guide-en.html) — 2026-09-19
+- [Is Busan Tap Water Safe to Drink?](https://k-rambles.com/long-stay/2026-09-02-tap-water-safety.html) — 2026-09-02
+
+## Korean (한국어)
+
+- Category pages: [Trip planning](https://k-rambles.com/ko/trip-planner/index.html), [Getting around Busan](https://k-rambles.com/ko/getting-around/index.html), [Food](https://k-rambles.com/ko/taste/index.html), [Long-stay living](https://k-rambles.com/ko/long-stay/index.html)
+
+### Trip planning
+
+- [부산 송정에서 해동용궁사까지, 동해선과 버스로 가는 동쪽 해안 코스](https://k-rambles.com/ko/trip-planner/2026-10-19-busan-songjeong-yonggungsa-east-course-ko.html) — 2026-10-20
+- [부산 해운대 하루 코스, 동백섬·해변·블루라인파크·청사포 동선 정리](https://k-rambles.com/ko/trip-planner/2026-10-15-busan-haeundae-day-course-ko.html) — 2026-10-15
+- [광안리 야경, 가기 전에 알아둘 것 - 드론쇼 시간과 보는 자리](https://k-rambles.com/ko/trip-planner/2026-10-08-gwangalli-night-guide-ko.html) — 2026-10-08
+- [이기대 해안산책로 - 1993년에야 열린 화산암 절벽길](https://k-rambles.com/ko/trip-planner/2026-10-07-igidae-coastal-walk-guide-ko.html) — 2026-10-08
+- [부산역·국제여객터미널에서 시간이 남을 때 - 식사, 커피, 산책](https://k-rambles.com/ko/trip-planner/2026-10-07-busan-station-layover-guide-ko.html) — 2026-10-07
+- [남포동·국제시장 일대, 하루 안에 걷는 부산 원도심](https://k-rambles.com/ko/trip-planner/2026-10-04-nampo-gukje-market-guide-ko.html) — 2026-10-06
+- [걷지 않고 힐링하는 부산 — 사우나·찜질방 추천](https://k-rambles.com/ko/trip-planner/2026-09-29-best-busan-saunas-ko.html) — 2026-09-29
+- [걷지 않고 보는 부산 — 케이블카·전망대·요트 3선](https://k-rambles.com/ko/trip-planner/2026-09-23-busan-views-cablecar-tower-yacht-ko.html) — 2026-09-23
+- [태종대 제대로 즐기기 — 다누비열차부터 영도등대, 신선바위까지](https://k-rambles.com/ko/trip-planner/2026-09-22-taejongdae-guide-ko.html) — 2026-09-22
+- [한국 입국신고서, K-ETA랑 뭐가 다른가요?](https://k-rambles.com/ko/trip-planner/2026-09-19-korea-entry-eta-arrival-card-guide-ko.html) — 2026-09-19
+- [부산 한복 대여, 어디서 할까](https://k-rambles.com/ko/trip-planner/2026-09-06-busan-hanbok-rental-guide.html) — 2026-09-06
+- [흰여울문화마을, 바다가 가장 가까운 골목 — 폐업 카페 거르고 정리했어요](https://k-rambles.com/ko/trip-planner/2026-09-06-huinnyeoul-culture-village.html) — 2026-09-06
+- [부산 아미동 비석마을: 가기 전에 알아둘 것](https://k-rambles.com/ko/trip-planner/2026-09-05-amidong-tombstone-village.html) — 2026-09-05
+- [부산 아미산전망대: 다들 인정하는 그 노을 뷰](https://k-rambles.com/ko/trip-planner/2026-09-04-amisan-observatory.html) — 2026-09-04
+- [김해공항 경유 시간, 어디까지 다녀올 수 있을까?](https://k-rambles.com/ko/trip-planner/2026-09-03-gimhae-layover-guide.html) — 2026-09-03
+- [부네치아(장림포구): 알록달록한 포구, 솔직한 후기](https://k-rambles.com/ko/trip-planner/2026-09-03-busan-venice-jangnimpogu.html) — 2026-09-03
+- [감천문화마을: 사진 명소와 가기 전에 알아둘 것](https://k-rambles.com/ko/trip-planner/2026-09-02-gamcheon-culture-village.html) — 2026-09-02
+
+### Getting around Busan
+
+- [외국인을 위한 한국 배달앱: 배민·셔틀·요기요 직접 해봤어요](https://k-rambles.com/ko/getting-around/2026-09-26-korea-delivery-apps-guide-ko.html) — 2026-09-26
+- [아플 때 어디로? 편의점·약국·병원 가이드](https://k-rambles.com/ko/getting-around/2026-09-25-korea-pharmacy-hospital-guide-ko.html) — 2026-09-25
+- [한국인데 카드가 왜 안 돼요? — 해외카드 결제 실전 가이드](https://k-rambles.com/ko/getting-around/2026-09-24-korea-card-payment-guide-ko.html) — 2026-09-24
+- [부산에서 짐 보관, 지하철 로커면 대부분 끝나요](https://k-rambles.com/ko/getting-around/2026-09-24-busan-luggage-storage-ko.html) — 2026-09-24
+- [부산에서 쇼핑하고 세금 환급받는 법](https://k-rambles.com/ko/getting-around/2026-09-23-busan-tax-refund-ko.html) — 2026-09-23
+- [부산에서 환전하는 법 — ATM, 환전소 뭐가 유리할까](https://k-rambles.com/ko/getting-around/2026-09-17-currency-exchange-atm-guide-ko.html) — 2026-09-17
+- [한국 버스 타는 법 — 앞문·뒷문부터 중앙차로 정류장까지](https://k-rambles.com/ko/getting-around/2026-09-13-bus-riding-guide.html) — 2026-09-13
+- [부산 유심·이심 총정리 — 통신 3사부터 더 싸게 사는 법까지](https://k-rambles.com/ko/getting-around/2026-09-13-korea-sim-esim-guide.html) — 2026-09-13
+- [부산 택시, 이렇게 타면 편해요](https://k-rambles.com/ko/getting-around/2026-09-12-taxi-guide.html) — 2026-09-12
+- [부산 지하철, 헷갈리지 않고 타는 법](https://k-rambles.com/ko/getting-around/2026-09-11-subway-navigation-guide.html) — 2026-09-11
+- [부산여행, 구글맵보다 한국 지도앱을 써야 덜 헤매죠](https://k-rambles.com/ko/getting-around/2026-09-07-naver-map-app-guide.html) — 2026-09-07
+- [김해공항에서 해운대 가는 법](https://k-rambles.com/ko/getting-around/2026-09-02-airport-to-haeundae.html) — 2026-09-02
+- [부산 교통카드, 알고보니 간단해요 — 이것만 보면 돼요](https://k-rambles.com/ko/getting-around/2026-09-02-tmoney-explained.html) — 2026-09-02
+
+### Food
+
+- [부산 카페 문화 가이드, 한국 카페가 특별한 이유 — 얼죽아·카공·디저트·전포카페거리](https://k-rambles.com/ko/taste/2026-10-15-busan-cafe-culture-guide-ko.html) — 2026-10-15
+- [부산 식당 이용법, 외국인이 가장 많이 묻는 12가지 — 혼밥·셀프·계산·팁](https://k-rambles.com/ko/taste/2026-10-14-busan-restaurant-etiquette-questions-ko.html) — 2026-10-14
+- [부산 식당 예약·줄서기, 한국 전화번호 없이 하는 법 (캐치테이블 글로벌 중심)](https://k-rambles.com/ko/taste/2026-10-12-busan-restaurant-reservation-waiting-guide-ko.html) — 2026-10-12
+- [부산 시민이 뽑은 돼지국밥집 20곳](https://k-rambles.com/ko/taste/2026-09-23-busan-dwaeji-gukbap-20-ko.html) — 2026-09-23
+- [태종대 해녀촌: 바닷가에서 먹는 회, 아직도 대야에서 썰어줄까?](https://k-rambles.com/ko/taste/2026-09-21-taejongdae-haenyeo-raw-seafood-ko.html) — 2026-09-21
+- [부산 밀면, 냉면과는 다른 이야기](https://k-rambles.com/ko/taste/2026-09-06-milmyeon-guide.html) — 2026-09-06
+- [자갈치시장에서 회 제대로 먹는 법](https://k-rambles.com/ko/taste/2026-09-04-jagalchi-hoe-guide.html) — 2026-09-04
+- [전쟁이 남긴 국밥 한 그릇](https://k-rambles.com/ko/taste/taste-dwaeji-gukbap.html)
+
+### Long-stay living
+
+- [부산 쓰레기, 언제 어떻게 버릴까? 외국인이 가장 많이 묻는 분리배출 11가지](https://k-rambles.com/ko/long-stay/2026-10-10-korea-trash-recycling-guide-ko.html) — 2026-10-14
+- [한국인은 왜 나이부터 물어볼까? 외국인이 가장 많이 묻는 한국 일상 12가지](https://k-rambles.com/ko/long-stay/2026-10-10-korea-everyday-culture-questions-ko.html) — 2026-10-10
+- [회식은 꼭 가야 할까? 외국인이 가장 많이 묻는 한국 직장·학교 생활 12가지](https://k-rambles.com/ko/long-stay/2026-10-10-korea-workplace-school-questions-ko.html) — 2026-10-10
+- [부산 사람은 왜 싸우는 것처럼 말할까? 외국인이 가장 많이 묻는 부산 사람·사투리 12가지](https://k-rambles.com/ko/long-stay/2026-10-10-korea-busan-people-dialect-questions-ko.html) — 2026-10-10
+- [한국 월세 집, 어떤 종류를 고를까 — 아파트·빌라·오피스텔·상가주택](https://k-rambles.com/ko/long-stay/2026-10-09-korea-housing-types-guide-ko.html) — 2026-10-09
+- [외국인을 위한 한국 근로계약서·최저임금·퇴직금 완전정리](https://k-rambles.com/ko/long-stay/2026-10-02-korea-employment-contract-severance-guide-ko.html) — 2026-10-04
+- [외국인을 위한 한국 고용보험(실업급여)·산재보험 완전정리](https://k-rambles.com/ko/long-stay/2026-10-02-korea-employment-accident-insurance-guide-ko.html) — 2026-10-02
+- [외국인을 위한 한국 국민연금 가입·반환일시금 완전정리](https://k-rambles.com/ko/long-stay/2026-10-01-korea-national-pension-guide-ko.html) — 2026-10-01
+- [외국인을 위한 한국 건강보험 가입·이용 완전정리](https://k-rambles.com/ko/long-stay/2026-10-01-korea-health-insurance-guide-ko.html) — 2026-10-01
+- [외국인을 위한 한국 인터넷·IPTV 설치 완전정리](https://k-rambles.com/ko/long-stay/2026-10-01-korea-internet-iptv-guide-ko.html) — 2026-10-01
+- [외국인을 위한 한국 관리비·공과금 완전정리](https://k-rambles.com/ko/long-stay/2026-09-30-korea-utility-bills-guide-ko.html) — 2026-09-30
+- [외국인을 위한 한국 장기체류 숙소 구하기](https://k-rambles.com/ko/long-stay/2026-09-30-korea-long-stay-housing-guide-ko.html) — 2026-09-30
+- [장기체류자 휴대폰 개통 가이드 — 본인인증 안 되는 진짜 이유](https://k-rambles.com/ko/long-stay/2026-09-20-korea-phone-plan-guide-ko.html) — 2026-09-20
+- [장기체류 외국인을 위한 한국 은행계좌 개설 가이드](https://k-rambles.com/ko/long-stay/2026-09-20-korea-bank-account-guide-ko.html) — 2026-09-20
+- [한국 외국인등록증(ARC), 나도 만들어야 하나요?](https://k-rambles.com/ko/long-stay/2026-09-19-korea-arc-foreign-registration-guide-ko.html) — 2026-09-19
+- [부산 수돗물, 정말 마셔도 될까?](https://k-rambles.com/ko/long-stay/2026-09-02-tap-water-safety.html) — 2026-09-02
+
+## Vietnamese (Tiếng Việt)
+
+- Category pages: [Trip planning](https://k-rambles.com/vi/trip-planner/index.html), [Getting around Busan](https://k-rambles.com/vi/getting-around/index.html), [Food](https://k-rambles.com/vi/taste/index.html), [Long-stay living](https://k-rambles.com/vi/long-stay/index.html)
+
+### Trip planning
+
+- [Lộ trình bờ biển phía đông Busan: bãi biển Songjeong, chùa Haedong Yonggungsa và công viên Orangdae bằng tuyến Donghae và xe buýt](https://k-rambles.com/vi/trip-planner/2026-10-19-busan-songjeong-yonggungsa-east-course-vi.html) — 2026-10-20
+- [Lộ trình một ngày ở Haeundae, Busan: đảo Dongbaek, bãi biển, Blue Line Park và Cheongsapo](https://k-rambles.com/vi/trip-planner/2026-10-15-busan-haeundae-day-course-vi.html) — 2026-10-15
+- [Gwangalli về đêm — Giờ diễn drone, chỗ xem và những điều cần biết trước khi đi](https://k-rambles.com/vi/trip-planner/2026-10-08-gwangalli-night-guide-vi.html) — 2026-10-08
+- [Đường đi bộ ven biển Igidae — Con đường vách đá núi lửa chỉ mở cửa từ năm 1993](https://k-rambles.com/vi/trip-planner/2026-10-07-igidae-coastal-walk-guide-vi.html) — 2026-10-08
+- [Còn thời gian ở ga Busan hoặc bến phà quốc tế — Ăn, cà phê và dạo bộ](https://k-rambles.com/vi/trip-planner/2026-10-07-busan-station-layover-guide-vi.html) — 2026-10-07
+- [Nampo-dong & chợ Gukje — Một ngày dạo bộ khu phố cổ Busan](https://k-rambles.com/vi/trip-planner/2026-10-04-nampo-gukje-market-guide-vi.html) — 2026-10-06
+- [Busan không cần đi bộ — Gợi ý sauna & jjimjilbang](https://k-rambles.com/vi/trip-planner/2026-09-29-best-busan-saunas-vi.html) — 2026-09-29
+- [Ngắm Busan không cần đi bộ — 3 cách: cáp treo, tháp ngắm cảnh, du thuyền](https://k-rambles.com/vi/trip-planner/2026-09-23-busan-views-cablecar-tower-yacht-vi.html) — 2026-09-23
+- [Taejongdae trọn vẹn — Từ tàu Danubi đến hải đăng Yeongdo, đá Sinseon](https://k-rambles.com/vi/trip-planner/2026-09-22-taejongdae-guide-vi.html) — 2026-09-22
+- [Thẻ nhập cảnh Hàn Quốc khác gì với K-ETA?](https://k-rambles.com/vi/trip-planner/2026-09-19-korea-entry-eta-arrival-card-guide-vi.html) — 2026-09-19
+- [Thuê hanbok ở Busan, nên thuê ở đâu](https://k-rambles.com/vi/trip-planner/2026-09-06-busan-hanbok-rental-guide-vi.html) — 2026-09-06
+- [Làng văn hóa Huinnyeoul, con hẻm gần biển nhất](https://k-rambles.com/vi/trip-planner/2026-09-06-huinnyeoul-culture-village-vi.html) — 2026-09-06
+- [Làng bia mộ Amidong ở Busan: những điều nên biết trước khi ghé thăm](https://k-rambles.com/vi/trip-planner/2026-09-05-amidong-tombstone-village-vi.html) — 2026-09-05
+- [Đài quan sát Amisan, Busan: góc ngắm hoàng hôn ai cũng công nhận](https://k-rambles.com/vi/trip-planner/2026-09-04-amisan-observatory-vi.html) — 2026-09-04
+- [Quá cảnh sân bay Gimhae, bạn có thể đi xa đến đâu?](https://k-rambles.com/vi/trip-planner/2026-09-03-gimhae-layover-guide-vi.html) — 2026-09-03
+- [Busan Venice (cảng Jangnim): bến cảng đầy màu sắc, đánh giá thẳng thắn](https://k-rambles.com/vi/trip-planner/2026-09-03-busan-venice-jangnimpogu-vi.html) — 2026-09-03
+- [Làng văn hóa Gamcheon: điểm chụp ảnh và những điều nên biết trước khi đến](https://k-rambles.com/vi/trip-planner/2026-09-02-gamcheon-culture-village-vi.html) — 2026-09-02
+
+### Getting around Busan
+
+- [Ứng dụng giao đồ ăn ở Hàn Quốc cho người nước ngoài: Chúng tôi đã thử Baemin, Shuttle và Yogiyo](https://k-rambles.com/vi/getting-around/2026-09-26-korea-delivery-apps-guide-vi.html) — 2026-09-26
+- [Bị ốm ở Hàn Quốc? Cửa hàng tiện lợi, hiệu thuốc, bệnh viện](https://k-rambles.com/vi/getting-around/2026-09-25-korea-pharmacy-hospital-guide-vi.html) — 2026-09-25
+- [Vì sao thẻ không quẹt được ở Hàn Quốc? — Hướng dẫn thực tế về thanh toán bằng thẻ nước ngoài](https://k-rambles.com/vi/getting-around/2026-09-24-korea-card-payment-guide-vi.html) — 2026-09-24
+- [Gửi hành lý ở Busan, tủ khóa ga tàu điện ngầm là đủ dùng rồi](https://k-rambles.com/vi/getting-around/2026-09-24-busan-luggage-storage-vi.html) — 2026-09-24
+- [Cách mua sắm và hoàn thuế ở Busan](https://k-rambles.com/vi/getting-around/2026-09-23-busan-tax-refund-vi.html) — 2026-09-23
+- [Cách đổi tiền ở Busan — ATM hay tiệm đổi tiền, cái nào lợi hơn?](https://k-rambles.com/vi/getting-around/2026-09-17-currency-exchange-atm-guide-vi.html) — 2026-09-17
+- [Cách đi xe buýt ở Hàn Quốc — Từ cửa trước/cửa sau đến trạm dừng làn giữa](https://k-rambles.com/vi/getting-around/2026-09-13-bus-riding-guide-vi.html) — 2026-09-13
+- [Cẩm nang SIM/eSIM ở Hàn Quốc — Từ 3 nhà mạng chính đến cách mua rẻ hơn](https://k-rambles.com/vi/getting-around/2026-09-13-korea-sim-esim-guide-vi.html) — 2026-09-13
+- [Taxi ở Busan, đi thế này cho dễ](https://k-rambles.com/vi/getting-around/2026-09-12-taxi-guide-vi.html) — 2026-09-12
+- [Cách đi tàu điện ngầm Busan mà không bị nhầm lẫn](https://k-rambles.com/vi/getting-around/2026-09-11-subway-navigation-guide-vi.html) — 2026-09-11
+- [Đi Busan, dùng app bản đồ Hàn Quốc đỡ lạc hơn Google Maps](https://k-rambles.com/vi/getting-around/2026-09-07-naver-map-app-guide-vi.html) — 2026-09-07
+- [Từ sân bay Gimhae đến Haeundae: cách đi](https://k-rambles.com/vi/getting-around/2026-09-02-airport-to-haeundae-vi.html) — 2026-09-02
+- [Thẻ giao thông ở Busan, hóa ra rất đơn giản — chỉ cần biết điều này](https://k-rambles.com/vi/getting-around/2026-09-02-tmoney-explained-vi.html) — 2026-09-02
+
+### Food
+
+- [Hướng dẫn văn hóa cà phê ở Busan: vì sao quán cà phê Hàn Quốc đặc biệt — Americano đá mùa đông, học bài ở quán, món tráng miệng và phố cà phê Jeonpo](https://k-rambles.com/vi/taste/2026-10-15-busan-cafe-culture-guide-vi.html) — 2026-10-15
+- [Hướng dẫn nhà hàng ở Busan cho người nước ngoài: 12 câu hỏi hay gặp nhất — ăn một mình, tự phục vụ, thanh toán và tiền boa](https://k-rambles.com/vi/taste/2026-10-14-busan-restaurant-etiquette-questions-vi.html) — 2026-10-14
+- [Đặt bàn và xếp hàng chờ nhà hàng ở Busan khi không có số điện thoại Hàn Quốc (hướng dẫn ứng dụng Catchtable Global)](https://k-rambles.com/vi/taste/2026-10-12-busan-restaurant-reservation-waiting-guide-vi.html) — 2026-10-12
+- [20 quán dwaeji gukbap do người dân Busan bình chọn](https://k-rambles.com/vi/taste/2026-09-23-busan-dwaeji-gukbap-20-vi.html) — 2026-09-23
+- [Làng haenyeo Taejongdae: cá sống bên bờ biển, còn thái ngay trong chậu không?](https://k-rambles.com/vi/taste/2026-09-21-taejongdae-haenyeo-raw-seafood-vi.html) — 2026-09-21
+- [Milmyeon, món mì lạnh bột mì của Busan: khác naengmyeon thế nào](https://k-rambles.com/vi/taste/2026-09-06-milmyeon-guide-vi.html) — 2026-09-06
+- [Cách ăn cá sống (hoe) đúng điệu ở chợ Jagalchi](https://k-rambles.com/vi/taste/2026-09-04-jagalchi-hoe-guide-vi.html) — 2026-09-04
+- [Dwaeji gukbap, món canh thịt heo của Busan: bát ăn mà chiến tranh để lại](https://k-rambles.com/vi/taste/taste-dwaeji-gukbap-vi.html)
+
+### Long-stay living
+
+- [Vứt rác ở Busan khi nào, như thế nào? 11 câu hỏi về phân loại rác người nước ngoài hay hỏi nhất](https://k-rambles.com/vi/long-stay/2026-10-10-korea-trash-recycling-guide-vi.html) — 2026-10-14
+- [Vì sao người Hàn hỏi tuổi trước tiên? 12 câu hỏi đời thường người nước ngoài hay hỏi nhất](https://k-rambles.com/vi/long-stay/2026-10-10-korea-everyday-culture-questions-vi.html) — 2026-10-10
+- [Có bắt buộc đi hoesik không? 12 câu hỏi về công ty và trường học ở Hàn Quốc](https://k-rambles.com/vi/long-stay/2026-10-10-korea-workplace-school-questions-vi.html) — 2026-10-10
+- [Vì sao người Busan nói như đang cãi nhau? 12 câu hỏi về người Busan và giọng địa phương](https://k-rambles.com/vi/long-stay/2026-10-10-korea-busan-people-dialect-questions-vi.html) — 2026-10-10
+- [Thuê nhà theo tháng ở Hàn Quốc: Căn hộ chung cư, villa, officetel hay nhà phố kết hợp cửa hàng](https://k-rambles.com/vi/long-stay/2026-10-09-korea-housing-types-guide-vi.html) — 2026-10-09
+- [Hợp đồng lao động, lương tối thiểu và trợ cấp thôi việc ở Hàn Quốc: Hướng dẫn đầy đủ cho người nước ngoài](https://k-rambles.com/vi/long-stay/2026-10-02-korea-employment-contract-severance-guide-vi.html) — 2026-10-04
+- [Bảo hiểm việc làm và bảo hiểm tai nạn lao động Hàn Quốc: Hướng dẫn trợ cấp thất nghiệp và tai nạn lao động cho người nước ngoài](https://k-rambles.com/vi/long-stay/2026-10-02-korea-employment-accident-insurance-guide-vi.html) — 2026-10-02
+- [Bảo hiểm Hưu trí Quốc dân Hàn Quốc (NPS): Hướng dẫn đầy đủ về tham gia và hoàn trả một lần cho người nước ngoài](https://k-rambles.com/vi/long-stay/2026-10-01-korea-national-pension-guide-vi.html) — 2026-10-01
+- [Bảo hiểm Y tế Quốc dân Hàn Quốc: Hướng dẫn đầy đủ cho người nước ngoài](https://k-rambles.com/vi/long-stay/2026-10-01-korea-health-insurance-guide-vi.html) — 2026-10-01
+- [Lắp đặt Internet và IPTV tại Hàn Quốc cho người nước ngoài](https://k-rambles.com/vi/long-stay/2026-10-01-korea-internet-iptv-guide-vi.html) — 2026-10-01
+- [Phí quản lý và hóa đơn điện nước ở Hàn Quốc](https://k-rambles.com/vi/long-stay/2026-09-30-korea-utility-bills-guide-vi.html) — 2026-09-30
+- [Tìm nhà ở dài hạn tại Hàn Quốc dành cho người nước ngoài](https://k-rambles.com/vi/long-stay/2026-09-30-korea-long-stay-housing-guide-vi.html) — 2026-09-30
+- [Vì sao không xác thực được số điện thoại ở Hàn Quốc? — Hướng dẫn đăng ký sim cho người lưu trú dài hạn](https://k-rambles.com/vi/long-stay/2026-09-20-korea-phone-plan-guide-vi.html) — 2026-09-20
+- [Hướng dẫn mở tài khoản ngân hàng ở Hàn Quốc cho người nước ngoài lưu trú dài hạn](https://k-rambles.com/vi/long-stay/2026-09-20-korea-bank-account-guide-vi.html) — 2026-09-20
+- [Thẻ đăng ký người nước ngoài (ARC) ở Hàn Quốc, tôi có cần làm không?](https://k-rambles.com/vi/long-stay/2026-09-19-korea-arc-foreign-registration-guide-vi.html) — 2026-09-19
+- [Nước máy ở Busan, uống được không?](https://k-rambles.com/vi/long-stay/2026-09-02-tap-water-safety-vi.html) — 2026-09-02
+
+## Thai (ภาษาไทย)
+
+- Category pages: [Trip planning](https://k-rambles.com/th/trip-planner/index.html), [Getting around Busan](https://k-rambles.com/th/getting-around/index.html), [Food](https://k-rambles.com/th/taste/index.html), [Long-stay living](https://k-rambles.com/th/long-stay/index.html)
+
+### Trip planning
+
+- [เส้นทางชายฝั่งตะวันออกปูซาน: หาดซงจอง วัดแฮดงยงกุงซา และสวนโอรังแด ด้วยสายทงแฮและรถบัส](https://k-rambles.com/th/trip-planner/2026-10-19-busan-songjeong-yonggungsa-east-course-th.html) — 2026-10-20
+- [เที่ยวแฮอุนแดปูซานหนึ่งวัน: เกาะทงแบก ชายหาด บลูไลน์พาร์ค และชองซาโพ](https://k-rambles.com/th/trip-planner/2026-10-15-busan-haeundae-day-course-th.html) — 2026-10-15
+- [กวางกัลลีตอนกลางคืน — เวลาโดรนโชว์ จุดชม และสิ่งที่ควรรู้ก่อนไป](https://k-rambles.com/th/trip-planner/2026-10-08-gwangalli-night-guide-th.html) — 2026-10-08
+- [ทางเดินริมทะเลอีกีแด — เส้นทางหน้าผาหินภูเขาไฟที่เพิ่งเปิดให้เข้าได้เมื่อปี 1993](https://k-rambles.com/th/trip-planner/2026-10-07-igidae-coastal-walk-guide-th.html) — 2026-10-08
+- [มีเวลาว่างที่สถานีปูซานหรือท่าเรือโดยสารระหว่างประเทศ — กิน ดื่มกาแฟ เดินเล่น](https://k-rambles.com/th/trip-planner/2026-10-07-busan-station-layover-guide-th.html) — 2026-10-07
+- [Nampo-dong & Gukje Market — เดินเที่ยวย่านเมืองเก่าปูซานให้จบในหนึ่งวัน](https://k-rambles.com/th/trip-planner/2026-10-04-nampo-gukje-market-guide-th.html) — 2026-10-06
+- [เที่ยวปูซานแบบไม่ต้องเดิน — แนะนำซาวน่าและจิมจิลบัง](https://k-rambles.com/th/trip-planner/2026-09-29-best-busan-saunas-th.html) — 2026-09-29
+- [ชมปูซานโดยไม่ต้องเดิน — 3 วิธี: กระเช้าลอยฟ้า หอชมวิว เรือยอทช์](https://k-rambles.com/th/trip-planner/2026-09-23-busan-views-cablecar-tower-yacht-th.html) — 2026-09-23
+- [เที่ยวแทจงแดให้ครบ — ตั้งแต่รถไฟดานูบีไปจนถึงประภาคารยองโดและหินซินซอน](https://k-rambles.com/th/trip-planner/2026-09-22-taejongdae-guide-th.html) — 2026-09-22
+- [บัตรขาเข้าเกาหลี ต่างจาก K-ETA อย่างไร](https://k-rambles.com/th/trip-planner/2026-09-19-korea-entry-eta-arrival-card-guide-th.html) — 2026-09-19
+- [เช่าฮันบกที่ปูซาน จะไปที่ไหนดี](https://k-rambles.com/th/trip-planner/2026-09-06-busan-hanbok-rental-guide-th.html) — 2026-09-06
+- [หมู่บ้านวัฒนธรรมฮึนยออุล ตรอกที่ใกล้ทะเลที่สุด — คัดกรองคาเฟ่ที่ปิดตัวออกแล้ว](https://k-rambles.com/th/trip-planner/2026-09-06-huinnyeoul-culture-village-th.html) — 2026-09-06
+- [หมู่บ้านแผ่นหินหลุมศพอามีดง (บิซอก) ในปูซาน: สิ่งที่ควรรู้ก่อนไปเยือน](https://k-rambles.com/th/trip-planner/2026-09-05-amidong-tombstone-village-th.html) — 2026-09-05
+- [หอชมวิวอามีซาน ปูซาน: วิวพระอาทิตย์ตกที่ใคร ๆ ก็ยอมรับ](https://k-rambles.com/th/trip-planner/2026-09-04-amisan-observatory-th.html) — 2026-09-04
+- [ทรานสิตที่สนามบินกิมแฮ ไปได้ไกลแค่ไหน?](https://k-rambles.com/th/trip-planner/2026-09-03-gimhae-layover-guide-th.html) — 2026-09-03
+- [บูซานเวนิส (ท่าเรือจังนิม): ท่าเรือสีสันสดใส รีวิวตามจริง](https://k-rambles.com/th/trip-planner/2026-09-03-busan-venice-jangnimpogu-th.html) — 2026-09-03
+- [หมู่บ้านวัฒนธรรมคัมชอน: จุดถ่ายรูปและสิ่งที่ควรรู้ก่อนไป](https://k-rambles.com/th/trip-planner/2026-09-02-gamcheon-culture-village-th.html) — 2026-09-02
+
+### Getting around Busan
+
+- [แอปเดลิเวอรี่อาหารในเกาหลีสำหรับชาวต่างชาติ: เราลองใช้ Baemin, Shuttle และ Yogiyo แล้ว](https://k-rambles.com/th/getting-around/2026-09-26-korea-delivery-apps-guide-th.html) — 2026-09-26
+- [ป่วยที่เกาหลีต้องทำไง? คู่มือร้านสะดวกซื้อ ร้านขายยา โรงพยาบาล](https://k-rambles.com/th/getting-around/2026-09-25-korea-pharmacy-hospital-guide-th.html) — 2026-09-25
+- [ทำไมบัตรถึงรูดไม่ได้ในเกาหลี? — คู่มือการชำระเงินด้วยบัตรต่างประเทศฉบับใช้งานจริง](https://k-rambles.com/th/getting-around/2026-09-24-korea-card-payment-guide-th.html) — 2026-09-24
+- [ฝากกระเป๋าที่ปูซาน ล็อกเกอร์รถไฟใต้ดินก็พอแล้วส่วนใหญ่](https://k-rambles.com/th/getting-around/2026-09-24-busan-luggage-storage-th.html) — 2026-09-24
+- [วิธีช้อปปิ้งและขอคืนภาษีในปูซาน](https://k-rambles.com/th/getting-around/2026-09-23-busan-tax-refund-th.html) — 2026-09-23
+- [วิธีแลกเงินที่ปูซาน — ATM หรือร้านแลกเงิน แบบไหนคุ้มกว่า?](https://k-rambles.com/th/getting-around/2026-09-17-currency-exchange-atm-guide-th.html) — 2026-09-17
+- [วิธีขึ้นรถเมล์ในเกาหลี — ตั้งแต่ประตูหน้า/ประตูหลัง ไปจนถึงป้ายกลางถนน](https://k-rambles.com/th/getting-around/2026-09-13-bus-riding-guide-th.html) — 2026-09-13
+- [คู่มือซิม/อีซิมในเกาหลี — จาก 3 ค่ายหลักไปจนถึงวิธีซื้อให้ถูกลง](https://k-rambles.com/th/getting-around/2026-09-13-korea-sim-esim-guide-th.html) — 2026-09-13
+- [แท็กซี่ในปูซาน นั่งแบบนี้สะดวกกว่า](https://k-rambles.com/th/getting-around/2026-09-12-taxi-guide-th.html) — 2026-09-12
+- [นั่งรถไฟใต้ดินปูซานแบบไม่งงเอง](https://k-rambles.com/th/getting-around/2026-09-11-subway-navigation-guide-th.html) — 2026-09-11
+- [เที่ยวปูซาน ใช้แอปแผนที่เกาหลีดีกว่า Google Maps ไม่ต้องหลง](https://k-rambles.com/th/getting-around/2026-09-07-naver-map-app-guide-th.html) — 2026-09-07
+- [จากสนามบินกิมแฮไปแฮอึนแด: วิธีเดินทาง](https://k-rambles.com/th/getting-around/2026-09-02-airport-to-haeundae-th.html) — 2026-09-02
+- [บัตรโดยสารปูซาน จริงๆ แล้วง่ายมาก — ดูแค่นี้พอ](https://k-rambles.com/th/getting-around/2026-09-02-tmoney-explained-th.html) — 2026-09-02
+
+### Food
+
+- [คู่มือวัฒนธรรมคาเฟ่ในปูซาน ทำไมคาเฟ่เกาหลีถึงพิเศษ — อเมริกาโนเย็นกลางหน้าหนาว การอ่านหนังสือในคาเฟ่ ขนมหวาน และถนนคาเฟ่จอนโพ](https://k-rambles.com/th/taste/2026-10-15-busan-cafe-culture-guide-th.html) — 2026-10-15
+- [คู่มือร้านอาหารในปูซานสำหรับชาวต่างชาติ: 12 คำถามที่ถามบ่อยที่สุด — กินคนเดียว บริการตัวเอง การจ่ายเงิน และทิป](https://k-rambles.com/th/taste/2026-10-14-busan-restaurant-etiquette-questions-th.html) — 2026-10-14
+- [จองโต๊ะและต่อคิวร้านอาหารในปูซานโดยไม่มีเบอร์โทรเกาหลี (คู่มือแอป Catchtable Global)](https://k-rambles.com/th/taste/2026-10-12-busan-restaurant-reservation-waiting-guide-th.html) — 2026-10-12
+- [20 ร้านทแวจีกุกบับที่ชาวปูซานเลือก](https://k-rambles.com/th/taste/2026-09-23-busan-dwaeji-gukbap-20-th.html) — 2026-09-23
+- [หมู่บ้านแฮนยอแทจงแด: ปลาดิบริมทะเล ยังหั่นในกะละมังอยู่ไหม?](https://k-rambles.com/th/taste/2026-09-21-taejongdae-haenyeo-raw-seafood-th.html) — 2026-09-21
+- [มิลมยอน เส้นแป้งสาลีเย็นของปูซาน: ต่างจากเนงมยอนอย่างไร](https://k-rambles.com/th/taste/2026-09-06-milmyeon-guide-th.html) — 2026-09-06
+- [วิธีกินฮเวที่ตลาดจากัลชีให้ถูกวิธี](https://k-rambles.com/th/taste/2026-09-04-jagalchi-hoe-guide-th.html) — 2026-09-04
+- [ทแวจีกุกบับ ซุปหมูของปูซาน: ชามอาหารที่สงครามทิ้งไว้](https://k-rambles.com/th/taste/taste-dwaeji-gukbap-th.html)
+
+### Long-stay living
+
+- [ทิ้งขยะที่ปูซานต้องทำอย่างไร ตอนไหน? 11 คำถามเรื่องการแยกขยะที่ชาวต่างชาติถามบ่อยที่สุด](https://k-rambles.com/th/long-stay/2026-10-10-korea-trash-recycling-guide-th.html) — 2026-10-14
+- [ทำไมคนเกาหลีถึงถามอายุก่อน? 12 คำถามชีวิตประจำวันที่ชาวต่างชาติถามบ่อยที่สุด](https://k-rambles.com/th/long-stay/2026-10-10-korea-everyday-culture-questions-th.html) — 2026-10-10
+- [ต้องไปกินเลี้ยงบริษัท (hoesik) ไหม? 12 คำถามเรื่องที่ทำงานและมหาวิทยาลัยในเกาหลี](https://k-rambles.com/th/long-stay/2026-10-10-korea-workplace-school-questions-th.html) — 2026-10-10
+- [ทำไมคนปูซานพูดเหมือนทะเลาะกัน? 12 คำถามเรื่องคนปูซานและสำเนียงถิ่น](https://k-rambles.com/th/long-stay/2026-10-10-korea-busan-people-dialect-questions-th.html) — 2026-10-10
+- [เลือกห้องเช่ารายเดือนในเกาหลี: อพาร์ตเมนต์ วิลล่า ออฟฟิศเทล และบ้านร้านค้า ต่างกันอย่างไร](https://k-rambles.com/th/long-stay/2026-10-09-korea-housing-types-guide-th.html) — 2026-10-09
+- [คู่มือสัญญาจ้างงาน ค่าจ้างขั้นต่ำ และเงินชดเชยเมื่อออกจากงานตามกฎหมายเกาหลีสำหรับชาวต่างชาติ](https://k-rambles.com/th/long-stay/2026-10-02-korea-employment-contract-severance-guide-th.html) — 2026-10-04
+- [ประกันการจ้างงานและประกันอุบัติเหตุจากการทำงานของเกาหลี: คู่มือเงินช่วยเหลือการว่างงานและอุบัติเหตุจากการทำงานสำหรับชาวต่างชาติ](https://k-rambles.com/th/long-stay/2026-10-02-korea-employment-accident-insurance-guide-th.html) — 2026-10-02
+- [บำนาญแห่งชาติเกาหลี (NPS): คู่มือฉบับสมบูรณ์เรื่องการสมัครและเงินคืนก้อนเดียวสำหรับชาวต่างชาติ](https://k-rambles.com/th/long-stay/2026-10-01-korea-national-pension-guide-th.html) — 2026-10-01
+- [ประกันสุขภาพแห่งชาติเกาหลี: คู่มือฉบับสมบูรณ์สำหรับชาวต่างชาติ](https://k-rambles.com/th/long-stay/2026-10-01-korea-health-insurance-guide-th.html) — 2026-10-01
+- [อินเทอร์เน็ตและ IPTV ในเกาหลีสำหรับชาวต่างชาติ ฉบับสมบูรณ์](https://k-rambles.com/th/long-stay/2026-10-01-korea-internet-iptv-guide-th.html) — 2026-10-01
+- [ค่าส่วนกลางและค่าน้ำค่าไฟในเกาหลี ฉบับสมบูรณ์](https://k-rambles.com/th/long-stay/2026-09-30-korea-utility-bills-guide-th.html) — 2026-09-30
+- [หาที่พักระยะยาวในเกาหลีสำหรับชาวต่างชาติ](https://k-rambles.com/th/long-stay/2026-09-30-korea-long-stay-housing-guide-th.html) — 2026-09-30
+- [คู่มือเปิดใช้มือถือสำหรับผู้พำนักระยะยาว — เหตุผลที่แท้จริงที่ยืนยันตัวตนไม่ผ่าน](https://k-rambles.com/th/long-stay/2026-09-20-korea-phone-plan-guide-th.html) — 2026-09-20
+- [คู่มือเปิดบัญชีธนาคารเกาหลีสำหรับชาวต่างชาติที่พำนักระยะยาว](https://k-rambles.com/th/long-stay/2026-09-20-korea-bank-account-guide-th.html) — 2026-09-20
+- [บัตรประจำตัวคนต่างด้าวเกาหลี (ARC) — เราต้องทำหรือไม่?](https://k-rambles.com/th/long-stay/2026-09-19-korea-arc-foreign-registration-guide-th.html) — 2026-09-19
+- [น้ำประปาปูซาน ดื่มได้จริงหรือไม่?](https://k-rambles.com/th/long-stay/2026-09-02-tap-water-safety-th.html) — 2026-09-02
