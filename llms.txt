@@ -8,7 +8,7 @@
 
 ## English
 
-- Category pages: [Trip planning](https://k-rambles.com/trip-planner/index.html), [Getting around Busan](https://k-rambles.com/getting-around/index.html), [Food](https://k-rambles.com/taste/index.html), [Long-stay living](https://k-rambles.com/long-stay/index.html)
+- Category pages: [Trip planning](https://k-rambles.com/trip-planner/), [Getting around Busan](https://k-rambles.com/getting-around/), [Food](https://k-rambles.com/taste/), [Long-stay living](https://k-rambles.com/long-stay/)
 
 ### Trip planning
 
@@ -78,7 +78,7 @@
 
 ## Korean (한국어)
 
-- Category pages: [Trip planning](https://k-rambles.com/ko/trip-planner/index.html), [Getting around Busan](https://k-rambles.com/ko/getting-around/index.html), [Food](https://k-rambles.com/ko/taste/index.html), [Long-stay living](https://k-rambles.com/ko/long-stay/index.html)
+- Category pages: [Trip planning](https://k-rambles.com/ko/trip-planner/), [Getting around Busan](https://k-rambles.com/ko/getting-around/), [Food](https://k-rambles.com/ko/taste/), [Long-stay living](https://k-rambles.com/ko/long-stay/)
 
 ### Trip planning
 
@@ -148,7 +148,7 @@
 
 ## Vietnamese (Tiếng Việt)
 
-- Category pages: [Trip planning](https://k-rambles.com/vi/trip-planner/index.html), [Getting around Busan](https://k-rambles.com/vi/getting-around/index.html), [Food](https://k-rambles.com/vi/taste/index.html), [Long-stay living](https://k-rambles.com/vi/long-stay/index.html)
+- Category pages: [Trip planning](https://k-rambles.com/vi/trip-planner/), [Getting around Busan](https://k-rambles.com/vi/getting-around/), [Food](https://k-rambles.com/vi/taste/index.html), [Long-stay living](https://k-rambles.com/vi/long-stay/)
 
 ### Trip planning
 
@@ -218,7 +218,7 @@
 
 ## Thai (ภาษาไทย)
 
-- Category pages: [Trip planning](https://k-rambles.com/th/trip-planner/index.html), [Getting around Busan](https://k-rambles.com/th/getting-around/index.html), [Food](https://k-rambles.com/th/taste/index.html), [Long-stay living](https://k-rambles.com/th/long-stay/index.html)
+- Category pages: [Trip planning](https://k-rambles.com/th/trip-planner/), [Getting around Busan](https://k-rambles.com/th/getting-around/), [Food](https://k-rambles.com/th/taste/), [Long-stay living](https://k-rambles.com/th/long-stay/)
 
 ### Trip planning
 

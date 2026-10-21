@@ -22,7 +22,11 @@ out = ["""# K-Rambles
 total = 0
 for code, label, prefix in LANGS:
     out.append("## %s\n" % label)
-    out.append("- Category pages: " + ", ".join("[%s](%s/%s%s/index.html)" % (n, BASE, prefix, s) for s, n in SECTIONS) + "\n")
+    def canon(rel):  # 각 페이지가 스스로 선언한 대표 주소(canonical)를 그대로 사용
+        m = re.search(r'<link rel="canonical" href="([^"]+)"', open(os.path.join(ROOT, rel), encoding="utf-8").read())
+        assert m, "canonical 없음: " + rel
+        return m.group(1)
+    out.append("- Category pages: " + ", ".join("[%s](%s)" % (n, canon("%s%s/index.html" % (prefix, s))) for s, n in SECTIONS) + "\n")
     for sec, name in SECTIONS:
         items = json.load(open(os.path.join(ROOT, "data", "%s-%s.json" % (sec, code)), encoding="utf-8"))
         items = sorted(items, key=lambda i: i.get("date") or "0000-00-00", reverse=True)
@@ -30,6 +34,7 @@ for code, label, prefix in LANGS:
         for i in items:
             rel = "%s%s/%s" % (prefix, sec, i["url"])
             assert os.path.exists(os.path.join(ROOT, rel)), "파일 없음: " + rel
+            assert canon(rel) == "%s/%s" % (BASE, rel), "canonical 불일치: %s -> %s" % (rel, canon(rel))
             out.append("- [%s](%s/%s)%s" % (clean(i["title"]).replace("[", "(").replace("]", ")"), BASE, rel,
                                             " — " + i["date"] if i.get("date") else ""))
             total += 1
