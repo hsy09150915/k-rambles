@@ -55,4 +55,5 @@ def main():
         n += 1
         if not check: open(p, "w", encoding="utf-8", newline="").write(out)
     print("변경 %d개 파일%s" % (n, " (미리보기)" if check else ""))
+    if check and n: sys.exit(1)  # 푸시 전 검사: <head>/<body> 가 빠진 페이지가 있으면 실패로 끝남
 main()
