@@ -44,7 +44,11 @@ def main():
     body = json.dumps({"host": HOST, "key": KEY, "keyLocation": "https://%s/%s.txt" % (HOST, KEY), "urlList": urls[:10000]}).encode()
     req = urllib.request.Request(ENDPOINT, data=body, headers={"Content-Type": "application/json; charset=utf-8"})
     try:
-        with urllib.request.urlopen(req, timeout=30) as r: print("IndexNow 응답:", r.status)
+        with urllib.request.urlopen(req, timeout=30) as r:
+            print("IndexNow 응답:", r.status); print("::notice::IndexNow OK status=%s urls=%d" % (r.status, len(urls)))
     except urllib.error.HTTPError as e:
-        print("IndexNow 오류:", e.code, e.read()[:200]); sys.exit(1)
+        msg = "IndexNow HTTP %s %s" % (e.code, e.read()[:300].decode("utf-8", "replace").replace("\n", " "))
+        print(msg); print("::error::" + msg); sys.exit(1)
+    except Exception as e:
+        print("::error::IndexNow 예외 %r" % (e,)); sys.exit(1)
 main()
