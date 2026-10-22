@@ -1,5 +1,43 @@
 [
   {
+    "title": "Mt. Geumjeong One-Day Course in Busan: Cable Car, Beomeosa Temple and Sanseong Village Makgeolli",
+    "url": "2026-10-22-busan-geumjeongsan-guide-en.html",
+    "thumb": "assets/thumbs/trip-planner/geumjeongsan-guide.jpg",
+    "label": "Trip plan · live",
+    "alt": "Geumjeong Fortress running along the ridge between rocky peaks",
+    "badge": null,
+    "like_id": "trip-planner/2026-10-22-busan-geumjeongsan-guide-en.html",
+    "date": "2026-10-22",
+    "kw": "Mt. Geumjeong Geumgang Park Cable Car Beomeosa Geumjeong Fortress Godangbong Sanseong Village Makgeolli Dongnae Hoedong Reservoir Oryundae Seodong Miro Market Pusan National University",
+    "city": "busan",
+    "locations": [
+      {
+        "name": "Geumgang Park Cable Car",
+        "address": "155 Ujangchun-ro, Dongnae-gu, Busan",
+        "lat": 35.22073,
+        "lng": 129.07433
+      },
+      {
+        "name": "Beomeosa Temple",
+        "address": "250 Beomeosa-ro, Geumjeong-gu, Busan",
+        "lat": 35.28389,
+        "lng": 129.06806
+      },
+      {
+        "name": "Seodong Miro Market",
+        "address": "16 Seodong-ro 141beon-gil, Geumjeong-gu, Busan",
+        "lat": 35.21657,
+        "lng": 129.10045
+      },
+      {
+        "name": "Pusan National University Street",
+        "address": "Busandaehak-ro, Geumjeong-gu, Busan",
+        "lat": 35.23132,
+        "lng": 129.08583
+      }
+    ]
+  },
+  {
     "title": "Busan East Coast Course: Songjeong Beach, Haedong Yonggungsa Temple and Orangdae Park by Donghae Line and Bus",
     "url": "2026-10-19-busan-songjeong-yonggungsa-east-course-en.html",
     "thumb": "assets/thumbs/trip-planner/songjeong-east-course.jpg",

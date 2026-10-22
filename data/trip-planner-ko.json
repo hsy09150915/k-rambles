@@ -1,5 +1,43 @@
 [
   {
+    "title": "부산 금정산 하루 코스, 케이블카·범어사·산성마을 막걸리까지",
+    "url": "2026-10-22-busan-geumjeongsan-guide-ko.html",
+    "thumb": "assets/thumbs/trip-planner/geumjeongsan-guide.jpg",
+    "label": "여행 계획 · 공개중",
+    "alt": "바위 봉우리 사이로 능선을 따라 이어지는 금정산성",
+    "badge": null,
+    "like_id": "trip-planner/2026-10-22-busan-geumjeongsan-guide-ko.html",
+    "date": "2026-10-22",
+    "kw": "금정산 금강공원 케이블카 범어사 금정산성 고당봉 산성마을 막걸리 동래 회동수원지 오륜대 서동미로시장 부산대 금정산 하루 코스 부산 북부 산성 막걸리",
+    "city": "busan",
+    "locations": [
+      {
+        "name": "금강공원 케이블카",
+        "address": "부산 동래구 우장춘로 155",
+        "lat": 35.22073,
+        "lng": 129.07433
+      },
+      {
+        "name": "범어사",
+        "address": "부산 금정구 범어사로 250",
+        "lat": 35.28389,
+        "lng": 129.06806
+      },
+      {
+        "name": "서동미로시장",
+        "address": "부산 금정구 서동로141번길 16",
+        "lat": 35.21657,
+        "lng": 129.10045
+      },
+      {
+        "name": "부산대학로",
+        "address": "부산 금정구 부산대학로",
+        "lat": 35.23132,
+        "lng": 129.08583
+      }
+    ]
+  },
+  {
     "title": "부산 송정에서 해동용궁사까지, 동해선과 버스로 가는 동쪽 해안 코스",
     "url": "2026-10-19-busan-songjeong-yonggungsa-east-course-ko.html",
     "thumb": "assets/thumbs/trip-planner/songjeong-east-course.jpg",

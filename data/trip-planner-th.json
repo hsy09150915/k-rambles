@@ -1,5 +1,43 @@
 [
   {
+    "title": "เส้นทางเที่ยวภูเขากึมจอง ปูซานแบบวันเดียว ตั้งแต่กระเช้าลอยฟ้า วัดพอมออซา ไปจนถึงมักกอลลีที่หมู่บ้านซันซอง",
+    "url": "2026-10-22-busan-geumjeongsan-guide-th.html",
+    "thumb": "assets/thumbs/trip-planner/geumjeongsan-guide.jpg",
+    "label": "แผนเที่ยว · เผยแพร่แล้ว",
+    "alt": "ป้อมปราการกึมจองที่ทอดไปตามสันเขาระหว่างยอดเขาหิน",
+    "badge": null,
+    "like_id": "trip-planner/2026-10-22-busan-geumjeongsan-guide-th.html",
+    "date": "2026-10-22",
+    "kw": "ภูเขากึมจอง สวนกึมกัง กระเช้าลอยฟ้า วัดพอมออซา ป้อมปราการกึมจอง ยอดโกดังบง หมู่บ้านซันซอง มักกอลลี ทงแน อ่างเก็บน้ำฮเวดง โอรยุนแด ตลาดซอดงมิโร มหาวิทยาลัยปูซาน",
+    "city": "busan",
+    "locations": [
+      {
+        "name": "กระเช้าลอยฟ้าสวนกึมกัง",
+        "address": "155 Ujangchun-ro, Dongnae-gu, Busan",
+        "lat": 35.22073,
+        "lng": 129.07433
+      },
+      {
+        "name": "วัดพอมออซา",
+        "address": "250 Beomeosa-ro, Geumjeong-gu, Busan",
+        "lat": 35.28389,
+        "lng": 129.06806
+      },
+      {
+        "name": "ตลาดซอดงมิโร",
+        "address": "16 Seodong-ro 141beon-gil, Geumjeong-gu, Busan",
+        "lat": 35.21657,
+        "lng": 129.10045
+      },
+      {
+        "name": "ย่านมหาวิทยาลัยปูซาน",
+        "address": "Busandaehak-ro, Geumjeong-gu, Busan",
+        "lat": 35.23132,
+        "lng": 129.08583
+      }
+    ]
+  },
+  {
     "title": "เส้นทางชายฝั่งตะวันออกปูซาน: หาดซงจอง วัดแฮดงยงกุงซา และสวนโอรังแด ด้วยสายทงแฮและรถบัส",
     "url": "2026-10-19-busan-songjeong-yonggungsa-east-course-th.html",
     "thumb": "assets/thumbs/trip-planner/songjeong-east-course.jpg",

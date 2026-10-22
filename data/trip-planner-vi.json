@@ -1,5 +1,43 @@
 [
   {
+    "title": "Lộ trình một ngày ở núi Geumjeong, Busan: cáp treo, chùa Beomeosa và makgeolli ở làng Sanseong",
+    "url": "2026-10-22-busan-geumjeongsan-guide-vi.html",
+    "thumb": "assets/thumbs/trip-planner/geumjeongsan-guide.jpg",
+    "label": "Lộ trình · Trực tuyến",
+    "alt": "Thành lũy Geumjeong nối dài theo đường sống núi giữa các đỉnh đá",
+    "badge": null,
+    "like_id": "trip-planner/2026-10-22-busan-geumjeongsan-guide-vi.html",
+    "date": "2026-10-22",
+    "kw": "Núi Geumjeong Công viên Geumgang Cáp treo Chùa Beomeosa Thành lũy Geumjeong Godangbong Làng Sanseong Makgeolli Dongnae Hồ chứa Hoedong Oryundae Chợ Seodong Miro Đại học Busan",
+    "city": "busan",
+    "locations": [
+      {
+        "name": "Cáp treo công viên Geumgang",
+        "address": "155 Ujangchun-ro, Dongnae-gu, Busan",
+        "lat": 35.22073,
+        "lng": 129.07433
+      },
+      {
+        "name": "Chùa Beomeosa",
+        "address": "250 Beomeosa-ro, Geumjeong-gu, Busan",
+        "lat": 35.28389,
+        "lng": 129.06806
+      },
+      {
+        "name": "Chợ Seodong Miro",
+        "address": "16 Seodong-ro 141beon-gil, Geumjeong-gu, Busan",
+        "lat": 35.21657,
+        "lng": 129.10045
+      },
+      {
+        "name": "Phố Đại học Quốc gia Busan",
+        "address": "Busandaehak-ro, Geumjeong-gu, Busan",
+        "lat": 35.23132,
+        "lng": 129.08583
+      }
+    ]
+  },
+  {
     "title": "Lộ trình bờ biển phía đông Busan: bãi biển Songjeong, chùa Haedong Yonggungsa và công viên Orangdae bằng tuyến Donghae và xe buýt",
     "url": "2026-10-19-busan-songjeong-yonggungsa-east-course-vi.html",
     "thumb": "assets/thumbs/trip-planner/songjeong-east-course.jpg",
