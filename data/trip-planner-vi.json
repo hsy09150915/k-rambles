@@ -24,6 +24,18 @@
         "lng": 129.06806
       },
       {
+        "name": "Làng Sanseong",
+        "address": "554-5 Geumseong-dong, Geumjeong-gu, Busan",
+        "lat": 35.25019,
+        "lng": 129.05631
+      },
+      {
+        "name": "Hồ chứa Hoedong",
+        "address": "Seon-dong, Geumjeong-gu, Busan",
+        "lat": 35.24371,
+        "lng": 129.12042
+      },
+      {
         "name": "Chợ Seodong Miro",
         "address": "16 Seodong-ro 141beon-gil, Geumjeong-gu, Busan",
         "lat": 35.21657,
