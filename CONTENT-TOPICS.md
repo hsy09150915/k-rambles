@@ -36,7 +36,8 @@
 - **부네치아(장림포구): 알록달록한 포구, 솔직한 후기** — 키워드: 부산 장림포구 부네치아 항구 배 노을 사하구 바다뷰 경치
 - **감천문화마을: 사진 명소와 가기 전에 알아둘 것** — 키워드: 부산 감천 문화마을 벽화 사진 사하구 벽화마을 뷰 경치 포토스팟
 
-## Taste (미식) (10개)
+## Taste (미식) (11개)
+- **부산 장어 요리 안내, 곰장어, 붕장어, 민물장어 구분하고 주문하는 법** — 키워드: 부산 음식 부산 장어 곰장어 꼼장어 먹장어 짚불곰장어 기장 곰장어 붕장어 아나고 아나고회 민물장어 뱀장어 장어구이 자갈치 곰장어골목 busan eel hagfish conger eel freshwater eel grilled eel kkomjangeo anago 부산 맛집 음식 (2026-10-23)
 - **부산 향토 음식 3가지, 복국(복어탕), 아구찜(아귀찜), 냉채족발 주문하고 먹는 법** — 키워드: 부산 음식 부산 향토 음식 복국 복어탕 부산 복어 복어회 복수육 아구찜 아귀찜 아귀탕 아귀수육 냉채족발 부평동 족발골목 해파리냉채 busan food busan local food bokguk pufferfish soup agujjim monkfish stew naengchae jokbal jellyfish pork trotters 부산 맛집 음식 (2026-10-23)
 - **부산 대표 음식 5가지, 동래파전·어묵·낙곱새·돼지국밥·밀면 주문하고 먹는 법** — 키워드: 부산 음식 부산 대표 음식 동래파전 해물파전 동래할매파전 부산 어묵 어묵 삼진어묵 물떡 낙곱새 조방낙지 돼지국밥 밀면 busan food dongnae pajeon eomuk fish cake nakgopsae jobang nakji dwaeji gukbap milmyeon 부산 맛집 음식 (2026-10-23)
 - **부산 카페 문화 가이드, 한국 카페가 특별한 이유 — 얼죽아·카공·디저트·전포카페거리** — 키워드: cafe culture korean cafe eoljuga iced americano kagongjok study cafe instagrammable food photo jeonpo cafe street mullae-dong salt bread bingsu croffle dalgona busan cafe 카페 문화 한국 카페 얼죽아 아아 뜨아 카공 카공족 먹스타그램 인스타그래머블 전포카페거리 전포동 문래동 카페 디저트 소금빵 빙수 크로플 달고나커피 부산 카페
