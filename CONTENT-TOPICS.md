@@ -36,7 +36,8 @@
 - **부네치아(장림포구): 알록달록한 포구, 솔직한 후기** — 키워드: 부산 장림포구 부네치아 항구 배 노을 사하구 바다뷰 경치
 - **감천문화마을: 사진 명소와 가기 전에 알아둘 것** — 키워드: 부산 감천 문화마을 벽화 사진 사하구 벽화마을 뷰 경치 포토스팟
 
-## Taste (미식) (12개)
+## Taste (미식) (13개)
+- **부산 낙지와 주꾸미 요리 가이드, 낙지볶음부터 산낙지, 낙지탕탕이까지** — 키워드: 부산 음식 부산 향토 음식 낙지 낙지볶음 낙지탕탕이 산낙지 연포탕 주꾸미 주꾸미볶음 쭈삼 낙곱새 낙지호롱구이 낙지구이 busan octopus nakji sannakji nakji tangtangi live octopus jjukkumi webfoot octopus stir-fried octopus 부산 맛집 음식
 - **부산 해물탕과 재첩국(작은 민물조개 국), 국물 요리 주문하고 먹는 법** — 키워드: 부산 음식 부산 향토 음식 해물탕 해물찜 해물전골 매운탕 재첩국 재첩 부산 해장국 국 탕 찌개 전골 찜 busan seafood hot pot haemultang jaecheopguk freshwater clam soup korean soup stew 부산 맛집 음식 (2026-10-24)
 - **부산 장어 요리 안내, 곰장어, 붕장어, 민물장어 구분하고 주문하는 법** — 키워드: 부산 음식 부산 장어 곰장어 꼼장어 먹장어 짚불곰장어 기장 곰장어 붕장어 아나고 아나고회 민물장어 뱀장어 장어구이 자갈치 곰장어골목 busan eel hagfish conger eel freshwater eel grilled eel kkomjangeo anago 부산 맛집 음식 (2026-10-23)
 - **부산 향토 음식 3가지, 복국(복어탕), 아구찜(아귀찜), 냉채족발 주문하고 먹는 법** — 키워드: 부산 음식 부산 향토 음식 복국 복어탕 부산 복어 복어회 복수육 아구찜 아귀찜 아귀탕 아귀수육 냉채족발 부평동 족발골목 해파리냉채 busan food busan local food bokguk pufferfish soup agujjim monkfish stew naengchae jokbal jellyfish pork trotters 부산 맛집 음식 (2026-10-23)
