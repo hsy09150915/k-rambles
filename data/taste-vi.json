@@ -10,7 +10,62 @@
     "date": "2026-10-26",
     "kw": "mon an busan mon cua busan gejang ganjang-gejang yangnyeom-gejang kkotgetang cua ngam tuong cua song ngam nuoc tuong cua tron sot cay canh cua kkotge crab soy sauce marinated crab spicy marinated crab crab soup Busan food Korean food 게장 간장게장 양념게장 꽃게탕 꽃게 부산 게장 부산 음식",
     "city": "busan",
-    "locations": []
+    "locations": [
+      {
+        "name": "Bak Min-ho Ganjang-gejang Lab",
+        "address": "부산 기장군 기장읍 동부리 134-8",
+        "lat": 35.2474375,
+        "lng": 129.2140156
+      },
+      {
+        "name": "Jang Ji-nyeong Ganjang-gejang, chi nhánh Yeonhwa-ri, Gijang",
+        "address": "부산 기장군 기장읍 연화리 517",
+        "lat": 35.2157125,
+        "lng": 129.2248281
+      },
+      {
+        "name": "Sacheon Gejang-jip",
+        "address": "부산 사상구 삼락동 70-19",
+        "lat": 35.1934875,
+        "lng": 128.9855781
+      },
+      {
+        "name": "Masan Genak-jjim, Haemakki Ganjang-gejang",
+        "address": "부산 해운대구 중동 1124-2",
+        "lat": 35.1603375,
+        "lng": 129.1663594
+      },
+      {
+        "name": "Sinsa Kkotgedang, chi nhánh Haeundae",
+        "address": "부산 해운대구 해운대해변로 257",
+        "lat": 35.1597125,
+        "lng": 129.1595156
+      },
+      {
+        "name": "Kkotge-wa Sarang-e Ppajida",
+        "address": "부산 해운대구 중동 1488-9",
+        "lat": 35.1587375,
+        "lng": 129.1827969
+      },
+      {
+        "name": "Deodo Gejang",
+        "address": "부산 해운대구 우동 1435-3",
+        "lat": 35.1554875,
+        "lng": 129.1466406
+      },
+      {
+        "name": "Lee Ha-jeong Ganjang-gejang",
+        "address": "부산 수영구 광안동 1077-8",
+        "lat": 35.1660125,
+        "lng": 129.1142031
+      },
+      {
+        "name": "Golmok Gejang, chi nhánh chính Ga Busan",
+        "address": "부산 동구 초량동 1197-8",
+        "lat": 35.1173875,
+        "lng": 129.0418281
+      }
+    ]
   },
   {
     "title": "Các món bạch tuộc ở Busan: nakji và jjukkumi, từ nakji-bokkeum đến sannakji và nakji-tangtangi",

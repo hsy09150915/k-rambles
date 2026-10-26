@@ -10,7 +10,62 @@
     "date": "2026-10-26",
     "kw": "busan crab busan gejang gejang korean marinated crab ganjang-gejang soy sauce marinated crab raw crab marinated in soy sauce yangnyeom-gejang spicy marinated crab raw crab spicy sauce kkotgetang kkotge-tang crab soup spicy crab soup blue swimming crab kkotge crab dishes korea crab jjim steamed crab kkotge jorim braised crab kkotge twigim fried crab daege jjim snow crab genak jjim how to eat crab korea shellfish allergy korea busan food busan local food korean food for visitors 부산 음식 부산 게장 게장 간장게장 양념게장 꽃게탕 꽃게 꽃게찜 꽃게조림 꽃게튀김 대게찜 게낙찜",
     "city": "busan",
-    "locations": []
+    "locations": [
+      {
+        "name": "Bak Min-ho Ganjang-gejang Lab",
+        "address": "부산 기장군 기장읍 동부리 134-8",
+        "lat": 35.2474375,
+        "lng": 129.2140156
+      },
+      {
+        "name": "Jang Ji-nyeong Ganjang-gejang, Gijang Yeonhwa-ri Branch",
+        "address": "부산 기장군 기장읍 연화리 517",
+        "lat": 35.2157125,
+        "lng": 129.2248281
+      },
+      {
+        "name": "Sacheon Gejang House",
+        "address": "부산 사상구 삼락동 70-19",
+        "lat": 35.1934875,
+        "lng": 128.9855781
+      },
+      {
+        "name": "Masan Genak-jjim, Haemakki Ganjang-gejang",
+        "address": "부산 해운대구 중동 1124-2",
+        "lat": 35.1603375,
+        "lng": 129.1663594
+      },
+      {
+        "name": "Sinsa Kkotgedang, Haeundae Branch",
+        "address": "부산 해운대구 해운대해변로 257",
+        "lat": 35.1597125,
+        "lng": 129.1595156
+      },
+      {
+        "name": "Kkotge-wa Sarang-e Ppajida",
+        "address": "부산 해운대구 중동 1488-9",
+        "lat": 35.1587375,
+        "lng": 129.1827969
+      },
+      {
+        "name": "Deodo Gejang",
+        "address": "부산 해운대구 우동 1435-3",
+        "lat": 35.1554875,
+        "lng": 129.1466406
+      },
+      {
+        "name": "Lee Ha-jeong Ganjang-gejang",
+        "address": "부산 수영구 광안동 1077-8",
+        "lat": 35.1660125,
+        "lng": 129.1142031
+      },
+      {
+        "name": "Golmok Gejang, Busan Station Main Branch",
+        "address": "부산 동구 초량동 1197-8",
+        "lat": 35.1173875,
+        "lng": 129.0418281
+      }
+    ]
   },
   {
     "title": "Busan Octopus Guide: Nakji and Jjukkumi Dishes, from Stir-Fried Octopus to Live Octopus (Sannakji) and Nakji-tangtangi",
