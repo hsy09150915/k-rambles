@@ -50,11 +50,11 @@
 
 ### Food
 
-- [Busan Crab Guide: Soy Sauce Marinated Crab (Ganjang-gejang 간장게장), Spicy Marinated Crab (Yangnyeom-gejang 양념게장) and Crab Soup (Kkotgetang 꽃게탕)](https://k-rambles.com/taste/2026-10-26-busan-gejang-guide-en.html) — 2026-10-26
-- [Busan Octopus Guide: Nakji (낙지) and Jjukkumi (주꾸미) Dishes, from Stir-Fried Octopus to Live Octopus (Sannakji, 산낙지) and Nakji-tangtangi (낙지탕탕이)](https://k-rambles.com/taste/2026-10-24-busan-nakji-guide-en.html) — 2026-10-24
-- [Busan Seafood Hot Pot (Haemultang 해물탕) and Freshwater Clam Soup (Jaecheopguk 재첩국): How to Order and Eat](https://k-rambles.com/taste/2026-10-24-busan-seafood-soup-guide-en.html) — 2026-10-24
-- [Busan Eel Guide: Hagfish (곰장어) Is Not an Eel, Plus Conger Eel (붕장어) and Freshwater Eel (민물장어)](https://k-rambles.com/taste/2026-10-23-busan-eel-guide-en.html) — 2026-10-23
-- [3 Local Busan Foods: How to Order and Eat Bokguk (복국, Pufferfish Soup), Agujjim (아구찜, Spicy Braised Monkfish) and Naengchae Jokbal (냉채족발, Cold Pig's Trotters)](https://k-rambles.com/taste/2026-10-23-busan-local-foods-guide-en.html) — 2026-10-23
+- [Busan Crab Guide: Ganjang-gejang, Yangnyeom-gejang and Crab Soup Explained](https://k-rambles.com/taste/2026-10-26-busan-gejang-guide-en.html) — 2026-10-26
+- [Busan Octopus Guide: Nakji and Jjukkumi Dishes, from Stir-Fried Octopus to Live Octopus (Sannakji) and Nakji-tangtangi](https://k-rambles.com/taste/2026-10-24-busan-nakji-guide-en.html) — 2026-10-24
+- [Busan Seafood Hot Pot (Haemultang) and Freshwater Clam Soup (Jaecheopguk): How to Order and Eat](https://k-rambles.com/taste/2026-10-24-busan-seafood-soup-guide-en.html) — 2026-10-24
+- [Busan Eel Guide: Hagfish Is Not an Eel, Plus Conger Eel and Freshwater Eel](https://k-rambles.com/taste/2026-10-23-busan-eel-guide-en.html) — 2026-10-23
+- [3 Local Busan Foods: How to Order and Eat Bokguk (Pufferfish Soup), Agujjim (Spicy Braised Monkfish) and Naengchae Jokbal (Cold Pig's Trotters)](https://k-rambles.com/taste/2026-10-23-busan-local-foods-guide-en.html) — 2026-10-23
 - [5 Signature Busan Foods: How to Order and Eat Dongnae Pajeon, Fish Cake, Nakgopsae, Pork Soup Rice and Milmyeon](https://k-rambles.com/taste/2026-10-23-busan-signature-foods-guide-en.html) — 2026-10-23
 - [Busan Cafe Culture Guide: Why Korean Cafes Are Special — Winter Iced Americanos, Studying in Cafes, Desserts and Jeonpo Cafe Street](https://k-rambles.com/taste/2026-10-15-busan-cafe-culture-guide-en.html) — 2026-10-15
 - [Busan Restaurant Guide for Foreigners: 12 Most-Asked Questions — Eating Alone, Self-Service, Paying and Tipping](https://k-rambles.com/taste/2026-10-14-busan-restaurant-etiquette-questions-en.html) — 2026-10-14
@@ -206,11 +206,11 @@
 
 ### Food
 
-- [Món cua ở Busan: phân biệt ganjang-gejang (간장게장), yangnyeom-gejang (양념게장), kkotgetang (꽃게탕) và cách ăn](https://k-rambles.com/vi/taste/2026-10-26-busan-gejang-guide-vi.html) — 2026-10-26
-- [Các món bạch tuộc ở Busan: nakji (낙지) và jjukkumi (주꾸미), từ nakji-bokkeum (낙지볶음) đến sannakji (산낙지) và nakji-tangtangi (낙지탕탕이)](https://k-rambles.com/vi/taste/2026-10-24-busan-nakji-guide-vi.html) — 2026-10-24
-- [Lẩu hải sản haemultang (해물탕) và canh hến jaecheopguk (재첩국) ở Busan: cách gọi món và cách ăn](https://k-rambles.com/vi/taste/2026-10-24-busan-seafood-soup-guide-vi.html) — 2026-10-24
-- [Hướng dẫn món lươn ở Busan: gomjangeo (hagfish, 곰장어) không phải lươn, cách phân biệt với lươn biển bungjangeo (붕장어) và lươn nước ngọt (민물장어) khi gọi món](https://k-rambles.com/vi/taste/2026-10-23-busan-eel-guide-vi.html) — 2026-10-23
-- [3 món địa phương của Busan: cách gọi món và cách ăn bokguk (canh cá nóc, 복국), agujjim (cá monkfish hầm cay, 아구찜) và naengchae jokbal (giò heo lạnh, 냉채족발)](https://k-rambles.com/vi/taste/2026-10-23-busan-local-foods-guide-vi.html) — 2026-10-23
+- [Món cua ở Busan: phân biệt ganjang-gejang, yangnyeom-gejang, canh cua và cách ăn](https://k-rambles.com/vi/taste/2026-10-26-busan-gejang-guide-vi.html) — 2026-10-26
+- [Các món bạch tuộc ở Busan: nakji và jjukkumi, từ nakji-bokkeum đến sannakji và nakji-tangtangi](https://k-rambles.com/vi/taste/2026-10-24-busan-nakji-guide-vi.html) — 2026-10-24
+- [Lẩu hải sản haemultang và canh hến jaecheopguk ở Busan: cách gọi món và cách ăn](https://k-rambles.com/vi/taste/2026-10-24-busan-seafood-soup-guide-vi.html) — 2026-10-24
+- [Hướng dẫn món lươn ở Busan: gomjangeo (hagfish) không phải lươn, cách phân biệt với lươn biển bungjangeo và lươn nước ngọt khi gọi món](https://k-rambles.com/vi/taste/2026-10-23-busan-eel-guide-vi.html) — 2026-10-23
+- [3 món địa phương của Busan: cách gọi món và cách ăn bokguk (canh cá nóc), agujjim (cá monkfish hầm cay) và naengchae jokbal (giò heo lạnh)](https://k-rambles.com/vi/taste/2026-10-23-busan-local-foods-guide-vi.html) — 2026-10-23
 - [5 món đặc trưng của Busan: cách gọi món và cách ăn Dongnae pajeon, chả cá, nakgopsae, dwaeji gukbap và milmyeon (mì lúa mì lạnh)](https://k-rambles.com/vi/taste/2026-10-23-busan-signature-foods-guide-vi.html) — 2026-10-23
 - [Hướng dẫn văn hóa cà phê ở Busan: vì sao quán cà phê Hàn Quốc đặc biệt — Americano đá mùa đông, học bài ở quán, món tráng miệng và phố cà phê Jeonpo](https://k-rambles.com/vi/taste/2026-10-15-busan-cafe-culture-guide-vi.html) — 2026-10-15
 - [Hướng dẫn nhà hàng ở Busan cho người nước ngoài: 12 câu hỏi hay gặp nhất — ăn một mình, tự phục vụ, thanh toán và tiền boa](https://k-rambles.com/vi/taste/2026-10-14-busan-restaurant-etiquette-questions-vi.html) — 2026-10-14
@@ -284,11 +284,11 @@
 
 ### Food
 
-- [คู่มืออาหารปูในปูซาน: กันจังเกจัง (간장게장) ปูดองซีอิ๊ว ยังนยอมเกจัง (양념게장) ปูดองซอสเผ็ด และกกเกทัง (꽃게탕) ซุปปู](https://k-rambles.com/th/taste/2026-10-26-busan-gejang-guide-th.html) — 2026-10-26
-- [คู่มืออาหารหมึกสายในปูซาน: นักจี (낙지) และจูกกูมี (주꾸미) ตั้งแต่หมึกสายผัดเผ็ดไปจนถึงหมึกสายเป็น (산낙지) และนักจีทังทังงี (낙지탕탕이)](https://k-rambles.com/th/taste/2026-10-24-busan-nakji-guide-th.html) — 2026-10-24
-- [แฮมุลทัง (해물탕) หม้อไฟอาหารทะเล และแจชอบกุก (재첩국) ซุปหอยน้ำจืดตัวเล็ก ในปูซาน: วิธีสั่งและวิธีกิน](https://k-rambles.com/th/taste/2026-10-24-busan-seafood-soup-guide-th.html) — 2026-10-24
-- [คู่มือปลาไหลในปูซาน แยกแฮกฟิช (곰장어) ที่ไม่ใช่ปลาไหล ปลาไหลทะเล และปลาไหลน้ำจืด พร้อมวิธีสั่ง](https://k-rambles.com/th/taste/2026-10-23-busan-eel-guide-th.html) — 2026-10-23
-- [อาหารพื้นเมืองปูซาน 3 อย่าง: ซุปปลาปักเป้าพกกุก (복국) อากูจิม (아구찜) และเนงแชชกบัล (냉채족발) วิธีสั่งและวิธีกิน](https://k-rambles.com/th/taste/2026-10-23-busan-local-foods-guide-th.html) — 2026-10-23
+- [คู่มืออาหารปูในปูซาน: กันจังเกจัง ยังนยอมเกจัง และซุปปู](https://k-rambles.com/th/taste/2026-10-26-busan-gejang-guide-th.html) — 2026-10-26
+- [คู่มืออาหารหมึกสายในปูซาน: นักจี และจูกกูมี ตั้งแต่หมึกสายผัดเผ็ดไปจนถึงหมึกสายเป็น และนักจีทังทังงี](https://k-rambles.com/th/taste/2026-10-24-busan-nakji-guide-th.html) — 2026-10-24
+- [แฮมุลทัง หม้อไฟอาหารทะเล และแจชอบกุก ซุปหอยน้ำจืดตัวเล็ก ในปูซาน: วิธีสั่งและวิธีกิน](https://k-rambles.com/th/taste/2026-10-24-busan-seafood-soup-guide-th.html) — 2026-10-24
+- [คู่มือปลาไหลในปูซาน แยกแฮกฟิช ที่ไม่ใช่ปลาไหล ปลาไหลทะเล และปลาไหลน้ำจืด พร้อมวิธีสั่ง](https://k-rambles.com/th/taste/2026-10-23-busan-eel-guide-th.html) — 2026-10-23
+- [อาหารพื้นเมืองปูซาน 3 อย่าง: ซุปปลาปักเป้าพกกุก อากูจิม และเนงแชชกบัล วิธีสั่งและวิธีกิน](https://k-rambles.com/th/taste/2026-10-23-busan-local-foods-guide-th.html) — 2026-10-23
 - [อาหารขึ้นชื่อ 5 อย่างของปูซาน: แพนเค้กต้นหอมทงแน พาจอน เค้กปลาออมุก นักกบแซ ข้าวซุปหมูทแวจีกุกบับ และมิลมยอน](https://k-rambles.com/th/taste/2026-10-23-busan-signature-foods-guide-th.html) — 2026-10-23
 - [คู่มือวัฒนธรรมคาเฟ่ในปูซาน ทำไมคาเฟ่เกาหลีถึงพิเศษ — อเมริกาโนเย็นกลางหน้าหนาว การอ่านหนังสือในคาเฟ่ ขนมหวาน และถนนคาเฟ่จอนโพ](https://k-rambles.com/th/taste/2026-10-15-busan-cafe-culture-guide-th.html) — 2026-10-15
 - [คู่มือร้านอาหารในปูซานสำหรับชาวต่างชาติ: 12 คำถามที่ถามบ่อยที่สุด — กินคนเดียว บริการตัวเอง การจ่ายเงิน และทิป](https://k-rambles.com/th/taste/2026-10-14-busan-restaurant-etiquette-questions-th.html) — 2026-10-14
