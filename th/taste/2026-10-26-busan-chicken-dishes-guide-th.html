@@ -341,6 +341,10 @@
   .route-cta { display: inline-flex; align-items: center; gap: 6px; text-decoration: none; padding: 9px 18px; border: none; border-radius: 100px; color: #fff5ee; background: var(--coral); font-size: 0.86rem; font-weight: 700; box-shadow: var(--card-shadow); }
   .route-cta:hover { background: var(--coral-ink); }
   .route-cta svg { width: 14px; height: 14px; stroke: currentColor; fill: none; stroke-width: 2.2; }
+  .photo-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin: 18px 0; align-items: start; }
+  .photo-pair img { display: block; width: 100%; height: auto; border-radius: 12px; box-shadow: var(--card-shadow); }
+  .photo-pair p.photo-caption { margin: 8px 0 0; max-width: none; }
+  @media (max-width: 560px) { .photo-pair { grid-template-columns: minmax(0, 1fr); gap: 18px; } }
 </style>
 </head>
 <body>
@@ -380,6 +384,11 @@
   <h1 class="art-title">คู่มืออาหารไก่ในปูซาน ตั้งแต่ไก่ทอดไปจนถึงตั๊กคัลบีและตั๊กคมทัง</h1>
   <p class="dek">ตั้งแต่ไก่ทอดกับเบียร์ ไปจนถึงตั๊กคัลบี ตั๊กบัล ตั๊กบกกึมทัง ซัมเกทัง และตั๊กคมทัง รวบรวมอาหารไก่ที่กินได้ในปูซานไว้ให้ ทั้งชื่อเมนูและวิธีสั่ง</p>
   <p class="updated-badge"><svg class="updated-icon"><use href="#i-calendar"/></svg>ข้อมูล ณ วันที่ 26 ตุลาคม ค.ศ. 2026 — วันเปิดทำการและเมนูของร้านอาจเปลี่ยนได้ โปรดตรวจสอบก่อนไป</p>
+</div>
+
+<div class="hero-photo-wrap">
+  <img class="hero-photo" src="/assets/img/inl/08ba97dcbe66.jpg" alt="จานไก่ทอดซอสเผ็ดหวานและไก่ทอดธรรมดา" width="1280" height="853" loading="eager">
+  <p class="photo-caption">ภาพ: Pixabay</p>
 </div>
 
 <section class="block section-gap" id="sec-1">
@@ -433,10 +442,7 @@
   </div>  <p class="body-text">ตามสารานุกรมวัฒนธรรมเกาหลี (한국민족문화대백과사전) ทงตั๊ก (통닭) เดิมหมายถึงไก่ทั้งตัวที่ย่างไฟฟ้าหรือทอดในน้ำมัน ต่อมามีการแยกเรียกไก่ที่ตัดเป็นชิ้นแล้วทอดว่าไก่ทอดแบบฟรายด์ชิกเก้น (프라이드치킨)</p>
   <p class="body-text">แต่ปัจจุบันในปูซาน ร้านที่เขียนว่าทงตั๊กในเมนูหลายแห่งก็ตัดไก่เป็นชิ้นพอดีคำมาเสิร์ฟเช่นกัน ไม่ต่างจากร้านไก่ทอดทั่วไปมากนัก จึงไม่จำเป็นต้องแยกร้านไก่ทอดกับร้านทงตั๊กเป็นคนละแบบ</p>
   <p class="body-text">นิตยสารรายเดือนของกรุงโซล Seoul Sarang (서울사랑) อธิบายว่าทงตั๊กแบบโบราณ (옛날 통닭) คืออาหารที่ชุบแป้งบาง ๆ แล้วทอดในน้ำมัน ในช่วงทศวรรษ 1960 และ 1970 ด้วยเหตุนี้ร้านทงตั๊กจึงมักมีแป้งเคลือบไม่หนาและรสเรียบไม่เลี่ยนกว่าไก่ทอดของร้านเชนในปัจจุบัน</p>
-<div class="inset-photo-wrap" style="max-width:100%;">
-    <img class="inset-photo" style="max-width:100%;" src="/assets/img/inl/08ba97dcbe66.jpg" alt="จานไก่ทอดซอสเผ็ดหวานและไก่ทอดธรรมดา" width="1280" height="853" loading="lazy">
-    <p class="photo-caption" style="margin:10px 0 0;max-width:none;">ภาพ: Pixabay</p>
-  </div>  <p class="body-text"><strong>ทงตั๊กตลาด (시장 통닭)</strong> ถ้าไปตามตลาดดั้งเดิม จะมีหลายร้านที่ขายทงตั๊กที่คงรูปไก่ทั้งตัวไว้</p>
+  <p class="body-text"><strong>ทงตั๊กตลาด (시장 통닭)</strong> ถ้าไปตามตลาดดั้งเดิม จะมีหลายร้านที่ขายทงตั๊กที่คงรูปไก่ทั้งตัวไว้</p>
   <p class="body-text">ในปูซาน ตลาดที่ขึ้นชื่อเรื่องทงตั๊กตลาดคือตลาดบูพยอง (부평시장) หมายถึงบริเวณตลาดบูพยองคังทง (부평깡통시장) ในบูพยองดง เขตชุง (중구 부평동) ซึ่งอยู่ติดกับนัมโพดง (남포동) ใกล้กับสถานีชากัลชี (자갈치역) หรือสถานีนัมโพ (남포역) ของรถไฟใต้ดินสาย 1</p>
   <p class="body-text">ร้าน Geoin Tongdak (거인통닭), Obok Tongdak (오복통닭) และ Bupyeong Tongdak (부평통닭) เป็นที่รู้จักในชื่อ “3 ร้านทงตั๊กชื่อดังแห่งตลาดบูพยอง” สารานุกรมวัฒนธรรมท้องถิ่นเกาหลีฉบับดิจิทัล (한국향토문화전자대전) แนะนำไว้เช่นนี้</p>
   <p class="body-text">ด้านล่างคือร้านไก่ทอดและทงตั๊กที่มีรีวิวบน Naver Map มากในปูซานทั้งเมือง นับรีวิวแยกตามแต่ละสาขา และไม่รวมร้านเหล้าและร้านที่เชี่ยวชาญตั๊กคังจอง (닭강정) ตัวเลขตามที่ตรวจสอบในปี ค.ศ. 2026</p>
@@ -527,13 +533,16 @@
   <p class="body-text">ถ้ากินครั้งแรก ให้เลือก<strong>ตั๊กบัลไร้กระดูก (무뼈 닭발)</strong>เพราะเป็นเท้าไก่ที่แกะกระดูกออกแล้ว จึงกินง่าย บางร้านมีทั้งตั๊กบัลมีกระดูก (뼈 닭발) และไร้กระดูกแยกกันในเมนู</p>
   <p class="body-text">ร้านตั๊กบัลในปูซานมักสั่ง<strong>ซุปหอย (조개탕)</strong>คู่กับตั๊กบัล กินตั๊กบัลเผ็ด ๆ ไปสักพักก็ซดน้ำซุปหอยใส ๆ รสกลมกล่อมตาม เพื่อปลอบปากที่เผ็ดร้อนและชาให้สงบลง</p>
   <p class="body-text">ตั๊กบัลแบ่งเป็นแบบย่างบนเตาถ่านหรือแผ่นย่าง กับแบบ<strong>ตั๊กบัลจจากึรี (짜글이 닭발)</strong>ที่เคี่ยวจนน้ำซุปงวดเหลือน้อย ตั๊กบัลแบบมีน้ำซุปกินคู่กับวุ้นเส้นหรือข้าวปั้น (주먹밥)</p>
-<div class="inset-photo-wrap" style="max-width:100%;">
-    <img class="inset-photo" style="max-width:647px;" src="/assets/img/inl/ddc6caa555e9.jpg" alt="ตั๊กบัล (닭발) ปรุงรสเผ็ดในจาน" width="647" height="611" loading="lazy">
-    <p class="photo-caption" style="margin:10px 0 0;max-width:none;">ภาพ: Dakbal-ui Jijon, 374 Yeonsu-ro, Suyeong-gu (닭발의지존, 수영구 연수로 374)</p>
-  </div><div class="inset-photo-wrap" style="max-width:100%;">
-    <img class="inset-photo" style="max-width:692px;" src="/assets/img/inl/4e0b803f5072.jpg" alt="ตั๊กบัล (닭발) ย่างมีควันขึ้นบนตะแกรง" width="692" height="654" loading="lazy">
-    <p class="photo-caption" style="margin:10px 0 0;max-width:none;">ภาพ: Shin-i Naerin Dakbal, 28-1 Bujeon-ro 66beon-gil, Busanjin-gu (신이내린닭발 서면, 부산진구 부전로66번길 28-1)</p>
-  </div>  <p class="body-text">ด้านล่างคือร้านตั๊กบัลที่มีรีวิวมาก ไม่รวมร้านเหล้าและร้านเนื้อย่าง</p>
+<div class="photo-pair">
+  <div class="pp-cell">
+    <img src="/assets/img/inl/ddc6caa555e9.jpg" alt="ตั๊กบัล (닭발) ปรุงรสเผ็ดในจาน" width="647" height="611" loading="lazy">
+    <p class="photo-caption">ภาพ: Dakbal-ui Jijon, 374 Yeonsu-ro, Suyeong-gu (닭발의지존, 수영구 연수로 374)</p>
+  </div>
+  <div class="pp-cell">
+    <img src="/assets/img/inl/4e0b803f5072.jpg" alt="ตั๊กบัล (닭발) ย่างมีควันขึ้นบนตะแกรง" width="692" height="654" loading="lazy">
+    <p class="photo-caption">ภาพ: Shin-i Naerin Dakbal, 28-1 Bujeon-ro 66beon-gil, Busanjin-gu (신이내린닭발 서면, 부산진구 부전로66번길 28-1)</p>
+  </div>
+</div>  <p class="body-text">ด้านล่างคือร้านตั๊กบัลที่มีรีวิวมาก ไม่รวมร้านเหล้าและร้านเนื้อย่าง</p>
   <table class="data-table keep">
       <thead>
         <tr><th>ร้าน</th><th>รีวิว</th><th>ตำแหน่ง</th></tr>
@@ -651,7 +660,7 @@
     </table>
   <p class="body-text">ต่อไปคือตั๊กคมทังและตั๊กคัลกุกซู ตั๊กคมทังราคาราว 10,000 วอน จึงเป็นมื้ออาหารที่ไม่หนักกระเป๋า</p>
 <div class="inset-photo-wrap" style="max-width:100%;">
-    <img class="inset-photo" style="max-width:100%;" src="/assets/img/inl/2043986d9697.jpg" alt="ชามตั๊กกมทัง (닭곰탕) ใส่เนื้อไก่ฉีกและวุ้นเส้น" width="1023" height="1280" loading="lazy">
+    <img class="inset-photo" style="max-width:100%;" src="/assets/img/inl/4711c90e6a82.jpg" alt="ชามตั๊กกมทัง (닭곰탕) ใส่เนื้อไก่ฉีกและวุ้นเส้น" width="1023" height="682" loading="lazy">
   </div>  <table class="data-table keep">
       <thead>
         <tr><th>ร้าน</th><th>รีวิว</th><th>ตำแหน่ง</th></tr>

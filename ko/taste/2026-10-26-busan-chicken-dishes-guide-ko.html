@@ -341,6 +341,10 @@
   .route-cta { display: inline-flex; align-items: center; gap: 6px; text-decoration: none; padding: 9px 18px; border: none; border-radius: 100px; color: #fff5ee; background: var(--coral); font-size: 0.86rem; font-weight: 700; box-shadow: var(--card-shadow); }
   .route-cta:hover { background: var(--coral-ink); }
   .route-cta svg { width: 14px; height: 14px; stroke: currentColor; fill: none; stroke-width: 2.2; }
+  .photo-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin: 18px 0; align-items: start; }
+  .photo-pair img { display: block; width: 100%; height: auto; border-radius: 12px; box-shadow: var(--card-shadow); }
+  .photo-pair p.photo-caption { margin: 8px 0 0; max-width: none; }
+  @media (max-width: 560px) { .photo-pair { grid-template-columns: minmax(0, 1fr); gap: 18px; } }
 </style>
 </head>
 <body>
@@ -380,6 +384,11 @@
   <h1 class="art-title">부산 닭 요리 가이드, 후라이드 치킨부터 닭갈비, 닭곰탕까지</h1>
   <p class="dek">후라이드 치킨과 맥주부터 닭갈비, 닭발, 닭볶음탕, 삼계탕, 닭곰탕까지, 부산에서 먹을 수 있는 닭 요리를 이름부터 주문 방법까지 정리했어요.</p>
   <p class="updated-badge"><svg class="updated-icon"><use href="#i-calendar"/></svg>2026년 10월 26일 기준 - 가게 영업일과 메뉴는 바뀔 수 있어요. 가기 전에 확인하세요.</p>
+</div>
+
+<div class="hero-photo-wrap">
+  <img class="hero-photo" src="/assets/img/inl/08ba97dcbe66.jpg" alt="양념치킨과 후라이드 치킨 한 접시" width="1280" height="853" loading="eager">
+  <p class="photo-caption">사진: Pixabay</p>
 </div>
 
 <section class="block section-gap" id="sec-1">
@@ -433,10 +442,7 @@
   </div>  <p class="body-text">한국민족문화대백과사전에 따르면 통닭은 원래 닭을 통째로 전기구이하거나 기름에 튀긴 것을 가리키는 말이었어요. 나중에 닭을 조각내 튀긴 것을 프라이드치킨이라고 따로 구분했어요.</p>
   <p class="body-text">다만 지금 부산에서는 메뉴판에 통닭이라고 적힌 가게도 닭을 먹기 좋게 토막 내서 내는 경우가 많아요. 보통의 치킨집과 크게 다르지 않아서, 치킨집과 통닭집을 따로 나눠 생각하지 않아도 돼요.</p>
   <p class="body-text">서울시가 펴내는 월간지 서울사랑은 옛날 통닭을 1960년대와 1970년대에 밀가루를 가볍게 묻혀 기름에 튀긴 음식이라고 설명해요. 그래서 통닭집은 요즘 체인점의 후라이드 치킨보다 튀김옷이 두툼하지 않고 담백한 편이에요.</p>
-<div class="inset-photo-wrap" style="max-width:100%;">
-    <img class="inset-photo" style="max-width:100%;" src="/assets/img/inl/08ba97dcbe66.jpg" alt="양념치킨과 후라이드 치킨 한 접시" width="1280" height="853" loading="lazy">
-    <p class="photo-caption" style="margin:10px 0 0;max-width:none;">사진: Pixabay</p>
-  </div>  <p class="body-text"><strong>시장 통닭</strong>은 재래시장에 가면 닭 한 마리 모양을 그대로 살린 통닭을 파는 곳이 많아요.</p>
+  <p class="body-text"><strong>시장 통닭</strong>은 재래시장에 가면 닭 한 마리 모양을 그대로 살린 통닭을 파는 곳이 많아요.</p>
   <p class="body-text">부산에서 시장 통닭으로 이름난 곳은 부평시장이에요. 부평시장은 남포동 바로 옆, 중구 부평동에 있는 부평깡통시장 일대를 말해요. 지하철 1호선 자갈치역이나 남포역에서 가까워요.</p>
   <p class="body-text">이곳의 거인통닭, 오복통닭, 부평통닭이 "부평시장 3대 통닭"으로 알려져 있어요. 한국향토문화전자대전이 이렇게 소개해요.</p>
   <p class="body-text">아래는 부산 전체에서 네이버 지도 리뷰가 많은 후라이드 치킨집, 통닭집이에요. 지점마다 리뷰를 따로 세었고, 술집과 닭강정 전문점은 뺐어요. 2026년에 확인한 값이에요.</p>
@@ -527,13 +533,16 @@
   <p class="body-text">처음 먹는다면 <strong>무뼈 닭발</strong>을 고르세요. 뼈를 발라낸 닭발이라 먹기 쉬워요. 메뉴에 뼈 닭발과 무뼈 닭발이 따로 있는 가게가 있어요.</p>
   <p class="body-text">부산의 닭발집은 닭발에 <strong>조개탕</strong>을 같이 시키는 경우가 많아요. 매운 닭발을 먹다가 시원한 조개 국물로 입을 달래요.</p>
   <p class="body-text">닭발은 숯불이나 불판에 구운 것과, 국물이 자작하게 졸아든 <strong>짜글이 닭발</strong>로 나뉘어요. 국물 닭발은 당면이나 주먹밥을 곁들여 먹어요.</p>
-<div class="inset-photo-wrap" style="max-width:100%;">
-    <img class="inset-photo" style="max-width:647px;" src="/assets/img/inl/ddc6caa555e9.jpg" alt="접시에 담은 매운 양념 닭발" width="647" height="611" loading="lazy">
-    <p class="photo-caption" style="margin:10px 0 0;max-width:none;">사진: 닭발의지존(수영구 연수로 374)</p>
-  </div><div class="inset-photo-wrap" style="max-width:100%;">
-    <img class="inset-photo" style="max-width:692px;" src="/assets/img/inl/4e0b803f5072.jpg" alt="불판에서 연기가 오르는 구운 닭발" width="692" height="654" loading="lazy">
-    <p class="photo-caption" style="margin:10px 0 0;max-width:none;">사진: 신이내린닭발 서면(부산진구 부전로66번길 28-1)</p>
-  </div>  <p class="body-text">아래는 리뷰가 많은 닭발 전문점이에요. 술집이나 고기집은 뺐어요.</p>
+<div class="photo-pair">
+  <div class="pp-cell">
+    <img src="/assets/img/inl/ddc6caa555e9.jpg" alt="접시에 담은 매운 양념 닭발" width="647" height="611" loading="lazy">
+    <p class="photo-caption">사진: 닭발의지존(수영구 연수로 374)</p>
+  </div>
+  <div class="pp-cell">
+    <img src="/assets/img/inl/4e0b803f5072.jpg" alt="불판에서 연기가 오르는 구운 닭발" width="692" height="654" loading="lazy">
+    <p class="photo-caption">사진: 신이내린닭발 서면(부산진구 부전로66번길 28-1)</p>
+  </div>
+</div>  <p class="body-text">아래는 리뷰가 많은 닭발 전문점이에요. 술집이나 고기집은 뺐어요.</p>
   <table class="data-table keep">
       <thead>
         <tr><th>가게</th><th>리뷰</th><th>위치</th></tr>
@@ -651,7 +660,7 @@
     </table>
   <p class="body-text">다음은 닭곰탕과 닭칼국수예요. 닭곰탕은 1만 원 안팎이라 한 끼로 부담이 적어요.</p>
 <div class="inset-photo-wrap" style="max-width:100%;">
-    <img class="inset-photo" style="max-width:100%;" src="/assets/img/inl/2043986d9697.jpg" alt="닭고기와 당면이 담긴 닭곰탕 한 그릇" width="1023" height="1280" loading="lazy">
+    <img class="inset-photo" style="max-width:100%;" src="/assets/img/inl/4711c90e6a82.jpg" alt="닭고기와 당면이 담긴 닭곰탕 한 그릇" width="1023" height="682" loading="lazy">
   </div>  <table class="data-table keep">
       <thead>
         <tr><th>가게</th><th>리뷰</th><th>위치</th></tr>

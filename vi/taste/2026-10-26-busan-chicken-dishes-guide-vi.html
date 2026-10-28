@@ -341,6 +341,10 @@
   .route-cta { display: inline-flex; align-items: center; gap: 6px; text-decoration: none; padding: 9px 18px; border: none; border-radius: 100px; color: #fff5ee; background: var(--coral); font-size: 0.86rem; font-weight: 700; box-shadow: var(--card-shadow); }
   .route-cta:hover { background: var(--coral-ink); }
   .route-cta svg { width: 14px; height: 14px; stroke: currentColor; fill: none; stroke-width: 2.2; }
+  .photo-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin: 18px 0; align-items: start; }
+  .photo-pair img { display: block; width: 100%; height: auto; border-radius: 12px; box-shadow: var(--card-shadow); }
+  .photo-pair p.photo-caption { margin: 8px 0 0; max-width: none; }
+  @media (max-width: 560px) { .photo-pair { grid-template-columns: minmax(0, 1fr); gap: 18px; } }
 </style>
 </head>
 <body>
@@ -380,6 +384,11 @@
   <h1 class="art-title">Các món gà ở Busan: từ gà rán đến dakgalbi và canh gà dakgomtang</h1>
   <p class="dek">Từ gà rán và bia đến dakgalbi (닭갈비), dakbal (닭발), dakbokkeumtang (닭볶음탕), samgyetang (삼계탕) và dakgomtang (닭곰탕), bài viết tổng hợp các món gà ăn được ở Busan, từ tên món đến cách gọi món.</p>
   <p class="updated-badge"><svg class="updated-icon"><use href="#i-calendar"/></svg>Tính đến ngày 26/10/2026 — ngày mở cửa và thực đơn của quán có thể thay đổi, hãy kiểm tra lại trước khi đi.</p>
+</div>
+
+<div class="hero-photo-wrap">
+  <img class="hero-photo" src="/assets/img/inl/08ba97dcbe66.jpg" alt="Một đĩa gà rán sốt cay ngọt và gà rán không sốt" width="1280" height="853" loading="eager">
+  <p class="photo-caption">Ảnh: Pixabay</p>
 </div>
 
 <section class="block section-gap" id="sec-1">
@@ -433,10 +442,7 @@
   </div>  <p class="body-text">Theo Bách khoa toàn thư văn hóa dân tộc Hàn Quốc (한국민족문화대백과사전), tongdak (통닭) ban đầu là từ chỉ gà để nguyên con rồi quay điện hoặc chiên. Về sau, gà chặt miếng rồi chiên được phân biệt riêng và gọi là peuraideu chikin (프라이드치킨, gà rán).</p>
   <p class="body-text">Tuy nhiên hiện nay ở Busan, nhiều quán ghi tongdak trên thực đơn cũng chặt gà thành miếng vừa ăn rồi mới mang ra. Món này không khác nhiều so với quán gà rán thông thường, nên bạn không cần coi quán gà rán và quán tongdak là hai loại riêng.</p>
   <p class="body-text">Tạp chí hằng tháng Seoul Sarang (서울사랑) do thành phố Seoul phát hành giải thích rằng tongdak kiểu xưa là món gà lăn nhẹ qua lớp bột mì rồi chiên dầu vào những năm 1960 và 1970. Vì vậy quán tongdak thường có lớp bột chiên không dày và vị thanh hơn so với gà rán của các chuỗi cửa hàng ngày nay.</p>
-<div class="inset-photo-wrap" style="max-width:100%;">
-    <img class="inset-photo" style="max-width:100%;" src="/assets/img/inl/08ba97dcbe66.jpg" alt="Một đĩa gà rán sốt cay ngọt và gà rán không sốt" width="1280" height="853" loading="lazy">
-    <p class="photo-caption" style="margin:10px 0 0;max-width:none;">Ảnh: Pixabay</p>
-  </div>  <p class="body-text"><strong>Tongdak chợ (시장 통닭)</strong>: ở các chợ truyền thống có nhiều nơi bán tongdak giữ nguyên hình dáng một con gà.</p>
+  <p class="body-text"><strong>Tongdak chợ (시장 통닭)</strong>: ở các chợ truyền thống có nhiều nơi bán tongdak giữ nguyên hình dáng một con gà.</p>
   <p class="body-text">Nơi nổi tiếng với tongdak chợ ở Busan là chợ Bupyeong (부평시장). Đó là khu chợ Bupyeong Kkangtong (부평깡통시장) ở Bupyeong-dong, Jung-gu (중구 부평동), ngay cạnh Nampo-dong (남포동). Chợ nằm gần ga Jagalchi (자갈치역) hoặc ga Nampo (남포역) của tàu điện ngầm tuyến 1.</p>
   <p class="body-text">Ba quán Geoin Tongdak (거인통닭), Obok Tongdak (오복통닭) và Bupyeong Tongdak (부평통닭) ở đây được biết đến là “ba quán tongdak lớn của chợ Bupyeong”. Bách khoa toàn thư văn hóa địa phương Hàn Quốc điện tử (한국향토문화전자대전) giới thiệu như vậy.</p>
   <p class="body-text">Dưới đây là các quán gà rán và tongdak có nhiều đánh giá trên Naver Map trên toàn Busan. Đánh giá được đếm riêng cho từng chi nhánh, và các quán nhậu cùng quán chuyên dakgangjeong (닭강정) đã được loại ra. Số liệu này được kiểm tra vào năm 2026.</p>
@@ -527,13 +533,16 @@
   <p class="body-text">Nếu ăn lần đầu, hãy chọn <strong>muppyeo dakbal (무뼈 닭발, dakbal không xương)</strong>. Đây là chân gà đã lọc bỏ xương nên dễ ăn hơn. Một số quán có hai mục riêng trên thực đơn là dakbal có xương (뼈 닭발) và dakbal không xương.</p>
   <p class="body-text">Ở các quán dakbal tại Busan, người ta thường gọi kèm <strong>jogaetang (조개탕, canh nghêu)</strong> với dakbal. Ăn dakbal cay xong, húp bát nước nghêu trong và thanh sẽ làm dịu cái miệng đang cay tê.</p>
   <p class="body-text">Dakbal chia làm loại nướng trên than hoặc vỉ nướng, và loại <strong>jjageuri dakbal (짜글이 닭발)</strong> với phần nước sốt được om sệt lại. Dakbal có nước thường được ăn kèm miến dangmyeon (당면) hoặc cơm nắm jumeokbap (주먹밥).</p>
-<div class="inset-photo-wrap" style="max-width:100%;">
-    <img class="inset-photo" style="max-width:647px;" src="/assets/img/inl/ddc6caa555e9.jpg" alt="Dakbal (닭발) sốt cay trên đĩa" width="647" height="611" loading="lazy">
-    <p class="photo-caption" style="margin:10px 0 0;max-width:none;">Ảnh: Dakbal-ui Jijon, 374 Yeonsu-ro, Suyeong-gu (닭발의지존, 수영구 연수로 374)</p>
-  </div><div class="inset-photo-wrap" style="max-width:100%;">
-    <img class="inset-photo" style="max-width:692px;" src="/assets/img/inl/4e0b803f5072.jpg" alt="Dakbal (닭발) nướng bốc khói trên vỉ" width="692" height="654" loading="lazy">
-    <p class="photo-caption" style="margin:10px 0 0;max-width:none;">Ảnh: Sini Naerin Dakbal Seomyeon, 28-1 Bujeon-ro 66beon-gil, Busanjin-gu (신이내린닭발 서면, 부산진구 부전로66번길 28-1)</p>
-  </div>  <p class="body-text">Dưới đây là các quán chuyên dakbal có nhiều đánh giá. Quán nhậu và quán thịt nướng đã được loại ra.</p>
+<div class="photo-pair">
+  <div class="pp-cell">
+    <img src="/assets/img/inl/ddc6caa555e9.jpg" alt="Dakbal (닭발) sốt cay trên đĩa" width="647" height="611" loading="lazy">
+    <p class="photo-caption">Ảnh: Dakbal-ui Jijon, 374 Yeonsu-ro, Suyeong-gu (닭발의지존, 수영구 연수로 374)</p>
+  </div>
+  <div class="pp-cell">
+    <img src="/assets/img/inl/4e0b803f5072.jpg" alt="Dakbal (닭발) nướng bốc khói trên vỉ" width="692" height="654" loading="lazy">
+    <p class="photo-caption">Ảnh: Sini Naerin Dakbal Seomyeon, 28-1 Bujeon-ro 66beon-gil, Busanjin-gu (신이내린닭발 서면, 부산진구 부전로66번길 28-1)</p>
+  </div>
+</div>  <p class="body-text">Dưới đây là các quán chuyên dakbal có nhiều đánh giá. Quán nhậu và quán thịt nướng đã được loại ra.</p>
   <table class="data-table keep">
       <thead>
         <tr><th>Quán</th><th>Đánh giá</th><th>Bản đồ</th></tr>
@@ -651,7 +660,7 @@
     </table>
   <p class="body-text">Tiếp theo là dakgomtang và dak-kalguksu. Dakgomtang giá khoảng 10.000 won nên là một bữa ăn không tốn kém.</p>
 <div class="inset-photo-wrap" style="max-width:100%;">
-    <img class="inset-photo" style="max-width:100%;" src="/assets/img/inl/2043986d9697.jpg" alt="Một tô dakgomtang (닭곰탕) có thịt gà xé và miến" width="1023" height="1280" loading="lazy">
+    <img class="inset-photo" style="max-width:100%;" src="/assets/img/inl/4711c90e6a82.jpg" alt="Một tô dakgomtang (닭곰탕) có thịt gà xé và miến" width="1023" height="682" loading="lazy">
   </div>  <table class="data-table keep">
       <thead>
         <tr><th>Quán</th><th>Đánh giá</th><th>Bản đồ</th></tr>
