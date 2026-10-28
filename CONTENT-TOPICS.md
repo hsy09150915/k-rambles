@@ -36,7 +36,8 @@
 - **부네치아(장림포구): 알록달록한 포구, 솔직한 후기** — 키워드: 부산 장림포구 부네치아 항구 배 노을 사하구 바다뷰 경치
 - **감천문화마을: 사진 명소와 가기 전에 알아둘 것** — 키워드: 부산 감천 문화마을 벽화 사진 사하구 벽화마을 뷰 경치 포토스팟
 
-## Taste (미식) (15개)
+## Taste (미식) (16개)
+- **부산 돼지고기구이 가이드, 삼겹살부터 목살, 돼지갈비, 등갈비까지** — 키워드: 부산 음식 돼지고기 구이 삼겹살 생삼겹살 오겹살 대패삼겹살 목살 항정살 갈매기살 가브리살 껍데기 뒷고기 육회 돼지갈비 숯불갈비 양념갈비 생갈비 등갈비 쪽갈비 등뼈찜 양푼이갈비찜 부산 맛집 busan pork bbq samgyeopsal moksal hangjeongsal galmaegisal kkeopdegi dwaeji galbi deung galbi
 - **부산 닭 요리 가이드, 후라이드 치킨부터 닭갈비, 닭곰탕까지** — 키워드: 부산 음식 닭 요리 치킨 후라이드 치킨 통닭 치맥 닭갈비 닭발 닭볶음탕 닭도리탕 곱도리탕 삼계탕 백숙 닭곰탕 닭칼국수 닭한마리 부산 맛집 busan chicken fried chicken chimaek dakgalbi dakbal dakbokkeumtang samgyetang dakgomtang dak kalguksu dakhanmari
 - **부산에서 먹는 게 요리 안내, 간장게장, 양념게장, 꽃게탕 구분하고 먹는 법** — 키워드: 부산 음식 게장 간장게장 양념게장 꽃게탕 꽃게 부산 게장 게요리 busan crab gejang ganjang gejang yangnyeom gejang kkotgetang soy sauce marinated crab spicy marinated crab crab soup 부산 맛집 음식
 - **부산 낙지와 주꾸미 요리 가이드, 낙지볶음부터 산낙지, 낙지탕탕이까지** — 키워드: 부산 음식 부산 향토 음식 낙지 낙지볶음 낙지탕탕이 산낙지 연포탕 주꾸미 주꾸미볶음 쭈삼 낙곱새 낙지호롱구이 낙지구이 busan octopus nakji sannakji nakji tangtangi live octopus jjukkumi webfoot octopus stir-fried octopus 부산 맛집 음식

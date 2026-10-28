@@ -1,5 +1,241 @@
 [
   {
+    "title": "Thịt heo nướng ở Busan: samgyeopsal, moksal, sườn heo và sườn lưng",
+    "url": "2026-10-28-busan-pork-bbq-guide-vi.html",
+    "thumb": "assets/thumbs/taste/busan-pork-bbq-guide.jpg",
+    "label": "Ẩm thực · Trực tuyến",
+    "alt": "Bàn có samgyeopsal đang nướng trên vỉ và tấm kim loại cùng nhiều món ăn kèm",
+    "badge": null,
+    "like_id": "taste/2026-10-28-busan-pork-bbq-guide-vi.html",
+    "date": "2026-10-28",
+    "kw": "mon an busan thit heo nuong busan thit ba chi nuong samgyeopsal moksal hangjeongsal galmaegisal da heo kkeopdegi yukhoe suon heo nuong dwaeji galbi suon lung heo deung galbi jjok galbi Busan food Korean food 부산 음식 돼지고기 삼겹살 목살 돼지갈비 등갈비",
+    "city": "busan",
+    "locations": [
+      {
+        "name": "Deobareun Sikdang, chi nhánh trực tiếp Oncheonjang",
+        "address": "부산 동래구 온천동 210-84",
+        "lat": 35.2189349,
+        "lng": 129.0800979
+      },
+      {
+        "name": "Donbegi, chi nhánh Gwangan",
+        "address": "부산 수영구 민락동 23-16",
+        "lat": 35.1575745,
+        "lng": 129.1268109
+      },
+      {
+        "name": "Hubaldae, chi nhánh chính Seomyeon",
+        "address": "부산 부산진구 부전동 521-25",
+        "lat": 35.1535022,
+        "lng": 129.0570312
+      },
+      {
+        "name": "Wanbeoljip, chi nhánh chính Đại học Gyeongseong",
+        "address": "부산 남구 대연동 52-25",
+        "lat": 35.1369525,
+        "lng": 129.1024734
+      },
+      {
+        "name": "Seokhwayeon, chi nhánh chính Gwangan",
+        "address": "부산 수영구 광안동 196-9",
+        "lat": 35.1520705,
+        "lng": 129.116959
+      },
+      {
+        "name": "Jeonpo Ondam",
+        "address": "부산 부산진구 전포동 675-5",
+        "lat": 35.1566289,
+        "lng": 129.0650327
+      },
+      {
+        "name": "Haeundae Haseonjip",
+        "address": "부산 해운대구 중동 1521-3",
+        "lat": 35.162343,
+        "lng": 129.1772227
+      },
+      {
+        "name": "Gilchon Sutbul-galbi, chi nhánh chính Seomyeon",
+        "address": "부산 부산진구 부전동 117-5",
+        "lat": 35.1583251,
+        "lng": 129.0609543
+      },
+      {
+        "name": "Sinchon Yangpuni, chi nhánh chính Seomyeon",
+        "address": "부산 부산진구 부전동 168-132",
+        "lat": 35.1564432,
+        "lng": 129.0602822
+      },
+      {
+        "name": "Bak Boksun Jjok-galbi, chi nhánh chính Yeonsan-dong",
+        "address": "부산 연제구 연산동 603-21",
+        "lat": 35.1862068,
+        "lng": 129.0841426
+      },
+      {
+        "name": "Busan Samgyeopsal, chi nhánh chính Hadan",
+        "address": "부산 사하구 하단동 489-9",
+        "lat": 35.1113764,
+        "lng": 128.9637325
+      },
+      {
+        "name": "Geobugi Dongne, chi nhánh Seomyeon",
+        "address": "부산 부산진구 부전동 222-3",
+        "lat": 35.1541296,
+        "lng": 129.0622093
+      },
+      {
+        "name": "Goban Sikdang, chi nhánh Haeundae",
+        "address": "부산 해운대구 우동 540-6",
+        "lat": 35.1624914,
+        "lng": 129.1585942
+      },
+      {
+        "name": "Chopilsal Dwaeji-gui, chi nhánh trực tiếp Gwangan",
+        "address": "부산 수영구 광안동 198-5",
+        "lat": 35.1512296,
+        "lng": 129.1159112
+      },
+      {
+        "name": "Duteopsam",
+        "address": "부산 기장군 정관읍 매학리 751-4",
+        "lat": 35.3210893,
+        "lng": 129.1815557
+      },
+      {
+        "name": "Musoe Kimchi Samgyeop, chi nhánh Gwangan",
+        "address": "부산 수영구 광안동 202-7",
+        "lat": 35.1496909,
+        "lng": 129.1147545
+      },
+      {
+        "name": "Sanseong Sigyukjeom, chi nhánh chính Dongnae",
+        "address": "부산 동래구 명륜동 564-9",
+        "lat": 35.2068157,
+        "lng": 129.0819023
+      },
+      {
+        "name": "Deogeumdong, chi nhánh chính Busan",
+        "address": "부산 남구 대연동 53-10",
+        "lat": 35.1370457,
+        "lng": 129.1016852
+      },
+      {
+        "name": "Hakjangdoga, chi nhánh chính Sasang",
+        "address": "부산 사상구 학장동 585-91",
+        "lat": 35.1393947,
+        "lng": 128.978955
+      },
+      {
+        "name": "Oneul Gimhae Dwitgogi, chi nhánh chính Hadan",
+        "address": "부산 사하구 하단동 490-19",
+        "lat": 35.1122101,
+        "lng": 128.9637884
+      },
+      {
+        "name": "Pyeonghwa Gimhae Dwitgogi, chi nhánh Sicheong",
+        "address": "부산 연제구 연산동 1505-69",
+        "lat": 35.1830096,
+        "lng": 129.0745309
+      },
+      {
+        "name": "Gwanganmok, chi nhánh Gwangan",
+        "address": "부산 수영구 민락동 184-6",
+        "lat": 35.1549641,
+        "lng": 129.1184037
+      },
+      {
+        "name": "Myeongseong Gogitjip, chi nhánh Songdo",
+        "address": "부산 서구 암남동 123-27",
+        "lat": 35.0767392,
+        "lng": 129.0242111
+      },
+      {
+        "name": "Galbigamasitda Haeundae",
+        "address": "부산 해운대구 우동 618-16",
+        "lat": 35.1624075,
+        "lng": 129.1602281
+      },
+      {
+        "name": "Sikdang Samseon, chi nhánh Centum",
+        "address": "부산 해운대구 재송동 672-1",
+        "lat": 35.1781008,
+        "lng": 129.1262518
+      },
+      {
+        "name": "Baegyang Sutbul-galbi, chi nhánh Deokcheon",
+        "address": "부산 북구 덕천동 401-22",
+        "lat": 35.2101409,
+        "lng": 129.0073528
+      },
+      {
+        "name": "Haean Sutbul-galbi, chi nhánh chính Gwangalli",
+        "address": "부산 수영구 광안동 204-11",
+        "lat": 35.1485593,
+        "lng": 129.114205
+      },
+      {
+        "name": "Giwajip Sutbul-galbi, chi nhánh chính Hwamyeong",
+        "address": "부산 북구 화명동 2271-3",
+        "lat": 35.235733,
+        "lng": 129.010496
+      },
+      {
+        "name": "Bueongi Maeul",
+        "address": "부산 중구 부평동3가 74-7",
+        "lat": 35.1023681,
+        "lng": 129.0245257
+      },
+      {
+        "name": "Busan Sutbul-galbi",
+        "address": "부산 중구 신창동3가 3-1",
+        "lat": 35.1022717,
+        "lng": 129.0288902
+      },
+      {
+        "name": "Godam, chi nhánh trực tiếp Dongnae",
+        "address": "부산 동래구 명륜동 558-13",
+        "lat": 35.2058988,
+        "lng": 129.0809717
+      },
+      {
+        "name": "Mun Igang Ppyeodori",
+        "address": "부산 부산진구 부전동 168-62",
+        "lat": 35.1565318,
+        "lng": 129.0607163
+      },
+      {
+        "name": "Deungjjak",
+        "address": "부산 부산진구 부전동 168-107",
+        "lat": 35.155866,
+        "lng": 129.0604928
+      },
+      {
+        "name": "Michin Jjok-galbi",
+        "address": "부산 중구 부평동2가 55-4",
+        "lat": 35.0995831,
+        "lng": 129.0255493
+      },
+      {
+        "name": "Busan Jjokjjok-galbi, chi nhánh chính",
+        "address": "부산 부산진구 부전동 516-68",
+        "lat": 35.1557049,
+        "lng": 129.0555836
+      },
+      {
+        "name": "Apsan Keungoljip, chi nhánh Busan Gwangan",
+        "address": "부산 수영구 민락동 177-1",
+        "lat": 35.1556957,
+        "lng": 129.122576
+      },
+      {
+        "name": "Ojjogirak, chi nhánh chính Gwangan",
+        "address": "부산 수영구 민락동 218-9",
+        "lat": 35.1559022,
+        "lng": 129.1223923
+      }
+    ]
+  },
+  {
     "title": "Các món gà ở Busan: gà rán, dakgalbi, dakbal, samgyetang và dakgomtang",
     "url": "2026-10-26-busan-chicken-dishes-guide-vi.html",
     "thumb": "assets/thumbs/taste/busan-chicken-dishes-guide.jpg",
