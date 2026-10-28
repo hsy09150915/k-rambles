@@ -1,5 +1,61 @@
 [
   {
+    "title": "Busan Chicken Guide: Fried Chicken, Dakgalbi, Dakgomtang and More",
+    "url": "2026-10-26-busan-chicken-dishes-guide-en.html",
+    "thumb": "assets/thumbs/taste/busan-chicken-dishes-guide.jpg",
+    "label": "Taste · live",
+    "alt": "Two people clinking beer mugs over plates of fried chicken",
+    "badge": null,
+    "like_id": "taste/2026-10-26-busan-chicken-dishes-guide-en.html",
+    "date": "2026-10-26",
+    "kw": "busan chicken busan fried chicken korean fried chicken chimaek chicken and beer dakgalbi spicy stir-fried chicken chicken feet dakbal braised chicken dakbokkeumtang dakdoritang samgyetang ginseng chicken soup dakgomtang chicken noodle soup dak kalguksu dakhanmari whole chicken hot pot busan food busan local food korean food for visitors 부산 음식 닭 요리 치킨 닭갈비 삼계탕 부산 맛집",
+    "city": "busan",
+    "locations": [
+      {
+        "name": "Gohyang Tongdak Main Branch",
+        "address": "부산 부산진구 범천동 869-9",
+        "lat": 35.1493007,
+        "lng": 129.0581932
+      },
+      {
+        "name": "Jangin Dakgalbi Nampo Branch",
+        "address": "부산 중구 남포동2가 20-3",
+        "lat": 35.0987829,
+        "lng": 129.0307684
+      },
+      {
+        "name": "Doldak Main Branch",
+        "address": "부산 수영구 광안동 183-11",
+        "lat": 35.1506825,
+        "lng": 129.1146501
+      },
+      {
+        "name": "Baejonggwan Dongnae Samgyetang",
+        "address": "부산 동래구 동래로116번길 39",
+        "lat": 35.2052594,
+        "lng": 129.0847535
+      },
+      {
+        "name": "Naengsutang Garden",
+        "address": "부산 부산진구 가야동 471-2",
+        "lat": 35.14437,
+        "lng": 129.0285753
+      },
+      {
+        "name": "Eonyang Dak-kalguksu Hadan Branch",
+        "address": "부산 사하구 하단동 590-14",
+        "lat": 35.105462,
+        "lng": 128.9655202
+      },
+      {
+        "name": "Myeongseong Dakhanmari",
+        "address": "부산 영도구 대교동1가 163-2",
+        "lat": 35.0925041,
+        "lng": 129.039681
+      }
+    ]
+  },
+  {
     "title": "Busan Crab Guide: Ganjang-gejang, Yangnyeom-gejang and Crab Soup Explained",
     "url": "2026-10-26-busan-gejang-guide-en.html",
     "thumb": "assets/thumbs/taste/busan-gejang-guide.jpg",

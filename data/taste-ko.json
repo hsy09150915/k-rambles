@@ -1,5 +1,61 @@
 [
   {
+    "title": "부산 닭 요리 가이드, 후라이드 치킨부터 닭갈비, 닭곰탕까지",
+    "url": "2026-10-26-busan-chicken-dishes-guide-ko.html",
+    "thumb": "assets/thumbs/taste/busan-chicken-dishes-guide.jpg",
+    "label": "미식 · 공개중",
+    "alt": "맥주잔을 부딪치는 두 사람과 상 위의 치킨",
+    "badge": null,
+    "like_id": "taste/2026-10-26-busan-chicken-dishes-guide-ko.html",
+    "date": "2026-10-26",
+    "kw": "부산 음식 닭 요리 치킨 후라이드 치킨 통닭 치맥 닭갈비 닭발 닭볶음탕 닭도리탕 곱도리탕 삼계탕 백숙 닭곰탕 닭칼국수 닭한마리 부산 맛집 busan chicken fried chicken chimaek dakgalbi dakbal dakbokkeumtang samgyetang dakgomtang dak kalguksu dakhanmari",
+    "city": "busan",
+    "locations": [
+      {
+        "name": "고향통닭 본점",
+        "address": "부산 부산진구 범천동 869-9",
+        "lat": 35.1493007,
+        "lng": 129.0581932
+      },
+      {
+        "name": "장인닭갈비 남포점",
+        "address": "부산 중구 남포동2가 20-3",
+        "lat": 35.0987829,
+        "lng": 129.0307684
+      },
+      {
+        "name": "돌닭 본점",
+        "address": "부산 수영구 광안동 183-11",
+        "lat": 35.1506825,
+        "lng": 129.1146501
+      },
+      {
+        "name": "배종관동래삼계탕",
+        "address": "부산 동래구 동래로116번길 39",
+        "lat": 35.2052594,
+        "lng": 129.0847535
+      },
+      {
+        "name": "냉수탕가든",
+        "address": "부산 부산진구 가야동 471-2",
+        "lat": 35.14437,
+        "lng": 129.0285753
+      },
+      {
+        "name": "언양닭칼국수 하단점",
+        "address": "부산 사하구 하단동 590-14",
+        "lat": 35.105462,
+        "lng": 128.9655202
+      },
+      {
+        "name": "명성닭한마리",
+        "address": "부산 영도구 대교동1가 163-2",
+        "lat": 35.0925041,
+        "lng": 129.039681
+      }
+    ]
+  },
+  {
     "title": "부산에서 먹는 게 요리 안내, 간장게장, 양념게장, 꽃게탕 구분하고 먹는 법",
     "url": "2026-10-26-busan-gejang-guide-ko.html",
     "thumb": "assets/thumbs/taste/busan-gejang-guide.jpg",
