@@ -1,5 +1,193 @@
 [
   {
+    "title": "Các món heo ăn với cơm ở Busan: ppyeo-haejangguk, jeyuk-bokkeum, dwaeji-bulbaek và kimchi-jjigae",
+    "url": "2026-10-28-busan-pork-stew-guide-vi.html",
+    "thumb": "assets/thumbs/taste/busan-pork-stew-guide.jpg",
+    "label": "Ẩm thực · Trực tuyến",
+    "alt": "Nồi gamjatang với kimchi, miến, nấm kim châm, lá tía tô và khoai tây trên thịt xương sống heo",
+    "badge": null,
+    "like_id": "taste/2026-10-28-busan-pork-stew-guide-vi.html",
+    "date": "2026-10-28",
+    "kw": "mon an busan mon an han quoc thit heo gamjatang ppyeo-haejangguk jeyuk-bokkeum duruchigi dwaeji-bulbaek kimchi-jjigae kimchi-jjim dwaeji-jjigae Busan food Korean food Korean pork stew 부산 음식 뼈해장국 감자탕 제육볶음 두루치기 돼지불백 김치찌개 김치찜",
+    "city": "busan",
+    "locations": [
+      {
+        "name": "Choe Ppyeodagu Haejangguk",
+        "address": "부산 사상구 광장로 22",
+        "lat": 35.1622986,
+        "lng": 128.978925
+      },
+      {
+        "name": "Nuri Maeul Gamjatang, chi nhánh Seomyeon",
+        "address": "부산 부산진구 중앙대로 675",
+        "lat": 35.152943,
+        "lng": 129.0588293
+      },
+      {
+        "name": "Mannagamjatang, chi nhánh Daeyeon",
+        "address": "부산 남구 진남로 17",
+        "lat": 35.1365428,
+        "lng": 129.0913815
+      },
+      {
+        "name": "Ibadom Gamjatang, chi nhánh Jeonpo",
+        "address": "부산 부산진구 중앙대로 808",
+        "lat": 35.1635093,
+        "lng": 129.0641004
+      },
+      {
+        "name": "Namdareun Gamjatang, chi nhánh Dongnae Lucky",
+        "address": "부산 동래구 중앙대로1335번길 81",
+        "lat": 35.2076046,
+        "lng": 129.0734356
+      },
+      {
+        "name": "Jomaru Gamjatang, chi nhánh Dongnae",
+        "address": "부산 동래구 명륜로 130-1",
+        "lat": 35.2055113,
+        "lng": 129.0824415
+      },
+      {
+        "name": "Ukttuk Haejangguk Gamjatang, chi nhánh chính Haeundae",
+        "address": "부산 해운대구 구남로 25",
+        "lat": 35.1618789,
+        "lng": 129.16073
+      },
+      {
+        "name": "Chabatgol Dolsot Gamjatang",
+        "address": "부산 동래구 금강로124번길 25",
+        "lat": 35.2195379,
+        "lng": 129.0815026
+      },
+      {
+        "name": "Yangpyeong Haejangguk, chi nhánh chính Gwangan",
+        "address": "부산 수영구 광일로 6",
+        "lat": 35.1621628,
+        "lng": 129.1134666
+      },
+      {
+        "name": "Godamhyeon Bulgogi, chi nhánh chính Haeundae Centum City",
+        "address": "부산 해운대구 센텀동로 26",
+        "lat": 35.1719858,
+        "lng": 129.1324908
+      },
+      {
+        "name": "Jeongseong Sikdang, chi nhánh Đại học Quốc gia Busan",
+        "address": "부산 금정구 금강로 249",
+        "lat": 35.2303732,
+        "lng": 129.0846752
+      },
+      {
+        "name": "Baekson Hansang, chi nhánh Suyeong",
+        "address": "부산 수영구 광안동 98-18",
+        "lat": 35.1642537,
+        "lng": 129.1147879
+      },
+      {
+        "name": "Gongwon Galbi, chi nhánh chính Yongho-dong",
+        "address": "부산 남구 이기대공원로 14",
+        "lat": 35.1241362,
+        "lng": 129.1142181
+      },
+      {
+        "name": "Pungwon Jangsi Gotbapsang",
+        "address": "부산 기장군 기장해안로 250",
+        "lat": 35.1974154,
+        "lng": 129.2231972
+      },
+      {
+        "name": "Samdae Dwaeji Bulgogi, chi nhánh số 2",
+        "address": "부산 동래구 사직로 11",
+        "lat": 35.1961591,
+        "lng": 129.0645219
+      },
+      {
+        "name": "Hasukjip, chi nhánh chính Centum",
+        "address": "부산 해운대구 센텀중앙로 90",
+        "lat": 35.1754921,
+        "lng": 129.1260013
+      },
+      {
+        "name": "Somunnan Bulbaek",
+        "address": "부산 동구 초량로 36",
+        "lat": 35.1206197,
+        "lng": 129.0386264
+      },
+      {
+        "name": "Choryang Bulbaek",
+        "address": "부산 동구 초량로 36",
+        "lat": 35.1206197,
+        "lng": 129.0386264
+      },
+      {
+        "name": "Mokhwa Gisa Sikdang",
+        "address": "부산 동래구 차밭골로 19-1",
+        "lat": 35.2162963,
+        "lng": 129.0792433
+      },
+      {
+        "name": "Bugyeong Bulbaek",
+        "address": "부산 동구 구봉로 2",
+        "lat": 35.1206983,
+        "lng": 129.0384412
+      },
+      {
+        "name": "Yeongnam Dwaeji, chi nhánh Haeundae",
+        "address": "부산 해운대구 해운대해변로209번가길 13",
+        "lat": 35.1599031,
+        "lng": 129.1553869
+      },
+      {
+        "name": "Lee Hak-su Hanokjip Kimchi-jjim, chi nhánh chính",
+        "address": "부산 남구 용소로7번길 79",
+        "lat": 35.1385378,
+        "lng": 129.1041274
+      },
+      {
+        "name": "Sigol Tongdwaeji Bokkeum, chi nhánh Đại học Quốc gia Busan",
+        "address": "부산 금정구 부산대학로50번길 37",
+        "lat": 35.2330166,
+        "lng": 129.0862675
+      },
+      {
+        "name": "Gorang Sikdang",
+        "address": "부산 북구 만덕대로28번길 22",
+        "lat": 35.2097715,
+        "lng": 129.0083848
+      },
+      {
+        "name": "Myeongdong Jjigae Maeul, chi nhánh Yangjeong",
+        "address": "부산 부산진구 양지로5번길 23",
+        "lat": 35.170686,
+        "lng": 129.0701324
+      },
+      {
+        "name": "Mugeunji Dwaeji Kimchi-jjigae, chi nhánh chính",
+        "address": "부산 부산진구 가야대로784번길 43",
+        "lat": 35.1555074,
+        "lng": 129.0574111
+      },
+      {
+        "name": "Baekchae Kimchi-jjigae, chi nhánh Bumin-dong Đại học Dong-A",
+        "address": "부산 서구 구덕로226번길 13",
+        "lat": 35.1048803,
+        "lng": 129.0208307
+      },
+      {
+        "name": "Eommane Dwaeji-jjigae, chi nhánh Sasang Apple Outlet",
+        "address": "부산 사상구 사상로 201",
+        "lat": 35.1633264,
+        "lng": 128.9819712
+      },
+      {
+        "name": "Gaengsangdo-sik Dwaeji-jjigae, chi nhánh chính Yangjeong",
+        "address": "부산 부산진구 연수로11번길 1",
+        "lat": 35.1736714,
+        "lng": 129.0725511
+      }
+    ]
+  },
+  {
     "title": "Thịt heo nướng ở Busan: samgyeopsal, moksal, sườn heo và sườn lưng",
     "url": "2026-10-28-busan-pork-bbq-guide-vi.html",
     "thumb": "assets/thumbs/taste/busan-pork-bbq-guide-v2.jpg",
@@ -232,194 +420,6 @@
         "address": "부산 수영구 민락동 218-9",
         "lat": 35.1559022,
         "lng": 129.1223923
-      }
-    ]
-  },
-  {
-    "title": "Các món heo ăn với cơm ở Busan: ppyeo-haejangguk, jeyuk-bokkeum, dwaeji-bulbaek và kimchi-jjigae",
-    "url": "2026-10-28-busan-pork-stew-guide-vi.html",
-    "thumb": "assets/thumbs/taste/busan-pork-stew-guide.jpg",
-    "label": "Ẩm thực · Trực tuyến",
-    "alt": "Nồi gamjatang với kimchi, miến, nấm kim châm, lá tía tô và khoai tây trên thịt xương sống heo",
-    "badge": null,
-    "like_id": "taste/2026-10-28-busan-pork-stew-guide-vi.html",
-    "date": "2026-10-28",
-    "kw": "mon an busan mon an han quoc thit heo gamjatang ppyeo-haejangguk jeyuk-bokkeum duruchigi dwaeji-bulbaek kimchi-jjigae kimchi-jjim dwaeji-jjigae Busan food Korean food Korean pork stew 부산 음식 뼈해장국 감자탕 제육볶음 두루치기 돼지불백 김치찌개 김치찜",
-    "city": "busan",
-    "locations": [
-      {
-        "name": "Choe Ppyeodagu Haejangguk",
-        "address": "부산 사상구 광장로 22",
-        "lat": 35.1622986,
-        "lng": 128.978925
-      },
-      {
-        "name": "Nuri Maeul Gamjatang, chi nhánh Seomyeon",
-        "address": "부산 부산진구 중앙대로 675",
-        "lat": 35.152943,
-        "lng": 129.0588293
-      },
-      {
-        "name": "Mannagamjatang, chi nhánh Daeyeon",
-        "address": "부산 남구 진남로 17",
-        "lat": 35.1365428,
-        "lng": 129.0913815
-      },
-      {
-        "name": "Ibadom Gamjatang, chi nhánh Jeonpo",
-        "address": "부산 부산진구 중앙대로 808",
-        "lat": 35.1635093,
-        "lng": 129.0641004
-      },
-      {
-        "name": "Namdareun Gamjatang, chi nhánh Dongnae Lucky",
-        "address": "부산 동래구 중앙대로1335번길 81",
-        "lat": 35.2076046,
-        "lng": 129.0734356
-      },
-      {
-        "name": "Jomaru Gamjatang, chi nhánh Dongnae",
-        "address": "부산 동래구 명륜로 130-1",
-        "lat": 35.2055113,
-        "lng": 129.0824415
-      },
-      {
-        "name": "Ukttuk Haejangguk Gamjatang, chi nhánh chính Haeundae",
-        "address": "부산 해운대구 구남로 25",
-        "lat": 35.1618789,
-        "lng": 129.16073
-      },
-      {
-        "name": "Chabatgol Dolsot Gamjatang",
-        "address": "부산 동래구 금강로124번길 25",
-        "lat": 35.2195379,
-        "lng": 129.0815026
-      },
-      {
-        "name": "Yangpyeong Haejangguk, chi nhánh chính Gwangan",
-        "address": "부산 수영구 광일로 6",
-        "lat": 35.1621628,
-        "lng": 129.1134666
-      },
-      {
-        "name": "Godamhyeon Bulgogi, chi nhánh chính Haeundae Centum City",
-        "address": "부산 해운대구 센텀동로 26",
-        "lat": 35.1719858,
-        "lng": 129.1324908
-      },
-      {
-        "name": "Jeongseong Sikdang, chi nhánh Đại học Quốc gia Busan",
-        "address": "부산 금정구 금강로 249",
-        "lat": 35.2303732,
-        "lng": 129.0846752
-      },
-      {
-        "name": "Baekson Hansang, chi nhánh Suyeong",
-        "address": "부산 수영구 광안동 98-18",
-        "lat": 35.1642537,
-        "lng": 129.1147879
-      },
-      {
-        "name": "Gongwon Galbi, chi nhánh chính Yongho-dong",
-        "address": "부산 남구 이기대공원로 14",
-        "lat": 35.1241362,
-        "lng": 129.1142181
-      },
-      {
-        "name": "Pungwon Jangsi Gotbapsang",
-        "address": "부산 기장군 기장해안로 250",
-        "lat": 35.1974154,
-        "lng": 129.2231972
-      },
-      {
-        "name": "Samdae Dwaeji Bulgogi, chi nhánh số 2",
-        "address": "부산 동래구 사직로 11",
-        "lat": 35.1961591,
-        "lng": 129.0645219
-      },
-      {
-        "name": "Hasukjip, chi nhánh chính Centum",
-        "address": "부산 해운대구 센텀중앙로 90",
-        "lat": 35.1754921,
-        "lng": 129.1260013
-      },
-      {
-        "name": "Somunnan Bulbaek",
-        "address": "부산 동구 초량로 36",
-        "lat": 35.1206197,
-        "lng": 129.0386264
-      },
-      {
-        "name": "Choryang Bulbaek",
-        "address": "부산 동구 초량로 36",
-        "lat": 35.1206197,
-        "lng": 129.0386264
-      },
-      {
-        "name": "Mokhwa Gisa Sikdang",
-        "address": "부산 동래구 차밭골로 19-1",
-        "lat": 35.2162963,
-        "lng": 129.0792433
-      },
-      {
-        "name": "Bugyeong Bulbaek",
-        "address": "부산 동구 구봉로 2",
-        "lat": 35.1206983,
-        "lng": 129.0384412
-      },
-      {
-        "name": "Yeongnam Dwaeji, chi nhánh Haeundae",
-        "address": "부산 해운대구 해운대해변로209번가길 13",
-        "lat": 35.1599031,
-        "lng": 129.1553869
-      },
-      {
-        "name": "Lee Hak-su Hanokjip Kimchi-jjim, chi nhánh chính",
-        "address": "부산 남구 용소로7번길 79",
-        "lat": 35.1385378,
-        "lng": 129.1041274
-      },
-      {
-        "name": "Sigol Tongdwaeji Bokkeum, chi nhánh Đại học Quốc gia Busan",
-        "address": "부산 금정구 부산대학로50번길 37",
-        "lat": 35.2330166,
-        "lng": 129.0862675
-      },
-      {
-        "name": "Gorang Sikdang",
-        "address": "부산 북구 만덕대로28번길 22",
-        "lat": 35.2097715,
-        "lng": 129.0083848
-      },
-      {
-        "name": "Myeongdong Jjigae Maeul, chi nhánh Yangjeong",
-        "address": "부산 부산진구 양지로5번길 23",
-        "lat": 35.170686,
-        "lng": 129.0701324
-      },
-      {
-        "name": "Mugeunji Dwaeji Kimchi-jjigae, chi nhánh chính",
-        "address": "부산 부산진구 가야대로784번길 43",
-        "lat": 35.1555074,
-        "lng": 129.0574111
-      },
-      {
-        "name": "Baekchae Kimchi-jjigae, chi nhánh Bumin-dong Đại học Dong-A",
-        "address": "부산 서구 구덕로226번길 13",
-        "lat": 35.1048803,
-        "lng": 129.0208307
-      },
-      {
-        "name": "Eommane Dwaeji-jjigae, chi nhánh Sasang Apple Outlet",
-        "address": "부산 사상구 사상로 201",
-        "lat": 35.1633264,
-        "lng": 128.9819712
-      },
-      {
-        "name": "Gaengsangdo-sik Dwaeji-jjigae, chi nhánh chính Yangjeong",
-        "address": "부산 부산진구 연수로11번길 1",
-        "lat": 35.1736714,
-        "lng": 129.0725511
       }
     ]
   },
