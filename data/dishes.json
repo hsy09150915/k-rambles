@@ -565,13 +565,14 @@
   "cat": "other",
   "article": "2026-09-06-milmyeon-guide",
   "anchor": "",
-  "src": "/assets/img/inl/dda6ccd73174.jpg",
+  "src": "/assets/img/inl/79da3637f940.jpg",
   "ko": "밀면",
   "name": {
    "en": "Milmyeon",
    "ko": "밀면",
    "vi": "Milmyeon",
    "th": "มิลมยอน"
-  }
+  },
+  "crop": 0.85
  }
 ]
