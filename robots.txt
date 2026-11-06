@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /data/
+Disallow: /*?q=
 
 Sitemap: https://k-rambles.com/sitemap.xml
