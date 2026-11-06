@@ -1,0 +1,577 @@
+[
+ {
+  "slug": "dongnae-pajeon",
+  "cat": "other",
+  "article": "2026-10-23-busan-signature-foods-guide",
+  "anchor": "sec-3",
+  "src": "assets/hero/busan-signature-foods-guide.jpg",
+  "ko": "동래파전",
+  "name": {
+   "en": "Dongnae pajeon",
+   "ko": "동래파전",
+   "vi": "Dongnae pajeon",
+   "th": "ทงแนพาจอน"
+  }
+ },
+ {
+  "slug": "eomuk",
+  "cat": "seafood",
+  "article": "2026-10-23-busan-signature-foods-guide",
+  "anchor": "sec-4",
+  "src": "/assets/img/inl/2d3a96a0f501.jpg",
+  "ko": "부산 어묵",
+  "name": {
+   "en": "Busan fish cake",
+   "ko": "부산 어묵",
+   "vi": "Chả cá Busan (eomuk)",
+   "th": "ออมุก เค้กปลาปูซาน"
+  }
+ },
+ {
+  "slug": "nakgopsae",
+  "cat": "seafood",
+  "article": "2026-10-23-busan-signature-foods-guide",
+  "anchor": "sec-5",
+  "src": "/assets/img/inl/edb4028f796b.jpg",
+  "ko": "낙곱새",
+  "name": {
+   "en": "Nakgopsae",
+   "ko": "낙곱새",
+   "vi": "Nakgopsae",
+   "th": "นักกบแซ"
+  }
+ },
+ {
+  "slug": "hoe",
+  "cat": "seafood",
+  "article": "2026-09-04-jagalchi-hoe-guide",
+  "anchor": "",
+  "src": "/assets/img/inl/7d63ff401c56.jpg",
+  "ko": "회",
+  "name": {
+   "en": "Hoe, raw fish",
+   "ko": "회",
+   "vi": "Hoe, cá sống",
+   "th": "ฮเว ปลาดิบ"
+  }
+ },
+ {
+  "slug": "haenyeo",
+  "cat": "seafood",
+  "article": "2026-09-21-taejongdae-haenyeo-raw-seafood",
+  "anchor": "",
+  "src": "/assets/img/inl/6115a2d0494c.jpg",
+  "ko": "해녀촌 해산물",
+  "name": {
+   "en": "Haenyeo raw seafood",
+   "ko": "해녀촌 해산물",
+   "vi": "Hải sản sống của haenyeo",
+   "th": "อาหารทะเลสดของแฮนยอ"
+  }
+ },
+ {
+  "slug": "ganjang-gejang",
+  "cat": "seafood",
+  "article": "2026-10-26-busan-gejang-guide",
+  "anchor": "sec-ganjang",
+  "src": "/assets/img/inl/bef4801094e3.jpg",
+  "ko": "간장게장",
+  "name": {
+   "en": "Ganjang-gejang",
+   "ko": "간장게장",
+   "vi": "Ganjang-gejang",
+   "th": "กันจังเกจัง"
+  }
+ },
+ {
+  "slug": "yangnyeom-gejang",
+  "cat": "seafood",
+  "article": "2026-10-26-busan-gejang-guide",
+  "anchor": "sec-yangnyeom",
+  "src": "/assets/img/inl/367e41cfe194.jpg",
+  "ko": "양념게장",
+  "name": {
+   "en": "Yangnyeom-gejang",
+   "ko": "양념게장",
+   "vi": "Yangnyeom-gejang",
+   "th": "ยังนยอมเกจัง"
+  }
+ },
+ {
+  "slug": "kkotgetang",
+  "cat": "seafood",
+  "article": "2026-10-26-busan-gejang-guide",
+  "anchor": "sec-tang",
+  "src": "/assets/img/inl/393d120e98b4.jpg",
+  "ko": "꽃게탕",
+  "name": {
+   "en": "Kkotgetang",
+   "ko": "꽃게탕",
+   "vi": "Kkotgetang",
+   "th": "กกเกทัง"
+  }
+ },
+ {
+  "slug": "nakji-bokkeum",
+  "cat": "seafood",
+  "article": "2026-10-24-busan-nakji-guide",
+  "anchor": "sec-3",
+  "src": "/assets/img/inl/2949175eb321.jpg",
+  "ko": "낙지볶음",
+  "name": {
+   "en": "Nakji-bokkeum",
+   "ko": "낙지볶음",
+   "vi": "Nakji-bokkeum",
+   "th": "นักจีโบกกึม"
+  }
+ },
+ {
+  "slug": "yeonpotang",
+  "cat": "seafood",
+  "article": "2026-10-24-busan-nakji-guide",
+  "anchor": "sec-4",
+  "src": "/assets/img/inl/e48bc8710375.jpg",
+  "ko": "연포탕",
+  "name": {
+   "en": "Yeonpotang",
+   "ko": "연포탕",
+   "vi": "Yeonpotang",
+   "th": "ยอนโพทัง"
+  }
+ },
+ {
+  "slug": "nakji-horonggui",
+  "cat": "seafood",
+  "article": "2026-10-24-busan-nakji-guide",
+  "anchor": "sec-horong",
+  "src": "/assets/img/inl/f3871e0e6d14.jpg",
+  "ko": "낙지호롱구이",
+  "name": {
+   "en": "Nakji-horonggui",
+   "ko": "낙지호롱구이",
+   "vi": "Nakji-horonggui",
+   "th": "นักจีโฮรงกูอี"
+  }
+ },
+ {
+  "slug": "jjukkumi",
+  "cat": "seafood",
+  "article": "2026-10-24-busan-nakji-guide",
+  "anchor": "sec-5",
+  "src": "/assets/img/inl/33f06d47d5ad.jpg",
+  "ko": "주꾸미볶음",
+  "name": {
+   "en": "Jjukkumi-bokkeum",
+   "ko": "주꾸미볶음",
+   "vi": "Jjukkumi-bokkeum",
+   "th": "จูกกูมีโบกกึม"
+  }
+ },
+ {
+  "slug": "sannakji",
+  "cat": "seafood",
+  "article": "2026-10-24-busan-nakji-guide",
+  "anchor": "sec-6",
+  "src": "/assets/img/inl/a857c2c7ffc1.jpg",
+  "ko": "산낙지",
+  "name": {
+   "en": "Sannakji",
+   "ko": "산낙지",
+   "vi": "Sannakji",
+   "th": "ซันนักจี"
+  }
+ },
+ {
+  "slug": "haemultang",
+  "cat": "seafood",
+  "article": "2026-10-24-busan-seafood-soup-guide",
+  "anchor": "sec-2",
+  "src": "/assets/img/inl/431b34e94cf5.jpg",
+  "ko": "해물탕",
+  "name": {
+   "en": "Haemultang",
+   "ko": "해물탕",
+   "vi": "Haemultang",
+   "th": "แฮมุลทัง"
+  }
+ },
+ {
+  "slug": "jaecheopguk",
+  "cat": "seafood",
+  "article": "2026-10-24-busan-seafood-soup-guide",
+  "anchor": "sec-3",
+  "src": "/assets/img/inl/0d0cc72880f7.jpg",
+  "ko": "재첩국",
+  "name": {
+   "en": "Jaecheopguk",
+   "ko": "재첩국",
+   "vi": "Jaecheopguk",
+   "th": "แจชอบกุก"
+  }
+ },
+ {
+  "slug": "gomjangeo",
+  "cat": "seafood",
+  "article": "2026-10-23-busan-eel-guide",
+  "anchor": "sec-2",
+  "src": "/assets/img/inl/8107b7a8f66d.jpg",
+  "ko": "곰장어",
+  "name": {
+   "en": "Hagfish, gomjangeo",
+   "ko": "곰장어",
+   "vi": "Gomjangeo, cá mút đá",
+   "th": "โกมจังออ"
+  }
+ },
+ {
+  "slug": "jipbul-gomjangeo",
+  "cat": "seafood",
+  "article": "2026-10-23-busan-eel-guide",
+  "anchor": "sec-3",
+  "src": "/assets/img/inl/0b82ee2c0449.jpg",
+  "ko": "짚불곰장어",
+  "name": {
+   "en": "Straw-fire hagfish",
+   "ko": "짚불곰장어",
+   "vi": "Gomjangeo nướng rơm",
+   "th": "ชิบบุลโกมจังออ"
+  }
+ },
+ {
+  "slug": "conger-eel",
+  "cat": "seafood",
+  "article": "2026-10-23-busan-eel-guide",
+  "anchor": "sec-4",
+  "src": "/assets/img/inl/d989ecccc2f0.jpg",
+  "ko": "붕장어",
+  "name": {
+   "en": "Conger eel, anago",
+   "ko": "붕장어",
+   "vi": "Bungjangeo, lươn biển",
+   "th": "ปุงจังออ"
+  }
+ },
+ {
+  "slug": "freshwater-eel",
+  "cat": "seafood",
+  "article": "2026-10-23-busan-eel-guide",
+  "anchor": "sec-5",
+  "src": "/assets/img/inl/f8fae397e686.jpg",
+  "ko": "민물장어",
+  "name": {
+   "en": "Freshwater eel",
+   "ko": "민물장어",
+   "vi": "Lươn nước ngọt",
+   "th": "มินมุลจังออ"
+  }
+ },
+ {
+  "slug": "bokguk",
+  "cat": "seafood",
+  "article": "2026-10-23-busan-local-foods-guide",
+  "anchor": "sec-2",
+  "src": "/assets/img/inl/426c3767b7ff.jpg",
+  "ko": "복국",
+  "name": {
+   "en": "Bokguk, pufferfish soup",
+   "ko": "복국",
+   "vi": "Bokguk, canh cá nóc",
+   "th": "พกกุก ซุปปลาปักเป้า"
+  }
+ },
+ {
+  "slug": "agujjim",
+  "cat": "seafood",
+  "article": "2026-10-23-busan-local-foods-guide",
+  "anchor": "sec-3",
+  "src": "/assets/img/inl/7ed70ea0c911.jpg",
+  "ko": "아구찜",
+  "name": {
+   "en": "Agujjim, braised monkfish",
+   "ko": "아구찜",
+   "vi": "Agujjim, cá monkfish om cay",
+   "th": "อากูจิม"
+  }
+ },
+ {
+  "slug": "dwaeji-gukbap",
+  "cat": "meat",
+  "article": "taste-dwaeji-gukbap",
+  "anchor": "",
+  "src": "/assets/img/inl/b58942fd01e6.jpg",
+  "ko": "돼지국밥",
+  "name": {
+   "en": "Dwaeji gukbap",
+   "ko": "돼지국밥",
+   "vi": "Dwaeji gukbap",
+   "th": "ทเวจีกุกบับ"
+  },
+  "crop": 0.87
+ },
+ {
+  "slug": "naengchae-jokbal",
+  "cat": "meat",
+  "article": "2026-10-23-busan-local-foods-guide",
+  "anchor": "sec-4",
+  "src": "/assets/img/inl/8dab30175910.jpg",
+  "ko": "냉채족발",
+  "name": {
+   "en": "Naengchae jokbal",
+   "ko": "냉채족발",
+   "vi": "Naengchae jokbal",
+   "th": "เนงแชชกบัล"
+  }
+ },
+ {
+  "slug": "samgyeopsal",
+  "cat": "meat",
+  "article": "2026-10-28-busan-pork-bbq-guide",
+  "anchor": "sec-sam",
+  "src": "/assets/img/inl/958c5d65ebfc.jpg",
+  "ko": "삼겹살",
+  "name": {
+   "en": "Samgyeopsal",
+   "ko": "삼겹살",
+   "vi": "Samgyeopsal",
+   "th": "ซัมกยอบซัล"
+  }
+ },
+ {
+  "slug": "moksal",
+  "cat": "meat",
+  "article": "2026-10-28-busan-pork-bbq-guide",
+  "anchor": "sec-special",
+  "src": "/assets/img/inl/5bcca8068384.jpg",
+  "ko": "목살",
+  "name": {
+   "en": "Moksal and other cuts",
+   "ko": "목살, 껍데기, 항정살",
+   "vi": "Moksal và các phần khác",
+   "th": "โมกซัลและส่วนอื่น"
+  }
+ },
+ {
+  "slug": "dwaeji-galbi",
+  "cat": "meat",
+  "article": "2026-10-28-busan-pork-bbq-guide",
+  "anchor": "sec-galbi",
+  "src": "/assets/img/inl/4df780255f2e.jpg",
+  "ko": "돼지갈비",
+  "name": {
+   "en": "Dwaeji-galbi",
+   "ko": "돼지갈비",
+   "vi": "Dwaeji-galbi",
+   "th": "ทเวจีคัลบี"
+  }
+ },
+ {
+  "slug": "deung-galbi",
+  "cat": "meat",
+  "article": "2026-10-28-busan-pork-bbq-guide",
+  "anchor": "sec-ribs",
+  "src": "/assets/img/inl/0c9cfc898414.jpg",
+  "ko": "등갈비",
+  "name": {
+   "en": "Deung-galbi",
+   "ko": "등갈비",
+   "vi": "Deung-galbi",
+   "th": "ทึงคัลบี"
+  }
+ },
+ {
+  "slug": "gamjatang",
+  "cat": "meat",
+  "article": "2026-10-28-busan-pork-stew-guide",
+  "anchor": "sec-bone",
+  "src": "/assets/img/inl/76329c88debb.jpg",
+  "ko": "감자탕",
+  "name": {
+   "en": "Gamjatang",
+   "ko": "감자탕",
+   "vi": "Gamjatang",
+   "th": "คัมจาทัง"
+  }
+ },
+ {
+  "slug": "ppyeo-haejangguk",
+  "cat": "meat",
+  "article": "2026-10-28-busan-pork-stew-guide",
+  "anchor": "sec-bone",
+  "src": "/assets/img/inl/4c5578798121.jpg",
+  "ko": "뼈해장국",
+  "name": {
+   "en": "Ppyeo-haejangguk",
+   "ko": "뼈해장국",
+   "vi": "Ppyeo-haejangguk",
+   "th": "ปยอแฮจังกุก"
+  }
+ },
+ {
+  "slug": "jeyuk-bokkeum",
+  "cat": "meat",
+  "article": "2026-10-28-busan-pork-stew-guide",
+  "anchor": "sec-jeyuk",
+  "src": "/assets/img/inl/e609a172c70b.jpg",
+  "ko": "제육볶음",
+  "name": {
+   "en": "Jeyuk-bokkeum",
+   "ko": "제육볶음",
+   "vi": "Jeyuk-bokkeum",
+   "th": "เจยุกบกกึม"
+  }
+ },
+ {
+  "slug": "dwaeji-bulbaek",
+  "cat": "meat",
+  "article": "2026-10-28-busan-pork-stew-guide",
+  "anchor": "sec-bulbaek",
+  "src": "/assets/img/inl/8716a876b043.jpg",
+  "ko": "돼지불백",
+  "name": {
+   "en": "Dwaeji-bulbaek",
+   "ko": "돼지불백",
+   "vi": "Dwaeji-bulbaek",
+   "th": "ทเวจีบุลแบก"
+  }
+ },
+ {
+  "slug": "kimchi-jjigae",
+  "cat": "other",
+  "article": "2026-10-28-busan-pork-stew-guide",
+  "anchor": "sec-kimchi",
+  "src": "/assets/img/inl/30cdba3adbba.jpg",
+  "ko": "김치찌개",
+  "name": {
+   "en": "Pork kimchi-jjigae",
+   "ko": "돼지고기 김치찌개",
+   "vi": "Kimchi-jjigae thịt heo",
+   "th": "คิมจีจจีเกหมู"
+  }
+ },
+ {
+  "slug": "kimchi-jjim",
+  "cat": "other",
+  "article": "2026-10-28-busan-pork-stew-guide",
+  "anchor": "sec-kimchi",
+  "src": "/assets/img/inl/2342c89d503e.jpg",
+  "ko": "김치찜",
+  "name": {
+   "en": "Kimchi-jjim",
+   "ko": "김치찜",
+   "vi": "Kimchi-jjim",
+   "th": "คิมจีจจิม"
+  }
+ },
+ {
+  "slug": "fried-chicken",
+  "cat": "meat",
+  "article": "2026-10-26-busan-chicken-dishes-guide",
+  "anchor": "sec-chicken",
+  "src": "/assets/img/inl/a80cc9bca6d9.jpg",
+  "ko": "후라이드 치킨, 통닭",
+  "name": {
+   "en": "Fried chicken, tongdak",
+   "ko": "후라이드 치킨, 통닭",
+   "vi": "Gà rán, tongdak",
+   "th": "ไก่ทอด ทงตั๊ก"
+  }
+ },
+ {
+  "slug": "dakgalbi",
+  "cat": "meat",
+  "article": "2026-10-26-busan-chicken-dishes-guide",
+  "anchor": "sec-dakgalbi",
+  "src": "/assets/img/inl/3d1388d8fad5.jpg",
+  "ko": "닭갈비",
+  "name": {
+   "en": "Dakgalbi",
+   "ko": "닭갈비",
+   "vi": "Dakgalbi",
+   "th": "ตั๊กคัลบี"
+  }
+ },
+ {
+  "slug": "dakbal",
+  "cat": "meat",
+  "article": "2026-10-26-busan-chicken-dishes-guide",
+  "anchor": "sec-dakbal",
+  "src": "/assets/img/inl/ddc6caa555e9.jpg",
+  "ko": "닭발",
+  "name": {
+   "en": "Dakbal",
+   "ko": "닭발",
+   "vi": "Dakbal",
+   "th": "ตั๊กบัล"
+  }
+ },
+ {
+  "slug": "dakbokkeumtang",
+  "cat": "meat",
+  "article": "2026-10-26-busan-chicken-dishes-guide",
+  "anchor": "sec-dori",
+  "src": "/assets/img/inl/b9fdef7f4dd0.jpg",
+  "ko": "닭볶음탕",
+  "name": {
+   "en": "Dakbokkeumtang",
+   "ko": "닭볶음탕",
+   "vi": "Dakbokkeumtang",
+   "th": "ตั๊กบกกึมทัง"
+  }
+ },
+ {
+  "slug": "samgyetang",
+  "cat": "meat",
+  "article": "2026-10-26-busan-chicken-dishes-guide",
+  "anchor": "sec-soup",
+  "src": "/assets/img/inl/c3a2fde43d55.jpg",
+  "ko": "삼계탕",
+  "name": {
+   "en": "Samgyetang",
+   "ko": "삼계탕",
+   "vi": "Samgyetang",
+   "th": "ซัมเกทัง"
+  }
+ },
+ {
+  "slug": "dakgomtang",
+  "cat": "meat",
+  "article": "2026-10-26-busan-chicken-dishes-guide",
+  "anchor": "sec-soup",
+  "src": "/assets/img/inl/03d1f9f3e327.jpg",
+  "ko": "닭곰탕",
+  "name": {
+   "en": "Dakgomtang",
+   "ko": "닭곰탕",
+   "vi": "Dakgomtang",
+   "th": "ตั๊กคมทัง"
+  }
+ },
+ {
+  "slug": "dakhanmari",
+  "cat": "meat",
+  "article": "2026-10-26-busan-chicken-dishes-guide",
+  "anchor": "sec-hanmari",
+  "src": "/assets/img/inl/06aa87bebff6.jpg",
+  "ko": "닭한마리",
+  "name": {
+   "en": "Dakhanmari",
+   "ko": "닭한마리",
+   "vi": "Dakhanmari",
+   "th": "ตั๊กฮันมารี"
+  }
+ },
+ {
+  "slug": "milmyeon",
+  "cat": "other",
+  "article": "2026-09-06-milmyeon-guide",
+  "anchor": "",
+  "src": "/assets/img/inl/dda6ccd73174.jpg",
+  "ko": "밀면",
+  "name": {
+   "en": "Milmyeon",
+   "ko": "밀면",
+   "vi": "Milmyeon",
+   "th": "มิลมยอน"
+  }
+ }
+]

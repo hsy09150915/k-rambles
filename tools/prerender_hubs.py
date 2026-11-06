@@ -4,6 +4,8 @@
 왜 필요한가: 허브 페이지는 자바스크립트가 JSON을 읽어서 글 목록을 그립니다.
 자바스크립트를 실행하지 않는 읽기 도구(일부 AI·검색 크롤러)에는 목록이 빈 페이지로 보입니다.
 이 스크립트는 assets/js/krambles-render.js 의 tileHTML 과 같은 모양을 HTML 에 직접 써 둡니다.
+맛(taste) 허브 4개에는 data/dishes.json 의 음식 띠(Pick a dish)도 <!-- dishes:start --> 자리에 채웁니다.
+(음식 썸네일은 tools/build_dish_thumbs.py 로 먼저 만들어 두세요.)
 (페이지가 열리면 자바스크립트가 JSON 으로 다시 그리므로 최신 상태는 항상 JSON 이 기준입니다.)
 
 새 글을 data/*.json 에 등록한 뒤 이 스크립트를 한 번 실행하세요:
@@ -46,6 +48,38 @@ def tile(item, asset_base, lang):
         esc(item["url"]), esc(asset_base + item["thumb"]), esc(alt), badge, esc(item.get("label") or ""),
         esc(item["title"]), esc(item["like_id"]), esc(item["like_id"]), esc(label), esc(title))
 
+# ---- 음식 띠(Pick a dish): data/dishes.json → 맛 허브 4개 페이지 ----
+DSTART, DEND = "<!-- dishes:start -->", "<!-- dishes:end -->"
+DISH_TXT = {
+    "en": ("Pick a dish", "Tap a photo to jump to that dish in its guide.", ["All", "Seafood", "Meat", "Others"], "Dishes covered on this board", "Filter by type", "Scroll left", "Scroll right"),
+    "ko": ("음식으로 고르기", "사진을 누르면 그 음식을 다룬 글의 해당 부분으로 바로 가요.", ["전체", "해산물", "고기류", "기타"], "이 보드에서 다루는 음식", "종류별로 보기", "왼쪽으로", "오른쪽으로"),
+    "vi": ("Chọn theo món", "Bấm vào ảnh để đến đúng phần nói về món đó trong bài.", ["Tất cả", "Hải sản", "Thịt", "Khác"], "Các món trong mục này", "Lọc theo loại", "Cuộn sang trái", "Cuộn sang phải"),
+    "th": ("เลือกตามเมนู", "แตะรูปเพื่อไปยังส่วนของเมนูนั้นในบทความ", ["ทั้งหมด", "อาหารทะเล", "เนื้อสัตว์", "อื่น ๆ"], "เมนูที่มีในบอร์ดนี้", "กรองตามประเภท", "เลื่อนไปทางซ้าย", "เลื่อนไปทางขวา"),
+}
+CATS = ["all", "seafood", "meat", "other"]
+
+def dish_strip(lang, items):
+    """맛 허브 페이지용 음식 띠 HTML. items 는 그 언어의 taste JSON(글 url 찾기용)."""
+    dishes = json.load(open(os.path.join(ROOT, "data/dishes.json"), encoding="utf-8"))
+    title, sub, cats, aria, aria_f, aria_l, aria_r = DISH_TXT[lang]
+    def url(stem):
+        for i in items:
+            if i["url"].startswith(stem): return i["url"]
+        raise SystemExit("dishes.json: %s 글을 taste-%s.json 에서 못 찾음" % (stem, lang))
+    cards = []
+    for d in dishes:
+        href = url(d["article"]) + ("#" + d["anchor"] if d.get("anchor") else "")
+        name = d["name"][lang]
+        ko = "" if lang == "ko" else '<span class="dish-ko">%s</span>' % esc(d["ko"])
+        cards.append('<a class="dish" data-cat="%s" href="%s"><div class="dish-img"><img src="/assets/thumbs/dishes/%s.jpg" alt="%s" width="320" height="320" loading="lazy"></div><p class="dish-name">%s%s</p></a>'
+                     % (esc(d["cat"]), esc(href), esc(d["slug"]), esc(name), esc(name), ko))
+    chips = "".join('<button type="button" class="dish-cat%s" data-cat="%s">%s</button>' % (" is-on" if c == "all" else "", c, esc(l)) for c, l in zip(CATS, cats))
+    return (DSTART + '\n<section class="dish-strip" aria-label="%s">\n  <div class="dish-head"><h2 class="dish-title">%s</h2><p class="dish-sub">%s</p></div>\n'
+            '  <div class="dish-cats" role="group" aria-label="%s">%s</div>\n  <div class="dish-rail">\n'
+            '    <button type="button" class="dish-arrow prev" aria-label="%s" disabled></button>\n    <div class="dish-track" id="dish-track">%s</div>\n'
+            '    <button type="button" class="dish-arrow next" aria-label="%s"></button>\n  </div>\n</section>\n' + DEND) % (
+        esc(aria), esc(title), esc(sub), esc(aria_f), chips, esc(aria_l), "".join(cards), esc(aria_r))
+
 def fill(template, n):
     t = re.sub(r"\{n:([^|}]*)\|([^}]*)\}", lambda m: m.group(1) if n == 1 else m.group(2), template)
     return t.replace("{n}", str(n))
@@ -70,6 +104,8 @@ def process(path):
         pat = re.compile(r'(<div class="hub-grid">)\s*(</div>)')
         assert pat.search(new), rel + ": hub-grid 빈 상자를 찾지 못함"
         new = pat.sub(lambda m: m.group(1) + "\n" + inner + "\n" + m.group(2), new, count=1)
+    if DSTART in new and DEND in new:
+        new = re.sub(re.escape(DSTART) + r".*?" + re.escape(DEND), lambda m: dish_strip(lang, items), new, flags=re.S)
     if tmpl:
         txt = fill(tmpl.group(1), len(items))
         new = re.sub(r'(<p class="hub-count">)[^<]*(</p>)', lambda m: m.group(1) + txt + m.group(2), new, count=1)
