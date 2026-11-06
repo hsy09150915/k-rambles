@@ -32,14 +32,15 @@
   "cat": "seafood",
   "article": "2026-10-23-busan-signature-foods-guide",
   "anchor": "sec-5",
-  "src": "/assets/img/inl/edb4028f796b.jpg",
+  "src": "/assets/img/inl/7391c46a89e2.jpg",
   "ko": "낙곱새",
   "name": {
    "en": "Nakgopsae",
    "ko": "낙곱새",
    "vi": "Nakgopsae",
    "th": "นักกบแซ"
-  }
+  },
+  "crop": 0.38
  },
  {
   "slug": "hoe",
