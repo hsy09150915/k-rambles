@@ -1,5 +1,109 @@
 [
   {
+    "title": "Lịch trình Busan 1, 2, 3 ngày: cách tự lên lộ trình hợp với kế hoạch của bạn",
+    "url": "2026-11-06-busan-itinerary-builder-guide-vi.html",
+    "thumb": "assets/thumbs/trip-planner/busan-itinerary-builder-guide.jpg",
+    "label": "Lộ trình · Trực tuyến",
+    "alt": "Mọi người ngồi trên sân hiên bãi biển Gwangalli ngắm cầu Gwangan và biển",
+    "badge": null,
+    "like_id": "trip-planner/2026-11-06-busan-itinerary-builder-guide-vi.html",
+    "date": "2026-11-06",
+    "kw": "Lịch trình Busan Lộ trình du lịch Busan Busan 1 ngày Busan 2 ngày Busan 3 ngày Busan 4 ngày Busan đi trong ngày Phố cổ Nampo-dong Jagalchi Chợ Gukje Tháp Busan Làng văn hóa Huinnyeoul Haeundae Blue Line Park Gwangalli Làng văn hóa Gamcheon Taejongdae Songjeong Haedong Yonggungsa Núi Geumjeong Seomyeon Jeonpo KTX Ga Busan Sân bay Gimhae bản đồ",
+    "city": "busan",
+    "locations": [
+      {
+        "name": "Ga Busan",
+        "address": "206 Jungang-daero, Dong-gu, Busan",
+        "lat": 35.1152,
+        "lng": 129.0422
+      },
+      {
+        "name": "Chợ Gukje",
+        "address": "Sinchang-dong 4-ga 40-5, Jung-gu, Busan",
+        "lat": 35.1008,
+        "lng": 129.0287
+      },
+      {
+        "name": "Chợ Jagalchi",
+        "address": "부산 중구 자갈치로 42",
+        "lat": 35.0968404,
+        "lng": 129.029054
+      },
+      {
+        "name": "Công viên Yongdusan và tháp Busan",
+        "address": "37-55 Yongdusan-gil, Jung-gu, Busan",
+        "lat": 35.1005,
+        "lng": 129.0324
+      },
+      {
+        "name": "Lối vào Làng văn hóa Huinnyeoul",
+        "address": "부산 영도구 영선동4가 605-3",
+        "lat": 35.0795291,
+        "lng": 129.0435879
+      },
+      {
+        "name": "Trung tâm thông tin Làng văn hóa Gamcheon",
+        "address": "203 Gamnae 2-ro, Saha-gu, Busan",
+        "lat": 35.0974932,
+        "lng": 129.010604
+      },
+      {
+        "name": "Lối vào khu du lịch Taejongdae",
+        "address": "부산 영도구 전망로 24",
+        "lat": 35.0596949,
+        "lng": 129.0798057
+      },
+      {
+        "name": "Ga Mipo, Blue Line Park",
+        "address": "13 Dalmaji-gil 62beon-gil, Haeundae-gu, Busan",
+        "lat": 35.1604,
+        "lng": 129.1759
+      },
+      {
+        "name": "Bãi biển Haeundae",
+        "address": "Haeundae-gu, Busan",
+        "lat": 35.1587,
+        "lng": 129.1604
+      },
+      {
+        "name": "Bãi biển Gwangalli",
+        "address": "219 Gwangan Haebyeon-ro, Suyeong-gu, Busan",
+        "lat": 35.1532,
+        "lng": 129.1186
+      },
+      {
+        "name": "Bãi biển Songjeong",
+        "address": "62 Songjeonghaebyeon-ro, Haeundae-gu, Busan",
+        "lat": 35.17877,
+        "lng": 129.19989
+      },
+      {
+        "name": "Ga Osiria",
+        "address": "Dongbusan Gwangwang-ro, Gijang-gun, Busan",
+        "lat": 35.19655,
+        "lng": 129.20944
+      },
+      {
+        "name": "Chùa Haedong Yonggungsa",
+        "address": "86 Yonggung-gil, Gijang-gun, Busan",
+        "lat": 35.18838,
+        "lng": 129.22329
+      },
+      {
+        "name": "Công viên Orangdae",
+        "address": "Yeonhwa-ri, Gijang-gun, Busan",
+        "lat": 35.2057,
+        "lng": 129.2277
+      },
+      {
+        "name": "Ga Seomyeon",
+        "address": "730 Jungang-daero, Busanjin-gu, Busan",
+        "lat": 35.1578,
+        "lng": 129.0594
+      }
+    ]
+  },
+  {
     "title": "Lộ trình một ngày ở núi Geumjeong, Busan: cáp treo, chùa Beomeosa và makgeolli ở làng Sanseong",
     "url": "2026-10-22-busan-geumjeongsan-guide-vi.html",
     "thumb": "assets/thumbs/trip-planner/geumjeongsan-guide.jpg",

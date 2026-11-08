@@ -1,5 +1,109 @@
 [
   {
+    "title": "Busan Itinerary for 1, 2 or 3 Days: How to Plan a Route That Fits Your Schedule",
+    "url": "2026-11-06-busan-itinerary-builder-guide-en.html",
+    "thumb": "assets/thumbs/trip-planner/busan-itinerary-builder-guide.jpg",
+    "label": "Trip plan · live",
+    "alt": "People sitting on a beach terrace in Gwangalli looking at Gwangan Bridge and the sea",
+    "badge": null,
+    "like_id": "trip-planner/2026-11-06-busan-itinerary-builder-guide-en.html",
+    "date": "2026-11-06",
+    "kw": "Busan itinerary Busan travel course Busan 1 day Busan 2 days Busan 3 days Busan 4 days Busan day trip how to plan Busan route Old Town Nampo-dong Jagalchi Gukje Market Busan Tower Huinnyeoul Culture Village Haeundae Blue Line Park Gwangalli Gamcheon Culture Village Taejongdae Songjeong Haedong Yonggungsa Mt. Geumjeong Seomyeon Jeonpo KTX Busan Station Gimhae Airport map",
+    "city": "busan",
+    "locations": [
+      {
+        "name": "Busan Station",
+        "address": "206 Jungang-daero, Dong-gu, Busan",
+        "lat": 35.1152,
+        "lng": 129.0422
+      },
+      {
+        "name": "Gukje Market",
+        "address": "Sinchang-dong 4-ga 40-5, Jung-gu, Busan",
+        "lat": 35.1008,
+        "lng": 129.0287
+      },
+      {
+        "name": "Jagalchi Market",
+        "address": "42 Jagalchi-ro, Jung-gu, Busan",
+        "lat": 35.0968404,
+        "lng": 129.029054
+      },
+      {
+        "name": "Yongdusan Park and Busan Tower",
+        "address": "37-55 Yongdusan-gil, Jung-gu, Busan",
+        "lat": 35.1005,
+        "lng": 129.0324
+      },
+      {
+        "name": "Huinnyeoul Culture Village entrance",
+        "address": "605-3 Yeongseon-dong 4-ga, Yeongdo-gu, Busan",
+        "lat": 35.0795291,
+        "lng": 129.0435879
+      },
+      {
+        "name": "Gamcheon Culture Village Information Center",
+        "address": "203 Gamnae 2-ro, Saha-gu, Busan",
+        "lat": 35.0974932,
+        "lng": 129.010604
+      },
+      {
+        "name": "Taejongdae Resort Park entrance",
+        "address": "24 Jeonmang-ro, Yeongdo-gu, Busan",
+        "lat": 35.0596949,
+        "lng": 129.0798057
+      },
+      {
+        "name": "Blue Line Park Mipo Station",
+        "address": "13 Dalmaji-gil 62beon-gil, Haeundae-gu, Busan",
+        "lat": 35.1604,
+        "lng": 129.1759
+      },
+      {
+        "name": "Haeundae Beach",
+        "address": "Haeundae-gu, Busan",
+        "lat": 35.1587,
+        "lng": 129.1604
+      },
+      {
+        "name": "Gwangalli Beach",
+        "address": "219 Gwangan Haebyeon-ro, Suyeong-gu, Busan",
+        "lat": 35.1532,
+        "lng": 129.1186
+      },
+      {
+        "name": "Songjeong Beach",
+        "address": "62 Songjeonghaebyeon-ro, Haeundae-gu, Busan",
+        "lat": 35.17877,
+        "lng": 129.19989
+      },
+      {
+        "name": "Osiria Station",
+        "address": "Dongbusan Gwangwang-ro, Gijang-gun, Busan",
+        "lat": 35.19655,
+        "lng": 129.20944
+      },
+      {
+        "name": "Haedong Yonggungsa Temple",
+        "address": "86 Yonggung-gil, Gijang-gun, Busan",
+        "lat": 35.18838,
+        "lng": 129.22329
+      },
+      {
+        "name": "Orangdae Park",
+        "address": "Yeonhwa-ri, Gijang-gun, Busan",
+        "lat": 35.2057,
+        "lng": 129.2277
+      },
+      {
+        "name": "Seomyeon Station",
+        "address": "730 Jungang-daero, Busanjin-gu, Busan",
+        "lat": 35.1578,
+        "lng": 129.0594
+      }
+    ]
+  },
+  {
     "title": "Mt. Geumjeong One-Day Course in Busan: Cable Car, Beomeosa Temple and Sanseong Village Makgeolli",
     "url": "2026-10-22-busan-geumjeongsan-guide-en.html",
     "thumb": "assets/thumbs/trip-planner/geumjeongsan-guide.jpg",
