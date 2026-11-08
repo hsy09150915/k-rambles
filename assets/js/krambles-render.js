@@ -1027,10 +1027,10 @@
       '.liked-route-actions{display:grid!important;grid-template-columns:1fr;gap:10px}' +
       '.liked-route-actions .liked-route-calc-btn{width:100%;min-height:46px;font-size:.92rem}' +
       '.liked-route-status:empty{display:none}' +
-      '.kr-plan-tools{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:10px;padding-bottom:22px;margin-bottom:6px;border-bottom:1px solid var(--line,#e5e0d8)}' +
-      '.kr-plan-tools .kr-tool-btn,.kr-plan-tools .kr-share-btn{width:100%;min-height:46px;padding:8px 10px;line-height:1.25;text-align:center;display:flex;align-items:center;justify-content:center}' +
-      '.kr-plan-note{grid-column:1/-1}' +
-      '@media(max-width:560px){.kr-plan-tools{grid-template-columns:1fr}}' +
+      '.kr-plan-tools{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px;padding-bottom:22px;margin-bottom:6px;border-bottom:1px solid var(--line,#e5e0d8)}' +
+      '.kr-plan-tools .kr-tool-btn,.kr-plan-tools .kr-share-btn{flex:1 1 0;min-width:0;min-height:46px;padding:8px 10px;line-height:1.25;text-align:center;display:flex;align-items:center;justify-content:center}' +
+      '.kr-plan-note{flex:0 0 100%}' +
+      '@media(max-width:560px){.kr-plan-tools .kr-tool-btn,.kr-plan-tools .kr-share-btn{flex:0 0 100%}}' +
       '.kr-tool-btn{background:#fff;color:var(--navy,#1b2a4a);border:1.5px solid var(--navy,#1b2a4a);border-radius:8px;padding:8px 14px;font-size:.84rem;font-weight:600;cursor:pointer;font-family:inherit}' +
       '.kr-tool-btn:hover{background:rgba(27,42,74,.06)}' +
       '.liked-route-order li.kr-grp{display:block;counter-increment:none;border-bottom:none;padding:6px 0 4px}' +
