@@ -474,7 +474,7 @@
     "city": "busan",
     "locations": [
       {
-        "name": "Cáp treo biển Songdo (ga dưới · Songdo Bay Station)",
+        "name": "กระเช้าลอยฟ้าทะเลซงโด (สถานีล่าง Songdo Bay Station)",
         "address": "부산 서구 송도해변로 171",
         "lat": 35.0766433,
         "lng": 129.0233986,
@@ -486,7 +486,7 @@
         ]
       },
       {
-        "name": "Cáp treo biển Songdo (ga trên · Songdo Sky Park)",
+        "name": "กระเช้าลอยฟ้าทะเลซงโด (สถานีบน Songdo Sky Park)",
         "address": "부산 서구 암남공원로 181",
         "lat": 35.0613785,
         "lng": 129.0204196,
@@ -498,7 +498,7 @@
         ]
       },
       {
-        "name": "Tháp Busan (công viên Yongdusan)",
+        "name": "ปูซานทาวเวอร์ (สวนยงดูซาน)",
         "address": "부산 중구 용두산길 37-30",
         "lat": 35.101154,
         "lng": 129.032335,
@@ -510,7 +510,7 @@
         ]
       },
       {
-        "name": "Bến du thuyền Songdo",
+        "name": "ท่าเรือยอทช์ซงโด",
         "address": "부산 서구 송도해변로 150",
         "lat": 35.0765204,
         "lng": 129.0223712,
@@ -536,7 +536,7 @@
     "city": "busan",
     "locations": [
       {
-        "name": "Lối vào khu du lịch Taejongdae",
+        "name": "ทางเข้าสวนแทจงแด",
         "address": "부산 영도구 전망로 24",
         "lat": 35.0596949,
         "lng": 129.0798057
@@ -605,7 +605,7 @@
         ]
       },
       {
-        "name": "Noir Hair chi nhánh Gwangan Beach 2",
+        "name": "Noir Hair สาขา Gwangan Beach 2",
         "address": "부산 수영구 광안해변로 127 1층",
         "lat": 35.1462967,
         "lng": 129.1143554,
@@ -631,7 +631,7 @@
     "city": "busan",
     "locations": [
       {
-        "name": "Lối vào Làng văn hóa Huinnyeoul",
+        "name": "ทางเข้าหมู่บ้านวัฒนธรรมฮึนยออุล",
         "address": "부산 영도구 영선동4가 605-3",
         "lat": 35.0795291,
         "lng": 129.0435879
@@ -651,7 +651,7 @@
     "city": "busan",
     "locations": [
       {
-        "name": "Làng bia mộ Amidong",
+        "name": "หมู่บ้านแผ่นหินหลุมศพอามีดง",
         "address": "부산 서구 아미로 49",
         "lat": 35.0998143,
         "lng": 129.0124203

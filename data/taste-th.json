@@ -664,19 +664,19 @@
     "city": "busan",
     "locations": [
       {
-        "name": "1953 Hyeongje Dwaeji-gukbap (chi nhánh chính)",
+        "name": "1953 Hyeongje Dwaeji-gukbap (สาขาหลัก)",
         "address": "부산 남구 용소로13번길 29-1",
         "lat": 35.1370751,
         "lng": 129.1020604
       },
       {
-        "name": "Ssangdungi Dwaeji-gukbap (chi nhánh chính)",
+        "name": "Ssangdungi Dwaeji-gukbap (สาขาหลัก)",
         "address": "부산 남구 유엔평화로 35-1",
         "lat": 35.1317758,
         "lng": 129.0923061
       },
       {
-        "name": "Hapcheon Gukbap-jip, chi nhánh Yongho",
+        "name": "Hapcheon Gukbap-jip สาขา Yongho",
         "address": "부산 남구 용호로 235",
         "lat": 35.1112466,
         "lng": 129.1112571
@@ -694,7 +694,7 @@
         "lng": 129.0392431
       },
       {
-        "name": "Subyeon Choigo Dwaeji-gukbap, chi nhánh Millak",
+        "name": "Subyeon Choigo Dwaeji-gukbap สาขา Millak",
         "address": "부산 수영구 민락동 110-54",
         "lat": 35.1567657,
         "lng": 129.1342643
@@ -718,7 +718,7 @@
         "lng": 129.1256897
       },
       {
-        "name": "Cheonghwabaek Dwaeji-gukbap, chi nhánh chính Gwangalli",
+        "name": "Cheonghwabaek Dwaeji-gukbap สาขาหลัก Gwangalli",
         "address": "부산 수영구 남천바다로 18",
         "lat": 35.1492852,
         "lng": 129.1125476
@@ -730,25 +730,25 @@
         "lng": 129.0294107
       },
       {
-        "name": "Somunnan Dwaeji-gukbap, chi nhánh Bupyeong",
+        "name": "Somunnan Dwaeji-gukbap สาขา Bupyeong",
         "address": "부산 중구 부평1길 27",
         "lat": 35.1007128,
         "lng": 129.0256909
       },
       {
-        "name": "Sinchang Gukbap (chi nhánh chính)",
+        "name": "Sinchang Gukbap (สาขาหลัก)",
         "address": "부산 서구 보수대로 53",
         "lat": 35.1009372,
         "lng": 129.0225498
       },
       {
-        "name": "Yeongjin Dwaeji-gukbap (chi nhánh chính)",
+        "name": "Yeongjin Dwaeji-gukbap (สาขาหลัก)",
         "address": "부산 사하구 하신번영로157번길 39",
         "lat": 35.0966412,
         "lng": 128.9578653
       },
       {
-        "name": "5 Nammae Dwaeji-gukbap, chi nhánh Jeonggwan",
+        "name": "5 Nammae Dwaeji-gukbap สาขา Jeonggwan",
         "address": "부산 기장군 정관읍 구연2로 6",
         "lat": 35.3211903,
         "lng": 129.1820592
@@ -766,13 +766,13 @@
         "lng": 129.0703247
       },
       {
-        "name": "Hwanamjeong Dwaeji-gukbap, chi nhánh chính Choeup",
+        "name": "Hwanamjeong Dwaeji-gukbap สาขาหลัก Choeup",
         "address": "부산 부산진구 성지로 50",
         "lat": 35.1750962,
         "lng": 129.0549518
       },
       {
-        "name": "Mokchon Dwaeji-gukbap, chi nhánh Yeonsan",
+        "name": "Mokchon Dwaeji-gukbap สาขา Yeonsan",
         "address": "부산 연제구 중앙천로 73",
         "lat": 35.180621,
         "lng": 129.0802033
@@ -798,13 +798,13 @@
     "city": "busan",
     "locations": [
       {
-        "name": "Sạp hải sản ven biển dưới hải đăng (hoi sống)",
+        "name": "แผงอาหารทะเลริมฝั่งใต้ประภาคาร (ปลาดิบ)",
         "address": "부산 영도구 전망로 181",
         "lat": 35.0523237,
         "lng": 129.0919754
       },
       {
-        "name": "Bãi đá cuội đường bờ biển Gamji (nướng sò)",
+        "name": "ลานหินกรวดถนนริมหาดคัมจี (หอยย่าง)",
         "address": "부산 영도구 동삼동 1052-3",
         "lat": 35.0600039,
         "lng": 129.0776164
@@ -836,7 +836,7 @@
         "lng": 129.0250787
       },
       {
-        "name": "Gukje Milmyeon (chi nhánh chính)",
+        "name": "Gukje Milmyeon (สาขาหลัก)",
         "address": "부산 연제구 중앙대로1235번길 23-6",
         "lat": 35.1969012,
         "lng": 129.07784
@@ -854,7 +854,7 @@
         "lng": 129.1663484
       },
       {
-        "name": "Chunhachudong Milmyeon, chi nhánh chính Seomyeon",
+        "name": "Chunhachudong Milmyeon สาขาหลัก Seomyeon",
         "address": "부산 부산진구 서면문화로 48-1",
         "lat": 35.1614774,
         "lng": 129.0555153
@@ -887,7 +887,7 @@
     "city": "busan",
     "locations": [
       {
-        "name": "Chợ Jagalchi Sindonga",
+        "name": "ตลาดจากัลชี ชินดงอา",
         "address": "부산 중구 자갈치로 42",
         "lat": 35.0968404,
         "lng": 129.029054
