@@ -1,5 +1,47 @@
 [
  {
+  "slug": "haemul-ramyeon",
+  "cat": "seafood",
+  "article": "2026-11-10-busan-seaside-ramen-spots",
+  "anchor": "sec-cooked",
+  "src": "/assets/img/inl/149b939253b6.jpg",
+  "ko": "해물라면",
+  "name": {
+   "en": "Seafood ramyeon",
+   "ko": "해물라면",
+   "vi": "Mì hải sản (haemul-ramyeon)",
+   "th": "รามยอนทะเล"
+  }
+ },
+ {
+  "slug": "convenience-store-ramyeon",
+  "cat": "other",
+  "article": "2026-11-10-busan-seaside-ramen-spots",
+  "anchor": "sec-stores",
+  "src": "/assets/img/inl/b85ee9ed95c7.jpg",
+  "ko": "편의점 라면",
+  "name": {
+   "en": "Convenience store ramen",
+   "ko": "편의점 라면",
+   "vi": "Mì nấu ở cửa hàng tiện lợi",
+   "th": "รามยอนร้านสะดวกซื้อ"
+  }
+ },
+ {
+  "slug": "convenience-store-gimbap",
+  "cat": "other",
+  "article": "2026-11-10-busan-seaside-ramen-spots",
+  "anchor": "sec-gimbap",
+  "src": "/assets/img/inl/0b67532805d4.jpg",
+  "ko": "편의점 김밥",
+  "name": {
+   "en": "Convenience store gimbap",
+   "ko": "편의점 김밥",
+   "vi": "Gimbap cửa hàng tiện lợi",
+   "th": "คิมบับร้านสะดวกซื้อ"
+  }
+ },
+ {
   "slug": "dongnae-pajeon",
   "cat": "other",
   "article": "2026-10-23-busan-signature-foods-guide",

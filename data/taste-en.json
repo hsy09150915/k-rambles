@@ -1,5 +1,103 @@
 [
   {
+    "title": "Where to Eat Ramen by the Sea in Busan: Convenience Store Ramen Machines and Seafood Ramyeon",
+    "url": "2026-11-10-busan-seaside-ramen-spots-en.html",
+    "thumb": "assets/thumbs/taste/busan-seaside-ramen-spots.jpg",
+    "label": "Taste · live",
+    "alt": "Ramen in a paper bowl on a wooden table in a hillside seaside village, with the sea spreading out behind it",
+    "badge": null,
+    "like_id": "taste/2026-11-10-busan-seaside-ramen-spots-en.html",
+    "date": "2026-11-10",
+    "kw": "busan ramen korean ramyeon instant ramen cooker ramen machine hangang ramyeon seaside convenience store ocean view ramen library seafood ramyeon haemul-ramyeon convenience store gimbap busan food korean food haeundae cheongsapo songjeong gwangalli millak waterfront park gijang yeonhwa-ri huinnyeoul dadaepo 부산 라면 한강라면 즉석라면 해물라면 편의점 김밥",
+    "city": "busan",
+    "locations": [
+      {
+        "name": "7-Eleven Busan Haeundae Hill Spa",
+        "address": "부산 해운대구 달맞이길117번길 11",
+        "lat": 35.15846719,
+        "lng": 129.17526895
+      },
+      {
+        "name": "emart24 R Haeundae Cheongsapo",
+        "address": "부산 해운대구 청사포로 129",
+        "lat": 35.16078829,
+        "lng": 129.19286913
+      },
+      {
+        "name": "GS25 Songjeong Premium",
+        "address": "부산 해운대구 송정해변로 40",
+        "lat": 35.18060935,
+        "lng": 129.20162356
+      },
+      {
+        "name": "CU Millak Waterfront Park",
+        "address": "부산 수영구 민락수변로 95",
+        "lat": 35.1547383,
+        "lng": 129.13107051
+      },
+      {
+        "name": "CU The Ssangyong Osiria",
+        "address": "부산 기장군 기장읍 연화길 24",
+        "lat": 35.21565037,
+        "lng": 129.22484468
+      },
+      {
+        "name": "7-Eleven Busan Gijang Yeonhwa-ri",
+        "address": "부산 기장군 기장읍 연화1길 143-2",
+        "lat": 35.21726833,
+        "lng": 129.22619225
+      },
+      {
+        "name": "Cheongsapo Bada Ramyeon Cafe",
+        "address": "부산 해운대구 청사포로 125-1",
+        "lat": 35.16085669,
+        "lng": 129.19267455
+      },
+      {
+        "name": "Songjeong Bada Ramyeon Cafe",
+        "address": "부산 해운대구 송정구덕포길 104",
+        "lat": 35.17118969,
+        "lng": 129.19746367
+      },
+      {
+        "name": "Huinnyeoul Ramyeon",
+        "address": "부산 영도구 절영로 228",
+        "lat": 35.07772212,
+        "lng": 129.04618095
+      },
+      {
+        "name": "Huinnyeoul Jeomppang",
+        "address": "부산 영도구 흰여울길 121",
+        "lat": 35.07902167,
+        "lng": 129.04441447
+      },
+      {
+        "name": "Okcheon Hoetjip",
+        "address": "부산 영도구 중리남로 2-21",
+        "lat": 35.06776406,
+        "lng": 129.06589986
+      },
+      {
+        "name": "Dadaepo Halmae-jip",
+        "address": "부산 사하구 몰운대1길 55",
+        "lat": 35.04523351,
+        "lng": 128.96933335
+      },
+      {
+        "name": "Mipo Kkeutjip",
+        "address": "부산 해운대구 달맞이길62번길 77",
+        "lat": 35.15655089,
+        "lng": 129.17489423
+      },
+      {
+        "name": "Songjeong Haenyeo-jip, Gijang Osiria",
+        "address": "부산 기장군 기장읍 공수해안길 57-2",
+        "lat": 35.18599341,
+        "lng": 129.21334571
+      }
+    ]
+  },
+  {
     "title": "Busan Pork Meals Guide: Ppyeo-haejangguk, Jeyuk-bokkeum, Dwaeji-bulbaek and Kimchi-jjigae",
     "url": "2026-10-28-busan-pork-stew-guide-en.html",
     "thumb": "assets/thumbs/taste/busan-pork-stew-guide.jpg",
