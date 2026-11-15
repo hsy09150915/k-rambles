@@ -1,5 +1,67 @@
 [
   {
+    "title": "ของใช้เกาหลีที่ควรซื้อในตลาดดั้งเดิมปูซาน ตั้งแต่ผ้าห่มถึงมีดตีมือ",
+    "url": "2026-11-14-busan-market-korean-goods-guide-th.html",
+    "thumb": "assets/thumbs/trip-planner/busan-market-korean-goods-guide.jpg",
+    "label": "แผนเที่ยว · เผยแพร่แล้ว",
+    "alt": "ตรอกในตลาดพูจอน ปูซาน ที่ผู้คนแน่นขนัด",
+    "badge": null,
+    "like_id": "trip-planner/2026-11-14-busan-market-korean-goods-guide-th.html",
+    "date": "2026-11-14",
+    "kw": "ช้อปปิ้งปูซาน ตลาดดั้งเดิม ตลาดพูซานจิน ตลาดพูจอน ตลาดพูพยองกังทง ตลาดกุกเจ ผ้าห่มมิงค์ เครื่องนอนเกาหลี ทุกแบกี ถ้วยทองเหลือง ช้อนตะเกียบเกาหลี ผ้าขัดตัว อิตาลีทาวเวล ของใช้อาบน้ำ ถุงเท้าเกาหลี เสื้อกั๊กคุณยาย เสื้อกั๊กกิมจัง กางเกงมมแป ฮันบก กล่องมุก โพจากี โรงตีเหล็กคายา เสียมโฮมี กิมแฮ พิพิธภัณฑ์ปูซาน ของที่ระลึก ของฝากปูซาน",
+    "city": "busan",
+    "locations": [
+      {
+        "name": "ตลาดพูซานจิน",
+        "address": "24 Jinsijang-ro, Dong-gu, Busan",
+        "lat": 35.1364,
+        "lng": 129.0587
+      },
+      {
+        "name": "ตลาดดั้งเดิมแฮอุนแด",
+        "address": "22-1 Gunam-ro 41beon-gil, Haeundae-gu, Busan",
+        "lat": 35.1614,
+        "lng": 129.1623
+      },
+      {
+        "name": "ตลาดพูพยองกังทง",
+        "address": "48 Bupyeong 1-gil, Jung-gu, Busan",
+        "lat": 35.1018,
+        "lng": 129.0267
+      },
+      {
+        "name": "อิตาลีเฮาส์",
+        "address": "11-1 Jung-gu-ro 47beon-gil, Jung-gu, Busan",
+        "lat": 35.102087,
+        "lng": 129.027297
+      },
+      {
+        "name": "ตลาดกุกเจ",
+        "address": "Sinchang-dong 4-ga 40-5, Jung-gu, Busan",
+        "lat": 35.1008,
+        "lng": 129.0287
+      },
+      {
+        "name": "สถานีพูจอน (หน้าตลาดพูจอน)",
+        "address": "783 Jungang-daero, Busanjin-gu, Busan",
+        "lat": 35.162378,
+        "lng": 129.062855
+      },
+      {
+        "name": "โรงตีเหล็กคายา",
+        "address": "67-10 Bonghwangdae-gil, Gimhae-si, Gyeongnam",
+        "lat": 35.230563,
+        "lng": 128.879891
+      },
+      {
+        "name": "พิพิธภัณฑ์ปูซาน",
+        "address": "63 UN pyeonghwa-ro, Nam-gu, Busan",
+        "lat": 35.129513,
+        "lng": 129.094141
+      }
+    ]
+  },
+  {
     "title": "แผนเที่ยวปูซาน 1 วัน 2 วัน 3 วัน: วิธีจัดเส้นทางให้เข้ากับตารางของคุณ",
     "url": "2026-11-06-busan-itinerary-builder-guide-th.html",
     "thumb": "assets/thumbs/trip-planner/busan-itinerary-builder-guide.jpg",

@@ -1,5 +1,67 @@
 [
   {
+    "title": "Mua đồ Hàn Quốc ở chợ truyền thống Busan: từ chăn mền đến dao rèn tay",
+    "url": "2026-11-14-busan-market-korean-goods-guide-vi.html",
+    "thumb": "assets/thumbs/trip-planner/busan-market-korean-goods-guide.jpg",
+    "label": "Lộ trình · Trực tuyến",
+    "alt": "Một con hẻm đông người trong chợ Bujeon, Busan",
+    "badge": null,
+    "like_id": "trip-planner/2026-11-14-busan-market-korean-goods-guide-vi.html",
+    "date": "2026-11-14",
+    "kw": "mua sắm Busan chợ truyền thống chợ Busanjin chợ Bujeon chợ Bupyeong Kkangtong chợ Gukje chăn mink chăn Hàn Quốc ttukbaegi bát đồng bộ thìa đũa khăn kỳ Italy towel đồ tắm tất Hàn Quốc áo gile của bà áo gile kimjang quần momppae halmaenial hanbok hộp xà cừ bojagi lò rèn Gaya cuốc homi Gimhae Bảo tàng Busan đồ lưu niệm quà Busan",
+    "city": "busan",
+    "locations": [
+      {
+        "name": "Chợ Busanjin",
+        "address": "24 Jinsijang-ro, Dong-gu, Busan",
+        "lat": 35.1364,
+        "lng": 129.0587
+      },
+      {
+        "name": "Chợ truyền thống Haeundae",
+        "address": "22-1 Gunam-ro 41beon-gil, Haeundae-gu, Busan",
+        "lat": 35.1614,
+        "lng": 129.1623
+      },
+      {
+        "name": "Chợ Bupyeong Kkangtong",
+        "address": "48 Bupyeong 1-gil, Jung-gu, Busan",
+        "lat": 35.1018,
+        "lng": 129.0267
+      },
+      {
+        "name": "Italy House",
+        "address": "11-1 Jung-gu-ro 47beon-gil, Jung-gu, Busan",
+        "lat": 35.102087,
+        "lng": 129.027297
+      },
+      {
+        "name": "Chợ Gukje",
+        "address": "Sinchang-dong 4-ga 40-5, Jung-gu, Busan",
+        "lat": 35.1008,
+        "lng": 129.0287
+      },
+      {
+        "name": "Ga Bujeon (trước chợ Bujeon)",
+        "address": "783 Jungang-daero, Busanjin-gu, Busan",
+        "lat": 35.162378,
+        "lng": 129.062855
+      },
+      {
+        "name": "Lò rèn Gaya",
+        "address": "67-10 Bonghwangdae-gil, Gimhae-si, Gyeongnam",
+        "lat": 35.230563,
+        "lng": 128.879891
+      },
+      {
+        "name": "Bảo tàng Busan",
+        "address": "63 UN pyeonghwa-ro, Nam-gu, Busan",
+        "lat": 35.129513,
+        "lng": 129.094141
+      }
+    ]
+  },
+  {
     "title": "Lịch trình Busan 1, 2, 3 ngày: cách tự lên lộ trình hợp với kế hoạch của bạn",
     "url": "2026-11-06-busan-itinerary-builder-guide-vi.html",
     "thumb": "assets/thumbs/trip-planner/busan-itinerary-builder-guide.jpg",

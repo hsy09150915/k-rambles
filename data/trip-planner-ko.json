@@ -1,5 +1,67 @@
 [
   {
+    "title": "부산 전통시장에서 사는 한국 생활용품, 담요부터 대장간 칼까지",
+    "url": "2026-11-14-busan-market-korean-goods-guide-ko.html",
+    "thumb": "assets/thumbs/trip-planner/busan-market-korean-goods-guide.jpg",
+    "label": "여행 계획 · 공개중",
+    "alt": "사람들로 붐비는 부산 부전시장 골목",
+    "badge": null,
+    "like_id": "trip-planner/2026-11-14-busan-market-korean-goods-guide-ko.html",
+    "date": "2026-11-14",
+    "kw": "부산 쇼핑 전통시장 부산진시장 부전시장 부평깡통시장 국제시장 밍크담요 이불 뚝배기 놋그릇 유기 수저 세트 그릇가게 삼영주방 이태리타월 때밀이 때수건 목욕용품 영도할머니 한국 양말 양말천국 할머니 조끼 김장조끼 몸빼바지 할매니얼 한복 자개함 보자기 매듭 대장간 가야대장간 호미 김해 부산박물관 굿즈 뮷즈 까치호랑이 부산 기념품",
+    "city": "busan",
+    "locations": [
+      {
+        "name": "부산진시장",
+        "address": "부산 동구 진시장로 24",
+        "lat": 35.1364,
+        "lng": 129.0587
+      },
+      {
+        "name": "해운대전통시장",
+        "address": "부산 해운대구 구남로41번길 22-1",
+        "lat": 35.1614,
+        "lng": 129.1623
+      },
+      {
+        "name": "부평깡통시장",
+        "address": "부산 중구 부평1길 48",
+        "lat": 35.1018,
+        "lng": 129.0267
+      },
+      {
+        "name": "이태리집",
+        "address": "부산 중구 중구로47번길 11-1",
+        "lat": 35.102087,
+        "lng": 129.027297
+      },
+      {
+        "name": "국제시장",
+        "address": "부산 중구 신창동4가 40-5",
+        "lat": 35.1008,
+        "lng": 129.0287
+      },
+      {
+        "name": "부전역 (부전시장 앞)",
+        "address": "부산 부산진구 중앙대로 지하 783",
+        "lat": 35.162378,
+        "lng": 129.062855
+      },
+      {
+        "name": "가야대장간",
+        "address": "경남 김해시 봉황대길 67-10",
+        "lat": 35.230563,
+        "lng": 128.879891
+      },
+      {
+        "name": "부산박물관",
+        "address": "부산 남구 유엔평화로 63",
+        "lat": 35.129513,
+        "lng": 129.094141
+      }
+    ]
+  },
+  {
     "title": "부산 1일, 2일, 3일 여행 코스, 내 일정에 맞게 짜는 법",
     "url": "2026-11-06-busan-itinerary-builder-guide-ko.html",
     "thumb": "assets/thumbs/trip-planner/busan-itinerary-builder-guide.jpg",
