@@ -39,7 +39,7 @@
 - **감천문화마을: 사진 명소와 가기 전에 알아둘 것** — 키워드: 부산 감천 문화마을 벽화 사진 사하구 벽화마을 뷰 경치 포토스팟
 
 ## Taste (미식) (19개)
-- **외국인이 한국 편의점에서 가장 많이 사는 음식, 한국인은 뭘 살까** — 키워드: 편의점 바나나맛우유 뚱바라떼 그릭요거트 감동란 식혜 찜질방 삼각김밥 김밥 라면 군고구마 두바이쫀득쿠키 허니버터아몬드 냉라면 카레 감자면 얼박사 단백질 음료 프로틴바 GS25 CU 세븐일레븐 korean convenience store banana milk greek yogurt gamdongran samgak gimbap ulbaksa (2026-11-16)
+- **외국인이 한국 편의점에서 가장 많이 사는 음식, 한국인은 뭘 살까** — 키워드: 편의점 편의점음식 바나나맛우유 뚱바라떼 그릭요거트 감동란 식혜 찜질방 삼각김밥 김밥 라면 군고구마 두바이쫀득쿠키 허니버터아몬드 냉라면 카레 감자면 얼박사 단백질 음료 프로틴바 GS25 CU 세븐일레븐 korean convenience store banana milk greek yogurt gamdongran samgak gimbap ulbaksa (2026-11-16)
 - **부산 바다 보며 라면 먹는 곳, 직접 끓이는 편의점부터 해물라면집까지** — 키워드: 부산 한국 음식 라면 한강라면 즉석라면 라면 기계 편의점 라면 바다 라면 오션뷰 편의점 라면도서관 해물라면 편의점 김밥 해운대 달맞이길 청사포 송정 광안리 민락수변공원 기장 연화리 영도 흰여울 다대포 미포 busan ramen korean ramyeon instant ramen cooker seafood ramyeon convenience store gimbap (2026-11-10)
 - **부산 돼지고기구이 가이드, 삼겹살부터 목살, 돼지갈비, 등갈비까지** — 키워드: 부산 음식 돼지고기 구이 삼겹살 생삼겹살 오겹살 대패삼겹살 목살 항정살 갈매기살 가브리살 껍데기 뒷고기 육회 돼지갈비 숯불갈비 양념갈비 생갈비 등갈비 쪽갈비 등뼈찜 양푼이갈비찜 부산 맛집 busan pork bbq samgyeopsal moksal hangjeongsal galmaegisal kkeopdegi dwaeji galbi deung galbi
 - **부산 돼지고기 식사 가이드, 뼈해장국부터 제육볶음, 돼지불백, 김치찌개까지** — 키워드: 부산 한국 음식 돼지고기 뼈해장국 뼈다귀해장국 감자탕 제육볶음 두루치기 돼지불백 불백 김치찌개 돼지김치찌개 김치찜 돼지찌개 부산 맛집 busan korean pork stew gamjatang jeyuk-bokkeum dwaeji-bulbaek kimchi-jjigae kimchi-jjim
