@@ -1,5 +1,89 @@
 [
  {
+  "slug": "banana-milk",
+  "cat": "other",
+  "article": "2026-11-16-korea-convenience-store-foods",
+  "anchor": "sec-banana",
+  "src": "/assets/img/inl/934b24057ec3.jpg",
+  "ko": "바나나맛우유",
+  "name": {
+   "en": "Banana milk",
+   "ko": "바나나맛우유",
+   "vi": "Sữa chuối",
+   "th": "นมกล้วย"
+  }
+ },
+ {
+  "slug": "greek-yogurt",
+  "cat": "other",
+  "article": "2026-11-16-korea-convenience-store-foods",
+  "anchor": "sec-yogurt",
+  "src": "/assets/img/inl/362b7f794a06.jpg",
+  "ko": "그릭요거트",
+  "name": {
+   "en": "Greek yogurt",
+   "ko": "그릭요거트",
+   "vi": "Sữa chua Hy Lạp",
+   "th": "กรีกโยเกิร์ต"
+  }
+ },
+ {
+  "slug": "gamdongran",
+  "cat": "other",
+  "article": "2026-11-16-korea-convenience-store-foods",
+  "anchor": "sec-egg",
+  "src": "/assets/img/inl/ec4182c03c86.jpg",
+  "ko": "감동란",
+  "name": {
+   "en": "Gamdongran eggs",
+   "ko": "감동란",
+   "vi": "Trứng Gamdongran",
+   "th": "ไข่คัมดงรัน"
+  }
+ },
+ {
+  "slug": "samgak-gimbap",
+  "cat": "other",
+  "article": "2026-11-16-korea-convenience-store-foods",
+  "anchor": "sec-gimbap",
+  "src": "/assets/img/inl/2bacaa953d04.jpg",
+  "ko": "삼각김밥",
+  "name": {
+   "en": "Triangle gimbap",
+   "ko": "삼각김밥",
+   "vi": "Gimbap tam giác",
+   "th": "คิมบับสามเหลี่ยม"
+  }
+ },
+ {
+  "slug": "roasted-sweet-potato",
+  "cat": "other",
+  "article": "2026-11-16-korea-convenience-store-foods",
+  "anchor": "sec-dessert",
+  "src": "/assets/img/inl/5f660644af5d.jpg",
+  "ko": "군고구마",
+  "name": {
+   "en": "Roasted sweet potato",
+   "ko": "군고구마",
+   "vi": "Khoai lang nướng",
+   "th": "มันหวานเผา"
+  }
+ },
+ {
+  "slug": "convenience-store-cold-ramen",
+  "cat": "other",
+  "article": "2026-11-16-korea-convenience-store-foods",
+  "anchor": "sec-combo",
+  "src": "/assets/img/inl/545e9edae8e6.jpg",
+  "ko": "편의점 냉라면",
+  "name": {
+   "en": "Convenience store cold ramen",
+   "ko": "편의점 냉라면",
+   "vi": "Mì lạnh cửa hàng tiện lợi",
+   "th": "รามยอนเย็นร้านสะดวกซื้อ"
+  }
+ },
+ {
   "slug": "haemul-ramyeon",
   "cat": "seafood",
   "article": "2026-11-10-busan-seaside-ramen-spots",
