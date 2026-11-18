@@ -186,7 +186,7 @@
 
 ## Vietnamese (Tiếng Việt)
 
-- Category pages: [Trip planning](https://k-rambles.com/vi/trip-planner/), [Getting around Busan](https://k-rambles.com/vi/getting-around/), [Food](https://k-rambles.com/vi/taste/index.html), [Long-stay living](https://k-rambles.com/vi/long-stay/)
+- Category pages: [Trip planning](https://k-rambles.com/vi/trip-planner/), [Getting around Busan](https://k-rambles.com/vi/getting-around/), [Food](https://k-rambles.com/vi/taste/), [Long-stay living](https://k-rambles.com/vi/long-stay/)
 
 ### Trip planning
 

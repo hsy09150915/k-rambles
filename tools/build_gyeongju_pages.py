@@ -162,7 +162,7 @@ def build_main(lang):
     s = sub1(r'<h1 class="headline">.*?</h1>', '<h1 class="headline">%s</h1>' % d['head'], s)
     s = sub1(r'<p class="lede">.*?</p>', '<p class="lede">%s</p>' % d['lede'], s)
     s = sub1(r'<p class="city-cta-text">.*?</p>', '<p class="city-cta-text">%s</p>' % d['cta'], s)
-    s = sub1(r'<a class="city-pill" href="[^"]*">.*?</a>', '<a class="city-pill" href="/%sindex.html">%s%s →</a>' % (pre(lang), PIN, d['city']), s)
+    s = sub1(r'<a class="city-pill" href="[^"]*">.*?</a>', '<a class="city-pill" href="/%s">%s%s →</a>' % (pre(lang), PIN, d['city']), s)
     hero = ('<div class="hero-img-wrap"><picture>\n'
             '        <source media="(max-width: 760px)" srcset="/assets/hero/gyeongju-wide.jpg" width="1200" height="750">\n'
             '        <img src="/assets/hero/gyeongju-landscape.jpg" width="1200" height="899" alt="%s" fetchpriority="high" decoding="async">\n'
@@ -172,7 +172,7 @@ def build_main(lang):
     s = sub1(r'(id="site-search" placeholder=")[^"]*', None, s) if False else re.sub(r'(id="site-search" placeholder=")[^"]*', lambda m: m.group(1) + d['search'], s, count=1)
     s = sub1(r'<span class="mono">K-Rambles · [^<]*</span>', '<span class="mono">%s</span>' % d['foot'], s)
     for b in BOARDS:
-        s, n = re.subn(r'href="/%s%s/index\.html"' % (pre(lang), b), 'href="/%sgyeongju/%s/index.html"' % (pre(lang), b), s)
+        s, n = re.subn(r'href="/%s%s/"' % (pre(lang), b), 'href="/%sgyeongju/%s/"' % (pre(lang), b), s)
         assert n == 1, (lang, b, n)
         s, n = re.subn(r'/assets/img/inl/%s\.png' % COVER_OLD[b], '/assets/img/inl/%s.png' % COVER[b], s)
         assert n == 1, (lang, b, 'cover')
@@ -195,7 +195,7 @@ def build_hub(lang, b):
     s = s.replace('</head>', HUB_THEME % HUB_COL[b] + '</head>', 1)
     s = sub1(r'<p class="hub-dek">[^<]*</p>', '<p class="hub-dek">%s</p>' % dek, s)
     s = sub1(r'(id="site-search" placeholder=")[^"]*', None, s) if False else re.sub(r'(id="site-search" placeholder=")[^"]*', lambda m: m.group(1) + ph, s, count=1)
-    s, n = re.subn(r'<a class="logo" href="/%sindex\.html">' % pre(lang), '<a class="logo" href="/%sgyeongju/index.html">' % pre(lang), s)
+    s, n = re.subn(r'<a class="logo" href="/%s">' % pre(lang), '<a class="logo" href="/%sgyeongju/">' % pre(lang), s)
     assert n == 1, (lang, b, 'logo')
     s, n = re.subn(r'KR\.renderHub\(\{', "KR.renderHub({\n    city: 'gyeongju',\n    articleBase: '/%s%s/'," % (pre(lang), b), s)
     assert n == 1
@@ -210,7 +210,7 @@ def translations():
     p = os.path.join(ROOT, 'data', 'translations.json')
     t = json.load(open(p, encoding='utf-8'))
     for key in ['gyeongju/index'] + ['gyeongju/%s/index' % b for b in BOARDS]:
-        path = key + '.html'
+        path = key[:-len('index')]  # 대표 주소(슬래시) 형식: gyeongju/, gyeongju/<board>/
         t[key] = {l: '/' + pre(l) + path for l in ('en', 'ko', 'vi', 'th')}
     json.dump(t, open(p, 'w', encoding='utf-8'), ensure_ascii=False, indent=2)
     open(p, 'a').write('\n')

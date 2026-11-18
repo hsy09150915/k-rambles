@@ -2475,7 +2475,7 @@
       if (u.origin !== location.origin) { return; }
       var mm = u.pathname.match(re);
       if (!mm) { return; }
-      u.pathname = '/' + (mm[1] || '') + cityPath(city) + (mm[2] ? mm[2] + '/' : '') + 'index.html';
+      u.pathname = '/' + (mm[1] || '') + cityPath(city) + (mm[2] ? mm[2] + '/' : '');
       a.setAttribute('href', u.pathname + u.search + u.hash);
     });
   }
@@ -2486,7 +2486,7 @@
     var label = { en: 'Cities', ko: '도시', vi: 'Thành phố', th: 'เมือง' }[lang] || 'Cities';
     var links = cities.filter(function (c) { return c.id !== city; }).map(function (c) {
       var name = (c.name && (c.name[lang] || c.name.en)) || c.id;
-      return '<a href="' + langPrefix + cityPath(c.id) + 'index.html">' + name + '</a>';
+      return '<a href="' + langPrefix + cityPath(c.id) + '">' + name + '</a>';
     }).join('');
     if (links) { slot.innerHTML = '<p class="menu-label">' + label + '</p>' + links; }
   }).catch(function () {});

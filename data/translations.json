@@ -156,16 +156,16 @@
     "vi": "/vi/getting-around/2026-09-26-korea-delivery-apps-guide-vi.html"
   },
   "getting-around/index": {
-    "en": "/getting-around/index.html",
-    "ko": "/ko/getting-around/index.html",
-    "th": "/th/getting-around/index.html",
-    "vi": "/vi/getting-around/index.html"
+    "en": "/getting-around/",
+    "ko": "/ko/getting-around/",
+    "th": "/th/getting-around/",
+    "vi": "/vi/getting-around/"
   },
   "index": {
-    "en": "/index.html",
-    "ko": "/ko/index.html",
-    "th": "/th/index.html",
-    "vi": "/vi/index.html"
+    "en": "/",
+    "ko": "/ko/",
+    "th": "/th/",
+    "vi": "/vi/"
   },
   "liked": {
     "en": "/liked.html",
@@ -198,10 +198,10 @@
     "vi": "/vi/long-stay/2026-09-20-korea-phone-plan-guide-vi.html"
   },
   "long-stay/index": {
-    "en": "/long-stay/index.html",
-    "ko": "/ko/long-stay/index.html",
-    "th": "/th/long-stay/index.html",
-    "vi": "/vi/long-stay/index.html"
+    "en": "/long-stay/",
+    "ko": "/ko/long-stay/",
+    "th": "/th/long-stay/",
+    "vi": "/vi/long-stay/"
   },
   "privacy": {
     "en": "/privacy.html",
@@ -252,10 +252,10 @@
     "vi": "/vi/taste/2026-10-12-busan-restaurant-reservation-waiting-guide-vi.html"
   },
   "taste/index": {
-    "en": "/taste/index.html",
-    "ko": "/ko/taste/index.html",
-    "th": "/th/taste/index.html",
-    "vi": "/vi/taste/index.html"
+    "en": "/taste/",
+    "ko": "/ko/taste/",
+    "th": "/th/taste/",
+    "vi": "/vi/taste/"
   },
   "taste/taste-dwaeji-gukbap": {
     "en": "/taste/taste-dwaeji-gukbap.html",
@@ -324,10 +324,10 @@
     "vi": "/vi/trip-planner/2026-09-23-busan-views-cablecar-tower-yacht-vi.html"
   },
   "trip-planner/index": {
-    "en": "/trip-planner/index.html",
-    "ko": "/ko/trip-planner/index.html",
-    "th": "/th/trip-planner/index.html",
-    "vi": "/vi/trip-planner/index.html"
+    "en": "/trip-planner/",
+    "ko": "/ko/trip-planner/",
+    "th": "/th/trip-planner/",
+    "vi": "/vi/trip-planner/"
   },
   "trip-planner/2026-09-29-best-busan-saunas-en": {
     "en": "/trip-planner/2026-09-29-best-busan-saunas-en.html",
@@ -468,34 +468,34 @@
     "vi": "/vi/taste/2026-11-16-korea-convenience-store-foods-vi.html"
   },
   "gyeongju/index": {
-    "en": "/gyeongju/index.html",
-    "ko": "/ko/gyeongju/index.html",
-    "vi": "/vi/gyeongju/index.html",
-    "th": "/th/gyeongju/index.html"
+    "en": "/gyeongju/",
+    "ko": "/ko/gyeongju/",
+    "vi": "/vi/gyeongju/",
+    "th": "/th/gyeongju/"
   },
   "gyeongju/trip-planner/index": {
-    "en": "/gyeongju/trip-planner/index.html",
-    "ko": "/ko/gyeongju/trip-planner/index.html",
-    "vi": "/vi/gyeongju/trip-planner/index.html",
-    "th": "/th/gyeongju/trip-planner/index.html"
+    "en": "/gyeongju/trip-planner/",
+    "ko": "/ko/gyeongju/trip-planner/",
+    "vi": "/vi/gyeongju/trip-planner/",
+    "th": "/th/gyeongju/trip-planner/"
   },
   "gyeongju/getting-around/index": {
-    "en": "/gyeongju/getting-around/index.html",
-    "ko": "/ko/gyeongju/getting-around/index.html",
-    "vi": "/vi/gyeongju/getting-around/index.html",
-    "th": "/th/gyeongju/getting-around/index.html"
+    "en": "/gyeongju/getting-around/",
+    "ko": "/ko/gyeongju/getting-around/",
+    "vi": "/vi/gyeongju/getting-around/",
+    "th": "/th/gyeongju/getting-around/"
   },
   "gyeongju/taste/index": {
-    "en": "/gyeongju/taste/index.html",
-    "ko": "/ko/gyeongju/taste/index.html",
-    "vi": "/vi/gyeongju/taste/index.html",
-    "th": "/th/gyeongju/taste/index.html"
+    "en": "/gyeongju/taste/",
+    "ko": "/ko/gyeongju/taste/",
+    "vi": "/vi/gyeongju/taste/",
+    "th": "/th/gyeongju/taste/"
   },
   "gyeongju/long-stay/index": {
-    "en": "/gyeongju/long-stay/index.html",
-    "ko": "/ko/gyeongju/long-stay/index.html",
-    "vi": "/vi/gyeongju/long-stay/index.html",
-    "th": "/th/gyeongju/long-stay/index.html"
+    "en": "/gyeongju/long-stay/",
+    "ko": "/ko/gyeongju/long-stay/",
+    "vi": "/vi/gyeongju/long-stay/",
+    "th": "/th/gyeongju/long-stay/"
   },
   "getting-around/2026-11-17-busan-to-gyeongju-transport-guide-en": {
     "en": "/getting-around/2026-11-17-busan-to-gyeongju-transport-guide-en.html",
