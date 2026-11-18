@@ -67,9 +67,9 @@
 - [Busan Eel Guide: Hagfish Is Not an Eel, Plus Conger Eel and Freshwater Eel](https://k-rambles.com/taste/2026-10-23-busan-eel-guide-en.html) — 2026-10-23
 - [3 Local Busan Foods: How to Order and Eat Bokguk (Pufferfish Soup), Agujjim (Spicy Braised Monkfish) and Naengchae Jokbal (Cold Pig's Trotters)](https://k-rambles.com/taste/2026-10-23-busan-local-foods-guide-en.html) — 2026-10-23
 - [5 Signature Busan Foods: How to Order and Eat Dongnae Pajeon, Fish Cake, Nakgopsae, Pork Soup Rice and Milmyeon](https://k-rambles.com/taste/2026-10-23-busan-signature-foods-guide-en.html) — 2026-10-23
-- [Busan Cafe Culture Guide: Why Korean Cafes Are Special — Winter Iced Americanos, Studying in Cafes, Desserts and Jeonpo Cafe Street](https://k-rambles.com/taste/2026-10-15-busan-cafe-culture-guide-en.html) — 2026-10-15
-- [Busan Restaurant Guide for Foreigners: 12 Most-Asked Questions — Eating Alone, Self-Service, Paying and Tipping](https://k-rambles.com/taste/2026-10-14-busan-restaurant-etiquette-questions-en.html) — 2026-10-14
-- [Restaurant Reservations & Waitlists in Busan Without a Korean Phone Number (Catchtable Global Guide)](https://k-rambles.com/taste/2026-10-12-busan-restaurant-reservation-waiting-guide-en.html) — 2026-10-12
+- [Korean Cafe Culture Guide: Winter Iced Americanos, Studying in Cafes, Desserts and Busan's Jeonpo Cafe Street](https://k-rambles.com/taste/2026-10-15-busan-cafe-culture-guide-en.html) — 2026-10-15
+- [Korean Restaurant Guide for Foreigners: 12 Most-Asked Questions — Eating Alone, Self-Service, Paying and Tipping](https://k-rambles.com/taste/2026-10-14-busan-restaurant-etiquette-questions-en.html) — 2026-10-14
+- [Restaurant Reservations & Waitlists in Korea Without a Korean Phone Number (Catchtable Global Guide)](https://k-rambles.com/taste/2026-10-12-busan-restaurant-reservation-waiting-guide-en.html) — 2026-10-12
 - [20 Dwaeji Gukbap Spots, Picked by Busan Locals](https://k-rambles.com/taste/2026-09-23-busan-dwaeji-gukbap-20-en.html) — 2026-09-23
 - [Taejongdae Haenyeo Village: Sashimi by the Sea, Still Sliced in a Basin?](https://k-rambles.com/taste/2026-09-21-taejongdae-haenyeo-raw-seafood-en.html) — 2026-09-21
 - [Milmyeon, Busan's Wheat Cold Noodles: How It Differs from Naengmyeon](https://k-rambles.com/taste/2026-09-06-milmyeon-guide.html) — 2026-09-06
@@ -130,7 +130,7 @@
 - [부산에서 경주 가는 법, 기차와 버스부터 불국사, 황리단길 가는 버스까지](https://k-rambles.com/ko/getting-around/2026-11-17-busan-to-gyeongju-transport-guide-ko.html) — 2026-11-17
 - [서울에서 부산 가는 KTX 예매하는 법, 외국인을 위한 코레일 사이트·해외카드 안내](https://k-rambles.com/ko/getting-around/2026-10-22-korea-ktx-booking-guide-ko.html) — 2026-10-22
 - [외국인을 위한 한국 배달앱: 배민·셔틀·요기요 직접 해봤어요](https://k-rambles.com/ko/getting-around/2026-09-26-korea-delivery-apps-guide-ko.html) — 2026-09-26
-- [아플 때 어디로? 편의점·약국·병원 가이드](https://k-rambles.com/ko/getting-around/2026-09-25-korea-pharmacy-hospital-guide-ko.html) — 2026-09-25
+- [한국에서 아플 때 어디로? 편의점, 약국, 병원 가이드](https://k-rambles.com/ko/getting-around/2026-09-25-korea-pharmacy-hospital-guide-ko.html) — 2026-09-25
 - [한국인데 카드가 왜 안 돼요? — 해외카드 결제 실전 가이드](https://k-rambles.com/ko/getting-around/2026-09-24-korea-card-payment-guide-ko.html) — 2026-09-24
 - [부산에서 짐 보관, 지하철 로커면 대부분 끝나요](https://k-rambles.com/ko/getting-around/2026-09-24-busan-luggage-storage-ko.html) — 2026-09-24
 - [부산에서 쇼핑하고 세금 환급받는 법](https://k-rambles.com/ko/getting-around/2026-09-23-busan-tax-refund-ko.html) — 2026-09-23
@@ -156,9 +156,9 @@
 - [부산 장어 요리 안내, 곰장어, 붕장어, 민물장어 구분하고 주문하는 법](https://k-rambles.com/ko/taste/2026-10-23-busan-eel-guide-ko.html) — 2026-10-23
 - [부산 향토 음식 3가지, 복국(복어탕), 아구찜(아귀찜), 냉채족발 주문하고 먹는 법](https://k-rambles.com/ko/taste/2026-10-23-busan-local-foods-guide-ko.html) — 2026-10-23
 - [부산 대표 음식 5가지, 동래파전·어묵·낙곱새·돼지국밥·밀면 주문하고 먹는 법](https://k-rambles.com/ko/taste/2026-10-23-busan-signature-foods-guide-ko.html) — 2026-10-23
-- [부산 카페 문화 가이드, 한국 카페가 특별한 이유 — 얼죽아·카공·디저트·전포카페거리](https://k-rambles.com/ko/taste/2026-10-15-busan-cafe-culture-guide-ko.html) — 2026-10-15
-- [부산 식당 이용법, 외국인이 가장 많이 묻는 12가지 — 혼밥·셀프·계산·팁](https://k-rambles.com/ko/taste/2026-10-14-busan-restaurant-etiquette-questions-ko.html) — 2026-10-14
-- [부산 식당 예약·줄서기, 한국 전화번호 없이 하는 법 (캐치테이블 글로벌 중심)](https://k-rambles.com/ko/taste/2026-10-12-busan-restaurant-reservation-waiting-guide-ko.html) — 2026-10-12
+- [한국 카페 문화 가이드, 얼죽아, 카공, 디저트부터 부산 전포카페거리까지](https://k-rambles.com/ko/taste/2026-10-15-busan-cafe-culture-guide-ko.html) — 2026-10-15
+- [한국 식당 이용법, 외국인이 가장 많이 묻는 12가지: 혼밥, 셀프, 계산, 팁](https://k-rambles.com/ko/taste/2026-10-14-busan-restaurant-etiquette-questions-ko.html) — 2026-10-14
+- [한국 식당 예약과 줄서기, 현지 전화번호 없이 하는 법 (캐치테이블 글로벌 중심)](https://k-rambles.com/ko/taste/2026-10-12-busan-restaurant-reservation-waiting-guide-ko.html) — 2026-10-12
 - [부산 시민이 뽑은 돼지국밥집 20곳](https://k-rambles.com/ko/taste/2026-09-23-busan-dwaeji-gukbap-20-ko.html) — 2026-09-23
 - [태종대 해녀촌: 바닷가에서 먹는 회, 아직도 대야에서 썰어줄까?](https://k-rambles.com/ko/taste/2026-09-21-taejongdae-haenyeo-raw-seafood-ko.html) — 2026-09-21
 - [부산 밀면, 냉면과는 다른 이야기](https://k-rambles.com/ko/taste/2026-09-06-milmyeon-guide.html) — 2026-09-06
@@ -219,7 +219,7 @@
 - [Từ Busan đi Gyeongju bằng tàu hoặc xe buýt, kèm xe buýt nội thành đến Bulguksa và Hwangnidan-gil](https://k-rambles.com/vi/getting-around/2026-11-17-busan-to-gyeongju-transport-guide-vi.html) — 2026-11-17
 - [Cách đặt vé tàu KTX từ Seoul đi Busan: trang web Korail, ứng dụng Korail+ và thẻ nước ngoài](https://k-rambles.com/vi/getting-around/2026-10-22-korea-ktx-booking-guide-vi.html) — 2026-10-22
 - [Ứng dụng giao đồ ăn ở Hàn Quốc cho người nước ngoài: Chúng tôi đã thử Baemin, Shuttle và Yogiyo](https://k-rambles.com/vi/getting-around/2026-09-26-korea-delivery-apps-guide-vi.html) — 2026-09-26
-- [Bị ốm ở Hàn Quốc? Cửa hàng tiện lợi, hiệu thuốc, bệnh viện](https://k-rambles.com/vi/getting-around/2026-09-25-korea-pharmacy-hospital-guide-vi.html) — 2026-09-25
+- [Bị ốm ở Hàn Quốc thì đi đâu? Cửa hàng tiện lợi, hiệu thuốc, bệnh viện](https://k-rambles.com/vi/getting-around/2026-09-25-korea-pharmacy-hospital-guide-vi.html) — 2026-09-25
 - [Vì sao thẻ không quẹt được ở Hàn Quốc? — Hướng dẫn thực tế về thanh toán bằng thẻ nước ngoài](https://k-rambles.com/vi/getting-around/2026-09-24-korea-card-payment-guide-vi.html) — 2026-09-24
 - [Gửi hành lý ở Busan, tủ khóa ga tàu điện ngầm là đủ dùng rồi](https://k-rambles.com/vi/getting-around/2026-09-24-busan-luggage-storage-vi.html) — 2026-09-24
 - [Cách mua sắm và hoàn thuế ở Busan](https://k-rambles.com/vi/getting-around/2026-09-23-busan-tax-refund-vi.html) — 2026-09-23
@@ -245,9 +245,9 @@
 - [Hướng dẫn món lươn ở Busan: gomjangeo (hagfish) không phải lươn, cách phân biệt với lươn biển bungjangeo và lươn nước ngọt khi gọi món](https://k-rambles.com/vi/taste/2026-10-23-busan-eel-guide-vi.html) — 2026-10-23
 - [3 món địa phương của Busan: cách gọi món và cách ăn bokguk (canh cá nóc), agujjim (cá monkfish hầm cay) và naengchae jokbal (giò heo lạnh)](https://k-rambles.com/vi/taste/2026-10-23-busan-local-foods-guide-vi.html) — 2026-10-23
 - [5 món đặc trưng của Busan: cách gọi món và cách ăn Dongnae pajeon, chả cá, nakgopsae, dwaeji gukbap và milmyeon (mì lúa mì lạnh)](https://k-rambles.com/vi/taste/2026-10-23-busan-signature-foods-guide-vi.html) — 2026-10-23
-- [Hướng dẫn văn hóa cà phê ở Busan: vì sao quán cà phê Hàn Quốc đặc biệt — Americano đá mùa đông, học bài ở quán, món tráng miệng và phố cà phê Jeonpo](https://k-rambles.com/vi/taste/2026-10-15-busan-cafe-culture-guide-vi.html) — 2026-10-15
-- [Hướng dẫn nhà hàng ở Busan cho người nước ngoài: 12 câu hỏi hay gặp nhất — ăn một mình, tự phục vụ, thanh toán và tiền boa](https://k-rambles.com/vi/taste/2026-10-14-busan-restaurant-etiquette-questions-vi.html) — 2026-10-14
-- [Đặt bàn và xếp hàng chờ nhà hàng ở Busan khi không có số điện thoại Hàn Quốc (hướng dẫn ứng dụng Catchtable Global)](https://k-rambles.com/vi/taste/2026-10-12-busan-restaurant-reservation-waiting-guide-vi.html) — 2026-10-12
+- [Hướng dẫn văn hóa cà phê Hàn Quốc: Americano đá mùa đông, học bài ở quán, món tráng miệng và phố cà phê Jeonpo ở Busan](https://k-rambles.com/vi/taste/2026-10-15-busan-cafe-culture-guide-vi.html) — 2026-10-15
+- [Hướng dẫn đi nhà hàng ở Hàn Quốc cho người nước ngoài: 12 câu hỏi hay gặp nhất — ăn một mình, tự phục vụ, thanh toán và tiền boa](https://k-rambles.com/vi/taste/2026-10-14-busan-restaurant-etiquette-questions-vi.html) — 2026-10-14
+- [Đặt bàn và xếp hàng chờ nhà hàng ở Hàn Quốc khi không có số điện thoại Hàn Quốc (hướng dẫn ứng dụng Catchtable Global)](https://k-rambles.com/vi/taste/2026-10-12-busan-restaurant-reservation-waiting-guide-vi.html) — 2026-10-12
 - [20 quán dwaeji gukbap do người dân Busan bình chọn](https://k-rambles.com/vi/taste/2026-09-23-busan-dwaeji-gukbap-20-vi.html) — 2026-09-23
 - [Làng haenyeo Taejongdae: cá sống bên bờ biển, còn thái ngay trong chậu không?](https://k-rambles.com/vi/taste/2026-09-21-taejongdae-haenyeo-raw-seafood-vi.html) — 2026-09-21
 - [Milmyeon, món mì lạnh bột mì của Busan: khác naengmyeon thế nào](https://k-rambles.com/vi/taste/2026-09-06-milmyeon-guide-vi.html) — 2026-09-06
@@ -334,9 +334,9 @@
 - [คู่มือปลาไหลในปูซาน แยกแฮกฟิช ที่ไม่ใช่ปลาไหล ปลาไหลทะเล และปลาไหลน้ำจืด พร้อมวิธีสั่ง](https://k-rambles.com/th/taste/2026-10-23-busan-eel-guide-th.html) — 2026-10-23
 - [อาหารพื้นเมืองปูซาน 3 อย่าง: ซุปปลาปักเป้าพกกุก อากูจิม และเนงแชชกบัล วิธีสั่งและวิธีกิน](https://k-rambles.com/th/taste/2026-10-23-busan-local-foods-guide-th.html) — 2026-10-23
 - [อาหารขึ้นชื่อ 5 อย่างของปูซาน: แพนเค้กต้นหอมทงแน พาจอน เค้กปลาออมุก นักกบแซ ข้าวซุปหมูทแวจีกุกบับ และมิลมยอน](https://k-rambles.com/th/taste/2026-10-23-busan-signature-foods-guide-th.html) — 2026-10-23
-- [คู่มือวัฒนธรรมคาเฟ่ในปูซาน ทำไมคาเฟ่เกาหลีถึงพิเศษ — อเมริกาโนเย็นกลางหน้าหนาว การอ่านหนังสือในคาเฟ่ ขนมหวาน และถนนคาเฟ่จอนโพ](https://k-rambles.com/th/taste/2026-10-15-busan-cafe-culture-guide-th.html) — 2026-10-15
-- [คู่มือร้านอาหารในปูซานสำหรับชาวต่างชาติ: 12 คำถามที่ถามบ่อยที่สุด — กินคนเดียว บริการตัวเอง การจ่ายเงิน และทิป](https://k-rambles.com/th/taste/2026-10-14-busan-restaurant-etiquette-questions-th.html) — 2026-10-14
-- [จองโต๊ะและต่อคิวร้านอาหารในปูซานโดยไม่มีเบอร์โทรเกาหลี (คู่มือแอป Catchtable Global)](https://k-rambles.com/th/taste/2026-10-12-busan-restaurant-reservation-waiting-guide-th.html) — 2026-10-12
+- [คู่มือวัฒนธรรมคาเฟ่เกาหลี: อเมริกาโนเย็นกลางหน้าหนาว การอ่านหนังสือในคาเฟ่ ขนมหวาน และถนนคาเฟ่จอนโพในปูซาน](https://k-rambles.com/th/taste/2026-10-15-busan-cafe-culture-guide-th.html) — 2026-10-15
+- [คู่มือร้านอาหารในเกาหลีสำหรับชาวต่างชาติ: 12 คำถามที่ถามบ่อยที่สุด — กินคนเดียว บริการตัวเอง การจ่ายเงิน และทิป](https://k-rambles.com/th/taste/2026-10-14-busan-restaurant-etiquette-questions-th.html) — 2026-10-14
+- [จองโต๊ะและต่อคิวร้านอาหารในเกาหลีโดยไม่มีเบอร์โทรเกาหลี (คู่มือแอป Catchtable Global)](https://k-rambles.com/th/taste/2026-10-12-busan-restaurant-reservation-waiting-guide-th.html) — 2026-10-12
 - [20 ร้านทแวจีกุกบับที่ชาวปูซานเลือก](https://k-rambles.com/th/taste/2026-09-23-busan-dwaeji-gukbap-20-th.html) — 2026-09-23
 - [หมู่บ้านแฮนยอแทจงแด: ปลาดิบริมทะเล ยังหั่นในกะละมังอยู่ไหม?](https://k-rambles.com/th/taste/2026-09-21-taejongdae-haenyeo-raw-seafood-th.html) — 2026-09-21
 - [มิลมยอน เส้นแป้งสาลีเย็นของปูซาน: ต่างจากเนงมยอนอย่างไร](https://k-rambles.com/th/taste/2026-09-06-milmyeon-guide-th.html) — 2026-09-06

@@ -7,7 +7,7 @@
 - **서울에서 경주 가는 법, KTX와 고속버스 비교부터 휴게소 즐기는 법까지** — 도시: 경주 — 키워드: 경주 서울 경주 KTX KTX-이음 서울역 수서역 청량리역 고속버스 서울고속버스터미널 경부선 우등 프리미엄 휴게소 낙동강휴게소 호두과자 소떡소떡 인천공항 경주 당일치기 (2026-11-17)
 - **서울에서 부산 가는 KTX 예매하는 법, 외국인을 위한 코레일 사이트·해외카드 안내** — 키워드: KTX 코레일 코레일+ 코레일패스 서울역 수서역 부산역 부전역 구포역 기차 예매 해외카드 SRT 입석 환불 취소 고속열차 KTX-이음 서울 부산 (2026-10-22)
 - **외국인을 위한 한국 배달앱: 배민·셔틀·요기요 직접 해봤어요** — 키워드: delivery app baemin coupang eats yogiyo shuttle foreigner korea busan food delivery 배달앱 배달의민족 배민 쿠팡이츠 셔틀 요기요 외국인 회원가입 해외카드
-- **아플 때 어디로? 편의점·약국·병원 가이드** — 키워드: pharmacy hospital clinic medicine sick emergency korea busan convenience store otc drug referral tertiary hospital 약국 병원 편의점 상비약 진료과 1차 2차 3차 상급종합병원 진료의뢰서 아플때
+- **한국에서 아플 때 어디로? 편의점, 약국, 병원 가이드** — 키워드: pharmacy hospital clinic medicine sick emergency korea busan convenience store otc drug referral tertiary hospital 약국 병원 편의점 상비약 진료과 1차 2차 3차 상급종합병원 진료의뢰서 아플때
 - **부산에서 환전하는 법 — ATM, 환전소 뭐가 유리할까** — 키워드: 환전 환전소 atm 해외카드 인출 캐시어드밴스 cash advance 트래블카드 와이즈 하나은행 우리은행 신한은행 국민은행 네이버지도 부산
 - **한국인데 카드가 왜 안 돼요? — 해외카드 결제 실전 가이드** — 키워드: card payment korea contactless tap nfc credit card foreign card decline apple pay google pay visa mastercard t-money cash 카드결제 컨택리스 해외카드 신용카드 체크카드 애플페이 구글페이 결제거절 티머니 현금
 - **부산에서 짐 보관, 지하철 로커면 대부분 끝나요** — 키워드: luggage storage busan coin locker large suitcase zimcarry delivery gwangalli tourist center free 짐보관 물품보관함 짐캐리 캐리어
@@ -54,9 +54,9 @@
 - **부산 장어 요리 안내, 곰장어, 붕장어, 민물장어 구분하고 주문하는 법** — 키워드: 부산 음식 부산 장어 곰장어 꼼장어 먹장어 짚불곰장어 기장 곰장어 붕장어 아나고 아나고회 민물장어 뱀장어 장어구이 자갈치 곰장어골목 busan eel hagfish conger eel freshwater eel grilled eel kkomjangeo anago 부산 맛집 음식 (2026-10-23)
 - **부산 향토 음식 3가지, 복국(복어탕), 아구찜(아귀찜), 냉채족발 주문하고 먹는 법** — 키워드: 부산 음식 부산 향토 음식 복국 복어탕 부산 복어 복어회 복수육 아구찜 아귀찜 아귀탕 아귀수육 냉채족발 부평동 족발골목 해파리냉채 busan food busan local food bokguk pufferfish soup agujjim monkfish stew naengchae jokbal jellyfish pork trotters 부산 맛집 음식 (2026-10-23)
 - **부산 대표 음식 5가지, 동래파전·어묵·낙곱새·돼지국밥·밀면 주문하고 먹는 법** — 키워드: 부산 음식 부산 대표 음식 동래파전 해물파전 동래할매파전 부산 어묵 어묵 삼진어묵 물떡 낙곱새 조방낙지 돼지국밥 밀면 busan food dongnae pajeon eomuk fish cake nakgopsae jobang nakji dwaeji gukbap milmyeon 부산 맛집 음식 (2026-10-23)
-- **부산 카페 문화 가이드, 한국 카페가 특별한 이유 — 얼죽아·카공·디저트·전포카페거리** — 키워드: cafe culture korean cafe eoljuga iced americano kagongjok study cafe instagrammable food photo jeonpo cafe street mullae-dong salt bread bingsu croffle dalgona busan cafe 카페 문화 한국 카페 얼죽아 아아 뜨아 카공 카공족 먹스타그램 인스타그래머블 전포카페거리 전포동 문래동 카페 디저트 소금빵 빙수 크로플 달고나커피 부산 카페
-- **부산 식당 이용법, 외국인이 가장 많이 묻는 12가지 — 혼밥·셀프·계산·팁** — 키워드: restaurant etiquette eating alone honbap self service tipping banchan call bell allergy vegetarian vegan break time busan restaurant foreigner 식당 에티켓 이용법 혼밥 혼자 셀프 팁 계산 호출벨 반찬 브레이크타임 알레르기 채식 비건 부산 맛집 외국인
-- **부산 식당 예약·줄서기, 한국 전화번호 없이 하는 법 (캐치테이블 글로벌 중심)** — 키워드: restaurant reservation waitlist catchtable global naver map tabling busan restaurant foreigner phone number 식당 예약 줄서기 웨이팅 캐치테이블 네이버 예약 테이블링 부산 맛집 외국인 전화번호
+- **한국 카페 문화 가이드, 얼죽아, 카공, 디저트부터 부산 전포카페거리까지** — 도시: 한국 전체 — 키워드: cafe culture korean cafe eoljuga iced americano kagongjok study cafe instagrammable food photo jeonpo cafe street mullae-dong salt bread bingsu croffle dalgona busan cafe 카페 문화 한국 카페 얼죽아 아아 뜨아 카공 카공족 먹스타그램 인스타그래머블 전포카페거리 전포동 문래동 카페 디저트 소금빵 빙수 크로플 달고나커피 부산 카페
+- **한국 식당 이용법, 외국인이 가장 많이 묻는 12가지: 혼밥, 셀프, 계산, 팁** — 도시: 한국 전체 — 키워드: restaurant etiquette eating alone honbap self service tipping banchan call bell allergy vegetarian vegan break time busan restaurant foreigner 식당 에티켓 이용법 혼밥 혼자 셀프 팁 계산 호출벨 반찬 브레이크타임 알레르기 채식 비건 부산 맛집 외국인
+- **한국 식당 예약과 줄서기, 현지 전화번호 없이 하는 법 (캐치테이블 글로벌 중심)** — 도시: 한국 전체 — 키워드: restaurant reservation waitlist catchtable global naver map tabling busan restaurant foreigner phone number 식당 예약 줄서기 웨이팅 캐치테이블 네이버 예약 테이블링 부산 맛집 외국인 전화번호
 - **태종대 해녀촌: 바닷가에서 먹는 회, 아직도 대야에서 썰어줄까?** — 키워드: 태종대 해녀촌 자갈마당 회 산낙지 멍게 감지해변 조개구이 영도 부산
 - **부산 시민이 뽑은 돼지국밥집 20곳** — 키워드: 돼지국밥 국밥 부산돼지국밥대전 시민추천 로컬맛집 부산 음식
 - **부산 밀면, 냉면과는 다른 이야기** — 키워드: 밀면 냉면 차이 국수 부산 음식 로컬맛집 위로음식
