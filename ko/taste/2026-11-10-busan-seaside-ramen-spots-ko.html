@@ -343,20 +343,6 @@
   .route-cta { display: inline-flex; align-items: center; gap: 6px; text-decoration: none; padding: 9px 18px; border: none; border-radius: 100px; color: #fff5ee; background: var(--coral); font-size: 0.86rem; font-weight: 700; box-shadow: var(--card-shadow); }
   .route-cta:hover { background: var(--coral-ink); }
   .route-cta svg { width: 14px; height: 14px; stroke: currentColor; fill: none; stroke-width: 2.2; }
-  .zoomable { cursor: zoom-in; }
-  .lb { position: fixed; inset: 0; z-index: 1000; background: rgba(10, 14, 22, 0.96); display: none; align-items: center; justify-content: center; padding: 16px; }
-  .lb.open { display: flex; }
-  .lb-fig { margin: 0; flex: 1 1 auto; min-width: 0; max-width: 1100px; display: flex; flex-direction: column; align-items: center; }
-  .lb-fig img { max-width: 100%; max-height: calc(100vh - 110px); object-fit: contain; border-radius: 8px; touch-action: pan-y; user-select: none; }
-  .lb-fig figcaption { color: #f3f4f6; font-size: 0.95rem; margin-top: 12px; text-align: center; }
-  .lb-count { display: block; margin-top: 4px; font-size: 0.82rem; color: #b8bec9; }
-  .lb-x { position: absolute; top: 12px; right: 12px; width: 44px; height: 44px; border-radius: 50%; border: 0; background: rgba(255,255,255,0.16); color: #fff; font-size: 26px; line-height: 44px; cursor: pointer; }
-  .lb-nav { display: none; flex: none; width: 52px; height: 52px; margin: 0 10px; border: 0; border-radius: 50%; background: rgba(255,255,255,0.14); cursor: pointer; position: relative; }
-  .lb-nav[hidden] { visibility: hidden; display: none; }
-  .lb-nav::after { content: ""; position: absolute; top: 50%; left: 50%; width: 0; height: 0; border-top: 11px solid transparent; border-bottom: 11px solid transparent; }
-  .lb-prev::after { border-right: 16px solid #fff; transform: translate(-60%, -50%); }
-  .lb-next::after { border-left: 16px solid #fff; transform: translate(-40%, -50%); }
-  @media (hover: hover) and (pointer: fine) { .lb-nav { display: block; } .lb-nav[hidden] { display: block; visibility: hidden; } }
 </style>
 </head>
 <body>
@@ -474,20 +460,20 @@
   <p class="body-text">매장에 즉석라면 조리기가 있고, 라면 컵 모양 테이블에 앉아 통창으로 해운대 바다를 보며 먹을 수 있어요. 3층 찜질방 안에도 같은 브랜드 매장이 하나 더 있어요.</p>
   <p class="body-text">힐스파 찜질방까지 이용할 계획이라면 <a href="/ko/trip-planner/2026-09-29-best-busan-saunas-ko.html">부산 사우나 추천</a>을 함께 보세요.</p>
 <div class="inset-photo-wrap" style="max-width:100%;">
-    <img class="inset-photo" style="max-width:100%;" src="/assets/img/inl/7d6adbd03e19.jpg" alt="세븐일레븐 부산해운대힐스파점 입구. 너구리 라면 가게 간판과 컵라면을 쌓아 올린 큰 라면 컵 모양 진열대가 있다" width="900" height="900" loading="lazy">
+    <img data-zoom class="inset-photo" style="max-width:100%;" src="/assets/img/inl/7d6adbd03e19.jpg" alt="세븐일레븐 부산해운대힐스파점 입구. 너구리 라면 가게 간판과 컵라면을 쌓아 올린 큰 라면 컵 모양 진열대가 있다" width="900" height="900" loading="lazy">
     <p class="photo-caption" style="margin:10px 0 0;max-width:none;">사진: 세븐일레븐 부산해운대힐스파점(부산 해운대구 중동 1509-7)</p>
   </div>
   <p class="body-text" style="margin-top:26px;"><strong>이마트24 R해운대청사포점 - 청사포 산책 전후에</strong></p>
   <p class="body-text">청사포 다릿돌전망대로 가는 입구 쪽에 있는 편의점이에요. 해변열차 청사포정거장에서 가깝고, 바로 옆 건물 4층에 아래에서 소개할 청사포 바다라면 카페가 있어요.</p>
 <div class="inset-photo-wrap" style="max-width:100%;">
-    <img class="inset-photo" style="max-width:100%;" src="/assets/img/inl/6ce8f052046f.jpg" alt="이마트24 R해운대청사포점 창가 자리의 즉석라면과 바나나우유. 창밖으로 청사포 바다와 하얀 등대가 보인다" width="1200" height="896" loading="lazy">
+    <img data-zoom class="inset-photo" style="max-width:100%;" src="/assets/img/inl/6ce8f052046f.jpg" alt="이마트24 R해운대청사포점 창가 자리의 즉석라면과 바나나우유. 창밖으로 청사포 바다와 하얀 등대가 보인다" width="1200" height="896" loading="lazy">
     <p class="photo-caption" style="margin:10px 0 0;max-width:none;">이마트24 R해운대청사포점 창가에서 본 청사포 바다와 등대. 실제 매장 사진을 바탕으로, 저작권 문제 때문에 실제와 똑같이 다시 구성한 이미지예요.</p>
   </div>
   <p class="body-text" style="margin-top:26px;"><strong>GS25 송정프리미엄점 - 송정해수욕장 바로 앞, 2층 창가</strong></p>
   <p class="body-text">송정해수욕장 해변 도로 건너편에 있는 2층짜리 편의점이에요. 1층에서 물건을 고르고, 2층으로 올라가면 라면이 한쪽 벽을 채우고 있고 즉석라면 기계가 여러 대 있어요.</p>
   <p class="body-text">2층 창가 자리에서 송정 바다가 보여요. 물놀이나 서핑을 하고 나와서 들르는 사람이 많아요.</p>
 <div class="inset-photo-wrap" style="max-width:100%;">
-    <img class="inset-photo" style="max-width:100%;" src="/assets/img/inl/b85ee9ed95c7.jpg" alt="GS25 송정프리미엄점 창가 자리의 즉석라면과 요구르트. 길 건너로 송정해수욕장 바다가 보인다" width="1070" height="713" loading="lazy">
+    <img data-zoom class="inset-photo" style="max-width:100%;" src="/assets/img/inl/b85ee9ed95c7.jpg" alt="GS25 송정프리미엄점 창가 자리의 즉석라면과 요구르트. 길 건너로 송정해수욕장 바다가 보인다" width="1070" height="713" loading="lazy">
     <p class="photo-caption" style="margin:10px 0 0;max-width:none;">GS25 송정프리미엄점 창가에서 본 송정해수욕장. 실제 매장 사진을 바탕으로, 저작권 문제 때문에 실제와 똑같이 다시 구성한 이미지예요.</p>
   </div>
   <p class="body-text" style="margin-top:26px;"><strong>CU 민락수변공원점 - 광안대교가 보이는 수변공원 앞</strong></p>
@@ -512,7 +498,7 @@
   <p class="body-text">24시간 문을 열어요. 편의점 바로 앞이 바다라서 창밖으로 연화리 바다가 보여요.</p>
   <p class="body-text"><strong>예전에 연화리 쌍용센터점에 있던 라면 라이브러리는 최근 일반 편의점으로 바뀌었어요.</strong> 지도 앱에서 옛 이름으로 찾아가면 라면도서관이 없으니, 꼭 CU 더쌍용오시리아점으로 검색하세요.</p>
 <div class="inset-photo-wrap" style="max-width:100%;">
-    <img class="inset-photo" style="max-width:100%;" src="/assets/img/inl/416e82c19fe0.jpg" alt="CU 더쌍용오시리아점이 있는 아파트 상가동 1층을 빨간 점선 원으로 표시한 거리 사진. 왼쪽으로 바다가 보인다" width="1200" height="786" loading="lazy">
+    <img data-zoom class="inset-photo" style="max-width:100%;" src="/assets/img/inl/416e82c19fe0.jpg" alt="CU 더쌍용오시리아점이 있는 아파트 상가동 1층을 빨간 점선 원으로 표시한 거리 사진. 왼쪽으로 바다가 보인다" width="1200" height="786" loading="lazy">
     <p class="photo-caption" style="margin:10px 0 0;max-width:none;">빨간 원이 CU 더쌍용오시리아점이에요. 길 왼쪽으로 바로 바다가 펼쳐져 있어요.</p>
   </div>
   <p class="body-text" style="margin-top:26px;"><strong>세븐일레븐 부산기장연화리점 - 해산물 포장마차 거리 앞 분홍 편의점</strong></p>
@@ -531,7 +517,7 @@
   <p class="body-text">분식집 김밥보다 값이 싸면서도 맛이 다양하고 품질도 아주 높아요. 외국인에게도 인기가 많아서, CU에서는 2025년 외국인이 가장 많이 산 상품 2위가 불고기김밥이었어요.</p>
   <p class="body-text">편의점 김밥은 냉장 상태로 팔아요. 그대로 먹어도 되지만, 전자레인지에 살짝 데워 따뜻하게 먹을 때 가장 맛있어요. 같은 참치김밥이라도 편의점마다 속재료 양이 달라서, 여러 브랜드를 골고루 먹어 보는 것도 재미있어요.</p>
 <div class="inset-photo-wrap" style="max-width:100%;">
-    <img class="inset-photo" style="max-width:100%;" src="/assets/img/inl/0b67532805d4.jpg" alt="편의점 냉장 매대에 놓인 여러 종류의 한 줄 김밥. 간장치킨김밥, 묵은지참치김밥, 소불고기마요김밥, 불고기김밥, 김치볶음밥김밥이 보인다" width="1065" height="656" loading="lazy">
+    <img data-zoom class="inset-photo" style="max-width:100%;" src="/assets/img/inl/0b67532805d4.jpg" alt="편의점 냉장 매대에 놓인 여러 종류의 한 줄 김밥. 간장치킨김밥, 묵은지참치김밥, 소불고기마요김밥, 불고기김밥, 김치볶음밥김밥이 보인다" width="1065" height="656" loading="lazy">
     <p class="photo-caption" style="margin:10px 0 0;max-width:none;">편의점 냉장 매대의 한 줄 김밥. 불고기, 참치, 간장치킨처럼 종류가 다양해요.</p>
   </div>
 </section>
@@ -556,7 +542,7 @@
   <p class="body-text">청사포 바닷가 건물 4층에 있어요. 라면을 고른 뒤 계산대에서 결제하고, 즉석라면 기계 네 대 중 빈 곳에서 끓여요. 기계 사용법이 여러 언어로 붙어 있어요.</p>
   <p class="body-text">통창으로 청사포 등대와 바다가 보이고, 위층 루프탑에도 자리가 있어요. 혼자 앉는 자리와 여럿이 쓰는 방도 있어요.</p>
 <div class="inset-photo-wrap" style="max-width:100%;">
-    <img class="inset-photo" style="max-width:100%;" src="/assets/img/inl/3189b1141c49.jpg" alt="청사포 바다라면 카페 루프탑. 하얀 천막 지붕 아래 라탄 조명이 달려 있고, 나무 의자와 테이블 너머 창밖으로 청사포 바다가 보인다" width="1200" height="900" loading="lazy">
+    <img data-zoom class="inset-photo" style="max-width:100%;" src="/assets/img/inl/3189b1141c49.jpg" alt="청사포 바다라면 카페 루프탑. 하얀 천막 지붕 아래 라탄 조명이 달려 있고, 나무 의자와 테이블 너머 창밖으로 청사포 바다가 보인다" width="1200" height="900" loading="lazy">
     <p class="photo-caption" style="margin:10px 0 0;max-width:none;">사진: 청사포 바다라면 카페(부산 해운대구 중동 570)</p>
   </div>
   <p class="body-text" style="margin-top:26px;"><strong>송정바다라면카페 - 파도 소리가 들리는 야외 테라스</strong></p>
@@ -564,14 +550,14 @@
   <p class="body-text">야외에는 삼각 지붕을 얹은 평상과 나무 테이블이 놓여 있고, 밤에는 조명이 켜져요.</p>
   <p class="body-text">밤에도 열고, 반려견과 함께 들어갈 수 있다는 후기도 있어요. 바닷바람이 세니 밤에는 겉옷을 챙기세요.</p>
 <div class="inset-photo-wrap" style="max-width:100%;">
-    <img class="inset-photo" style="max-width:100%;" src="/assets/img/inl/dca2b752634d.jpg" alt="송정바다라면카페 야외 자리의 밤 풍경. 조명이 켜진 삼각 지붕 평상 세 개와 나무 테이블, 선인장을 넣은 투명한 돔이 보인다" width="1200" height="825" loading="lazy">
+    <img data-zoom class="inset-photo" style="max-width:100%;" src="/assets/img/inl/dca2b752634d.jpg" alt="송정바다라면카페 야외 자리의 밤 풍경. 조명이 켜진 삼각 지붕 평상 세 개와 나무 테이블, 선인장을 넣은 투명한 돔이 보인다" width="1200" height="825" loading="lazy">
     <p class="photo-caption" style="margin:10px 0 0;max-width:none;">사진: 송정바다라면카페(부산 해운대구 송정동 799-21)</p>
   </div>
   <p class="body-text" style="margin-top:26px;"><strong>흰여울라면 - 영도 흰여울문화마을 창가 자리</strong></p>
   <p class="body-text">바다 바로 위 절벽 마을인 흰여울문화마을에 있는 무인 라면 가게예요. 창가를 따라 바다를 보고 앉는 자리가 있고, 원형 테이블도 있어요.</p>
   <p class="body-text">라면 값에 용기 값이 포함돼 있어서 결제하고 바로 기계에 올리면 돼요. 아침 8시에 열고 저녁에 닫아요. 24시간이 아니에요.</p>
 <div class="inset-photo-wrap" style="max-width:100%;">
-    <img class="inset-photo" style="max-width:100%;" src="/assets/img/inl/9ee45baac96c.jpg" alt="흰여울라면 창가 자리에 놓인 즉석라면 두 그릇. 창밖으로 흰여울문화마을 지붕과 바다, 멀리 섬과 배들이 보인다" width="1200" height="896" loading="lazy">
+    <img data-zoom class="inset-photo" style="max-width:100%;" src="/assets/img/inl/9ee45baac96c.jpg" alt="흰여울라면 창가 자리에 놓인 즉석라면 두 그릇. 창밖으로 흰여울문화마을 지붕과 바다, 멀리 섬과 배들이 보인다" width="1200" height="896" loading="lazy">
     <p class="photo-caption" style="margin:10px 0 0;max-width:none;">흰여울라면 창가 자리에서 본 영도 앞바다. 실제 매장 사진을 바탕으로, 저작권 문제 때문에 실제와 똑같이 다시 구성한 이미지예요.</p>
   </div>
   <p class="body-text"><strong>음식을 사지 않고 사진만 찍으러 들어가는 건 안 된다</strong>고 안내돼 있어요. 마을 이야기는 <a href="/ko/trip-planner/2026-09-06-huinnyeoul-culture-village.html">흰여울문화마을 가이드</a>에 정리했어요.</p>
@@ -601,7 +587,7 @@
   <p class="body-text">1층에서 주문하고 번호를 부르면 직접 받아 가요. 다 먹은 그릇도 직접 반납해요. <strong>한 사람이 한 메뉴씩 주문해야 해요.</strong></p>
   <p class="body-text">창가 자리에서 바다가 보이는데 창가는 몇 자리뿐이고, 계단이 좁고 가팔라요. 점심에는 기다릴 수 있어요.</p>
 <div class="inset-photo-wrap" style="max-width:100%;">
-    <img class="inset-photo" style="max-width:100%;" src="/assets/img/inl/e6841e15a41d.jpg" alt="흰여울점빵 창가 자리에 놓인 양은 냄비 라면 두 그릇과 단무지, 음료. 창밖으로 영도 앞바다가 펼쳐져 있다" width="1088" height="814" loading="lazy">
+    <img data-zoom class="inset-photo" style="max-width:100%;" src="/assets/img/inl/e6841e15a41d.jpg" alt="흰여울점빵 창가 자리에 놓인 양은 냄비 라면 두 그릇과 단무지, 음료. 창밖으로 영도 앞바다가 펼쳐져 있다" width="1088" height="814" loading="lazy">
     <p class="photo-caption" style="margin:10px 0 0;max-width:none;">흰여울점빵 창가 자리의 양은 냄비 라면. 실제 매장 사진을 바탕으로, 저작권 문제 때문에 실제와 똑같이 다시 구성한 이미지예요.</p>
   </div>
   <p class="body-text" style="margin-top:26px;"><strong>옥천횟집 - 중리 바다 앞 데크에서 먹는 낙지해물라면</strong></p>
@@ -795,21 +781,6 @@
 </script>
 <script data-goatcounter="https://krambles.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
-<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="사진 크게 보기"><button type="button" class="lb-x" aria-label="닫기">&times;</button><button type="button" class="lb-nav lb-prev" aria-label="이전 사진"></button><figure class="lb-fig"><img alt=""><figcaption><span class="lb-cap"></span><span class="lb-count"></span></figcaption></figure><button type="button" class="lb-nav lb-next" aria-label="다음 사진"></button></div>
-<script>
-(function(){var lb=document.getElementById('lb');if(!lb)return;var im=lb.querySelector('img'),cap=lb.querySelector('.lb-cap'),cnt=lb.querySelector('.lb-count'),pv=lb.querySelector('.lb-prev'),nx=lb.querySelector('.lb-next'),list=[],idx=0,sx=null,sy=0;
-function capOf(el){var box=el.closest('figure')||el.closest('.inset-photo-wrap');var c=box&&box.querySelector('.photo-caption');return c?c.textContent:'';}
-function show(i){if(i<0||i>=list.length)return;idx=i;var el=list[i];im.src=el.currentSrc||el.src;im.alt=el.alt;cap.textContent=capOf(el);cnt.textContent=list.length>1?(i+1)+' / '+list.length:'';pv.hidden=i===0;nx.hidden=i===list.length-1;}
-function close(){lb.classList.remove('open');im.removeAttribute('src');document.body.style.overflow='';}
-var all=[].slice.call(document.querySelectorAll('.inset-photo-wrap img, .photo-grid img'));
-all.forEach(function(el){el.classList.add('zoomable');el.addEventListener('click',function(){var g=el.closest('.photo-grid');list=g?[].slice.call(g.querySelectorAll('img')):[el];show(list.indexOf(el));lb.classList.add('open');document.body.style.overflow='hidden';});});
-pv.addEventListener('click',function(e){e.stopPropagation();show(idx-1);});nx.addEventListener('click',function(e){e.stopPropagation();show(idx+1);});
-lb.querySelector('.lb-x').addEventListener('click',function(e){e.stopPropagation();close();});
-lb.addEventListener('click',function(e){if(e.target===lb)close();});
-lb.addEventListener('touchstart',function(e){if(e.touches.length===1){sx=e.touches[0].clientX;sy=e.touches[0].clientY;}},{passive:true});
-lb.addEventListener('touchend',function(e){if(sx===null)return;var dx=e.changedTouches[0].clientX-sx,dy=e.changedTouches[0].clientY-sy;sx=null;if(Math.abs(dx)>40&&Math.abs(dx)>Math.abs(dy)){show(dx<0?idx+1:idx-1);}});
-document.addEventListener('keydown',function(e){if(!lb.classList.contains('open'))return;if(e.key==='Escape')close();else if(e.key==='ArrowLeft')show(idx-1);else if(e.key==='ArrowRight')show(idx+1);});})();
-</script>
 </body>
 </html>
 

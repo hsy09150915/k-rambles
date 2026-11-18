@@ -1,5 +1,129 @@
 [
   {
+    "title": "Seoul to Gyeongju: KTX vs Express Bus, Plus What to Eat at the Rest Stop",
+    "url": "2026-11-17-seoul-to-gyeongju-ktx-bus-guide-en.html",
+    "thumb": "assets/thumbs/getting-around/seoul-to-gyeongju-ktx-bus-guide.jpg",
+    "label": "Train, bus · live",
+    "alt": "Illustrated map of Korea with an arrow from Seoul to Gyeongju",
+    "badge": null,
+    "like_id": "getting-around/2026-11-17-seoul-to-gyeongju-ktx-bus-guide-en.html",
+    "date": "2026-11-17",
+    "kw": "Gyeongju seoul to gyeongju how to get to gyeongju gyeongju station KTX KTX-Eum SRT Seoul Station Suseo Station Cheongnyangni express bus Seoul Express Bus Terminal Gyeongbu Line premium deluxe bus rest stop rest area highway Nakdonggang hodu-gwaja walnut cakes sotteok-sotteok kiosk incheon airport bus incheon airport to gyeongju day trip Bulguksa Hwangnidan-gil Busan",
+    "city": "gyeongju",
+    "locations": [
+      {
+        "name": "Seoul Station",
+        "address": "405 Hangang-daero, Yongsan-gu, Seoul",
+        "lat": 37.555946,
+        "lng": 126.972317
+      },
+      {
+        "name": "Suseo Station",
+        "address": "99 Bamgogae-ro, Gangnam-gu, Seoul",
+        "lat": 37.485544,
+        "lng": 127.10438
+      },
+      {
+        "name": "Cheongnyangni Station",
+        "address": "214 Wangsan-ro, Dongdaemun-gu, Seoul",
+        "lat": 37.5804671,
+        "lng": 127.0462574
+      },
+      {
+        "name": "Seoul Express Bus Terminal (Gyeongbu Line)",
+        "address": "194 Sinbanpo-ro, Seocho-gu, Seoul",
+        "lat": 37.506572,
+        "lng": 127.006848
+      },
+      {
+        "name": "Nakdonggang Uiseong Rest Area (toward Gyeongju)",
+        "address": "757-67 Doan-ro, Danmil-myeon, Uiseong-gun",
+        "lat": 36.3457594,
+        "lng": 128.2959912
+      },
+      {
+        "name": "Gyeongju Station (KTX)",
+        "address": "80 Singyeongjuyeok-ro, Geoncheon-eup, Gyeongju",
+        "lat": 35.7986381,
+        "lng": 129.1389468
+      },
+      {
+        "name": "Gyeongju Express and Intercity Bus Terminals",
+        "address": "243-5 Jungbu-dong, Gyeongju",
+        "lat": 35.838677,
+        "lng": 129.2035
+      }
+    ]
+  },
+  {
+    "title": "Busan to Gyeongju by Train or Bus, Plus Local Buses to Bulguksa and Hwangnidan-gil",
+    "url": "2026-11-17-busan-to-gyeongju-transport-guide-en.html",
+    "thumb": "assets/thumbs/getting-around/busan-to-gyeongju-transport-guide.jpg",
+    "label": "Train, bus · live",
+    "alt": "Illustrated map with an arrow from Busan to Gyeongju",
+    "badge": null,
+    "like_id": "getting-around/2026-11-17-busan-to-gyeongju-transport-guide-en.html",
+    "date": "2026-11-17",
+    "kw": "Gyeongju busan to gyeongju how to get to gyeongju gyeongju station singyeongju station KTX KTX-Eum ITX-Maeum Bujeon Station Busan Station Haeundae intercity bus stop Nopo Busan Central Bus Terminal Seobu Sasang express bus intercity bus gyeongju bus terminal gyeongju bus city bus 10 11 12 700 Woljeong circular bus Bulguksa Seokguram Hwangnidan-gil Daereungwon Bomun Lake Resort Gimhae Airport day trip T-money",
+    "city": "gyeongju",
+    "locations": [
+      {
+        "name": "Busan Station",
+        "address": "206 Jungang-daero, Dong-gu, Busan",
+        "lat": 35.115225,
+        "lng": 129.042243
+      },
+      {
+        "name": "Bujeon Station",
+        "address": "181 Bujeon-ro, Busanjin-gu, Busan",
+        "lat": 35.1640413,
+        "lng": 129.0604598
+      },
+      {
+        "name": "Haeundae Intercity Bus Stop",
+        "address": "Near Exit 2, Haeundae Station, Haeundae-gu, Busan",
+        "lat": 35.164737,
+        "lng": 129.160443
+      },
+      {
+        "name": "Busan Central Bus Terminal (Nopo)",
+        "address": "133 Nopo-dong, Geumjeong-gu, Busan",
+        "lat": 35.2847494,
+        "lng": 129.0953841
+      },
+      {
+        "name": "Seobu Bus Terminal (Sasang)",
+        "address": "201 Sasang-ro, Sasang-gu, Busan",
+        "lat": 35.16332,
+        "lng": 128.98232
+      },
+      {
+        "name": "Gyeongju Station (KTX)",
+        "address": "80 Singyeongjuyeok-ro, Geoncheon-eup, Gyeongju",
+        "lat": 35.7986381,
+        "lng": 129.1389468
+      },
+      {
+        "name": "Gyeongju Express and Intercity Bus Terminals",
+        "address": "243-5 Jungbu-dong, Gyeongju",
+        "lat": 35.838677,
+        "lng": 129.2035
+      },
+      {
+        "name": "Bulguksa Temple",
+        "address": "385 Bulguk-ro, Gyeongju",
+        "lat": 35.7898804,
+        "lng": 129.3318909
+      },
+      {
+        "name": "Seokguram Grotto",
+        "address": "238 Seokgul-ro, Gyeongju",
+        "lat": 35.7951981,
+        "lng": 129.3503599
+      }
+    ]
+  },
+  {
     "title": "How to Book a KTX Train from Seoul to Busan: Korail Website, Korail+ App and Overseas Cards",
     "url": "2026-10-22-korea-ktx-booking-guide-en.html",
     "thumb": "assets/thumbs/getting-around/korea-ktx-booking-guide.jpg",
@@ -22,7 +146,7 @@
     "like_id": "getting-around/2026-09-26-korea-delivery-apps-guide-en.html",
     "date": "2026-09-26",
     "kw": "delivery app baemin coupang eats yogiyo shuttle foreigner korea busan food delivery signup foreign card",
-    "city": "busan",
+    "city": "korea",
     "locations": []
   },
   {
@@ -35,7 +159,7 @@
     "like_id": "getting-around/2026-09-25-korea-pharmacy-hospital-guide-en.html",
     "date": "2026-09-25",
     "kw": "pharmacy hospital clinic medicine sick emergency korea busan convenience store otc drug referral tertiary hospital department",
-    "city": "busan",
+    "city": "korea",
     "locations": []
   },
   {
@@ -48,7 +172,7 @@
     "like_id": "getting-around/2026-09-24-korea-card-payment-guide-en.html",
     "date": "2026-09-24",
     "kw": "card payment korea contactless tap nfc credit card foreign card decline apple pay google pay visa mastercard t-money cash",
-    "city": "busan",
+    "city": "korea",
     "locations": []
   },
   {
@@ -152,7 +276,7 @@
     "like_id": "getting-around/2026-09-07-naver-map-app-guide.html",
     "date": "2026-09-07",
     "kw": "naver map kakao map kakao metro kakao subway english language settings app search directions arrival alert busan travel",
-    "city": "busan",
+    "city": "korea",
     "locations": []
   },
   {

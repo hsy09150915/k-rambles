@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>경주 교통 완전정복 | K-Rambles</title>
+<link rel="canonical" href="https://k-rambles.com/ko/gyeongju/getting-around/">
+<link rel="alternate" hreflang="ko" href="https://k-rambles.com/ko/gyeongju/getting-around/">
+<link rel="alternate" hreflang="en" href="https://k-rambles.com/gyeongju/getting-around/">
+<link rel="alternate" hreflang="vi" href="https://k-rambles.com/vi/gyeongju/getting-around/">
+<link rel="alternate" hreflang="th" href="https://k-rambles.com/th/gyeongju/getting-around/">
+<link rel="alternate" hreflang="x-default" href="https://k-rambles.com/gyeongju/getting-around/">
+<meta name="description" content="경주까지 가는 길과 흩어진 명소 사이 이동법 — 버스 정류장 앞에서 헤매지 않도록 직접 확인하고 검증했다.">
+<noscript><style>.tile.reveal{opacity:1!important;transform:none!important}</style></noscript>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Work+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap');
+
+  :root {
+    --paper: #ecd8c4;
+    --paper-raised: #fbf3e7;
+    --ink: #3a2416;
+    --ink-soft: #6f4d36;
+    --coral: #d9532a;
+    --coral-ink: #9c3b1c;
+    --navy: #1b2a4a;
+    --marigold: #c8891f;
+    --line: rgba(58, 36, 22, 0.16);
+    --line-strong: rgba(58, 36, 22, 0.3);
+    --card-shadow: 0 18px 34px -20px rgba(40, 24, 12, 0.4);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #1c130b; --paper-raised: #2c2013; --ink: #f6ece0; --ink-soft: #cbb39c;
+      --line: rgba(255,255,255,0.14); --line-strong: rgba(255,255,255,0.26);
+      --card-shadow: 0 18px 34px -18px rgba(0,0,0,0.6);
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #1c130b; --paper-raised: #2c2013; --ink: #f6ece0; --ink-soft: #cbb39c;
+    --line: rgba(255,255,255,0.14); --line-strong: rgba(255,255,255,0.26);
+    --card-shadow: 0 18px 34px -18px rgba(0,0,0,0.6);
+  }
+
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: "Work Sans", ui-sans-serif, system-ui, sans-serif; font-size: 1.0625rem; line-height: 1.6; -webkit-font-smoothing: antialiased; word-break: keep-all; overflow-wrap: break-word; }
+
+  html { font-size: 100%; }
+  html[data-fs="xs"] { font-size: 85%; }
+  html[data-fs="sm"] { font-size: 92.5%; }
+  html[data-fs="lg"] { font-size: 115%; }
+  html[data-fs="xl"] { font-size: 135%; }
+  .font-size-ctrl { display: inline-flex; align-items: center; gap: 4px; border: 1px solid var(--line); border-radius: 100px; padding: 4px 5px; }
+  .fs-labels { display: inline-flex; align-items: baseline; gap: 2px; }
+  .fs-label { font-family: "Work Sans", sans-serif; font-weight: 600; color: var(--ink-soft); line-height: 1; user-select: none; }
+  .fs-label-sm { font-size: 0.68rem; }
+  .fs-label-lg { font-size: 1.15rem; }
+  .fs-step { appearance: none; border: none; background: none; cursor: pointer; color: var(--ink-soft); font-family: "Work Sans", sans-serif; font-weight: 700; font-size: 1.35rem; line-height: 1; width: 30px; height: 30px; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; flex-shrink: 0; }
+  .fs-step:hover:not(:disabled) { background: var(--line); color: var(--ink); }
+  .fs-step:disabled { opacity: 0.32; cursor: default; }
+  a { color: inherit; }
+  .mono { font-family: "Space Mono", ui-monospace, "SF Mono", monospace; }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 28px; }
+
+  header.site { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 26px 28px; max-width: 1040px; margin: 0 auto; }
+  .logo { font-family: "Bricolage Grotesque", ui-sans-serif, sans-serif; font-weight: 700; font-size: 1.35rem; letter-spacing: -0.01em; white-space: nowrap; }
+  .logo span { color: var(--coral); }
+  a.logo { text-decoration: none; color: inherit; }
+  .header-right { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; row-gap: 8px; }
+  .back-link { display: inline-flex; align-items: center; gap: 6px; text-decoration: none; color: var(--ink-soft); font-size: 0.92rem; white-space: nowrap; }
+  .back-link:hover { color: var(--ink); }
+  .back-link svg { width: 16px; height: 16px; stroke: currentColor; fill: none; }
+  .lang-switch { display: flex; align-items: center; gap: 6px; font-family: "Space Mono", monospace; font-size: 0.76rem; }
+  .lang-switch a, .lang-switch span.current { text-decoration: none; padding: 3px 8px; border-radius: 6px; white-space: nowrap; }
+  .lang-switch a { color: var(--ink-soft); }
+  .lang-switch a:hover { color: var(--ink); }
+  .lang-switch span.current { color: var(--ink); font-weight: 700; border: 1px solid var(--line); }
+
+  .hub-hero { max-width: 1040px; margin: 0 auto; padding: 12px 28px 40px; }
+  .hub-icon-badge { width: 56px; height: 56px; border-radius: 16px; background: var(--paper-raised); display: flex; align-items: center; justify-content: center; margin-bottom: 18px; box-shadow: var(--card-shadow); }
+  .hub-icon-badge svg { width: 30px; height: 30px; stroke: var(--coral-ink, #9c3b1c); fill: none; }
+  h1.hub-title { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: clamp(2.1rem, 4.6vw, 3.1rem); line-height: 1.05; letter-spacing: -0.02em; margin: 0 0 12px; text-wrap: balance; }
+  p.hub-dek { font-size: 1.08rem; color: var(--ink-soft); max-width: 56ch; margin: 0 0 8px; }
+  p.hub-count { font-family: "Space Mono", monospace; font-size: 0.82rem; letter-spacing: 0.05em; text-transform: uppercase; color: var(--ink-soft); margin: 0 0 26px; }
+
+  .search-wrap { position: relative; max-width: 420px; margin: 0 0 8px; }
+  .search-input { width: 100%; box-sizing: border-box; padding: 12px 16px 12px 42px; border-radius: 10px; border: 1px solid var(--line-strong); background: var(--paper-raised); color: var(--ink); font-family: "Work Sans", sans-serif; font-size: 0.95rem; }
+  .search-input:focus { outline: 2px solid var(--coral); outline-offset: 1px; }
+  .search-icon { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); width: 18px; height: 18px; stroke: var(--ink-soft); fill: none; pointer-events: none; }
+  .search-results { position: absolute; top: calc(100% + 6px); left: 0; right: 0; background: var(--paper-raised); border: 1px solid var(--line); border-radius: 12px; box-shadow: var(--card-shadow); max-height: 360px; overflow-y: auto; z-index: 10; display: none; }
+  .search-results.is-open { display: block; }
+  .search-result { display: flex; flex-direction: column; gap: 2px; padding: 10px 14px; text-decoration: none; color: inherit; border-bottom: 1px solid var(--line); }
+  .search-result:last-child { border-bottom: none; }
+  .search-result:hover, .search-result:focus-visible { background: var(--paper); }
+  .search-result-title { font-weight: 600; font-size: 0.92rem; }
+  .search-result-meta { font-family: "Space Mono", monospace; font-size: 0.7rem; color: var(--ink-soft); text-transform: uppercase; letter-spacing: 0.05em; }
+  .search-empty { padding: 14px; font-size: 0.85rem; color: var(--ink-soft); }
+
+  .hub-grid { max-width: 1040px; margin: 0 auto; padding: 10px 28px 90px; display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 20px; }
+
+  .tile { display: block; border-radius: 16px; text-decoration: none; color: inherit; box-shadow: var(--card-shadow); }
+  .tile--photo { position: relative; background: var(--paper-raised); border: 1px solid var(--line); overflow: hidden; }
+  .tile-photo-link { display: flex; flex-direction: column; height: 100%; color: inherit; text-decoration: none; }
+  .tile-photo-link:focus-visible { outline: 2px solid var(--coral); outline-offset: 3px; }
+  .tile-photo-frame { position: relative; aspect-ratio: 4 / 3; overflow: hidden; background: var(--paper-raised); }
+  .tile-photo-frame img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.35s ease; }
+  .tile--photo:hover .tile-photo-frame img { transform: scale(1.05); }
+  .tile--photo:hover { transform: translateY(-3px); }
+  .tile--photo { transition: transform 0.15s ease; }
+  .tile-photo-badge { position: absolute; top: 10px; right: 10px; background: var(--coral); color: #fff5ee; font-family: "Space Mono", monospace; font-size: 0.72rem; font-weight: 700; padding: 4px 9px; border-radius: 999px; }
+  .tile-photo-body { padding: 14px 16px 17px; display: flex; flex-direction: column; gap: 5px; flex: 1; }
+  .tile-photo-label { font-family: "Space Mono", monospace; font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--coral-ink); }
+  .tile-photo-title { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 1.02rem; line-height: 1.32; margin: 0; text-wrap: balance; }
+  .tile-like-btn { position: absolute; top: 10px; left: 10px; width: 32px; height: 32px; border-radius: 999px; border: none; background: rgba(15,15,15,0.4); display: flex; align-items: center; justify-content: center; cursor: pointer; padding: 0; z-index: 2; }
+  .tile-like-btn svg { width: 17px; height: 17px; stroke: #fff; fill: none; stroke-width: 1.9; transition: fill 0.15s ease; }
+  .tile-like-btn.is-liked svg { fill: var(--coral); stroke: var(--coral); }
+  .tile-like-btn:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+
+  .tile.reveal { opacity: 0; transform: translateY(12px); transition: opacity 0.5s ease, transform 0.5s ease; }
+  .tile.reveal.in-view { opacity: 1; transform: translateY(0); }
+  @media (prefers-reduced-motion: reduce) { .tile.reveal { opacity: 1; transform: none; transition: none; } }
+
+  footer.site { border-top: 1px solid var(--line); padding: 30px 28px 46px; }
+  .footer-inner { max-width: 1040px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; align-items: center; }
+  .footer-inner .mono { font-size: 0.78rem; color: var(--ink-soft); letter-spacing: 0.04em; }
+  .footer-links { display: flex; gap: 18px; font-size: 0.86rem; }
+  .footer-links a { color: var(--ink-soft); text-decoration: none; }
+  .footer-links a:hover { color: var(--coral-ink); }
+  /* kr-header-narrow-fix */
+  @media (max-width: 480px) {
+    header.site { padding: 14px 14px; gap: 6px; }
+    .header-right { gap: 6px; flex-wrap: wrap; row-gap: 8px; justify-content: flex-end; }
+    .logo { font-size: 0.92rem; }
+    .back-link { font-size: 0.68rem; gap: 3px; }
+    .back-link svg { width: 12px; height: 12px; }
+    .font-size-ctrl { gap: 3px; padding: 2px 4px; }
+    .fs-step { width: 22px; height: 22px; font-size: 1.05rem; }
+    .lang-switch { gap: 3px; font-size: 0.68rem; }
+    .lang-switch a, .lang-switch span.current { padding: 2px 6px; }
+  }
+</style>
+<meta name="kr-city" content="gyeongju">
+<style id="gyeongju-theme">
+  :root { --paper: #edf6fc; --paper-raised: #faf7f1; --coral: #3a8fb7; --coral-ink: #10394d; }
+  @media (prefers-color-scheme: dark) { :root { --paper: #1a2c38; --paper-raised: #26211b; } }
+  .logo span { color: #d9532a !important; }
+</style>
+</head>
+<body>
+<header class="site">
+  <a class="logo" href="/ko/gyeongju/index.html">K-<span>Rambles</span></a>
+  <div class="header-right">
+    <div class="font-size-ctrl" role="group" aria-label="Text size"><button type="button" class="fs-step" data-action="dec" aria-label="Decrease text size">−</button><span class="fs-labels" aria-hidden="true"><span class="fs-label fs-label-sm">가</span><span class="fs-label fs-label-lg">가</span></span><button type="button" class="fs-step" data-action="inc" aria-label="Increase text size">+</button></div>
+    <div class="lang-switch" aria-label="Language" data-key="gyeongju/getting-around/index"></div>
+  </div>
+</header>
+
+<div class="hub-hero">
+  <div class="hub-icon-badge"><svg><use href="#i-bus"/></svg></div>
+  <h1 class="hub-title">이동, 팁</h1>
+  <p class="hub-dek">경주까지 가는 길과 흩어진 명소 사이 이동법 — 버스 정류장 앞에서 헤매지 않도록 직접 확인하고 검증했다.</p>
+  <p class="hub-count">핀 6개 · 최신순</p>
+
+  <div class="search-wrap">
+    <svg class="search-icon"><use href="#i-search"/></svg>
+    <input type="text" class="search-input" id="site-search" placeholder="이 보드에서 검색 — KTX, 버스, 부산..." autocomplete="off">
+    <div class="search-results" id="site-search-results"></div>
+  </div>
+</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-bowl" viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M3 11h18a9 8 0 0 1-18 0Z"/>
+    <path d="M9 11c0-2.2.9-3.6 1.3-4.4M14 11c.3-1.1.4-2.5-.2-3.8"/>
+    <path d="M6 15.5c1.7 1.6 4 2.5 6 2.5s4.3-.9 6-2.5"/>
+  </symbol>
+  <symbol id="i-bus" viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="4" y="5" width="16" height="12" rx="2"/>
+    <path d="M4 12h16M8 5v12M16 5v12"/>
+    <circle cx="8" cy="19.5" r="1.4"/>
+    <circle cx="16" cy="19.5" r="1.4"/>
+  </symbol>
+  <symbol id="i-cup" viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M7 8h10l-1 11.5a1.5 1.5 0 0 1-1.5 1.5h-5a1.5 1.5 0 0 1-1.5-1.5Z"/>
+    <path d="M8.3 8 9 4.5h6l.7 3.5"/>
+    <path d="M10.5 2.5c-.6.6-.6 1.1 0 1.7M13.5 2.5c-.6.6-.6 1.1 0 1.7"/>
+  </symbol>
+  <symbol id="i-compass" viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="9"/>
+    <path d="M14.8 9.2 13 13l-3.8 1.8L11 11Z"/>
+  </symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 20.5s-7.5-4.6-10-9.3C0.3 7.8 2 4.5 5.4 4c2-.3 3.8.7 5 2.3 1.2-1.6 3-2.6 5-2.3C18.9 4.5 20.6 7.8 19 11.2c-2.5 4.7-7 9.3-7 9.3Z"/>
+  </symbol>
+  <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="10.5" cy="10.5" r="6.5"/>
+    <path d="M20 20l-4.8-4.8"/>
+  </symbol>
+  <symbol id="i-arrow-left" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M19 12H5M11 6l-6 6 6 6"/>
+  </symbol>
+</svg>
+
+<div class="hub-grid">
+<!-- prerender:start -->
+<div class="tile tile--photo reveal"><a class="tile-photo-link" href="/ko/getting-around/2026-11-17-seoul-to-gyeongju-ktx-bus-guide-ko.html"><div class="tile-photo-frame"><img src="/assets/thumbs/getting-around/seoul-to-gyeongju-ktx-bus-guide.jpg" alt="서울에서 경주까지 화살표로 이은 한국 지도 그림" loading="lazy"></div><div class="tile-photo-body"><span class="tile-photo-label">기차, 버스 · 공개중</span><h3 class="tile-photo-title">서울에서 경주 가는 법, KTX와 고속버스 비교부터 휴게소 즐기는 법까지</h3></div></a><button class="tile-like-btn" data-like-id="getting-around/2026-11-17-seoul-to-gyeongju-ktx-bus-guide-ko.html" data-goatcounter-click="like:getting-around/2026-11-17-seoul-to-gyeongju-ktx-bus-guide-ko.html" aria-label="이 글 저장하기" aria-pressed="false" title="이 기기에만 저장돼요 — 다른 폰·브라우저로 바꾸면 사라져요. 인기 있는 글을 파악하는 데도 도움돼요."><svg><use href="#i-heart"/></svg></button></div><div class="tile tile--photo reveal"><a class="tile-photo-link" href="/ko/getting-around/2026-11-17-busan-to-gyeongju-transport-guide-ko.html"><div class="tile-photo-frame"><img src="/assets/thumbs/getting-around/busan-to-gyeongju-transport-guide.jpg" alt="부산에서 경주까지 화살표로 이은 지도 그림" loading="lazy"></div><div class="tile-photo-body"><span class="tile-photo-label">기차, 버스 · 공개중</span><h3 class="tile-photo-title">부산에서 경주 가는 법, 기차와 버스부터 불국사, 황리단길 가는 버스까지</h3></div></a><button class="tile-like-btn" data-like-id="getting-around/2026-11-17-busan-to-gyeongju-transport-guide-ko.html" data-goatcounter-click="like:getting-around/2026-11-17-busan-to-gyeongju-transport-guide-ko.html" aria-label="이 글 저장하기" aria-pressed="false" title="이 기기에만 저장돼요 — 다른 폰·브라우저로 바꾸면 사라져요. 인기 있는 글을 파악하는 데도 도움돼요."><svg><use href="#i-heart"/></svg></button></div><div class="tile tile--photo reveal"><a class="tile-photo-link" href="/ko/getting-around/2026-09-26-korea-delivery-apps-guide-ko.html"><div class="tile-photo-frame"><img src="/assets/thumbs/getting-around/korea-delivery-apps-guide.jpg" alt="배달 상자를 실은 오토바이 라이더가 헬멧을 쓰고 횡단보도 앞에 서서 신호를 기다리고 있고, 뒤로 대형마트 건물이 보인다" loading="lazy"></div><div class="tile-photo-body"><span class="tile-photo-label">배달 · 공개중</span><h3 class="tile-photo-title">외국인을 위한 한국 배달앱: 배민·셔틀·요기요 직접 해봤어요</h3></div></a><button class="tile-like-btn" data-like-id="getting-around/2026-09-26-korea-delivery-apps-guide-ko.html" data-goatcounter-click="like:getting-around/2026-09-26-korea-delivery-apps-guide-ko.html" aria-label="이 글 저장하기" aria-pressed="false" title="이 기기에만 저장돼요 — 다른 폰·브라우저로 바꾸면 사라져요. 인기 있는 글을 파악하는 데도 도움돼요."><svg><use href="#i-heart"/></svg></button></div><div class="tile tile--photo reveal"><a class="tile-photo-link" href="/ko/getting-around/2026-09-25-korea-pharmacy-hospital-guide-ko.html"><div class="tile-photo-frame"><img src="/assets/thumbs/getting-around/korea-pharmacy-hospital-guide.jpg" alt="주황·흰색 캡슐 알약 여러 개가 오렌지색 배경 위에 흩어져 있고, 오른쪽에 투명한 약통이 놓여 있다" loading="lazy"></div><div class="tile-photo-body"><span class="tile-photo-label">의료 · 공개중</span><h3 class="tile-photo-title">아플 때 어디로? 편의점·약국·병원 가이드</h3></div></a><button class="tile-like-btn" data-like-id="getting-around/2026-09-25-korea-pharmacy-hospital-guide-ko.html" data-goatcounter-click="like:getting-around/2026-09-25-korea-pharmacy-hospital-guide-ko.html" aria-label="이 글 저장하기" aria-pressed="false" title="이 기기에만 저장돼요 — 다른 폰·브라우저로 바꾸면 사라져요. 인기 있는 글을 파악하는 데도 도움돼요."><svg><use href="#i-heart"/></svg></button></div><div class="tile tile--photo reveal"><a class="tile-photo-link" href="/ko/getting-around/2026-09-24-korea-card-payment-guide-ko.html"><div class="tile-photo-frame"><img src="/assets/thumbs/getting-around/korea-card-payment-guide.jpg" alt="테이블 위 NFC 단말기에 아이폰을 태그해 애플페이로 결제하는 모습 — 화면에 &quot;Done&quot; 체크 표시가 떠 있다" loading="lazy"></div><div class="tile-photo-body"><span class="tile-photo-label">결제 · 공개중</span><h3 class="tile-photo-title">한국인데 카드가 왜 안 돼요? — 해외카드 결제 실전 가이드</h3></div></a><button class="tile-like-btn" data-like-id="getting-around/2026-09-24-korea-card-payment-guide-ko.html" data-goatcounter-click="like:getting-around/2026-09-24-korea-card-payment-guide-ko.html" aria-label="이 글 저장하기" aria-pressed="false" title="이 기기에만 저장돼요 — 다른 폰·브라우저로 바꾸면 사라져요. 인기 있는 글을 파악하는 데도 도움돼요."><svg><use href="#i-heart"/></svg></button></div><div class="tile tile--photo reveal"><a class="tile-photo-link" href="/ko/getting-around/2026-09-07-naver-map-app-guide.html"><div class="tile-photo-frame"><img src="/assets/thumbs/getting-around/naver-map-app-guide.jpg" alt="네이버맵·카카오맵·카카오메트로 아이콘" loading="lazy"></div><div class="tile-photo-body"><span class="tile-photo-label">앱 사용법 · 공개중</span><h3 class="tile-photo-title">한국 여행, 구글맵보다 한국 지도앱을 써야 덜 헤매죠</h3></div></a><button class="tile-like-btn" data-like-id="getting-around/2026-09-07-naver-map-app-guide.html" data-goatcounter-click="like:getting-around/2026-09-07-naver-map-app-guide.html" aria-label="이 글 저장하기" aria-pressed="false" title="이 기기에만 저장돼요 — 다른 폰·브라우저로 바꾸면 사라져요. 인기 있는 글을 파악하는 데도 도움돼요."><svg><use href="#i-heart"/></svg></button></div>
+<!-- prerender:end -->
+</div>
+
+<footer class="site">
+  <div class="footer-inner">
+    <span class="mono">K-Rambles · 이동, 팁 보드</span>
+    <div class="footer-links">
+      <a href="/ko/about.html">소개</a>
+      <a href="/ko/privacy.html">개인정보</a>
+      <a href="mailto:doma11@naver.com">문의</a>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/js/krambles-render.js"></script>
+<script>
+  KR.renderHub({
+    city: 'gyeongju',
+    articleBase: '/ko/getting-around/',
+    jsonUrl: '/data/getting-around-ko.json',
+    assetBase: '/',
+    gridSelector: '.hub-grid',
+    countSelector: '.hub-count',
+    countTemplate: '핀 {n}개 · 최신순',
+    boardLabel: '이동, 팁'
+  });
+</script>
+
+<script>
+(function () {
+  var KEY = 'krambles-fontsize';
+  var STEPS = ['xs', 'sm', 'md', 'lg', 'xl'];
+  var root = document.documentElement;
+  var ctrl = document.querySelector('.font-size-ctrl');
+  if (!ctrl) { return; }
+  var decBtn = ctrl.querySelector('[data-action="dec"]');
+  var incBtn = ctrl.querySelector('[data-action="inc"]');
+  var index = 2;
+
+  function apply(i) {
+    var size = STEPS[i];
+    if (size === 'md') { root.removeAttribute('data-fs'); }
+    else { root.setAttribute('data-fs', size); }
+    decBtn.disabled = i === 0;
+    incBtn.disabled = i === STEPS.length - 1;
+  }
+
+  var saved = 'md';
+  try { saved = localStorage.getItem(KEY) || 'md'; } catch (e) {}
+  index = STEPS.indexOf(saved);
+  if (index === -1) { index = 2; }
+  apply(index);
+
+  decBtn.addEventListener('click', function () {
+    if (index > 0) {
+      index--;
+      apply(index);
+      try { localStorage.setItem(KEY, STEPS[index]); } catch (e) {}
+    }
+  });
+  incBtn.addEventListener('click', function () {
+    if (index < STEPS.length - 1) {
+      index++;
+      apply(index);
+      try { localStorage.setItem(KEY, STEPS[index]); } catch (e) {}
+    }
+  });
+})();
+</script>
+<script data-goatcounter="https://krambles.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

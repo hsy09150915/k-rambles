@@ -1,0 +1,4 @@
+[
+  { "id": "busan", "name": { "en": "Busan", "ko": "부산", "vi": "Busan", "th": "ปูซาน" } },
+  { "id": "gyeongju", "name": { "en": "Gyeongju", "ko": "경주", "vi": "Gyeongju", "th": "คย็องจู" } }
+]

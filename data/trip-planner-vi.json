@@ -1,5 +1,67 @@
 [
   {
+    "title": "Lộ trình đi bộ trung tâm Gyeongju: từ Hwangnidan-gil qua Daereungwon, Cheomseongdae đến Donggung và hồ Wolji về đêm",
+    "url": "2026-11-17-gyeongju-downtown-walking-route-vi.html",
+    "thumb": "assets/thumbs/trip-planner/gyeongju-downtown-walking-route.jpg",
+    "label": "Lộ trình · Trực tuyến",
+    "alt": "Bản đồ lộ trình đi bộ trung tâm Gyeongju",
+    "badge": null,
+    "like_id": "trip-planner/2026-11-17-gyeongju-downtown-walking-route-vi.html",
+    "date": "2026-11-17",
+    "kw": "Gyeongju đi bộ gyeongju lộ trình đi bộ trung tâm Hwangnidan-gil Hwangnam-ppang Daereungwon Cheonmachong Cheonmado lăng mộ Cheomseongdae đài thiên văn Gyerim làng Gyochon dòng họ Choe cầu Woljeonggyo bảo tàng quốc gia gyeongju bảo tàng vương miện vàng Silla chuông thần vua Seongdeok chuông Emille Donggung hồ Wolji Anapji gyeongju về đêm cảnh đêm APEC Silla",
+    "city": "gyeongju",
+    "locations": [
+      {
+        "name": "Hwangnidan-gil",
+        "address": "Poseok-ro, Hwangnam-dong, Gyeongju",
+        "lat": 35.8376609,
+        "lng": 129.209724
+      },
+      {
+        "name": "Daereungwon (Cheonmachong)",
+        "address": "14 Gyerim-ro, Gyeongju",
+        "lat": 35.8385785,
+        "lng": 129.2105215
+      },
+      {
+        "name": "Cheomseongdae",
+        "address": "839-1 Inwang-dong, Gyeongju",
+        "lat": 35.8347306,
+        "lng": 129.2190014
+      },
+      {
+        "name": "Rừng Gyerim",
+        "address": "1 Gyo-dong, Gyeongju",
+        "lat": 35.8322427,
+        "lng": 129.2173376
+      },
+      {
+        "name": "Làng Gyochon",
+        "address": "39-2 Gyochon-gil, Gyeongju",
+        "lat": 35.8298626,
+        "lng": 129.2150361
+      },
+      {
+        "name": "Cầu Woljeonggyo",
+        "address": "48 Gyo-dong, Gyeongju",
+        "lat": 35.8291928,
+        "lng": 129.2181213
+      },
+      {
+        "name": "Bảo tàng Quốc gia Gyeongju",
+        "address": "186 Iljeong-ro, Gyeongju",
+        "lat": 35.8293965,
+        "lng": 129.2279056
+      },
+      {
+        "name": "Donggung và hồ Wolji",
+        "address": "102 Wonhwa-ro, Gyeongju",
+        "lat": 35.8348173,
+        "lng": 129.2265645
+      }
+    ]
+  },
+  {
     "title": "Mua đồ Hàn Quốc ở chợ truyền thống Busan: từ chăn mền đến dao rèn tay",
     "url": "2026-11-14-busan-market-korean-goods-guide-vi.html",
     "thumb": "assets/thumbs/trip-planner/busan-market-korean-goods-guide.jpg",
@@ -615,7 +677,7 @@
     "like_id": "trip-planner/2026-09-19-korea-entry-eta-arrival-card-guide-vi.html",
     "date": "2026-09-19",
     "kw": "the nhap canh keta k-eta arrival card visa mien thi thuc dang ky nguoi nuoc ngoai busan du lich gyeongju du lịch",
-    "city": "busan",
+    "city": "korea",
     "locations": []
   },
   {

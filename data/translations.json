@@ -466,5 +466,53 @@
     "ko": "/ko/taste/2026-11-16-korea-convenience-store-foods-ko.html",
     "th": "/th/taste/2026-11-16-korea-convenience-store-foods-th.html",
     "vi": "/vi/taste/2026-11-16-korea-convenience-store-foods-vi.html"
+  },
+  "gyeongju/index": {
+    "en": "/gyeongju/index.html",
+    "ko": "/ko/gyeongju/index.html",
+    "vi": "/vi/gyeongju/index.html",
+    "th": "/th/gyeongju/index.html"
+  },
+  "gyeongju/trip-planner/index": {
+    "en": "/gyeongju/trip-planner/index.html",
+    "ko": "/ko/gyeongju/trip-planner/index.html",
+    "vi": "/vi/gyeongju/trip-planner/index.html",
+    "th": "/th/gyeongju/trip-planner/index.html"
+  },
+  "gyeongju/getting-around/index": {
+    "en": "/gyeongju/getting-around/index.html",
+    "ko": "/ko/gyeongju/getting-around/index.html",
+    "vi": "/vi/gyeongju/getting-around/index.html",
+    "th": "/th/gyeongju/getting-around/index.html"
+  },
+  "gyeongju/taste/index": {
+    "en": "/gyeongju/taste/index.html",
+    "ko": "/ko/gyeongju/taste/index.html",
+    "vi": "/vi/gyeongju/taste/index.html",
+    "th": "/th/gyeongju/taste/index.html"
+  },
+  "gyeongju/long-stay/index": {
+    "en": "/gyeongju/long-stay/index.html",
+    "ko": "/ko/gyeongju/long-stay/index.html",
+    "vi": "/vi/gyeongju/long-stay/index.html",
+    "th": "/th/gyeongju/long-stay/index.html"
+  },
+  "getting-around/2026-11-17-busan-to-gyeongju-transport-guide-en": {
+    "en": "/getting-around/2026-11-17-busan-to-gyeongju-transport-guide-en.html",
+    "ko": "/ko/getting-around/2026-11-17-busan-to-gyeongju-transport-guide-ko.html",
+    "vi": "/vi/getting-around/2026-11-17-busan-to-gyeongju-transport-guide-vi.html",
+    "th": "/th/getting-around/2026-11-17-busan-to-gyeongju-transport-guide-th.html"
+  },
+  "getting-around/2026-11-17-seoul-to-gyeongju-ktx-bus-guide-en": {
+    "en": "/getting-around/2026-11-17-seoul-to-gyeongju-ktx-bus-guide-en.html",
+    "ko": "/ko/getting-around/2026-11-17-seoul-to-gyeongju-ktx-bus-guide-ko.html",
+    "vi": "/vi/getting-around/2026-11-17-seoul-to-gyeongju-ktx-bus-guide-vi.html",
+    "th": "/th/getting-around/2026-11-17-seoul-to-gyeongju-ktx-bus-guide-th.html"
+  },
+  "trip-planner/2026-11-17-gyeongju-downtown-walking-route-en": {
+    "en": "/trip-planner/2026-11-17-gyeongju-downtown-walking-route-en.html",
+    "ko": "/ko/trip-planner/2026-11-17-gyeongju-downtown-walking-route-ko.html",
+    "vi": "/vi/trip-planner/2026-11-17-gyeongju-downtown-walking-route-vi.html",
+    "th": "/th/trip-planner/2026-11-17-gyeongju-downtown-walking-route-th.html"
   }
 }

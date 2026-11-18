@@ -1,5 +1,129 @@
 [
   {
+    "title": "서울에서 경주 가는 법, KTX와 고속버스 비교부터 휴게소 즐기는 법까지",
+    "url": "2026-11-17-seoul-to-gyeongju-ktx-bus-guide-ko.html",
+    "thumb": "assets/thumbs/getting-around/seoul-to-gyeongju-ktx-bus-guide.jpg",
+    "label": "기차, 버스 · 공개중",
+    "alt": "서울에서 경주까지 화살표로 이은 한국 지도 그림",
+    "badge": null,
+    "like_id": "getting-around/2026-11-17-seoul-to-gyeongju-ktx-bus-guide-ko.html",
+    "date": "2026-11-17",
+    "kw": "경주 서울 경주 경주 가는 법 경주역 KTX KTX-이음 SRT 서울역 수서역 청량리역 고속버스 서울고속버스터미널 경부선 프리미엄 우등 휴게소 고속도로 휴게소 낙동강휴게소 호두과자 소떡소떡 키오스크 인천공항 경주 공항버스 경주 당일치기 경주 여행 불국사 황리단길 부산",
+    "city": "gyeongju",
+    "locations": [
+      {
+        "name": "서울역",
+        "address": "서울 용산구 한강대로 405",
+        "lat": 37.555946,
+        "lng": 126.972317
+      },
+      {
+        "name": "수서역",
+        "address": "서울 강남구 밤고개로 99",
+        "lat": 37.485544,
+        "lng": 127.10438
+      },
+      {
+        "name": "청량리역",
+        "address": "서울 동대문구 왕산로 214",
+        "lat": 37.5804671,
+        "lng": 127.0462574
+      },
+      {
+        "name": "서울고속버스터미널(경부선)",
+        "address": "서울 서초구 신반포로 194",
+        "lat": 37.506572,
+        "lng": 127.006848
+      },
+      {
+        "name": "낙동강의성휴게소(경주 방향)",
+        "address": "경북 의성군 단밀면 도안로 757-67",
+        "lat": 36.3457594,
+        "lng": 128.2959912
+      },
+      {
+        "name": "경주역(KTX)",
+        "address": "경북 경주시 건천읍 신경주역로 80",
+        "lat": 35.7986381,
+        "lng": 129.1389468
+      },
+      {
+        "name": "경주 고속버스터미널, 시외버스터미널",
+        "address": "경북 경주시 중부동 243-5",
+        "lat": 35.838677,
+        "lng": 129.2035
+      }
+    ]
+  },
+  {
+    "title": "부산에서 경주 가는 법, 기차와 버스부터 불국사, 황리단길 가는 버스까지",
+    "url": "2026-11-17-busan-to-gyeongju-transport-guide-ko.html",
+    "thumb": "assets/thumbs/getting-around/busan-to-gyeongju-transport-guide.jpg",
+    "label": "기차, 버스 · 공개중",
+    "alt": "부산에서 경주까지 화살표로 이은 지도 그림",
+    "badge": null,
+    "like_id": "getting-around/2026-11-17-busan-to-gyeongju-transport-guide-ko.html",
+    "date": "2026-11-17",
+    "kw": "경주 부산 경주 경주 가는 법 경주역 신경주역 KTX KTX-이음 ITX-마음 부전역 부산역 해운대 시외버스정류소 노포 부산종합버스터미널 서부버스터미널 사상 고속버스 시외버스 경주 버스터미널 경주 버스 시내버스 10번 11번 12번 700번 월정 순환버스 불국사 석굴암 황리단길 대릉원 보문관광단지 김해공항 경주 당일치기 티머니",
+    "city": "gyeongju",
+    "locations": [
+      {
+        "name": "부산역",
+        "address": "부산 동구 중앙대로 206",
+        "lat": 35.115225,
+        "lng": 129.042243
+      },
+      {
+        "name": "부전역",
+        "address": "부산 부산진구 부전로 181",
+        "lat": 35.1640413,
+        "lng": 129.0604598
+      },
+      {
+        "name": "해운대 시외버스정류소",
+        "address": "부산 해운대구 우동 (해운대역 2번 출구 근처)",
+        "lat": 35.164737,
+        "lng": 129.160443
+      },
+      {
+        "name": "부산종합버스터미널(노포)",
+        "address": "부산 금정구 노포동 133",
+        "lat": 35.2847494,
+        "lng": 129.0953841
+      },
+      {
+        "name": "서부버스터미널(사상)",
+        "address": "부산 사상구 사상로 201",
+        "lat": 35.16332,
+        "lng": 128.98232
+      },
+      {
+        "name": "경주역(KTX)",
+        "address": "경북 경주시 건천읍 신경주역로 80",
+        "lat": 35.7986381,
+        "lng": 129.1389468
+      },
+      {
+        "name": "경주 고속버스터미널, 시외버스터미널",
+        "address": "경북 경주시 중부동 243-5",
+        "lat": 35.838677,
+        "lng": 129.2035
+      },
+      {
+        "name": "불국사",
+        "address": "경북 경주시 불국로 385",
+        "lat": 35.7898804,
+        "lng": 129.3318909
+      },
+      {
+        "name": "석굴암",
+        "address": "경북 경주시 석굴로 238",
+        "lat": 35.7951981,
+        "lng": 129.3503599
+      }
+    ]
+  },
+  {
     "title": "서울에서 부산 가는 KTX 예매하는 법, 외국인을 위한 코레일 사이트·해외카드 안내",
     "url": "2026-10-22-korea-ktx-booking-guide-ko.html",
     "thumb": "assets/thumbs/getting-around/korea-ktx-booking-guide.jpg",
@@ -22,7 +146,7 @@
     "like_id": "getting-around/2026-09-26-korea-delivery-apps-guide-ko.html",
     "date": "2026-09-26",
     "kw": "delivery app baemin coupang eats yogiyo shuttle foreigner korea busan food delivery 배달앱 배달의민족 배민 쿠팡이츠 셔틀 요기요 외국인 회원가입 해외카드",
-    "city": "busan",
+    "city": "korea",
     "locations": []
   },
   {
@@ -35,7 +159,7 @@
     "like_id": "getting-around/2026-09-25-korea-pharmacy-hospital-guide-ko.html",
     "date": "2026-09-25",
     "kw": "pharmacy hospital clinic medicine sick emergency korea busan convenience store otc drug referral tertiary hospital 약국 병원 편의점 상비약 진료과 1차 2차 3차 상급종합병원 진료의뢰서 아플때",
-    "city": "busan",
+    "city": "korea",
     "locations": []
   },
   {
@@ -48,7 +172,7 @@
     "like_id": "getting-around/2026-09-24-korea-card-payment-guide-ko.html",
     "date": "2026-09-24",
     "kw": "card payment korea contactless tap nfc credit card foreign card decline apple pay google pay visa mastercard t-money cash 카드결제 컨택리스 해외카드 신용카드 체크카드 애플페이 구글페이 결제거절 티머니 현금",
-    "city": "busan",
+    "city": "korea",
     "locations": []
   },
   {
@@ -152,7 +276,7 @@
     "like_id": "getting-around/2026-09-07-naver-map-app-guide.html",
     "date": "2026-09-07",
     "kw": "네이버맵 카카오맵 카카오메트로 영어 언어 설정 앱 검색 길찾기 도착 알림 부산 여행 네이버지도 네이버 지도 카카오맵 지도앱 한국여행",
-    "city": "busan",
+    "city": "korea",
     "locations": []
   },
   {

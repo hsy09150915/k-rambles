@@ -36,7 +36,7 @@ def lang_of(text, rel):
     first = rel.split("/")[0]
     return first if first in ("ko", "vi", "th") else "en"
 
-def tile(item, asset_base, lang):
+def tile(item, asset_base, lang, article_base=""):
     label, title = LIKE[lang]
     badge = '<span class="tile-photo-badge">%s</span>' % esc(item["badge"]) if item.get("badge") else ""
     alt = item.get("alt") or item.get("title")
@@ -45,7 +45,7 @@ def tile(item, asset_base, lang):
             '<div class="tile-photo-body"><span class="tile-photo-label">%s</span><h3 class="tile-photo-title">%s</h3></div></a>'
             '<button class="tile-like-btn" data-like-id="%s" data-goatcounter-click="like:%s" aria-label="%s" aria-pressed="false" title="%s">'
             '<svg><use href="#i-heart"/></svg></button></div>') % (
-        esc(item["url"]), esc(asset_base + item["thumb"]), esc(alt), badge, esc(item.get("label") or ""),
+        esc(article_base + item["url"]), esc(asset_base + item["thumb"]), esc(alt), badge, esc(item.get("label") or ""),
         esc(item["title"]), esc(item["like_id"]), esc(item["like_id"]), esc(label), esc(title))
 
 # ---- 음식 띠(Pick a dish): data/dishes.json → 맛 허브 4개 페이지 ----
@@ -58,17 +58,19 @@ DISH_TXT = {
 }
 CATS = ["all", "seafood", "meat", "other"]
 
-def dish_strip(lang, items):
+def dish_strip(lang, items, article_base=""):
     """맛 허브 페이지용 음식 띠 HTML. items 는 그 언어의 taste JSON(글 url 찾기용)."""
     dishes = json.load(open(os.path.join(ROOT, "data/dishes.json"), encoding="utf-8"))
     title, sub, cats, aria, aria_f, aria_l, aria_r = DISH_TXT[lang]
     def url(stem):
         for i in items:
             if i["url"].startswith(stem): return i["url"]
-        raise SystemExit("dishes.json: %s 글을 taste-%s.json 에서 못 찾음" % (stem, lang))
+        return None
     cards = []
     for d in dishes:
-        href = url(d["article"]) + ("#" + d["anchor"] if d.get("anchor") else "")
+        if url(d["article"]) is None:
+            continue  # 이 도시 허브에 없는 글의 음식은 띠에서 뺌
+        href = article_base + url(d["article"]) + ("#" + d["anchor"] if d.get("anchor") else "")
         name = d["name"][lang]
         ko = "" if lang == "ko" else '<span class="dish-ko">%s</span>' % esc(d["ko"])
         cards.append('<a class="dish" data-cat="%s" href="%s"><div class="dish-img"><img src="/assets/thumbs/dishes/%s.jpg" alt="%s" width="320" height="320" loading="lazy"></div><p class="dish-name">%s%s</p></a>'
@@ -94,9 +96,13 @@ def process(path):
     base = (re.search(r"assetBase:\s*'([^']*)'", c) or [None, ""])[1]
     tmpl = re.search(r"countTemplate:\s*'([^']*)'", c)
     lang = lang_of(text, rel)
+    city = (re.search(r"city:\s*'([^']+)'", c) or [None, "busan"])[1]
+    abase = (re.search(r"articleBase:\s*'([^']*)'", c) or [None, ""])[1]
     items = json.load(open(os.path.join(ROOT, jurl.lstrip("/")), encoding="utf-8"))
+    # 도시 필터: 그 도시 글 + 한국 공통(korea) 글. city 가 없는 글은 부산(busan)으로 봄. (krambles-render.js cityFilter 와 같은 규칙)
+    items = [i for i in items if (i.get("city") or "busan") in (city, "korea")]
     items = sorted(items, key=lambda i: i.get("date") or "0000-00-00", reverse=True)
-    inner = START + "\n" + "".join(tile(i, base, lang) for i in items) + "\n" + END
+    inner = START + "\n" + "".join(tile(i, base, lang, abase) for i in items) + "\n" + END
     new = text
     if START in new:
         new = re.sub(re.escape(START) + r".*?" + re.escape(END), lambda m: inner, new, flags=re.S)
@@ -105,7 +111,7 @@ def process(path):
         assert pat.search(new), rel + ": hub-grid 빈 상자를 찾지 못함"
         new = pat.sub(lambda m: m.group(1) + "\n" + inner + "\n" + m.group(2), new, count=1)
     if DSTART in new and DEND in new:
-        new = re.sub(re.escape(DSTART) + r".*?" + re.escape(DEND), lambda m: dish_strip(lang, items), new, flags=re.S)
+        new = re.sub(re.escape(DSTART) + r".*?" + re.escape(DEND), lambda m: dish_strip(lang, items, abase), new, flags=re.S)
     if tmpl:
         txt = fill(tmpl.group(1), len(items))
         new = re.sub(r'(<p class="hub-count">)[^<]*(</p>)', lambda m: m.group(1) + txt + m.group(2), new, count=1)

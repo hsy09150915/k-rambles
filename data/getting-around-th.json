@@ -1,5 +1,129 @@
 [
   {
+    "title": "โซลไปคย็องจู: เทียบ KTX กับรถบัสด่วน พร้อมของกินที่จุดพักรถ",
+    "url": "2026-11-17-seoul-to-gyeongju-ktx-bus-guide-th.html",
+    "thumb": "assets/thumbs/getting-around/seoul-to-gyeongju-ktx-bus-guide.jpg",
+    "label": "รถไฟ, รถบัส · เผยแพร่แล้ว",
+    "alt": "แผนที่ภาพเกาหลีมีลูกศรจากโซลไปคย็องจู",
+    "badge": null,
+    "like_id": "getting-around/2026-11-17-seoul-to-gyeongju-ktx-bus-guide-th.html",
+    "date": "2026-11-17",
+    "kw": "คย็องจู โซล คย็องจู โซลไปคย็องจู วิธีไปคย็องจู สถานีคย็องจู KTX KTX-Eum SRT สถานีโซล สถานีซูซอ ชองนยางนี รถบัสด่วน สถานีขนส่งรถด่วนโซล คยองบู พรีเมียม จุดพักรถ ทางด่วน นักทงกัง โฮดูกวาจา โซต็อกโซต็อก คีออสก์ สนามบินอินชอน อินชอน รถบัสสนามบิน เช้าไปเย็นกลับ วัดพุลกุกซา ฮวังนิดันกิล ปูซาน",
+    "city": "gyeongju",
+    "locations": [
+      {
+        "name": "สถานีโซล",
+        "address": "405 Hangang-daero, Yongsan-gu, Seoul",
+        "lat": 37.555946,
+        "lng": 126.972317
+      },
+      {
+        "name": "สถานีซูซอ",
+        "address": "99 Bamgogae-ro, Gangnam-gu, Seoul",
+        "lat": 37.485544,
+        "lng": 127.10438
+      },
+      {
+        "name": "สถานีชองนยางนี",
+        "address": "214 Wangsan-ro, Dongdaemun-gu, Seoul",
+        "lat": 37.5804671,
+        "lng": 127.0462574
+      },
+      {
+        "name": "สถานีขนส่งรถด่วนโซล (สายคยองบู)",
+        "address": "194 Sinbanpo-ro, Seocho-gu, Seoul",
+        "lat": 37.506572,
+        "lng": 127.006848
+      },
+      {
+        "name": "จุดพักรถนักทงกังอึยซอง (ขาไปคย็องจู)",
+        "address": "757-67 Doan-ro, Danmil-myeon, Uiseong-gun",
+        "lat": 36.3457594,
+        "lng": 128.2959912
+      },
+      {
+        "name": "สถานีคย็องจู (KTX)",
+        "address": "80 Singyeongjuyeok-ro, Geoncheon-eup, Gyeongju",
+        "lat": 35.7986381,
+        "lng": 129.1389468
+      },
+      {
+        "name": "สถานีขนส่งรถด่วนและรถระหว่างเมืองคย็องจู",
+        "address": "243-5 Jungbu-dong, Gyeongju",
+        "lat": 35.838677,
+        "lng": 129.2035
+      }
+    ]
+  },
+  {
+    "title": "ปูซานไปคย็องจูด้วยรถไฟหรือรถบัส พร้อมรถเมล์ไปวัดพุลกุกซาและฮวังนิดันกิล",
+    "url": "2026-11-17-busan-to-gyeongju-transport-guide-th.html",
+    "thumb": "assets/thumbs/getting-around/busan-to-gyeongju-transport-guide.jpg",
+    "label": "รถไฟ, รถบัส · เผยแพร่แล้ว",
+    "alt": "แผนที่ภาพมีลูกศรจากปูซานไปคย็องจู",
+    "badge": null,
+    "like_id": "getting-around/2026-11-17-busan-to-gyeongju-transport-guide-th.html",
+    "date": "2026-11-17",
+    "kw": "คย็องจู ปูซาน คย็องจู ปูซานไปคย็องจู วิธีไปคย็องจู สถานีคย็องจู singyeongju ชินคย็องจู KTX KTX-Eum ITX-Maeum สถานีพูจอน สถานีปูซาน แฮอุนแด รถบัสระหว่างเมือง โนโพ ซอบู ซาซัง รถบัสด่วน สถานีขนส่งคย็องจู รถเมล์คย็องจู รถเมล์ สาย 10 11 12 700 วอลจอง วัดพุลกุกซา พุลกุกซา ซ็อกกูรัม ฮวังนิดันกิล แทรึงวอน โบมุน สนามบินกิมแฮ เช้าไปเย็นกลับ ไปกลับ T-money",
+    "city": "gyeongju",
+    "locations": [
+      {
+        "name": "สถานีปูซาน",
+        "address": "206 Jungang-daero, Dong-gu, Busan",
+        "lat": 35.115225,
+        "lng": 129.042243
+      },
+      {
+        "name": "สถานีพูจอน",
+        "address": "181 Bujeon-ro, Busanjin-gu, Busan",
+        "lat": 35.1640413,
+        "lng": 129.0604598
+      },
+      {
+        "name": "จุดจอดรถบัสระหว่างเมืองแฮอุนแด",
+        "address": "Near Exit 2, Haeundae Station, Haeundae-gu, Busan",
+        "lat": 35.164737,
+        "lng": 129.160443
+      },
+      {
+        "name": "สถานีขนส่งกลางปูซาน (โนโพ)",
+        "address": "133 Nopo-dong, Geumjeong-gu, Busan",
+        "lat": 35.2847494,
+        "lng": 129.0953841
+      },
+      {
+        "name": "สถานีขนส่งซอบู (ซาซัง)",
+        "address": "201 Sasang-ro, Sasang-gu, Busan",
+        "lat": 35.16332,
+        "lng": 128.98232
+      },
+      {
+        "name": "สถานีคย็องจู (KTX)",
+        "address": "80 Singyeongjuyeok-ro, Geoncheon-eup, Gyeongju",
+        "lat": 35.7986381,
+        "lng": 129.1389468
+      },
+      {
+        "name": "สถานีขนส่งรถด่วนและรถระหว่างเมืองคย็องจู",
+        "address": "243-5 Jungbu-dong, Gyeongju",
+        "lat": 35.838677,
+        "lng": 129.2035
+      },
+      {
+        "name": "วัดพุลกุกซา",
+        "address": "385 Bulguk-ro, Gyeongju",
+        "lat": 35.7898804,
+        "lng": 129.3318909
+      },
+      {
+        "name": "ซ็อกกูรัม",
+        "address": "238 Seokgul-ro, Gyeongju",
+        "lat": 35.7951981,
+        "lng": 129.3503599
+      }
+    ]
+  },
+  {
     "title": "วิธีจองตั๋วรถไฟ KTX จากโซลไปปูซาน: เว็บไซต์ Korail แอป Korail+ และบัตรจากต่างประเทศ",
     "url": "2026-10-22-korea-ktx-booking-guide-th.html",
     "thumb": "assets/thumbs/getting-around/korea-ktx-booking-guide.jpg",
@@ -22,7 +146,7 @@
     "like_id": "getting-around/2026-09-26-korea-delivery-apps-guide-th.html",
     "date": "2026-09-26",
     "kw": "ส่งอาหาร เดลิเวอรี่ แบมิน คูปังอีทส์ โยกิโย ต่างชาติ ปูซาน สมัครด้วยบัตรต่างชาติ",
-    "city": "busan",
+    "city": "korea",
     "locations": []
   },
   {
@@ -35,7 +159,7 @@
     "like_id": "getting-around/2026-09-25-korea-pharmacy-hospital-guide-th.html",
     "date": "2026-09-25",
     "kw": "โรงพยาบาล ร้านขายยา คลินิก ยา ร้านสะดวกซื้อ ฉุกเฉิน ปูซาน",
-    "city": "busan",
+    "city": "korea",
     "locations": []
   },
   {
@@ -48,7 +172,7 @@
     "like_id": "getting-around/2026-09-24-korea-card-payment-guide-th.html",
     "date": "2026-09-24",
     "kw": "บัตรเครดิต การชำระเงิน เกาหลี ไร้สัมผัส NFC บัตรต่างชาติถูกปฏิเสธ Apple Pay Google Pay Visa Mastercard T-money เงินสด",
-    "city": "busan",
+    "city": "korea",
     "locations": []
   },
   {
@@ -126,7 +250,7 @@
     "like_id": "getting-around/2026-09-07-naver-map-app-guide-th.html",
     "date": "2026-09-07",
     "kw": "Naver Map Kakao Map Kakao Metro เปลี่ยนภาษาอังกฤษ ตั้งค่าภาษา หาเส้นทาง ปูซาน ท่องเที่ยว",
-    "city": "busan",
+    "city": "korea",
     "locations": []
   },
   {

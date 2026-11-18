@@ -1,5 +1,67 @@
 [
   {
+    "title": "경주 시내 걷기 코스, 황리단길에서 대릉원, 첨성대 지나 동궁과 월지 야경까지",
+    "url": "2026-11-17-gyeongju-downtown-walking-route-ko.html",
+    "thumb": "assets/thumbs/trip-planner/gyeongju-downtown-walking-route.jpg",
+    "label": "여행 계획 · 공개중",
+    "alt": "경주 시내 걷기 코스 지도",
+    "badge": null,
+    "like_id": "trip-planner/2026-11-17-gyeongju-downtown-walking-route-ko.html",
+    "date": "2026-11-17",
+    "kw": "경주 경주 걷기 경주 여행 경주 걷기 코스 경주 시내 황리단길 황남빵 십원빵 대릉원 천마총 천마도 첨성대 계림 교촌마을 최부자댁 월정교 국립경주박물관 신라 금관 성덕대왕신종 에밀레종 판불 동궁과월지 동궁과 월지 안압지 경주 야경 APEC 신라",
+    "city": "gyeongju",
+    "locations": [
+      {
+        "name": "황리단길",
+        "address": "경북 경주시 황남동 포석로 일대",
+        "lat": 35.8376609,
+        "lng": 129.209724
+      },
+      {
+        "name": "대릉원(천마총)",
+        "address": "경북 경주시 계림로 14",
+        "lat": 35.8385785,
+        "lng": 129.2105215
+      },
+      {
+        "name": "첨성대",
+        "address": "경북 경주시 인왕동 839-1",
+        "lat": 35.8347306,
+        "lng": 129.2190014
+      },
+      {
+        "name": "계림",
+        "address": "경북 경주시 교동 1",
+        "lat": 35.8322427,
+        "lng": 129.2173376
+      },
+      {
+        "name": "교촌마을",
+        "address": "경북 경주시 교촌길 39-2",
+        "lat": 35.8298626,
+        "lng": 129.2150361
+      },
+      {
+        "name": "월정교",
+        "address": "경북 경주시 교동 48",
+        "lat": 35.8291928,
+        "lng": 129.2181213
+      },
+      {
+        "name": "국립경주박물관",
+        "address": "경북 경주시 일정로 186",
+        "lat": 35.8293965,
+        "lng": 129.2279056
+      },
+      {
+        "name": "동궁과 월지",
+        "address": "경북 경주시 원화로 102",
+        "lat": 35.8348173,
+        "lng": 129.2265645
+      }
+    ]
+  },
+  {
     "title": "부산 전통시장에서 사는 한국 생활용품, 담요부터 대장간 칼까지",
     "url": "2026-11-14-busan-market-korean-goods-guide-ko.html",
     "thumb": "assets/thumbs/trip-planner/busan-market-korean-goods-guide.jpg",
@@ -615,7 +677,7 @@
     "like_id": "trip-planner/2026-09-19-korea-entry-eta-arrival-card-guide-ko.html",
     "date": "2026-09-19",
     "kw": "입국신고서 케타 keta 이어리이벌카드 arrival card 비자 무비자 외국인등록증 전자여행허가 부산 여행 부산여행 경주 경주여행",
-    "city": "busan",
+    "city": "korea",
     "locations": []
   },
   {

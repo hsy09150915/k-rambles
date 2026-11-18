@@ -1,5 +1,67 @@
 [
   {
+    "title": "Gyeongju Downtown Walking Route: Hwangnidan-gil, Daereungwon and Cheomseongdae to Donggung Palace at Night",
+    "url": "2026-11-17-gyeongju-downtown-walking-route-en.html",
+    "thumb": "assets/thumbs/trip-planner/gyeongju-downtown-walking-route.jpg",
+    "label": "Trip plan · live",
+    "alt": "Map of the Gyeongju downtown walking route",
+    "badge": null,
+    "like_id": "trip-planner/2026-11-17-gyeongju-downtown-walking-route-en.html",
+    "date": "2026-11-17",
+    "kw": "Gyeongju gyeongju walking route walking tour walking course downtown Hwangnidan-gil Hwangnam-ppang Daereungwon Cheonmachong Cheonmado royal tombs tumuli park Cheomseongdae observatory Gyerim forest Gyochon village Choe family Woljeonggyo bridge Gyeongju National Museum museum Silla gold crown Divine Bell of King Seongdeok Emille bell Donggung Palace Wolji Pond Anapji night view night APEC Silla",
+    "city": "gyeongju",
+    "locations": [
+      {
+        "name": "Hwangnidan-gil",
+        "address": "Poseok-ro, Hwangnam-dong, Gyeongju",
+        "lat": 35.8376609,
+        "lng": 129.209724
+      },
+      {
+        "name": "Daereungwon (Cheonmachong)",
+        "address": "14 Gyerim-ro, Gyeongju",
+        "lat": 35.8385785,
+        "lng": 129.2105215
+      },
+      {
+        "name": "Cheomseongdae",
+        "address": "839-1 Inwang-dong, Gyeongju",
+        "lat": 35.8347306,
+        "lng": 129.2190014
+      },
+      {
+        "name": "Gyerim Forest",
+        "address": "1 Gyo-dong, Gyeongju",
+        "lat": 35.8322427,
+        "lng": 129.2173376
+      },
+      {
+        "name": "Gyochon Village",
+        "address": "39-2 Gyochon-gil, Gyeongju",
+        "lat": 35.8298626,
+        "lng": 129.2150361
+      },
+      {
+        "name": "Woljeonggyo Bridge",
+        "address": "48 Gyo-dong, Gyeongju",
+        "lat": 35.8291928,
+        "lng": 129.2181213
+      },
+      {
+        "name": "Gyeongju National Museum",
+        "address": "186 Iljeong-ro, Gyeongju",
+        "lat": 35.8293965,
+        "lng": 129.2279056
+      },
+      {
+        "name": "Donggung Palace and Wolji Pond",
+        "address": "102 Wonhwa-ro, Gyeongju",
+        "lat": 35.8348173,
+        "lng": 129.2265645
+      }
+    ]
+  },
+  {
     "title": "What to Buy at Busan's Traditional Markets: Korean Blankets to Hand-Forged Knives",
     "url": "2026-11-14-busan-market-korean-goods-guide-en.html",
     "thumb": "assets/thumbs/trip-planner/busan-market-korean-goods-guide.jpg",
@@ -615,7 +677,7 @@
     "like_id": "trip-planner/2026-09-19-korea-entry-eta-arrival-card-guide-en.html",
     "date": "2026-09-19",
     "kw": "k-eta arrival card e-arrival visa waiver visa-free arc entry declaration busan korea travel gyeongju",
-    "city": "busan",
+    "city": "korea",
     "locations": []
   },
   {

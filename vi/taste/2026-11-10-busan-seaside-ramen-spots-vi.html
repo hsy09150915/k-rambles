@@ -343,20 +343,6 @@
   .route-cta { display: inline-flex; align-items: center; gap: 6px; text-decoration: none; padding: 9px 18px; border: none; border-radius: 100px; color: #fff5ee; background: var(--coral); font-size: 0.86rem; font-weight: 700; box-shadow: var(--card-shadow); }
   .route-cta:hover { background: var(--coral-ink); }
   .route-cta svg { width: 14px; height: 14px; stroke: currentColor; fill: none; stroke-width: 2.2; }
-  .zoomable { cursor: zoom-in; }
-  .lb { position: fixed; inset: 0; z-index: 1000; background: rgba(10, 14, 22, 0.96); display: none; align-items: center; justify-content: center; padding: 16px; }
-  .lb.open { display: flex; }
-  .lb-fig { margin: 0; flex: 1 1 auto; min-width: 0; max-width: 1100px; display: flex; flex-direction: column; align-items: center; }
-  .lb-fig img { max-width: 100%; max-height: calc(100vh - 110px); object-fit: contain; border-radius: 8px; touch-action: pan-y; user-select: none; }
-  .lb-fig figcaption { color: #f3f4f6; font-size: 0.95rem; margin-top: 12px; text-align: center; }
-  .lb-count { display: block; margin-top: 4px; font-size: 0.82rem; color: #b8bec9; }
-  .lb-x { position: absolute; top: 12px; right: 12px; width: 44px; height: 44px; border-radius: 50%; border: 0; background: rgba(255,255,255,0.16); color: #fff; font-size: 26px; line-height: 44px; cursor: pointer; }
-  .lb-nav { display: none; flex: none; width: 52px; height: 52px; margin: 0 10px; border: 0; border-radius: 50%; background: rgba(255,255,255,0.14); cursor: pointer; position: relative; }
-  .lb-nav[hidden] { visibility: hidden; display: none; }
-  .lb-nav::after { content: ""; position: absolute; top: 50%; left: 50%; width: 0; height: 0; border-top: 11px solid transparent; border-bottom: 11px solid transparent; }
-  .lb-prev::after { border-right: 16px solid #fff; transform: translate(-60%, -50%); }
-  .lb-next::after { border-left: 16px solid #fff; transform: translate(-40%, -50%); }
-  @media (hover: hover) and (pointer: fine) { .lb-nav { display: block; } .lb-nav[hidden] { display: block; visibility: hidden; } }
 </style>
 </head>
 <body>
@@ -474,20 +460,20 @@
   <p class="body-text">Cửa hàng có máy nấu mì, bạn có thể ngồi ở bàn hình ly mì và nhìn ra biển Haeundae qua ô cửa kính lớn. Bên trong khu nhà tắm hơi ở tầng 3 còn có một cửa hàng cùng thương hiệu nữa.</p>
   <p class="body-text">Nếu định dùng cả nhà tắm hơi Hill Spa, hãy xem thêm bài <a href="/vi/trip-planner/2026-09-29-best-busan-saunas-vi.html">Gợi ý nhà tắm hơi ở Busan</a>.</p>
 <div class="inset-photo-wrap" style="max-width:100%;">
-    <img class="inset-photo" style="max-width:100%;" src="/assets/img/inl/7d6adbd03e19.jpg" alt="Lối vào 7-Eleven Busan Haeundae Hill Spa, có biển hiệu quán mì Neoguri và kệ trưng bày hình ly mì lớn xếp đầy mì ly" width="900" height="900" loading="lazy">
+    <img data-zoom class="inset-photo" style="max-width:100%;" src="/assets/img/inl/7d6adbd03e19.jpg" alt="Lối vào 7-Eleven Busan Haeundae Hill Spa, có biển hiệu quán mì Neoguri và kệ trưng bày hình ly mì lớn xếp đầy mì ly" width="900" height="900" loading="lazy">
     <p class="photo-caption" style="margin:10px 0 0;max-width:none;">Ảnh: 7-Eleven Busan Haeundae Hill Spa (1509-7 Jung-dong, quận Haeundae, Busan)</p>
   </div>
   <p class="body-text" style="margin-top:26px;"><strong>emart24 R Haeundae Cheongsapo - trước hoặc sau khi dạo Cheongsapo</strong></p>
   <p class="body-text">Cửa hàng ở gần lối vào cầu ngắm cảnh Cheongsapo Daritdol (청사포 다릿돌전망대). Cửa hàng gần ga Cheongsapo của tàu ven biển Haeundae Beach Train, và quán Cheongsapo Bada Ramyeon Cafe giới thiệu bên dưới nằm ở tầng 4 tòa nhà ngay bên cạnh.</p>
 <div class="inset-photo-wrap" style="max-width:100%;">
-    <img class="inset-photo" style="max-width:100%;" src="/assets/img/inl/6ce8f052046f.jpg" alt="Mì và sữa chuối ở chỗ ngồi cạnh cửa sổ tại emart24 R Haeundae Cheongsapo, bên ngoài là biển Cheongsapo và ngọn hải đăng trắng" width="1200" height="896" loading="lazy">
+    <img data-zoom class="inset-photo" style="max-width:100%;" src="/assets/img/inl/6ce8f052046f.jpg" alt="Mì và sữa chuối ở chỗ ngồi cạnh cửa sổ tại emart24 R Haeundae Cheongsapo, bên ngoài là biển Cheongsapo và ngọn hải đăng trắng" width="1200" height="896" loading="lazy">
     <p class="photo-caption" style="margin:10px 0 0;max-width:none;">Biển Cheongsapo và ngọn hải đăng nhìn từ chỗ ngồi cạnh cửa sổ ở emart24 R Haeundae Cheongsapo. Vì vấn đề bản quyền, ảnh này được dựng lại từ ảnh thật của cửa hàng sao cho giống hệt thực tế.</p>
   </div>
   <p class="body-text" style="margin-top:26px;"><strong>GS25 Songjeong Premium - ngay trước bãi biển Songjeong, chỗ ngồi cạnh cửa sổ tầng 2</strong></p>
   <p class="body-text">Cửa hàng tiện lợi hai tầng này nằm bên kia đường ven biển, đối diện bãi biển Songjeong (송정해수욕장). Bạn chọn đồ ở tầng 1, lên tầng 2 sẽ thấy mì xếp kín một bức tường và có nhiều máy nấu mì.</p>
   <p class="body-text">Từ chỗ ngồi cạnh cửa sổ tầng 2 có thể nhìn ra biển Songjeong. Nhiều người ghé vào sau khi tắm biển hoặc lướt sóng.</p>
 <div class="inset-photo-wrap" style="max-width:100%;">
-    <img class="inset-photo" style="max-width:100%;" src="/assets/img/inl/b85ee9ed95c7.jpg" alt="Mì và sữa chua uống ở chỗ ngồi cạnh cửa sổ tại GS25 Songjeong Premium, bên kia đường là biển Songjeong" width="1070" height="713" loading="lazy">
+    <img data-zoom class="inset-photo" style="max-width:100%;" src="/assets/img/inl/b85ee9ed95c7.jpg" alt="Mì và sữa chua uống ở chỗ ngồi cạnh cửa sổ tại GS25 Songjeong Premium, bên kia đường là biển Songjeong" width="1070" height="713" loading="lazy">
     <p class="photo-caption" style="margin:10px 0 0;max-width:none;">Bãi biển Songjeong nhìn từ chỗ ngồi cạnh cửa sổ ở GS25 Songjeong Premium. Vì vấn đề bản quyền, ảnh này được dựng lại từ ảnh thật của cửa hàng sao cho giống hệt thực tế.</p>
   </div>
   <p class="body-text" style="margin-top:26px;"><strong>CU Millak Waterfront Park - trước công viên ven biển nhìn ra cầu Gwangan</strong></p>
@@ -512,7 +498,7 @@
   <p class="body-text">Cửa hàng mở cửa 24 giờ. Biển ở ngay trước cửa hàng nên nhìn qua cửa sổ là thấy biển Yeonhwa-ri.</p>
   <p class="body-text"><strong>Thư viện mì trước đây ở CU Yeonhwa-ri Ssangyong Center gần đây đã chuyển thành cửa hàng tiện lợi bình thường.</strong> Nếu tìm theo tên cũ trên ứng dụng bản đồ, bạn sẽ không thấy thư viện mì, nên nhớ tìm CU The Ssangyong Osiria (CU 더쌍용오시리아점).</p>
 <div class="inset-photo-wrap" style="max-width:100%;">
-    <img class="inset-photo" style="max-width:100%;" src="/assets/img/inl/416e82c19fe0.jpg" alt="Ảnh đường phố có vòng tròn chấm đỏ đánh dấu tầng 1 khu thương mại chung cư nơi có CU The Ssangyong Osiria. Bên trái là biển" width="1200" height="786" loading="lazy">
+    <img data-zoom class="inset-photo" style="max-width:100%;" src="/assets/img/inl/416e82c19fe0.jpg" alt="Ảnh đường phố có vòng tròn chấm đỏ đánh dấu tầng 1 khu thương mại chung cư nơi có CU The Ssangyong Osiria. Bên trái là biển" width="1200" height="786" loading="lazy">
     <p class="photo-caption" style="margin:10px 0 0;max-width:none;">Vòng tròn đỏ là CU The Ssangyong Osiria. Biển trải ra ngay bên trái con đường.</p>
   </div>
   <p class="body-text" style="margin-top:26px;"><strong>7-Eleven Busan Gijang Yeonhwa-ri - cửa hàng màu hồng trước dãy lều hải sản</strong></p>
@@ -531,7 +517,7 @@
   <p class="body-text">Gimbap ở đây rẻ hơn ở quán ăn vặt mà vẫn có nhiều vị và chất lượng rất cao. Gimbap cũng được người nước ngoài ưa chuộng: tại CU, gimbap bulgogi là món người nước ngoài mua nhiều thứ 2 trong năm 2025.</p>
   <p class="body-text">Gimbap ở cửa hàng tiện lợi được bán ở dạng ướp lạnh. Có thể ăn ngay, nhưng ngon nhất là hâm nóng nhẹ bằng lò vi sóng. Cùng là gimbap cá ngừ nhưng mỗi chuỗi cửa hàng có lượng nhân khác nhau, nên thử nhiều thương hiệu cũng rất thú vị.</p>
 <div class="inset-photo-wrap" style="max-width:100%;">
-    <img class="inset-photo" style="max-width:100%;" src="/assets/img/inl/0b67532805d4.jpg" alt="Nhiều loại gimbap cuộn nguyên cây trên kệ lạnh của cửa hàng tiện lợi, gồm gimbap gà sốt xì dầu, cá ngừ kimchi muối lâu, bò bulgogi sốt mayo, bulgogi và cơm chiên kimchi" width="1065" height="656" loading="lazy">
+    <img data-zoom class="inset-photo" style="max-width:100%;" src="/assets/img/inl/0b67532805d4.jpg" alt="Nhiều loại gimbap cuộn nguyên cây trên kệ lạnh của cửa hàng tiện lợi, gồm gimbap gà sốt xì dầu, cá ngừ kimchi muối lâu, bò bulgogi sốt mayo, bulgogi và cơm chiên kimchi" width="1065" height="656" loading="lazy">
     <p class="photo-caption" style="margin:10px 0 0;max-width:none;">Gimbap cuộn nguyên cây trên kệ lạnh của cửa hàng tiện lợi. Có nhiều loại như bulgogi, cá ngừ và gà sốt xì dầu.</p>
   </div>
 </section>
@@ -556,7 +542,7 @@
   <p class="body-text">Quán nằm ở tầng 4 một tòa nhà ven biển ở Cheongsapo. Chọn mì, thanh toán ở quầy rồi nấu ở máy nào còn trống trong bốn máy nấu mì. Hướng dẫn dùng máy được dán bằng nhiều thứ tiếng.</p>
   <p class="body-text">Qua ô cửa kính lớn có thể thấy hải đăng Cheongsapo và biển, trên sân thượng tầng trên cũng có chỗ ngồi. Có chỗ ngồi một người và phòng cho nhóm.</p>
 <div class="inset-photo-wrap" style="max-width:100%;">
-    <img class="inset-photo" style="max-width:100%;" src="/assets/img/inl/3189b1141c49.jpg" alt="Sân thượng của Cheongsapo Bada Ramyeon Cafe. Đèn mây treo dưới mái bạt trắng, qua bàn ghế gỗ là cửa sổ nhìn ra biển Cheongsapo" width="1200" height="900" loading="lazy">
+    <img data-zoom class="inset-photo" style="max-width:100%;" src="/assets/img/inl/3189b1141c49.jpg" alt="Sân thượng của Cheongsapo Bada Ramyeon Cafe. Đèn mây treo dưới mái bạt trắng, qua bàn ghế gỗ là cửa sổ nhìn ra biển Cheongsapo" width="1200" height="900" loading="lazy">
     <p class="photo-caption" style="margin:10px 0 0;max-width:none;">Ảnh: Cheongsapo Bada Ramyeon Cafe (570 Jung-dong, quận Haeundae, Busan)</p>
   </div>
   <p class="body-text" style="margin-top:26px;"><strong>Songjeong Bada Ramyeon Cafe - sân hiên ngoài trời nghe tiếng sóng</strong></p>
@@ -564,14 +550,14 @@
   <p class="body-text">Bên ngoài có các sàn gỗ mái tam giác và bàn gỗ, buổi tối đèn được bật sáng.</p>
   <p class="body-text">Quán mở cả ban đêm, và có đánh giá cho biết có thể dẫn chó vào cùng. Gió biển mạnh nên buổi tối hãy mang theo áo khoác.</p>
 <div class="inset-photo-wrap" style="max-width:100%;">
-    <img class="inset-photo" style="max-width:100%;" src="/assets/img/inl/dca2b752634d.jpg" alt="Khu ngồi ngoài trời của Songjeong Bada Ramyeon Cafe ban đêm, với ba sàn gỗ mái tam giác lên đèn, bàn gỗ và mái vòm trong suốt đặt cây xương rồng" width="1200" height="825" loading="lazy">
+    <img data-zoom class="inset-photo" style="max-width:100%;" src="/assets/img/inl/dca2b752634d.jpg" alt="Khu ngồi ngoài trời của Songjeong Bada Ramyeon Cafe ban đêm, với ba sàn gỗ mái tam giác lên đèn, bàn gỗ và mái vòm trong suốt đặt cây xương rồng" width="1200" height="825" loading="lazy">
     <p class="photo-caption" style="margin:10px 0 0;max-width:none;">Ảnh: Songjeong Bada Ramyeon Cafe (799-21 Songjeong-dong, quận Haeundae, Busan)</p>
   </div>
   <p class="body-text" style="margin-top:26px;"><strong>Huinnyeoul Ramyeon - chỗ ngồi cạnh cửa sổ ở làng văn hóa Huinnyeoul, Yeongdo</strong></p>
   <p class="body-text">Quán mì tự phục vụ này nằm trong làng văn hóa Huinnyeoul (흰여울문화마을), ngôi làng trên vách đá ngay phía trên biển. Có chỗ ngồi dọc cửa sổ nhìn ra biển và cả bàn tròn.</p>
   <p class="body-text">Giá mì đã bao gồm tô, nên chỉ cần thanh toán rồi đặt ngay lên máy. Quán mở cửa lúc 8 giờ sáng và đóng cửa vào buổi tối, không mở 24 giờ.</p>
 <div class="inset-photo-wrap" style="max-width:100%;">
-    <img class="inset-photo" style="max-width:100%;" src="/assets/img/inl/9ee45baac96c.jpg" alt="Hai tô mì ở chỗ ngồi cạnh cửa sổ tại Huinnyeoul Ramyeon, bên ngoài là mái nhà trong làng, biển, đảo và tàu thuyền ở xa" width="1200" height="896" loading="lazy">
+    <img data-zoom class="inset-photo" style="max-width:100%;" src="/assets/img/inl/9ee45baac96c.jpg" alt="Hai tô mì ở chỗ ngồi cạnh cửa sổ tại Huinnyeoul Ramyeon, bên ngoài là mái nhà trong làng, biển, đảo và tàu thuyền ở xa" width="1200" height="896" loading="lazy">
     <p class="photo-caption" style="margin:10px 0 0;max-width:none;">Biển Yeongdo nhìn từ chỗ ngồi cạnh cửa sổ ở Huinnyeoul Ramyeon. Vì vấn đề bản quyền, ảnh này được dựng lại từ ảnh thật của cửa hàng sao cho giống hệt thực tế.</p>
   </div>
   <p class="body-text"><strong>Quán có thông báo không cho vào chỉ để chụp ảnh mà không mua đồ ăn.</strong> Thông tin về ngôi làng có trong bài <a href="/vi/trip-planner/2026-09-06-huinnyeoul-culture-village-vi.html">Hướng dẫn làng văn hóa Huinnyeoul</a>.</p>
@@ -601,7 +587,7 @@
   <p class="body-text">Bạn gọi món ở tầng 1, khi gọi đến số thì tự ra lấy. Ăn xong cũng tự mang trả bát. <strong>Mỗi người phải gọi một món.</strong></p>
   <p class="body-text">Từ chỗ ngồi cạnh cửa sổ có thể thấy biển, nhưng chỉ có vài chỗ, và cầu thang hẹp, dốc. Buổi trưa có thể phải chờ.</p>
 <div class="inset-photo-wrap" style="max-width:100%;">
-    <img class="inset-photo" style="max-width:100%;" src="/assets/img/inl/e6841e15a41d.jpg" alt="Hai nồi mì trong nồi nhôm vàng kèm củ cải muối và đồ uống ở chỗ ngồi cạnh cửa sổ tại Huinnyeoul Jeomppang, bên ngoài là biển Yeongdo" width="1088" height="814" loading="lazy">
+    <img data-zoom class="inset-photo" style="max-width:100%;" src="/assets/img/inl/e6841e15a41d.jpg" alt="Hai nồi mì trong nồi nhôm vàng kèm củ cải muối và đồ uống ở chỗ ngồi cạnh cửa sổ tại Huinnyeoul Jeomppang, bên ngoài là biển Yeongdo" width="1088" height="814" loading="lazy">
     <p class="photo-caption" style="margin:10px 0 0;max-width:none;">Mì nấu trong nồi nhôm vàng ở chỗ ngồi cạnh cửa sổ tại Huinnyeoul Jeomppang. Vì vấn đề bản quyền, ảnh này được dựng lại từ ảnh thật của cửa hàng sao cho giống hệt thực tế.</p>
   </div>
   <p class="body-text" style="margin-top:26px;"><strong>Okcheon Hoetjip - mì hải sản bạch tuộc trên sàn gỗ trước biển Jungni</strong></p>
@@ -795,21 +781,6 @@
 </script>
 <script data-goatcounter="https://krambles.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
-<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Xem ảnh lớn"><button type="button" class="lb-x" aria-label="Đóng">&times;</button><button type="button" class="lb-nav lb-prev" aria-label="Ảnh trước"></button><figure class="lb-fig"><img alt=""><figcaption><span class="lb-cap"></span><span class="lb-count"></span></figcaption></figure><button type="button" class="lb-nav lb-next" aria-label="Ảnh tiếp theo"></button></div>
-<script>
-(function(){var lb=document.getElementById('lb');if(!lb)return;var im=lb.querySelector('img'),cap=lb.querySelector('.lb-cap'),cnt=lb.querySelector('.lb-count'),pv=lb.querySelector('.lb-prev'),nx=lb.querySelector('.lb-next'),list=[],idx=0,sx=null,sy=0;
-function capOf(el){var box=el.closest('figure')||el.closest('.inset-photo-wrap');var c=box&&box.querySelector('.photo-caption');return c?c.textContent:'';}
-function show(i){if(i<0||i>=list.length)return;idx=i;var el=list[i];im.src=el.currentSrc||el.src;im.alt=el.alt;cap.textContent=capOf(el);cnt.textContent=list.length>1?(i+1)+' / '+list.length:'';pv.hidden=i===0;nx.hidden=i===list.length-1;}
-function close(){lb.classList.remove('open');im.removeAttribute('src');document.body.style.overflow='';}
-var all=[].slice.call(document.querySelectorAll('.inset-photo-wrap img, .photo-grid img'));
-all.forEach(function(el){el.classList.add('zoomable');el.addEventListener('click',function(){var g=el.closest('.photo-grid');list=g?[].slice.call(g.querySelectorAll('img')):[el];show(list.indexOf(el));lb.classList.add('open');document.body.style.overflow='hidden';});});
-pv.addEventListener('click',function(e){e.stopPropagation();show(idx-1);});nx.addEventListener('click',function(e){e.stopPropagation();show(idx+1);});
-lb.querySelector('.lb-x').addEventListener('click',function(e){e.stopPropagation();close();});
-lb.addEventListener('click',function(e){if(e.target===lb)close();});
-lb.addEventListener('touchstart',function(e){if(e.touches.length===1){sx=e.touches[0].clientX;sy=e.touches[0].clientY;}},{passive:true});
-lb.addEventListener('touchend',function(e){if(sx===null)return;var dx=e.changedTouches[0].clientX-sx,dy=e.changedTouches[0].clientY-sy;sx=null;if(Math.abs(dx)>40&&Math.abs(dx)>Math.abs(dy)){show(dx<0?idx+1:idx-1);}});
-document.addEventListener('keydown',function(e){if(!lb.classList.contains('open'))return;if(e.key==='Escape')close();else if(e.key==='ArrowLeft')show(idx-1);else if(e.key==='ArrowRight')show(idx+1);});})();
-</script>
 </body>
 </html>
 

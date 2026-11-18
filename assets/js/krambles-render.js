@@ -62,6 +62,20 @@
     });
   }
 
+  /**
+   * City filter. Every data entry has a `city`: 'busan', 'gyeongju' or 'korea'
+   * (Korea-wide pieces that belong to every city). A page asks for one city
+   * (config.city, default 'busan') and gets that city's pieces plus the
+   * Korea-wide ones. Entries without a city count as 'busan'.
+   */
+  function cityFilter(items, city) {
+    city = city || 'busan';
+    return items.filter(function (it) {
+      var c = it.city || 'busan';
+      return c === city || c === 'korea';
+    });
+  }
+
   function sortByDateDesc(items) {
     return items.slice().sort(function (a, b) {
       var ad = a.date || '0000-00-00';
@@ -373,10 +387,11 @@
     var grid = document.querySelector(config.gridSelector || '.hub-grid');
     if (!grid) { return; }
     fetchJSON(config.jsonUrl).then(function (raw) {
-      var items = sortByDateDesc(raw);
+      var items = cityFilter(sortByDateDesc(raw), config.city);
       var assetBase = config.assetBase || '';
+      var articleBase = config.articleBase || '';
       grid.innerHTML = items.map(function (item) {
-        return tileHTML(item, function (it) { return it.url; }, function (it) { return assetBase + it.thumb; });
+        return tileHTML(item, function (it) { return articleBase + it.url; }, function (it) { return assetBase + it.thumb; });
       }).join('');
 
       wireLikes(grid);
@@ -389,7 +404,7 @@
 
       var baseKw = boardBaseKw(config.jsonUrl);
       var searchItems = items.map(function (it) {
-        return { title: it.title, cat: config.boardLabel || it.label || '', url: it.url, kw: ((it.kw || '') + ' ' + baseKw).trim() };
+        return { title: it.title, cat: config.boardLabel || it.label || '', url: articleBase + it.url, kw: ((it.kw || '') + ' ' + baseKw).trim() };
       });
       wireSearch(searchItems, { input: config.searchInputId, results: config.searchResultsId });
     }).catch(function (err) { console.error('[krambles] hub render failed:', err); });
@@ -1931,6 +1946,7 @@
   }
 
   function hrefForHome(board, item) {
+    if (board.articleBase) { return board.articleBase + item.url; }
     if (item.url.indexOf('../') === 0) { return item.url.slice(3); }
     return board.key + '/' + item.url;
   }
@@ -1949,7 +1965,7 @@
     var assetBase = config.assetBase || '';
     var loads = config.boards.map(function (board) {
       return fetchJSON(board.jsonUrl)
-        .then(function (raw) { return { board: board, items: sortByDateDesc(raw) }; })
+        .then(function (raw) { return { board: board, items: cityFilter(sortByDateDesc(raw), config.city) }; })
         .catch(function (err) {
           console.error('[krambles] home board failed:', board.key, err);
           return { board: board, items: [] };
@@ -2259,4 +2275,166 @@
   } else {
     boot();
   }
+})();
+
+/*
+ * Shared photo viewer (tap a photo to see it large, swipe or use arrows to
+ * move through the group). Replaces the copy that used to be pasted into
+ * every article. Works on any page that loads this file:
+ *  - photos in .photo-grid (2-column photo rows), .zoomable, .route-grid .rg-fig,
+ *    or any single <img data-zoom> (e.g. inset photos that should zoom)
+ *  - group: all .zoomable photos on the page, else the photo's own
+ *    .photo-grid / .route-grid, else the single photo
+ *  - caption: .photo-caption or <figcaption> next to the photo
+ *  - <img data-full="..."> opens that (uncropped) file instead of src
+ * A page that still has its own inline viewer (#lb) is left alone.
+ */
+(function () {
+  'use strict';
+  var SEL = '.photo-grid img, .zoomable img, .route-grid .rg-fig img, img[data-zoom]';
+  var LABELS = {
+    ko: ['사진 크게 보기', '닫기', '이전 사진', '다음 사진'],
+    en: ['View photo larger', 'Close', 'Previous photo', 'Next photo'],
+    vi: ['Xem ảnh lớn', 'Đóng', 'Ảnh trước', 'Ảnh tiếp theo'],
+    th: ['ดูภาพขนาดใหญ่', 'ปิด', 'ภาพก่อนหน้า', 'ภาพถัดไป']
+  };
+  function boot() {
+    if (document.getElementById('lb')) { return; }
+    var all = [].slice.call(document.querySelectorAll(SEL));
+    if (!all.length) { return; }
+    var hl = (document.documentElement.lang || 'en').toLowerCase().slice(0, 2);
+    var L = LABELS[hl] || LABELS.en;
+
+    var st = document.createElement('style');
+    st.id = 'kr-lb-style';
+    st.textContent =
+      '.kr-zoom { cursor: zoom-in; }' +
+      '.lb { position: fixed; inset: 0; z-index: 1000; background: rgba(10, 14, 22, 0.96); display: none; align-items: center; justify-content: center; padding: 16px; }' +
+      '.lb.open { display: flex; }' +
+      '.lb-fig { margin: 0; flex: 1 1 auto; min-width: 0; max-width: 1100px; display: flex; flex-direction: column; align-items: center; }' +
+      '.lb-fig img { max-width: 100%; max-height: calc(100vh - 110px); object-fit: contain; border-radius: 8px; touch-action: pan-y; user-select: none; }' +
+      '.lb-fig figcaption { color: #f3f4f6; font-size: 0.95rem; margin-top: 12px; text-align: center; }' +
+      '.lb-count { display: block; margin-top: 4px; font-size: 0.82rem; color: #b8bec9; }' +
+      '.lb-x { position: absolute; top: 12px; right: 12px; width: 44px; height: 44px; border-radius: 50%; border: 0; background: rgba(255,255,255,0.16); color: #fff; font-size: 26px; line-height: 44px; cursor: pointer; }' +
+      '.lb-nav { display: none; flex: none; width: 52px; height: 52px; margin: 0 10px; border: 0; border-radius: 50%; background: rgba(255,255,255,0.14); cursor: pointer; position: relative; }' +
+      '.lb-nav[hidden] { visibility: hidden; display: none; }' +
+      '.lb-nav::after { content: ""; position: absolute; top: 50%; left: 50%; width: 0; height: 0; border-top: 11px solid transparent; border-bottom: 11px solid transparent; }' +
+      '.lb-prev::after { border-right: 16px solid #fff; transform: translate(-60%, -50%); }' +
+      '.lb-next::after { border-left: 16px solid #fff; transform: translate(-40%, -50%); }' +
+      '@media (hover: hover) and (pointer: fine) { .lb-nav { display: block; } .lb-nav[hidden] { display: block; visibility: hidden; } }';
+    document.head.appendChild(st);
+
+    var lb = document.createElement('div');
+    lb.className = 'lb'; lb.id = 'lb';
+    lb.setAttribute('role', 'dialog'); lb.setAttribute('aria-modal', 'true'); lb.setAttribute('aria-label', L[0]);
+    lb.innerHTML = '<button type="button" class="lb-x" aria-label="' + L[1] + '">&times;</button>' +
+      '<button type="button" class="lb-nav lb-prev" aria-label="' + L[2] + '"></button>' +
+      '<figure class="lb-fig"><img alt=""><figcaption><span class="lb-cap"></span><span class="lb-count"></span></figcaption></figure>' +
+      '<button type="button" class="lb-nav lb-next" aria-label="' + L[3] + '"></button>';
+    document.body.appendChild(lb);
+
+    var im = lb.querySelector('img'), cap = lb.querySelector('.lb-cap'), cnt = lb.querySelector('.lb-count'),
+      pv = lb.querySelector('.lb-prev'), nx = lb.querySelector('.lb-next'), list = [], idx = 0, sx = null, sy = 0;
+    function capOf(el) {
+      var box = el.closest('figure') || el.closest('.inset-photo-wrap') || el.parentNode;
+      var c = box && (box.querySelector('.photo-caption') || box.querySelector('figcaption'));
+      return c ? c.textContent : '';
+    }
+    function groupOf(el) {
+      if (el.closest('.zoomable')) { return all.filter(function (x) { return x.closest('.zoomable'); }); }
+      var g = el.closest('.photo-grid, .route-grid');
+      if (g) { return all.filter(function (x) { return g.contains(x); }); }
+      return [el];
+    }
+    function show(i) {
+      if (i < 0 || i >= list.length) { return; }
+      idx = i; var el = list[i];
+      im.src = el.getAttribute('data-full') || el.currentSrc || el.src; im.alt = el.alt;
+      cap.textContent = capOf(el);
+      cnt.textContent = list.length > 1 ? (i + 1) + ' / ' + list.length : '';
+      pv.hidden = i === 0; nx.hidden = i === list.length - 1;
+    }
+    function close() { lb.classList.remove('open'); im.removeAttribute('src'); document.body.style.overflow = ''; }
+    all.forEach(function (el) {
+      el.classList.add('kr-zoom');
+      el.addEventListener('click', function () {
+        list = groupOf(el); show(list.indexOf(el));
+        lb.classList.add('open'); document.body.style.overflow = 'hidden';
+      });
+    });
+    pv.addEventListener('click', function (e) { e.stopPropagation(); show(idx - 1); });
+    nx.addEventListener('click', function (e) { e.stopPropagation(); show(idx + 1); });
+    lb.querySelector('.lb-x').addEventListener('click', function (e) { e.stopPropagation(); close(); });
+    lb.addEventListener('click', function (e) { if (e.target === lb) { close(); } });
+    lb.addEventListener('touchstart', function (e) { if (e.touches.length === 1) { sx = e.touches[0].clientX; sy = e.touches[0].clientY; } }, { passive: true });
+    lb.addEventListener('touchend', function (e) {
+      if (sx === null) { return; }
+      var dx = e.changedTouches[0].clientX - sx, dy = e.changedTouches[0].clientY - sy; sx = null;
+      if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy)) { show(dx < 0 ? idx + 1 : idx - 1); }
+    });
+    document.addEventListener('keydown', function (e) {
+      if (!lb.classList.contains('open')) { return; }
+      if (e.key === 'Escape') { close(); } else if (e.key === 'ArrowLeft') { show(idx - 1); } else if (e.key === 'ArrowRight') { show(idx + 1); }
+    });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', boot);
+  } else {
+    boot();
+  }
+})();
+
+/*
+ * City memory ("bracelet") and the city menu.
+ * - Every city page says which city it belongs to: <meta name="kr-city" content="busan|gyeongju">.
+ *   Korea-wide articles say content="korea". Pages without the tag count as Busan.
+ * - A Busan or Gyeongju page stores that city for this browser tab (sessionStorage).
+ * - On a Korea-wide article, links back to a home or board page (logo, back link,
+ *   "related searches") are pointed at the remembered city, so a reader who came
+ *   from Gyeongju goes back to Gyeongju, not Busan. Default is Busan.
+ * - Home pages have an empty <div class="menu-cities" data-kr-cities> in the menu;
+ *   it is filled from /data/cities.json with every city except the current one,
+ *   so adding a city means adding one entry to that file.
+ */
+(function () {
+  'use strict';
+  var KEY = 'kr-city';
+  var meta = document.querySelector('meta[name="kr-city"]');
+  var pageCity = meta ? meta.getAttribute('content') : (/\/gyeongju\//.test(location.pathname) ? 'gyeongju' : 'busan');
+  var remembered = null;
+  try { remembered = sessionStorage.getItem(KEY); } catch (e) {}
+  if (pageCity !== 'korea') {
+    try { sessionStorage.setItem(KEY, pageCity); } catch (e) {}
+  }
+  var city = pageCity === 'korea' ? (remembered || 'busan') : pageCity;
+  var m = location.pathname.match(/^\/(ko|vi|th)\//);
+  var lang = m ? m[1] : 'en';
+  var langPrefix = m ? '/' + m[1] + '/' : '/';
+
+  // City home/board path: '' for Busan, 'gyeongju/' for Gyeongju (cities.json "path").
+  function cityPath(c) { return c === 'busan' ? '' : c + '/'; }
+
+  if (pageCity === 'korea' && city !== 'busan') {
+    var re = /^\/((?:ko|vi|th)\/)?(?:(trip-planner|getting-around|taste|long-stay)\/)?(index\.html)?$/;
+    Array.prototype.forEach.call(document.querySelectorAll('a[href]'), function (a) {
+      var u;
+      try { u = new URL(a.getAttribute('href'), location.href); } catch (e) { return; }
+      if (u.origin !== location.origin) { return; }
+      var mm = u.pathname.match(re);
+      if (!mm) { return; }
+      u.pathname = '/' + (mm[1] || '') + cityPath(city) + (mm[2] ? mm[2] + '/' : '') + 'index.html';
+      a.setAttribute('href', u.pathname + u.search + u.hash);
+    });
+  }
+
+  var slot = document.querySelector('[data-kr-cities]');
+  if (!slot) { return; }
+  fetch('/data/cities.json').then(function (r) { return r.json(); }).then(function (cities) {
+    var label = { en: 'Cities', ko: '도시', vi: 'Thành phố', th: 'เมือง' }[lang] || 'Cities';
+    var links = cities.filter(function (c) { return c.id !== city; }).map(function (c) {
+      var name = (c.name && (c.name[lang] || c.name.en)) || c.id;
+      return '<a href="' + langPrefix + cityPath(c.id) + 'index.html">' + name + '</a>';
+    }).join('');
+    if (links) { slot.innerHTML = '<p class="menu-label">' + label + '</p>' + links; }
+  }).catch(function () {});
 })();

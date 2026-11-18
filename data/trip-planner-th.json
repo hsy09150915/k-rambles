@@ -1,5 +1,67 @@
 [
   {
+    "title": "เส้นทางเดินเที่ยวในเมืองคย็องจู: จากฮวังนิดันกิล ผ่านแทรึงวอน ชอมซองแด ถึงทงกุงและสระวอลจียามค่ำ",
+    "url": "2026-11-17-gyeongju-downtown-walking-route-th.html",
+    "thumb": "assets/thumbs/trip-planner/gyeongju-downtown-walking-route.jpg",
+    "label": "แผนเที่ยว · เผยแพร่แล้ว",
+    "alt": "แผนที่เส้นทางเดินเที่ยวในเมืองคย็องจู",
+    "badge": null,
+    "like_id": "trip-planner/2026-11-17-gyeongju-downtown-walking-route-th.html",
+    "date": "2026-11-17",
+    "kw": "คย็องจู เดินเที่ยว เส้นทางเดินเที่ยว ตัวเมือง ฮวังนิดันกิล ฮวังนัมปัง แทรึงวอน ชอนมาชง ชอนมาโด สุสานหลวง ชอมซองแด หอดูดาว คเยริม หมู่บ้านคโยชน คโยชน ตระกูลชเว สะพานวอลจองกโย วอลจองกโย พิพิธภัณฑ์แห่งชาติคย็องจู พิพิธภัณฑ์ มงกุฎทองคำชิลลา ระฆังศักดิ์สิทธิ์ ระฆังเอมิลเล ทงกุง สระวอลจี อันอัปจี คย็องจูยามค่ำ ยามค่ำ เอเปก ชิลลา",
+    "city": "gyeongju",
+    "locations": [
+      {
+        "name": "ฮวังนิดันกิล",
+        "address": "Poseok-ro, Hwangnam-dong, Gyeongju",
+        "lat": 35.8376609,
+        "lng": 129.209724
+      },
+      {
+        "name": "แทรึงวอน (ชอนมาชง)",
+        "address": "14 Gyerim-ro, Gyeongju",
+        "lat": 35.8385785,
+        "lng": 129.2105215
+      },
+      {
+        "name": "ชอมซองแด",
+        "address": "839-1 Inwang-dong, Gyeongju",
+        "lat": 35.8347306,
+        "lng": 129.2190014
+      },
+      {
+        "name": "ป่าคเยริม",
+        "address": "1 Gyo-dong, Gyeongju",
+        "lat": 35.8322427,
+        "lng": 129.2173376
+      },
+      {
+        "name": "หมู่บ้านคโยชน",
+        "address": "39-2 Gyochon-gil, Gyeongju",
+        "lat": 35.8298626,
+        "lng": 129.2150361
+      },
+      {
+        "name": "สะพานวอลจองกโย",
+        "address": "48 Gyo-dong, Gyeongju",
+        "lat": 35.8291928,
+        "lng": 129.2181213
+      },
+      {
+        "name": "พิพิธภัณฑ์แห่งชาติคย็องจู",
+        "address": "186 Iljeong-ro, Gyeongju",
+        "lat": 35.8293965,
+        "lng": 129.2279056
+      },
+      {
+        "name": "ทงกุงและสระวอลจี",
+        "address": "102 Wonhwa-ro, Gyeongju",
+        "lat": 35.8348173,
+        "lng": 129.2265645
+      }
+    ]
+  },
+  {
     "title": "ของใช้เกาหลีที่ควรซื้อในตลาดดั้งเดิมปูซาน ตั้งแต่ผ้าห่มถึงมีดตีมือ",
     "url": "2026-11-14-busan-market-korean-goods-guide-th.html",
     "thumb": "assets/thumbs/trip-planner/busan-market-korean-goods-guide.jpg",
@@ -615,7 +677,7 @@
     "like_id": "trip-planner/2026-09-19-korea-entry-eta-arrival-card-guide-th.html",
     "date": "2026-09-19",
     "kw": "บัตรขาเข้า เคอีทีเอ K-ETA arrival card วีซ่า ยกเว้นวีซ่า ลงทะเบียน ชาวต่างชาติ ปูซาน ท่องเที่ยว เที่ยวปูซาน คยองจู เที่ยวคยองจู",
-    "city": "busan",
+    "city": "korea",
     "locations": []
   },
   {

@@ -1,5 +1,129 @@
 [
   {
+    "title": "Từ Seoul đi Gyeongju: so sánh KTX và xe buýt tốc hành, kèm món ngon ở trạm dừng chân",
+    "url": "2026-11-17-seoul-to-gyeongju-ktx-bus-guide-vi.html",
+    "thumb": "assets/thumbs/getting-around/seoul-to-gyeongju-ktx-bus-guide.jpg",
+    "label": "Tàu, xe buýt · Trực tuyến",
+    "alt": "Bản đồ minh họa Hàn Quốc có mũi tên từ Seoul đến Gyeongju",
+    "badge": null,
+    "like_id": "getting-around/2026-11-17-seoul-to-gyeongju-ktx-bus-guide-vi.html",
+    "date": "2026-11-17",
+    "kw": "Gyeongju seoul gyeongju seoul đi gyeongju cách đi gyeongju ga gyeongju KTX KTX-Eum SRT ga Seoul ga Suseo Cheongnyangni xe buýt tốc hành bến xe buýt tốc hành Seoul Gyeongbu cao cấp hạng sang trạm dừng chân đường cao tốc Nakdonggang hodu-gwaja bánh óc chó sotteok kiosk sân bay incheon xe buýt sân bay gyeongju trong ngày Bulguksa Hwangnidan-gil Busan",
+    "city": "gyeongju",
+    "locations": [
+      {
+        "name": "Ga Seoul",
+        "address": "405 Hangang-daero, Yongsan-gu, Seoul",
+        "lat": 37.555946,
+        "lng": 126.972317
+      },
+      {
+        "name": "Ga Suseo",
+        "address": "99 Bamgogae-ro, Gangnam-gu, Seoul",
+        "lat": 37.485544,
+        "lng": 127.10438
+      },
+      {
+        "name": "Ga Cheongnyangni",
+        "address": "214 Wangsan-ro, Dongdaemun-gu, Seoul",
+        "lat": 37.5804671,
+        "lng": 127.0462574
+      },
+      {
+        "name": "Bến xe buýt tốc hành Seoul (tuyến Gyeongbu)",
+        "address": "194 Sinbanpo-ro, Seocho-gu, Seoul",
+        "lat": 37.506572,
+        "lng": 127.006848
+      },
+      {
+        "name": "Trạm dừng chân Nakdonggang Uiseong (chiều đi Gyeongju)",
+        "address": "757-67 Doan-ro, Danmil-myeon, Uiseong-gun",
+        "lat": 36.3457594,
+        "lng": 128.2959912
+      },
+      {
+        "name": "Ga Gyeongju (KTX)",
+        "address": "80 Singyeongjuyeok-ro, Geoncheon-eup, Gyeongju",
+        "lat": 35.7986381,
+        "lng": 129.1389468
+      },
+      {
+        "name": "Bến xe buýt tốc hành và liên tỉnh Gyeongju",
+        "address": "243-5 Jungbu-dong, Gyeongju",
+        "lat": 35.838677,
+        "lng": 129.2035
+      }
+    ]
+  },
+  {
+    "title": "Từ Busan đi Gyeongju bằng tàu hoặc xe buýt, kèm xe buýt nội thành đến Bulguksa và Hwangnidan-gil",
+    "url": "2026-11-17-busan-to-gyeongju-transport-guide-vi.html",
+    "thumb": "assets/thumbs/getting-around/busan-to-gyeongju-transport-guide.jpg",
+    "label": "Tàu, xe buýt · Trực tuyến",
+    "alt": "Bản đồ minh họa có mũi tên từ Busan đến Gyeongju",
+    "badge": null,
+    "like_id": "getting-around/2026-11-17-busan-to-gyeongju-transport-guide-vi.html",
+    "date": "2026-11-17",
+    "kw": "Gyeongju busan gyeongju busan đi gyeongju cách đi gyeongju ga gyeongju singyeongju KTX KTX-Eum ITX-Maeum ga Bujeon ga Busan Haeundae xe buýt liên tỉnh Nopo Seobu Sasang xe buýt tốc hành bến xe buýt gyeongju xe buýt gyeongju xe buýt nội thành tuyến 10 11 12 700 Woljeong Bulguksa Seokguram Hwangnidan-gil Daereungwon hồ Bomun sân bay Gimhae đi trong ngày T-money",
+    "city": "gyeongju",
+    "locations": [
+      {
+        "name": "Ga Busan",
+        "address": "206 Jungang-daero, Dong-gu, Busan",
+        "lat": 35.115225,
+        "lng": 129.042243
+      },
+      {
+        "name": "Ga Bujeon",
+        "address": "181 Bujeon-ro, Busanjin-gu, Busan",
+        "lat": 35.1640413,
+        "lng": 129.0604598
+      },
+      {
+        "name": "Trạm xe buýt liên tỉnh Haeundae",
+        "address": "Near Exit 2, Haeundae Station, Haeundae-gu, Busan",
+        "lat": 35.164737,
+        "lng": 129.160443
+      },
+      {
+        "name": "Bến xe buýt tổng hợp Busan (Nopo)",
+        "address": "133 Nopo-dong, Geumjeong-gu, Busan",
+        "lat": 35.2847494,
+        "lng": 129.0953841
+      },
+      {
+        "name": "Bến xe buýt Seobu (Sasang)",
+        "address": "201 Sasang-ro, Sasang-gu, Busan",
+        "lat": 35.16332,
+        "lng": 128.98232
+      },
+      {
+        "name": "Ga Gyeongju (KTX)",
+        "address": "80 Singyeongjuyeok-ro, Geoncheon-eup, Gyeongju",
+        "lat": 35.7986381,
+        "lng": 129.1389468
+      },
+      {
+        "name": "Bến xe buýt tốc hành và liên tỉnh Gyeongju",
+        "address": "243-5 Jungbu-dong, Gyeongju",
+        "lat": 35.838677,
+        "lng": 129.2035
+      },
+      {
+        "name": "Chùa Bulguksa",
+        "address": "385 Bulguk-ro, Gyeongju",
+        "lat": 35.7898804,
+        "lng": 129.3318909
+      },
+      {
+        "name": "Hang đá Seokguram",
+        "address": "238 Seokgul-ro, Gyeongju",
+        "lat": 35.7951981,
+        "lng": 129.3503599
+      }
+    ]
+  },
+  {
     "title": "Cách đặt vé tàu KTX từ Seoul đi Busan: trang web Korail, ứng dụng Korail+ và thẻ nước ngoài",
     "url": "2026-10-22-korea-ktx-booking-guide-vi.html",
     "thumb": "assets/thumbs/getting-around/korea-ktx-booking-guide.jpg",
@@ -22,7 +146,7 @@
     "like_id": "getting-around/2026-09-26-korea-delivery-apps-guide-vi.html",
     "date": "2026-09-26",
     "kw": "giao hàng delivery baemin coupang eats yogiyo shuttle nước ngoài foreigner busan food delivery đăng ký thẻ ngoại",
-    "city": "busan",
+    "city": "korea",
     "locations": []
   },
   {
@@ -35,7 +159,7 @@
     "like_id": "getting-around/2026-09-25-korea-pharmacy-hospital-guide-vi.html",
     "date": "2026-09-25",
     "kw": "bệnh viện hiệu thuốc pharmacy hospital clinic thuốc cửa hàng tiện lợi khẩn cấp busan",
-    "city": "busan",
+    "city": "korea",
     "locations": []
   },
   {
@@ -48,7 +172,7 @@
     "like_id": "getting-around/2026-09-24-korea-card-payment-guide-vi.html",
     "date": "2026-09-24",
     "kw": "thẻ thanh toán card payment korea contactless tap nfc credit card foreign card decline apple pay google pay visa mastercard t-money tiền mặt",
-    "city": "busan",
+    "city": "korea",
     "locations": []
   },
   {
@@ -152,7 +276,7 @@
     "like_id": "getting-around/2026-09-07-naver-map-app-guide-vi.html",
     "date": "2026-09-07",
     "kw": "naver map kakao map kakao metro kakao subway đổi tiếng anh cài đặt ngôn ngữ tìm đường busan du lịch",
-    "city": "busan",
+    "city": "korea",
     "locations": []
   },
   {

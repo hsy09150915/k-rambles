@@ -343,20 +343,6 @@
   .route-cta { display: inline-flex; align-items: center; gap: 6px; text-decoration: none; padding: 9px 18px; border: none; border-radius: 100px; color: #fff5ee; background: var(--coral); font-size: 0.86rem; font-weight: 700; box-shadow: var(--card-shadow); }
   .route-cta:hover { background: var(--coral-ink); }
   .route-cta svg { width: 14px; height: 14px; stroke: currentColor; fill: none; stroke-width: 2.2; }
-  .zoomable { cursor: zoom-in; }
-  .lb { position: fixed; inset: 0; z-index: 1000; background: rgba(10, 14, 22, 0.96); display: none; align-items: center; justify-content: center; padding: 16px; }
-  .lb.open { display: flex; }
-  .lb-fig { margin: 0; flex: 1 1 auto; min-width: 0; max-width: 1100px; display: flex; flex-direction: column; align-items: center; }
-  .lb-fig img { max-width: 100%; max-height: calc(100vh - 110px); object-fit: contain; border-radius: 8px; touch-action: pan-y; user-select: none; }
-  .lb-fig figcaption { color: #f3f4f6; font-size: 0.95rem; margin-top: 12px; text-align: center; }
-  .lb-count { display: block; margin-top: 4px; font-size: 0.82rem; color: #b8bec9; }
-  .lb-x { position: absolute; top: 12px; right: 12px; width: 44px; height: 44px; border-radius: 50%; border: 0; background: rgba(255,255,255,0.16); color: #fff; font-size: 26px; line-height: 44px; cursor: pointer; }
-  .lb-nav { display: none; flex: none; width: 52px; height: 52px; margin: 0 10px; border: 0; border-radius: 50%; background: rgba(255,255,255,0.14); cursor: pointer; position: relative; }
-  .lb-nav[hidden] { visibility: hidden; display: none; }
-  .lb-nav::after { content: ""; position: absolute; top: 50%; left: 50%; width: 0; height: 0; border-top: 11px solid transparent; border-bottom: 11px solid transparent; }
-  .lb-prev::after { border-right: 16px solid #fff; transform: translate(-60%, -50%); }
-  .lb-next::after { border-left: 16px solid #fff; transform: translate(-40%, -50%); }
-  @media (hover: hover) and (pointer: fine) { .lb-nav { display: block; } .lb-nav[hidden] { display: block; visibility: hidden; } }
 </style>
 </head>
 <body>
@@ -474,20 +460,20 @@
   <p class="body-text">The store has an instant ramen machine, and you can sit at tables shaped like ramen cups and look out at Haeundae Beach through the big windows. There is another store of the same brand inside the sauna on the 3rd floor.</p>
   <p class="body-text">If you plan to use the Hill Spa sauna as well, see <a href="/trip-planner/2026-09-29-best-busan-saunas-en.html">Best Saunas in Busan</a>.</p>
 <div class="inset-photo-wrap" style="max-width:100%;">
-    <img class="inset-photo" style="max-width:100%;" src="/assets/img/inl/7d6adbd03e19.jpg" alt="Entrance of 7-Eleven Busan Haeundae Hill Spa, with a Neoguri ramen shop sign and a big ramen-cup-shaped display stacked with cup noodles" width="900" height="900" loading="lazy">
+    <img data-zoom class="inset-photo" style="max-width:100%;" src="/assets/img/inl/7d6adbd03e19.jpg" alt="Entrance of 7-Eleven Busan Haeundae Hill Spa, with a Neoguri ramen shop sign and a big ramen-cup-shaped display stacked with cup noodles" width="900" height="900" loading="lazy">
     <p class="photo-caption" style="margin:10px 0 0;max-width:none;">Photo: 7-Eleven Busan Haeundae Hill Spa (1509-7 Jung-dong, Haeundae-gu, Busan)</p>
   </div>
   <p class="body-text" style="margin-top:26px;"><strong>emart24 R Haeundae Cheongsapo - before or after a walk in Cheongsapo</strong></p>
   <p class="body-text">This store is near the entrance to Cheongsapo Daritdol Skywalk (청사포 다릿돌전망대). It is close to Cheongsapo Station on the Haeundae Beach Train, and the Cheongsapo Bada Ramyeon Cafe introduced below is on the 4th floor of the building right next door.</p>
 <div class="inset-photo-wrap" style="max-width:100%;">
-    <img class="inset-photo" style="max-width:100%;" src="/assets/img/inl/6ce8f052046f.jpg" alt="Instant ramen and banana milk at a window seat in emart24 R Haeundae Cheongsapo, with the Cheongsapo sea and a white lighthouse outside" width="1200" height="896" loading="lazy">
+    <img data-zoom class="inset-photo" style="max-width:100%;" src="/assets/img/inl/6ce8f052046f.jpg" alt="Instant ramen and banana milk at a window seat in emart24 R Haeundae Cheongsapo, with the Cheongsapo sea and a white lighthouse outside" width="1200" height="896" loading="lazy">
     <p class="photo-caption" style="margin:10px 0 0;max-width:none;">The Cheongsapo sea and lighthouse seen from a window seat at emart24 R Haeundae Cheongsapo. Because of copyright, this image was rebuilt from a real photo of the store to look exactly like the real place.</p>
   </div>
   <p class="body-text" style="margin-top:26px;"><strong>GS25 Songjeong Premium - right in front of Songjeong Beach, 2nd floor window seats</strong></p>
   <p class="body-text">This two-story convenience store is across the beach road from Songjeong Beach (송정해수욕장). You shop on the 1st floor, and on the 2nd floor one wall is filled with ramen and there are several instant ramen machines.</p>
   <p class="body-text">You can see the Songjeong sea from the 2nd floor window seats. Many people drop in after swimming or surfing.</p>
 <div class="inset-photo-wrap" style="max-width:100%;">
-    <img class="inset-photo" style="max-width:100%;" src="/assets/img/inl/b85ee9ed95c7.jpg" alt="Instant ramen and a yogurt drink at a window seat in GS25 Songjeong Premium, with Songjeong Beach across the road" width="1070" height="713" loading="lazy">
+    <img data-zoom class="inset-photo" style="max-width:100%;" src="/assets/img/inl/b85ee9ed95c7.jpg" alt="Instant ramen and a yogurt drink at a window seat in GS25 Songjeong Premium, with Songjeong Beach across the road" width="1070" height="713" loading="lazy">
     <p class="photo-caption" style="margin:10px 0 0;max-width:none;">Songjeong Beach seen from a window seat at GS25 Songjeong Premium. Because of copyright, this image was rebuilt from a real photo of the store to look exactly like the real place.</p>
   </div>
   <p class="body-text" style="margin-top:26px;"><strong>CU Millak Waterfront Park - in front of the park with a view of Gwangan Bridge</strong></p>
@@ -512,7 +498,7 @@
   <p class="body-text">It is open 24 hours. The sea is right in front of the store, so you can see the Yeonhwa-ri sea from the windows.</p>
   <p class="body-text"><strong>The ramen library that used to be at CU Yeonhwa-ri Ssangyong Center has recently turned into a regular convenience store.</strong> If you go by the old name in a map app, there is no ramen library there, so be sure to search for CU The Ssangyong Osiria (CU 더쌍용오시리아점).</p>
 <div class="inset-photo-wrap" style="max-width:100%;">
-    <img class="inset-photo" style="max-width:100%;" src="/assets/img/inl/416e82c19fe0.jpg" alt="Street photo with a red dotted circle on the 1st floor of the apartment shopping block where CU The Ssangyong Osiria is. The sea is on the left" width="1200" height="786" loading="lazy">
+    <img data-zoom class="inset-photo" style="max-width:100%;" src="/assets/img/inl/416e82c19fe0.jpg" alt="Street photo with a red dotted circle on the 1st floor of the apartment shopping block where CU The Ssangyong Osiria is. The sea is on the left" width="1200" height="786" loading="lazy">
     <p class="photo-caption" style="margin:10px 0 0;max-width:none;">The red circle is CU The Ssangyong Osiria. The sea spreads out right on the left side of the road.</p>
   </div>
   <p class="body-text" style="margin-top:26px;"><strong>7-Eleven Busan Gijang Yeonhwa-ri - the pink store in front of the seafood tent street</strong></p>
@@ -531,7 +517,7 @@
   <p class="body-text">It costs less than gimbap at a snack shop, yet comes in many flavors and the quality is very high. It is popular with foreigners as well: at CU, bulgogi gimbap was the No. 2 item bought by foreign customers in 2025.</p>
   <p class="body-text">Convenience store gimbap is sold chilled. You can eat it as it is, but it tastes best warmed up a little in the microwave. Even the same tuna gimbap has a different amount of filling at each chain, so trying several brands is fun too.</p>
 <div class="inset-photo-wrap" style="max-width:100%;">
-    <img class="inset-photo" style="max-width:100%;" src="/assets/img/inl/0b67532805d4.jpg" alt="Several kinds of whole-roll gimbap on a convenience store fridge shelf, including soy sauce chicken, aged kimchi tuna, beef bulgogi mayo, bulgogi and kimchi fried rice gimbap" width="1065" height="656" loading="lazy">
+    <img data-zoom class="inset-photo" style="max-width:100%;" src="/assets/img/inl/0b67532805d4.jpg" alt="Several kinds of whole-roll gimbap on a convenience store fridge shelf, including soy sauce chicken, aged kimchi tuna, beef bulgogi mayo, bulgogi and kimchi fried rice gimbap" width="1065" height="656" loading="lazy">
     <p class="photo-caption" style="margin:10px 0 0;max-width:none;">Whole-roll gimbap on a convenience store fridge shelf. There are many kinds, such as bulgogi, tuna and soy sauce chicken.</p>
   </div>
 </section>
@@ -556,7 +542,7 @@
   <p class="body-text">It is on the 4th floor of a seaside building in Cheongsapo. Pick your ramen, pay at the counter, and cook it at whichever of the four instant ramen machines is free. Instructions for the machines are posted in several languages.</p>
   <p class="body-text">Through the big windows you can see the Cheongsapo lighthouses and the sea, and there are also seats on the rooftop upstairs. There are seats for one and rooms for groups.</p>
 <div class="inset-photo-wrap" style="max-width:100%;">
-    <img class="inset-photo" style="max-width:100%;" src="/assets/img/inl/3189b1141c49.jpg" alt="Rooftop of Cheongsapo Bada Ramyeon Cafe. Rattan lights hang under a white canvas roof, and the Cheongsapo sea is visible through the windows beyond wooden chairs and tables" width="1200" height="900" loading="lazy">
+    <img data-zoom class="inset-photo" style="max-width:100%;" src="/assets/img/inl/3189b1141c49.jpg" alt="Rooftop of Cheongsapo Bada Ramyeon Cafe. Rattan lights hang under a white canvas roof, and the Cheongsapo sea is visible through the windows beyond wooden chairs and tables" width="1200" height="900" loading="lazy">
     <p class="photo-caption" style="margin:10px 0 0;max-width:none;">Photo: Cheongsapo Bada Ramyeon Cafe (570 Jung-dong, Haeundae-gu, Busan)</p>
   </div>
   <p class="body-text" style="margin-top:26px;"><strong>Songjeong Bada Ramyeon Cafe - an outdoor terrace where you can hear the waves</strong></p>
@@ -564,14 +550,14 @@
   <p class="body-text">Outside there are raised wooden platforms with triangle roofs and wooden tables, and the lights come on at night.</p>
   <p class="body-text">It is open at night too, and some reviews say you can bring your dog inside. The sea wind is strong, so bring a jacket at night.</p>
 <div class="inset-photo-wrap" style="max-width:100%;">
-    <img class="inset-photo" style="max-width:100%;" src="/assets/img/inl/dca2b752634d.jpg" alt="Night view of the outdoor seating at Songjeong Bada Ramyeon Cafe, with three lit wooden platforms under triangle roofs, wooden tables and a clear dome holding cactuses" width="1200" height="825" loading="lazy">
+    <img data-zoom class="inset-photo" style="max-width:100%;" src="/assets/img/inl/dca2b752634d.jpg" alt="Night view of the outdoor seating at Songjeong Bada Ramyeon Cafe, with three lit wooden platforms under triangle roofs, wooden tables and a clear dome holding cactuses" width="1200" height="825" loading="lazy">
     <p class="photo-caption" style="margin:10px 0 0;max-width:none;">Photo: Songjeong Bada Ramyeon Cafe (799-21 Songjeong-dong, Haeundae-gu, Busan)</p>
   </div>
   <p class="body-text" style="margin-top:26px;"><strong>Huinnyeoul Ramyeon - window seats in Huinnyeoul Culture Village, Yeongdo</strong></p>
   <p class="body-text">This self-service ramen shop is in Huinnyeoul Culture Village (흰여울문화마을), a cliffside village right above the sea. There are seats along the windows facing the sea, plus round tables.</p>
   <p class="body-text">The bowl is included in the price of the ramen, so you just pay and put it straight on the machine. It opens at 8 a.m. and closes in the evening. It is not open 24 hours.</p>
 <div class="inset-photo-wrap" style="max-width:100%;">
-    <img class="inset-photo" style="max-width:100%;" src="/assets/img/inl/9ee45baac96c.jpg" alt="Two bowls of instant ramen at a window seat in Huinnyeoul Ramyeon, with the village rooftops, the sea, and islands and ships in the distance" width="1200" height="896" loading="lazy">
+    <img data-zoom class="inset-photo" style="max-width:100%;" src="/assets/img/inl/9ee45baac96c.jpg" alt="Two bowls of instant ramen at a window seat in Huinnyeoul Ramyeon, with the village rooftops, the sea, and islands and ships in the distance" width="1200" height="896" loading="lazy">
     <p class="photo-caption" style="margin:10px 0 0;max-width:none;">The Yeongdo sea seen from a window seat at Huinnyeoul Ramyeon. Because of copyright, this image was rebuilt from a real photo of the store to look exactly like the real place.</p>
   </div>
   <p class="body-text"><strong>A notice says you may not come in just to take photos without buying food.</strong> For more on the village, see the <a href="/trip-planner/2026-09-06-huinnyeoul-culture-village.html">Huinnyeoul Culture Village guide</a>.</p>
@@ -601,7 +587,7 @@
   <p class="body-text">You order on the 1st floor and pick up your food yourself when your number is called. You also return your dishes yourself. <strong>Each person must order one menu item.</strong></p>
   <p class="body-text">You can see the sea from the window seats, but there are only a few of them, and the stairs are narrow and steep. There may be a wait at lunchtime.</p>
 <div class="inset-photo-wrap" style="max-width:100%;">
-    <img class="inset-photo" style="max-width:100%;" src="/assets/img/inl/e6841e15a41d.jpg" alt="Two pots of ramen in yellow aluminum pots with pickled radish and drinks at a window seat in Huinnyeoul Jeomppang, with the Yeongdo sea outside" width="1088" height="814" loading="lazy">
+    <img data-zoom class="inset-photo" style="max-width:100%;" src="/assets/img/inl/e6841e15a41d.jpg" alt="Two pots of ramen in yellow aluminum pots with pickled radish and drinks at a window seat in Huinnyeoul Jeomppang, with the Yeongdo sea outside" width="1088" height="814" loading="lazy">
     <p class="photo-caption" style="margin:10px 0 0;max-width:none;">Ramen in yellow aluminum pots at a window seat in Huinnyeoul Jeomppang. Because of copyright, this image was rebuilt from a real photo of the store to look exactly like the real place.</p>
   </div>
   <p class="body-text" style="margin-top:26px;"><strong>Okcheon Hoetjip - octopus seafood ramyeon on a deck by the Jungni sea</strong></p>
@@ -795,21 +781,6 @@
 </script>
 <script data-goatcounter="https://krambles.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
-<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="View photo larger"><button type="button" class="lb-x" aria-label="Close">&times;</button><button type="button" class="lb-nav lb-prev" aria-label="Previous photo"></button><figure class="lb-fig"><img alt=""><figcaption><span class="lb-cap"></span><span class="lb-count"></span></figcaption></figure><button type="button" class="lb-nav lb-next" aria-label="Next photo"></button></div>
-<script>
-(function(){var lb=document.getElementById('lb');if(!lb)return;var im=lb.querySelector('img'),cap=lb.querySelector('.lb-cap'),cnt=lb.querySelector('.lb-count'),pv=lb.querySelector('.lb-prev'),nx=lb.querySelector('.lb-next'),list=[],idx=0,sx=null,sy=0;
-function capOf(el){var box=el.closest('figure')||el.closest('.inset-photo-wrap');var c=box&&box.querySelector('.photo-caption');return c?c.textContent:'';}
-function show(i){if(i<0||i>=list.length)return;idx=i;var el=list[i];im.src=el.currentSrc||el.src;im.alt=el.alt;cap.textContent=capOf(el);cnt.textContent=list.length>1?(i+1)+' / '+list.length:'';pv.hidden=i===0;nx.hidden=i===list.length-1;}
-function close(){lb.classList.remove('open');im.removeAttribute('src');document.body.style.overflow='';}
-var all=[].slice.call(document.querySelectorAll('.inset-photo-wrap img, .photo-grid img'));
-all.forEach(function(el){el.classList.add('zoomable');el.addEventListener('click',function(){var g=el.closest('.photo-grid');list=g?[].slice.call(g.querySelectorAll('img')):[el];show(list.indexOf(el));lb.classList.add('open');document.body.style.overflow='hidden';});});
-pv.addEventListener('click',function(e){e.stopPropagation();show(idx-1);});nx.addEventListener('click',function(e){e.stopPropagation();show(idx+1);});
-lb.querySelector('.lb-x').addEventListener('click',function(e){e.stopPropagation();close();});
-lb.addEventListener('click',function(e){if(e.target===lb)close();});
-lb.addEventListener('touchstart',function(e){if(e.touches.length===1){sx=e.touches[0].clientX;sy=e.touches[0].clientY;}},{passive:true});
-lb.addEventListener('touchend',function(e){if(sx===null)return;var dx=e.changedTouches[0].clientX-sx,dy=e.changedTouches[0].clientY-sy;sx=null;if(Math.abs(dx)>40&&Math.abs(dx)>Math.abs(dy)){show(dx<0?idx+1:idx-1);}});
-document.addEventListener('keydown',function(e){if(!lb.classList.contains('open'))return;if(e.key==='Escape')close();else if(e.key==='ArrowLeft')show(idx-1);else if(e.key==='ArrowRight')show(idx+1);});})();
-</script>
 </body>
 </html>
 

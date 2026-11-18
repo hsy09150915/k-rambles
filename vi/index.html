@@ -140,6 +140,12 @@
   @media (max-width: 640px) { .menu-panel { left: auto; right: 0; } }
   .menu-panel a { display: block; padding: 11px 14px; border-radius: 9px; text-decoration: none; color: var(--ink); font-size: 0.98rem; }
   .menu-panel a:hover, .menu-panel a:focus-visible { background: var(--paper); color: var(--coral-ink); }
+  .city-pill { display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px 6px 11px; border: 1.5px solid var(--coral); border-radius: 999px; background: var(--coral); color: #fff; box-shadow: 0 6px 16px -8px var(--coral); font-size: 0.92rem; font-weight: 600; text-decoration: none; white-space: nowrap; transition: background .2s ease, color .2s ease; }
+  .city-pill svg { width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  .city-pill:hover, .city-pill:focus-visible { filter: brightness(0.9); }
+  .city-cta { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; }
+  .city-cta-text { margin: 0; font-size: 1.02rem; color: var(--ink-soft); }
+  .menu-panel .menu-label { margin: 8px 0 2px; padding: 10px 14px 4px; border-top: 1px solid var(--line); font-family: "Space Mono", ui-monospace, monospace; font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-soft); }
 
   nav.site-nav {
     display: grid;
@@ -839,6 +845,7 @@
 <link rel="icon" href="/favicon.ico" sizes="32x32">
 <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="kr-city" content="busan">
 </head>
 <body>
 
@@ -851,6 +858,7 @@
       <a href="#getting-around">Di chuyển, Mẹo</a>
       <a href="#food-stories">Ẩm thực</a>
       <a href="#long-stay">Lưu trú dài hạn</a>
+      <div class="menu-cities" data-kr-cities></div>
     </nav>
   </div>
   <div class="header-right">
@@ -865,11 +873,11 @@
 
 <section class="hero">
   <div class="hero-text">
-    <span class="stamp"><span class="stamp-tag">Đang khám phá</span> Busan</span>
     <h1 class="headline">Busan, từng bước <em>thật chậm</em>.</h1>
     <p class="lede">Hướng dẫn Busan đã được kiểm chứng thực tế — ẩm thực, giao thông, đời sống hằng ngày.</p>
-    <div class="hero-actions">
-      <a class="btn-primary" href="#boards">Bắt đầu khám phá →</a>
+    <div class="hero-actions city-cta">
+      <p class="city-cta-text">Muốn khám phá thêm ngoài Busan?</p>
+      <a class="city-pill" href="/vi/gyeongju/index.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6.5-5.6-6.5-11A6.5 6.5 0 0 1 18.5 10c0 5.4-6.5 11-6.5 11Z"/><circle cx="12" cy="10" r="2.4"/></svg>Gyeongju →</a>
     </div>
   </div>
   <div class="hero-visual">
