@@ -2221,7 +2221,8 @@
 (function () {
   var SHOW_AFTER = 480;
   function boot() {
-    if (document.querySelector('.kr-back-to-top')) { return; }
+    // 글 페이지는 자체 .scroll-top 버튼이 있어서, 여기서 하나 더 만들면 두 개가 겹쳐 보임
+    if (document.querySelector('.kr-back-to-top, .scroll-top')) { return; }
 
     var style = document.createElement('style');
     style.id = 'kr-back-to-top-style';
