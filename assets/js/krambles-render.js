@@ -2313,7 +2313,7 @@
       '.lb { position: fixed; inset: 0; z-index: 1000; background: rgba(10, 14, 22, 0.96); display: none; align-items: center; justify-content: center; padding: 16px; }' +
       '.lb.open { display: flex; }' +
       '.lb-fig { margin: 0; flex: 1 1 auto; min-width: 0; max-width: 1100px; display: flex; flex-direction: column; align-items: center; }' +
-      '.lb-fig img { max-width: 100%; max-height: calc(100vh - 110px); object-fit: contain; border-radius: 8px; touch-action: pan-y; user-select: none; }' +
+      '.lb-fig img { max-width: 100%; max-height: calc(100vh - 110px); object-fit: contain; border-radius: 8px; touch-action: none; user-select: none; -webkit-user-select: none; transform-origin: 0 0; will-change: transform; }' +
       '.lb-fig figcaption { color: #f3f4f6; font-size: 0.95rem; margin-top: 12px; text-align: center; }' +
       '.lb-count { display: block; margin-top: 4px; font-size: 0.82rem; color: #b8bec9; }' +
       '.lb-x { position: absolute; top: 12px; right: 12px; width: 44px; height: 44px; border-radius: 50%; border: 0; background: rgba(255,255,255,0.16); color: #fff; font-size: 26px; line-height: 44px; cursor: pointer; }' +
@@ -2349,29 +2349,81 @@
     }
     function show(i) {
       if (i < 0 || i >= list.length) { return; }
-      idx = i; var el = list[i];
+      idx = i; var el = list[i]; z = 1; tx = 0; ty = 0; im.style.transform = '';
       im.src = el.getAttribute('data-full') || el.currentSrc || el.src; im.alt = el.alt;
       cap.textContent = capOf(el);
       cnt.textContent = list.length > 1 ? (i + 1) + ' / ' + list.length : '';
       pv.hidden = i === 0; nx.hidden = i === list.length - 1;
     }
-    function close() { lb.classList.remove('open'); im.removeAttribute('src'); document.body.style.overflow = ''; }
+    // 휴대폰 뒤로가기: 사진을 열 때 기록을 하나 쌓아 두고, 뒤로가기를 누르면 글 페이지가 아니라 사진만 닫힘
+    var pushed = false;
+    function hide() { lb.classList.remove('open'); im.removeAttribute('src'); im.style.transform = ''; document.body.style.overflow = ''; }
+    function close() {
+      if (!lb.classList.contains('open')) { return; }
+      if (pushed) { pushed = false; history.back(); } else { hide(); }
+    }
+    window.addEventListener('popstate', function () {
+      if (lb.classList.contains('open')) { pushed = false; hide(); }
+    });
     all.forEach(function (el) {
       el.classList.add('kr-zoom');
       el.addEventListener('click', function () {
         list = groupOf(el); show(list.indexOf(el));
         lb.classList.add('open'); document.body.style.overflow = 'hidden';
+        if (!pushed) { try { history.pushState({ krLightbox: true }, ''); pushed = true; } catch (err) {} }
       });
     });
     pv.addEventListener('click', function (e) { e.stopPropagation(); show(idx - 1); });
     nx.addEventListener('click', function (e) { e.stopPropagation(); show(idx + 1); });
     lb.querySelector('.lb-x').addEventListener('click', function (e) { e.stopPropagation(); close(); });
     lb.addEventListener('click', function (e) { if (e.target === lb) { close(); } });
-    lb.addEventListener('touchstart', function (e) { if (e.touches.length === 1) { sx = e.touches[0].clientX; sy = e.touches[0].clientY; } }, { passive: true });
-    lb.addEventListener('touchend', function (e) {
-      if (sx === null) { return; }
-      var dx = e.changedTouches[0].clientX - sx, dy = e.changedTouches[0].clientY - sy; sx = null;
-      if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy)) { show(dx < 0 ? idx + 1 : idx - 1); }
+    // 손가락 제스처: 두 손가락으로 벌리면 확대(최대 4배), 확대한 상태에서는 한 손가락으로 이동,
+    // 두 번 톡톡 치면 2배 확대와 원래 크기 전환, 원래 크기에서 좌우로 밀면 이전/다음 사진.
+    var z = 1, tx = 0, ty = 0, g = null, lastTap = 0;
+    function apply() { im.style.transform = z === 1 ? '' : 'translate(' + tx + 'px,' + ty + 'px) scale(' + z + ')'; }
+    function resetZoom() { z = 1; tx = 0; ty = 0; apply(); }
+    function clamp() {
+      var w = im.offsetWidth, h = im.offsetHeight;
+      tx = Math.min(0, Math.max(w - w * z, tx)); ty = Math.min(0, Math.max(h - h * z, ty));
+    }
+    function dist(t) { return Math.hypot(t[0].clientX - t[1].clientX, t[0].clientY - t[1].clientY); }
+    function local(x, y) { var r = im.getBoundingClientRect(); return { x: x - r.left + tx, y: y - r.top + ty }; }
+    im.addEventListener('touchstart', function (e) {
+      if (e.touches.length === 2) {
+        var m = local((e.touches[0].clientX + e.touches[1].clientX) / 2, (e.touches[0].clientY + e.touches[1].clientY) / 2);
+        g = { type: 'pinch', d: dist(e.touches), z: z, tx: tx, ty: ty, mx: m.x, my: m.y };
+      } else if (e.touches.length === 1) {
+        g = { type: 'one', x: e.touches[0].clientX, y: e.touches[0].clientY, tx: tx, ty: ty, moved: false };
+      }
+    }, { passive: true });
+    im.addEventListener('touchmove', function (e) {
+      if (!g) { return; }
+      e.preventDefault();
+      if (g.type === 'pinch' && e.touches.length === 2) {
+        var nz = Math.min(4, Math.max(1, g.z * dist(e.touches) / g.d));
+        // 손가락 가운데 지점을 기준으로 확대
+        tx = g.tx - (g.mx - g.tx) * (nz / g.z - 1); ty = g.ty - (g.my - g.ty) * (nz / g.z - 1);
+        z = nz; clamp(); apply();
+      } else if (g.type === 'one' && e.touches.length === 1) {
+        var dx = e.touches[0].clientX - g.x, dy = e.touches[0].clientY - g.y;
+        if (Math.abs(dx) > 8 || Math.abs(dy) > 8) { g.moved = true; }
+        if (z > 1) { tx = g.tx + dx; ty = g.ty + dy; clamp(); apply(); }
+      }
+    }, { passive: false });
+    im.addEventListener('touchend', function (e) {
+      if (!g) { return; }
+      if (g.type === 'pinch') { if (e.touches.length === 0) { if (z < 1.05) { resetZoom(); } g = null; } return; }
+      var dx = e.changedTouches[0].clientX - g.x, dy = e.changedTouches[0].clientY - g.y;
+      if (!g.moved) {
+        var now = Date.now();
+        if (now - lastTap < 300) {
+          if (z > 1) { resetZoom(); } else { var m = local(g.x, g.y); z = 2; tx = -m.x; ty = -m.y; clamp(); apply(); }
+          lastTap = 0;
+        } else { lastTap = now; }
+      } else if (z === 1 && Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy)) {
+        show(dx < 0 ? idx + 1 : idx - 1);
+      }
+      g = null;
     });
     document.addEventListener('keydown', function (e) {
       if (!lb.classList.contains('open')) { return; }
