@@ -1,5 +1,31 @@
 [
   {
+    "title": "경주 불국사와 석굴암, 한나절에 함께 보는 순서와 꼭 봐야 할 것",
+    "url": "2026-11-18-bulguksa-seokguram-guide-ko.html",
+    "thumb": "assets/thumbs/trip-planner/bulguksa-seokguram-guide.jpg",
+    "label": "여행 계획 · 공개중",
+    "alt": "단풍 든 토함산 숲에 둘러싸인 불국사",
+    "badge": null,
+    "like_id": "trip-planner/2026-11-18-bulguksa-seokguram-guide-ko.html",
+    "date": "2026-11-18",
+    "kw": "경주 경주 여행 경주 당일치기 불국사 석굴암 유네스코 세계유산 신라 토함산 다보탑 석가탑 삼층석탑 청운교 백운교 연화교 칠보교 홍예 10원 동전 본존불 유리벽 12번 버스 10번 11번 700번 숲길 탐방로 무료 입장 관람시간 불국사 박물관 무구정광대다라니경 김대성 경주역 반나절",
+    "city": "gyeongju",
+    "locations": [
+      {
+        "name": "불국사",
+        "address": "경북 경주시 불국로 385",
+        "lat": 35.7898804,
+        "lng": 129.3318909
+      },
+      {
+        "name": "석굴암",
+        "address": "경북 경주시 석굴로 238",
+        "lat": 35.7951981,
+        "lng": 129.3503599
+      }
+    ]
+  },
+  {
     "title": "경주 시내 걷기 코스, 황리단길에서 대릉원, 첨성대 지나 동궁과 월지 야경까지",
     "url": "2026-11-17-gyeongju-downtown-walking-route-ko.html",
     "thumb": "assets/thumbs/trip-planner/gyeongju-downtown-walking-route.jpg",
