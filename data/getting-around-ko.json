@@ -1,5 +1,177 @@
 [
   {
+    "title": "경주에서 밤에 아플 때, 늦게 여는 약국과 응급실",
+    "url": "2026-11-18-gyeongju-late-night-pharmacy-er-guide-ko.html",
+    "thumb": "assets/thumbs/getting-around/gyeongju-late-night-pharmacy-er-guide.jpg",
+    "label": "의료 · 공개중",
+    "alt": "알약 병과 알약 포장이 담긴 빨간 구급상자",
+    "badge": null,
+    "like_id": "getting-around/2026-11-18-gyeongju-late-night-pharmacy-er-guide-ko.html",
+    "date": "2026-11-18",
+    "kw": "경주 약국 심야약국 공공심야약국 늦게 여는 약국 밤 약국 일요일 약국 공휴일 약국 응급실 병원 동국대 경주병원 경주동산병원 영유아 응급 보문관광단지 불국사 3차 병원 울산대학교병원 대구 119 1330 응급의료포털 경주 여행",
+    "city": "gyeongju",
+    "locations": [
+      {
+        "name": "늘봄약국(공공심야약국)",
+        "address": "경북 경주시 화랑로 139",
+        "lat": 35.844612,
+        "lng": 129.216047
+      },
+      {
+        "name": "중앙약국(공공심야약국)",
+        "address": "경북 경주시 화랑로 140-1",
+        "lat": 35.844262,
+        "lng": 129.216234
+      },
+      {
+        "name": "한솔약국(공공심야약국)",
+        "address": "경북 경주시 용담로 32",
+        "lat": 35.861863,
+        "lng": 129.217766
+      },
+      {
+        "name": "삼광약국(공공심야약국)",
+        "address": "경북 경주시 양정로251번길 13",
+        "lat": 35.855063,
+        "lng": 129.222797
+      },
+      {
+        "name": "경주프라자약국(공공심야약국)",
+        "address": "경북 경주시 황성로 25",
+        "lat": 35.865488,
+        "lng": 129.214141
+      },
+      {
+        "name": "휴베이스맘약국(공공심야약국)",
+        "address": "경북 경주시 용황로11길 36",
+        "lat": 35.885312,
+        "lng": 129.231297
+      },
+      {
+        "name": "동국대학교 경주병원(응급실)",
+        "address": "경북 경주시 동대로 87",
+        "lat": 35.858212,
+        "lng": 129.196891
+      },
+      {
+        "name": "계명대학교 경주동산병원(응급실)",
+        "address": "경북 경주시 봉황로 65",
+        "lat": 35.845512,
+        "lng": 129.209328
+      }
+    ]
+  },
+  {
+    "title": "부산에서 밤에 아플 때, 늦게 여는 약국과 응급실 있는 병원",
+    "url": "2026-11-18-busan-late-night-pharmacy-er-guide-ko.html",
+    "thumb": "assets/thumbs/getting-around/busan-late-night-pharmacy-er-guide.jpg",
+    "label": "의료 · 공개중",
+    "alt": "알약 병과 알약 포장이 담긴 빨간 구급상자",
+    "badge": null,
+    "like_id": "getting-around/2026-11-18-busan-late-night-pharmacy-er-guide-ko.html",
+    "date": "2026-11-18",
+    "kw": "부산 약국 심야약국 공공심야약국 늦게 여는 약국 밤 약국 24시 약국 응급실 응급의료센터 병원 일요일 약국 공휴일 해운대 광안리 서면 남포동 자갈치 센텀시티 경성대 3차 병원 상급종합병원 진료의뢰서 119 1330 응급의료포털",
+    "city": "busan",
+    "locations": [
+      {
+        "name": "세종약국(공공심야약국)",
+        "address": "부산 수영구 광남로 151",
+        "lat": 35.154888,
+        "lng": 129.117766
+      },
+      {
+        "name": "엘시티2층 365하나약국(공공심야약국)",
+        "address": "부산 해운대구 달맞이길 30",
+        "lat": 35.160738,
+        "lng": 129.167828
+      },
+      {
+        "name": "센텀홍은약국(공공심야약국)",
+        "address": "부산 해운대구 센텀2로 10",
+        "lat": 35.167812,
+        "lng": 129.131547
+      },
+      {
+        "name": "사나약국(공공심야약국)",
+        "address": "부산 부산진구 중앙대로 701",
+        "lat": 35.155462,
+        "lng": 129.058922
+      },
+      {
+        "name": "대경약국(공공심야약국)",
+        "address": "부산 서구 자갈치로 10",
+        "lat": 35.096037,
+        "lng": 129.025391
+      },
+      {
+        "name": "포미약국(공공심야약국)",
+        "address": "부산 남구 용소로 15",
+        "lat": 35.135937,
+        "lng": 129.100953
+      },
+      {
+        "name": "마린약국",
+        "address": "부산 해운대구 구남로 39",
+        "lat": 35.160813,
+        "lng": 129.161516
+      },
+      {
+        "name": "미유약국",
+        "address": "부산 해운대구 구남로 26",
+        "lat": 35.161663,
+        "lng": 129.160203
+      },
+      {
+        "name": "서면짱약국",
+        "address": "부산 부산진구 중앙대로 694",
+        "lat": 35.154837,
+        "lng": 129.059422
+      },
+      {
+        "name": "메디스퀘어약국",
+        "address": "부산 중구 비프광장로 25",
+        "lat": 35.098962,
+        "lng": 129.028016
+      },
+      {
+        "name": "남포온약국",
+        "address": "부산 중구 광복로 66",
+        "lat": 35.098863,
+        "lng": 129.032016
+      },
+      {
+        "name": "동아대학교병원(응급실)",
+        "address": "부산 서구 대신공원로 26",
+        "lat": 35.120288,
+        "lng": 129.017984
+      },
+      {
+        "name": "인제대학교 부산백병원(응급실)",
+        "address": "부산 부산진구 복지로 75",
+        "lat": 35.146137,
+        "lng": 129.020859
+      },
+      {
+        "name": "인제대학교 해운대백병원(응급실)",
+        "address": "부산 해운대구 해운대로 875",
+        "lat": 35.173488,
+        "lng": 129.181984
+      },
+      {
+        "name": "부산대학교병원(응급실)",
+        "address": "부산 서구 구덕로 179",
+        "lat": 35.100487,
+        "lng": 129.019047
+      },
+      {
+        "name": "고신대학교복음병원(응급실)",
+        "address": "부산 서구 감천로 262",
+        "lat": 35.080388,
+        "lng": 129.015922
+      }
+    ]
+  },
+  {
     "title": "서울에서 경주 가는 법, KTX와 고속버스 비교부터 휴게소 즐기는 법까지",
     "url": "2026-11-17-seoul-to-gyeongju-ktx-bus-guide-ko.html",
     "thumb": "assets/thumbs/getting-around/seoul-to-gyeongju-ktx-bus-guide.jpg",
@@ -158,7 +330,7 @@
     "badge": null,
     "like_id": "getting-around/2026-09-25-korea-pharmacy-hospital-guide-ko.html",
     "date": "2026-09-25",
-    "kw": "한국 pharmacy hospital clinic medicine sick emergency korea busan convenience store otc drug referral tertiary hospital 약국 병원 편의점 상비약 진료과 1차 2차 3차 상급종합병원 진료의뢰서 아플때",
+    "kw": "한국 pharmacy hospital clinic medicine sick emergency korea busan convenience store otc drug referral tertiary hospital 약국 병원 편의점 상비약 진료과 1차 2차 3차 상급종합병원 진료의뢰서 아플때 공공심야약국 심야약국 응급실 응급의료포털",
     "city": "korea",
     "locations": []
   },

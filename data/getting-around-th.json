@@ -1,5 +1,177 @@
 [
   {
+    "title": "ป่วยตอนกลางคืนที่คย็องจู: ร้านขายยาเปิดดึกและห้องฉุกเฉิน",
+    "url": "2026-11-18-gyeongju-late-night-pharmacy-er-guide-th.html",
+    "thumb": "assets/thumbs/getting-around/gyeongju-late-night-pharmacy-er-guide.jpg",
+    "label": "การแพทย์ · เผยแพร่แล้ว",
+    "alt": "กล่องปฐมพยาบาลสีแดงเปิดอยู่ มีขวดยาและแผงยา",
+    "badge": null,
+    "like_id": "getting-around/2026-11-18-gyeongju-late-night-pharmacy-er-guide-th.html",
+    "date": "2026-11-18",
+    "kw": "คย็องจู ร้านขายยา ร้านขายยาเปิดดึก ร้านขายยากลางคืนสาธารณะ วันอาทิตย์ วันหยุด ห้องฉุกเฉิน โรงพยาบาล ป่วยตอนกลางคืน ดงกุก คเยมยอง ทงซาน โบมุน พุลกุกซา โรงพยาบาลระดับตติยภูมิ อุลซาน แทกู 119 1330 E-Gen เที่ยวคย็องจู",
+    "city": "gyeongju",
+    "locations": [
+      {
+        "name": "ร้านขายยานึลบม (กลางคืนสาธารณะ)",
+        "address": "139 Hwarang-ro, Gyeongju",
+        "lat": 35.844612,
+        "lng": 129.216047
+      },
+      {
+        "name": "ร้านขายยาชุงอัง (กลางคืนสาธารณะ)",
+        "address": "140-1 Hwarang-ro, Gyeongju",
+        "lat": 35.844262,
+        "lng": 129.216234
+      },
+      {
+        "name": "ร้านขายยาฮันซล (กลางคืนสาธารณะ)",
+        "address": "32 Yongdam-ro, Gyeongju",
+        "lat": 35.861863,
+        "lng": 129.217766
+      },
+      {
+        "name": "ร้านขายยาซัมกวัง (กลางคืนสาธารณะ)",
+        "address": "13 Yangjeong-ro 251beon-gil, Gyeongju",
+        "lat": 35.855063,
+        "lng": 129.222797
+      },
+      {
+        "name": "ร้านขายยาคย็องจูพลาซา (กลางคืนสาธารณะ)",
+        "address": "25 Hwangseong-ro, Gyeongju",
+        "lat": 35.865488,
+        "lng": 129.214141
+      },
+      {
+        "name": "ร้านขายยาฮิวเบสมัม (กลางคืนสาธารณะ)",
+        "address": "36 Yonghwang-ro 11-gil, Gyeongju",
+        "lat": 35.885312,
+        "lng": 129.231297
+      },
+      {
+        "name": "โรงพยาบาลคย็องจู มหาวิทยาลัยดงกุก (ห้องฉุกเฉิน)",
+        "address": "87 Dongdae-ro, Gyeongju",
+        "lat": 35.858212,
+        "lng": 129.196891
+      },
+      {
+        "name": "โรงพยาบาลคย็องจูทงซาน มหาวิทยาลัยคเยมยอง (ห้องฉุกเฉิน)",
+        "address": "65 Bonghwang-ro, Gyeongju",
+        "lat": 35.845512,
+        "lng": 129.209328
+      }
+    ]
+  },
+  {
+    "title": "ป่วยตอนกลางคืนที่ปูซาน: ร้านขายยาเปิดดึกและโรงพยาบาลที่มีห้องฉุกเฉิน",
+    "url": "2026-11-18-busan-late-night-pharmacy-er-guide-th.html",
+    "thumb": "assets/thumbs/getting-around/busan-late-night-pharmacy-er-guide.jpg",
+    "label": "การแพทย์ · เผยแพร่แล้ว",
+    "alt": "กล่องปฐมพยาบาลสีแดงเปิดอยู่ มีขวดยาและแผงยา",
+    "badge": null,
+    "like_id": "getting-around/2026-11-18-busan-late-night-pharmacy-er-guide-th.html",
+    "date": "2026-11-18",
+    "kw": "ปูซาน ร้านขายยา ร้านขายยาเปิดดึก ร้านขายยากลางคืนสาธารณะ ร้านขายยา 24 ชั่วโมง ห้องฉุกเฉิน โรงพยาบาล ป่วยตอนกลางคืน วันอาทิตย์ วันหยุด แฮอุนแด ควังอัลลี ซอมยอน นัมโพ จากัลชี เซ็นทัมซิตี้ โรงพยาบาลระดับตติยภูมิ ใบส่งตัว 119 1330 E-Gen",
+    "city": "busan",
+    "locations": [
+      {
+        "name": "ร้านขายยาเซจง (กลางคืนสาธารณะ)",
+        "address": "151 Gwangnam-ro, Suyeong-gu, Busan",
+        "lat": 35.154888,
+        "lng": 129.117766
+      },
+      {
+        "name": "ร้านขายยา 365 ฮานา LCT (กลางคืนสาธารณะ)",
+        "address": "30 Dalmaji-gil, Haeundae-gu, Busan",
+        "lat": 35.160738,
+        "lng": 129.167828
+      },
+      {
+        "name": "ร้านขายยาเซ็นทัมฮงอึน (กลางคืนสาธารณะ)",
+        "address": "10 Centum 2-ro, Haeundae-gu, Busan",
+        "lat": 35.167812,
+        "lng": 129.131547
+      },
+      {
+        "name": "ร้านขายยาซานา (กลางคืนสาธารณะ)",
+        "address": "701 Jungang-daero, Busanjin-gu, Busan",
+        "lat": 35.155462,
+        "lng": 129.058922
+      },
+      {
+        "name": "ร้านขายยาแทกย็อง (กลางคืนสาธารณะ)",
+        "address": "10 Jagalchi-ro, Seo-gu, Busan",
+        "lat": 35.096037,
+        "lng": 129.025391
+      },
+      {
+        "name": "ร้านขายยาโพมี (กลางคืนสาธารณะ)",
+        "address": "15 Yongso-ro, Nam-gu, Busan",
+        "lat": 35.135937,
+        "lng": 129.100953
+      },
+      {
+        "name": "ร้านขายยามารีน",
+        "address": "39 Gunam-ro, Haeundae-gu, Busan",
+        "lat": 35.160813,
+        "lng": 129.161516
+      },
+      {
+        "name": "ร้านขายยามียู",
+        "address": "26 Gunam-ro, Haeundae-gu, Busan",
+        "lat": 35.161663,
+        "lng": 129.160203
+      },
+      {
+        "name": "ร้านขายยาซอมยอนจัง",
+        "address": "694 Jungang-daero, Busanjin-gu, Busan",
+        "lat": 35.154837,
+        "lng": 129.059422
+      },
+      {
+        "name": "ร้านขายยาเมดิสแควร์",
+        "address": "25 BIFF Gwangjang-ro, Jung-gu, Busan",
+        "lat": 35.098962,
+        "lng": 129.028016
+      },
+      {
+        "name": "ร้านขายยานัมโพออน",
+        "address": "66 Gwangbok-ro, Jung-gu, Busan",
+        "lat": 35.098863,
+        "lng": 129.032016
+      },
+      {
+        "name": "โรงพยาบาลมหาวิทยาลัยดงอา (ห้องฉุกเฉิน)",
+        "address": "26 Daesingongwon-ro, Seo-gu, Busan",
+        "lat": 35.120288,
+        "lng": 129.017984
+      },
+      {
+        "name": "โรงพยาบาลปูซานแพ็ก มหาวิทยาลัยอินเจ (ห้องฉุกเฉิน)",
+        "address": "75 Bokji-ro, Busanjin-gu, Busan",
+        "lat": 35.146137,
+        "lng": 129.020859
+      },
+      {
+        "name": "โรงพยาบาลแฮอุนแดแพ็ก มหาวิทยาลัยอินเจ (ห้องฉุกเฉิน)",
+        "address": "875 Haeun-daero, Haeundae-gu, Busan",
+        "lat": 35.173488,
+        "lng": 129.181984
+      },
+      {
+        "name": "โรงพยาบาลมหาวิทยาลัยแห่งชาติปูซาน (ห้องฉุกเฉิน)",
+        "address": "179 Gudeok-ro, Seo-gu, Busan",
+        "lat": 35.100487,
+        "lng": 129.019047
+      },
+      {
+        "name": "โรงพยาบาลกอสเปล มหาวิทยาลัยโคชิน (ห้องฉุกเฉิน)",
+        "address": "262 Gamcheon-ro, Seo-gu, Busan",
+        "lat": 35.080388,
+        "lng": 129.015922
+      }
+    ]
+  },
+  {
     "title": "โซลไปคย็องจู: เทียบ KTX กับรถบัสด่วน พร้อมของกินที่จุดพักรถ",
     "url": "2026-11-17-seoul-to-gyeongju-ktx-bus-guide-th.html",
     "thumb": "assets/thumbs/getting-around/seoul-to-gyeongju-ktx-bus-guide.jpg",
@@ -158,7 +330,7 @@
     "badge": null,
     "like_id": "getting-around/2026-09-25-korea-pharmacy-hospital-guide-th.html",
     "date": "2026-09-25",
-    "kw": "เกาหลี โรงพยาบาล ร้านขายยา คลินิก ยา ร้านสะดวกซื้อ ฉุกเฉิน ปูซาน",
+    "kw": "เกาหลี โรงพยาบาล ร้านขายยา คลินิก ยา ร้านสะดวกซื้อ ฉุกเฉิน ปูซาน ร้านขายยาเปิดดึก ห้องฉุกเฉิน",
     "city": "korea",
     "locations": []
   },

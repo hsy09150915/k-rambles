@@ -2,12 +2,14 @@
 
 > 새 콘텐츠 아이디어 제안하기 전에 이 파일부터 확인할 것. 2026-11-18부터 경주 글이 있음 ("도시: 경주" 표시, 사이트 경주 페이지 /gyeongju/). 실제 사이트 JSON 기준(2026-09-23).
 
-## Getting Around (이동) (16개)
+## Getting Around (이동) (18개)
+- **경주에서 밤에 아플 때, 늦게 여는 약국과 응급실** — 도시: 경주 — 키워드: 경주 공공심야약국 6곳 요일별 일요일 공휴일 동국대 경주병원 경주동산병원 응급실 영유아 응급 3차 병원 없음 울산대병원 대구 응급의료포털 약국 찾기 병원 찾기 119 1330 (2026-11-18)
+- **부산에서 밤에 아플 때, 늦게 여는 약국과 응급실 있는 병원** — 도시: 부산 — 키워드: 부산 공공심야약국 세종약국 365하나약국 센텀홍은약국 사나약국 대경약국 포미약국 밤 11시 약국 권역응급의료센터 동아대 부산백 해운대백 부산대 고신대복음 3차 병원 진료의뢰서 응급의료포털 119 1330 (2026-11-18)
 - **부산에서 경주 가는 법, 기차와 버스부터 불국사, 황리단길 가는 버스까지** — 도시: 경주 — 키워드: 경주 부산 경주 경주역 신경주역 KTX-이음 ITX-마음 부전역 해운대 시외버스정류소 노포 사상 경주 버스터미널 10번 11번 12번 700번 월정 순환버스 불국사 석굴암 황리단길 보문관광단지 (2026-11-17)
 - **서울에서 경주 가는 법, KTX와 고속버스 비교부터 휴게소 즐기는 법까지** — 도시: 경주 — 키워드: 경주 서울 경주 KTX KTX-이음 서울역 수서역 청량리역 고속버스 서울고속버스터미널 경부선 우등 프리미엄 휴게소 낙동강휴게소 호두과자 소떡소떡 인천공항 경주 당일치기 (2026-11-17)
 - **서울에서 부산 가는 KTX 예매하는 법, 외국인을 위한 코레일 사이트·해외카드 안내** — 키워드: KTX 코레일 코레일+ 코레일패스 서울역 수서역 부산역 부전역 구포역 기차 예매 해외카드 SRT 입석 환불 취소 고속열차 KTX-이음 서울 부산 (2026-10-22)
 - **외국인을 위한 한국 배달앱: 배민·셔틀·요기요 직접 해봤어요** — 키워드: delivery app baemin coupang eats yogiyo shuttle foreigner korea busan food delivery 배달앱 배달의민족 배민 쿠팡이츠 셔틀 요기요 외국인 회원가입 해외카드
-- **한국에서 아플 때 어디로? 편의점, 약국, 병원 가이드** — 키워드: pharmacy hospital clinic medicine sick emergency korea busan convenience store otc drug referral tertiary hospital 약국 병원 편의점 상비약 진료과 1차 2차 3차 상급종합병원 진료의뢰서 아플때
+- **한국에서 아플 때 어디로? 편의점, 약국, 병원 가이드** — 2026-11-18 공통 글로 개편(도시별 약국, 응급실은 부산, 경주 글로 분리) — 키워드: pharmacy hospital clinic medicine sick emergency korea busan convenience store otc drug referral tertiary hospital 약국 병원 편의점 상비약 진료과 1차 2차 3차 상급종합병원 진료의뢰서 아플때
 - **부산에서 환전하는 법 — ATM, 환전소 뭐가 유리할까** — 키워드: 환전 환전소 atm 해외카드 인출 캐시어드밴스 cash advance 트래블카드 와이즈 하나은행 우리은행 신한은행 국민은행 네이버지도 부산
 - **한국인데 카드가 왜 안 돼요? — 해외카드 결제 실전 가이드** — 키워드: card payment korea contactless tap nfc credit card foreign card decline apple pay google pay visa mastercard t-money cash 카드결제 컨택리스 해외카드 신용카드 체크카드 애플페이 구글페이 결제거절 티머니 현금
 - **부산에서 짐 보관, 지하철 로커면 대부분 끝나요** — 키워드: luggage storage busan coin locker large suitcase zimcarry delivery gwangalli tourist center free 짐보관 물품보관함 짐캐리 캐리어

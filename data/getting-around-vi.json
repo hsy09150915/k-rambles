@@ -1,5 +1,177 @@
 [
   {
+    "title": "Bị ốm ban đêm ở Gyeongju: hiệu thuốc mở khuya và phòng cấp cứu",
+    "url": "2026-11-18-gyeongju-late-night-pharmacy-er-guide-vi.html",
+    "thumb": "assets/thumbs/getting-around/gyeongju-late-night-pharmacy-er-guide.jpg",
+    "label": "Y tế · Trực tuyến",
+    "alt": "Hộp cứu thương màu đỏ mở ra với lọ thuốc và vỉ thuốc",
+    "badge": null,
+    "like_id": "getting-around/2026-11-18-gyeongju-late-night-pharmacy-er-guide-vi.html",
+    "date": "2026-11-18",
+    "kw": "Gyeongju hiệu thuốc hiệu thuốc mở khuya hiệu thuốc đêm công cộng Chủ nhật ngày lễ phòng cấp cứu bệnh viện ốm ban đêm Dongguk Keimyung Dongsan Bomun Bulguksa bệnh viện tuyến 3 Ulsan Daegu 119 1330 E-Gen du lịch Gyeongju",
+    "city": "gyeongju",
+    "locations": [
+      {
+        "name": "Hiệu thuốc Neulbom (đêm công cộng)",
+        "address": "139 Hwarang-ro, Gyeongju",
+        "lat": 35.844612,
+        "lng": 129.216047
+      },
+      {
+        "name": "Hiệu thuốc Jungang (đêm công cộng)",
+        "address": "140-1 Hwarang-ro, Gyeongju",
+        "lat": 35.844262,
+        "lng": 129.216234
+      },
+      {
+        "name": "Hiệu thuốc Hansol (đêm công cộng)",
+        "address": "32 Yongdam-ro, Gyeongju",
+        "lat": 35.861863,
+        "lng": 129.217766
+      },
+      {
+        "name": "Hiệu thuốc Samgwang (đêm công cộng)",
+        "address": "13 Yangjeong-ro 251beon-gil, Gyeongju",
+        "lat": 35.855063,
+        "lng": 129.222797
+      },
+      {
+        "name": "Hiệu thuốc Gyeongju Plaza (đêm công cộng)",
+        "address": "25 Hwangseong-ro, Gyeongju",
+        "lat": 35.865488,
+        "lng": 129.214141
+      },
+      {
+        "name": "Hiệu thuốc Hubase Mom (đêm công cộng)",
+        "address": "36 Yonghwang-ro 11-gil, Gyeongju",
+        "lat": 35.885312,
+        "lng": 129.231297
+      },
+      {
+        "name": "Bệnh viện Gyeongju, Đại học Dongguk (cấp cứu)",
+        "address": "87 Dongdae-ro, Gyeongju",
+        "lat": 35.858212,
+        "lng": 129.196891
+      },
+      {
+        "name": "Bệnh viện Gyeongju Dongsan, Đại học Keimyung (cấp cứu)",
+        "address": "65 Bonghwang-ro, Gyeongju",
+        "lat": 35.845512,
+        "lng": 129.209328
+      }
+    ]
+  },
+  {
+    "title": "Bị ốm ban đêm ở Busan: hiệu thuốc mở khuya và bệnh viện có phòng cấp cứu",
+    "url": "2026-11-18-busan-late-night-pharmacy-er-guide-vi.html",
+    "thumb": "assets/thumbs/getting-around/busan-late-night-pharmacy-er-guide.jpg",
+    "label": "Y tế · Trực tuyến",
+    "alt": "Hộp cứu thương màu đỏ mở ra với lọ thuốc và vỉ thuốc",
+    "badge": null,
+    "like_id": "getting-around/2026-11-18-busan-late-night-pharmacy-er-guide-vi.html",
+    "date": "2026-11-18",
+    "kw": "Busan hiệu thuốc hiệu thuốc mở khuya hiệu thuốc đêm công cộng hiệu thuốc 24 giờ phòng cấp cứu bệnh viện ốm ban đêm Chủ nhật ngày lễ Haeundae Gwangalli Seomyeon Nampo Jagalchi Centum City bệnh viện tuyến 3 giấy chuyển viện 119 1330 E-Gen",
+    "city": "busan",
+    "locations": [
+      {
+        "name": "Hiệu thuốc Sejong (đêm công cộng)",
+        "address": "151 Gwangnam-ro, Suyeong-gu, Busan",
+        "lat": 35.154888,
+        "lng": 129.117766
+      },
+      {
+        "name": "Hiệu thuốc 365 Hana, LCT (đêm công cộng)",
+        "address": "30 Dalmaji-gil, Haeundae-gu, Busan",
+        "lat": 35.160738,
+        "lng": 129.167828
+      },
+      {
+        "name": "Hiệu thuốc Centum Hongeun (đêm công cộng)",
+        "address": "10 Centum 2-ro, Haeundae-gu, Busan",
+        "lat": 35.167812,
+        "lng": 129.131547
+      },
+      {
+        "name": "Hiệu thuốc Sana (đêm công cộng)",
+        "address": "701 Jungang-daero, Busanjin-gu, Busan",
+        "lat": 35.155462,
+        "lng": 129.058922
+      },
+      {
+        "name": "Hiệu thuốc Daegyeong (đêm công cộng)",
+        "address": "10 Jagalchi-ro, Seo-gu, Busan",
+        "lat": 35.096037,
+        "lng": 129.025391
+      },
+      {
+        "name": "Hiệu thuốc Pomi (đêm công cộng)",
+        "address": "15 Yongso-ro, Nam-gu, Busan",
+        "lat": 35.135937,
+        "lng": 129.100953
+      },
+      {
+        "name": "Hiệu thuốc Marine",
+        "address": "39 Gunam-ro, Haeundae-gu, Busan",
+        "lat": 35.160813,
+        "lng": 129.161516
+      },
+      {
+        "name": "Hiệu thuốc Miyu",
+        "address": "26 Gunam-ro, Haeundae-gu, Busan",
+        "lat": 35.161663,
+        "lng": 129.160203
+      },
+      {
+        "name": "Hiệu thuốc Seomyeon Jjang",
+        "address": "694 Jungang-daero, Busanjin-gu, Busan",
+        "lat": 35.154837,
+        "lng": 129.059422
+      },
+      {
+        "name": "Hiệu thuốc Medisquare",
+        "address": "25 BIFF Gwangjang-ro, Jung-gu, Busan",
+        "lat": 35.098962,
+        "lng": 129.028016
+      },
+      {
+        "name": "Hiệu thuốc Nampo On",
+        "address": "66 Gwangbok-ro, Jung-gu, Busan",
+        "lat": 35.098863,
+        "lng": 129.032016
+      },
+      {
+        "name": "Bệnh viện Đại học Dong-A (cấp cứu)",
+        "address": "26 Daesingongwon-ro, Seo-gu, Busan",
+        "lat": 35.120288,
+        "lng": 129.017984
+      },
+      {
+        "name": "Bệnh viện Busan Paik, Đại học Inje (cấp cứu)",
+        "address": "75 Bokji-ro, Busanjin-gu, Busan",
+        "lat": 35.146137,
+        "lng": 129.020859
+      },
+      {
+        "name": "Bệnh viện Haeundae Paik, Đại học Inje (cấp cứu)",
+        "address": "875 Haeun-daero, Haeundae-gu, Busan",
+        "lat": 35.173488,
+        "lng": 129.181984
+      },
+      {
+        "name": "Bệnh viện Đại học Quốc gia Pusan (cấp cứu)",
+        "address": "179 Gudeok-ro, Seo-gu, Busan",
+        "lat": 35.100487,
+        "lng": 129.019047
+      },
+      {
+        "name": "Bệnh viện Gospel, Đại học Kosin (cấp cứu)",
+        "address": "262 Gamcheon-ro, Seo-gu, Busan",
+        "lat": 35.080388,
+        "lng": 129.015922
+      }
+    ]
+  },
+  {
     "title": "Từ Seoul đi Gyeongju: so sánh KTX và xe buýt tốc hành, kèm món ngon ở trạm dừng chân",
     "url": "2026-11-17-seoul-to-gyeongju-ktx-bus-guide-vi.html",
     "thumb": "assets/thumbs/getting-around/seoul-to-gyeongju-ktx-bus-guide.jpg",
@@ -158,7 +330,7 @@
     "badge": null,
     "like_id": "getting-around/2026-09-25-korea-pharmacy-hospital-guide-vi.html",
     "date": "2026-09-25",
-    "kw": "hàn quốc bệnh viện hiệu thuốc pharmacy hospital clinic thuốc cửa hàng tiện lợi khẩn cấp busan",
+    "kw": "hàn quốc bệnh viện hiệu thuốc pharmacy hospital clinic thuốc cửa hàng tiện lợi khẩn cấp busan hiệu thuốc mở khuya phòng cấp cứu",
     "city": "korea",
     "locations": []
   },
