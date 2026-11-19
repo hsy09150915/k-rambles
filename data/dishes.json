@@ -1,5 +1,132 @@
 [
  {
+  "slug": "gj-ssambap",
+  "cat": "other",
+  "article": "2026-11-19-gyeongju-food-guide",
+  "anchor": "sec-ssambap",
+  "src": "/assets/img/inl/ef5ae59ba696.jpg",
+  "ko": "쌈밥",
+  "name": {
+   "en": "Ssambap",
+   "ko": "쌈밥",
+   "vi": "Ssambap",
+   "th": "ซัมบับ"
+  }
+ },
+ {
+  "slug": "gj-sundubu-jjigae",
+  "cat": "other",
+  "article": "2026-11-19-gyeongju-food-guide",
+  "anchor": "sec-sundubu",
+  "src": "/assets/img/inl/8a8e642e969b.jpg",
+  "ko": "순두부찌개",
+  "name": {
+   "en": "Sundubu-jjigae",
+   "ko": "순두부찌개",
+   "vi": "Sundubu-jjigae",
+   "th": "ซุนดูบูจีแก"
+  }
+ },
+ {
+  "slug": "gj-kongguk",
+  "cat": "other",
+  "article": "2026-11-19-gyeongju-food-guide",
+  "anchor": "sec-kongguk",
+  "src": "/assets/img/inl/9dba4d366dbd.jpg",
+  "ko": "콩국",
+  "name": {
+   "en": "Kongguk",
+   "ko": "콩국",
+   "vi": "Kongguk",
+   "th": "คงกุก"
+  }
+ },
+ {
+  "slug": "gj-kkomak-bibimbap",
+  "cat": "seafood",
+  "article": "2026-11-19-gyeongju-food-guide",
+  "anchor": "sec-bibimbap",
+  "src": "/assets/img/inl/d8919aa90c8f.jpg",
+  "ko": "꼬막비빔밥",
+  "name": {
+   "en": "Cockle bibimbap",
+   "ko": "꼬막비빔밥",
+   "vi": "Bibimbap sò huyết",
+   "th": "บิบิมบับหอยแครง"
+  }
+ },
+ {
+  "slug": "gj-yukhoe-bibimbap",
+  "cat": "meat",
+  "article": "2026-11-19-gyeongju-food-guide",
+  "anchor": "sec-bibimbap",
+  "src": "/assets/img/inl/f5c9a1d08857.jpg",
+  "ko": "육회비빔밥",
+  "name": {
+   "en": "Yukhoe bibimbap",
+   "ko": "육회비빔밥",
+   "vi": "Bibimbap yukhoe",
+   "th": "ยุกฮเวบิบิมบับ"
+  }
+ },
+ {
+  "slug": "gj-sonmari-gogi",
+  "cat": "meat",
+  "article": "2026-11-19-gyeongju-food-guide",
+  "anchor": "sec-bibimbap",
+  "src": "/assets/img/inl/f09972dae0fb.jpg",
+  "ko": "손말이고기",
+  "name": {
+   "en": "Hand-rolled beef",
+   "ko": "손말이고기",
+   "vi": "Thịt bò cuộn tay",
+   "th": "เนื้อม้วนมือ"
+  }
+ },
+ {
+  "slug": "gj-tteokgalbi",
+  "cat": "meat",
+  "article": "2026-11-19-gyeongju-food-guide",
+  "anchor": "sec-tteokgalbi",
+  "src": "/assets/img/inl/e77a9f3ea824.jpg",
+  "ko": "떡갈비",
+  "name": {
+   "en": "Tteokgalbi",
+   "ko": "떡갈비",
+   "vi": "Tteokgalbi",
+   "th": "ต็อกกัลบี"
+  }
+ },
+ {
+  "slug": "gj-gyori-gimbap",
+  "cat": "other",
+  "article": "2026-11-19-gyeongju-food-guide",
+  "anchor": "sec-gimbap",
+  "src": "/assets/img/inl/27f58bc87d50.jpg",
+  "ko": "교리김밥",
+  "name": {
+   "en": "Gyori gimbap",
+   "ko": "교리김밥",
+   "vi": "Gimbap Gyori",
+   "th": "คิมบับคโยรี"
+  },
+  "crop": 0.95
+ },
+ {
+  "slug": "gj-ueong-gimbap",
+  "cat": "other",
+  "article": "2026-11-19-gyeongju-food-guide",
+  "anchor": "sec-gimbap",
+  "src": "/assets/img/inl/adb4f5b0877c.jpg",
+  "ko": "우엉김밥",
+  "name": {
+   "en": "Burdock gimbap",
+   "ko": "우엉김밥",
+   "vi": "Gimbap ngưu bàng",
+   "th": "คิมบับโกโบ"
+  }
+ },
+ {
   "slug": "banana-milk",
   "cat": "other",
   "article": "2026-11-16-korea-convenience-store-foods",

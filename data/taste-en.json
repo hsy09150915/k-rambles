@@ -1,5 +1,133 @@
 [
   {
+    "title": "Gyeongju Food Guide: Ssambap, Sundubu, Kongguk, Bibimbap, Tteokgalbi and Gimbap",
+    "url": "2026-11-19-gyeongju-food-guide-en.html",
+    "thumb": "assets/thumbs/taste/gyeongju-food-guide.jpg",
+    "label": "Taste · live",
+    "alt": "Gyori guksu topped with egg strips and Gyori gimbap packed with yellow egg",
+    "badge": null,
+    "like_id": "taste/2026-11-19-gyeongju-food-guide-en.html",
+    "date": "2026-11-19",
+    "kw": "Gyeongju food Gyeongju restaurants what to eat in Gyeongju Korean food ssambap lettuce wraps Daereungwon sundubu soft tofu tofu stew sundubu-jjigae ttukbaegi Bomun Tourist Complex breakfast kongguk soy milk kongguksu bibimbap cockle bibimbap kkomak yukhoe bibimbap raw beef hand-rolled beef sonmari-gogi tteokgalbi short rib patties galbi-jjim hanu Bulguksa gimbap Gyori gimbap egg gimbap burdock gimbap Hwangnidan-gil Cheomseongdae Gyeongju trip",
+    "city": "gyeongju",
+    "locations": [
+      {
+        "name": "Jeongnok Ssambap (정록쌈밥)",
+        "address": "48 Gyerim-ro, Gyeongju",
+        "lat": 35.838688,
+        "lng": 129.213953
+      },
+      {
+        "name": "Lee Pung-nyeo Guro Ssambap (이풍녀구로쌈밥)",
+        "address": "155 Cheomseong-ro, Gyeongju",
+        "lat": 35.835913,
+        "lng": 129.217891
+      },
+      {
+        "name": "Sigol Ssambap (시골쌈밥)",
+        "address": "10 Gyerim-ro, Gyeongju",
+        "lat": 35.835938,
+        "lng": 129.215766
+      },
+      {
+        "name": "Neulbom (늘봄)",
+        "address": "107 Bobul-ro, Gyeongju",
+        "lat": 35.793813,
+        "lng": 129.313078
+      },
+      {
+        "name": "Yusujeong Ssambap (유수정쌈밥)",
+        "address": "24-7 Bobul-ro, Gyeongju",
+        "lat": 35.787987,
+        "lng": 129.318234
+      },
+      {
+        "name": "Ureong Gaksi (경주우렁각시)",
+        "address": "198 Bobul-ro, Gyeongju",
+        "lat": 35.802212,
+        "lng": 129.313266
+      },
+      {
+        "name": "Maetdol Sundubu (맷돌순두부)",
+        "address": "7 Bukgun-gil, Gyeongju",
+        "lat": 35.851512,
+        "lng": 129.262828
+      },
+      {
+        "name": "Jeontong Maetdol Sundubu (전통맷돌순두부)",
+        "address": "111 Supmeori-gil, Gyeongju",
+        "lat": 35.840812,
+        "lng": 129.248391
+      },
+      {
+        "name": "Giwagol Maetdol Sundubu (기와골맷돌순두부)",
+        "address": "142 Supmeori-gil, Gyeongju",
+        "lat": 35.841837,
+        "lng": 129.251547
+      },
+      {
+        "name": "Gyeongju Gyodong Sundubu (경주교동순두부)",
+        "address": "77 Cheomseong-ro, Gyeongju",
+        "lat": 35.8332418,
+        "lng": 129.2105589
+      },
+      {
+        "name": "Gyeongju Wonjo Kongguk (경주원조콩국)",
+        "address": "113 Cheomseong-ro, Gyeongju",
+        "lat": 35.833438,
+        "lng": 129.214766
+      },
+      {
+        "name": "Hyanghwajeong (향화정)",
+        "address": "17 Sajeong-ro 57beon-gil, Gyeongju",
+        "lat": 35.838013,
+        "lng": 129.209203
+      },
+      {
+        "name": "Sohyangmong (소향몽)",
+        "address": "16 Sajeong-ro 57beon-gil, Gyeongju",
+        "lat": 35.837838,
+        "lng": 129.209328
+      },
+      {
+        "name": "Yeomion (여미온)",
+        "address": "22-12 Cheomseong-ro 81beon-gil, Gyeongju",
+        "lat": 35.834913,
+        "lng": 129.212391
+      },
+      {
+        "name": "Danhyanghoe (단향회)",
+        "address": "28-1 Cheomseong-ro 81beon-gil, Gyeongju",
+        "lat": 35.835538,
+        "lng": 129.211234
+      },
+      {
+        "name": "Bomun-tteul (보문뜰)",
+        "address": "142-3 Gyeonggam-ro, Gyeongju",
+        "lat": 35.842713,
+        "lng": 129.251641
+      },
+      {
+        "name": "Wonjo Tteokgalbi (원조떡갈비)",
+        "address": "69 Bobul-ro, Gyeongju",
+        "lat": 35.790662,
+        "lng": 129.313578
+      },
+      {
+        "name": "Gyori Gimbap (main shop) (교리김밥 본점)",
+        "address": "2 Tamni 3-gil, Gyeongju",
+        "lat": 35.821713,
+        "lng": 129.210766
+      },
+      {
+        "name": "Hwangnam Ueong Gimbap (황남우엉김밥)",
+        "address": "1074 Poseok-ro, Gyeongju",
+        "lat": 35.836763,
+        "lng": 129.209734
+      }
+    ]
+  },
+  {
     "title": "What Foreigners Buy Most at Korean Convenience Stores, and What Koreans Buy Instead",
     "url": "2026-11-16-korea-convenience-store-foods-en.html",
     "thumb": "assets/thumbs/taste/korea-convenience-store-foods.jpg",
