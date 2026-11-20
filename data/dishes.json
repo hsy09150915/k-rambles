@@ -1,5 +1,76 @@
 [
  {
+  "slug": "gj-galbi-jjim",
+  "cat": "meat",
+  "article": "2026-11-20-gyeongju-meat-dishes-guide",
+  "anchor": "sec-galbijjim",
+  "src": "/assets/img/inl/20c017d4c94e.jpg",
+  "ko": "갈비찜",
+  "name": {
+   "en": "Galbi-jjim",
+   "ko": "갈비찜",
+   "vi": "Galbi-jjim",
+   "th": "คัลบีจิม"
+  }
+ },
+ {
+  "slug": "gj-deunggalbi-jjim",
+  "cat": "meat",
+  "article": "2026-11-20-gyeongju-meat-dishes-guide",
+  "anchor": "sec-deunggalbi",
+  "src": "/assets/img/inl/f7f4315e67fa.jpg",
+  "ko": "등갈비찜",
+  "name": {
+   "en": "Deunggalbi-jjim",
+   "ko": "등갈비찜",
+   "vi": "Deunggalbi-jjim",
+   "th": "ทึงคัลบีจิม"
+  }
+ },
+ {
+  "slug": "gj-hanwoo-gui",
+  "cat": "meat",
+  "article": "2026-11-20-gyeongju-meat-dishes-guide",
+  "anchor": "sec-hanwoo",
+  "src": "/assets/img/inl/1ed0681bff63.jpg",
+  "ko": "한우 구이",
+  "name": {
+   "en": "Hanwoo BBQ",
+   "ko": "한우 구이",
+   "vi": "Bò hanwoo nướng",
+   "th": "เนื้อฮันอูย่าง"
+  }
+ },
+ {
+  "slug": "gj-samgyeopsal",
+  "cat": "meat",
+  "article": "2026-11-20-gyeongju-meat-dishes-guide",
+  "anchor": "sec-pork",
+  "src": "/assets/img/inl/9e241618b89c.jpg",
+  "ko": "삼겹살",
+  "name": {
+   "en": "Samgyeopsal",
+   "ko": "삼겹살",
+   "vi": "Samgyeopsal",
+   "th": "ซัมกยอบซัล"
+  }
+ },
+ {
+  "slug": "gj-seokswe-bulgogi",
+  "cat": "meat",
+  "article": "2026-11-20-gyeongju-meat-dishes-guide",
+  "anchor": "sec-bulgogi",
+  "src": "/assets/img/inl/5d8c73dc0be3.jpg",
+  "ko": "석쇠불고기",
+  "name": {
+   "en": "Seokswe bulgogi",
+   "ko": "석쇠불고기",
+   "vi": "Seokswe bulgogi",
+   "th": "ซ็อกเซพุลโกกี"
+  },
+  "crop": 0.1
+ },
+ {
   "slug": "gj-ssambap",
   "cat": "other",
   "article": "2026-11-19-gyeongju-food-guide",

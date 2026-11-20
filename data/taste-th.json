@@ -1,5 +1,139 @@
 [
   {
+    "title": "อาหารเนื้อในคย็องจู: คัลบีจิม ทึงคัลบีจิม เนื้อฮันอูย่าง ซัมกยอบซัล และพุลโกกี",
+    "url": "2026-11-20-gyeongju-meat-dishes-guide-th.html",
+    "thumb": "assets/thumbs/taste/gyeongju-meat-dishes-guide.jpg",
+    "label": "รสชาติ · เผยแพร่แล้ว",
+    "alt": "สำรับที่มีคัลบีจิมเนื้อวัวอยู่ตรงกลาง รอบ ๆ มียุกฮเวบิบิมบับ ยุกฮเวมุลฮเว และแพนเค้กเกาหลี",
+    "badge": null,
+    "like_id": "taste/2026-11-20-gyeongju-meat-dishes-guide-th.html",
+    "date": "2026-11-20",
+    "kw": "อาหารคย็องจู ร้านอาหารคย็องจู อาหารเนื้อ ปิ้งย่างเกาหลี คัลบีจิม ซี่โครงวัวตุ๋น ซี่โครงหมูตุ๋น ทึงคัลบีจิม ซี่โครงหมู มุกึนจี ฮันอู เนื้อวัวเกาหลี เนื้อย่าง ร้านขายเนื้อ คัลบีซัล ย่างถ่าน ซัมกยอบซัล หมูสามชั้น ทเวจีคัลบี ซี่โครงหมูย่าง พุลโกกี ซ็อกเซพุลโกกี พุลโกกีย่างตะแกรง ปลาซาบะย่าง ฮวังนีดันกิล แทรึงวอน โพมุน พุลกุกซา เที่ยวคย็องจู galbi-jjim hanwoo samgyeopsal bulgogi",
+    "city": "gyeongju",
+    "locations": [
+      {
+        "name": "Poseokro Sogalbijjim (포석로 소갈비찜)",
+        "address": "22 Poseok-ro 1068beon-gil, Gyeongju",
+        "lat": 35.8359155,
+        "lng": 129.2118338
+      },
+      {
+        "name": "Cheongonchae (청온채)",
+        "address": "8-5 Poseok-ro 1079beon-gil, Gyeongju",
+        "lat": 35.8376128,
+        "lng": 129.2088054
+      },
+      {
+        "name": "Bomun-tteul (보문뜰)",
+        "address": "142-3 Gyeonggam-ro, Gyeongju",
+        "lat": 35.842713,
+        "lng": 129.251641
+      },
+      {
+        "name": "Geosong Galbijjim (거송갈비찜)",
+        "address": "20-2 Poseok-ro 1068beon-gil, Gyeongju",
+        "lat": 35.8359882,
+        "lng": 129.2115485
+      },
+      {
+        "name": "Chwihyang Gaok (취향가옥)",
+        "address": "7 Poseok-ro 1095beon-gil, Gyeongju",
+        "lat": 35.8387196,
+        "lng": 129.2093515
+      },
+      {
+        "name": "Hwangnam Dukkeobi Sikdang (황남두꺼비식당)",
+        "address": "16 Poseok-ro 1050beon-gil, Gyeongju",
+        "lat": 35.8344708,
+        "lng": 129.2109261
+      },
+      {
+        "name": "Pungmi Galbijjim (풍미갈비찜)",
+        "address": "28-13 Cheomseong-ro 81beon-gil, Gyeongju",
+        "lat": 35.8355295,
+        "lng": 129.2117655
+      },
+      {
+        "name": "Dain Maeun Deunggalbijjim (다인매운등갈비찜)",
+        "address": "25 Wonhwa-ro 181beon-gil, Gyeongju",
+        "lat": 35.8362234,
+        "lng": 129.2172496
+      },
+      {
+        "name": "Daereung Galbi (대릉갈비)",
+        "address": "27 Poseok-ro 1068beon-gil, Gyeongju",
+        "lat": 35.8358964,
+        "lng": 129.2123888
+      },
+      {
+        "name": "Yeongyang Sutbul Galbi (영양숯불갈비)",
+        "address": "79 Bonghwang-ro, Gyeongju",
+        "lat": 35.8466002,
+        "lng": 129.209979
+      },
+      {
+        "name": "Udu Galbi (우두갈비)",
+        "address": "730 Taejong-ro, Gyeongju",
+        "lat": 35.8389795,
+        "lng": 129.2079705
+      },
+      {
+        "name": "Yeojeong 1998 (여정1998)",
+        "address": "3-44 Yonghwang-ro 4-gil, Gyeongju",
+        "lat": 35.8816998,
+        "lng": 129.2233287
+      },
+      {
+        "name": "Gyeongju Hanwoo Cheonguk (경주 한우천국)",
+        "address": "109-2 Dongseong-ro, Gyeongju",
+        "lat": 35.8433702,
+        "lng": 129.2124863
+      },
+      {
+        "name": "Seomin Sikdang (서민식당)",
+        "address": "633 Gyeonggam-ro, Gyeongju",
+        "lat": 35.8336866,
+        "lng": 129.2921556
+      },
+      {
+        "name": "Bomun Galbi (보문갈비)",
+        "address": "529 Bomun-ro, Gyeongju",
+        "lat": 35.8371628,
+        "lng": 129.2853732
+      },
+      {
+        "name": "Dongcheon Bugyeong Sutbul Galbi (동천부경숯불갈비)",
+        "address": "76 Baengnyul-ro, Gyeongju",
+        "lat": 35.8564412,
+        "lng": 129.2275269
+      },
+      {
+        "name": "Bonghwang Dwaejijip (봉황돼지집)",
+        "address": "89 Wonhyo-ro, Gyeongju",
+        "lat": 35.842134,
+        "lng": 129.2106581
+      },
+      {
+        "name": "Baengnyeon Sonnim (백년손님)",
+        "address": "20 Cheomseong-ro 99beon-gil, Gyeongju",
+        "lat": 35.834927,
+        "lng": 129.212755
+      },
+      {
+        "name": "Gyeongju Dangol Sikdang (경주단골식당)",
+        "address": "30 Chunghyonokji-gil, Gyeongju",
+        "lat": 35.8415059,
+        "lng": 129.1875847
+      },
+      {
+        "name": "Chowon Seokswe Bulgogi (초원석쇠불고기)",
+        "address": "54 Jinhyeon-ro 2-gil, Gyeongju",
+        "lat": 35.7858897,
+        "lng": 129.3276047
+      }
+    ]
+  },
+  {
     "title": "อาหารคย็องจู: ซัมบับ ซุนดูบู คงกุก บิบิมบับ ต็อกกัลบี และคิมบับ",
     "url": "2026-11-19-gyeongju-food-guide-th.html",
     "thumb": "assets/thumbs/taste/gyeongju-food-guide.jpg",
