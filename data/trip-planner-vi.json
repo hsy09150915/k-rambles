@@ -1,5 +1,58 @@
 [
   {
+    "title": "Từ Busan đi Gyeongju: đi trong ngày hay ngủ lại một đêm? Kèm khu nên ở tại Gyeongju",
+    "url": "2026-11-22-gyeongju-day-trip-or-overnight-vi.html",
+    "thumb": "assets/thumbs/trip-planner/gyeongju-day-trip-or-overnight.jpg",
+    "label": "Lộ trình · Trực tuyến",
+    "alt": "Busan và Gyeongju nối bằng mũi tên hai chiều, cùng dòng chữ Day trip? 2 days?",
+    "badge": null,
+    "like_id": "trip-planner/2026-11-22-gyeongju-day-trip-or-overnight-vi.html",
+    "date": "2026-11-22",
+    "kw": "Gyeongju đi trong ngày từ Busan ngủ lại một đêm hai đêm chỗ ở Gyeongju khách sạn hanok Hwangnidan-gil Daereungwon hồ Bomun Bulguksa Seokguram Donggung hồ Wolji cảnh đêm chuyến KTX cuối ga Gyeongju Haeundae xe buýt bờ biển phía đông lăng vua Munmu Gameunsa đá trụ Yangnam xe buýt 150",
+    "city": [
+      "busan",
+      "gyeongju"
+    ],
+    "locations": [
+      {
+        "name": "Hwangnidan-gil",
+        "address": "Poseok-ro, Hwangnam-dong, Gyeongju",
+        "lat": 35.8377,
+        "lng": 129.2097
+      },
+      {
+        "name": "Donggung và hồ Wolji",
+        "address": "102 Wonhwa-ro, Gyeongju",
+        "lat": 35.8348,
+        "lng": 129.2266
+      },
+      {
+        "name": "Khu du lịch hồ Bomun",
+        "address": "446 Bomun-ro, Gyeongju",
+        "lat": 35.8428,
+        "lng": 129.2858
+      },
+      {
+        "name": "Chùa Bulguksa",
+        "address": "385 Bulguk-ro, Gyeongju",
+        "lat": 35.7899,
+        "lng": 129.3319
+      },
+      {
+        "name": "Lăng vua Munmu",
+        "address": "26 Bonggil-ri, Munmudaewang-myeon, Gyeongju",
+        "lat": 35.7381,
+        "lng": 129.4868
+      },
+      {
+        "name": "Đá trụ Yangnam",
+        "address": "Eupcheon-ri, Yangnam-myeon, Gyeongju",
+        "lat": 35.6899,
+        "lng": 129.4749
+      }
+    ]
+  },
+  {
     "title": "Nên ở khu nào khi đến Busan? So sánh Seomyeon, Haeundae, Gwangalli, Nampo-dong và ga Busan",
     "url": "2026-11-22-busan-where-to-stay-areas-vi.html",
     "thumb": "assets/thumbs/trip-planner/busan-where-to-stay-areas.jpg",

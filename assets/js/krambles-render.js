@@ -64,15 +64,17 @@
 
   /**
    * City filter. Every data entry has a `city`: 'busan', 'gyeongju' or 'korea'
-   * (Korea-wide pieces that belong to every city). A page asks for one city
-   * (config.city, default 'busan') and gets that city's pieces plus the
-   * Korea-wide ones. Entries without a city count as 'busan'.
+   * (Korea-wide pieces that belong to every city), or a list of cities such as
+   * ['busan', 'gyeongju'] for a piece that belongs to several cities. A page asks
+   * for one city (config.city, default 'busan') and gets that city's pieces plus
+   * the Korea-wide ones. Entries without a city count as 'busan'.
    */
   function cityFilter(items, city) {
     city = city || 'busan';
     return items.filter(function (it) {
       var c = it.city || 'busan';
-      return c === city || c === 'korea';
+      var list = Array.isArray(c) ? c : [c];
+      return list.indexOf(city) !== -1 || list.indexOf('korea') !== -1;
     });
   }
 

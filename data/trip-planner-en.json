@@ -1,5 +1,58 @@
 [
   {
+    "title": "Busan to Gyeongju: Day Trip or Overnight? Plus Where to Stay in Gyeongju",
+    "url": "2026-11-22-gyeongju-day-trip-or-overnight-en.html",
+    "thumb": "assets/thumbs/trip-planner/gyeongju-day-trip-or-overnight.jpg",
+    "label": "Trip plan · live",
+    "alt": "Busan and Gyeongju linked by a two-way arrow, with the words Day trip? and 2 days?",
+    "badge": null,
+    "like_id": "trip-planner/2026-11-22-gyeongju-day-trip-or-overnight-en.html",
+    "date": "2026-11-22",
+    "kw": "Gyeongju day trip from Busan overnight one night two nights where to stay in Gyeongju Gyeongju hotel hanok stay Hwangnidan-gil Daereungwon Bomun Lake Resort Bulguksa Seokguram Donggung Palace Wolji Pond night view last KTX Gyeongju Station Haeundae bus east coast Tomb of King Munmu Gameunsa Yangnam Columnar Joints bus 150",
+    "city": [
+      "busan",
+      "gyeongju"
+    ],
+    "locations": [
+      {
+        "name": "Hwangnidan-gil",
+        "address": "Poseok-ro, Hwangnam-dong, Gyeongju",
+        "lat": 35.8377,
+        "lng": 129.2097
+      },
+      {
+        "name": "Donggung Palace and Wolji Pond",
+        "address": "102 Wonhwa-ro, Gyeongju",
+        "lat": 35.8348,
+        "lng": 129.2266
+      },
+      {
+        "name": "Bomun Lake Resort",
+        "address": "446 Bomun-ro, Gyeongju",
+        "lat": 35.8428,
+        "lng": 129.2858
+      },
+      {
+        "name": "Bulguksa Temple",
+        "address": "385 Bulguk-ro, Gyeongju",
+        "lat": 35.7899,
+        "lng": 129.3319
+      },
+      {
+        "name": "Tomb of King Munmu",
+        "address": "26 Bonggil-ri, Munmudaewang-myeon, Gyeongju",
+        "lat": 35.7381,
+        "lng": 129.4868
+      },
+      {
+        "name": "Yangnam Columnar Joints",
+        "address": "Eupcheon-ri, Yangnam-myeon, Gyeongju",
+        "lat": 35.6899,
+        "lng": 129.4749
+      }
+    ]
+  },
+  {
     "title": "Where to Stay in Busan: Seomyeon, Haeundae, Gwangalli, Nampo-dong or Busan Station",
     "url": "2026-11-22-busan-where-to-stay-areas-en.html",
     "thumb": "assets/thumbs/trip-planner/busan-where-to-stay-areas.jpg",

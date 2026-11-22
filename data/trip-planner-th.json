@@ -1,5 +1,58 @@
 [
   {
+    "title": "จากปูซานไปคย็องจู เที่ยวไปกลับวันเดียวหรือค้างคืนดี? พร้อมย่านที่พักในคย็องจู",
+    "url": "2026-11-22-gyeongju-day-trip-or-overnight-th.html",
+    "thumb": "assets/thumbs/trip-planner/gyeongju-day-trip-or-overnight.jpg",
+    "label": "แผนเที่ยว · เผยแพร่แล้ว",
+    "alt": "ปูซานและคย็องจูเชื่อมด้วยลูกศรสองทาง พร้อมข้อความ Day trip? 2 days?",
+    "badge": null,
+    "like_id": "trip-planner/2026-11-22-gyeongju-day-trip-or-overnight-th.html",
+    "date": "2026-11-22",
+    "kw": "คย็องจูไปกลับวันเดียวจากปูซาน ค้างคืน หนึ่งคืน สองคืน ที่พักคย็องจู โรงแรม บ้านฮันอก ฮวังนิดันกิล แทรึงวอน ทะเลสาบโบมุน พุลกุกซา ซ็อกกูรัม ทงกุง สระวอลจี วิวกลางคืน KTX เที่ยวสุดท้าย สถานีคย็องจู แฮอุนแด รถบัส ชายฝั่งตะวันออก สุสานกษัตริย์มุนมู คัมอึนซา เสาหินยังนัม รถบัสสาย 150",
+    "city": [
+      "busan",
+      "gyeongju"
+    ],
+    "locations": [
+      {
+        "name": "ฮวังนิดันกิล",
+        "address": "Poseok-ro, Hwangnam-dong, Gyeongju",
+        "lat": 35.8377,
+        "lng": 129.2097
+      },
+      {
+        "name": "ทงกุงและสระวอลจี",
+        "address": "102 Wonhwa-ro, Gyeongju",
+        "lat": 35.8348,
+        "lng": 129.2266
+      },
+      {
+        "name": "รีสอร์ตทะเลสาบโบมุน",
+        "address": "446 Bomun-ro, Gyeongju",
+        "lat": 35.8428,
+        "lng": 129.2858
+      },
+      {
+        "name": "วัดพุลกุกซา",
+        "address": "385 Bulguk-ro, Gyeongju",
+        "lat": 35.7899,
+        "lng": 129.3319
+      },
+      {
+        "name": "สุสานกษัตริย์มุนมู",
+        "address": "26 Bonggil-ri, Munmudaewang-myeon, Gyeongju",
+        "lat": 35.7381,
+        "lng": 129.4868
+      },
+      {
+        "name": "เสาหินยังนัม",
+        "address": "Eupcheon-ri, Yangnam-myeon, Gyeongju",
+        "lat": 35.6899,
+        "lng": 129.4749
+      }
+    ]
+  },
+  {
     "title": "พักย่านไหนดีในปูซาน? เทียบซอมยอน แฮอุนแด กวางกัลลี นัมโพดง และสถานีปูซาน",
     "url": "2026-11-22-busan-where-to-stay-areas-th.html",
     "thumb": "assets/thumbs/trip-planner/busan-where-to-stay-areas.jpg",

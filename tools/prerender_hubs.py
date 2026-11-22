@@ -100,7 +100,11 @@ def process(path):
     abase = (re.search(r"articleBase:\s*'([^']*)'", c) or [None, ""])[1]
     items = json.load(open(os.path.join(ROOT, jurl.lstrip("/")), encoding="utf-8"))
     # 도시 필터: 그 도시 글 + 한국 공통(korea) 글. city 가 없는 글은 부산(busan)으로 봄. (krambles-render.js cityFilter 와 같은 규칙)
-    items = [i for i in items if (i.get("city") or "busan") in (city, "korea")]
+    # city 는 문자열 하나 또는 도시 목록(예: ["busan", "gyeongju"]) 둘 다 될 수 있음
+    def _cities(i):
+        c = i.get("city") or "busan"
+        return c if isinstance(c, list) else [c]
+    items = [i for i in items if city in _cities(i) or "korea" in _cities(i)]
     items = sorted(items, key=lambda i: i.get("date") or "0000-00-00", reverse=True)
     inner = START + "\n" + "".join(tile(i, base, lang, abase) for i in items) + "\n" + END
     new = text
