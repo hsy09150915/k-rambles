@@ -1,5 +1,49 @@
 [
   {
+    "title": "พักย่านไหนดีในปูซาน? เทียบซอมยอน แฮอุนแด กวางกัลลี นัมโพดง และสถานีปูซาน",
+    "url": "2026-11-22-busan-where-to-stay-areas-th.html",
+    "thumb": "assets/thumbs/trip-planner/busan-where-to-stay-areas.jpg",
+    "label": "แผนเที่ยว · เผยแพร่แล้ว",
+    "alt": "ข้อความ Where to stay? พร้อมรูปห้าเหลี่ยมที่มุมเป็นซอมยอน แฮอุนแด กวางกัลลี นัมโพดง และสถานีปูซาน",
+    "badge": null,
+    "like_id": "trip-planner/2026-11-22-busan-where-to-stay-areas-th.html",
+    "date": "2026-11-22",
+    "kw": "พักที่ไหนในปูซาน ย่านที่พักปูซาน ที่พักปูซาน โรงแรมปูซาน Airbnb ซอมยอน แฮอุนแด กวางกัลลี นัมโพดง สถานีปูซาน ยองโด สนามบินกิมแฮ KTX รถไฟใต้ดิน เวลาเดินทาง กระเป๋า เนิน",
+    "city": "busan",
+    "locations": [
+      {
+        "name": "สถานีซอมยอน",
+        "address": "B730 Jungang-daero, Busanjin-gu, Busan",
+        "lat": 35.1578,
+        "lng": 129.0594
+      },
+      {
+        "name": "หาดแฮอุนแด",
+        "address": "U-dong, Haeundae-gu, Busan",
+        "lat": 35.1587,
+        "lng": 129.1604
+      },
+      {
+        "name": "หาดกวางกัลลี",
+        "address": "219 Gwanganhaebyeon-ro, Suyeong-gu, Busan",
+        "lat": 35.1532,
+        "lng": 129.1186
+      },
+      {
+        "name": "จัตุรัส BIFF นัมโพดง",
+        "address": "Nampo-dong, Jung-gu, Busan",
+        "lat": 35.0987,
+        "lng": 129.0285
+      },
+      {
+        "name": "สถานีปูซาน",
+        "address": "206 Jungang-daero, Dong-gu, Busan",
+        "lat": 35.1152,
+        "lng": 129.0422
+      }
+    ]
+  },
+  {
     "title": "วัดพุลกุกซาและถ้ำซ็อกกูรัมในคย็องจู: เที่ยวครึ่งวันและจุดที่ไม่ควรพลาด",
     "url": "2026-11-18-bulguksa-seokguram-guide-th.html",
     "thumb": "assets/thumbs/trip-planner/bulguksa-seokguram-guide.jpg",

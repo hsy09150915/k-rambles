@@ -1,5 +1,49 @@
 [
   {
+    "title": "부산 숙소, 어느 동네에 잡을까? 서면, 해운대, 광안리, 남포동, 부산역 비교",
+    "url": "2026-11-22-busan-where-to-stay-areas-ko.html",
+    "thumb": "assets/thumbs/trip-planner/busan-where-to-stay-areas.jpg",
+    "label": "여행 계획 · 공개중",
+    "alt": "Where to stay? 문구와 서면, 해운대, 광안리, 남포동, 부산역을 꼭짓점에 둔 오각형",
+    "badge": null,
+    "like_id": "trip-planner/2026-11-22-busan-where-to-stay-areas-ko.html",
+    "date": "2026-11-22",
+    "kw": "부산 숙소 부산 호텔 숙소 위치 어디에 묵을까 숙소 동네 추천 에어비앤비 서면 해운대 광안리 남포동 부산역 영도 김해공항 KTX 지하철 이동 시간 처음 부산 짐 언덕 나눠 묵기",
+    "city": "busan",
+    "locations": [
+      {
+        "name": "서면역",
+        "address": "부산 부산진구 중앙대로 지하 730",
+        "lat": 35.1578,
+        "lng": 129.0594
+      },
+      {
+        "name": "해운대 해수욕장",
+        "address": "부산 해운대구 우동",
+        "lat": 35.1587,
+        "lng": 129.1604
+      },
+      {
+        "name": "광안리 해수욕장",
+        "address": "부산 수영구 광안해변로 219",
+        "lat": 35.1532,
+        "lng": 129.1186
+      },
+      {
+        "name": "남포동 BIFF광장",
+        "address": "부산 중구 남포동",
+        "lat": 35.0987,
+        "lng": 129.0285
+      },
+      {
+        "name": "부산역",
+        "address": "부산 동구 중앙대로 206",
+        "lat": 35.1152,
+        "lng": 129.0422
+      }
+    ]
+  },
+  {
     "title": "경주 불국사와 석굴암, 한나절에 함께 보는 순서와 꼭 봐야 할 것",
     "url": "2026-11-18-bulguksa-seokguram-guide-ko.html",
     "thumb": "assets/thumbs/trip-planner/bulguksa-seokguram-guide.jpg",
