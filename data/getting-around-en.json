@@ -1,5 +1,73 @@
 [
   {
+    "title": "Luggage Storage in Gyeongju: Station Lockers, Bus Terminal Storage and Hotel Delivery",
+    "url": "2026-11-22-gyeongju-luggage-storage-en.html",
+    "thumb": "assets/thumbs/getting-around/gyeongju-luggage-storage.jpg",
+    "label": "Luggage · live",
+    "alt": "A Zimcarry worker loading a yellow suitcase into a delivery truck",
+    "badge": null,
+    "like_id": "getting-around/2026-11-22-gyeongju-luggage-storage-en.html",
+    "date": "2026-11-22",
+    "kw": "Gyeongju luggage storage left luggage baggage storage lockers coin lockers Gyeongju Station KTX Zimcarry luggage delivery hotel delivery Gyeongju bus terminal express bus terminal intercity bus Jimbottari Jimcare Hwangnidan-gil free lockers Hwangnam Market Ttubeogi Cafe 242 Gyeongju National Museum KTX Express send luggage to Busan Station Seoul Station day trip Busan",
+    "city": "gyeongju",
+    "locations": [
+      {
+        "name": "Gyeongju Station lockers and Zimcarry counter",
+        "address": "80 Gyeongjuyeok-ro, Geoncheon-eup, Gyeongju",
+        "lat": 35.7986381,
+        "lng": 129.1389468
+      },
+      {
+        "name": "Gyeongju Express Bus Terminal lockers",
+        "address": "2 Taejong-ro 685beon-gil, Gyeongju",
+        "lat": 35.838677,
+        "lng": 129.2034999
+      },
+      {
+        "name": "Jimbottari luggage storage",
+        "address": "693 Taejong-ro, Gyeongju",
+        "lat": 35.8386894,
+        "lng": 129.2039251
+      },
+      {
+        "name": "Jimcare lockers",
+        "address": "710 Taejong-ro, Gyeongju",
+        "lat": 35.8386422,
+        "lng": 129.2056474
+      },
+      {
+        "name": "Hwangnidan-gil Community Culture Center free lockers",
+        "address": "1058-26 Poseok-ro, Gyeongju",
+        "lat": 35.8353419,
+        "lng": 129.2104467
+      },
+      {
+        "name": "Hwangnam Market public lockers",
+        "address": "10 Poseok-ro 1068beon-gil, Gyeongju",
+        "lat": 35.8354907,
+        "lng": 129.2102692
+      },
+      {
+        "name": "Ttubeogi Luggage Storage",
+        "address": "751 Taejong-ro, Gyeongju",
+        "lat": 35.8398334,
+        "lng": 129.2103503
+      },
+      {
+        "name": "Cafe 242",
+        "address": "242 Geumseong-ro, Gyeongju",
+        "lat": 35.8392841,
+        "lng": 129.207358
+      },
+      {
+        "name": "Gyeongju National Museum",
+        "address": "186 Iljeong-ro, Gyeongju",
+        "lat": 35.8293965,
+        "lng": 129.2279056
+      }
+    ]
+  },
+  {
     "title": "Left Something on a Busan Subway, Bus or Taxi? How to Get It Back",
     "url": "2026-11-20-busan-subway-lost-items-en.html",
     "thumb": "assets/thumbs/getting-around/busan-subway-lost-items.jpg",

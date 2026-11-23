@@ -1,5 +1,73 @@
 [
   {
+    "title": "ฝากกระเป๋าในคย็องจู: ล็อกเกอร์สถานี KTX ท่ารถบัส และบริการส่งกระเป๋าไปที่พัก",
+    "url": "2026-11-22-gyeongju-luggage-storage-th.html",
+    "thumb": "assets/thumbs/getting-around/gyeongju-luggage-storage.jpg",
+    "label": "ฝากกระเป๋า · เผยแพร่แล้ว",
+    "alt": "พนักงาน Zimcarry ยกกระเป๋าเดินทางสีเหลืองขึ้นรถส่งของ",
+    "badge": null,
+    "like_id": "getting-around/2026-11-22-gyeongju-luggage-storage-th.html",
+    "date": "2026-11-22",
+    "kw": "คย็องจู ฝากกระเป๋า ล็อกเกอร์ ตู้ล็อกเกอร์ ฝากกระเป๋าเดินทาง สถานีคย็องจู KTX Zimcarry ส่งกระเป๋าไปที่พัก ท่ารถบัสคย็องจู ท่ารถบัสด่วน รถบัสระหว่างเมือง Jimbottari Jimcare ฮวังนิดันกิล ล็อกเกอร์ฟรี ตลาดฮวังนัม ตูบอกี Cafe 242 พิพิธภัณฑ์แห่งชาติคย็องจู KTX Express ส่งกระเป๋าไปสถานีปูซาน สถานีโซล ไปกลับวันเดียว ปูซาน",
+    "city": "gyeongju",
+    "locations": [
+      {
+        "name": "ล็อกเกอร์สถานีคย็องจูและเคาน์เตอร์ Zimcarry",
+        "address": "80 Gyeongjuyeok-ro, Geoncheon-eup, Gyeongju",
+        "lat": 35.7986381,
+        "lng": 129.1389468
+      },
+      {
+        "name": "ล็อกเกอร์ท่ารถบัสด่วนคย็องจู",
+        "address": "2 Taejong-ro 685beon-gil, Gyeongju",
+        "lat": 35.838677,
+        "lng": 129.2034999
+      },
+      {
+        "name": "ที่ฝากกระเป๋า Jimbottari",
+        "address": "693 Taejong-ro, Gyeongju",
+        "lat": 35.8386894,
+        "lng": 129.2039251
+      },
+      {
+        "name": "ล็อกเกอร์ Jimcare",
+        "address": "710 Taejong-ro, Gyeongju",
+        "lat": 35.8386422,
+        "lng": 129.2056474
+      },
+      {
+        "name": "ล็อกเกอร์ฟรีศูนย์วัฒนธรรมชุมชนฮวังนิดันกิล",
+        "address": "1058-26 Poseok-ro, Gyeongju",
+        "lat": 35.8353419,
+        "lng": 129.2104467
+      },
+      {
+        "name": "ล็อกเกอร์สาธารณะตลาดฮวังนัม",
+        "address": "10 Poseok-ro 1068beon-gil, Gyeongju",
+        "lat": 35.8354907,
+        "lng": 129.2102692
+      },
+      {
+        "name": "ที่ฝากกระเป๋าตูบอกี",
+        "address": "751 Taejong-ro, Gyeongju",
+        "lat": 35.8398334,
+        "lng": 129.2103503
+      },
+      {
+        "name": "Cafe 242",
+        "address": "242 Geumseong-ro, Gyeongju",
+        "lat": 35.8392841,
+        "lng": 129.207358
+      },
+      {
+        "name": "พิพิธภัณฑ์แห่งชาติคย็องจู",
+        "address": "186 Iljeong-ro, Gyeongju",
+        "lat": 35.8293965,
+        "lng": 129.2279056
+      }
+    ]
+  },
+  {
     "title": "ลืมของไว้บนรถไฟใต้ดิน รถเมล์ หรือแท็กซี่ในปูซาน? วิธีตามหาของคืน",
     "url": "2026-11-20-busan-subway-lost-items-th.html",
     "thumb": "assets/thumbs/getting-around/busan-subway-lost-items.jpg",

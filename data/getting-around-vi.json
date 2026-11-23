@@ -1,5 +1,73 @@
 [
   {
+    "title": "Gửi hành lý ở Gyeongju: tủ đồ ở ga KTX, bến xe buýt và dịch vụ chuyển đồ về chỗ ở",
+    "url": "2026-11-22-gyeongju-luggage-storage-vi.html",
+    "thumb": "assets/thumbs/getting-around/gyeongju-luggage-storage.jpg",
+    "label": "Hành lý · Trực tuyến",
+    "alt": "Nhân viên Zimcarry chất vali màu vàng lên xe tải giao hàng",
+    "badge": null,
+    "like_id": "getting-around/2026-11-22-gyeongju-luggage-storage-vi.html",
+    "date": "2026-11-22",
+    "kw": "Gyeongju gửi hành lý tủ đồ tủ khóa gửi vali ga Gyeongju KTX Zimcarry chuyển hành lý về khách sạn bến xe buýt Gyeongju bến xe cao tốc xe buýt liên tỉnh Jimbottari Jimcare Hwangnidan-gil tủ đồ miễn phí chợ Hwangnam Ttubeogi Cafe 242 Bảo tàng Quốc gia Gyeongju KTX Express gửi đồ đến ga Busan ga Seoul đi trong ngày Busan",
+    "city": "gyeongju",
+    "locations": [
+      {
+        "name": "Tủ đồ ga Gyeongju và quầy Zimcarry",
+        "address": "80 Gyeongjuyeok-ro, Geoncheon-eup, Gyeongju",
+        "lat": 35.7986381,
+        "lng": 129.1389468
+      },
+      {
+        "name": "Tủ đồ bến xe buýt cao tốc Gyeongju",
+        "address": "2 Taejong-ro 685beon-gil, Gyeongju",
+        "lat": 35.838677,
+        "lng": 129.2034999
+      },
+      {
+        "name": "Chỗ gửi đồ Jimbottari",
+        "address": "693 Taejong-ro, Gyeongju",
+        "lat": 35.8386894,
+        "lng": 129.2039251
+      },
+      {
+        "name": "Tủ đồ Jimcare",
+        "address": "710 Taejong-ro, Gyeongju",
+        "lat": 35.8386422,
+        "lng": 129.2056474
+      },
+      {
+        "name": "Tủ đồ miễn phí Trung tâm văn hóa đời sống Hwangnidan-gil",
+        "address": "1058-26 Poseok-ro, Gyeongju",
+        "lat": 35.8353419,
+        "lng": 129.2104467
+      },
+      {
+        "name": "Tủ đồ công cộng chợ Hwangnam",
+        "address": "10 Poseok-ro 1068beon-gil, Gyeongju",
+        "lat": 35.8354907,
+        "lng": 129.2102692
+      },
+      {
+        "name": "Chỗ gửi đồ Ttubeogi",
+        "address": "751 Taejong-ro, Gyeongju",
+        "lat": 35.8398334,
+        "lng": 129.2103503
+      },
+      {
+        "name": "Cafe 242",
+        "address": "242 Geumseong-ro, Gyeongju",
+        "lat": 35.8392841,
+        "lng": 129.207358
+      },
+      {
+        "name": "Bảo tàng Quốc gia Gyeongju",
+        "address": "186 Iljeong-ro, Gyeongju",
+        "lat": 35.8293965,
+        "lng": 129.2279056
+      }
+    ]
+  },
+  {
     "title": "Để quên đồ trên tàu điện ngầm, xe buýt, taxi ở Busan? Cách tìm lại",
     "url": "2026-11-20-busan-subway-lost-items-vi.html",
     "thumb": "assets/thumbs/getting-around/busan-subway-lost-items.jpg",
