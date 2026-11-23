@@ -1,5 +1,49 @@
 [
   {
+    "title": "Bike Rental in Gyeongju: Where Travelers Can Rent, Prices and the Best Routes",
+    "url": "2026-11-23-gyeongju-bike-rental-en.html",
+    "thumb": "assets/thumbs/getting-around/gyeongju-bike-rental.jpg",
+    "label": "Bike rental · live",
+    "alt": "Rows of yellow and mint bikes in front of a grassy royal tomb, with the words Gyeongju by Bike",
+    "badge": null,
+    "like_id": "getting-around/2026-11-23-gyeongju-bike-rental-en.html",
+    "date": "2026-11-23",
+    "kw": "Gyeongju bike rental bicycle rental cycling e-bike electric bike Tasilla public bike Gyeongju bus terminal express bus terminal Daereungwon Hwangnidan-gil Cheomseongdae Donggung Palace Wolji Pond Gyeongju National Museum Seongdong Market Gyochon Village Woljeonggyo Namcheon Oreung Poseokjeong Samneung Bukcheon Hyeongsan River Hwangseong Park Bunhwangsa Hwangnyongsa Bomun Lake Donggungwon electric cart scooter passport International Driving Permit",
+    "city": "gyeongju",
+    "locations": [
+      {
+        "name": "Bike rental shops at Gyeongju Bus Terminal",
+        "address": "2 Taejong-ro 685beon-gil, Gyeongju",
+        "lat": 35.838677,
+        "lng": 129.2035
+      },
+      {
+        "name": "Bike rental shops at Daereungwon main gate",
+        "address": "Around 8 Gyerim-ro, Gyeongju",
+        "lat": 35.8358426,
+        "lng": 129.215988
+      },
+      {
+        "name": "Gyochon Village (start of the Namcheon route)",
+        "address": "39-2 Gyochon-gil, Gyeongju",
+        "lat": 35.8298626,
+        "lng": 129.2150361
+      },
+      {
+        "name": "Hwangseong Park (start of the Bukcheon route)",
+        "address": "Hwangseong-dong, Gyeongju",
+        "lat": 35.85844,
+        "lng": 129.21444
+      },
+      {
+        "name": "Donggungwon (Bomun Lake route)",
+        "address": "74-14 Bomun-ro, Gyeongju",
+        "lat": 35.8497687,
+        "lng": 129.2627204
+      }
+    ]
+  },
+  {
     "title": "Luggage Storage in Gyeongju: Station Lockers, Bus Terminal Storage and Hotel Delivery",
     "url": "2026-11-22-gyeongju-luggage-storage-en.html",
     "thumb": "assets/thumbs/getting-around/gyeongju-luggage-storage.jpg",

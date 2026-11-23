@@ -1,5 +1,49 @@
 [
   {
+    "title": "경주 자전거 대여, 여행자는 어디서 빌릴까? 대여점 요금과 달리기 좋은 길",
+    "url": "2026-11-23-gyeongju-bike-rental-ko.html",
+    "thumb": "assets/thumbs/getting-around/gyeongju-bike-rental.jpg",
+    "label": "자전거 대여 · 공개중",
+    "alt": "잔디 덮인 고분 앞에 줄지어 선 노란색과 민트색 자전거, Gyeongju by Bike 글자",
+    "badge": null,
+    "like_id": "getting-around/2026-11-23-gyeongju-bike-rental-ko.html",
+    "date": "2026-11-23",
+    "kw": "경주 자전거 대여 자전거 대여점 자전거 여행 전기자전거 타실라 공영자전거 경주 고속버스터미널 시외버스터미널 대릉원 황리단길 첨성대 동궁과 월지 국립경주박물관 성동시장 교촌마을 월정교 남천 오릉 포석정 삼릉 북천 형산강 황성공원 분황사 황룡사지 보문호 동궁원 전동차 스쿠터 여권 국제운전면허증",
+    "city": "gyeongju",
+    "locations": [
+      {
+        "name": "경주 고속버스터미널 앞 자전거 대여점",
+        "address": "경북 경주시 태종로685번길 2",
+        "lat": 35.838677,
+        "lng": 129.2035
+      },
+      {
+        "name": "대릉원 정문 앞 자전거 대여점",
+        "address": "경북 경주시 계림로 8 일대",
+        "lat": 35.8358426,
+        "lng": 129.215988
+      },
+      {
+        "name": "교촌마을 (남천 따라 코스 출발)",
+        "address": "경북 경주시 교촌길 39-2",
+        "lat": 35.8298626,
+        "lng": 129.2150361
+      },
+      {
+        "name": "황성공원 (북천과 형산강 코스 출발)",
+        "address": "경북 경주시 황성동",
+        "lat": 35.85844,
+        "lng": 129.21444
+      },
+      {
+        "name": "경주동궁원 (보문호 코스)",
+        "address": "경북 경주시 보문로 74-14",
+        "lat": 35.8497687,
+        "lng": 129.2627204
+      }
+    ]
+  },
+  {
     "title": "경주 짐 보관, 경주역과 버스터미널 어디에 맡길까? 보관함부터 숙소 짐 배송까지",
     "url": "2026-11-22-gyeongju-luggage-storage-ko.html",
     "thumb": "assets/thumbs/getting-around/gyeongju-luggage-storage.jpg",

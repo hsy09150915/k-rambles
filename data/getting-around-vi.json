@@ -1,5 +1,49 @@
 [
   {
+    "title": "Thuê xe đạp ở Gyeongju: thuê ở đâu, giá bao nhiêu và đi cung đường nào",
+    "url": "2026-11-23-gyeongju-bike-rental-vi.html",
+    "thumb": "assets/thumbs/getting-around/gyeongju-bike-rental.jpg",
+    "label": "Thuê xe đạp · Trực tuyến",
+    "alt": "Hàng xe đạp màu vàng và xanh bạc hà trước một lăng mộ phủ cỏ, dòng chữ Gyeongju by Bike",
+    "badge": null,
+    "like_id": "getting-around/2026-11-23-gyeongju-bike-rental-vi.html",
+    "date": "2026-11-23",
+    "kw": "Gyeongju thuê xe đạp tiệm cho thuê xe đạp đạp xe xe đạp điện Tasilla xe đạp công cộng bến xe Gyeongju bến xe cao tốc Daereungwon Hwangnidan-gil Cheomseongdae cung Donggung hồ Wolji Bảo tàng Quốc gia Gyeongju chợ Seongdong làng Gyochon Woljeonggyo Namcheon Oreung Poseokjeong Samneung Bukcheon sông Hyeongsan công viên Hwangseong Bunhwangsa Hwangnyongsa hồ Bomun Donggungwon xe điện 4 bánh hộ chiếu bằng lái quốc tế",
+    "city": "gyeongju",
+    "locations": [
+      {
+        "name": "Tiệm cho thuê xe đạp trước bến xe Gyeongju",
+        "address": "2 Taejong-ro 685beon-gil, Gyeongju",
+        "lat": 35.838677,
+        "lng": 129.2035
+      },
+      {
+        "name": "Tiệm cho thuê xe đạp trước cổng chính Daereungwon",
+        "address": "Around 8 Gyerim-ro, Gyeongju",
+        "lat": 35.8358426,
+        "lng": 129.215988
+      },
+      {
+        "name": "Làng Gyochon (điểm xuất phát cung Namcheon)",
+        "address": "39-2 Gyochon-gil, Gyeongju",
+        "lat": 35.8298626,
+        "lng": 129.2150361
+      },
+      {
+        "name": "Công viên Hwangseong (điểm xuất phát cung Bukcheon)",
+        "address": "Hwangseong-dong, Gyeongju",
+        "lat": 35.85844,
+        "lng": 129.21444
+      },
+      {
+        "name": "Donggungwon (cung hồ Bomun)",
+        "address": "74-14 Bomun-ro, Gyeongju",
+        "lat": 35.8497687,
+        "lng": 129.2627204
+      }
+    ]
+  },
+  {
     "title": "Gửi hành lý ở Gyeongju: tủ đồ ở ga KTX, bến xe buýt và dịch vụ chuyển đồ về chỗ ở",
     "url": "2026-11-22-gyeongju-luggage-storage-vi.html",
     "thumb": "assets/thumbs/getting-around/gyeongju-luggage-storage.jpg",
