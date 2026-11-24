@@ -1,5 +1,55 @@
 [
   {
+    "title": "วิธีไปหมู่บ้านยังดงในคย็องจู: เวลารถบัสสาย 203 ค่าเข้าชม และแผนเที่ยว 1 วัน",
+    "url": "2026-11-23-gyeongju-yangdong-village-guide-th.html",
+    "thumb": "assets/thumbs/trip-planner/gyeongju-yangdong-village.jpg",
+    "label": "แผนเที่ยว · เผยแพร่แล้ว",
+    "alt": "บ้านหลังคามุงฟางที่มีม้วนฟางและดอกไม้ฤดูใบไม้ผลิอยู่ด้านหน้า",
+    "badge": null,
+    "like_id": "trip-planner/2026-11-23-gyeongju-yangdong-village-guide-th.html",
+    "date": "2026-11-23",
+    "kw": "คย็องจู หมู่บ้านยังดง Yangdong Folk Village มรดกโลกยูเนสโก หมู่บ้านประวัติศาสตร์ของเกาหลี รถบัสสาย 203 ตารางเวลา สถานีขนส่งระหว่างเมือง สาย 200 205 207 ค่าเข้าชม เวลาเปิด บรรยายนำชม ภาษาอังกฤษ ซอแบกดัง มูชอมดัง ฮยังดัน ควันกาจอง ชิมซูจอง แท็กซี่ ฮันอก บ้านมุงฟาง Airbnb สำนักศึกษาอกซัน ซอวอน ทงนักดัง คเยจอง เซชิมแด เจดีย์จองฮเยซา เที่ยวคย็องจู 1 วัน",
+    "city": "gyeongju",
+    "locations": [
+      {
+        "name": "ที่ขายตั๋วหมู่บ้านยังดง",
+        "address": "93 Yangdongmaeul-gil, Gangdong-myeon, Gyeongju",
+        "lat": 35.996659,
+        "lng": 129.253661
+      },
+      {
+        "name": "ป้าย Yangdong Folk Village (สาย 203)",
+        "address": "Yangdongmaeul-gil, Gangdong-myeon, Gyeongju",
+        "lat": 35.994779,
+        "lng": 129.253853
+      },
+      {
+        "name": "สถานีขนส่งระหว่างเมืองคย็องจู (ต้นสาย 203)",
+        "address": "Noseo-dong, Gyeongju",
+        "lat": 35.838677,
+        "lng": 129.2035
+      },
+      {
+        "name": "สำนักศึกษาอกซัน",
+        "address": "216-27 Oksanseowon-gil, Angang-eup, Gyeongju",
+        "lat": 36.01167,
+        "lng": 129.16278
+      },
+      {
+        "name": "บ้านทงนักดัง",
+        "address": "300-3 Oksanseowon-gil, Angang-eup, Gyeongju",
+        "lat": 36.016568,
+        "lng": 129.159916
+      },
+      {
+        "name": "เจดีย์หิน 13 ชั้นที่ซากวัดจองฮเยซา",
+        "address": "1654 Oksan-ri, Angang-eup, Gyeongju",
+        "lat": 36.019074,
+        "lng": 129.157019
+      }
+    ]
+  },
+  {
     "title": "จากปูซานไปคย็องจู เที่ยวไปกลับวันเดียวหรือค้างคืนดี? พร้อมย่านที่พักในคย็องจู",
     "url": "2026-11-22-gyeongju-day-trip-or-overnight-th.html",
     "thumb": "assets/thumbs/trip-planner/gyeongju-day-trip-or-overnight.jpg",

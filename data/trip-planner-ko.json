@@ -1,5 +1,55 @@
 [
   {
+    "title": "경주 양동마을 가는 법, 203번 버스 시간과 입장료, 옥산서원까지 하루 코스",
+    "url": "2026-11-23-gyeongju-yangdong-village-guide-ko.html",
+    "thumb": "assets/thumbs/trip-planner/gyeongju-yangdong-village.jpg",
+    "label": "여행 계획 · 공개중",
+    "alt": "봄꽃이 핀 마당 앞 초가집과 볏짚 묶음",
+    "badge": null,
+    "like_id": "trip-planner/2026-11-23-gyeongju-yangdong-village-guide-ko.html",
+    "date": "2026-11-23",
+    "kw": "경주 양동마을 양동민속마을 유네스코 세계유산 한국의 역사마을 203번 버스 시간표 시외버스터미널 양동마을입구 200번 205번 207번 입장료 관람시간 마을해설 영어 해설 서백당 무첨당 향단 관가정 심수정 택시 한옥 민박 초가집 에어비앤비 옥산서원 한국의 서원 독락당 고택스테이 계정 세심대 정혜사지 십삼층석탑 경주 하루 코스",
+    "city": "gyeongju",
+    "locations": [
+      {
+        "name": "양동마을 매표소",
+        "address": "경북 경주시 강동면 양동마을길 93",
+        "lat": 35.996659,
+        "lng": 129.253661
+      },
+      {
+        "name": "양동민속마을 정류장 (203번 하차)",
+        "address": "경북 경주시 강동면 양동마을길",
+        "lat": 35.994779,
+        "lng": 129.253853
+      },
+      {
+        "name": "경주시외버스터미널 (203번 출발)",
+        "address": "경북 경주시 노서동",
+        "lat": 35.838677,
+        "lng": 129.2035
+      },
+      {
+        "name": "옥산서원",
+        "address": "경북 경주시 안강읍 옥산서원길 216-27",
+        "lat": 36.01167,
+        "lng": 129.16278
+      },
+      {
+        "name": "독락당",
+        "address": "경북 경주시 안강읍 옥산서원길 300-3",
+        "lat": 36.016568,
+        "lng": 129.159916
+      },
+      {
+        "name": "정혜사지 십삼층석탑",
+        "address": "경북 경주시 안강읍 옥산리 1654",
+        "lat": 36.019074,
+        "lng": 129.157019
+      }
+    ]
+  },
+  {
     "title": "부산에서 경주, 당일치기로 갈까 1박할까? 경주 숙소 동네까지 정리",
     "url": "2026-11-22-gyeongju-day-trip-or-overnight-ko.html",
     "thumb": "assets/thumbs/trip-planner/gyeongju-day-trip-or-overnight.jpg",

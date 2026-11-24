@@ -1,5 +1,55 @@
 [
   {
+    "title": "How to Get to Yangdong Village in Gyeongju: Bus 203 Times, Tickets and a Day Trip Plan",
+    "url": "2026-11-23-gyeongju-yangdong-village-guide-en.html",
+    "thumb": "assets/thumbs/trip-planner/gyeongju-yangdong-village.jpg",
+    "label": "Trip plan · live",
+    "alt": "A thatched-roof house with bundles of straw and spring flowers in front",
+    "badge": null,
+    "like_id": "trip-planner/2026-11-23-gyeongju-yangdong-village-guide-en.html",
+    "date": "2026-11-23",
+    "kw": "Gyeongju Yangdong Village Yangdong Folk Village UNESCO World Heritage Historic Villages of Korea bus 203 timetable intercity bus terminal Yangdong Village Entrance bus 200 205 207 admission hours guided tour English tour Seobaekdang Mucheomdang Hyangdan Gwangajeong Simsujeong taxi hanok stay thatched house Airbnb Oksan Seowon Confucian academy seowon Dongnakdang Gyejeong Sesimdae Jeonghyesa pagoda Gyeongju day trip",
+    "city": "gyeongju",
+    "locations": [
+      {
+        "name": "Yangdong Village ticket office",
+        "address": "93 Yangdongmaeul-gil, Gangdong-myeon, Gyeongju",
+        "lat": 35.996659,
+        "lng": 129.253661
+      },
+      {
+        "name": "Yangdong Folk Village bus stop (bus 203)",
+        "address": "Yangdongmaeul-gil, Gangdong-myeon, Gyeongju",
+        "lat": 35.994779,
+        "lng": 129.253853
+      },
+      {
+        "name": "Gyeongju Intercity Bus Terminal (bus 203 starts)",
+        "address": "Noseo-dong, Gyeongju",
+        "lat": 35.838677,
+        "lng": 129.2035
+      },
+      {
+        "name": "Oksan Seowon Academy",
+        "address": "216-27 Oksanseowon-gil, Angang-eup, Gyeongju",
+        "lat": 36.01167,
+        "lng": 129.16278
+      },
+      {
+        "name": "Dongnakdang House",
+        "address": "300-3 Oksanseowon-gil, Angang-eup, Gyeongju",
+        "lat": 36.016568,
+        "lng": 129.159916
+      },
+      {
+        "name": "Thirteen-story Stone Pagoda at Jeonghyesa Temple Site",
+        "address": "1654 Oksan-ri, Angang-eup, Gyeongju",
+        "lat": 36.019074,
+        "lng": 129.157019
+      }
+    ]
+  },
+  {
     "title": "Busan to Gyeongju: Day Trip or Overnight? Plus Where to Stay in Gyeongju",
     "url": "2026-11-22-gyeongju-day-trip-or-overnight-en.html",
     "thumb": "assets/thumbs/trip-planner/gyeongju-day-trip-or-overnight.jpg",
