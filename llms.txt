@@ -47,7 +47,7 @@
 - [Sick at Night in Busan: Late-Night Pharmacies and Hospitals with an ER](https://k-rambles.com/getting-around/2026-11-18-busan-late-night-pharmacy-er-guide-en.html) — 2026-11-18
 - [Seoul to Gyeongju: KTX vs Express Bus, Plus What to Eat at the Rest Stop](https://k-rambles.com/getting-around/2026-11-17-seoul-to-gyeongju-ktx-bus-guide-en.html) — 2026-11-17
 - [Busan to Gyeongju by Train or Bus, Plus Local Buses to Bulguksa and Hwangnidan-gil](https://k-rambles.com/getting-around/2026-11-17-busan-to-gyeongju-transport-guide-en.html) — 2026-11-17
-- [How to Book a KTX Train from Seoul to Busan: Korail Website, Korail+ App and Overseas Cards](https://k-rambles.com/getting-around/2026-10-22-korea-ktx-booking-guide-en.html) — 2026-10-22
+- [How to Book a KTX Train from Seoul to Busan: A Foreign Visitor's Guide to the Korail Website and Overseas Cards](https://k-rambles.com/getting-around/2026-10-22-korea-ktx-booking-guide-en.html) — 2026-10-22
 - [Korean Delivery Apps for Foreigners: We Tried Baemin, Shuttle & Yogiyo](https://k-rambles.com/getting-around/2026-09-26-korea-delivery-apps-guide-en.html) — 2026-09-26
 - [Sick in Korea? Convenience Store, Pharmacy, or Hospital](https://k-rambles.com/getting-around/2026-09-25-korea-pharmacy-hospital-guide-en.html) — 2026-09-25
 - [Why Won’t My Card Work in Korea? — A Practical Guide](https://k-rambles.com/getting-around/2026-09-24-korea-card-payment-guide-en.html) — 2026-09-24
@@ -245,7 +245,7 @@
 - [Bị ốm ban đêm ở Busan: hiệu thuốc mở khuya và bệnh viện có phòng cấp cứu](https://k-rambles.com/vi/getting-around/2026-11-18-busan-late-night-pharmacy-er-guide-vi.html) — 2026-11-18
 - [Từ Seoul đi Gyeongju: so sánh KTX và xe buýt tốc hành, kèm món ngon ở trạm dừng chân](https://k-rambles.com/vi/getting-around/2026-11-17-seoul-to-gyeongju-ktx-bus-guide-vi.html) — 2026-11-17
 - [Từ Busan đi Gyeongju bằng tàu hoặc xe buýt, kèm xe buýt nội thành đến Bulguksa và Hwangnidan-gil](https://k-rambles.com/vi/getting-around/2026-11-17-busan-to-gyeongju-transport-guide-vi.html) — 2026-11-17
-- [Cách đặt vé tàu KTX từ Seoul đi Busan: trang web Korail, ứng dụng Korail+ và thẻ nước ngoài](https://k-rambles.com/vi/getting-around/2026-10-22-korea-ktx-booking-guide-vi.html) — 2026-10-22
+- [Cách đặt vé KTX từ Seoul đi Busan: hướng dẫn trang web Korail và thẻ nước ngoài cho người nước ngoài](https://k-rambles.com/vi/getting-around/2026-10-22-korea-ktx-booking-guide-vi.html) — 2026-10-22
 - [Ứng dụng giao đồ ăn ở Hàn Quốc cho người nước ngoài: Chúng tôi đã thử Baemin, Shuttle và Yogiyo](https://k-rambles.com/vi/getting-around/2026-09-26-korea-delivery-apps-guide-vi.html) — 2026-09-26
 - [Bị ốm ở Hàn Quốc thì đi đâu? Cửa hàng tiện lợi, hiệu thuốc, bệnh viện](https://k-rambles.com/vi/getting-around/2026-09-25-korea-pharmacy-hospital-guide-vi.html) — 2026-09-25
 - [Vì sao thẻ không quẹt được ở Hàn Quốc? — Hướng dẫn thực tế về thanh toán bằng thẻ nước ngoài](https://k-rambles.com/vi/getting-around/2026-09-24-korea-card-payment-guide-vi.html) — 2026-09-24
@@ -344,7 +344,7 @@
 - [ป่วยตอนกลางคืนที่ปูซาน: ร้านขายยาเปิดดึกและโรงพยาบาลที่มีห้องฉุกเฉิน](https://k-rambles.com/th/getting-around/2026-11-18-busan-late-night-pharmacy-er-guide-th.html) — 2026-11-18
 - [โซลไปคย็องจู: เทียบ KTX กับรถบัสด่วน พร้อมของกินที่จุดพักรถ](https://k-rambles.com/th/getting-around/2026-11-17-seoul-to-gyeongju-ktx-bus-guide-th.html) — 2026-11-17
 - [ปูซานไปคย็องจูด้วยรถไฟหรือรถบัส พร้อมรถเมล์ไปวัดพุลกุกซาและฮวังนิดันกิล](https://k-rambles.com/th/getting-around/2026-11-17-busan-to-gyeongju-transport-guide-th.html) — 2026-11-17
-- [วิธีจองตั๋วรถไฟ KTX จากโซลไปปูซาน: เว็บไซต์ Korail แอป Korail+ และบัตรจากต่างประเทศ](https://k-rambles.com/th/getting-around/2026-10-22-korea-ktx-booking-guide-th.html) — 2026-10-22
+- [วิธีจองตั๋วรถไฟ KTX จากโซลไปปูซาน: คู่มือเว็บไซต์ Korail และบัตรต่างประเทศสำหรับชาวต่างชาติ](https://k-rambles.com/th/getting-around/2026-10-22-korea-ktx-booking-guide-th.html) — 2026-10-22
 - [แอปเดลิเวอรี่อาหารในเกาหลีสำหรับชาวต่างชาติ: เราลองใช้ Baemin, Shuttle และ Yogiyo แล้ว](https://k-rambles.com/th/getting-around/2026-09-26-korea-delivery-apps-guide-th.html) — 2026-09-26
 - [ป่วยที่เกาหลีต้องทำไง? คู่มือร้านสะดวกซื้อ ร้านขายยา โรงพยาบาล](https://k-rambles.com/th/getting-around/2026-09-25-korea-pharmacy-hospital-guide-th.html) — 2026-09-25
 - [ทำไมบัตรถึงรูดไม่ได้ในเกาหลี? — คู่มือการชำระเงินด้วยบัตรต่างประเทศฉบับใช้งานจริง](https://k-rambles.com/th/getting-around/2026-09-24-korea-card-payment-guide-th.html) — 2026-09-24
