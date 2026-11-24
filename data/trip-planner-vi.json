@@ -58,7 +58,7 @@
     "badge": null,
     "like_id": "trip-planner/2026-11-22-gyeongju-day-trip-or-overnight-vi.html",
     "date": "2026-11-22",
-    "kw": "Gyeongju đi trong ngày từ Busan ngủ lại một đêm hai đêm chỗ ở Gyeongju khách sạn hanok Hwangnidan-gil Daereungwon hồ Bomun Bulguksa Seokguram Donggung hồ Wolji cảnh đêm chuyến KTX cuối ga Gyeongju Haeundae xe buýt bờ biển phía đông lăng vua Munmu Gameunsa đá trụ Yangnam xe buýt 150",
+    "kw": "Gyeongju đi trong ngày từ Busan ngủ lại một đêm hai đêm chỗ ở Gyeongju khách sạn hanok Hwangnidan-gil Daereungwon hồ Bomun Bulguksa Seokguram Donggung hồ Wolji cảnh đêm chuyến KTX cuối ga Gyeongju Haeundae xe buýt bờ biển phía đông lăng vua Munmu Gameunsa đá trụ Yangnam xe buýt 150 donggung wolji Donggung và hồ Wolji",
     "city": [
       "busan",
       "gyeongju"
@@ -243,7 +243,7 @@
     "badge": null,
     "like_id": "trip-planner/2026-11-14-busan-market-korean-goods-guide-vi.html",
     "date": "2026-11-14",
-    "kw": "mua sắm Busan chợ truyền thống chợ Busanjin chợ Bujeon chợ Bupyeong Kkangtong chợ Gukje chăn mink chăn Hàn Quốc ttukbaegi bát đồng bộ thìa đũa khăn kỳ Italy towel đồ tắm tất Hàn Quốc áo gile của bà áo gile kimjang quần momppae halmaenial hanbok hộp xà cừ bojagi lò rèn Gaya cuốc homi Gimhae Bảo tàng Busan đồ lưu niệm quà Busan",
+    "kw": "mua sắm Busan chợ truyền thống chợ Busanjin chợ Bujeon chợ Bupyeong Kkangtong chợ Gukje chăn mink chăn Hàn Quốc ttukbaegi bát đồng bộ thìa đũa khăn kỳ Italy towel đồ tắm tất Hàn Quốc áo gile của bà áo gile kimjang quần momppae halmaenial hanbok hộp xà cừ bojagi lò rèn Gaya cuốc homi Gimhae Bảo tàng Busan đồ lưu niệm quà Busan đồ lưu niệm bảo tàng busan",
     "city": "busan",
     "locations": [
       {
@@ -305,7 +305,7 @@
     "badge": null,
     "like_id": "trip-planner/2026-11-06-busan-itinerary-builder-guide-vi.html",
     "date": "2026-11-06",
-    "kw": "Lịch trình Busan Lộ trình du lịch Busan Busan 1 ngày Busan 2 ngày Busan 3 ngày Busan 4 ngày Busan đi trong ngày Phố cổ Nampo-dong Jagalchi Chợ Gukje Tháp Busan Làng văn hóa Huinnyeoul Haeundae Blue Line Park Gwangalli Làng văn hóa Gamcheon Taejongdae Songjeong Haedong Yonggungsa Núi Geumjeong Seomyeon Jeonpo KTX Ga Busan Sân bay Gimhae bản đồ",
+    "kw": "Lịch trình Busan Lộ trình du lịch Busan Busan 1 ngày Busan 2 ngày Busan 3 ngày Busan 4 ngày Busan đi trong ngày Phố cổ Nampo-dong Jagalchi Chợ Gukje Tháp Busan Làng văn hóa Huinnyeoul Haeundae Blueline Park Gwangalli Làng văn hóa Gamcheon Taejongdae Songjeong Haedong Yonggungsa Núi Geumjeong Seomyeon Jeonpo KTX Ga Busan Sân bay Gimhae bản đồ",
     "city": "busan",
     "locations": [
       {
@@ -351,7 +351,7 @@
         "lng": 129.0798057
       },
       {
-        "name": "Ga Mipo, Blue Line Park",
+        "name": "Ga Mipo, Blueline Park",
         "address": "13 Dalmaji-gil 62beon-gil, Haeundae-gu, Busan",
         "lat": 35.1604,
         "lng": 129.1759
@@ -459,7 +459,7 @@
     "badge": null,
     "like_id": "trip-planner/2026-10-19-busan-songjeong-yonggungsa-east-course-vi.html",
     "date": "2026-10-20",
-    "kw": "songjeong bai bien songjeong haedong yonggungsa chua orangdae cong vien orangdae osiria ga osiria donghae tuyen donghae lotte world lotte world adventure busan lotte mall skyline luge luge gijang ga haeundae xe buyt a02 181 busan bo bien phia dong lo trinh mot ngay",
+    "kw": "songjeong bai bien songjeong haedong yonggungsa chua orangdae cong vien orangdae osiria ga osiria donghae tuyen donghae lotte world lotte world adventure busan lotte mall skyline luge luge gijang ga haeundae xe buyt a02 181 busan bo bien phia dong lo trinh mot ngay bãi biển songjeong",
     "city": "busan",
     "locations": [
       {
@@ -495,7 +495,7 @@
     ]
   },
   {
-    "title": "Lộ trình một ngày ở Haeundae, Busan: đảo Dongbaek, bãi biển, Blue Line Park và Cheongsapo",
+    "title": "Lộ trình một ngày ở Haeundae, Busan: đảo Dongbaek, bãi biển, Blueline Park và Cheongsapo",
     "url": "2026-10-15-busan-haeundae-day-course-vi.html",
     "thumb": "assets/thumbs/trip-planner/haeundae-day-course.jpg",
     "label": "Lộ trình · Trực tuyến",
@@ -503,7 +503,7 @@
     "badge": null,
     "like_id": "trip-planner/2026-10-15-busan-haeundae-day-course-vi.html",
     "date": "2026-10-15",
-    "kw": "haeundae bai bien haeundae dongbaek dao dongbaek nurimaru apec house the bay 101 marine city cho haeundae gunam-ro haeridan-gil donghae nambu blue line park beach train sky capsule mipo dalmaji-gil moontan road haewol cheongsapo daritdol songjeong busan mot ngay lo trinh",
+    "kw": "haeundae bai bien haeundae dongbaek dao dongbaek nurimaru apec house the bay 101 marine city cho haeundae gunam-ro haeridan-gil donghae nambu blueline park beach train sky capsule mipo dalmaji-gil moontan road haewol cheongsapo daritdol songjeong busan mot ngay lo trinh",
     "city": "busan",
     "locations": [
       {
@@ -525,7 +525,7 @@
         "lng": 129.153
       },
       {
-        "name": "Ga Mipo, Blue Line Park",
+        "name": "Ga Mipo, Blueline Park",
         "address": "13 Dalmaji-gil 62beon-gil, Haeundae-gu, Busan",
         "lat": 35.1604,
         "lng": 129.1759
@@ -677,7 +677,7 @@
         "lng": 129.0346
       },
       {
-        "name": "Phố sách Boseong-dong",
+        "name": "Phố sách Bosu-dong",
         "address": "Bosu-dong 1-ga, Jung-gu, Busan",
         "lat": 35.1066,
         "lng": 129.0231
@@ -821,7 +821,7 @@
     ]
   },
   {
-    "title": "Taejongdae trọn vẹn — Từ tàu Danubi đến hải đăng Yeongdo, đá Sinseon",
+    "title": "Hướng dẫn Taejongdae Busan — Xe buýt vòng miễn phí đến đài quan sát và hải đăng Yeongdo",
     "url": "2026-09-22-taejongdae-guide-vi.html",
     "thumb": "assets/thumbs/trip-planner/taejongdae-guide.jpg",
     "label": "Chuẩn bị chuyến đi · Trực tuyến",
@@ -829,7 +829,7 @@
     "badge": null,
     "like_id": "trip-planner/2026-09-22-taejongdae-guide-vi.html",
     "date": "2026-09-22",
-    "kw": "taejongdae tau danubi hai dang yeongdo da sinseon dau chan khung long busan yeongdo-gu quan sat",
+    "kw": "taejongdae tau danubi hai dang yeongdo da sinseon dau chan khung long busan yeongdo-gu quan sat xe buyt vong mien phi xe buýt vòng miễn phí",
     "city": "busan",
     "locations": [
       {

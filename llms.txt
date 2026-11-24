@@ -21,14 +21,14 @@
 - [Busan Itinerary for 1, 2 or 3 Days: How to Plan a Route That Fits Your Schedule](https://k-rambles.com/trip-planner/2026-11-06-busan-itinerary-builder-guide-en.html) — 2026-11-06
 - [Mt. Geumjeong One-Day Course in Busan: Cable Car, Beomeosa Temple and Sanseong Village Makgeolli](https://k-rambles.com/trip-planner/2026-10-22-busan-geumjeongsan-guide-en.html) — 2026-10-22
 - [Busan East Coast Course: Songjeong Beach, Haedong Yonggungsa Temple and Orangdae Park by Donghae Line and Bus](https://k-rambles.com/trip-planner/2026-10-19-busan-songjeong-yonggungsa-east-course-en.html) — 2026-10-20
-- [Busan Haeundae One-Day Course: Dongbaek Island, the Beach, Blue Line Park and Cheongsapo](https://k-rambles.com/trip-planner/2026-10-15-busan-haeundae-day-course-en.html) — 2026-10-15
+- [Busan Haeundae One-Day Course: Dongbaek Island, the Beach, Blueline Park and Cheongsapo](https://k-rambles.com/trip-planner/2026-10-15-busan-haeundae-day-course-en.html) — 2026-10-15
 - [Gwangalli at Night — Drone Show Times, Where to Watch, and What to Know Before You Go](https://k-rambles.com/trip-planner/2026-10-08-gwangalli-night-guide-en.html) — 2026-10-08
 - [Igidae Coastal Walk — A Volcanic Cliff Trail That Only Opened in 1993](https://k-rambles.com/trip-planner/2026-10-07-igidae-coastal-walk-guide-en.html) — 2026-10-08
 - [Time to Spare at Busan Station or the Ferry Terminal — A Meal, Coffee and a Walk](https://k-rambles.com/trip-planner/2026-10-07-busan-station-layover-guide-en.html) — 2026-10-07
 - [Nampo-dong & Gukje Market — A One-Day Walk Through Old Downtown Busan](https://k-rambles.com/trip-planner/2026-10-04-nampo-gukje-market-guide-en.html) — 2026-10-06
 - [Busan Without the Walking — Sauna & Jjimjilbang Picks](https://k-rambles.com/trip-planner/2026-09-29-best-busan-saunas-en.html) — 2026-09-29
 - [Seeing Busan Without Walking — Cable Car, Observation Tower, Yacht](https://k-rambles.com/trip-planner/2026-09-23-busan-views-cablecar-tower-yacht-en.html) — 2026-09-23
-- [Taejongdae, Done Right — From the Danubi Train to Yeongdo Lighthouse and Sinseon Rock](https://k-rambles.com/trip-planner/2026-09-22-taejongdae-guide-en.html) — 2026-09-22
+- [Busan Taejongdae Guide — Free Shuttle Bus to the Observatory and Yeongdo Lighthouse](https://k-rambles.com/trip-planner/2026-09-22-taejongdae-guide-en.html) — 2026-09-22
 - [Korea Arrival Card vs K-ETA — What's the Difference?](https://k-rambles.com/trip-planner/2026-09-19-korea-entry-eta-arrival-card-guide-en.html) — 2026-09-19
 - [Where to Rent a Hanbok in Busan](https://k-rambles.com/trip-planner/2026-09-06-busan-hanbok-rental-guide.html) — 2026-09-06
 - [Huinnyeoul Culture Village, the Alley Closest to the Sea — Closed Cafés Filtered Out](https://k-rambles.com/trip-planner/2026-09-06-huinnyeoul-culture-village.html) — 2026-09-06
@@ -127,7 +127,7 @@
 - [남포동·국제시장 일대, 하루 안에 걷는 부산 원도심](https://k-rambles.com/ko/trip-planner/2026-10-04-nampo-gukje-market-guide-ko.html) — 2026-10-06
 - [걷지 않고 힐링하는 부산 — 사우나·찜질방 추천](https://k-rambles.com/ko/trip-planner/2026-09-29-best-busan-saunas-ko.html) — 2026-09-29
 - [걷지 않고 보는 부산 — 케이블카·전망대·요트 3선](https://k-rambles.com/ko/trip-planner/2026-09-23-busan-views-cablecar-tower-yacht-ko.html) — 2026-09-23
-- [태종대 제대로 즐기기 — 다누비열차부터 영도등대, 신선바위까지](https://k-rambles.com/ko/trip-planner/2026-09-22-taejongdae-guide-ko.html) — 2026-09-22
+- [부산 태종대 가이드 — 무료 순환버스로 전망대, 영도등대까지](https://k-rambles.com/ko/trip-planner/2026-09-22-taejongdae-guide-ko.html) — 2026-09-22
 - [한국 입국신고서, K-ETA랑 뭐가 다른가요?](https://k-rambles.com/ko/trip-planner/2026-09-19-korea-entry-eta-arrival-card-guide-ko.html) — 2026-09-19
 - [부산 한복 대여, 어디서 할까](https://k-rambles.com/ko/trip-planner/2026-09-06-busan-hanbok-rental-guide.html) — 2026-09-06
 - [흰여울문화마을, 바다가 가장 가까운 골목 — 폐업 카페 거르고 정리했어요](https://k-rambles.com/ko/trip-planner/2026-09-06-huinnyeoul-culture-village.html) — 2026-09-06
@@ -219,14 +219,14 @@
 - [Lịch trình Busan 1, 2, 3 ngày: cách tự lên lộ trình hợp với kế hoạch của bạn](https://k-rambles.com/vi/trip-planner/2026-11-06-busan-itinerary-builder-guide-vi.html) — 2026-11-06
 - [Lộ trình một ngày ở núi Geumjeong, Busan: cáp treo, chùa Beomeosa và makgeolli ở làng Sanseong](https://k-rambles.com/vi/trip-planner/2026-10-22-busan-geumjeongsan-guide-vi.html) — 2026-10-22
 - [Lộ trình bờ biển phía đông Busan: bãi biển Songjeong, chùa Haedong Yonggungsa và công viên Orangdae bằng tuyến Donghae và xe buýt](https://k-rambles.com/vi/trip-planner/2026-10-19-busan-songjeong-yonggungsa-east-course-vi.html) — 2026-10-20
-- [Lộ trình một ngày ở Haeundae, Busan: đảo Dongbaek, bãi biển, Blue Line Park và Cheongsapo](https://k-rambles.com/vi/trip-planner/2026-10-15-busan-haeundae-day-course-vi.html) — 2026-10-15
+- [Lộ trình một ngày ở Haeundae, Busan: đảo Dongbaek, bãi biển, Blueline Park và Cheongsapo](https://k-rambles.com/vi/trip-planner/2026-10-15-busan-haeundae-day-course-vi.html) — 2026-10-15
 - [Gwangalli về đêm — Giờ diễn drone, chỗ xem và những điều cần biết trước khi đi](https://k-rambles.com/vi/trip-planner/2026-10-08-gwangalli-night-guide-vi.html) — 2026-10-08
 - [Đường đi bộ ven biển Igidae — Con đường vách đá núi lửa chỉ mở cửa từ năm 1993](https://k-rambles.com/vi/trip-planner/2026-10-07-igidae-coastal-walk-guide-vi.html) — 2026-10-08
 - [Còn thời gian ở ga Busan hoặc bến phà quốc tế — Ăn, cà phê và dạo bộ](https://k-rambles.com/vi/trip-planner/2026-10-07-busan-station-layover-guide-vi.html) — 2026-10-07
 - [Nampo-dong & chợ Gukje — Một ngày dạo bộ khu phố cổ Busan](https://k-rambles.com/vi/trip-planner/2026-10-04-nampo-gukje-market-guide-vi.html) — 2026-10-06
 - [Busan không cần đi bộ — Gợi ý sauna & jjimjilbang](https://k-rambles.com/vi/trip-planner/2026-09-29-best-busan-saunas-vi.html) — 2026-09-29
 - [Ngắm Busan không cần đi bộ — 3 cách: cáp treo, tháp ngắm cảnh, du thuyền](https://k-rambles.com/vi/trip-planner/2026-09-23-busan-views-cablecar-tower-yacht-vi.html) — 2026-09-23
-- [Taejongdae trọn vẹn — Từ tàu Danubi đến hải đăng Yeongdo, đá Sinseon](https://k-rambles.com/vi/trip-planner/2026-09-22-taejongdae-guide-vi.html) — 2026-09-22
+- [Hướng dẫn Taejongdae Busan — Xe buýt vòng miễn phí đến đài quan sát và hải đăng Yeongdo](https://k-rambles.com/vi/trip-planner/2026-09-22-taejongdae-guide-vi.html) — 2026-09-22
 - [Thẻ nhập cảnh Hàn Quốc khác gì với K-ETA?](https://k-rambles.com/vi/trip-planner/2026-09-19-korea-entry-eta-arrival-card-guide-vi.html) — 2026-09-19
 - [Thuê hanbok ở Busan, nên thuê ở đâu](https://k-rambles.com/vi/trip-planner/2026-09-06-busan-hanbok-rental-guide-vi.html) — 2026-09-06
 - [Làng văn hóa Huinnyeoul, con hẻm gần biển nhất](https://k-rambles.com/vi/trip-planner/2026-09-06-huinnyeoul-culture-village-vi.html) — 2026-09-06
@@ -311,7 +311,7 @@
 
 - [วิธีไปหมู่บ้านยังดงในคย็องจู: เวลารถบัสสาย 203 ค่าเข้าชม และแผนเที่ยว 1 วัน](https://k-rambles.com/th/trip-planner/2026-11-23-gyeongju-yangdong-village-guide-th.html) — 2026-11-23
 - [จากปูซานไปคย็องจู เที่ยวไปกลับวันเดียวหรือค้างคืนดี? พร้อมย่านที่พักในคย็องจู](https://k-rambles.com/th/trip-planner/2026-11-22-gyeongju-day-trip-or-overnight-th.html) — 2026-11-22
-- [พักย่านไหนดีในปูซาน? เทียบซอมยอน แฮอุนแด กวางกัลลี นัมโพดง และสถานีปูซาน](https://k-rambles.com/th/trip-planner/2026-11-22-busan-where-to-stay-areas-th.html) — 2026-11-22
+- [พักย่านไหนดีในปูซาน? เทียบซอมยอน แฮอุนแด ควังอัลลี นัมโพดง และสถานีปูซาน](https://k-rambles.com/th/trip-planner/2026-11-22-busan-where-to-stay-areas-th.html) — 2026-11-22
 - [วัดพุลกุกซาและถ้ำซ็อกกูรัมในคย็องจู: เที่ยวครึ่งวันและจุดที่ไม่ควรพลาด](https://k-rambles.com/th/trip-planner/2026-11-18-bulguksa-seokguram-guide-th.html) — 2026-11-18
 - [เส้นทางเดินเที่ยวในเมืองคย็องจู: จากฮวังนิดันกิล ผ่านแทรึงวอน ชอมซองแด ถึงทงกุงและสระวอลจียามค่ำ](https://k-rambles.com/th/trip-planner/2026-11-17-gyeongju-downtown-walking-route-th.html) — 2026-11-17
 - [ของใช้เกาหลีที่ควรซื้อในตลาดดั้งเดิมปูซาน ตั้งแต่ผ้าห่มถึงมีดตีมือ](https://k-rambles.com/th/trip-planner/2026-11-14-busan-market-korean-goods-guide-th.html) — 2026-11-14
@@ -319,13 +319,13 @@
 - [เส้นทางเที่ยวภูเขากึมจอง ปูซานแบบวันเดียว ตั้งแต่กระเช้าลอยฟ้า วัดพอมออซา ไปจนถึงมักกอลลีที่หมู่บ้านซันซอง](https://k-rambles.com/th/trip-planner/2026-10-22-busan-geumjeongsan-guide-th.html) — 2026-10-22
 - [เส้นทางชายฝั่งตะวันออกปูซาน: หาดซงจอง วัดแฮดงยงกุงซา และสวนโอรังแด ด้วยสายทงแฮและรถบัส](https://k-rambles.com/th/trip-planner/2026-10-19-busan-songjeong-yonggungsa-east-course-th.html) — 2026-10-20
 - [เที่ยวแฮอุนแดปูซานหนึ่งวัน: เกาะทงแบก ชายหาด บลูไลน์พาร์ค และชองซาโพ](https://k-rambles.com/th/trip-planner/2026-10-15-busan-haeundae-day-course-th.html) — 2026-10-15
-- [กวางกัลลีตอนกลางคืน — เวลาโดรนโชว์ จุดชม และสิ่งที่ควรรู้ก่อนไป](https://k-rambles.com/th/trip-planner/2026-10-08-gwangalli-night-guide-th.html) — 2026-10-08
+- [ควังอัลลีตอนกลางคืน — เวลาโดรนโชว์ จุดชม และสิ่งที่ควรรู้ก่อนไป](https://k-rambles.com/th/trip-planner/2026-10-08-gwangalli-night-guide-th.html) — 2026-10-08
 - [ทางเดินริมทะเลอีกีแด — เส้นทางหน้าผาหินภูเขาไฟที่เพิ่งเปิดให้เข้าได้เมื่อปี 1993](https://k-rambles.com/th/trip-planner/2026-10-07-igidae-coastal-walk-guide-th.html) — 2026-10-08
 - [มีเวลาว่างที่สถานีปูซานหรือท่าเรือโดยสารระหว่างประเทศ — กิน ดื่มกาแฟ เดินเล่น](https://k-rambles.com/th/trip-planner/2026-10-07-busan-station-layover-guide-th.html) — 2026-10-07
 - [Nampo-dong & Gukje Market — เดินเที่ยวย่านเมืองเก่าปูซานให้จบในหนึ่งวัน](https://k-rambles.com/th/trip-planner/2026-10-04-nampo-gukje-market-guide-th.html) — 2026-10-06
-- [เที่ยวปูซานแบบไม่ต้องเดิน — แนะนำซาวน่าและจิมจิลบัง](https://k-rambles.com/th/trip-planner/2026-09-29-best-busan-saunas-th.html) — 2026-09-29
+- [พักผ่อนในปูซานแบบไม่ต้องเดินมาก — แนะนำซาวน่าและจิมจิลบัง](https://k-rambles.com/th/trip-planner/2026-09-29-best-busan-saunas-th.html) — 2026-09-29
 - [ชมปูซานโดยไม่ต้องเดิน — 3 วิธี: กระเช้าลอยฟ้า หอชมวิว เรือยอทช์](https://k-rambles.com/th/trip-planner/2026-09-23-busan-views-cablecar-tower-yacht-th.html) — 2026-09-23
-- [เที่ยวแทจงแดให้ครบ — ตั้งแต่รถไฟดานูบีไปจนถึงประภาคารยองโดและหินซินซอน](https://k-rambles.com/th/trip-planner/2026-09-22-taejongdae-guide-th.html) — 2026-09-22
+- [คู่มือแทจงแด ปูซาน — นั่งรถบัสวนฟรีไปจุดชมวิวและประภาคารยองโด](https://k-rambles.com/th/trip-planner/2026-09-22-taejongdae-guide-th.html) — 2026-09-22
 - [บัตรขาเข้าเกาหลี ต่างจาก K-ETA อย่างไร](https://k-rambles.com/th/trip-planner/2026-09-19-korea-entry-eta-arrival-card-guide-th.html) — 2026-09-19
 - [เช่าฮันบกที่ปูซาน จะไปที่ไหนดี](https://k-rambles.com/th/trip-planner/2026-09-06-busan-hanbok-rental-guide-th.html) — 2026-09-06
 - [หมู่บ้านวัฒนธรรมฮึนยออุล ตรอกที่ใกล้ทะเลที่สุด — คัดกรองคาเฟ่ที่ปิดตัวออกแล้ว](https://k-rambles.com/th/trip-planner/2026-09-06-huinnyeoul-culture-village-th.html) — 2026-09-06
