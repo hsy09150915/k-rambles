@@ -198,13 +198,13 @@
   .terminal-photo figcaption { margin-top: 10px; font-size: 0.88rem; color: var(--ink-soft); line-height: 1.5; }
   .terminal-photo figcaption strong { color: var(--ink); }
 
-  table.data-table { width: 100%; border-collapse: collapse; background: var(--paper-raised); font-size: 0.92rem; margin: 4px 0 18px; display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  table.data-table { width: 100%; border-collapse: collapse; background: var(--paper-raised); font-size: 0.92rem; margin: 4px 0 18px; display: block; max-width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
   table.data-table th, table.data-table td { text-align: left; padding: 12px 14px; border-bottom: 1px solid var(--line); word-break: keep-all; overflow-wrap: break-word; vertical-align: top; }
   table.data-table th:first-child, table.data-table td:first-child { padding-left: 16px; }
   table.data-table th:last-child, table.data-table td:last-child { padding-right: 16px; }
   table.data-table thead th { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; color: var(--ink-soft); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.03em; border-bottom: 1px solid var(--line-strong); }
   table.data-table tbody tr:last-child td { border-bottom: none; }
-  .discount-ok, .discount-no { display: inline-flex; align-items: center; gap: 7px; font-weight: 600; white-space: nowrap; }
+  .discount-ok, .discount-no { display: inline-flex; align-items: center; gap: 7px; font-weight: 600; }
   .discount-ok { color: var(--ok); }
   .discount-no { color: var(--no); }
   .discount-ok svg, .discount-no svg { width: 16px; height: 16px; stroke: currentColor; fill: none; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; }
@@ -226,20 +226,20 @@
   .howto li { font-size: 0.95rem; opacity: 0.92; }
   .howto .mono { display: block; margin-top: 14px; font-size: 0.74rem; letter-spacing: 0.08em; text-transform: uppercase; opacity: 0.65; }
 
-  .diagram { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 4px; margin: 4px 0 18px; }
+  .diagram { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 4px; margin: 4px 0 18px; display: block; max-width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
   .diagram-step { display: flex; flex-direction: column; align-items: center; gap: 4px; min-width: 52px; text-align: center; }
   .diagram-icon { width: 24px; height: 24px; stroke: #eef2fb; fill: none; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
   .diagram-label { font-size: 0.68rem; opacity: 0.8; line-height: 1.2; }
   .diagram-arrow { width: 14px; height: 14px; stroke: rgba(238,242,251,0.5); fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; align-self: center; }
 
   table.transfer-table { width: 100%; border-collapse: collapse; background: rgba(255,255,255,0.06); font-size: 0.9rem; margin-top: 16px; border-radius: 10px; overflow: hidden; }
-  table.transfer-table th, table.transfer-table td { text-align: left; padding: 10px 14px; border-bottom: 1px solid rgba(255,255,255,0.14); }
+  table.transfer-table th, table.transfer-table td { text-align: left; padding: 10px 14px; word-break: keep-all; overflow-wrap: break-word; vertical-align: top; border-bottom: 1px solid rgba(255,255,255,0.14); }
   table.transfer-table thead th { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.04em; opacity: 0.7; font-weight: 700; }
   table.transfer-table tbody tr:last-child td { border-bottom: none; }
-  .t-ok, .t-no { display: inline-flex; align-items: center; gap: 6px; font-weight: 600; white-space: nowrap; }
+  .t-ok, .t-no { display: inline-flex; align-items: center; gap: 6px; font-weight: 600; }
   .t-ok { color: #8fe3ac; }
   .t-no { color: #ffb0a8; }
-  .t-ok svg, .t-no svg { width: 15px; height: 15px; stroke: currentColor; fill: none; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+  .t-ok svg, .t-no svg { flex-shrink: 0; width: 15px; height: 15px; stroke: currentColor; fill: none; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
 
   .verdict { margin-top: 26px; padding: 20px 22px; border: 1.5px dashed var(--line-strong); border-radius: 14px; }
   .verdict p { margin: 6px 0; font-size: 0.95rem; }
@@ -259,6 +259,15 @@
   .scroll-top:hover { transform: translateY(-3px); background: var(--coral-ink); }
   .scroll-top svg { width: 20px; height: 20px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
   @media (prefers-reduced-motion: reduce) { .scroll-top { transition: none; } }
+  @media (max-width: 480px) { table.data-table th, table.data-table td, table.transfer-table th, table.transfer-table td { padding: 10px 8px; } table.data-table th:first-child, table.data-table td:first-child { padding-left: 10px; } table.data-table th:last-child, table.data-table td:last-child { padding-right: 10px; } table.data-table { font-size: 0.84rem; } table.data-table thead th { text-transform: none; letter-spacing: 0; font-size: 0.72rem; } .discount-ok, .discount-no { gap: 4px; } }
+  /* 칸이 화면에 다 안 들어갈 때만(글자 크게, 좁은 화면) 카드형으로 바꿈 */
+  table.data-table.stacked { display: block; overflow: visible; background: none; }
+  table.data-table.stacked thead { display: none; }
+  table.data-table.stacked tbody, table.data-table.stacked tr { display: block; }
+  table.data-table.stacked tr { background: var(--paper-raised); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; margin-bottom: 12px; }
+  table.data-table.stacked td { display: block; padding: 4px 0 !important; border-bottom: none; }
+  table.data-table.stacked td:first-child { font-weight: 700; font-size: 1.05em; padding-bottom: 8px !important; margin-bottom: 4px; border-bottom: 1px solid var(--line); }
+  table.data-table.stacked td:not(:first-child)::before { content: attr(data-label); display: block; font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 0.72rem; color: var(--ink-soft); margin-bottom: 2px; }
 </style>
 </head>
 <body>
@@ -578,6 +587,28 @@
     var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
   });
+})();
+</script>
+<script>
+(function () {
+  var tables = [].slice.call(document.querySelectorAll('table.data-table'));
+  tables.forEach(function (t) {
+    var heads = [].slice.call(t.querySelectorAll('thead th')).map(function (th) { return th.textContent.trim(); });
+    [].slice.call(t.querySelectorAll('tbody tr')).forEach(function (tr) {
+      [].slice.call(tr.cells).forEach(function (td, i) { if (heads[i]) { td.setAttribute('data-label', heads[i]); } });
+    });
+  });
+  function fit() {
+    tables.forEach(function (t) {
+      t.classList.remove('stacked');
+      if (t.scrollWidth > t.clientWidth + 1) { t.classList.add('stacked'); }
+    });
+  }
+  fit();
+  window.addEventListener('resize', fit);
+  window.addEventListener('load', fit);
+  if (document.fonts && document.fonts.ready) { document.fonts.ready.then(fit); }
+  new MutationObserver(fit).observe(document.documentElement, { attributes: true, attributeFilter: ['data-fs'] });
 })();
 </script>
 <script src="/assets/js/krambles-render.js"></script>
