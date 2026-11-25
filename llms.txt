@@ -68,7 +68,7 @@
 - [Gyeongju Food Guide: Ssambap, Sundubu, Kongguk, Bibimbap, Tteokgalbi and Gimbap](https://k-rambles.com/taste/2026-11-19-gyeongju-food-guide-en.html) — 2026-11-19
 - [What Foreigners Buy Most at Korean Convenience Stores, and What Koreans Buy Instead](https://k-rambles.com/taste/2026-11-16-korea-convenience-store-foods-en.html) — 2026-11-16
 - [Where to Eat Ramen by the Sea in Busan: Convenience Store Ramen Machines and Seafood Ramyeon](https://k-rambles.com/taste/2026-11-10-busan-seaside-ramen-spots-en.html) — 2026-11-10
-- [Busan Pork Meals Guide: Ppyeo-haejangguk, Jeyuk-bokkeum, Dwaeji-bulbaek and Kimchi-jjigae](https://k-rambles.com/taste/2026-10-28-busan-pork-stew-guide-en.html) — 2026-10-28
+- [Busan Pork Meals Guide: Gamjatang, Spicy Stir-fried Pork, Bulgogi Set Meals and Kimchi Jjigae](https://k-rambles.com/taste/2026-10-28-busan-pork-stew-guide-en.html) — 2026-10-28
 - [Busan Pork BBQ Guide: Samgyeopsal, Moksal, Pork Ribs and Back Ribs](https://k-rambles.com/taste/2026-10-28-busan-pork-bbq-guide-en.html) — 2026-10-28
 - [Busan Chicken Dishes Guide: Fried Chicken, Dakgalbi and More](https://k-rambles.com/taste/2026-10-26-busan-chicken-dishes-guide-en.html) — 2026-10-26
 - [Busan Crab Dishes Guide: Raw Marinated Crab and Crab Soup](https://k-rambles.com/taste/2026-10-26-busan-gejang-guide-en.html) — 2026-10-26
@@ -266,7 +266,7 @@
 - [Món ăn ở Gyeongju: ssambap, sundubu, kongguk, bibimbap, tteokgalbi và gimbap](https://k-rambles.com/vi/taste/2026-11-19-gyeongju-food-guide-vi.html) — 2026-11-19
 - [Người nước ngoài mua gì nhiều nhất ở cửa hàng tiện lợi Hàn Quốc, còn người Hàn mua gì?](https://k-rambles.com/vi/taste/2026-11-16-korea-convenience-store-foods-vi.html) — 2026-11-16
 - [Ăn mì ramen ngắm biển ở Busan: cửa hàng tiện lợi có máy nấu mì và quán mì hải sản](https://k-rambles.com/vi/taste/2026-11-10-busan-seaside-ramen-spots-vi.html) — 2026-11-10
-- [Các món heo ăn với cơm ở Busan: ppyeo-haejangguk, jeyuk-bokkeum, dwaeji-bulbaek và kimchi-jjigae](https://k-rambles.com/vi/taste/2026-10-28-busan-pork-stew-guide-vi.html) — 2026-10-28
+- [Món thịt heo ăn với cơm ở Busan: gamjatang, thịt heo xào cay, cơm bulgogi và kimchi-jjigae](https://k-rambles.com/vi/taste/2026-10-28-busan-pork-stew-guide-vi.html) — 2026-10-28
 - [Thịt heo nướng ở Busan: samgyeopsal, moksal, sườn heo và sườn lưng](https://k-rambles.com/vi/taste/2026-10-28-busan-pork-bbq-guide-vi.html) — 2026-10-28
 - [Các món gà ở Busan: từ gà rán đến dakgalbi và canh gà dakgomtang](https://k-rambles.com/vi/taste/2026-10-26-busan-chicken-dishes-guide-vi.html) — 2026-10-26
 - [Món cua ở Busan: phân biệt ganjang-gejang, yangnyeom-gejang, canh cua và cách ăn](https://k-rambles.com/vi/taste/2026-10-26-busan-gejang-guide-vi.html) — 2026-10-26
@@ -365,7 +365,7 @@
 - [อาหารคย็องจู: ซัมบับ ซุนดูบู คงกุก บิบิมบับ ต็อกกัลบี และคิมบับ](https://k-rambles.com/th/taste/2026-11-19-gyeongju-food-guide-th.html) — 2026-11-19
 - [ชาวต่างชาติซื้ออะไรมากที่สุดในร้านสะดวกซื้อเกาหลี แล้วคนเกาหลีซื้ออะไร](https://k-rambles.com/th/taste/2026-11-16-korea-convenience-store-foods-th.html) — 2026-11-16
 - [กินรามยอนริมทะเลที่ปูซาน ร้านสะดวกซื้อมีเครื่องต้มรามยอนและร้านรามยอนทะเล](https://k-rambles.com/th/taste/2026-11-10-busan-seaside-ramen-spots-th.html) — 2026-11-10
-- [คู่มืออาหารหมูกินกับข้าวในปูซาน ปยอแฮจังกุก เจยุกบกกึม ทเวจีบุลแบก และคิมจีจจีเก](https://k-rambles.com/th/taste/2026-10-28-busan-pork-stew-guide-th.html) — 2026-10-28
+- [คู่มืออาหารหมูกินกับข้าวในปูซาน คัมจาทัง หมูผัดเผ็ด ชุดข้าวหมูย่าง และคิมจีจจีเก](https://k-rambles.com/th/taste/2026-10-28-busan-pork-stew-guide-th.html) — 2026-10-28
 - [คู่มือหมูย่างในปูซาน: หมูสามชั้น สันคอ และซี่โครงหมู](https://k-rambles.com/th/taste/2026-10-28-busan-pork-bbq-guide-th.html) — 2026-10-28
 - [คู่มืออาหารไก่ในปูซาน: ไก่ทอด ไก่ผัดกระทะ และซุปไก่](https://k-rambles.com/th/taste/2026-10-26-busan-chicken-dishes-guide-th.html) — 2026-10-26
 - [คู่มืออาหารปูในปูซาน: ปูดองซีอิ๊ว ปูดองซอสเผ็ด และซุปปู](https://k-rambles.com/th/taste/2026-10-26-busan-gejang-guide-th.html) — 2026-10-26
