@@ -341,6 +341,8 @@
   .route-cta { display: inline-flex; align-items: center; gap: 6px; text-decoration: none; padding: 9px 18px; border: none; border-radius: 100px; color: #fff5ee; background: var(--coral); font-size: 0.86rem; font-weight: 700; box-shadow: var(--card-shadow); }
   .route-cta:hover { background: var(--coral-ink); }
   .route-cta svg { width: 14px; height: 14px; stroke: currentColor; fill: none; stroke-width: 2.2; }
+  /* keep-fit: 글자를 크게 하면 첫 칸도 줄바꿈 허용 */
+  html[data-fs] table.data-table.keep td:first-child, html[data-fs] table.data-table.keep th { white-space: normal; word-break: keep-all; overflow-wrap: normal; }
 </style>
 </head>
 <body>
@@ -387,7 +389,7 @@
     <svg class="block-icon"><use href="#i-info"/></svg>
     <h2 class="block-title">1. 메뉴판의 장어, 세 가지가 전혀 달라요</h2>
   </div>
-  <p class="body-text">부산에서 장어를 먹으려고 하면 메뉴판에 곰장어, 붕장어(아나고), 민물장어가 나란히 있는 경우가 많아요. 부산에서는 붕장어를 아나고라고 적은 메뉴판이 많아요. 이름에 모두 장어가 들어가지만 생김새도 맛도 먹는 방법도 달라요.</p>
+  <p class="body-text">부산에서 장어를 먹으려고 하면 메뉴판에 곰장어, 붕장어(아나고), 민물장어가 나란히 있는 경우가 많아요. 이름에 모두 장어가 들어가지만 생김새도 맛도 먹는 방법도 달라요.</p>
   <p class="body-text">특히 <strong>곰장어는 사실 장어가 아니에요.</strong> 부산역사문화대전에 따르면 곰장어(먹장어)는 일반 어류가 아니라 턱뼈가 없는 원구류에 속하는 척추동물이에요. 붕장어와 뱀장어는 어류예요.</p>
   <table class="data-table keep">
       <thead>
@@ -421,7 +423,7 @@
     <h2 class="block-title">2. 곰장어, 부산 연탄불 구이의 대표 주자</h2>
   </div>
   <p class="body-text"><strong>곰장어</strong>는 부산 방언으로 꼼장어라고도 불러요. 표준어는 먹장어이고, 메뉴판에는 곰장어와 꼼장어가 모두 쓰여요.</p>
-  <p class="body-text"><strong>어떻게 부산 음식이 됐나요?</strong> 비짓부산(부산시 공식 관광 포털)에 따르면 곰장어는 원래 생김새 때문에 가죽만 쓰고 버리던 생선이었어요. 한국전쟁 뒤 부산에 정착한 피란민들이 생계를 위해 자갈치시장에서 곰장어를 연탄불에 구워 팔면서 지금의 곰장어구이가 시작됐다고 해요.</p>
+  <p class="body-text"><strong>어떻게 부산 음식이 됐나요?</strong> 비짓부산(부산시 공식 관광 포털)에 따르면 곰장어는 원래 생김새 때문에 가죽만 쓰고 버리던 해산물이었어요. 한국전쟁 뒤 부산에 정착한 피란민들이 생계를 위해 자갈치시장에서 곰장어를 연탄불에 구워 팔면서 지금의 곰장어구이가 시작됐다고 해요.</p>
   <p class="body-text"><strong>살아 있는 곰장어를 구워요.</strong> 곰장어는 살아 있는 채로 석쇠에 올려 구워요. 꿈틀거리는 모습이 낯설 수 있어요. 비짓부산은 석쇠에 올려 구울 때 곰장어가 춤을 추지 않도록 눌러 가며 굽는 모습이 곰장어 가게의 볼거리라고 소개해요.</p>
 <div class="inset-photo-wrap" style="max-width:100%;">
     <img class="inset-photo" style="max-width:100%;" src="/assets/img/inl/8107b7a8f66d.jpg" alt="굽기 전 껍질을 벗긴 곰장어" width="880" height="740" loading="lazy">
@@ -440,7 +442,7 @@
     <p class="photo-caption" style="margin:10px 0 0;max-width:none;">사진: 부산관광아카이브</p>
   </div>  <p class="body-text">처음이라면 둘을 반반 주문해서 비교해 보세요. 매운 음식을 잘 못 먹으면 소금구이를 고르세요.</p>
   <p class="body-text"><strong>이렇게 싸 먹어요.</strong> 상추 위에 깻잎을 한 장 올리고 곰장어와 마늘, 고추를 얹어 쌈으로 먹어요.</p>
-  <p class="body-text"><strong>어디서 먹어요?</strong> 자갈치시장 바닷가 쪽에 곰장어구이 가게가 줄지어 있는 곰장어골목이 있어요. 부산 중구청 소식지에 따르면 가게마다 한 칸짜리 좁은 점포에 수조와 연탄화덕을 두고 구워 내는 곳이에요. 비짓부산은 자갈치시장, 온천장, 해운대시장, 기장을 부산의 곰장어골목으로 꼽아요. 자갈치시장은 남포동 원도심과 가까워서 구경하는 날 함께 들르기 좋아요.<div style="display:flex;flex-wrap:nowrap;gap:6px;margin-top:6px;"><a href="https://map.naver.com/p/search/%EC%9E%90%EA%B0%88%EC%B9%98%20%EA%B3%B0%EC%9E%A5%EC%96%B4" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;min-width:72px;padding:3px 10px;border-radius:100px;background:#d9532a;color:#fff;font-size:0.74rem;font-weight:700;text-decoration:none;white-space:nowrap;text-align:center;line-height:1.25;">네이버 지도, 자갈치 곰장어</a><a href="https://www.google.com/maps/search/?api=1&query=%EC%9E%90%EA%B0%88%EC%B9%98%20%EA%B3%B0%EC%9E%A5%EC%96%B4" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;min-width:72px;padding:3px 10px;border-radius:100px;background:#d9532a;color:#fff;font-size:0.74rem;font-weight:700;text-decoration:none;white-space:nowrap;text-align:center;line-height:1.25;">구글 지도, 자갈치 곰장어</a></div></p>
+  <p class="body-text"><strong>어디서 먹어요?</strong> 자갈치시장 바닷가 쪽에 곰장어구이 가게가 줄지어 있는 곰장어골목이 있어요. 부산 중구청 소식지에 따르면 가게마다 한 칸짜리 좁은 점포에 수조와 연탄화덕을 두고 구워 내는 곳이에요. 비짓부산은 자갈치시장, 온천장, 해운대시장, 기장을 부산의 곰장어골목으로 꼽아요. 자갈치시장은 남포동 원도심과 가까워서 구경하는 날 함께 들르기 좋아요.<div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:6px;"><a href="https://map.naver.com/p/search/%EC%9E%90%EA%B0%88%EC%B9%98%20%EA%B3%B0%EC%9E%A5%EC%96%B4" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;min-width:72px;padding:3px 10px;border-radius:100px;background:#d9532a;color:#fff;font-size:0.74rem;font-weight:700;text-decoration:none;white-space:nowrap;text-align:center;line-height:1.25;">네이버 지도, 자갈치 곰장어</a><a href="https://www.google.com/maps/search/?api=1&query=%EC%9E%90%EA%B0%88%EC%B9%98%20%EA%B3%B0%EC%9E%A5%EC%96%B4" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;min-width:72px;padding:3px 10px;border-radius:100px;background:#d9532a;color:#fff;font-size:0.74rem;font-weight:700;text-decoration:none;white-space:nowrap;text-align:center;line-height:1.25;">구글 지도, 자갈치 곰장어</a></div></p>
   <p class="body-text"><strong>알레르기와 식단:</strong> 곰장어는 해산물이라 생선이나 해산물 알레르기가 있다면 주의하세요. 양념구이에는 고춧가루와 채소가 들어가요.</p>
 
 </section>
@@ -457,7 +459,7 @@
     <p class="photo-caption" style="margin:10px 0 0;max-width:none;">사진: 부산관광아카이브</p>
   </div>  <p class="body-text"><strong>까맣게 탄 껍질은 먹지 않아요.</strong> 불에 탄 겉껍질을 벗겨 내고 하얀 속살만 먹어요. 처음에는 직원에게 껍질을 어떻게 벗기는지 물어보세요.</p>
   <p class="body-text">짚불구이 말고도 기장군은 곰장어를 양념구이, 소금구이, 통구이, 곰장어 매운탕, 곰장어볶음, 삶은 곰장어, 껍질구이, 회로도 먹을 수 있다고 소개해요. 한 가게에서 여러 가지를 함께 파는 곳도 많아요.</p>
-  <p class="body-text"><strong>어디서 먹어요?</strong> 기장군 일대에 짚불곰장어를 내는 가게가 여러 곳 있어요. 지도에서 검색해 보고 리뷰가 많은 곳을 고르세요.<div style="display:flex;flex-wrap:nowrap;gap:6px;margin-top:6px;"><a href="https://map.naver.com/p/search/%EA%B8%B0%EC%9E%A5%20%EC%A7%9A%EB%B6%88%EA%B3%B0%EC%9E%A5%EC%96%B4" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;min-width:72px;padding:3px 10px;border-radius:100px;background:#d9532a;color:#fff;font-size:0.74rem;font-weight:700;text-decoration:none;white-space:nowrap;text-align:center;line-height:1.25;">네이버 지도, 기장 짚불곰장어</a><a href="https://www.google.com/maps/search/?api=1&query=%EA%B8%B0%EC%9E%A5%20%EC%A7%9A%EB%B6%88%EA%B3%B0%EC%9E%A5%EC%96%B4" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;min-width:72px;padding:3px 10px;border-radius:100px;background:#d9532a;color:#fff;font-size:0.74rem;font-weight:700;text-decoration:none;white-space:nowrap;text-align:center;line-height:1.25;">구글 지도, 기장 짚불곰장어</a></div></p>
+  <p class="body-text"><strong>어디서 먹어요?</strong> 기장군 일대에 짚불곰장어를 내는 가게가 여러 곳 있어요. 지도에서 검색해 보고 리뷰가 많은 곳을 고르세요.<div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:6px;"><a href="https://map.naver.com/p/search/%EA%B8%B0%EC%9E%A5%20%EC%A7%9A%EB%B6%88%EA%B3%B0%EC%9E%A5%EC%96%B4" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;min-width:72px;padding:3px 10px;border-radius:100px;background:#d9532a;color:#fff;font-size:0.74rem;font-weight:700;text-decoration:none;white-space:nowrap;text-align:center;line-height:1.25;">네이버 지도, 기장 짚불곰장어</a><a href="https://www.google.com/maps/search/?api=1&query=%EA%B8%B0%EC%9E%A5%20%EC%A7%9A%EB%B6%88%EA%B3%B0%EC%9E%A5%EC%96%B4" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;min-width:72px;padding:3px 10px;border-radius:100px;background:#d9532a;color:#fff;font-size:0.74rem;font-weight:700;text-decoration:none;white-space:nowrap;text-align:center;line-height:1.25;">구글 지도, 기장 짚불곰장어</a></div></p>
   <p class="body-text">영업시간과 휴무일은 가게마다 달라서 가기 전에 확인하는 게 좋아요.</p>
 
 </section>
@@ -476,7 +478,7 @@
 <div class="inset-photo-wrap" style="max-width:100%;">
     <img class="inset-photo" style="max-width:100%;" src="/assets/img/inl/d989ecccc2f0.jpg" alt="양념과 소금으로 구운 붕장어구이" width="1400" height="933" loading="lazy">
     <p class="photo-caption" style="margin:10px 0 0;max-width:none;">사진: 부산관광아카이브</p>
-  </div>  <p class="body-text"><strong>어디서 먹어요?</strong> 붕장어는 부산 시내에도 먹을 수 있는 가게가 많아요. 지도에서 아나고로 검색해 보세요.<div style="display:flex;flex-wrap:nowrap;gap:6px;margin-top:6px;"><a href="https://map.naver.com/p/search/%EC%95%84%EB%82%98%EA%B3%A0" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;min-width:72px;padding:3px 10px;border-radius:100px;background:#d9532a;color:#fff;font-size:0.74rem;font-weight:700;text-decoration:none;white-space:nowrap;text-align:center;line-height:1.25;">네이버 지도, 아나고</a><a href="https://www.google.com/maps/search/?api=1&query=%EC%95%84%EB%82%98%EA%B3%A0" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;min-width:72px;padding:3px 10px;border-radius:100px;background:#d9532a;color:#fff;font-size:0.74rem;font-weight:700;text-decoration:none;white-space:nowrap;text-align:center;line-height:1.25;">구글 지도, 아나고</a></div></p>
+  </div>  <p class="body-text"><strong>어디서 먹어요?</strong> 붕장어는 부산 시내에도 먹을 수 있는 가게가 많아요. 지도에서 아나고로 검색해 보세요.<div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:6px;"><a href="https://map.naver.com/p/search/%EC%95%84%EB%82%98%EA%B3%A0" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;min-width:72px;padding:3px 10px;border-radius:100px;background:#d9532a;color:#fff;font-size:0.74rem;font-weight:700;text-decoration:none;white-space:nowrap;text-align:center;line-height:1.25;">네이버 지도, 아나고</a><a href="https://www.google.com/maps/search/?api=1&query=%EC%95%84%EB%82%98%EA%B3%A0" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;min-width:72px;padding:3px 10px;border-radius:100px;background:#d9532a;color:#fff;font-size:0.74rem;font-weight:700;text-decoration:none;white-space:nowrap;text-align:center;line-height:1.25;">구글 지도, 아나고</a></div></p>
   <p class="body-text">기장군 일광읍 칠암리와 기장읍 연화리는 붕장어로 이름난 동네라서, 부산시 공식 누리집에 따르면 두 곳에서 번갈아 붕장어 축제가 열려요.</p>
   <p class="body-text"><strong>알레르기와 식단:</strong> 붕장어회는 날생선이에요. 날것을 먹지 않는다면 구이나 탕을 고르세요.</p>
   <p class="body-text">영업시간과 휴무일은 가게마다 달라서 가기 전에 확인하는 게 좋아요.</p>
@@ -492,7 +494,7 @@
     <img class="inset-photo" style="max-width:100%;" src="/assets/img/inl/f8fae397e686.jpg" alt="갈라서 펼쳐 구운 민물장어구이" width="1320" height="816" loading="lazy">
     <p class="photo-caption" style="margin:10px 0 0;max-width:none;">사진: 부산관광아카이브</p>
   </div>  <p class="body-text"><strong>민물장어</strong>는 뱀장어를 말해요. 곰장어, 붕장어와 달리 부산 향토 음식은 아니지만, 부산에도 민물장어구이를 파는 가게가 있어요. 비짓부산에는 민물장어구이와 바다장어구이를 함께 내는 장어구이집이 소개돼 있어요.</p>
-  <p class="body-text">붕장어와 마찬가지로 몸을 갈라 펼쳐서 구워요. 식감도 곰장어처럼 쫄깃하기보다 생선살처럼 부드러워요. 부산 시내 어디서든 지도에서 민물장어로 검색하면 찾을 수 있어요.<div style="display:flex;flex-wrap:nowrap;gap:6px;margin-top:6px;"><a href="https://map.naver.com/p/search/%EB%AF%BC%EB%AC%BC%EC%9E%A5%EC%96%B4" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;min-width:72px;padding:3px 10px;border-radius:100px;background:#d9532a;color:#fff;font-size:0.74rem;font-weight:700;text-decoration:none;white-space:nowrap;text-align:center;line-height:1.25;">네이버 지도, 민물장어</a><a href="https://www.google.com/maps/search/?api=1&query=%EB%AF%BC%EB%AC%BC%EC%9E%A5%EC%96%B4" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;min-width:72px;padding:3px 10px;border-radius:100px;background:#d9532a;color:#fff;font-size:0.74rem;font-weight:700;text-decoration:none;white-space:nowrap;text-align:center;line-height:1.25;">구글 지도, 민물장어</a></div></p>
+  <p class="body-text">붕장어와 마찬가지로 몸을 갈라 펼쳐서 구워요. 식감도 곰장어처럼 쫄깃하기보다 생선살처럼 부드러워요. 부산 시내 어디서든 지도에서 민물장어로 검색하면 찾을 수 있어요.<div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:6px;"><a href="https://map.naver.com/p/search/%EB%AF%BC%EB%AC%BC%EC%9E%A5%EC%96%B4" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;min-width:72px;padding:3px 10px;border-radius:100px;background:#d9532a;color:#fff;font-size:0.74rem;font-weight:700;text-decoration:none;white-space:nowrap;text-align:center;line-height:1.25;">네이버 지도, 민물장어</a><a href="https://www.google.com/maps/search/?api=1&query=%EB%AF%BC%EB%AC%BC%EC%9E%A5%EC%96%B4" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;min-width:72px;padding:3px 10px;border-radius:100px;background:#d9532a;color:#fff;font-size:0.74rem;font-weight:700;text-decoration:none;white-space:nowrap;text-align:center;line-height:1.25;">구글 지도, 민물장어</a></div></p>
   <p class="body-text"><strong>메뉴판에 장어구이라고만 적혀 있다면</strong> 어떤 장어인지 물어보세요. 민물장어인지 바다장어(붕장어)인지에 따라 맛과 가격이 달라요.</p>
   <ul class="plain-list">
     <li><strong>"민물장어예요, 바다장어예요?"</strong>: 어떤 장어인지 물어볼 때 써 보세요.</li>
@@ -591,5 +593,30 @@
 </script>
 <script data-goatcounter="https://krambles.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
+<script>/* keep-fit: 칸이 화면에 다 안 들어갈 때만 카드형으로 바꿈 */
+(function () {
+  var tables = [].slice.call(document.querySelectorAll('table.data-table.keep'));
+  if (!tables.length) { return; }
+  tables.forEach(function (t) {
+    var heads = [].slice.call(t.querySelectorAll('thead th')).map(function (th) { return th.textContent.trim(); });
+    [].slice.call(t.querySelectorAll('tbody tr')).forEach(function (tr) {
+      [].slice.call(tr.cells).forEach(function (td, i) { if (heads[i] && !td.hasAttribute('data-label')) { td.setAttribute('data-label', heads[i]); } });
+    });
+  });
+  function fit() {
+    tables.forEach(function (t) {
+      t.classList.add('keep');
+      var p = t.parentElement, cs = getComputedStyle(p);
+      var limit = p.getBoundingClientRect().right - parseFloat(cs.paddingRight || 0);
+      if (t.getBoundingClientRect().right > limit + 1) { t.classList.remove('keep'); }
+    });
+  }
+  fit();
+  window.addEventListener('resize', fit);
+  window.addEventListener('load', fit);
+  if (document.fonts && document.fonts.ready) { document.fonts.ready.then(fit); }
+  new MutationObserver(fit).observe(document.documentElement, { attributes: true, attributeFilter: ['data-fs'] });
+})();
+</script>
 </body>
 </html>

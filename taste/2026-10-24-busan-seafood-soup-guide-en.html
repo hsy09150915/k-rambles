@@ -341,6 +341,8 @@
   .route-cta { display: inline-flex; align-items: center; gap: 6px; text-decoration: none; padding: 9px 18px; border: none; border-radius: 100px; color: #fff5ee; background: var(--coral); font-size: 0.86rem; font-weight: 700; box-shadow: var(--card-shadow); }
   .route-cta:hover { background: var(--coral-ink); }
   .route-cta svg { width: 14px; height: 14px; stroke: currentColor; fill: none; stroke-width: 2.2; }
+  /* keep-fit: 글자를 크게 하면 첫 칸도 줄바꿈 허용 */
+  html[data-fs] table.data-table.keep td:first-child, html[data-fs] table.data-table.keep th { white-space: normal; word-break: keep-all; overflow-wrap: normal; }
 </style>
 </head>
 <body>
@@ -453,7 +455,7 @@
   <p class="body-text">When the broth reduces and gets thick, people mix rice with the cooked vegetables and broth, or add noodles to the broth.</p>
   <p class="body-text"><strong>What seafood goes in?</strong> These days, many shops are said to put in plenty of live seafood such as live abalone (활전복), live small octopus (산낙지), large octopus (문어), pen shell (키조개), scallops (가리비), hard clams (백합), Japanese swimming crab (꽃게) and large prawns (대하). If live small octopus goes in, it may still move in the pot.</p>
   <p class="body-text"><strong>Allergies and diet:</strong> It contains clams and other bivalves, crustaceans such as shrimp and crab, and small octopus. If you have a seafood allergy, be careful.</p>
-  <p class="body-text"><strong>Where can I eat it?</strong> There are many places in central Busan that sell haemultang (해물탕). Search the map for 해물탕, 해물찜 and 해물전골.<div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;margin-top:8px;max-width:420px;"><a href="https://map.naver.com/p/search/%ED%95%B4%EB%AC%BC%ED%83%95" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;width:100%;box-sizing:border-box;padding:5px 6px;border-radius:100px;background:#d9532a;color:#fff;font-size:0.74rem;font-weight:700;text-decoration:none;white-space:nowrap;text-align:center;line-height:1.25;">Naver Map, 해물탕</a><a href="https://www.google.com/maps/search/?api=1&query=%ED%95%B4%EB%AC%BC%ED%83%95" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;width:100%;box-sizing:border-box;padding:5px 6px;border-radius:100px;background:#d9532a;color:#fff;font-size:0.74rem;font-weight:700;text-decoration:none;white-space:nowrap;text-align:center;line-height:1.25;">Google Maps, 해물탕</a><a href="https://map.naver.com/p/search/%ED%95%B4%EB%AC%BC%EC%B0%9C" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;width:100%;box-sizing:border-box;padding:5px 6px;border-radius:100px;background:#d9532a;color:#fff;font-size:0.74rem;font-weight:700;text-decoration:none;white-space:nowrap;text-align:center;line-height:1.25;">Naver Map, 해물찜</a><a href="https://www.google.com/maps/search/?api=1&query=%ED%95%B4%EB%AC%BC%EC%B0%9C" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;width:100%;box-sizing:border-box;padding:5px 6px;border-radius:100px;background:#d9532a;color:#fff;font-size:0.74rem;font-weight:700;text-decoration:none;white-space:nowrap;text-align:center;line-height:1.25;">Google Maps, 해물찜</a><a href="https://map.naver.com/p/search/%ED%95%B4%EB%AC%BC%EC%A0%84%EA%B3%A8" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;width:100%;box-sizing:border-box;padding:5px 6px;border-radius:100px;background:#d9532a;color:#fff;font-size:0.74rem;font-weight:700;text-decoration:none;white-space:nowrap;text-align:center;line-height:1.25;">Naver Map, 해물전골</a><a href="https://www.google.com/maps/search/?api=1&query=%ED%95%B4%EB%AC%BC%EC%A0%84%EA%B3%A8" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;width:100%;box-sizing:border-box;padding:5px 6px;border-radius:100px;background:#d9532a;color:#fff;font-size:0.74rem;font-weight:700;text-decoration:none;white-space:nowrap;text-align:center;line-height:1.25;">Google Maps, 해물전골</a></div></p>
+  <p class="body-text"><strong>Where can I eat it?</strong> There are many places in central Busan that sell haemultang (해물탕). Search the map for 해물탕, 해물찜 and 해물전골.<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,10em),1fr));gap:6px;margin-top:8px;max-width:420px;"><a href="https://map.naver.com/p/search/%ED%95%B4%EB%AC%BC%ED%83%95" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;width:100%;box-sizing:border-box;padding:5px 6px;border-radius:100px;background:#d9532a;color:#fff;font-size:0.74rem;font-weight:700;text-decoration:none;white-space:nowrap;text-align:center;line-height:1.25;">Naver Map, 해물탕</a><a href="https://www.google.com/maps/search/?api=1&query=%ED%95%B4%EB%AC%BC%ED%83%95" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;width:100%;box-sizing:border-box;padding:5px 6px;border-radius:100px;background:#d9532a;color:#fff;font-size:0.74rem;font-weight:700;text-decoration:none;white-space:nowrap;text-align:center;line-height:1.25;">Google Maps, 해물탕</a><a href="https://map.naver.com/p/search/%ED%95%B4%EB%AC%BC%EC%B0%9C" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;width:100%;box-sizing:border-box;padding:5px 6px;border-radius:100px;background:#d9532a;color:#fff;font-size:0.74rem;font-weight:700;text-decoration:none;white-space:nowrap;text-align:center;line-height:1.25;">Naver Map, 해물찜</a><a href="https://www.google.com/maps/search/?api=1&query=%ED%95%B4%EB%AC%BC%EC%B0%9C" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;width:100%;box-sizing:border-box;padding:5px 6px;border-radius:100px;background:#d9532a;color:#fff;font-size:0.74rem;font-weight:700;text-decoration:none;white-space:nowrap;text-align:center;line-height:1.25;">Google Maps, 해물찜</a><a href="https://map.naver.com/p/search/%ED%95%B4%EB%AC%BC%EC%A0%84%EA%B3%A8" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;width:100%;box-sizing:border-box;padding:5px 6px;border-radius:100px;background:#d9532a;color:#fff;font-size:0.74rem;font-weight:700;text-decoration:none;white-space:nowrap;text-align:center;line-height:1.25;">Naver Map, 해물전골</a><a href="https://www.google.com/maps/search/?api=1&query=%ED%95%B4%EB%AC%BC%EC%A0%84%EA%B3%A8" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;width:100%;box-sizing:border-box;padding:5px 6px;border-radius:100px;background:#d9532a;color:#fff;font-size:0.74rem;font-weight:700;text-decoration:none;white-space:nowrap;text-align:center;line-height:1.25;">Google Maps, 해물전골</a></div></p>
 
 </section>
 
@@ -475,7 +477,7 @@
   <p class="body-text"><strong>How do I eat it?</strong> Jaecheop are very tiny, so sometimes the shells are removed and only the meat is served. If the shells are still on, you can easily pick out the meat with chopsticks. Collect the shells in a separate bowl.</p>
   <p class="body-text">It is a clear soup seasoned with salt, so the taste is light and plain. Some people find it bland. In that case, you can add a little red pepper powder or salt. It is also good with rice added to the soup.</p>
   <p class="body-text"><strong>When do people eat it?</strong> Many people look for it as a hangover soup (haejangguk) to settle the stomach the day after drinking.</p>
-  <p class="body-text"><strong>Where can I eat it?</strong> It is sold in many places in central Busan. Search the map for 재첩국.<div style="display:flex;flex-wrap:nowrap;gap:6px;margin-top:6px;"><a href="https://map.naver.com/p/search/%EC%9E%AC%EC%B2%A9%EA%B5%AD" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;min-width:72px;padding:3px 10px;border-radius:100px;background:#d9532a;color:#fff;font-size:0.74rem;font-weight:700;text-decoration:none;white-space:nowrap;text-align:center;line-height:1.25;">Naver Map, 재첩국</a><a href="https://www.google.com/maps/search/?api=1&query=%EC%9E%AC%EC%B2%A9%EA%B5%AD" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;min-width:72px;padding:3px 10px;border-radius:100px;background:#d9532a;color:#fff;font-size:0.74rem;font-weight:700;text-decoration:none;white-space:nowrap;text-align:center;line-height:1.25;">Google Maps, 재첩국</a></div></p>
+  <p class="body-text"><strong>Where can I eat it?</strong> It is sold in many places in central Busan. Search the map for 재첩국.<div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:6px;"><a href="https://map.naver.com/p/search/%EC%9E%AC%EC%B2%A9%EA%B5%AD" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;min-width:72px;padding:3px 10px;border-radius:100px;background:#d9532a;color:#fff;font-size:0.74rem;font-weight:700;text-decoration:none;white-space:nowrap;text-align:center;line-height:1.25;">Naver Map, 재첩국</a><a href="https://www.google.com/maps/search/?api=1&query=%EC%9E%AC%EC%B2%A9%EA%B5%AD" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;min-width:72px;padding:3px 10px;border-radius:100px;background:#d9532a;color:#fff;font-size:0.74rem;font-weight:700;text-decoration:none;white-space:nowrap;text-align:center;line-height:1.25;">Google Maps, 재첩국</a></div></p>
   <p class="body-text"><strong>Allergies and diet:</strong> Jaecheop are clams. If you have a clam allergy, be careful.</p>
   <p class="body-text">Opening hours and menus differ from shop to shop, so it is best to check before you go.</p>
   <p class="photo-caption" style="margin:18px 0 0;max-width:none;">Photos: Pixabay (some photos have been color-adjusted and edited to help explain)</p>
@@ -571,5 +573,30 @@
 </script>
 <script data-goatcounter="https://krambles.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
+<script>/* keep-fit: 칸이 화면에 다 안 들어갈 때만 카드형으로 바꿈 */
+(function () {
+  var tables = [].slice.call(document.querySelectorAll('table.data-table.keep'));
+  if (!tables.length) { return; }
+  tables.forEach(function (t) {
+    var heads = [].slice.call(t.querySelectorAll('thead th')).map(function (th) { return th.textContent.trim(); });
+    [].slice.call(t.querySelectorAll('tbody tr')).forEach(function (tr) {
+      [].slice.call(tr.cells).forEach(function (td, i) { if (heads[i] && !td.hasAttribute('data-label')) { td.setAttribute('data-label', heads[i]); } });
+    });
+  });
+  function fit() {
+    tables.forEach(function (t) {
+      t.classList.add('keep');
+      var p = t.parentElement, cs = getComputedStyle(p);
+      var limit = p.getBoundingClientRect().right - parseFloat(cs.paddingRight || 0);
+      if (t.getBoundingClientRect().right > limit + 1) { t.classList.remove('keep'); }
+    });
+  }
+  fit();
+  window.addEventListener('resize', fit);
+  window.addEventListener('load', fit);
+  if (document.fonts && document.fonts.ready) { document.fonts.ready.then(fit); }
+  new MutationObserver(fit).observe(document.documentElement, { attributes: true, attributeFilter: ['data-fs'] });
+})();
+</script>
 </body>
 </html>
