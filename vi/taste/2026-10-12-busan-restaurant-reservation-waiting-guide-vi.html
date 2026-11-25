@@ -299,6 +299,8 @@
   .share-icon-btn svg { width: 18px; height: 18px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
   .share-toast { position: fixed; left: 50%; bottom: 84px; transform: translateX(-50%); background: var(--ink); color: #fff; font-size: .88rem; padding: 10px 18px; border-radius: 999px; opacity: 0; pointer-events: none; transition: opacity .2s; z-index: 50; }
   .share-toast.show { opacity: 1; }
+  /* keep-fit: 글자를 크게 하면 첫 칸도 줄바꿈 허용 */
+  html[data-fs] table.data-table.keep td:first-child, html[data-fs] table.data-table.keep th { white-space: normal; word-break: keep-all; overflow-wrap: normal; }
 </style>
 </head>
 <body>
@@ -378,8 +380,8 @@
     <svg class="block-icon"><use href="#i-info"/></svg>
     <h2 class="block-title">2. Vì sao nhà hàng lại hỏi số điện thoại?</h2>
   </div>
-  <p class="body-text">Các nhà hàng đông khách không có nhân viên đứng phát số. Họ nhận thứ tự bằng <strong>máy tính bảng trước cửa hoặc bằng ứng dụng</strong>, rồi gọi bạn bằng tin nhắn hoặc thông báo trên ứng dụng khi đến lượt. Vì vậy họ cần một số để liên lạc với bạn.</p>
-  <p class="body-text">Tổng cục Du lịch Hàn Quốc cũng cho biết phần lớn các hệ thống đặt chỗ và xếp hàng như vậy yêu cầu số điện thoại Hàn Quốc hoặc không nhận thẻ nước ngoài. Báo cáo của JoongAng Daily vào tháng 5 năm 2026 cũng chỉ ra rằng hàng chờ bằng ki-ốt ở nhà hàng và quán cà phê đòi đăng ký số Hàn Quốc. Cũng có những bài viết của du khách kể rằng họ bị nhiều nhà hàng từ chối chỉ vì không có số.</p>
+  <p class="body-text">Các nhà hàng đông khách không có nhân viên đứng phát số. Họ cho khách lấy số thứ tự bằng <strong>máy tính bảng trước cửa hoặc bằng ứng dụng</strong>, rồi gọi bạn bằng tin nhắn hoặc thông báo trên ứng dụng khi đến lượt. Vì vậy họ cần một số để liên lạc với bạn.</p>
+  <p class="body-text">Tổng cục Du lịch Hàn Quốc cũng cho biết phần lớn các hệ thống đặt chỗ và xếp hàng như vậy yêu cầu số điện thoại Hàn Quốc hoặc không nhận thẻ nước ngoài. Bài báo của Korea JoongAng Daily (bản tiếng Anh của báo JoongAng Ilbo, 중앙일보) vào tháng 5/2026 cũng chỉ ra rằng hàng chờ bằng ki-ốt ở nhà hàng và quán cà phê đòi đăng ký số Hàn Quốc. Cũng có những bài viết của du khách kể rằng họ bị nhiều nhà hàng từ chối chỉ vì không có số.</p>
   <div class="callout">
     <div class="callout-head"><svg><use href="#i-check"/></svg>Điều đáng chú ý</div>
     <p>Nếu trước quán gần như không có ai nhưng màn hình hiển thị hàng chục nhóm đang chờ, nghĩa là hàng chờ nằm <strong>trong ứng dụng</strong>. Mọi người đang đợi quanh đó và vào quán khi nhận được thông báo.</p>
@@ -419,7 +421,7 @@
       </tbody>
     </table>
   <p class="body-text">Với cách <strong>đặt bàn + đặt cọc</strong>, trong lúc nhập thông tin đặt bàn sẽ hiện ô <strong>số điện thoại</strong>. Ô này bắt buộc nên bạn không thể bỏ trống. Hãy chọn mã quốc gia rồi nhập số. Màn hình ghi: "If you have a Korean phone number, please use it. The restaurant may need to contact you." (Nếu bạn có số điện thoại Hàn Quốc, hãy dùng số đó. Nhà hàng có thể cần liên lạc với bạn.) Vì vậy nếu bạn đã mua <strong>SIM Hàn Quốc thì hãy nhập số đó</strong>; nếu chưa, hãy nhập số ở nước bạn. Bạn phải hoàn tất việc đặt trong vòng <strong>10 phút</strong> hiển thị trên màn hình, và chỉ khi thanh toán xong thì việc đặt mới hoàn tất.</p>
-  <p class="body-text"><strong>Một ví dụ ở Busan.</strong> Trong một bài đánh giá vào tháng 6 năm 2026 về Ijaemo Pizza chi nhánh ga Busan, người viết đã xếp hàng từ xa ở vị trí thứ 34 vào khoảng 4 giờ chiều cuối tuần và vào được trong chưa đầy 30 phút. Họ cho biết khi gần đến thứ 20 thì ứng dụng yêu cầu xác nhận đã đến nơi, nên hãy chờ gần đó chứ đừng đi xa.</p>
+  <p class="body-text"><strong>Một ví dụ ở Busan.</strong> Trong một bài đánh giá vào tháng 6 năm 2026 về Ijaemo Pizza chi nhánh ga Busan, người viết đã xếp hàng từ xa ở vị trí thứ 34 vào khoảng 4 giờ chiều cuối tuần và vào được trong chưa đầy 30 phút. Họ cho biết khi lên đến khoảng vị trí thứ 20 thì ứng dụng yêu cầu xác nhận đã đến nơi, nên hãy chờ gần đó chứ đừng đi xa.</p>
   <div class="callout">
     <div class="callout-head"><svg><use href="#i-check"/></svg>Hãy thử thế này</div>
     <p>Khi mở trang của một nhà hàng, bạn sẽ thấy ngay cách đặt. Có quán cho <strong>chọn ngày và giờ</strong> để đặt bàn, và nếu đang có hàng chờ thì bạn có thể <strong>xếp hàng</strong>. Nếu không có hàng chờ, số nhóm đang chờ sẽ hiện <strong>0</strong>. Khi đó, cứ đến thẳng quán.</p>
@@ -438,7 +440,7 @@
     <li><strong>Ứng dụng phức tạp.</strong> Bản đồ, tìm kiếm, đặt chỗ và gọi món trộn lẫn trong một ứng dụng nên phải qua nhiều bước mới tới màn hình đặt chỗ.</li>
     <li><strong>Bắt buộc đăng nhập Naver.</strong> Muốn đặt chỗ bạn còn phải xác minh danh tính.</li>
   </ul>
-  <p class="body-text">Trước đây xác minh danh tính cần số điện thoại di động Hàn Quốc, nhưng từ <strong>ngày 4 tháng 6 năm 2026</strong> Naver đã đưa vào <strong>xác minh hộ chiếu</strong> cho người nước ngoài. Xác minh hộ chiếu là cách Naver <strong>xác nhận danh tính</strong> của bạn. Các bước như sau:</p>
+  <p class="body-text">Trước đây xác minh danh tính cần số điện thoại di động Hàn Quốc, nhưng từ <strong>ngày 4 tháng 6 năm 2026</strong> Naver đã đưa vào <strong>xác minh hộ chiếu</strong> cho người nước ngoài. Xác minh hộ chiếu không phải là tính năng của bản đồ, mà là cách <strong>xác minh danh tính</strong> cho tài khoản Naver. Các bước như sau:</p>
   <ul class="plain-list">
     <li><strong>1. Tạo tài khoản Naver.</strong> Bạn có thể đăng ký mà không cần số Hàn Quốc.</li>
     <li><strong>2. Xác minh bằng hộ chiếu.</strong> Bạn sẽ được kiểm tra hộ chiếu và xác thực khuôn mặt.</li>
@@ -495,7 +497,7 @@
       <tbody>
         <tr><td data-label="Tình huống"><strong>Omakase hoặc nhà hàng cao cấp</strong></td><td data-label="Nên dùng">Đặt bàn trong ứng dụng Catchtable Global. Tiền cọc trả bằng thẻ nước ngoài</td></tr>
         <tr><td data-label="Tình huống"><strong>Quán nổi tiếng, hàng dài</strong></td><td data-label="Nên dùng">Xếp hàng từ xa rồi đi dạo quanh đó</td></tr>
-        <tr><td data-label="Tình huống"><strong>Ứng dụng chỉ có "Reserve by phone"</strong></td><td data-label="Nên dùng">Nhờ nhân viên nơi lưu trú gọi giúp, hoặc đưa họ xem câu ở mục 6</td></tr>
+        <tr><td data-label="Tình huống"><strong>Ứng dụng chỉ có "Reserve by phone"</strong></td><td data-label="Nên dùng">Nhờ nhân viên nơi lưu trú gọi giúp, hoặc đưa họ xem câu ở mục 6 phía trên</td></tr>
         <tr><td data-label="Tình huống"><strong>Quán không có trong ứng dụng Catchtable</strong></td><td data-label="Nên dùng">Trong ứng dụng Naver Map, xem trang của quán có nút đặt chỗ hay không</td></tr>
         <tr><td data-label="Tình huống"><strong>Quán chỉ dùng ứng dụng Tabling</strong></td><td data-label="Nên dùng">Dùng máy tính bảng ở cửa, nếu không được thì nhờ nhân viên</td></tr>
       </tbody>
@@ -507,7 +509,7 @@
     <svg class="block-icon"><use href="#i-info"/></svg>
     <h2 class="block-title">8. Câu hỏi thường gặp</h2>
   </div>
-  <p class="body-text"><strong>Không có số Hàn Quốc thì không xếp hàng được sao?</strong><br>Bạn làm được với ứng dụng Catchtable Global. Ứng dụng Naver Map cũng cho đặt chỗ sau khi xác minh hộ chiếu, nhưng ít quán nhận đặt ở đó. Nút xếp hàng của Naver sẽ chuyển sang màn hình của công ty khác như Tabling. Ở những quán chỉ dùng ứng dụng Tabling, bạn cần dùng máy tính bảng hoặc nhờ nhân viên.</p>
+  <p class="body-text"><strong>Không có số Hàn Quốc thì không xếp hàng được sao?</strong><br>Bạn vẫn xếp hàng được bằng ứng dụng Catchtable Global. Ứng dụng Naver Map cũng cho đặt chỗ sau khi xác minh hộ chiếu, nhưng ít quán nhận đặt ở đó. Nút xếp hàng của Naver sẽ chuyển sang màn hình của công ty khác như Tabling. Ở những quán chỉ dùng ứng dụng Tabling, bạn cần dùng máy tính bảng hoặc nhờ nhân viên.</p>
   <p class="body-text"><strong>Tiền cọc có được hoàn lại không?</strong><br>Nhiều quán trừ tiền cọc vào hóa đơn khi bạn đến ăn. Quy định hủy khác nhau tùy quán, nên hãy xem ở màn hình thanh toán.</p>
   <p class="body-text"><strong>Nếu quán không có hàng chờ thì sao?</strong><br>Trang của quán trong ứng dụng Catchtable hiển thị số nhóm đang chờ là 0. Khi đó, cứ đến thẳng quán.</p>
   <p class="body-text"><strong>Nếu cách nào cũng không được?</strong><br>Hãy nhờ nhân viên nơi lưu trú gọi điện giúp. Đường dây hỗ trợ du lịch <strong>1330</strong> (+82-2-1330) của Tổng cục Du lịch Hàn Quốc tư vấn bằng 8 ngôn ngữ, gồm tiếng Anh, tiếng Nhật và tiếng Trung.</p>
@@ -664,5 +666,30 @@
 </script>
 <script data-goatcounter="https://krambles.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
+<script>/* keep-fit: 칸이 화면에 다 안 들어갈 때만 카드형으로 바꿈 */
+(function () {
+  var tables = [].slice.call(document.querySelectorAll('table.data-table.keep'));
+  if (!tables.length) { return; }
+  tables.forEach(function (t) {
+    var heads = [].slice.call(t.querySelectorAll('thead th')).map(function (th) { return th.textContent.trim(); });
+    [].slice.call(t.querySelectorAll('tbody tr')).forEach(function (tr) {
+      [].slice.call(tr.cells).forEach(function (td, i) { if (heads[i] && !td.hasAttribute('data-label')) { td.setAttribute('data-label', heads[i]); } });
+    });
+  });
+  function fit() {
+    tables.forEach(function (t) {
+      t.classList.add('keep');
+      var p = t.parentElement, cs = getComputedStyle(p);
+      var limit = p.getBoundingClientRect().right - parseFloat(cs.paddingRight || 0);
+      if (t.getBoundingClientRect().right > limit + 1) { t.classList.remove('keep'); }
+    });
+  }
+  fit();
+  window.addEventListener('resize', fit);
+  window.addEventListener('load', fit);
+  if (document.fonts && document.fonts.ready) { document.fonts.ready.then(fit); }
+  new MutationObserver(fit).observe(document.documentElement, { attributes: true, attributeFilter: ['data-fs'] });
+})();
+</script>
 </body>
 </html>

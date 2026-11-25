@@ -299,6 +299,8 @@
   .share-icon-btn svg { width: 18px; height: 18px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
   .share-toast { position: fixed; left: 50%; bottom: 84px; transform: translateX(-50%); background: var(--ink); color: #fff; font-size: .88rem; padding: 10px 18px; border-radius: 999px; opacity: 0; pointer-events: none; transition: opacity .2s; z-index: 50; }
   .share-toast.show { opacity: 1; }
+  /* keep-fit: 글자를 크게 하면 첫 칸도 줄바꿈 허용 */
+  html[data-fs] table.data-table.keep td:first-child, html[data-fs] table.data-table.keep th { white-space: normal; word-break: keep-all; overflow-wrap: normal; }
 </style>
 </head>
 <body>
@@ -362,13 +364,13 @@
   <p class="body-text">แอปที่ใช้งานได้จริงที่สุดสำหรับชาวต่างชาติคือ <strong>แอป Catchtable Global</strong> (캐치테이블 글로벌) สมัครด้วยบัญชี Google หรือ Apple ค้นหาร้านเป็นภาษาอังกฤษ แล้วจองโต๊ะหรือต่อคิวได้เลย ส่วนแอป Naver Map (네이버 지도) ก็มีช่องทางให้ใช้ แต่มีร้านรับจองผ่านแอปนี้น้อย จึงควรถือเป็น<strong>ตัวสำรอง</strong></p>
   <table class="data-table keep">
       <thead>
-        <tr><th>แอป</th><th>ไม่ต้องมีเบอร์เกาหลี</th><th>ภาษา</th><th>สรุป</th></tr>
+        <tr><th>แอป</th><th>ไม่ต้องมีเบอร์เกาหลี</th><th>ภาษา</th><th>คำแนะนำ</th></tr>
       </thead>
       <tbody>
-        <tr><td data-label="แอป"><strong>แอป Catchtable Global</strong></td><td data-label="ไม่ต้องมีเบอร์เกาหลี">ได้</td><td data-label="ภาษา">20 ภาษา</td><td data-label="สรุป">แนะนำที่สุด</td></tr>
-        <tr><td data-label="แอป"><strong>แอป Naver Map</strong></td><td data-label="ไม่ต้องมีเบอร์เกาหลี">ได้ (ใช้พาสปอร์ต)</td><td data-label="ภาษา">แผนที่ภาษาอังกฤษ</td><td data-label="สรุป">ตัวสำรอง</td></tr>
-        <tr><td data-label="แอป"><strong>แอป Tabling (테이블링)</strong></td><td data-label="ไม่ต้องมีเบอร์เกาหลี">ไม่มีประโยชน์</td><td data-label="ภาษา">ภาษาเกาหลีอย่างเดียว</td><td data-label="สรุป">ใช้แท็บเล็ตหน้าร้าน</td></tr>
-        <tr><td data-label="แอป"><strong>แท็บเล็ตหน้าร้าน</strong></td><td data-label="ไม่ต้องมีเบอร์เกาหลี">แล้วแต่ร้าน</td><td data-label="ภาษา">ภาษาเกาหลี</td><td data-label="สรุป">ถามพนักงาน</td></tr>
+        <tr><td data-label="แอป"><strong>แอป Catchtable Global</strong></td><td data-label="ไม่ต้องมีเบอร์เกาหลี">ได้</td><td data-label="ภาษา">20 ภาษา รวมภาษาอังกฤษ</td><td data-label="คำแนะนำ">แนะนำที่สุด</td></tr>
+        <tr><td data-label="แอป"><strong>แอป Naver Map</strong></td><td data-label="ไม่ต้องมีเบอร์เกาหลี">ได้ (ยืนยันด้วยหนังสือเดินทาง)</td><td data-label="ภาษา">แผนที่ภาษาอังกฤษ</td><td data-label="คำแนะนำ">ตัวสำรอง</td></tr>
+        <tr><td data-label="แอป"><strong>แอป Tabling (테이블링)</strong></td><td data-label="ไม่ต้องมีเบอร์เกาหลี">ไม่มีประโยชน์</td><td data-label="ภาษา">ภาษาเกาหลีอย่างเดียว</td><td data-label="คำแนะนำ">ใช้แท็บเล็ตหน้าร้าน</td></tr>
+        <tr><td data-label="แอป"><strong>แท็บเล็ตหน้าร้าน</strong></td><td data-label="ไม่ต้องมีเบอร์เกาหลี">แล้วแต่ร้าน</td><td data-label="ภาษา">ภาษาเกาหลี</td><td data-label="คำแนะนำ">ถามพนักงาน</td></tr>
       </tbody>
     </table>
 
@@ -379,7 +381,7 @@
     <h2 class="block-title">2. ทำไมร้านอาหารถึงขอเบอร์โทร?</h2>
   </div>
   <p class="body-text">ร้านดังไม่มีพนักงานคอยแจกบัตรคิว ร้านจะรับคิวผ่าน<strong>แท็บเล็ตหน้าร้านหรือผ่านแอป</strong> แล้วเรียกคุณด้วยข้อความหรือการแจ้งเตือนในแอปเมื่อถึงคิว ร้านจึงต้องมีเบอร์ไว้ติดต่อคุณ</p>
-  <p class="body-text">องค์การการท่องเที่ยวเกาหลีเองก็ระบุว่าระบบจองและต่อคิวส่วนใหญ่ต้องใช้เบอร์โทรเกาหลี หรือไม่รับบัตรต่างประเทศ รายงานของ JoongAng Daily เมื่อเดือนพฤษภาคม 2026 ก็ชี้ว่าคิวแบบตู้คีออสก์ของร้านอาหารและร้านกาแฟให้ลงทะเบียนด้วยเบอร์เกาหลี และยังมีโพสต์ของนักท่องเที่ยวที่เล่าว่าถูกปฏิเสธจากหลายร้านเพียงเพราะไม่มีเบอร์</p>
+  <p class="body-text">องค์การการท่องเที่ยวเกาหลีเองก็ระบุว่าระบบจองและต่อคิวส่วนใหญ่ต้องใช้เบอร์โทรเกาหลี หรือไม่รับบัตรต่างประเทศ รายงานของ Korea JoongAng Daily (ฉบับภาษาอังกฤษของ JoongAng Ilbo, 중앙일보) เมื่อเดือนพฤษภาคม 2026 ก็ชี้ว่าคิวแบบตู้คีออสก์ของร้านอาหารและร้านกาแฟให้ลงทะเบียนด้วยเบอร์เกาหลี และยังมีโพสต์ของนักท่องเที่ยวที่เล่าว่าถูกปฏิเสธจากหลายร้านเพียงเพราะไม่มีเบอร์</p>
   <div class="callout">
     <div class="callout-head"><svg><use href="#i-check"/></svg>ข้อสังเกต</div>
     <p>ถ้าหน้าร้านแทบไม่มีคน แต่หน้าจอแสดงว่ามีคิวรออยู่หลายสิบกลุ่ม แปลว่าคิวอยู่<strong>ในแอป</strong> ทุกคนรออยู่แถวนั้นและเข้าร้านเมื่อได้รับแจ้งเตือน</p>
@@ -419,7 +421,7 @@
       </tbody>
     </table>
   <p class="body-text">วิธี<strong>จองโต๊ะ + มัดจำ</strong>จะมีช่อง<strong>เบอร์โทร</strong>ขึ้นมาระหว่างกรอกข้อมูลการจอง ช่องนี้บังคับ จึงเว้นว่างไม่ได้ เลือกรหัสประเทศแล้วกรอกเบอร์ หน้าจอระบุว่า "If you have a Korean phone number, please use it. The restaurant may need to contact you." (หากคุณมีเบอร์โทรเกาหลี โปรดใช้เบอร์นั้น ร้านอาจต้องติดต่อคุณ) ดังนั้นหากคุณซื้อ<strong>ซิมเกาหลีแล้วให้ใช้เบอร์นั้น</strong> หากยังไม่มีให้ใช้เบอร์จากประเทศของคุณ คุณต้องจองให้เสร็จภายใน <strong>10 นาที</strong>ตามที่หน้าจอแสดง และการจองจะสมบูรณ์เมื่อชำระเงินเสร็จเท่านั้น</p>
-  <p class="body-text"><strong>ตัวอย่างที่ปูซาน</strong> ในรีวิวเดือนมิถุนายน 2026 ของร้าน Ijaemo Pizza สาขาสถานีปูซาน ผู้เขียนต่อคิวระยะไกลเป็นกลุ่มที่ 34 ราว 4 โมงเย็นของวันหยุดสุดสัปดาห์ และได้เข้าร้านในเวลาไม่ถึง 30 นาที เขาบอกว่าเมื่อใกล้ถึงคิวที่ 20 แอปจะให้ยืนยันว่ามาถึงแล้ว จึงควรรออยู่ใกล้ ๆ ไม่ควรไปไกล</p>
+  <p class="body-text"><strong>ตัวอย่างที่ปูซาน</strong> ในรีวิวเดือนมิถุนายน 2026 ของร้าน Ijaemo Pizza (이재모피자) สาขาสถานีปูซาน ผู้เขียนต่อคิวระยะไกลเป็นกลุ่มที่ 34 ราว 4 โมงเย็นของวันหยุดสุดสัปดาห์ และได้เข้าร้านในเวลาไม่ถึง 30 นาที เขาบอกว่าเมื่อคิวของคุณขยับมาอยู่ราวลำดับที่ 20 แอปจะให้ยืนยันว่ามาถึงแล้ว จึงควรรออยู่ใกล้ ๆ ไม่ควรไปไกล</p>
   <div class="callout">
     <div class="callout-head"><svg><use href="#i-check"/></svg>ลองทำแบบนี้</div>
     <p>เมื่อเปิดหน้าของร้าน คุณจะเห็นวิธีจองทันที บางร้านให้<strong>เลือกวันและเวลา</strong>เพื่อจอง และถ้ามีคิวก็<strong>ต่อคิว</strong>ได้ ถ้าไม่มีคิว จำนวนกลุ่มที่รออยู่จะแสดงเป็น <strong>0</strong> ในกรณีนั้นไปที่ร้านได้เลย</p>
@@ -431,18 +433,18 @@
     <svg class="block-icon"><use href="#i-info"/></svg>
     <h2 class="block-title">4. แอป Naver Map — มีช่องทางให้ใช้ แต่ใช้งานจริงได้น้อย</h2>
   </div>
-  <p class="body-text">แอป Naver Map (네이버 지도) เป็น<strong>แอปแผนที่</strong>ที่คนเกาหลีใช้หาเส้นทางและค้นหาสถานที่ หน้าร้านอาหารมีฟังก์ชันจองในตัว ถ้าร้านรับจองที่นี่ก็จองผ่านแอปได้</p>
+  <p class="body-text">แอป Naver Map (네이버 지도) เป็น<strong>แอปแผนที่</strong>ที่คนเกาหลีใช้หาเส้นทางและค้นหาสถานที่ หน้าข้อมูลร้านในแอปมีฟังก์ชันจองในตัว ถ้าร้านรับจองที่นี่ก็จองผ่านแอปได้</p>
   <p class="body-text">แต่ชาวต่างชาติใช้ยากด้วยเหตุผลหลายข้อ</p>
   <ul class="plain-list">
     <li><strong>มีร้านรับจองน้อย</strong> สถานที่ส่วนใหญ่บนแผนที่แสดงเพียงข้อมูล มีเพียงบางร้านที่มีปุ่มจอง</li>
     <li><strong>แอปซับซ้อน</strong> แผนที่ การค้นหา การจอง และการสั่งอาหารรวมอยู่ในแอปเดียว จึงต้องผ่านหลายขั้นตอนกว่าจะถึงหน้าจอง</li>
     <li><strong>ต้องล็อกอิน Naver</strong> และการจองต้องยืนยันตัวตนด้วย</li>
   </ul>
-  <p class="body-text">เดิมการยืนยันตัวตนต้องใช้เบอร์มือถือเกาหลี แต่ตั้งแต่<strong>วันที่ 4 มิถุนายน 2026</strong> Naver เริ่มให้ชาวต่างชาติ<strong>ยืนยันด้วยหนังสือเดินทาง</strong> การยืนยันด้วยหนังสือเดินทางไม่ใช่แผนที่ แต่เป็น<strong>วิธียืนยันตัวตน</strong> ขั้นตอนมีดังนี้</p>
+  <p class="body-text">เดิมการยืนยันตัวตนต้องใช้เบอร์มือถือเกาหลี แต่ตั้งแต่<strong>วันที่ 4 มิถุนายน 2026</strong> Naver เริ่มให้ชาวต่างชาติ<strong>ยืนยันด้วยหนังสือเดินทาง</strong> การยืนยันด้วยหนังสือเดินทางเป็น<strong>การยืนยันตัวตนของบัญชี Naver</strong> ไม่ใช่ฟังก์ชันของแผนที่ ขั้นตอนมีดังนี้</p>
   <ul class="plain-list">
     <li><strong>1. สร้างบัญชี Naver</strong> สมัครได้โดยไม่ต้องมีเบอร์เกาหลี</li>
     <li><strong>2. ยืนยันด้วยหนังสือเดินทาง</strong> จะมีการตรวจหนังสือเดินทางและยืนยันใบหน้า</li>
-    <li><strong>3. ค้นหาร้านในแอป Naver Map</strong> จองผ่าน Naver ได้เฉพาะร้านที่หน้าร้านมีปุ่ม<strong>จอง</strong> ส่วนปุ่ม <strong>줄서기 (ต่อคิว)</strong> ในหน้าร้านจะพาคุณไปยังหน้าจอคิวของบริษัทอื่น เช่น Tabling</li>
+    <li><strong>3. ค้นหาร้านในแอป Naver Map</strong> จองผ่าน Naver ได้เฉพาะร้านที่หน้าข้อมูลร้านในแอปมีปุ่ม<strong>จอง</strong> ส่วนปุ่ม <strong>줄서기 (ต่อคิว)</strong> ในหน้าข้อมูลร้านจะพาคุณไปยังหน้าจอคิวของบริษัทอื่น เช่น Tabling</li>
   </ul>
   <p class="body-text">Naver ระบุว่าจะขยายบริการและภาษาที่รองรับทีละขั้น แอปรองรับภาษาอังกฤษ แต่หน้าจอการจองและการยืนยันอาจมีภาษาเกาหลีปนอยู่</p>
   <div class="callout">
@@ -454,7 +456,7 @@
 <section class="block section-gap">
   <div class="block-head">
     <svg class="block-icon"><use href="#i-info"/></svg>
-    <h2 class="block-title">5. แอป Tabling (테이블링) — ชาวต่างชาติไม่มีอะไรให้ใช้</h2>
+    <h2 class="block-title">5. แอป Tabling (테이블링) — แทบไม่มีประโยชน์สำหรับชาวต่างชาติ</h2>
   </div>
   <p class="body-text">แอป Tabling เป็นแอปต่อคิวที่คนเกาหลีใช้ ไม่มีเวอร์ชันสำหรับชาวต่างชาติ และ<strong>ต่อให้ตั้งโทรศัพท์เป็นภาษาอังกฤษก่อนติดตั้ง ทุกหน้าจอก็ยังเป็นภาษาเกาหลี</strong> การสมัครต้องใช้เบอร์เกาหลีและการยืนยันกับผู้ให้บริการเครือข่าย ชาวต่างชาติจึงไม่มีเหตุผลที่ต้องติดตั้ง</p>
   <p class="body-text">ที่ร้านที่ใช้ Tabling คุณต่อคิวผ่าน<strong>แท็บเล็ตหน้าร้าน</strong> ไม่ต้องติดตั้งแอป ให้ใช้วิธีในหัวข้อที่ 6 ด้านล่าง</p>
@@ -495,8 +497,8 @@
       <tbody>
         <tr><td data-label="สถานการณ์"><strong>โอมากาเสะหรือร้านระดับไฟน์ไดนิ่ง</strong></td><td data-label="ควรใช้">จองในแอป Catchtable Global ชำระมัดจำด้วยบัตรต่างประเทศ</td></tr>
         <tr><td data-label="สถานการณ์"><strong>ร้านดังที่คิวยาว</strong></td><td data-label="ควรใช้">ต่อคิวระยะไกล แล้วเดินเที่ยวแถวนั้นระหว่างรอ</td></tr>
-        <tr><td data-label="สถานการณ์"><strong>แอปมีแค่ "Reserve by phone"</strong></td><td data-label="ควรใช้">ขอให้พนักงานที่พักช่วยโทร หรือให้ดูประโยคในหัวข้อที่ 6</td></tr>
-        <tr><td data-label="สถานการณ์"><strong>ร้านที่ไม่มีในแอป Catchtable</strong></td><td data-label="ควรใช้">ในแอป Naver Map ดูว่าหน้าร้านมีปุ่มจองหรือไม่</td></tr>
+        <tr><td data-label="สถานการณ์"><strong>แอปมีแค่ "Reserve by phone"</strong></td><td data-label="ควรใช้">ขอให้พนักงานที่พักช่วยโทร หรือให้ดูประโยคในหัวข้อที่ 6 ด้านบน</td></tr>
+        <tr><td data-label="สถานการณ์"><strong>ร้านที่ไม่มีในแอป Catchtable</strong></td><td data-label="ควรใช้">ในแอป Naver Map ดูว่าหน้าข้อมูลร้านมีปุ่มจองหรือไม่</td></tr>
         <tr><td data-label="สถานการณ์"><strong>ร้านที่ใช้แค่แอป Tabling</strong></td><td data-label="ควรใช้">ใช้แท็บเล็ตหน้าร้าน ถ้าไม่ได้ให้ขอความช่วยเหลือจากพนักงาน</td></tr>
       </tbody>
     </table>
@@ -665,5 +667,30 @@
 </script>
 <script data-goatcounter="https://krambles.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
+<script>/* keep-fit: 칸이 화면에 다 안 들어갈 때만 카드형으로 바꿈 */
+(function () {
+  var tables = [].slice.call(document.querySelectorAll('table.data-table.keep'));
+  if (!tables.length) { return; }
+  tables.forEach(function (t) {
+    var heads = [].slice.call(t.querySelectorAll('thead th')).map(function (th) { return th.textContent.trim(); });
+    [].slice.call(t.querySelectorAll('tbody tr')).forEach(function (tr) {
+      [].slice.call(tr.cells).forEach(function (td, i) { if (heads[i] && !td.hasAttribute('data-label')) { td.setAttribute('data-label', heads[i]); } });
+    });
+  });
+  function fit() {
+    tables.forEach(function (t) {
+      t.classList.add('keep');
+      var p = t.parentElement, cs = getComputedStyle(p);
+      var limit = p.getBoundingClientRect().right - parseFloat(cs.paddingRight || 0);
+      if (t.getBoundingClientRect().right > limit + 1) { t.classList.remove('keep'); }
+    });
+  }
+  fit();
+  window.addEventListener('resize', fit);
+  window.addEventListener('load', fit);
+  if (document.fonts && document.fonts.ready) { document.fonts.ready.then(fit); }
+  new MutationObserver(fit).observe(document.documentElement, { attributes: true, attributeFilter: ['data-fs'] });
+})();
+</script>
 </body>
 </html>
