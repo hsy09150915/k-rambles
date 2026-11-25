@@ -70,10 +70,10 @@
 - [Where to Eat Ramen by the Sea in Busan: Convenience Store Ramen Machines and Seafood Ramyeon](https://k-rambles.com/taste/2026-11-10-busan-seaside-ramen-spots-en.html) — 2026-11-10
 - [Busan Pork Meals Guide: Ppyeo-haejangguk, Jeyuk-bokkeum, Dwaeji-bulbaek and Kimchi-jjigae](https://k-rambles.com/taste/2026-10-28-busan-pork-stew-guide-en.html) — 2026-10-28
 - [Busan Pork BBQ Guide: Samgyeopsal, Moksal, Pork Ribs and Back Ribs](https://k-rambles.com/taste/2026-10-28-busan-pork-bbq-guide-en.html) — 2026-10-28
-- [Busan Chicken Guide: Fried Chicken, Dakgalbi, Dakgomtang and More](https://k-rambles.com/taste/2026-10-26-busan-chicken-dishes-guide-en.html) — 2026-10-26
-- [Busan Crab Guide: Ganjang-gejang, Yangnyeom-gejang and Crab Soup Explained](https://k-rambles.com/taste/2026-10-26-busan-gejang-guide-en.html) — 2026-10-26
-- [Busan Octopus Guide: Nakji and Jjukkumi Dishes, from Stir-Fried Octopus to Live Octopus (Sannakji) and Nakji-tangtangi](https://k-rambles.com/taste/2026-10-24-busan-nakji-guide-en.html) — 2026-10-24
-- [Busan Seafood Hot Pot (Haemultang) and Freshwater Clam Soup (Jaecheopguk): How to Order and Eat](https://k-rambles.com/taste/2026-10-24-busan-seafood-soup-guide-en.html) — 2026-10-24
+- [Busan Chicken Dishes Guide: Fried Chicken, Dakgalbi and More](https://k-rambles.com/taste/2026-10-26-busan-chicken-dishes-guide-en.html) — 2026-10-26
+- [Busan Crab Dishes Guide: Raw Marinated Crab and Crab Soup](https://k-rambles.com/taste/2026-10-26-busan-gejang-guide-en.html) — 2026-10-26
+- [Busan Octopus Dishes Guide: Stir-Fried, Grilled and Live Octopus](https://k-rambles.com/taste/2026-10-24-busan-nakji-guide-en.html) — 2026-10-24
+- [Busan Seafood Stew and Clam Soup Guide: How to Order and Eat](https://k-rambles.com/taste/2026-10-24-busan-seafood-soup-guide-en.html) — 2026-10-24
 - [Busan Eel Guide: How to Tell Hagfish, Conger Eel and Freshwater Eel Apart and Order Them](https://k-rambles.com/taste/2026-10-23-busan-eel-guide-en.html) — 2026-10-23
 - [3 Busan Local Foods: How to Order Pufferfish Soup, Spicy Braised Monkfish and Cold Pig's Trotters](https://k-rambles.com/taste/2026-10-23-busan-local-foods-guide-en.html) — 2026-10-23
 - [5 Signature Busan Foods: What They Are and How to Order and Eat Them](https://k-rambles.com/taste/2026-10-23-busan-signature-foods-guide-en.html) — 2026-10-23
@@ -172,7 +172,7 @@
 - [부산 닭 요리 가이드, 후라이드 치킨부터 닭갈비, 닭곰탕까지](https://k-rambles.com/ko/taste/2026-10-26-busan-chicken-dishes-guide-ko.html) — 2026-10-26
 - [부산에서 먹는 게 요리 안내, 간장게장, 양념게장, 꽃게탕 구분하고 먹는 법](https://k-rambles.com/ko/taste/2026-10-26-busan-gejang-guide-ko.html) — 2026-10-26
 - [부산 낙지와 주꾸미 요리 가이드, 낙지볶음부터 산낙지, 낙지탕탕이까지](https://k-rambles.com/ko/taste/2026-10-24-busan-nakji-guide-ko.html) — 2026-10-24
-- [부산 해물탕과 재첩국(작은 민물조개 국), 국물 요리 주문하고 먹는 법](https://k-rambles.com/ko/taste/2026-10-24-busan-seafood-soup-guide-ko.html) — 2026-10-24
+- [부산 해물탕과 재첩국(강 하구의 작은 조개 국), 국물 요리 주문하고 먹는 법](https://k-rambles.com/ko/taste/2026-10-24-busan-seafood-soup-guide-ko.html) — 2026-10-24
 - [부산 장어 요리 안내, 곰장어, 붕장어, 민물장어 구분하고 주문하는 법](https://k-rambles.com/ko/taste/2026-10-23-busan-eel-guide-ko.html) — 2026-10-23
 - [부산 향토 음식 3가지, 복국(복어탕), 아구찜(아귀찜), 냉채족발 주문하고 먹는 법](https://k-rambles.com/ko/taste/2026-10-23-busan-local-foods-guide-ko.html) — 2026-10-23
 - [부산 대표 음식 5가지, 동래파전·어묵·낙곱새·돼지국밥·밀면 주문하고 먹는 법](https://k-rambles.com/ko/taste/2026-10-23-busan-signature-foods-guide-ko.html) — 2026-10-23
@@ -268,9 +268,9 @@
 - [Ăn mì ramen ngắm biển ở Busan: cửa hàng tiện lợi có máy nấu mì và quán mì hải sản](https://k-rambles.com/vi/taste/2026-11-10-busan-seaside-ramen-spots-vi.html) — 2026-11-10
 - [Các món heo ăn với cơm ở Busan: ppyeo-haejangguk, jeyuk-bokkeum, dwaeji-bulbaek và kimchi-jjigae](https://k-rambles.com/vi/taste/2026-10-28-busan-pork-stew-guide-vi.html) — 2026-10-28
 - [Thịt heo nướng ở Busan: samgyeopsal, moksal, sườn heo và sườn lưng](https://k-rambles.com/vi/taste/2026-10-28-busan-pork-bbq-guide-vi.html) — 2026-10-28
-- [Các món gà ở Busan: gà rán, dakgalbi, dakbal, samgyetang và dakgomtang](https://k-rambles.com/vi/taste/2026-10-26-busan-chicken-dishes-guide-vi.html) — 2026-10-26
+- [Các món gà ở Busan: từ gà rán đến dakgalbi và canh gà dakgomtang](https://k-rambles.com/vi/taste/2026-10-26-busan-chicken-dishes-guide-vi.html) — 2026-10-26
 - [Món cua ở Busan: phân biệt ganjang-gejang, yangnyeom-gejang, canh cua và cách ăn](https://k-rambles.com/vi/taste/2026-10-26-busan-gejang-guide-vi.html) — 2026-10-26
-- [Các món bạch tuộc ở Busan: nakji và jjukkumi, từ nakji-bokkeum đến sannakji và nakji-tangtangi](https://k-rambles.com/vi/taste/2026-10-24-busan-nakji-guide-vi.html) — 2026-10-24
+- [Các món bạch tuộc nakji và jjukkumi ở Busan: từ món xào đến bạch tuộc sống](https://k-rambles.com/vi/taste/2026-10-24-busan-nakji-guide-vi.html) — 2026-10-24
 - [Lẩu hải sản haemultang và canh hến jaecheopguk ở Busan: cách gọi món và cách ăn](https://k-rambles.com/vi/taste/2026-10-24-busan-seafood-soup-guide-vi.html) — 2026-10-24
 - [Món cá chình ở Busan: phân biệt gomjangeo, cá chình biển và cá chình nước ngọt khi gọi món](https://k-rambles.com/vi/taste/2026-10-23-busan-eel-guide-vi.html) — 2026-10-23
 - [3 món địa phương của Busan: canh cá nóc, cá vây chân hầm cay và giò heo lạnh](https://k-rambles.com/vi/taste/2026-10-23-busan-local-foods-guide-vi.html) — 2026-10-23
@@ -366,11 +366,11 @@
 - [ชาวต่างชาติซื้ออะไรมากที่สุดในร้านสะดวกซื้อเกาหลี แล้วคนเกาหลีซื้ออะไร](https://k-rambles.com/th/taste/2026-11-16-korea-convenience-store-foods-th.html) — 2026-11-16
 - [กินรามยอนริมทะเลที่ปูซาน ร้านสะดวกซื้อมีเครื่องต้มรามยอนและร้านรามยอนทะเล](https://k-rambles.com/th/taste/2026-11-10-busan-seaside-ramen-spots-th.html) — 2026-11-10
 - [คู่มืออาหารหมูกินกับข้าวในปูซาน ปยอแฮจังกุก เจยุกบกกึม ทเวจีบุลแบก และคิมจีจจีเก](https://k-rambles.com/th/taste/2026-10-28-busan-pork-stew-guide-th.html) — 2026-10-28
-- [คู่มือหมูย่างในปูซาน ซัมกยอบซัล โมกซัล ทเวจีคัลบี และทึงคัลบี](https://k-rambles.com/th/taste/2026-10-28-busan-pork-bbq-guide-th.html) — 2026-10-28
-- [คู่มืออาหารไก่ในปูซาน ตั้งแต่ไก่ทอดถึงตั๊กคัลบีและตั๊กคมทัง](https://k-rambles.com/th/taste/2026-10-26-busan-chicken-dishes-guide-th.html) — 2026-10-26
-- [คู่มืออาหารปูในปูซาน: กันจังเกจัง ยังนยอมเกจัง และซุปปู](https://k-rambles.com/th/taste/2026-10-26-busan-gejang-guide-th.html) — 2026-10-26
-- [คู่มืออาหารหมึกสายในปูซาน: นักจี และจูกกูมี ตั้งแต่หมึกสายผัดเผ็ดไปจนถึงหมึกสายเป็น และนักจีทังทังงี](https://k-rambles.com/th/taste/2026-10-24-busan-nakji-guide-th.html) — 2026-10-24
-- [แฮมุลทัง หม้อไฟอาหารทะเล และแจชอบกุก ซุปหอยน้ำจืดตัวเล็ก ในปูซาน: วิธีสั่งและวิธีกิน](https://k-rambles.com/th/taste/2026-10-24-busan-seafood-soup-guide-th.html) — 2026-10-24
+- [คู่มือหมูย่างในปูซาน: หมูสามชั้น สันคอ และซี่โครงหมู](https://k-rambles.com/th/taste/2026-10-28-busan-pork-bbq-guide-th.html) — 2026-10-28
+- [คู่มืออาหารไก่ในปูซาน: ไก่ทอด ไก่ผัดกระทะ และซุปไก่](https://k-rambles.com/th/taste/2026-10-26-busan-chicken-dishes-guide-th.html) — 2026-10-26
+- [คู่มืออาหารปูในปูซาน: ปูดองซีอิ๊ว ปูดองซอสเผ็ด และซุปปู](https://k-rambles.com/th/taste/2026-10-26-busan-gejang-guide-th.html) — 2026-10-26
+- [คู่มืออาหารหมึกสายในปูซาน: ผัดเผ็ด ซุป ย่าง และหมึกสายเป็น](https://k-rambles.com/th/taste/2026-10-24-busan-nakji-guide-th.html) — 2026-10-24
+- [ซุปอาหารทะเลและซุปหอยของปูซาน: วิธีสั่งและวิธีกิน](https://k-rambles.com/th/taste/2026-10-24-busan-seafood-soup-guide-th.html) — 2026-10-24
 - [คู่มือปลาไหลในปูซาน แยกแฮกฟิชที่ไม่ใช่ปลาไหล ปลาไหลทะเล และปลาไหลน้ำจืด พร้อมวิธีสั่ง](https://k-rambles.com/th/taste/2026-10-23-busan-eel-guide-th.html) — 2026-10-23
 - [อาหารพื้นเมืองปูซาน 3 อย่าง: ซุปปลาปักเป้า ปลาตกเบ็ดเคี่ยวเผ็ด และขาหมูเย็น วิธีสั่งและวิธีกิน](https://k-rambles.com/th/taste/2026-10-23-busan-local-foods-guide-th.html) — 2026-10-23
 - [อาหารขึ้นชื่อ 5 อย่างของปูซาน: แพนเค้กต้นหอม เค้กปลา หมึกผัดเผ็ด ข้าวซุปหมู และก๋วยเตี๋ยวเย็น](https://k-rambles.com/th/taste/2026-10-23-busan-signature-foods-guide-th.html) — 2026-10-23
